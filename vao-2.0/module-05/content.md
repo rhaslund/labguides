@@ -107,11 +107,11 @@ Module 5: User Interface, User Roles & Licensing
 31. [] Click the **Next** button on the **Network** step.
 32. [] Click the **Add...** button.
 33. [] Enter the following settings:
-Source VM IP address: **192.168.1.\***
-Target VM IP address: **192.168.2.\***
-Default gateway: **192.168.2.1**
-Preferred DNS server: **192.168.2.4**
-Alternate DNS server: **192.168.1.101**
+ 1. Source VM IP address: **192.168.1.\***
+ 2. Target VM IP address: **192.168.2.\***
+ 3. Default gateway: **192.168.2.1**
+ 4. Preferred DNS server: **192.168.2.4**
+ 5. Alternate DNS server: **192.168.1.101**
 34. [] Click the **OK** button.
 35. [] Click the **Next** button on the **Re-IP** step.
 36. [] Modify restore points to keep to +++1+++ (one).
@@ -151,11 +151,11 @@ Alternate DNS server: **192.168.1.101**
 17. [] Click the **Configure...** button in the **Production network connection** section.
 18. [] Select the **Use the following IP address** radio button.
 19. [] Enter the following settings:
-1. IP address:** 192.168.2.6**
-2. Subnet mask: **255.255.255.0**
-3. Default gateway: **192.168.2.1**
-4. Preferred DNS server: **192.168.2.4**
-5. Alternate DNS server: **192.168.1.101**
+ 1. IP address:** 192.168.2.6**
+ 2. Subnet mask: **255.255.255.0**
+ 3. Default gateway: **192.168.2.1**
+ 4. Preferred DNS server: **192.168.2.4**
+ 5. Alternate DNS server: **192.168.1.101**
 
 20. [] Click the **OK** button.
 21. [] Click the **Next** button on the **Proxy** step.
