@@ -30,9 +30,11 @@ Module 5: User Interface, User Roles & Licensing
 
 # Lab 5.3: Prepare Veeam Backup & Replication: Create a replication jobs
 
+## Step 1: Create a replication job
+
 1. [] Open the **Backup Infrastructure** view.
 2. [] Notice that the vcenter.vmce.lab server is already present because it was added in Veeam Availability Orchestrator. Navigate to the **Home** view.
-3. [] Click on the **Replication job** button.
+3. [] Click on the **Replication Job** button.
 4. [] Select **VMware vSphere**.
 5. [] Enter name: +++VAO Lab Group Active Directory+++.
 6. [] Click the **Next** button.
@@ -60,3 +62,19 @@ Module 5: User Interface, User Roles & Licensing
 28. [] Click the **Test Now** button.
 29. [] Verify all tests were successful and then click the **Close** button.
 30. [] Click the **Next** button on the **Guest Processing** step.
+31. [] Click the **Apply** button.
+32. [] Tick the **Run the job when I click Finish** check box.
+33. [] Click the **Finish** button on the **Summary** step.
+
+## Step 2: Create second replica job
+
+1. [] Click the **Replication Job** button.
+2. [] Select **VMware vSphere**.
+3. [] Enter name: +++Replication Job Exchange & SharePoint+++.
+4. [] Tick the **Separate virtual networks** check box.
+5. [] Tick the **Different IP addressing scheme** check box.
+6. [] Click the **Next** button on the **Name** step.
+7. [] Click the **Add...** button.
+8. [] Expand the **vcenter.vmce.lab** object.
+9. [] Expand the **Production** data center.
+10. [] Expand the **esx01.vmce.lab** host.
