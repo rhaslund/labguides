@@ -12,6 +12,7 @@ Module 5: User Interface, User Roles & Licensing
 6. [] Notice how the help system automatically opens. Click the **toggle** button to disable the Suggest help topics automatically feature.
 7. [] Click the **X** in the Users and Scopes help window.
 > Note: You can always click the Info icon in the bottom left corner to see these tips.
+
 8. [] Take notice of which roles are available and then navigate to the **License** view.
 9. [] Click the **Details...** text link next to the Status row.
 10. [] Verify the license is valid and that zero licenses have been consumed then click the **OK** button.
@@ -155,6 +156,7 @@ Subnet mask: **255.255.255.0**
 Default gateway: **192.168.2.1**
 Preferred DNS server: **192.168.2.4**
 Alternate DNS server: **192.168.1.101**
+
 20. [] Click the **OK** button.
 21. [] Click the **Next** button on the **Proxy** step.
 22. [] Click the **Advanced single-host** radio button.
