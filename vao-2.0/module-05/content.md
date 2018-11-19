@@ -72,6 +72,8 @@ Module 5: User Interface, User Roles & Licensing
 32. [] Tick the **Run the job when I click Finish** check box.
 33. [] Click the **Finish** button on the **Summary** step.
 
+===
+
 ## Step 2: Create a replication job for SharePoint
 
 1. [] Click the **Replication Job** button.
@@ -214,7 +216,9 @@ Module 5: User Interface, User Roles & Licensing
 43. [] Click the **Apply** button on the **Ready to apply** step.
 44. [] Click the **Finish** button on the **Applying Configuration** step.
 
-## Step 1: Create a virtual lab for SharePoint
+===
+
+## Step 2: Create a virtual lab for Exchange
 
 1. [] Click the **Add Virtual Lab** button.
 2. [] Enter name: +++VLAB2+++.
