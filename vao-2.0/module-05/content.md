@@ -17,6 +17,8 @@ Module 5: User Interface, User Roles & Licensing
 11. [] Navigate to the **Welcome** view.
 12. [] Notice that the first to-do list item of Deploy VAO agent to the Veeam Backup & Replication server. is not completed. This is because no replication jobs have been set up yet. Notice that the third to-do list item is also not completed. This is because we didn't create any virtual labs yet in Veeam Backup & Replication. Close the **Veeam Availability Orchestrator** window.
 
+===
+
 # Lab 5.2: Prepare Veeam Backup & Replication: Install new license
 
 1. [] Launch the **Veeam Backup & Replication console** from the desktop.
@@ -27,6 +29,8 @@ Module 5: User Interface, User Roles & Licensing
 6. [] Enter +++C:\Install\veeam_availability_suite_nfr_2_2.lic+++ in the File name field.
 7. [] Click the **Open** button.
 8. [] Click the **Close** button.
+
+===
 
 # Lab 5.3: Prepare Veeam Backup & Replication: Create a replication jobs
 
@@ -107,3 +111,80 @@ Default gateway: **192.168.2.1**
 Preferred DNS server: **192.168.2.4**
 Alternate DNS server: **192.168.1.101**
 34. [] Click the **OK** button.
+35. [] Click the **Next** button on the **Re-IP** step.
+36. [] Modify restore points to keep to +++1+++ (one).
+37. [] Click the **Next** button on the **Job Settings** step.
+> Note: In a production environment, it is critical to have redundant backup proxies on each site.
+
+38. [] Click the **Next** button on the **Data Transfer** step.
+39. [] Tick the **Enable application-aware processing** check box.
+40. [] Click the **Guest OS credentials** drop-down list.
+41. [] Select the **administrator@vmce.lab** credential.
+42. [] Click the **Next** button on the **Guest Processing** step.
+43. [] Do **not** schedule the job and click the **Apply** button on the **Schedule** step.
+44. [] Tick the **Run the job when I click Finish button** check box.
+45. [] Click the **Finish** button.
+> Do not wait for the job to complete before moving to the next lab exercise.
+
+===
+
+# Lab 5.4: Prepare Veeam Backup & Replication: Create a new virtual lab
+
+1. [] Navigate to the **Backup Infrastructure** view.
+2. [] Select **SureBackup** in the **Backup Infrastructure** navigation pane.
+3. [] Click the **Add Virtual Lab** button.
+4. [] Enter **VLAB1** as name.
+5. [] Click the **Next** button on the **Name** step.
+6. [] Click the **Choose...** button.
+7. [] Expand the **vcenter.vmce.lab** object.
+8. [] Expand the **DR** data center.
+9. [] Select the **esx02.vmce.lab** host.
+10. [] Click the **OK** button.
+11. [] Click the **Next** button on the **Host** step.
+12. [] Click the **Choose...** button.
+13. [] Expand the **esx02.vmce.lab** host.
+14. [] Select the **ESX02:Local** datastore.
+15. [] Click the **OK** button.
+16. [] Click the **Next** button on the **Datastore** step.
+17. [] Click the **Configure...** button in the **Production network connection** section.
+18. [] Select the **Use the following IP address** radio button.
+19. [] Enter the following settings:
+IP address:** 192.168.2.6**
+Subnet mask: **255.255.255.0**
+Default gateway: **192.168.2.1**
+Preferred DNS server: **192.168.2.4**
+Alternate DNS server: **192.168.1.101**
+20. [] Click the **OK** button.
+21. [] Click the **Next** button on the **Proxy** step.
+22. [] Click the **Advanced single-host** radio button.
+23. [] Click the **Next** button on the **Networking** step.
+24. [] Click the **OK** button to ignore the **Unable to resolve default network settings** error.
+25. [] Click the **Add...** button.
+26. [] Click the **Browse...** button.
+27. [] Expand the **vcenter.vmce.lab** object.
+28. [] Expand the **esx02.vmce.lab** host.
+29. [] Expand the **vSwitch0** switch.
+30. [] Select the **DR** network.
+31. [] Click the **Add** button.
+32. [] Click the **OK** button.
+33. [] Click the **Next** button on the **Isolated Networks** step.
+34. [] Click the **Add...** button.
+35. [] Click the **Choose isolated network** dropdown list.
+36. [] Select **VLAB1 DR (DR)**.
+37. [] Click the **OK** button to ignore the **Unable to resolve network settings** warning.
+38. [] Enter:
+IP address: **192.168.2.1**
+Mask: **255.255.255.0**
+
+39. [] Untick the **Enable DHCP service on this interface** check box.
+40. [] Click the **OK** button.
+41. [] Click the **Next** button on the **Network Settings** step.
+42. [] Keep the default settings on the **Static Mapping** step and click the **Next** button.
+
+
+
+---
+
+# Congratulations!
+
+You have successfully completed this Module, to mark the lab as complete click on the menu in the upper right-hand corner and select **End**.
