@@ -135,7 +135,7 @@ Module 6: Configuration
 14. [] Keep the defaults and click the **Next** button on the **Storage** step.
 15. [] Keep the defaults and click the **Next** button on the **Guest Processing** step.
 16. [] Do not schedule the job and click the **Apply** button on the **Schedule** step.
-17. [] Click the **Finish** button on the **Summary* step.
+17. [] Click the **Finish** button on the **Summary** step.
 18. [] Close the **Veeam Backup & Replication** console.
 > Note: The template job will not be visible in Veeam Availability Orchestrator until after the next data collection interval. Once it is visible in Veeam Availability Orchestrator, it must be enabled before it can be used.
 
