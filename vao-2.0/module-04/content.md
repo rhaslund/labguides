@@ -24,7 +24,7 @@ Module 4: Deployment and Installation
 
 17. [] Click the **Finish** button to close the Veeam® Availability Orchestrator setup wizard.
 18. [] Click the **Yes** button to logoff the VEEAM-VAO server.
-> Note: Logoff is required because during installation of Veeam ONE, a local group named Veeam ONE Administrators and added a user to it. In this lab environment you will automatically be logged back into the Desktop.
+> Note: Logoff is required because during installation of Veeam ONE, a local group named Veeam ONE Administrators is created and a user is added to it. In this lab environment you will automatically be logged back into the Desktop.
 
 ===
 
