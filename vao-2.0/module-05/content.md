@@ -30,3 +30,16 @@ Module 5: User Interface, User Roles & Licensing
 
 # Lab 5.3: Prepare Veeam Backup & Replication: Create a replication jobs
 
+1. [] Open the **Backup Infrastructure** view.
+2. [] Notice that the vcenter.vmce.lab server is already present because it was added in Veeam Availability Orchestrator. Navigate to the **Home** view.
+3. [] Click on the **Replication job** button.
+4. [] Select **VMware vSphere**.
+5. [] Enter name: +++VAO Lab Group Active Directory+++.
+6. [] Click the **Next** button.
+7. [] Click the **Add...** button.
+8. [] Expand the **vcenter.vmce.lab** object.
+9. [] Expand the **DR** data center.
+10. [] Expand the **esx02.vmce.lab** host.
+11. [] Select the **DC02** virtual machine.
+12. [] Click the **Add** button.
+13. [] Click the **Next** button on the **Virtual Machines** step.
