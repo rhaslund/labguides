@@ -25,3 +25,9 @@ Click the **Yes** button to logoff the VEEAM-VAO server.
 > Note: Logoff is required because during installation of Veeam ONE, a local group named Veeam ONE Administrators and added a user to it.
 
 ## Lab 4.2: Initial configuration
+1. [] Launch **Veeam Availability Orchestrator** from the desktop.
+2. [] Enter username: +++administrator@vmce.lab+++ and password: +++Pa%%w0rd+++.
+3. [] Click the **Login** button.
+4. [] Click the **Next** button on the Welcome step.
+5. [] Keep the default selection of **DR Site** and click the **Next** button.
+> Note: Site type cannot be changed after initial configuration.
