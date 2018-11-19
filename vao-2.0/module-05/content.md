@@ -110,8 +110,8 @@ Module 5: User Interface, User Roles & Licensing
  1. Source VM IP address: **192.168.1.\***
  2. Target VM IP address: **192.168.2.\***
  3. Default gateway: +++192.168.2.1+++
- 4. Preferred DNS server: **192.168.2.4**
- 5. Alternate DNS server: **192.168.1.101**
+ 4. Preferred DNS server: +++192.168.2.4+++
+ 5. Alternate DNS server: +++192.168.1.101+++
 34. [] Click the **OK** button.
 35. [] Click the **Next** button on the **Re-IP** step.
 36. [] Modify restore points to keep to +++1+++ (one).
