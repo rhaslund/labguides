@@ -84,8 +84,6 @@ Module 6: Configuration
 
 # Lab 6.4: Configure plan components
 
-## Step 1: Configuring notifications
-
 1. [] Switch back to the previously minimized **Veeam Availability Orchestrator** window.
 2. [] Navigate to the **Plan Components** view.
 3. [] Verify you see VM groups named **mission critical – exchange servers** and **mission critical – sharepoint servers** and that they are both enabled. Each VM group represents a vSphere tag. Tags are by default collected every three hours from your production environment. After you enable VM groups for a Veeam Availability Orchestrator site, you can add these groups to failover plans for the site. Click the **Default** text link in the **Scopes** pane at the top.
@@ -106,3 +104,27 @@ Module 6: Configuration
 18. [] Click the **Assign** button in the **DataLabs** pane.
 19. [] Select the **Phoenix\SharePoint Administrators** scope.
 20. [] Click the **OK** button.
+
+===
+
+# Lab 6.5: Create a template job
+
+1. [] Launch the **Veeam Backup & Replication Console** from the desktop.
+2. [] Click the **Connect** button.
+3. [] Click the **Backup Job** button on the **Home** ribbon.
+4. [] Select **VMware vSphere...**.
+5. [] Enter name: +++Template Backup Job for VAO+++, and enter description: +++This job is a \[VAO template\] to re-protect failed over VMs+++.
+6. [] Click the **Next** button on the **Name** step.
+7. [] Click the **Add** button.
+8. [] The current view selection is **Hosts and Clusters**. Click on the **VMs and Templates** view button.
+9. [] Expand the **vcenter.vmce.lab** object.
+10. [] Expand the **DR** data center object.
+11. [] Select the **Empty folder for VAO template jobs** folder.
+12. [] Click the **Add** button.
+13. [] Click the **Next** button on the **Virtual Machines** step.
+14. [] Keep the defaults and click the **Next** button on the **Storage** step.
+15. [] Keep the defaults and click the **Next** button on the **Guest Processing** step.
+16. [] Do not schedule the job and click the **Apply** button on the **Schedule** step.
+17. [] Click the **Finish** button on the **Summary* step.
+18. [] Close the **Veeam Backup & Replication** console.
+> The template job will not be visible in Veeam Availability Orchestrator until after the next data collection interval. Once it is visible in Veeam Availability Orchestrator, it must be enabled before it can be used.
