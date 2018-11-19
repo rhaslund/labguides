@@ -1,4 +1,5 @@
 Module 4: Deployment and Installation
+This lab is expected to last a maximum of 25 minutes including lab launch.
 ---
 
 ## Lab 4.1: Veeam Availability Orchestrator installation
@@ -20,8 +21,9 @@ Module 4: Deployment and Installation
 15. [] Click the **Next** button.
 16. [] Click the **Install** button to start the installation.
 > Note: The installation process will take up to 15 minutes.
-17. Click the **Finish** button to close the Veeam® Availability Orchestrator setup wizard.
-Click the **Yes** button to logoff the VEEAM-VAO server.
+
+17. [] Click the **Finish** button to close the Veeam® Availability Orchestrator setup wizard.
+18. [] Click the **Yes** button to logoff the VEEAM-VAO server.
 > Note: Logoff is required because during installation of Veeam ONE, a local group named Veeam ONE Administrators and added a user to it.
 
 ## Lab 4.2: Initial configuration
@@ -41,6 +43,8 @@ Click the **Yes** button to logoff the VEEAM-VAO server.
 13. [] Click the **Next** button on the **Choose Site Administrators** step.
 14. [] Click the **Skip** button on the **Deploy VAO agent** step.
 > Note: In a production environment, it would be recommended to deploy Veeam Availability Orchestrator to a separate server than your Veeam backup server. At this step, you would connect either to your Veeam Backup Server or Veeam Backup Enterprise Manager. Since this is a training environment, we will skip this step and utilize the integrated Veeam backup server.
+
 15. [] Enter server: +++vcenter.vmce.lab+++, username: +++svcVeeam@vsphere.local+++ and password: +++Pa%%w0rd+++.
-16. [] Click the **Finish** button.
-17. [] Wait for the Welcome! Please log in text message and then close the **Veeam Availability Orchestrator** interface.
+16. [] Click the **Next** button on the **VMware Server** step.
+17. [] Click the **Finish** button.
+18. [] Wait for the Welcome! Please log in text message and then close the **Veeam Availability Orchestrator** interface.
