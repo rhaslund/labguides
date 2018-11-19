@@ -54,6 +54,7 @@ Module 6: Configuration
 18. [] Enter username: +++administrator@vmce.lab+++ and password: +++Pa%%w0rd+++.
 19. [] Click the **Sign in** button.
 20. [] Verify that you see the Veeam Availability Orchestrator test message and close the **Outlook Web Access window**.
+21. [] Switch back to the **Veeam Availability Orchestrator** window in the Windows task bar.
 
 ===
 
