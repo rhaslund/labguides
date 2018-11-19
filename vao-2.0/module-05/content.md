@@ -39,7 +39,7 @@ Module 5: User Interface, User Roles & Licensing
 ## Step 1: Create a replication job
 
 1. [] Open the **Backup Infrastructure** view.
-2. [] Notice that the vcenter.vmce.lab server is already present because it was added in Veeam Availability Orchestrator. Navigate to the **Home** view.
+2. [] Notice that the **vcenter.vmce.lab** server is already present because it was added in Veeam Availability Orchestrator. Navigate back to the **Home** view.
 3. [] Click on the **Replication Job** button.
 4. [] Select **VMware vSphere**.
 5. [] Enter name: +++VAO Lab Group Active Directory+++.
