@@ -56,3 +56,7 @@ Module 5: User Interface, User Roles & Licensing
 24. [] Click the **Add...** button.
 25. [] Select the **Standard account...** button.
 26. [] Enter username +++administrator@vmce.lab+++ and password +++Pa%%w0rd+++.
+27. [] Click the **OK** button.
+28. [] Click the **Test Now** button.
+1. [] Verify all tests were successful and then click the **Close** button.
+30. [] Click the **Next** button on the **Guest Processing** step.
