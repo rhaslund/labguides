@@ -183,7 +183,7 @@ Module 5: User Interface, User Roles & Licensing
 40. [] Click the **OK** button.
 41. [] Click the **Next** button on the **Network Settings** step.
 42. [] Keep the default settings on the **Static Mapping** step and click the **Next** button.
-43. [] Click the **Apply** button on the **Ready to apply* step.
+43. [] Click the **Apply** button on the **Ready to apply** step.
 44. [] Click the **Finish** button on the **Applying Configuration** step.
 
 ===
