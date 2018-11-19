@@ -68,7 +68,7 @@ Module 5: User Interface, User Roles & Licensing
 28. [] Click the **Test Now** button.
 29. [] Verify all tests were successful and then click the **Close** button.
 30. [] Click the **Next** button on the **Guest Processing** step.
-31. [] Click the **Apply** button.
+31. [] Click the **Apply** button on the **Schedule** step.
 32. [] Tick the **Run the job when I click Finish** check box.
 33. [] Click the **Finish** button on the **Summary** step.
 
