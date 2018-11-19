@@ -40,7 +40,7 @@ This lab is expected to last a maximum of 25 minutes including lab launch.
 7. [] Click the **Next** button.
 8. [] Click the **Add** button.
 9. [] Enter account: +++site admin+++.
-10 [] Click the ***Find*** button.
+10. [] Click the ***Find*** button.
 11. [] Select the discovered account: ***Site Administrator VAO***.
 12. [] Click the **Add** button.
 13. [] Click the **Next** button on the **Choose Site Administrators** step.
