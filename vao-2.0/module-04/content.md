@@ -1,5 +1,7 @@
-Step 1: Veeam Availability Orchestrator installation
+Module 4: Deployment and Installation
 ---
+
+## Lab 4.1: Veeam Availability Orchestrator installation
 
 1. [] Open **File Explorer** from Windows task bar.
 2. [] Expand **This PC**.
@@ -21,3 +23,5 @@ Step 1: Veeam Availability Orchestrator installation
 17. Click the **Finish** button to close the Veeam® Availability Orchestrator setup wizard.
 Click the **Yes** button to logoff the VEEAM-VAO server.
 > Note: Logoff is required because during installation of Veeam ONE, a local group named Veeam ONE Administrators and added a user to it.
+
+## Lab 4.2: Initial configuration
