@@ -118,6 +118,7 @@ Module 6: Configuration
 
 # Lab 6.5: Create a template job
 
+1. [] Minimize the **Veeam Availability Orchestrator** window.
 1. [] Launch the **Veeam Backup & Replication Console** from the desktop.
 2. [] Click the **Connect** button.
 3. [] Click the **Backup Job** button on the **Home** ribbon.
