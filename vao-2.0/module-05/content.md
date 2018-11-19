@@ -34,9 +34,9 @@ Module 5: User Interface, User Roles & Licensing
 
 ===
 
-# Lab 5.3: Prepare Veeam Backup & Replication: Create a replication jobs
+# Lab 5.3: Prepare Veeam Backup & Replication: Create replication jobs
 
-## Step 1: Create a replication job
+## Step 1: Create a replication job for DataLab testing
 
 1. [] Open the **Backup Infrastructure** view.
 2. [] Notice that the **vcenter.vmce.lab** server is already present because it was added in Veeam Availability Orchestrator. Navigate back to the **Home** view.
@@ -72,7 +72,7 @@ Module 5: User Interface, User Roles & Licensing
 32. [] Tick the **Run the job when I click Finish** check box.
 33. [] Click the **Finish** button on the **Summary** step.
 
-## Step 2: Create second replica job
+## Step 2: Create a replication job for production servers
 
 1. [] Click the **Replication Job** button.
 2. [] Select **VMware vSphere**.
