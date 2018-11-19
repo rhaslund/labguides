@@ -11,7 +11,7 @@ Module 6: Configuration
 
 4. [] Click the **Administation** button in the top right corner.
 5. [] Navigate to the **Users and Scopes** view.
-6. [] Click the **Add** button in the **Scope** pane.
+6. [] Click the **Add** button in the **Scopes** pane.
 7. [] Enter:
  1. Name: +++SharePoint Administrators+++
  2. Description: +++Scope for administrators managing Microsoft SharePoint+++
