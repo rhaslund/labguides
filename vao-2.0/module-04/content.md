@@ -1,6 +1,6 @@
 Module 4: Deployment and Installation
-This lab is expected to last a maximum of 25 minutes including lab launch.
 ---
+**This lab is expected to last a maximum of 25 minutes including lab launch.**
 
 ## Lab 4.1: Veeam Availability Orchestrator installation
 
