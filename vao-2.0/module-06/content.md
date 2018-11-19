@@ -1,6 +1,6 @@
 Module 6: Configuration
 ---
-**This lab is expected to last a maximum of 30 minutes including lab launch.**
+**This lab is expected to last a maximum of 20 minutes including lab launch.**
 
 # Lab 6.1: Assigning user roles and permissions
 
