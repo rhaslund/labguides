@@ -128,3 +128,9 @@ Module 6: Configuration
 17. [] Click the **Finish** button on the **Summary* step.
 18. [] Close the **Veeam Backup & Replication** console.
 > Note: The template job will not be visible in Veeam Availability Orchestrator until after the next data collection interval. Once it is visible in Veeam Availability Orchestrator, it must be enabled before it can be used.
+
+---
+
+# Congratulations!
+
+You have successfully completed this Module, to mark the lab as complete click on the menu in the upper right-hand corner and select **End**.
