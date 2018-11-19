@@ -43,3 +43,16 @@ Module 5: User Interface, User Roles & Licensing
 11. [] Select the **DC02** virtual machine.
 12. [] Click the **Add** button.
 13. [] Click the **Next** button on the **Virtual Machines** step.
+14. [] Click the **Choose...** button.
+15. [] Expand the **vcenter.vmce.lab** object.
+16. [] Expand the **DR** data center.
+17. [] Select the **esx02.vmce.lab** host.
+18. [] Click the **OK** button.
+19. [] Click the **Next** button on the **Destination** step.
+20. [] Modify restore points to keep to +++1+++ (one).
+21. [] Click the **Next** button on the **Job Settings** step.
+22. [] Keep the defaults on the Data Transfer step and click the **Next** button.
+23. [] Tick the **Enable application-aware processing** check box.
+24. [] Click the **Add...** button.
+25. [] Select the **Standard account...** button.
+26. [] Enter username +++administrator@vmce.lab+++ and password +++Pa%%w0rd+++.
