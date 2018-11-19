@@ -26,6 +26,8 @@ This lab is expected to last a maximum of 25 minutes including lab launch.
 18. [] Click the **Yes** button to logoff the VEEAM-VAO server.
 > Note: Logoff is required because during installation of Veeam ONE, a local group named Veeam ONE Administrators and added a user to it.
 
+===
+
 ## Lab 4.2: Initial configuration
 1. [] Launch **Veeam Availability Orchestrator** from the desktop.
 2. [] Enter username: +++administrator@vmce.lab+++ and password: +++Pa%%w0rd+++.
@@ -49,3 +51,9 @@ This lab is expected to last a maximum of 25 minutes including lab launch.
 16. [] Click the **Next** button on the **VMware Server** step.
 17. [] Click the **Finish** button.
 18. [] Wait for the Welcome! Please log in text message and then close the **Veeam Availability Orchestrator** interface.
+
+---
+
+# Congratulations!
+
+You have successfully completed this Module, to mark the lab as complete click on the menu in the upper right-hand corner and select **End**.
