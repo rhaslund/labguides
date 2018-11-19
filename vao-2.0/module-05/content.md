@@ -72,11 +72,11 @@ Module 5: User Interface, User Roles & Licensing
 32. [] Tick the **Run the job when I click Finish** check box.
 33. [] Click the **Finish** button on the **Summary** step.
 
-## Step 2: Create a replication job for production servers
+## Step 2: Create a replication job for SharePoint
 
 1. [] Click the **Replication Job** button.
 2. [] Select **VMware vSphere**.
-3. [] Enter name: +++Replication Job Exchange & SharePoint+++.
+3. [] Enter name: +++Replication Job SharePoint+++.
 4. [] Tick the **Separate virtual networks** check box.
 5. [] Tick the **Different IP addressing scheme** check box.
 6. [] Click the **Next** button on the **Name** step.
@@ -84,7 +84,7 @@ Module 5: User Interface, User Roles & Licensing
 8. [] Expand the **vcenter.vmce.lab** object.
 9. [] Expand the **Production** data center.
 10. [] Expand the **esx01.vmce.lab** host.
-11. [] Select the **Exchange** virtual machine, then hold down the CTRL button and select the **SharePoint** virtual machine.
+11. [] Select the **SharePoint** virtual machine.
 12. [] Click the **Add** button.
 13. [] Click the **Next** button on the **Virtual Machines** step.
 14. [] Click the **Choose...** button in the **Host or cluster** section.
@@ -130,7 +130,33 @@ Module 5: User Interface, User Roles & Licensing
 
 ===
 
-# Lab 5.4: Prepare Veeam Backup & Replication: Create a new virtual lab
+# Lab 5.4: Prepare Veeam Backup & Replication: Create a backup job
+
+1. [] Navigate to the **Home** view.
+2. [] Click on the **Backup Job** button on the **Home** ribbon.
+3. [] Select **VMware vSphere...**
+4. [] Enter name: +++Backup Job Exchange+++.
+5. [] Click the **Next** button on the **Name** step.
+6. [] Click the **Add...** button.
+7. [] Expand the **Production** data center.
+8. [] Expand the **esx01.vmce.lab** host.
+9. [] Select the **EXCHANGE** virtual machine.
+10. [] Click the **Add** button.
+11. [] Click the **Next** button on the **Virtual Machines** step.
+12. [] Lower the amount of restore points to keep on disk to +++1+++ (one).
+13. [] Click the **Next** button on the **Storage** step.
+14. [] Tick the **Enable application-aware processing** check box.
+15. [] Select the **Guest OS credentials** dropdown menu.
+16. [] Select **administrator@vmce.lab** in the dropdown menu.
+17. [] Click the **Next** button on the **Guest Processing** step.
+18. [] Click the **Apply** button on the **Schedule** step.
+19. [] Tick the **Run the job when I click Finish** check box.
+20. [] Click on the **Finish** button on the **Summary** step.
+>Note: Do not wait for the jobs to complete.
+
+===
+
+# Lab 5.5: Prepare Veeam Backup & Replication: Create a new virtual lab
 
 1. [] Navigate to the **Backup Infrastructure** view.
 2. [] Select **SureBackup** in the **Backup Infrastructure** navigation pane.
@@ -185,33 +211,7 @@ Module 5: User Interface, User Roles & Licensing
 42. [] Keep the default settings on the **Static Mapping** step and click the **Next** button.
 43. [] Click the **Apply** button on the **Ready to apply** step.
 44. [] Click the **Finish** button on the **Applying Configuration** step.
-
-===
-
-# Lab 5.5: Prepare Veeam Backup & Replication: Create a backup job
-
-1. [] Navigate to the **Home** view.
-2. [] Click on the **Backup Job** button on the **Home** ribbon.
-3. [] Select **VMware vSphere...**
-4. [] Enter name: +++Backup Job Exchange & SharePoint+++.
-5. [] Click the **Next** button on the **Name** step.
-6. [] Click the **Add...** button.
-7. [] Expand the **Production** data center.
-8. [] Expand the **esx01.vmce.lab** host.
-9. [] Select the **EXCHANGE** virtual machine, then while holding the CTRL button select the **SHAREPOINT** virtual machine.
-10. [] Click the **Add** button.
-11. [] Click the **Next** button on the **Virtual Machines** step.
-12. [] Lower the amount of restore points to keep on disk to +++1+++ (one).
-13. [] Click the **Next** button on the **Storage** step.
-14. [] Tick the **Enable application-aware processing** check box.
-15. [] Select the **Guest OS credentials** dropdown menu.
-16. [] Select **administrator@vmce.lab** in the dropdown menu.
-17. [] Click the **Next** button on the **Guest Processing** step.
-18. [] Click the **Apply** button on the **Schedule** step.
-19. [] Tick the **Run the job when I click Finish** check box.
-20. [] Click on the **Finish** button on the **Summary** step.
-21. [] Close the **Veeam Backup & Replication** window.
->Note: Do not wait for the jobs to complete.
+45. [] Close the **Veeam Backup & Replication** window.
 
 ---
 
