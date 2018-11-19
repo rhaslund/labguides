@@ -18,3 +18,6 @@ Step 1: Veeam Availability Orchestrator installation
 15. [] Click the **Next** button.
 16. [] Click the **Install** button to start the installation.
 > Note: The installation process will take up to 15 minutes.
+17. Click the **Finish** button to close the Veeam® Availability Orchestrator setup wizard.
+Click the **Yes** button to logoff the VEEAM-VAO server.
+> Note: Logoff is required because during installation of Veeam ONE, a local group named Veeam ONE Administrators and added a user to it.
