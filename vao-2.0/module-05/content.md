@@ -57,7 +57,7 @@ Module 5: User Interface, User Roles & Licensing
 17. [] Select the **esx02.vmce.lab** host.
 18. [] Click the **OK** button.
 19. [] Click the **Next** button on the **Destination** step.
-20. [] Lower restore points to keep to +++1+++ (one).
+20. [] Lower the amount of restore points to keep to +++1+++ (one).
 21. [] Click the **Next** button on the **Job Settings** step.
 22. [] Keep the defaults on the Data Transfer step and click the **Next** button.
 23. [] Tick the **Enable application-aware processing** check box.
@@ -114,7 +114,7 @@ Module 5: User Interface, User Roles & Licensing
  5. Alternate DNS server: +++192.168.1.101+++
 34. [] Click the **OK** button.
 35. [] Click the **Next** button on the **Re-IP** step.
-36. [] Modify restore points to keep to +++1+++ (one).
+36. [] Lower the amount of restore points to keep to +++1+++ (one).
 37. [] Click the **Next** button on the **Job Settings** step.
 > Note: In a production environment, it is critical to have redundant backup proxies on each site.
 
