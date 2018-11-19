@@ -1,4 +1,6 @@
 Module 5: User Interface, User Roles & Licensing
+---
+**This lab is expected to last a maximum of 30 minutes including lab launch.**
 
 # Lab 5.1: Accessing Veeam Availability Orchestrator user interface
 
