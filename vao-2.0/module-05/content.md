@@ -176,8 +176,8 @@ Module 5: User Interface, User Roles & Licensing
 36. [] Select **VLAB1 DR (DR)**.
 37. [] Click the **OK** button to ignore the **Unable to resolve network settings** warning.
 38. [] Enter:
-IP address: **192.168.2.1**
-Mask: **255.255.255.0**
+ 1. IP address: **192.168.2.1**
+ 2. Mask: **255.255.255.0**
 
 39. [] Untick the **Enable DHCP service on this interface** check box.
 40. [] Click the **OK** button.
