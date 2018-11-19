@@ -96,14 +96,23 @@ Module 6: Configuration
 10. [] Tick the **DR Site** checkbox.
 11. [] Click the **Include** button.
 12. [] Click the **Plan Steps** tab.
-13. [] Review the list of default steps provided by Veeam, these cannot be deleted - only custom steps can be deleted. Click the **Credentials** tab.
-14. [] Tick the **administrator@vmce.lab** check box so that it can be used in plans.
-15. [] Click the **Include** button in the **Credentials** pane.
-16. [] Navigate to the **DataLab Allocation** view.
-17. [] Verify the **VLAB1** DataLab created earlier shows up and then tick the **VEEAM-VAO\VLAB1** check box.
-18. [] Click the **Assign** button in the **DataLabs** pane.
-19. [] Select the **Phoenix\SharePoint Administrators** scope.
-20. [] Click the **OK** button.
+13. [] Review the list of default steps provided by Veeam, these cannot be deleted - only custom steps can be deleted. Tick the **Prepare DC for Test Lab** check box.
+14. [] Tick the **Verify DNS Port** check box.
+15. [] Tick the **Verify Domain Controller** check box.
+16. [] Tick the **Verify Exchange Mailbox** check box.
+17. [] Tick the **Verify Exchange MAPI Connectivity** check box.
+18. [] Tick the **Verify Exchange Services** check box.
+19. [] Tick the **Verify Global Catalog Port** check box.
+20. [] Tick the **Verify Mail Server Port** check box.
+21. [] Click the **Exclude** button in the **Steps** pane.
+22. []  Click the **Credentials** tab.
+23. [] Tick the **administrator@vmce.lab** check box so that it can be used in plans.
+24. [] Click the **Include** button in the **Credentials** pane.
+25. [] Navigate to the **DataLab Allocation** view.
+26. [] Verify the **VLAB1** DataLab created earlier shows up and then tick the **VEEAM-VAO\VLAB1** check box.
+27. [] Click the **Assign** button in the **DataLabs** pane.
+28. [] Select the **Phoenix\SharePoint Administrators** scope.
+29. [] Click the **OK** button.
 
 ===
 
