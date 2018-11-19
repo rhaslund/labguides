@@ -9,7 +9,7 @@ Module 5: User Interface, User Roles & Licensing
 3. [] Click the **Login** button
 4. [] Click the **Administration** button in the top right corner.
 5. [] Navigate to the **Users and Scopes** view.
-6. [] Notice how the help system automatically opens. Click the **toggle** button to disable the Suggest help topics automatically feature.
+6. [] Notice how the help system automatically opens. Click the **Suggest help topics automatically** toggle button to disable the automatic help system feature.
 7. [] Click the **X** in the Users and Scopes help window.
 > Note: You can always click the Info icon in the bottom left corner to see these tips.
 
