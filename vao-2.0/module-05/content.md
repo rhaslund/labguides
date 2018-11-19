@@ -57,7 +57,7 @@ Module 5: User Interface, User Roles & Licensing
 17. [] Select the **esx02.vmce.lab** host.
 18. [] Click the **OK** button.
 19. [] Click the **Next** button on the **Destination** step.
-20. [] Modify restore points to keep to +++1+++ (one).
+20. [] Lower restore points to keep to +++1+++ (one).
 21. [] Click the **Next** button on the **Job Settings** step.
 22. [] Keep the defaults on the Data Transfer step and click the **Next** button.
 23. [] Tick the **Enable application-aware processing** check box.
