@@ -85,7 +85,7 @@ Module 6: Configuration
 
 # Lab 6.4: Configure plan components
 
-2. [] Navigate to the **Plan Components** view.
+1. [] Navigate to the **Plan Components** view.
 3. [] Verify you see VM groups named **mission critical – exchange servers** and **mission critical – sharepoint servers** and that they are both enabled. Each VM group represents a vSphere tag. Tags are by default collected every three hours from your production environment. After you enable VM groups for a Veeam Availability Orchestrator site, you can add these groups to failover plans for the site. Click the **Default** text link in the **Scopes** pane at the top.
 4. [] Untick the **Default** checkbox in the **Scope** pane.
 5. [] Tick the **SharePoint Administrators** checkbox in the **Scope** pane.
