@@ -71,6 +71,7 @@ Module 5: User Interface, User Roles & Licensing
 31. [] Click the **Apply** button on the **Schedule** step.
 32. [] Tick the **Run the job when I click Finish** check box.
 33. [] Click the **Finish** button on the **Summary** step.
+> Do not wait for the jobs to complete before moving to the next lab exercise.
 
 ===
 
@@ -128,7 +129,7 @@ Module 5: User Interface, User Roles & Licensing
 43. [] Do **not** schedule the job and click the **Apply** button on the **Schedule** step.
 44. [] Tick the **Run the job when I click Finish button** check box.
 45. [] Click the **Finish** button.
-> Do not wait for the job to complete before moving to the next lab exercise.
+> Do not wait for the jobs to complete before moving to the next lab exercise.
 
 ===
 
@@ -154,7 +155,7 @@ Module 5: User Interface, User Roles & Licensing
 18. [] Click the **Apply** button on the **Schedule** step.
 19. [] Tick the **Run the job when I click Finish** check box.
 20. [] Click on the **Finish** button on the **Summary** step.
->Note: Do not wait for the jobs to complete.
+> Do not wait for the jobs to complete before moving to the next lab exercise.
 
 ===
 
