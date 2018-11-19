@@ -79,3 +79,30 @@ Module 6: Configuration
 18. [] Click the **Add** button.
 19. [] Keep the default values and click the **Next** button on the **Network Resources** step.
 20. [] Click the **Finish** button on the **Summary** step.
+
+===
+
+# Lab 6.4: Configure plan components
+
+## Step 1: Configuring notifications
+
+1. [] Switch back to the previously minimized **Veeam Availability Orchestrator** window.
+2. [] Navigate to the **Plan Components** view.
+3. [] Verify you see VM groups named **mission critical – exchange servers** and **mission critical – sharepoint servers** and that they are both enabled. Each VM group represents a vSphere tag. Tags are by default collected every three hours from your production environment. After you enable VM groups for a Veeam Availability Orchestrator site, you can add these groups to failover plans for the site. Click the **Default** text link in the **Scopes** pane at the top.
+4. [] Untick the **Default** checkbox in the **Scope** pane.
+5. [] Tick the **SharePoint Administrators** checkbox in the **Scope** pane.
+6. [] Click the **OK** button.
+7. [] Tick the **mission critical vms – sharepoint servers** checkbox in the **VM Groups** pane.
+8. [] Click the **Include** button.
+9. [] Click the **Recovery Locations** tab.
+10. [] Tick the **DR Site** checkbox.
+11. [] Click the **Include** button.
+12. [] Click the **Plan Steps** tab.
+13. [] Review the list of default steps provided by Veeam, these cannot be deleted - only custom steps can be deleted. Click the **Credentials** tab.
+14. [] Tick the **administrator@vmce.lab** check box so that it can be used in plans.
+15. [] Click the **Include** button in the **Credentials** pane.
+16. [] Navigate to the **DataLab Allocation** view.
+17. [] Verify the **VLAB1** DataLab created earlier shows up and then tick the **VEEAM-VAO\VLAB1** check box.
+18. [] Click the **Assign** button in the **DataLabs** pane.
+19. [] Select the **Phoenix\SharePoint Administrators** scope.
+20. [] Click the **OK** button.
