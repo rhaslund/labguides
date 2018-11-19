@@ -109,7 +109,7 @@ Module 6: Configuration
 23. [] Tick the **administrator@vmce.lab** check box so that it can be used in plans.
 24. [] Click the **Include** button in the **Credentials** pane.
 25. [] Navigate to the **DataLab Allocation** view.
-26. [] Verify the **VLAB1** DataLab created earlier shows up and then tick the **VEEAM-VAO\VLAB1** check box.
+26. [] Verify the **VLAB1** and **VLAB2** DataLabs created earlier shows up and then tick the **VEEAM-VAO\VLAB1** check box.
 27. [] Click the **Assign** button in the **DataLabs** pane.
 28. [] Select the **Phoenix\SharePoint Administrators** scope.
 29. [] Click the **OK** button.
