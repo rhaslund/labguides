@@ -33,6 +33,7 @@ This lab is expected to last a maximum of 25 minutes including lab launch.
 4. [] Click the **Next** button on the Welcome step.
 5. [] Keep the default selection of **DR Site** and click the **Next** button.
 > Note: Site type cannot be changed after initial configuration.
+
 6. [] Enter name: +++Phoenix+++, site description: +++Disaster Recovery site+++, contact name: +++John Doe+++, and contact email: +++administrator@vmce.lab+++.
 7. [] Click the **Next** button.
 8. [] Click the **Add** button.
