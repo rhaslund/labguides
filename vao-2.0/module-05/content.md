@@ -101,9 +101,9 @@ Module 5: User Interface, User Roles & Licensing
 31. [] Click the **Next** button on the **Network** step.
 32. [] Click the **Add...** button.
 33. [] Enter the following settings:
-Source VM IP address: 192.168.1.*
-Target VM IP address to 192.168.2.*
-Default gateway: 192.168.2.1
-Preferred DNS server: 192.168.2.4
-Alternate DNS server: 192.168.1.101
+Source VM IP address: **192.168.1.\***
+Target VM IP address: **192.168.2.\***
+Default gateway: **192.168.2.1**
+Preferred DNS server: **192.168.2.4**
+Alternate DNS server: **192.168.1.101**
 34. [] Click the **OK** button.
