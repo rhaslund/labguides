@@ -17,7 +17,7 @@ Module 5: User Interface, User Roles & Licensing
 9. [] Click the **Details...** text link next to the **Status** row.
 10. [] Verify the license is valid and that zero licenses have been consumed then click the **OK** button.
 11. [] Navigate to the **Welcome** view.
-12. [] Notice that the first to-do list item of Deploy VAO agent to the Veeam Backup & Replication server. is not completed. This is because no replication jobs have been set up yet. Notice that the third to-do list item is also not completed. This is because we didn't create any virtual labs yet in Veeam Backup & Replication. Close the **Veeam Availability Orchestrator** window.
+12. [] Notice that the first to-do list item **Deploy VAO agent to the Veeam Backup & Replication server** is not completed. This is because no replication jobs have been set up yet. Notice that the third to-do list item **Configure Veeam DataLabs** is also not completed. This is because we didn't create any virtual labs in Veeam Backup & Replication yet. Close the **Veeam Availability Orchestrator** window.
 
 ===
 
