@@ -5,6 +5,7 @@ Module 5: User Interface, User Roles & Licensing
 1. [] Launch **Veeam Availability Orchestrator** from the desktop.
 2. [] Enter username: +++siteadmin@vmce.lab+++ and password: +++Pa%%w0rd+++.
 >Note: You are no longer able to log in as administrator@vmce.lab since this account does not have sufficient permissions in Veeam Availability Orchestrator.
+
 3. [] Click the **Login** button
 4. [] Click the **Administration** button in the top right corner.
 5. [] Navigate to the **Users and Scopes** view.
