@@ -4,7 +4,7 @@ Module 6: Configuration
 
 # Lab 6.1: Assigning user roles and permissions
 
-1. [] Launch ***Veeam Availability Orchestrator** from the Desktop.
+1. [] Launch **Veeam Availability Orchestrator** from the Desktop.
 2. [] Enter username: +++siteadmin@vmce.lab+++ and password: +++Pa%%w0rd+++.
 3. [] Click the **Login** button.
 >Note: Because the server was just started, the spinning icon may display for up to two minutes while services complete their startup.
