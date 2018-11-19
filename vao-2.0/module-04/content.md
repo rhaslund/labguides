@@ -33,3 +33,14 @@ Click the **Yes** button to logoff the VEEAM-VAO server.
 > Note: Site type cannot be changed after initial configuration.
 6. [] Enter name: +++Phoenix+++, site description: +++Disaster Recovery site+++, contact name: +++John Doe+++, and contact email: +++administrator@vmce.lab+++.
 7. [] Click the **Next** button.
+8. [] Click the **Add** button.
+9. [] Enter account: +++site admin+++.
+10 [] Click the ***Find*** button.
+11. [] Select the discovered account: ***Site Administrator VAO***.
+12. [] Click the **Add** button.
+13. [] Click the **Next** button on the **Choose Site Administrators** step.
+14. [] Click the **Skip** button on the **Deploy VAO agent** step.
+> Note: In a production environment, it would be recommended to deploy Veeam Availability Orchestrator to a separate server than your Veeam backup server. At this step, you would connect either to your Veeam Backup Server or Veeam Backup Enterprise Manager. Since this is a training environment, we will skip this step and utilize the integrated Veeam backup server.
+15. [] Enter server: +++vcenter.vmce.lab+++, username: +++svcVeeam@vsphere.local+++ and password: +++Pa%%w0rd+++.
+16. [] Click the **Finish** button.
+17. [] Wait for the Welcome! Please log in text message and then close the **Veeam Availability Orchestrator** interface.
