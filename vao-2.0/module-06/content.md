@@ -54,12 +54,12 @@ Module 6: Configuration
 18. [] Enter username: +++administrator@vmce.lab+++ and password: +++Pa%%w0rd+++.
 19. [] Click the **Sign in** button.
 20. [] Verify that you see the Veeam Availability Orchestrator test message and close the **Outlook Web Access window**.
-21. [] Switch back to the **Veeam Availability Orchestrator** window in the Windows task bar.
 
 ===
 
 # Lab 6.3: Create a recovery location
 
+1. [] Switch back to the previously minimized **Veeam Availability Orchestrator** window.
 1. [] Navigate to the **Recovery Locations** view.
 2. [] Click the **Add** button.
 3. [] Enter name: +++DR site+++
@@ -85,7 +85,6 @@ Module 6: Configuration
 
 # Lab 6.4: Configure plan components
 
-1. [] Switch back to the previously minimized **Veeam Availability Orchestrator** window.
 2. [] Navigate to the **Plan Components** view.
 3. [] Verify you see VM groups named **mission critical – exchange servers** and **mission critical – sharepoint servers** and that they are both enabled. Each VM group represents a vSphere tag. Tags are by default collected every three hours from your production environment. After you enable VM groups for a Veeam Availability Orchestrator site, you can add these groups to failover plans for the site. Click the **Default** text link in the **Scopes** pane at the top.
 4. [] Untick the **Default** checkbox in the **Scope** pane.
