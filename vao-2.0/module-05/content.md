@@ -156,7 +156,9 @@ Module 5: User Interface, User Roles & Licensing
 
 ===
 
-# Lab 5.5: Prepare Veeam Backup & Replication: Create a new virtual lab
+# Lab 5.5: Prepare Veeam Backup & Replication: Create new virtual labs
+
+## Step 1: Create a virtual lab for SharePoint
 
 1. [] Navigate to the **Backup Infrastructure** view.
 2. [] Select **SureBackup** in the **Backup Infrastructure** navigation pane.
@@ -211,7 +213,61 @@ Module 5: User Interface, User Roles & Licensing
 42. [] Keep the default settings on the **Static Mapping** step and click the **Next** button.
 43. [] Click the **Apply** button on the **Ready to apply** step.
 44. [] Click the **Finish** button on the **Applying Configuration** step.
-45. [] Close the **Veeam Backup & Replication** window.
+
+## Step 1: Create a virtual lab for SharePoint
+
+1. [] Click the **Add Virtual Lab** button.
+2. [] Enter name: +++VLAB2+++.
+3. [] Click the **Next** button on the **Name** step.
+4. [] Click the **Choose...** button.
+5. [] Expand the **vcenter.vmce.lab** object.
+6. [] Expand the **DR** data center.
+7. [] Select the **esx02.vmce.lab** host.
+8. [] Click the **OK** button.
+9. [] Click the **Next** button on the **Host** step.
+10. [] Click the **Choose...** button.
+11. [] Expand the **esx02.vmce.lab** host.
+12. [] Select the **ESX02:Local** datastore.
+13. [] Click the **OK** button.
+14. [] Click the **Next** button on the **Datastore** step.
+15. [] Click the **Configure...** button in the **Production network connection** section.
+16. [] Select the **Use the following IP address** radio button.
+17. [] Enter the following settings:
+ 1. IP address: +++192.168.2.7+++
+ 2. Subnet mask: +++255.255.255.0+++
+ 3. Default gateway: +++192.168.2.1+++
+ 4. Preferred DNS server: +++192.168.2.4+++
+ 5. Alternate DNS server: +++192.168.1.101+++
+
+18. [] Click the **OK** button.
+19. [] Click the **Next** button on the **Proxy** step.
+20. [] Click the **Advanced single-host** radio button.
+21. [] Click the **Next** button on the **Networking** step.
+22. [] Click the **OK** button to ignore the **Unable to resolve default network settings** error.
+23. [] Click the **Add...** button.
+24. [] Click the **Browse...** button.
+25. [] Expand the **vcenter.vmce.lab** object.
+26. [] Expand the **esx02.vmce.lab** host. [BETA2] Select esx01!!!
+27. [] Expand the **vSwitch0** switch.
+28. [] Select the **DR** network. [BETA2] Select PROD LAN!!!
+29. [] Click the **Add** button.
+30. [] Click the **OK** button.
+31. [] Click the **Next** button on the **Isolated Networks** step.
+32. [] Click the **Add...** button.
+33. [] Click the **Choose isolated network** dropdown list.
+34. [] Select **VLAB2 DR (DR)**. [BETA2] Select VLAB2 PROD LAN
+35. [] Click the **OK** button to ignore the **Unable to resolve network settings** warning.
+36. [] Enter:
+ 1. IP address: +++192.168.2.1+++ [BETA2] +++192.168.1.1+++
+ 2. Mask: +++255.255.255.0+++
+
+37. [] Untick the **Enable DHCP service on this interface** check box.
+38. [] Click the **OK** button.
+39. [] Click the **Next** button on the **Network Settings** step.
+40. [] Keep the default settings on the **Static Mapping** step and click the **Next** button.
+41. [] Click the **Apply** button on the **Ready to apply** step.
+42. [] Click the **Finish** button on the **Applying Configuration** step.
+43. [] Close the **Veeam Backup & Replication** window.
 
 ---
 
