@@ -78,3 +78,32 @@ Module 5: User Interface, User Roles & Licensing
 8. [] Expand the **vcenter.vmce.lab** object.
 9. [] Expand the **Production** data center.
 10. [] Expand the **esx01.vmce.lab** host.
+11. [] Select the **Exchange** virtual machine, then hold down the CTRL button and select the **SharePoint** virtual machine.
+12. [] Click the **Add** button.
+13. [] Click the **Next** button on the **Virtual Machines** step.
+14. [] Click the **Choose...** button in the **Host or cluster** section.
+15. [] Expand the **vcenter.vmce.lab** object.
+16. [] Expand the **DR** data center.
+17. [] Select the **esx02.vmce.lab** host.
+18. [] Click the **OK** button.
+19. [] Click the **Next** button on the **Destination** step.
+20. [] Click the **Add...** button.
+21. [] Click the **Browse...** button in the **Source network** section.
+22. [] Expand the **vcenter.vmce.lab** object.
+23. [] Expand the **esx01.vmce.lab** host.
+24. [] Select the **PROD LAN** network.
+25. [] Click the **OK** button.
+26. [] Click the **Browse...** button in the **Target network** section.
+27. [] Expand the **esx02.vmce.lab** host.
+28. [] Select the **DR** network.
+29. [] Click the **OK** button.
+30. [] Click the **OK** button to close the **Network Mapping** window.
+31. [] Click the **Next** button on the **Network** step.
+32. [] Click the **Add...** button.
+33. [] Enter the following settings:
+* Source VM IP address: 192.168.1.*
+* Target VM IP address to 192.168.2.*
+* Default gateway: 192.168.2.1
+* Preferred DNS server: 192.168.2.4
+* Alternate DNS server: 192.168.1.101
+34. [] Click the **OK** button.
