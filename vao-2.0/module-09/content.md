@@ -195,7 +195,7 @@ Availability Orchestrator into the script. Notice **Mandatory=$true** which mean
 4. [] Click the **Verify** button.
 5. [] Select **Run Lab Test**.
 6. [] Click the **Next** button on the **Lab** step.
-7. [] Click the **Next** button on the Reserve Lab step.
+7. [] Click the **Next** button on the **Reserve Lab** step.
 8. [] Select **vao testing only – active directory servers**.
 9. [] Click the **Add** button.
 10. [] Click the **Next** button on the **Choose Lab Groups** step.
