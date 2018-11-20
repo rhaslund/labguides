@@ -219,6 +219,8 @@ Module 8: Working with Orchestration Plans
 5. [] Click the **Next** button on the **Plan Name** step.
 6. [] Select the **Restore** radio button.
 6. [] Click the **Next** button on the **Plan Type** step.
+7. [] Select **DR site**.
+8. [] Click the **Next** button on the **Recovery Location** step.
 7. [] Select **mission critical vms - exchange servers**.
 8. [] Click the **Add** button.
 9. [] Click the **Next** button on the **VM Groups** step.
