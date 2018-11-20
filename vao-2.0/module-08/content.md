@@ -225,13 +225,15 @@ Module 8: Working with Orchestration Plans
 8. [] Click the **Add** button.
 9. [] Click the **Next** button on the **VM Groups** step.
 10. [] Keep the default settings and click the **Next** button on the **VM Recovery Options** step.
-11. [] Select **Ping VM Network**.
+11. [] Hold the keyboard **CTRL** button and select the following items: **Ping VM Network**, **Shutdown Source VM**, **Verify Exchange Services** and **Verify Exchange MAPI Connectivity**.
 12. [] Click the **Add** button.
+13. [] Select **Shutdown Source VM** in the **Steps** pane.
+14. [] Click the **Up arrow** button in the **Steps** pane until **Shutdown Source VM** is the first step listed.
 13. [] Click the **Next** button on the **VM Steps** step.
-14. [] Click the **Next** button on the **Protect VM Groups** step.
+14. [] Keep the default settings and click the **Next** button on the **Protect VM Groups** step.
 15. [] Keep the default settings and click the **Next** button on the **RTO & RPO** step.
-16. [] Click the **Next** button on the **Report Template** step.
-17. [] Click the **Next** button on the **Report Scheduling** step.
+16. [] Keep the default settings and click the **Next** button on the **Report Template** step.
+17. [] Keep the default settings and click the **Next** button on the **Report Scheduling** step.
 18. [] Untick the **Run Readiness Check after Plan creation** check box.
 19. [] Click the **Next** button on the **Readiness Check** step.
 20. [] Click the **Finish** button on the **Summary** step.
@@ -245,8 +247,7 @@ Module 8: Working with Orchestration Plans
 28. [] Tick the **Verify Exchange Services** check box.
 29. [] Tick the **Verify Exchange MAPI Connectivity** check box.
 30. [] Click the **Add** button.
-31. [] Select **Shutdown Source VM** in the **Steps** pane.
-32. [] Click the **Up arrow** button in the **Steps** pane until **Shutdown Source VM** is the first step listed.
+
 33. [] Select the **Verify Exchange Services** step.
 34. [] Select **Windows Credentials** in the **Step Parameters** pane.
 35. [] Click the **NONE** text link in the **Default value** section.
