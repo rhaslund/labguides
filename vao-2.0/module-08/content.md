@@ -246,8 +246,6 @@ Module 8: Working with Orchestration Plans
 18. [] Untick the **Run Readiness Check after Plan creation** check box.
 19. [] Click the **Next** button on the **Readiness Check** step.
 20. [] Click the **Finish** button on the **Summary** step.
-
-
 21. [] Select the **Tier1-Exchange** plan.
 22. [] Click the **Manage** button.
 23. [] Select **Edit**.
@@ -257,7 +255,6 @@ Module 8: Working with Orchestration Plans
 35. [] Click the **NONE** text link in the **Default value** section.
 36. [] Select the **administrator@vmce.lab** credential.
 37. [] Click the **OK** button.
-38. [] Click the **Close** button.
 39. [] Select the **Verify Exchange MAPI Connectivity** step.
 40. [] Select **Windows Credentials** in **Step Parameters** pane.
 41. [] Click the **NONE** text link in the **Default value** section.
