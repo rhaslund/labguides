@@ -15,6 +15,8 @@ Module 8: Working with Orchestration Plans
 7. [] Tick the **VEEAM-VAO\Template Backup Job for VAO** check box.
 8. [] Click the **Include** button in the **Template Jobs** pane.
 9. [] Click the **Exit Administration** button in the top left corner.
+10. [] Click the **Site Administrator VAO** text link in the top right corner.
+11. [] Select **Logout**.
 
 ===
 
