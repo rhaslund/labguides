@@ -117,9 +117,7 @@ Module 8: Working with Orchestration Plans
 3. [] Select **Run Lab Test**.
 4. [] Verify the **VEEAM-VAO\VLAB1** is **Powered Off** and click the **Next** button on the **Lab** step.
 5. [] Keep the default settings and click the **Next** button on the **Reserve Lab** step.
-6. [] Select the **vao testing only - active directory servers** lab group.
-7. [] Click the **Add** button.
-8. [] Click the **Next** button on the **Choose Lab Groups** step.
+6. [] Notice that the **vao testing only - active directory servers** lab group has already been added and is greyed out. This is because a site administrator has added this lab group as a **default lab group**. Click the **Next** button on the **Choose Lab Groups** step.
 9. [] Keep the default settings and click the **Next** button on the **Keep Plan Running** step.
 10. [] Click the **Finish** button on the **Summary** step.
 11. [] Navigate to the **DataLabs** view.
