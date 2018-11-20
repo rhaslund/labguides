@@ -132,10 +132,14 @@ Module 8: Working with Orchestration Plans
 16. [] Select the **Tier1-SharePoint** plan.
 17. [] Select **mission critical vms - sharepoint servers** in the **Plan Group** pane.
 18. [] Select **SHAREPOINT** in the **Virtual Machines** pane.
-19. [] Wait for all steps of the **SHAREPOINT** virtual machine to reach a status of **Completed** with a green checkmark and click the **Left arrow** next to the **Lab Details VEEAM-VAO\VLAB1** text.
+> Note: It can take up to 8 minutes to complete all tests of the SHAREPOINT virtual machine, please have some patience.
+
+19. [] Click the **VM Console** button in the **Virtual Machines** pane.
+20. [] A new tab opens in **Internet Explorer** displaying the virtual machine console of the **SHAREPOINT** server running inside the DataLab. Close the **VM Console** tab in **Internet Explorer**.
+21. [] Wait for all steps of the **SHAREPOINT** virtual machine to reach a status of **Completed** with a green checkmark and click the **Left arrow** next to the **Lab Details VEEAM-VAO\VLAB1** text.
 > Note: The Shutdown Source VM step will be in a Skipped status since this is a test and not a real failover.
 
-20. [] Notice that the **VEEAM-VAO\VLAB1** DataLab is in the **Powered Off** state because the lab test has completed. Navigate to the **Orchestration Plans** view.
+22. [] Notice that the **VEEAM-VAO\VLAB1** DataLab is in the **Powered Off** state because the lab test has completed. Navigate to the **Orchestration Plans** view.
 
 ===
 
