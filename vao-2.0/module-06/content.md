@@ -18,8 +18,9 @@ Module 6: Configuration
 8. [] Click the **Add** button.
 9. [] Select the **SharePoint Administrators** scope.
 10. [] Click the **Add** button in the **Users and Groups** pane.
-11. [] Enter domain: +++VMCE+++
-12. [] Enter account: +++planauthor+++.
+11. [] Enter:
+ 1. Domain: +++VMCE+++
+ 2. Account: +++planauthor+++.
 13. [] Click the ***Find*** button.
 14. [] Select the **Plan Author** account.
 15. [] Click the **Add** button.
