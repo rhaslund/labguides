@@ -82,7 +82,7 @@ Module 8: Working with Orchestration Plans
 
 3. [] Click the **Manage** button.
 4. [] Select **Edit**.
-5. [] Select the **SharePoint** virtual machine.
+5. [] Select the **SHAREPOINT** virtual machine.
 6. [] Click the **Add** button in the **Steps** pane.
 7. [] Tick the **Shutdown Source VM** check box.
 8. [] Scroll down until **Verify SQL Port** is visible.
