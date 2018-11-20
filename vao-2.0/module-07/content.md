@@ -7,6 +7,9 @@ Module 7: DataLabs
 1. [] Launch **Veeam Availability Orchestrator** from the desktop.
 2. [] Enter username: +++siteadmin@vmce.lab+++ and password: +++Pa%%w0rd+++.
 3. [] Click the **Login** button.
+>Note: Because the server was just started, the spinning icon may display for up to two minutes while services complete their startup.
+
+
 4. [] Navigate to the **DataLabs** view.
 5. [] Select the **VEEAM-VAO\VLAB1** DataLab.
 > Note: Do not click on the text link VEEAM-VAO\VLAB1
