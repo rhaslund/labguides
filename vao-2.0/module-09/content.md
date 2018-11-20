@@ -81,7 +81,7 @@ Module 9: Documentation, Custom Scripts & Dashboards
 ## Step 2: Inspect a pre-created custom script
 
 1. [] Launch the **File Explorer** from the **Windows task bar**.
-2. [] Expand **Local Disk (C:)**.
+2. [] Expand **Local Disk \(C:\)**.
 3. [] Select the **Install** folder in the navigation pane.
 4. [] Open the **datetime** Windows PowerShell script.
 5. [] The first section, **Param**, defines Veeam Availability Orchestrator step parameters where data can be sent from Veeam
