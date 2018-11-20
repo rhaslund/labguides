@@ -109,7 +109,19 @@ Availability Orchestrator into the script. Notice **Mandatory=$true** which mean
 
 # Step 3: Load custom script into VAO and add it as a custom step
 
-1. [] 
+1. [] Click the **Administration** button in the top right corner.
+2. [] Navigate to the **Plan Steps view.
+3. [] Click the **Add** button in the **Steps** pane.
+4. [] Enter name: +++Date & Time+++.
+5. [] Click the **Browse...** button.
+6. [] Enter file name: +++C:\Install\datetime.ps1+++.
+7. [] Click the **Open** button.
+8. [] Click the **Next** button on the **Custom Script Step** step.
+9. [] Click the **Next** button on the **Step Visibility** step.
+10. [] Click the **Finish** button on the **Summary** step.
+11. [] Click the **Exit Administration** button in the top left corner.
+12. [] Navigate to the **Orchestration Plans** view.
+13. [] 
 
 ---
 
