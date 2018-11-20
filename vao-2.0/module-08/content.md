@@ -195,6 +195,8 @@ Module 8: Working with Orchestration Plans
 19. [] Keep the default setting and click the **Next** button on the **Readiness Check** step.
 20. [] Click the **Finish** button on the **Summary** step.
 > Note: Notice that resetting an orchestration plan changes the plan from enabled to disabled.
+21. [] Click the **Plan Author** text link in the top right corner.
+22. [] Select **Logout**.
 
 ===
 
@@ -202,6 +204,8 @@ Module 8: Working with Orchestration Plans
 
 ## Step 1: Create a second orchestration plan
 
+2. [] Enter username: +++siteadmin@vmce.lab+++ and password: +++Pa%%w0rd+++.
+3. [] Click the **Login** button.
 1. [] Click the **Manage** button.
 2. [] Select **New**.
 3. [] Click the **Next** button on the **Site Scope** step.
