@@ -225,10 +225,19 @@ Module 8: Working with Orchestration Plans
 8. [] Click the **Add** button.
 9. [] Click the **Next** button on the **VM Groups** step.
 10. [] Keep the default settings and click the **Next** button on the **VM Recovery Options** step.
-11. [] Hold the keyboard **CTRL** button and select the following items: **Ping VM Network**, **Shutdown Source VM**, **Verify Exchange Services** and **Verify Exchange MAPI Connectivity**.
+11. [] Hold the keyboard **CTRL** button and select the following items: **Ping VM Network**, **Shutdown Source VM**, **Verify Exchange Services**, **Verify Exchange MAPI Connectivity** and **Verify Exchange Mailbox***.
 12. [] Click the **Add** button.
 13. [] Select **Shutdown Source VM** in the **Steps** pane.
 14. [] Click the **Up arrow** button in the **Steps** pane until **Shutdown Source VM** is the first step listed.
+> Note: The order of the items should be:
+> Shutdown Source VM
+> Restore VM
+> Check VM Heartbeat
+> Ping VM Network
+> Verify Exchange Services
+> Verify Exchange MAPI Connectivity
+> Verify Exchange Mailbox
+
 13. [] Click the **Next** button on the **VM Steps** step.
 14. [] Keep the default settings and click the **Next** button on the **Protect VM Groups** step.
 15. [] Keep the default settings and click the **Next** button on the **RTO & RPO** step.
@@ -237,17 +246,12 @@ Module 8: Working with Orchestration Plans
 18. [] Untick the **Run Readiness Check after Plan creation** check box.
 19. [] Click the **Next** button on the **Readiness Check** step.
 20. [] Click the **Finish** button on the **Summary** step.
+
+
 21. [] Select the **Tier1-Exchange** plan.
 22. [] Click the **Manage** button.
 23. [] Select **Edit**.
 24. [] Select **EXCHANGE** in the **Virtual Machines** pane.
-25. [] click the **Add** button in the **Steps** pane.
-26. [] Tick the **Shutdown Source VM** check box.
-27. [] Scroll down until **Verify Exchange Services** is visible.
-28. [] Tick the **Verify Exchange Services** check box.
-29. [] Tick the **Verify Exchange MAPI Connectivity** check box.
-30. [] Click the **Add** button.
-
 33. [] Select the **Verify Exchange Services** step.
 34. [] Select **Windows Credentials** in the **Step Parameters** pane.
 35. [] Click the **NONE** text link in the **Default value** section.
