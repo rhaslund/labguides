@@ -101,8 +101,45 @@ Module 8: Working with Orchestration Plans
 25. [] Select **SharePoint URL** in the **Step Parameters** pane.
 26. [] Enter +++http://%vm_fqdn%+++ into the **Default Value** text box.
 27. [] Click the **Save** button under the **Edit Plan Tier1-SharePoint** text.
-28. []
+28. [] Tick the **Perform Plan Readiness Check now** check box.
+29. [] Click the **Save** button.
 
+===
+
+# Lab 8.5: Test the orchestration plan
+
+1. [] Verify the State column of the **Tier1-SharePoint** plan is in **Verified (passed check)** state. Select the **Tier1-SharePoint** plan.
+2. [] Click the **Verify** button.
+3. [] Select **Run Lab Test**.
+4. [] Verify the **VEEAM-VAO\VLAB1** is **Powered Off** and click the **Next** button on the **Lab** step.
+5. [] Keep the default settings and click the **Next** button on the **Reserve Lab** step.
+6. [] Select the **vao testing only - active directory servers** lab group.
+7. [] Click the **Add** button.
+8. [] Click the **Next** button on the **Choose Lab Groups** step.
+9. [] Keep the default settings and click the **Next** button on the **Keep Plan Running** step.
+10. [] Click the **Finish** button on the **Summary** step.
+11. [] Navigate to the **DataLabs** view.
+12. [] Click the **VEEAM-VAO\VLAB1** text link in the **Lab** column.
+13. [] Select the **vao testing only - active directory servers** lab group.
+14. [] Select the **DC02** virtual machine.
+15. [] Wait for all steps of the **DC02** virtual machine to reach a status of **Completed** with a green checkmark (scroll left if the **Plan** is not visible).
+16. [] Select the **Tier1-SharePoint** plan.
+17. [] Select **mission critical vms - sharepoint servers** in the **Plan Group** pane.
+18. [] Select **SHAREPOINT** in the **Virtual Machines** pane.
+19. [] Wait for all steps of the **SHAREPOINT** virtual machine to reach a status of **Completed** with a green checkmark and click the **Left arrow** next to the **Lab Details VEEAM-VAO\VLAB1** text.
+> Note: The Shutdown Source VM step will be in a Skipped status since this is a test and not a real failover.
+
+20. [] Notice that the **VEEAM-VAO\VLAB1** DataLab is in the **Powered Off** state because the lab test has completed. Navigate to the **Orchestration Plans** view.
+
+===
+
+# Lab 8.6: Launch orchestration plan
+
+1. [] Verify that the **Tier1-SharePoint** plan **State** column displays **Verified (passed test and check)** and select the **Tier1-SharePoint** plan.
+> Note: While you can force a orchestration plan to launch even if it is not enabled, it is best practice to enable a orchestration plan once it has been created, tested and deemed ready for use during a disaster.
+
+2. [] Click the **Manage** button.
+3. [] 
 
 ---
 
