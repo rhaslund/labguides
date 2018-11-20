@@ -184,6 +184,8 @@ Module 8: Working with Orchestration Plans
 10. [] Select **SHAREPOINT** in the **Virtual Machines** pane.
 11. [] Select **Process Replica VM** in the **Steps** pane.
 12. [] Wait for the **Step Details** pane to display the following step: **Process Replica VM execution finished**. Verify in the top left corner that **Undo Failover** displays a green checkmark, that the status is **Complete**, that there are no errors or warnings, and then click the **Left arrow** button.
+> Note: This process can take up to 4 minutes, please have some patience.
+
 13. [] Select the **Tier1-SharePoint** plan.
 14. [] Notice that the **State** column displays that the **Tier1-SharePoint** plan is in the **Undo Failover** state and click the **Manage** button.
 15. [] Select **Reset**.
