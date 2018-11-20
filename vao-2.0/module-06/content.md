@@ -97,11 +97,9 @@ Module 6: Configuration
 11. [] Click the **Include** button.
 12. [] Click the **Plan Steps** tab.
 13. [] Review the list of default steps provided by Veeam, these cannot be deleted - only custom steps can be deleted. Tick the **Verify DNS Port** check box.
-15. [] Tick the **Verify Domain Controller** check box.
 16. [] Tick the **Verify Exchange Mailbox** check box.
 17. [] Tick the **Verify Exchange MAPI Connectivity** check box.
 18. [] Tick the **Verify Exchange Services** check box.
-19. [] Tick the **Verify Global Catalog Port** check box.
 20. [] Tick the **Verify Mail Server Port** check box.
 21. [] Click the **Exclude** button in the **Steps** pane.
 22. []  Click the **Credentials** tab.
