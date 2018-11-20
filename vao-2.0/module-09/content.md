@@ -121,10 +121,10 @@ Availability Orchestrator into the script. Notice **Mandatory=$true** which mean
 10. [] Click the **Finish** button on the **Summary** step.
 11. [] Click the **Exit Administration** button in the top left corner.
 12. [] Navigate to the **Orchestration Plans** view.
-13. [] Select the **Tier1-Exchange** plan.
+13. [] Select the **Tier1-SharePoint** plan.
 14. [] Click the **Manage** button.
 15. [] Select **Edit**.
-16. [] Select **EXCHANGE** in the **Virtual Machines** pane.
+16. [] Select **SHAREPOINT** in the **Virtual Machines** pane.
 17. [] Click the **Add** button in the **Steps** pane.
 18. [] Tick the **Date & Time** check box.
 19. [] Click the **Add** button.
@@ -141,17 +141,17 @@ Availability Orchestrator into the script. Notice **Mandatory=$true** which mean
 
 ## Step 4: Test failover plan
 
-1. [] Select the **Tier1-Exchange** plan.
+1. [] Select the **Tier1-SharePoint** plan.
 2. [] Click the **Verify** button.
 3. [] Select **Run Lab Test**.
 4. [] Click the **Next** button on the **Lab** step.
 5. [] Click the **Next** button on the **Reserve Lab** step.
 6. [] Click the **Next** button on the **Keep Plan Running** step.
 7. [] Click the **Finish** button on the **Summary** step.
-8. [] Click the **Tier1-Exchange** text link in the **Plan** column.
-9. [] Select the **Tier1-Exchange** plan.
-10. [] Select **mission critical vms - exchange servers** in the **Plan Groups** pane.
-11. [] Select **EXCHANGE** in the **Virtual Machines** pane.
+8. [] Click the **Tier1-SharePoint** text link in the **Plan** column.
+9. [] Select the **Tier1-SharePoint** plan.
+10. [] Select **mission critical vms - sharepoint servers** in the **Plan Groups** pane.
+11. [] Select **SHAREPOINT** in the **Virtual Machines** pane.
 12. [] Select **Date & Time** in the **Steps** pane.
 13. [] Follow the progress in the **Step Details** pane. The error message **Cannot process command** is a result of one or more missing mandatory parameters: **planName**.". This is because the script contains two mandatory parameters: **$planName** and **$planState**. To add the missing step parameters, click the **Administration** button in the top right corner.
 14. [] Select **Date & Time** in the Steps pane.
@@ -172,24 +172,51 @@ Availability Orchestrator into the script. Notice **Mandatory=$true** which mean
 29. [] Tick the **Globally push the new default values into all Plans on all Sites** check box.
 30. [] Click the **Save** button.
 31. [] Click the **Exit Administration** button in the top left corner.
-32. [] Select the **Tier1-Exchange** plan.
+32. [] Select the **Tier1-SharePoint** plan.
 33. [] Click the **Verify** button.
 34. [] Select **Run Lab Test**.
 35. [] Click the **Next** button on the **Lab** step.
 36. [] Click the **Next** button on the **Reserve Lab** step.
 37. [] Click the **Next** button on the **Keep Plan Running** step.
 38. [] Click the **Finish** button on the **Summary** step.
-39. [] Click the **Tier1-Exchange** text link in the **Plan** column.
-40. [] Select the **Tier1-Exchange** plan.
-41. [] Select **mission critical vms - exchange servers** in the **Plan Groups** pane.
-42. [] Select **EXCHANGE** in the **Virtual Machines** pane.
+39. [] Click the **Tier1-SharePoint** text link in the **Plan** column.
+40. [] Select the **Tier1-SharePoint** plan.
+41. [] Select **mission critical vms - sharepoint servers** in the **Plan Groups** pane.
+42. [] Select **SHAREPOINT** in the **Virtual Machines** pane.
 43. [] Select **Date & Time** in the **Steps** pane.
 44. [] Wait for the **Date & Time** step execution to finish and launch **File Explorer** from the Windows task bar.
 45. [] Expand **Local Disk (C:)** in the left side **Navigation** pane.
 46. [] Select the **utils** folder in the left side **Navigation** pane.
 47. [] Notice two files now exist in the folder: **vao_log.txt** and **vao_test.log**. Double-click on the **vao_test** text document.
-48. [] 
+48. [] Verify that the step parameters and variables have been properly passed from Veeam Availability Orchestrator into the script. The expected output is: **Plan name is Tier1-SharePoint and state is Testing Processing**. Close the **Notepad** window.
+49. [] Close the **File Explorer** window.
+50. [] Navigate to the **DataLabs** view.
+51. [] Click the **Power Off** button.
+52. [] Click the **Power Off** button to confirm powering off the DataLab.
 
+===
+
+# Lab 9.5: Veeam Availability Orchestrator dashboards
+
+1. [] Navigate to the **Dashboard** view.
+> Note: **Plan Execution** chart displays orchestration plan execution results: the number of halted plans, the number of plans completed successfully, the number of plans completed with warnings and the number of plans that have not run yet. The worst state of a plan execution is **Halted**. It means that the plan has stopped processing because of a critical error. 
+> **Plan Readiness Check** chart represents the results of readiness check for all plans: the number of failed checks, the number of checks completed successfully, the number of checks completed with warnings and the number of plans that have not been checked yet. The worst state of a plan readiness check is **Failed**. It means that the plan is not in the ready-to-run state.
+> **Plan Testing** chart provides the results of plan testing in a DataLab: the number of failed plan tests, the number of plan tests completed successfully, the number of plan tests completed with warnings and the number of plans that have not been tested yet. The worst state of a plan testing is **Failed**. It means that the test has stopped because of a critical error for a critical VM in the lab.
+
+2. [] Notice that the **Plan Testing** dashboard shows one plan is in a never tested state. Click the **Plan Testing** dashboard.
+3. [] Select the **Plan** that has never been tested.
+4. [] Click the **Verify** button.
+5. [] Select **Run Lab Test**.
+6. [] Click the **Next** button on the **Lab** step.
+7. [] Click the **Next** button on the Reserve Lab step.
+8. [] Select **vao testing only – active directory servers**.
+9. [] Click the **Add** button.
+10. [] Click the **Next** button on the **Choose Lab Groups** step.
+11. [] Click the **Next** button on the **Keep Plan Running** step.
+12. [] Click the **Finish** button on the **Summary** step.
+13. [] Click the **Tier1-Exchange** text link in the **Plan** column.
+14. [] Wait for the **Plan** test to successfully complete - this can take up to 10 minutes. Once the **Plan** test is completed, navigate to the **Dashboard** view.
+15. [] Verify that the **Plan Testing** dashboard is indicating all **Plans** are in a **Passed** state.
 
 ---
 
