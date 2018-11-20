@@ -162,6 +162,29 @@ Module 8: Working with Orchestration Plans
 # Lab 8.7: Undo failover
 
 1. [] Navigate to the **Orchestration Plans** view.
+2. [] Select the **Tier1-SharePoint** plan.
+3. [] Click the **Launch** button.
+4. [] Select **Undo**.
+5. [] Enter password: +++Pa%%w0rd+++.
+6. [] Click the **Next** button on the **Enter Credentials** step.
+7. [] Verify the action is **Undo Failover (Force)** and then click the **Finish** button on the **Summary* step.
+8. [] Click the **Tier1-SharePoint** text link in the **Plan** column.
+9. [] Select **mission critical vms - sharepoint servers** in the **Plan Group** pane.
+10. [] Select **SHAREPOINT** in the **Virtual Machines** pane.
+11. [] Select **Process Replica VM** in the **Steps** pane.
+12. [] Wait for the **Step Details** pane to display the following step: **Process Replica VM execution finished**. Verify in the top left corner that **Undo Failover** displays a green checkmark, that the status is **Complete**, that there are no errors or warnings, and then click the **Left arrow** button.
+13. [] Select the **Tier1-SharePoint** plan.
+14. [] Notice that the **State** column displays that the **Tier1-SharePoint** plan is in the **Undo Failover** state and click the **Manage** button.
+15. [] Select **Reset**.
+16. [] Enter password: +++Pa%%w0rd+++
+17. [] Click the **Next** button on the **Enter Credentials** step.
+18. [] Keep the default setting and click the **Next** button on the Reset Actions step.
+19. [] Keep the default setting and click the **Next** button on the **Readiness Check** step.
+20. [] Click the **Finish** button on the **Summary** step.
+
+===
+
+
 
 ---
 
