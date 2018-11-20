@@ -30,7 +30,7 @@ Module 7: DataLabs
 19. [] Click the **Finish** button on the **Summary** step.
 20. [] Click the **Save** button.
 21. [] Click the **OK** button to confirm saving the changes to the DataLab configuration.
-22. [] Click the **Left arrow** button next to the **Edit Lab: VEEAM-VAO\VLAB1** text.
+22. [] Click the **Left arrow** button next to the **Edit Lab VEEAM-VAO\VLAB1** text.
 
 ===
 
