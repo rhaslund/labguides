@@ -224,7 +224,7 @@ Module 8: Working with Orchestration Plans
 7. [] Select **mission critical vms - exchange servers**.
 8. [] Click the **Add** button.
 9. [] Click the **Next** button on the **VM Groups** step.
-10. [] Click the **Next** button on the **VM Recovery Options** step.
+10. [] Keep the default settings and click the **Next** button on the **VM Recovery Options** step.
 11. [] Select **Ping VM Network**.
 12. [] Click the **Add** button.
 13. [] Click the **Next** button on the **VM Steps** step.
