@@ -57,7 +57,7 @@ Module 8: Working with Orchestration Plans
 # Lab 8.3: Perform initial readiness check
 
 1. [] Select the newly created **Tier1-SharePoint** plan.
-> Note: Do not click on the Tier1-SharePoint text link.
+> Note: Do not click the Tier1-SharePoint text link.
 
 2. [] Click the **Verify** button.
 3. [] Select **Run Readiness Check**.
