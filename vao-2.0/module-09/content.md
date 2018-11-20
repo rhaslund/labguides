@@ -20,7 +20,7 @@ Module 9: Documentation, Custom Scripts & Dashboards
 
 ===
 
-# Lab 9.2: Customize report template
+# Lab 9.2: Customize the report template
 
 1. [] Select the newly created **VMCE Template** in the **Templates** pane.
 2. [] Click the **Edit** button.
@@ -86,7 +86,7 @@ Module 9: Documentation, Custom Scripts & Dashboards
 1. [] Navigate to the **DataLabs** view.
 2. [] Click the **VEEAM-VAO\VLAB1** text link.
 3. [] Click the **Run** button to launch the lab so it can start loading in the background and will be ready for later steps in this lab exercise.
-4. [] Verify the **vao testing only - active directory servers** lab group is already added due to it's status as **default lab group** then click the Next button on the **Choose Lab Groups** step.
+4. [] Verify the **vao testing only - active directory servers** lab group is already added due to its status as **default lab group** then click the Next button on the **Choose Lab Groups** step.
 5. [] Click the **Finish** button on the **Summary* step.
 
 ===
@@ -95,7 +95,7 @@ Module 9: Documentation, Custom Scripts & Dashboards
 
 1. [] Launch the **File Explorer** from the **Windows task bar**.
 2. [] Expand **Local Disk (C:)**.
-3. [] Select the **Install** folder in navigation pane.
+3. [] Select the **Install** folder in the navigation pane.
 4. [] Open the **datetime** Windows PowerShell script.
 5. [] The first section, **Param**, defines Veeam Availability Orchestrator step parameters where data can be sent from Veeam
 Availability Orchestrator into the script. Notice **Mandatory=$true** which means the script will be halted if those step parameters have not been defined in Veeam Availability Orchestrator. The **Add-Content** commands will write data into a folder, in this example c:\utils, which must exist. Otherwise, the command will fail. The **Write-Host** command will write to the **Failover Plan** report, allowing the script to provide information back into **Veeam Availability Orchestrator**. Close the **Notepad** window.
@@ -145,6 +145,51 @@ Availability Orchestrator into the script. Notice **Mandatory=$true** which mean
 2. [] Click the **Verify** button.
 3. [] Select **Run Lab Test**.
 4. [] Click the **Next** button on the **Lab** step.
+5. [] Click the **Next** button on the **Reserve Lab** step.
+6. [] Click the **Next** button on the **Keep Plan Running** step.
+7. [] Click the **Finish** button on the **Summary** step.
+8. [] Click the **Tier1-Exchange** text link in the **Plan** column.
+9. [] Select the **Tier1-Exchange** plan.
+10. [] Select **mission critical vms - exchange servers** in the **Plan Groups** pane.
+11. [] Select **EXCHANGE** in the **Virtual Machines** pane.
+12. [] Select **Date & Time** in the **Steps** pane.
+13. [] Follow the progress in the **Step Details** pane. The error message **Cannot process command** is a result of one or more missing mandatory parameters: **planName**.". This is because the script contains two mandatory parameters: **$planName** and **$planState**. To add the missing step parameters, click the **Administration** button in the top right corner.
+14. [] Select **Date & Time** in the Steps pane.
+15. [] Click the **Add** button in the **Step Parameters** pane.
+16. [] Enter name: +++planName+++
+17. [] Click the ***...*** button next to the **Default Value** text field.
+18. [] Review the list of available variables and double-click on the **%plan_name%** variable.
+19. [] Click the **Save** button.
+20. [] Click the **Save** button in the **Step Parameters** pane.
+21. [] Tick the **Globally push the new default values into all Plans on all Sites** check box.
+22. [] Click the **Save** button.
+23. [] Click the **Add** button in the **Step Parameters** pane.
+24. [] Enter name: +++planState+++
+25. [] Click the ***...*** button next to the ***Default Value*** text field.
+26. [] Double-click the **%plan_state%** variable.
+27. [] Click the **Save** button.
+28. [] Click the **Save** button in the **Step Parameters** pane.
+29. [] Tick the **Globally push the new default values into all Plans on all Sites** check box.
+30. [] Click the **Save** button.
+31. [] Click the **Exit Administration** button in the top left corner.
+32. [] Select the **Tier1-Exchange** plan.
+33. [] Click the **Verify** button.
+34. [] Select **Run Lab Test**.
+35. [] Click the **Next** button on the **Lab** step.
+36. [] Click the **Next** button on the **Reserve Lab** step.
+37. [] Click the **Next** button on the **Keep Plan Running** step.
+38. [] Click the **Finish** button on the **Summary** step.
+39. [] Click the **Tier1-Exchange** text link in the **Plan** column.
+40. [] Select the **Tier1-Exchange** plan.
+41. [] Select **mission critical vms - exchange servers** in the **Plan Groups** pane.
+42. [] Select **EXCHANGE** in the **Virtual Machines** pane.
+43. [] Select **Date & Time** in the **Steps** pane.
+44. [] Wait for the **Date & Time** step execution to finish and launch **File Explorer** from the Windows task bar.
+45. [] Expand **Local Disk (C:)** in the left side **Navigation** pane.
+46. [] Select the **utils** folder in the left side **Navigation** pane.
+47. [] Notice two files now exist in the folder: **vao_log.txt** and **vao_test.log**. Double-click on the **vao_test** text document.
+48. [] 
+
 
 ---
 
