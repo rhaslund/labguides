@@ -29,7 +29,19 @@ Module 9: Documentation, Custom Scripts & Dashboards
  2. Password: +++Pa%%w0rd+++
 
 4. [] Click the **OK** button.
-5. [] 
+5. [] Ignore the warning about regions that overlap and click the **OK** button.
+6. [] Click the **View** tab on the Microsoft Word ribbon.
+7. [] Select **Edit Document**.
+8. [] Select the Veeam logo in the Word document.
+9. [] Press the **Delete** button on your keyboard.
+10. [] Click the **Insert** tab on the Microsoft Word ribbon.
+11. [] Click the **Pictures** button.
+12. [] Enter file name: +++C:\Install\logo.jpg+++
+13. [] Click the **Insert** button.
+14. [] Close the **Microsoft Word** window.
+15. [] Click the **Save** button to confirm saving changes to **VMCE template**.
+16. [] Select the **Veeam Default Template** in the Templates pane.
+17. [] Select the **VMCE Template** in the **Templates** pane and notice that the logo is now updated.
 
 ---
 
