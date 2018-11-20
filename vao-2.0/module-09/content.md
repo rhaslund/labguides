@@ -84,6 +84,32 @@ Module 9: Documentation, Custom Scripts & Dashboards
 ## Step 1: Prepare for later testing
 
 1. [] Navigate to the **DataLabs** view.
+2. [] Click the **VEEAM-VAO\VLAB1** text link.
+3. [] Click the **Run** button to launch the lab so it can start loading in the background and will be ready for later steps in this lab exercise.
+4. [] Verify the **vao testing only - active directory servers** lab group is already added due to it's status as **default lab group** then click the Next button on the **Choose Lab Groups** step.
+5. [] Click the **Finish** button on the **Summary* step.
+
+===
+
+## Step 2: Inspect a pre-created custom script
+
+1. [] Launch the **File Explorer** from the **Windows task bar**.
+2. [] Expand **Local Disk (C:)**.
+3. [] Select the **Install** folder in navigation pane.
+4. [] Open the **datetime** Windows PowerShell script.
+5. [] The first section, **Param**, defines Veeam Availability Orchestrator step parameters where data can be sent from Veeam
+Availability Orchestrator into the script. Notice **Mandatory=$true** which means the script will be halted if those step parameters have not been defined in Veeam Availability Orchestrator. The **Add-Content** commands will write data into a folder, in this example c:\utils, which must exist. Otherwise, the command will fail. The **Write-Host** command will write to the **Failover Plan** report, allowing the script to provide information back into **Veeam Availability Orchestrator**. Close the **Notepad** window.
+6. [] Let's create the c:\utils folder used by the script. In the **File Explorer** window, please click the **Left arrow** button in the top left corner to navigate back to root **C:\**.
+7. [] Click the **Home** menu in the **File Explorer** window.
+8. [] Click the **New folder** button.
+9. [] Change the folder name from **New Folder** to +++utils+++ and press the **Enter** button on the keyboard.
+10. [] Verify the folder name is **utils** and then close the **File Explorer** window.
+
+===
+
+# Step 3: Load custom script into VAO and add it as a custom step
+
+1. [] 
 
 ---
 
