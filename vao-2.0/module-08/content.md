@@ -279,7 +279,7 @@ Module 8: Working with Orchestration Plans
 7. [] Select the **Schedule after** radio button.
 8. [] Click the **Choose a Plan...*** text link.
 9. [] Select **Tier1-Exchange** in the **Available Plans** pane.
-> Note: If the list of available plans is empty, you forgot to enable the Tier1-Exchange Failover Plan at the end of step 1.
+> Note: If the list of available plans is empty, you forgot to enable the Tier1-Exchange Orchestration Plan at the end of step 1.
 
 10. [] Click the **OK** button.
 11. [] Click the **Next** button on the **Options** step.
