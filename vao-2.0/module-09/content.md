@@ -107,7 +107,7 @@ Availability Orchestrator into the script. Notice **Mandatory=$true** which mean
 
 ===
 
-# Step 3: Load custom script into VAO and add it as a custom step
+## Step 3: Load custom script into VAO and add it as a custom step
 
 1. [] Click the **Administration** button in the top right corner.
 2. [] Navigate to the **Plan Steps view.
@@ -121,7 +121,25 @@ Availability Orchestrator into the script. Notice **Mandatory=$true** which mean
 10. [] Click the **Finish** button on the **Summary** step.
 11. [] Click the **Exit Administration** button in the top left corner.
 12. [] Navigate to the **Orchestration Plans** view.
-13. [] 
+13. [] Select the **Tier1-Exchange** plan.
+14. [] Click the **Manage** button.
+15. [] Select **Edit**.
+16. [] Select **EXCHANGE** in the **Virtual Machines** pane.
+17. [] Click the **Add** button in the **Steps** pane.
+18. [] Tick the **Date & Time** check box.
+19. [] Click the **Add** button.
+20. [] Select the **Date & Time** step.
+21. [] Select **Common Parameters** in the **Step Parameters** pane.
+22. [] Click the **Test Action** drop-down menu.
+23. [] Select **Execute**.
+24. [] Modify number of **Retries** from **10** to +++0+++.
+25. [] Click the **Save** button in the **Step Parameters** pane.
+26. [] Tick the **Perform Plan Readiness Check now** check box.
+27. [] Click the **Save** button.
+
+===
+
+## Step 4: Test failover plan
 
 ---
 
