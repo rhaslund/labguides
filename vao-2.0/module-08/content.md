@@ -124,8 +124,10 @@ Module 8: Working with Orchestration Plans
 12. [] Click the **VEEAM-VAO\VLAB1** text link in the **Lab** column.
 13. [] Select the **vao testing only - active directory servers** lab group.
 14. [] Select the **DC02** virtual machine.
-15. [] Wait for all steps of the **DC02** virtual machine to reach a status of **Completed** with a green checkmark (scroll left if the **Plan** is not visible).
 > Note: It can take up to 6 minutes to fully start the Lab Appliance, please have some patience.
+
+15. [] Wait for all steps of the **DC02** virtual machine to reach a status of **Completed** with a green checkmark (scroll left if the **Plan** is not visible).
+> Note: It can take up to 8 minutes to complete all tests of the DC02 virtual machine, please have some patience.
 
 16. [] Select the **Tier1-SharePoint** plan.
 17. [] Select **mission critical vms - sharepoint servers** in the **Plan Group** pane.
