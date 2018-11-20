@@ -38,6 +38,12 @@ Module 7: DataLabs
 3. [] Notice that the **vao testing only – active directory servers** Lab Group has already been added and that it is not possible to remove it. This is because you as a site administrator earlier added this lab group as a **default lab group**. Click the **Next** button on the **Choose Lab Groups** step.
 4. [] Click the **Finish** button on the **Summary** step.
 5. [] Select **Lab Appliance** in the **Lab Groups** pane.
+6. [] Wait for the **Lab Appliance Details** section to display: **DataLab appliance powered on successfully** (this can take up to three minutes). Select **vao testing only - active directory servers** in the **Lab Groups** pane.
+7. [] Select **DC02** in the **Virtual Machines** pane.
+8. [] Wait for all items in the **Steps** pane to be marked **Completed** with a green checkmark. Click the **Left arrow** button next to the **Lab Details: VEEAM-VAO\VLAB1** text.
+9. [] Click the **Power Off** button.
+10. [] Click the **Power Off** button to confirm powering off the DataLab.
+11. [] Close the **Veeam Availability Orchestrator** window.
 
 ---
 
