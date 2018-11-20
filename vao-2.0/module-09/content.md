@@ -141,6 +141,11 @@ Availability Orchestrator into the script. Notice **Mandatory=$true** which mean
 
 ## Step 4: Test failover plan
 
+1. [] Select the **Tier1-Exchange** plan.
+2. [] Click the **Verify** button.
+3. [] Select **Run Lab Test**.
+4. [] Click the **Next** button on the **Lab** step.
+
 ---
 
 # Congratulations!
