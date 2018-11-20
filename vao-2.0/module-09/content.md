@@ -15,8 +15,10 @@ Module 9: Documentation, Custom Scripts & Dashboards
 4. [] Navigate to the **Report Templates** view.
 5. [] Select **Veeam Default Template** in the **Templates** pane.
 6. [] Click the **Clone** button.
-7. [] Enter New Template Name: +++VMCE Template+++
-8. [] Click the **Clone** button.
+7. [] Click the **Site Scope** drop down menu.
+8. [] Select \**[All Scopes\]**.
+9. [] Enter New Template Name: +++VMCE Template+++
+10. [] Click the **Clone** button.
 
 ===
 
