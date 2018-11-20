@@ -206,6 +206,7 @@ Module 8: Working with Orchestration Plans
 
 2. [] Enter username: +++siteadmin@vmce.lab+++ and password: +++Pa%%w0rd+++.
 3. [] Click the **Login** button.
+4. [] Navigate to the **Orchestration Plans** view.
 1. [] Click the **Manage** button.
 2. [] Select **New**.
 3. [] Click the **Next** button on the **Site Scope** step.
