@@ -86,7 +86,7 @@ Module 9: Documentation, Custom Scripts & Dashboards
 4. [] Open the **datetime** Windows PowerShell script.
 5. [] The first section, **Param**, defines Veeam Availability Orchestrator step parameters where data can be sent from Veeam
 Availability Orchestrator into the script. Notice **Mandatory=$true** which means the script will be halted if those step parameters have not been defined in Veeam Availability Orchestrator. The **Add-Content** commands will write data into a folder, in this example c:\utils, which must exist. Otherwise, the command will fail. The **Write-Host** command will write to the **Failover Plan** report, allowing the script to provide information back into **Veeam Availability Orchestrator**. Close the **Notepad** window.
-6. [] Let's create the c:\utils folder used by the script. In the **File Explorer** window, please click the **Left arrow** button in the top left corner to navigate back to root **C:\**.
+6. [] Let's create the c:\utils folder used by the script. In the **File Explorer** window, please click the **Left arrow** button in the top left corner to navigate back to root **C:\\**.
 7. [] Click the **Home** menu in the **File Explorer** window.
 8. [] Click the **New folder** button.
 9. [] Change the folder name from **New Folder** to +++utils+++ and press the **Enter** button on the keyboard.
