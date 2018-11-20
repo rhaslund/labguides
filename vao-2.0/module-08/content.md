@@ -267,6 +267,8 @@ Module 8: Working with Orchestration Plans
 48. [] Click the **Manage** button.
 49. [] Select **Enable**.
 
+===
+
 ## Step 2: Chain orchestration plans
 
 1. [] Select the **Tier1-SharePoint** plan.
