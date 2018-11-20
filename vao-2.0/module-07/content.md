@@ -1,6 +1,6 @@
 Module 7: DataLabs
 ---
-**This lab is expected to last a maximum of X minutes including lab launch.**
+**This lab is expected to last a maximum of 25 minutes including lab launch.**
 
 # Lab 7.1: Assigning user roles and permissions
 
