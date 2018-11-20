@@ -172,7 +172,7 @@ Module 8: Working with Orchestration Plans
 
 # Lab 8.7: Undo failover
 
-1. [] Navigate to the **Orchestration Plans** view.
+1. [] Click the **Left arrow** button next to the **Plan Details: Tier1-SharePoint** text.
 2. [] Select the **Tier1-SharePoint** plan.
 3. [] Click the **Launch** button.
 4. [] Select **Undo**.
