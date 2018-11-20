@@ -160,7 +160,7 @@ Module 8: Working with Orchestration Plans
 11. [] Select **mission critical vms - sharepoint servers** in the **Plan Group** pane.
 12. [] Select **SHAREPOINT** in the **Virtual Machines** pane.
 13. [] Wait for all steps to reach the **Completed** status and then open a new tab inside **Internet Explorer**.
-> Note: It is critical you do not continue until the failover is complete. Otherwise DNS will still resolve to the old production IP and be added to the local DNS cache with this incorrect IP.
+> Note: It is critical you do not continue until the failover is complete. Otherwise DNS will still resolve to the old production IP and be added to the local DNS cache with this incorrect IP. It can take up to 6 minutes to complete all tests of the SHAREPOINT virtual machine, please have some patience.
 
 14. [] Navigate to **http://sharepoint.vmce.lab** in the new tab in **Internet Explorer**.
 > Note: Microsoft SharePoint services can take a few minutes to start, please be patient.
