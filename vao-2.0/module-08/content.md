@@ -217,7 +217,8 @@ Module 8: Working with Orchestration Plans
  4. Contact email: +++administrator@vmce.lab+++
 
 5. [] Click the **Next** button on the **Plan Name** step.
-6. [] Keep the default settings and click the **Next** button on the **Plan Type** step.
+6. [] Select the **Restore** radio button.
+6. [] Click the **Next** button on the **Plan Type** step.
 7. [] Select **mission critical vms - exchange servers**.
 8. [] Click the **Add** button.
 9. [] Click the **Next** button on the **VM Groups** step.
