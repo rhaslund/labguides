@@ -292,6 +292,7 @@ Module 8: Working with Orchestration Plans
 18. [] Keep the default settings and click the **Next** button on the **Recovery Location** step.
 18. [] Keep the default settings and click the **Next** button on the **Restore Point** step.
 19. [] Notice there is a new step, Chained Plans, compared to prior to chaining the orchestration plans. In a complete disaster situation, a Veeam Availability Orchestrator site admin would most likely want to launch all orchestration plans in the order they are chained. However, in some cases, perhaps only a single application is affected, and the remaining applications are still functioning without issues in production. In the event only a orchestration plan should be executed, without also launching any chained plans, simply untick the **Also execute the chained plans** check box. Click the **Cancel** button on the **Chained Plans** step.
+20. [] Close the **Veeam Availability Orchestrator** window.
 
 ---
 
