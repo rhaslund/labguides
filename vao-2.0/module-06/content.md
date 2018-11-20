@@ -96,8 +96,7 @@ Module 6: Configuration
 10. [] Tick the **DR Site** checkbox.
 11. [] Click the **Include** button.
 12. [] Click the **Plan Steps** tab.
-13. [] Review the list of default steps provided by Veeam, these cannot be deleted - only custom steps can be deleted. Tick the **Prepare DC for Test Lab** check box.
-14. [] Tick the **Verify DNS Port** check box.
+13. [] Review the list of default steps provided by Veeam, these cannot be deleted - only custom steps can be deleted. Tick the **Verify DNS Port** check box.
 15. [] Tick the **Verify Domain Controller** check box.
 16. [] Tick the **Verify Exchange Mailbox** check box.
 17. [] Tick the **Verify Exchange MAPI Connectivity** check box.
