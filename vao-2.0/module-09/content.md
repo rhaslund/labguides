@@ -9,7 +9,7 @@ Module 9: Documentation, Custom Scripts & Dashboards
  1. Username: +++siteadmin@vmce.lab+++
  2. Password: +++Pa%%w0rd+++
 
-3. [] Click the ***Login*** button
+3. [] Click the **Login** button
 >Note: Because the server was just started, the spinning icon may display for up to two minutes while services complete their startup.
 
 4. [] Navigate to the **Report Templates** view.
