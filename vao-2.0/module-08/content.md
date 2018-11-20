@@ -209,7 +209,7 @@ Module 8: Working with Orchestration Plans
 4. [] Navigate to the **Orchestration Plans** view.
 1. [] Click the **Manage** button.
 2. [] Select **New**.
-3. [] Click the **Next** button on the **Site Scope** step.
+3. [] Keep the default selection of the **Phoenix\Default** site scope and click the **Next** button on the **Site Scope** step.
 4. [] Enter:
  1. Plan name: +++Tier1-Exchange+++
  2. Description: +++Orchestration Plan for Exchange servers+++
