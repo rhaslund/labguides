@@ -16,7 +16,7 @@ Module 9: Documentation, Custom Scripts & Dashboards
 5. [] Select **Veeam Default Template** in the **Templates** pane.
 6. [] Click the **Clone** button.
 7. [] Click the **Site Scope** drop down menu.
-8. [] Select \**[All Scopes\]**.
+8. [] Select **Phoenix\SharePoint Administrators**
 9. [] Enter New Template Name: +++VMCE Template+++
 10. [] Click the **Clone** button.
 
@@ -47,37 +47,22 @@ Module 9: Documentation, Custom Scripts & Dashboards
 
 ===
 
-# Lab 9.3: Modify orchestration plans to utilize the new report template
+# Lab 9.3: Modify an orchestration plan to utilize the new report template
 
 1. [] Navigate to the **Orchestration Plans** view.
-2. [] Select the **Tier1-Exchange** plan.
+2. [] Select the **Tier1-SharePoint** plan.
 3. [] Click the **Manage** button.
-4. [] Select **Disable**.
-5. [] Click the **Manage** button.
-6. [] Select **Edit**.
-7. [] Click the **Properties** button.
-8. [] Click the **Next** button on the **Plan Name** step.
-9. [] Click the **Next** button on the **RTO & RPO** step.
-10. [] Click the **Veeam Default Template** text link.
-11. [] Select **VMCE Template**.
-12. [] Click the **OK** button.
-13. [] Click the **Finish** button on the **Report Template** step.
-14. [] Click the **Save** button.
-15. [] Click the **Save** button without ticking the **Perform Plan Readiness Check now** check box.
-16. [] Click the **Left arrow** button next to the **Edit Plan Tier1-Exchange** text.
-17. [] Select the **Tier1-SharePoint** plan.
-18. [] Click the **Manage** button.
-19. [] Select **Edit**.
-20. [] Click the **Properties** button.
-21. [] Click the **Next** button on the **Plan Name** step.
-22. [] Click the **Next** button on the **RTO & RPO** step.
-23. [] Click the **Veeam Default Template** text link.
-24. [] Select **VMCE Template**.
-25. [] Click the **OK** button.
-26. [] Click the **Finish** button on the **Report Template** step.
-27. [] Click the **Save** button.
-28. [] Click the **Save** button without ticking the **Perform Plan Readiness Check now** check box.
-29. [] Click the **Left arrow** button next to the **Edit Plan Tier1-SharePoint** text.
+4. [] Select **Edit**.
+5. [] Click the **Properties** button.
+6. [] Click the **Next** button on the **Plan Name** step.
+7. [] Click the **Next** button on the **RTO & RPO** step.
+8. [] Click the **Veeam Default Template** text link.
+9. [] Select **VMCE Template**.
+10. [] Click the **OK** button.
+11. [] Click the **Finish** button on the **Report Template** step.
+12. [] Click the **Save** button.
+13. [] Click the **Save** button without ticking the **Perform Plan Readiness Check now** check box.
+14. [] Click the **Left arrow** button next to the **Edit Plan Tier1-SharePoint** text.
 
 ===
 
