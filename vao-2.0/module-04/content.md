@@ -36,8 +36,12 @@ Module 4: Deployment and Installation
 5. [] Keep the default selection of **DR Site** and click the **Next** button.
 > Note: Site type cannot be changed after initial configuration.
 
-6. [] Enter name: +++Phoenix+++, site description: +++Disaster Recovery site+++, contact name: +++John Doe+++, and contact email: +++administrator@vmce.lab+++.
-7. [] Click the **Next** button.
+6. [] Enter:
+ 1. Name: +++Phoenix+++
+ 2. Site description: +++Disaster Recovery site+++
+ 3. Contact name: +++John Doe+++
+ 4. Contact email: +++administrator@vmce.lab+++.
+7. [] Click the **Next** button on the **Site Name** step.
 8. [] Click the **Add** button.
 9. [] Enter account: +++site admin+++.
 10. [] Click the ***Find*** button.
@@ -47,10 +51,13 @@ Module 4: Deployment and Installation
 14. [] Click the **Skip** button on the **Deploy VAO agent** step.
 > Note: In a production environment, it would be recommended to deploy Veeam Availability Orchestrator to a separate server than your Veeam backup server. At this step, you would connect either to your Veeam Backup Server or Veeam Backup Enterprise Manager. Since this is a training environment, we will skip this step and utilize the integrated Veeam backup server.
 
-15. [] Enter server: +++vcenter.vmce.lab+++, username: +++svcVeeam@vsphere.local+++ and password: +++Pa%%w0rd+++.
+15. [] Enter:
+ 1. Server: +++vcenter.vmce.lab+++
+ 2. Username: +++svcVeeam@vsphere.local+++
+ 3. Password: +++Pa%%w0rd+++.
 16. [] Click the **Next** button on the **VMware Server** step.
-17. [] Click the **Finish** button.
-18. [] Wait for the Welcome! Please log in text message and then close the **Veeam Availability Orchestrator** interface.
+17. [] Click the **Finish** button on the **Summary** step.
+18. [] Wait for the **Welcome! Please log in** text message and then close the **Veeam Availability Orchestrator** interface.
 
 ---
 
