@@ -22,6 +22,8 @@ Module 8: Working with Orchestration Plans
 
 # Lab 8.2: Create a orchestration plan
 
+1. [] Enter username: +++planauthor@vmce.lab+++ and password: +++Pa%%w0rd+++.
+2. [] Click the **Login** button.
 1. [] Navigate to the **Orchestration Plans** view.
 2. [] Click the **Manage** button.
 3. [] Select **New**.
