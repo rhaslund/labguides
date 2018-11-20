@@ -1,6 +1,6 @@
 Module 8: Working with Orchestration Plans
 ---
-**This lab is expected to last a maximum of X minutes including lab launch.**
+**This lab is expected to last a maximum of 60 minutes including lab launch.**
 
 # Lab 8.1: Enable a template job
 
