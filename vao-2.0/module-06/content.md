@@ -17,7 +17,7 @@ Module 6: Configuration
  2. Description: +++Scope for administrators managing Microsoft SharePoint+++
 8. [] Click the **Add** button.
 9. [] Select the **SharePoint Administrators** scope.
-10. [] Click the green **\+ Add button**.
+10. [] Click the **Add** button in the **Users and Groups** pane.
 11. [] Enter domain: +++VMCE+++
 12. [] Enter account: +++planauthor+++.
 13. [] Click the ***Find*** button.
