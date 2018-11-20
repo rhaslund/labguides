@@ -65,7 +65,7 @@ Module 8: Working with Orchestration Plans
 5. [] Confirm that the state has changed to **Verified (passed check)**.
 6. [] Click the **View Reports** button.
 7. [] Select **Readiness Check**.
-8. [] Select the **Readiness Check Report for Tier1-SharePoint** report.
+8. [] Click the **Readiness Check Report for Tier1-SharePoint** text link.
 9. [] Click the **Open** button on the yellow download bar at the bottom of the **Internet Explorer** window.
 10. [] Wait for the download to complete and click the **Open** button on the yellow download bar at the bottom of the **Internet Explorer** window.
 11. [] Scroll down to the **Contents** page.
