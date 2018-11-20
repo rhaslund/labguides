@@ -74,7 +74,7 @@ Module 9: Documentation, Custom Scripts & Dashboards
 2. [] Click the **VEEAM-VAO\VLAB1** text link.
 3. [] Click the **Run** button to launch the lab so it can start loading in the background and will be ready for later steps in this lab exercise.
 4. [] Verify the **vao testing only - active directory servers** lab group is already added due to its status as **default lab group** then click the Next button on the **Choose Lab Groups** step.
-5. [] Click the **Finish** button on the **Summary* step.
+5. [] Click the **Finish** button on the **Summary** step.
 
 ===
 
