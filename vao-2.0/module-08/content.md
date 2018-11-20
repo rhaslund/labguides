@@ -139,7 +139,29 @@ Module 8: Working with Orchestration Plans
 > Note: While you can force a orchestration plan to launch even if it is not enabled, it is best practice to enable a orchestration plan once it has been created, tested and deemed ready for use during a disaster.
 
 2. [] Click the **Manage** button.
-3. [] 
+3. [] Select **Enable**.
+4. [] Click the **Launch** button.
+5. [] Select **Run**.
+6. [] Enter password: +++Pa%%w0rd+++
+7. [] Click the **Next** button on the **Enter Credentials** step.
+8. [] Keep the default settings and click the **Next** button on the **Restore Point** step.
+9. [] Verify the action is **Failover** and then click the **Finish** button on the **Summary** step.
+10. [] Click the **Tier1-SharePoint** text link in the **Plan** column.
+11. [] Select **mission critical vms - sharepoint servers** in the **Plan Group** pane.
+12. [] Select **SHAREPOINT** in the **Virtual Machines** pane.
+13. [] Wait for all steps to reach the **Completed** status and then open a new tab inside **Internet Explorer**.
+> Note: It is critical you do not continue until the failover is complete. Otherwise DNS will still resolve to the old production IP and be added to the local DNS cache with this IP.
+
+14. [] Navigate to **http://sharepoint.vmce.lab** in the new tab in **Internet Explorer**.
+> Note: Microsoft SharePoint services can take a few minutes to start, please be patient.
+
+15. [] Verify the **SharePoint** site loads, and close the **SharePoint** tab in **Internet Explorer**.
+
+===
+
+# Lab 8.7: Undo failover
+
+1. [] Navigate to the **Orchestration Plans** view.
 
 ---
 
