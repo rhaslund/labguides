@@ -97,7 +97,7 @@ Availability Orchestrator into the script. Notice **Mandatory=$true** which mean
 ## Step 3: Load custom script into VAO and add it as a custom step
 
 1. [] Click the **Administration** button in the top right corner.
-2. [] Navigate to the **Plan Steps view.
+2. [] Navigate to the **Plan Steps view**.
 3. [] Click the **Add** button in the **Steps** pane.
 4. [] Enter name: +++Date & Time+++.
 5. [] Click the **Browse...** button.
