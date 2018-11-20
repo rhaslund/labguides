@@ -259,7 +259,7 @@ Module 8: Working with Orchestration Plans
 41. [] Click the **NONE** text link in the **Default value** section.
 42. [] Select the **administrator@vmce.lab** credential.
 43. [] Click the **OK** button.
-44. [] Click the **Save** button under the **Edit Plan Tier1-SharePoint** text.
+44. [] Click the **Save** button under the **Edit Plan Tier1-Exchange** text.
 45. [] Tick the **Perform Plan Readiness Check now** check box.
 46. [] Click the **Save** button.
 47. [] Select the **Tier1-Exchange** plan.
