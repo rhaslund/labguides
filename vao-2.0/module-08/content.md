@@ -184,7 +184,70 @@ Module 8: Working with Orchestration Plans
 
 ===
 
+# Lab 8.8: Create a second orchestration plan and chain with the first plan
 
+## Step 1: Create a second orchestration plan
+
+1. [] Click the **Manage** button.
+2. [] Select **New**.
+3. [] Click the **Next** button on the **Site Scope** step.
+4. [] Enter:
+ 1. Plan name: +++Tier1-Exchange+++
+ 2. Description: +++Orchestration Plan for Exchange servers+++
+ 3. Contact name: +++John Doe+++
+ 4. Contact email: +++administrator@vmce.lab+++
+
+5. [] Click the **Next** button on the **Plan Name** step.
+6. [] Keep the default settings and click the **Next** button on the **Plan Type** step.
+7. [] Select **mission critical vms - exchange servers**.
+8. [] Click the **Add** button.
+9. [] Click the **Next** button on the **VM Groups** step.
+10. [] Click the **Next** button on the **VM Recovery Options** step.
+11. [] Select **Ping VM Network**.
+12. [] Click the **Add** button.
+13. [] Click the **Next** button on the **VM Steps** step.
+14. [] Click the **Next** button on the **Protect VM Groups** step.
+15. [] Keep the default settings and click the **Next** button on the **RTO & RPO** step.
+16. [] Click the **Next** button on the **Report Template** step.
+17. [] Click the **Next** button on the **Report Scheduling** step.
+18. [] Untick the **Run Readiness Check after Plan creation** check box.
+19. [] Click the **Next** button on the **Readiness Check** step.
+20. [] Click the **Finish** button on the **Summary** step.
+21. [] Select the **Tier1-Exchange** plan.
+22. [] Click the **Manage** button.
+23. [] Select **Edit**.
+24. [] Select **EXCHANGE** in the **Virtual Machines** pane.
+25. [] click the **Add** button in the **Steps** pane.
+26. [] Tick the **Shutdown Source VM** check box.
+27. [] Scroll down until **Verify Exchange Services** is visible.
+28. [] Tick the **Verify Exchange Services** check box.
+29. [] Tick the **Verify Exchange MAPI Connectivity** check box.
+30. [] Click the **Add** button.
+31. [] Select **Shutdown Source VM** in the **Steps** pane.
+32. [] Click the **Up arrow** button in the **Steps** pane until **Shutdown Source VM** is the first step listed.
+33. [] Select the **Verify Exchange Services** step.
+34. [] Select **Windows Credentials** in the **Step Parameters** pane.
+35. [] Click the **NONE** text link in the **Default value** section.
+36. [] Select the **administrator@vmce.lab** credential.
+37. [] Click the **OK** button.
+38. [] Click the **Close** button.
+39. [] Select the **Verify Exchange MAPI Connectivity** step.
+40. [] Select **Windows Credentials** in **Step Parameters** pane.
+41. [] Click the **NONE** text link in the **Default value** section.
+42. [] Select the **administrator@vmce.lab** credential.
+43. [] Click the **OK** button.
+44. [] Click the **Save** button under the **Edit Plan Tier1-SharePoint** text.
+45. [] Tick the **Perform Plan Readiness Check now** check box.
+46. [] Click the **Save** button.
+47. [] Select the **Tier1-Exchange** plan.
+48. [] Click the **Manage** button.
+49. [] Select **Enable**.
+
+## Step 2: Chain orchestration plans
+
+1. [] Select the **Tier1-SharePoint** plan.
+2. [] Click the **Launch** button.
+3. [] 
 
 ---
 
