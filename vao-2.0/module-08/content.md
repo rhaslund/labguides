@@ -65,7 +65,44 @@ Module 8: Working with Orchestration Plans
 9. [] Click the **Open** button on the yellow download bar at the bottom of the **Internet Explorer** window.
 10. [] Wait for the download to complete and click the **Open** button on the yellow download bar at the bottom of the **Internet Explorer** window.
 11. [] Scroll down to the **Contents** page.
-12. [] 
+12. [] Click the **Plan Group Details** text link.
+13. [] Review the **Plan Group Details** results and close the **Adobe Acrobat Reader** window.
+
+===
+
+# Lab 8.4: Customizing a orchestration plan
+
+1. [] Navigate to the **Orchestration Plans** view.
+2. [] Select the newly created **Tier1-SharePoint** plan.
+> Note: Do not click on the Tier1-SharePoint text link.
+
+3. [] Click the **Manage** button.
+4. [] Select **Edit**.
+5. [] Select the **SharePoint** virtual machine.
+6. [] Click the **Add** button in the **Steps** pane.
+7. [] Tick the **Shutdown Source VM** check box.
+8. [] Scroll down until **Verify SQL Port** is visible.
+9. [] Tick the **Verify SQL Port** check box.
+10. [] Tick the **Verify SQL Database** check box.
+11. [] Tick the **Verify SharePoint URL** check box.
+12. [] Click the **Add** button.
+13. [] Select **Shutdown Source VM** in the **Steps** pane.
+14. [] Click the **Up arrow** button in the **Steps** pane until **Shutdown Source VM** is the first step listed.
+15. [] Select **Verify SQL Database** in the **Steps** pane.
+16. [] Select **Windows Credentials** in the **Step Parameters** pane.
+17. [] Click the **NONE** text link under **Default Value**.
+18. [] Select the **administrator@vmce.lab** credential.
+19. [] Click the **OK** button.
+20. [] Select **Verify SharePoint URL** in the **Steps** pane.
+21. [] Select **Windows Credentials** in the **Step Parameters** pane.
+22. [] Click the **NONE** text link under **Default Value**.
+23. [] Select the **administrator@vmce.lab** credential.
+24. [] Click the **OK** button.
+25. [] Select **SharePoint URL** in the **Step Parameters** pane.
+26. [] Enter +++http://%vm_fqdn%+++ into the **Default Value** text box.
+27. [] Click the **Save** button under the **Edit Plan Tier1-SharePoint** text.
+28. []
+
 
 ---
 
