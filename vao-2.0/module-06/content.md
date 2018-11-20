@@ -116,16 +116,17 @@ Module 6: Configuration
 27. [] Click the **Assign** button in the **DataLabs** pane.
 28. [] Select the **Phoenix\SharePoint Administrators** scope.
 29. [] Click the **OK** button.
-30. [] Tick the **VEEAM-VAO\VLAB2** check box.
-31. [] Click the **Assign** button in the **DataLabs** pane.
-32. [] Select the **Phoenix\Default** scope.
-33. [] Click the **OK** button.
+30. [] Untick the **VEEAM-VAO\VLAB1** check box.
+31. [] Tick the **VEEAM-VAO\VLAB2** check box.
+32. [] Click the **Assign** button in the **DataLabs** pane.
+33. [] Select the **Phoenix\Default** scope.
+34. [] Click the **OK** button.
 
 ===
 
 # Lab 6.5: Create a template job
 
-1. [] Minimize the **Veeam Availability Orchestrator** window.
+1. [] Close the **Veeam Availability Orchestrator** window.
 1. [] Launch the **Veeam Backup & Replication Console** from the desktop.
 2. [] Click the **Connect** button.
 3. [] Click the **Backup Job** button on the **Home** ribbon.
