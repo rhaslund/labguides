@@ -178,7 +178,7 @@ Module 8: Working with Orchestration Plans
 4. [] Select **Undo**.
 5. [] Enter password: +++Pa%%w0rd+++.
 6. [] Click the **Next** button on the **Enter Credentials** step.
-7. [] Verify the action is **Undo Failover (Force)** and then click the **Finish** button on the **Summary* step.
+7. [] Verify the action is **Undo Failover (Force)** and then click the **Finish** button on the **Summary** step.
 8. [] Click the **Tier1-SharePoint** text link in the **Plan** column.
 9. [] Select **mission critical vms - sharepoint servers** in the **Plan Group** pane.
 10. [] Select **SHAREPOINT** in the **Virtual Machines** pane.
