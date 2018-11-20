@@ -225,7 +225,7 @@ Module 8: Working with Orchestration Plans
 8. [] Click the **Add** button.
 9. [] Click the **Next** button on the **VM Groups** step.
 10. [] Keep the default settings and click the **Next** button on the **VM Recovery Options** step.
-11. [] Hold the keyboard **CTRL** button and select the following items: **Ping VM Network**, **Shutdown Source VM**, **Verify Exchange Services**, **Verify Exchange MAPI Connectivity** and **Verify Exchange Mailbox***.
+11. [] Hold the keyboard **CTRL** button and select the following items: **Ping VM Network**, **Shutdown Source VM**, **Verify Exchange Services** and **Verify Exchange MAPI Connectivity**.
 12. [] Click the **Add** button.
 13. [] Select **Shutdown Source VM** in the **Steps** pane.
 14. [] Click the **Up arrow** button in the **Steps** pane until **Shutdown Source VM** is the first step listed.
@@ -236,7 +236,6 @@ Module 8: Working with Orchestration Plans
 > Ping VM Network
 > Verify Exchange Services
 > Verify Exchange MAPI Connectivity
-> Verify Exchange Mailbox
 
 13. [] Click the **Next** button on the **VM Steps** step.
 14. [] Keep the default settings and click the **Next** button on the **Protect VM Groups** step.
