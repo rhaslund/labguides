@@ -78,7 +78,7 @@ Module 8: Working with Orchestration Plans
 
 1. [] Navigate to the **Orchestration Plans** view.
 2. [] Select the newly created **Tier1-SharePoint** plan.
-> Note: Do not click on the Tier1-SharePoint text link.
+> Note: Do not click the Tier1-SharePoint text link.
 
 3. [] Click the **Manage** button.
 4. [] Select **Edit**.
