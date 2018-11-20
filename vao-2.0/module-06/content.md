@@ -87,7 +87,7 @@ Module 6: Configuration
 # Lab 6.4: Configure plan components
 
 1. [] Navigate to the **Plan Components** view.
-3. [] Verify you see VM groups named **mission critical – exchange servers** and **mission critical – sharepoint servers** and that they are both enabled. Each VM group represents a vSphere tag. Tags are by default collected every three hours from your production environment. After you enable VM groups for a Veeam Availability Orchestrator site, you can add these groups to failover plans for the site. Click the **Default** text link in the **Scopes** pane at the top.
+2. [] Verify you see VM groups named **mission critical – exchange servers** and **mission critical – sharepoint servers** and that they are both enabled. Each VM group represents a vSphere tag. Tags are by default collected every three hours from your production environment. After you enable VM groups for a Veeam Availability Orchestrator site, you can add these groups to failover plans for the site. Click the **Default** text link in the **Scopes** pane at the top.
 4. [] Untick the **Default** checkbox in the **Scope** pane.
 5. [] Tick the **SharePoint Administrators** checkbox in the **Scope** pane.
 6. [] Click the **OK** button.
@@ -102,7 +102,13 @@ Module 6: Configuration
 18. [] Tick the **Verify Exchange Services** check box.
 20. [] Tick the **Verify Mail Server Port** check box.
 21. [] Click the **Exclude** button in the **Steps** pane.
-22. []  Click the **Credentials** tab.
+
+22. [] Click the **Credentials** tab.
+23. [] Click the **SharePoint Administrators** text link in the **Scopes** pane at the top.
+24. [] Tick the **SharePoint Administrators** checkbox in the **Scope** pane.
+> Note: Both the Default and SharePoint Administrators scopes must be selected.
+
+25. [] Click the **OK* button.
 23. [] Tick the **administrator@vmce.lab** check box so that it can be used in plans.
 24. [] Click the **Include** button in the **Credentials** pane.
 25. [] Navigate to the **DataLab Allocation** view.
@@ -110,6 +116,10 @@ Module 6: Configuration
 27. [] Click the **Assign** button in the **DataLabs** pane.
 28. [] Select the **Phoenix\SharePoint Administrators** scope.
 29. [] Click the **OK** button.
+30. [] Tick the **VEEAM-VAO\VLAB2** check box.
+31. [] Click the **Assign** button in the **DataLabs** pane.
+32. [] Select the **Phoenix\Default** scope.
+33. [] Click the **OK** button.
 
 ===
 
