@@ -194,6 +194,7 @@ Module 8: Working with Orchestration Plans
 18. [] Keep the default setting and click the **Next** button on the Reset Actions step.
 19. [] Keep the default setting and click the **Next** button on the **Readiness Check** step.
 20. [] Click the **Finish** button on the **Summary** step.
+> Note: Notice that resetting an orchestration plan changes the plan from enabled to disabled.
 
 ===
 
