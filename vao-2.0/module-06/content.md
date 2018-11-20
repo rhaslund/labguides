@@ -21,7 +21,7 @@ Module 6: Configuration
 11. [] Enter:
  1. Domain: +++VMCE+++
  2. Account: +++planauthor+++.
-13. [] Click the ***Find*** button.
+13. [] Click the **Find** button.
 14. [] Select the **Plan Author** account.
 15. [] Click the **Add** button.
 
