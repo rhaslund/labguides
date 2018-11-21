@@ -5,7 +5,7 @@ Module 2: Deployment
 # Lab 2.1. Adding Veeam Backup & Replication to Veeam Backup Enterprise Manager
 
 1. [] Launch the **Veeam Backup Enterprise Manager** from the desktop.
-> Note: Because the URL for Veeam Backup Enterprise Manager was added to Internet Explorer's local intranet zone, single sign-on is allowed and you will not be prompted for any username or password.
+> Note: Because the URL for Veeam Backup Enterprise Manager was added to Internet Explorer's local intranet zone, single sign-on is allowed, and you will not be prompted for any username or password.
 
 2. [] Click the **Configuration** button in the top right corner.
 3. [] Click the ***Add...*** button.
@@ -20,7 +20,7 @@ Module 2: Deployment
 9. [] Reduce the collection interval to +++2+++ (two) minutes to fit our lab needs.
 10. [] Click the **OK** button.
 11. [] Navigate to the **Sessions** view.
-12. [] Check if any errors of automatically started collection processes occur, then slose the **Veeam Backup Enterprise Manager** window.
+12. [] Check if any errors of automatically started collection processes occur, then close the **Veeam Backup Enterprise Manager** window.
 > Note: The initial configuration of Veeam Backup Enterprise Manager is completed. We will use it in a later
 lab
 
@@ -28,7 +28,7 @@ lab
 
 # Lab 2.2. Setting up Veeam ONE (part one)
 
-Add VMware vSphere and Microsoft Hyper-V hosts to the Veeam ONE interface and schedule data
+Add VMware vSphere, and Microsoft Hyper-V hosts to the Veeam ONE interface and schedule data
 collection.
 
 ## Step 1: Add an ESXi host
@@ -44,7 +44,7 @@ collection.
 9. [] Specify the credentials of the user account with administrator privileges for connecting to VEEAM-ESX (root | Pa$$w0rd). Click the **Next** button.
 10. [] Click the **Finish** button.
 11. [] It will take some time for the infrastructure to be analyzed. Expand the newly added **VEEAM-ESX** host.
-> Note: It may take one to two minutes before it is possible to expand the VEEAM-ESX host. Disregard any kind of errors and/or warnings you may see in the Veeam ONE Monitor dashboard interface at this stage.
+> Note: It may take one to two minutes before it is possible to expand the VEEAM-ESX host. Disregard any errors or warnings you may see in the Veeam ONE Monitor dashboard interface at this stage.
 
 12. [] Expand **Resources**.
 13. [] Expand **Production** to view the VMs included in the course infrastructure.
@@ -58,10 +58,35 @@ collection.
 3. [] Enter DNS name: +++VEEAM-HYPERV+++
 4. [] Select the **Hyper-V host** radio button.
 5. [] Click the **Next** button.
-6. [] Specify the credentials of the user account with administrator privileges for connecting to VEEAMHYPERV (VEEAMINFRA\Administrator | Pa$$w0rd). Click Next.
+6. [] Specify the credentials of the user account with administrator privileges for connecting to **VEEAM-HYPERV** (VEEAMINFRA\Administrator | Pa$$w0rd). Click the **Next** button.
+7. [] Click the **Finish** on the **Summary** step.
+8. [] Click the **OK** to save credentials.
+> Note: Do not enter any login or password in the Hyper-V VMs Guest OS Credentials section.
+
+9. [] It will take some time for the Hyper-V infrastructure to be analyzed. When the dashboard is populated, expand **VEEAM-HYPERV**. You should be able to see the Hyper-V VMs in the infrastructure.
+> Note: Disregard any warnings you may see on the Veeam ONE Monitor dashboard interface at this stage. Due to the lab resource constraints, the VEEAM-HYPERV server only hosts one tiny DOS-based virtual machine.
+
+10. [] Close the **Veeam ONE Monitor** interface.
+
+===
+
+## Step 3: Set up a Veeam ONE Reporter collection interval
+
+1. [] Launch **Veeam ONE Reporter** from the desktop.
+2. [] Tick the **Use Windows session credentials** check box.
+3. [] Click the **Login** button.
+4. [] Click the **Configuration** tab.
+5. [] Click **Servers**.
+6. [] Select the **VEEAM-ESX** line.
+7. [] Click **Scheduling...**.
+8. [] Enter periodically every: +++3+++ hours.
+9. [] Click the **OK** button.
+> Note: Due to the lab time constraints, the collection interval is scheduled more often than in a production environment.
+
+10. [] Close the **Veeam ONE Reporter** interface.
 
 ---
 
 # Congratulations!
 
-You have successfully completed this Module, to mark the lab as complete click on the menu in the upper right-hand corner and select **End**.
+You have completed this Module, to mark the lab as complete click on the menu in the upper right-hand corner and select **End**.
