@@ -239,7 +239,8 @@ Module 8: Working with Orchestration Plans
 
 13. [] Click the **Next** button on the **VM Steps** step.
 14. [] Keep the default settings and click the **Next** button on the **Protect VM Groups** step.
-15. [] Keep the default settings and click the **Next** button on the **RTO & RPO** step.
+15. [] Increase the **Target RPO** to +++48+++ hours.
+15. [] Click the **Next** button on the **RTO & RPO** step.
 16. [] Keep the default settings and click the **Next** button on the **Report Template** step.
 17. [] Keep the default settings and click the **Next** button on the **Report Scheduling** step.
 18. [] Untick the **Run Readiness Check after Plan creation** check box.
