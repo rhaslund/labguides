@@ -230,7 +230,7 @@ Module 5: User Interface, User Roles & Licensing
 3. [] Click the **Next** button on the **Name** step.
 4. [] Click the **Choose...** button.
 5. [] Expand the **vcenter.vmce.lab** object.
-6. [] Expand the **DR** data center. \[BETA2\] Expand the **Production* data center.
+6. [] Expand the **DR** data center. \[BETA2\] Expand the **Production** data center.
 7. [] Select the **esx02.vmce.lab** host. \[BETA2\] Select the **esx01.vmce.lab** host.
 8. [] Click the **OK** button.
 9. [] Click the **Next** button on the **Host** step.
