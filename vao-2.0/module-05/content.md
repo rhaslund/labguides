@@ -10,11 +10,12 @@ Module 5: User Interface, User Roles & Licensing
 
 3. [] Click the **Login** button
 4. [] Click the **Administration** button in the top right corner.
-5. [] Navigate to the **Users and Scopes** view.
+5. [] Navigate to the **VMware Servers** view.
 6. [] Notice how the help system automatically opens. Click the **Suggest help topics automatically** toggle button to disable the automatic help system feature.
 7. [] Click the **X** in the Users and Scopes help window.
 > Note: You can always click the Info icon in the bottom left corner to see these tips.
 
+8. [] Verify the **vcenter.vmce.lab** server is connected and version **6.5.0***, then navigate to the **Users and Scopes** view.
 8. [] Take notice of which roles are available and then navigate to the **License** view.
 9. [] Click the **Details...** text link next to the **Status** row.
 10. [] Verify the license is valid and that zero licenses have been consumed then click the **OK** button.
