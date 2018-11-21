@@ -15,7 +15,7 @@ Module 5: User Interface, User Roles & Licensing
 7. [] Click the **X** in the Users and Scopes help window.
 > Note: You can always click the Info icon in the bottom left corner to see these tips.
 
-8. [] Verify the **vcenter.vmce.lab** server is connected and version **6.5.0***, then navigate to the **Users and Scopes** view.
+8. [] Verify the **vcenter.vmce.lab** server is connected and version **6.5.0**, then navigate to the **Users and Scopes** view.
 8. [] Take notice of which roles are available and then navigate to the **License** view.
 9. [] Click the **Details...** text link next to the **Status** row.
 10. [] Verify the license is valid and that zero licenses have been consumed then click the **OK** button.
