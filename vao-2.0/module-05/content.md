@@ -269,6 +269,7 @@ Module 5: User Interface, User Roles & Licensing
 36. [] Enter:
  1. IP address: +++192.168.2.1+++ [BETA2] IP address: +++192.168.1.1+++
  2. Mask: +++255.255.255.0+++
+ 3. Masquerade network IP address: **192.168.254.D**
 
 37. [] Untick the **Enable DHCP service on this interface** check box.
 38. [] Click the **OK** button.
