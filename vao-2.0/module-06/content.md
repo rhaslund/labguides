@@ -93,9 +93,6 @@ Module 6: Configuration
 6. [] Click the **OK** button.
 7. [] Tick the **mission critical vms – sharepoint servers** checkbox in the **VM Groups** pane.
 8. [] Click the **Include** button.
-9. [] Click the **Recovery Locations** tab.
-10. [] Tick the **DR Site** checkbox.
-11. [] Click the **Include** button.
 12. [] Click the **Plan Steps** tab.
 13. [] Review the list of default steps provided by Veeam, these cannot be deleted - only custom steps can be deleted. Tick the **Verify Exchange Mailbox** check box.
 17. [] Tick the **Verify Exchange MAPI Connectivity** check box.
@@ -108,9 +105,13 @@ Module 6: Configuration
 24. [] Tick the **SharePoint Administrators** checkbox in the **Scope** pane.
 > Note: Both the Default and SharePoint Administrators scopes must be selected.
 
-25. [] Click the **OK* button.
+25. [] Click the **OK** button.
 23. [] Tick the **administrator@vmce.lab** check box so that it can be used in plans.
 24. [] Click the **Include** button in the **Credentials** pane.
+25. [] Click the **Recovery Locations** tab.
+26. [] Tick the **DR Site** checkbox.
+27. [] Click the **Include** button.
+
 25. [] Navigate to the **DataLab Allocation** view.
 26. [] Verify the **VLAB1** and **VLAB2** DataLabs created earlier shows up and then tick the **VEEAM-VAO\VLAB1** check box.
 27. [] Click the **Assign** button in the **DataLabs** pane.
