@@ -76,7 +76,7 @@ Module 5: User Interface, User Roles & Licensing
 31. [] Click the **Apply** button on the **Schedule** step.
 32. [] Tick the **Run the job when I click Finish** check box.
 33. [] Click the **Finish** button on the **Summary** step.
-> Do not wait for the jobs to complete before moving to the next lab exercise.
+> Do not wait for the job to complete before moving to the next lab exercise.
 
 ===
 
