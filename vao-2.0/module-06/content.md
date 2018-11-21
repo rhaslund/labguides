@@ -139,7 +139,7 @@ Module 6: Configuration
 9. [] Expand the **vcenter.vmce.lab** object.
 10. [] Expand the **DR** data center object.
 11. [] Select the **Empty folder for VAO template jobs** folder.
-12. [] Click the **Add...** button.
+12. [] Click the **Add** button.
 13. [] Click the **Next** button on the **Virtual Machines** step.
 14. [] Keep the defaults and click the **Next** button on the **Storage** step.
 15. [] Keep the defaults and click the **Next** button on the **Guest Processing** step.
