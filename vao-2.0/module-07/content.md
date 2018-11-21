@@ -44,6 +44,8 @@ Module 7: DataLabs
 6. [] Wait for the **Lab Appliance Details** section to display: **DataLab appliance powered on successfully** (this can take up to three minutes). Select **vao testing only - active directory servers** in the **Lab Groups** pane.
 7. [] Select **DC02** in the **Virtual Machines** pane.
 8. [] Wait for all items in the **Steps** pane to be marked **Completed** with a green checkmark. Click the **Left arrow** button next to the **Lab Details: VEEAM-VAO\VLAB1** text.
+> Note: It can take up to 8 minutes to complete all tests of the DC02 virtual machine, please have some patience.
+
 9. [] Click the **Power Off** button.
 10. [] Click the **Power Off** button to confirm powering off the DataLab.
 11. [] Close the **Veeam Availability Orchestrator** window.
