@@ -134,12 +134,12 @@ Module 6: Configuration
 4. [] Select **VMware vSphere...**.
 5. [] Enter name: +++Template Backup Job for VAO+++, and enter description: +++This job is a \[VAO template\] to re-protect failed over VMs+++.
 6. [] Click the **Next** button on the **Name** step.
-7. [] Click the **Add** button.
+7. [] Click the **Add...** button.
 8. [] The current view selection is **Hosts and Clusters**. Click on the **VMs and Templates** view button.
 9. [] Expand the **vcenter.vmce.lab** object.
 10. [] Expand the **DR** data center object.
 11. [] Select the **Empty folder for VAO template jobs** folder.
-12. [] Click the **Add** button.
+12. [] Click the **Add...** button.
 13. [] Click the **Next** button on the **Virtual Machines** step.
 14. [] Keep the defaults and click the **Next** button on the **Storage** step.
 15. [] Keep the defaults and click the **Next** button on the **Guest Processing** step.
