@@ -241,6 +241,7 @@ Module 8: Working with Orchestration Plans
 13. [] Select **Shutdown Source VM** in the **Steps** pane.
 14. [] Click the **Up arrow** button in the **Steps** pane until **Shutdown Source VM** is the first step listed.
 > Note: The order of the items should be:
+> 
 > Shutdown Source VM
 > Restore VM
 > Check VM Heartbeat
@@ -249,6 +250,7 @@ Module 8: Working with Orchestration Plans
 > Verify Exchange MAPI Connectivity
 
 13. [] Click the **Next** button on the **VM Steps** step.
+14. [] Keep the default settings and click the **Next** button on the **Choose Credentials** step.
 14. [] Keep the default settings and click the **Next** button on the **Protect VM Groups** step.
 15. [] Increase the **Target RPO** to +++48+++ hours.
 15. [] Click the **Next** button on the **RTO & RPO** step.
