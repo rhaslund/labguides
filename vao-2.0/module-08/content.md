@@ -19,7 +19,7 @@ Module 8: Working with Orchestration Plans
 9. [] [BETA2] Navigate to the **Recovery Locations** view.
 10. [] [BETA2] Select **Original VM Location**.
 11. [] [BETA2] Click the **Edit** button.
-12. [] [BETA2] Increase **Fill Storage resources until** to +++99+++%.
+12. [] [BETA2] Increase **Fill Storage resources until** to +++90+++%.
 13. [] [BETA2] Click the **Next** button on the **Resource Usage** step.
 14. [] [BETA2] Click the **Instant VM Recovery is** drop down menu.
 15. [] [BETA2] Select **Enabled**.
@@ -55,7 +55,7 @@ Module 8: Working with Orchestration Plans
 14. [] Click the **Add** button.
 15. [] Click the **Next** button on the **VM Steps** step.
 16. [] Keep the defaults and click the **Next** button on the **Protect VM Groups** step.
-17. [] Increase the **Target RPO** to: +++48+++ hours and 0 minutes.
+17. [] Increase the **Target RPO** to: +++48+++ hours..
 17. [] Click the **Next** button on the **RTO & RPO** step.
 18. [] Keep the defaults and click the **Next** button on the **Report Template** step.
 19. [] Keep the defaults and click the **Next** button on the **Report Scheduling** step.
