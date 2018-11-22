@@ -34,7 +34,7 @@ Module 9: Documentation, Custom Scripts & Dashboards
 5. [] Ignore the warning about regions that overlap and click the **OK** button.
 6. [] Click the **View** tab on the Microsoft Word ribbon.
 7. [] Select **Edit Document**.
-8. [] Select the Veeam logo in the Word document.
+8. [] Select the **Veeam** logo in the Word document.
 9. [] Press the **Delete** button on your keyboard.
 10. [] Click the **Insert** tab on the Microsoft Word ribbon.
 11. [] Click the **Pictures** button.
