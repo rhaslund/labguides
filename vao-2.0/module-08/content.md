@@ -274,11 +274,10 @@ Module 8: Working with Orchestration Plans
 42. [] Select the **administrator@vmce.lab** credential.
 43. [] Click the **OK** button.
 44. [] Click the **Save** button under the **Edit Plan Tier1-Exchange** text.
-45. [] Tick the **Perform Plan Readiness Check now** check box.
-46. [] Click the **Save** button.
-47. [] Select the **Tier1-Exchange** plan.
-48. [] Click the **Manage** button.
-49. [] Select **Enable**.
+45. [] Click the **Save** button.
+46. [] Select the **Tier1-Exchange** plan.
+47. [] Click the **Manage** button.
+48. [] Select **Enable**.
 
 ===
 
