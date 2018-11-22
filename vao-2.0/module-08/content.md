@@ -205,6 +205,7 @@ Module 8: Working with Orchestration Plans
 19. [] Keep the default setting and click the **Next** button on the **Readiness Check** step.
 20. [] Click the **Finish** button on the **Summary** step.
 > Note: Notice that resetting an orchestration plan changes the plan from enabled to disabled.
+
 21. [] Click the **Plan Author** text link in the top right corner.
 22. [] Select **Logout**.
 
