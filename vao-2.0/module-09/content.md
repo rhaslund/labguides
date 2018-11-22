@@ -201,6 +201,7 @@ Availability Orchestrator into the script. Notice **Mandatory=$true** which mean
 9. [] Click the **Add** button.
 10. [] Click the **Next** button on the **Choose Lab Groups** step.
 11. [] Click the **Next** button on the **Keep Plan Running** step.
+12. [] Keep the default setting and click the **Next** button on the **Restore Options** step.
 12. [] Click the **Finish** button on the **Summary** step.
 13. [] Click the **Tier1-Exchange** text link in the **Plan** column.
 14. [] Wait for the **Plan** test to successfully complete - this can take up to 10 minutes. Once the **Plan** test is completed, navigate to the **Dashboard** view.
