@@ -1,4 +1,4 @@
-Module 2: Initial Configuration
+Module 3: Initial Configuration
 ---
 **This lab is expected to last a maximum of 40 minutes including lab launch.**
 
