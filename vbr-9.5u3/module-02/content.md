@@ -1,6 +1,6 @@
 Module 2: Deployment
 ---
-**This lab is expected to last a maximum of X minutes including lab launch.**
+**This lab is expected to last a maximum of 25 minutes including lab launch.**
 
 # Lab 2.1. Adding Veeam Backup & Replication to Veeam Backup Enterprise Manager
 
