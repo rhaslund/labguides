@@ -1,7 +1,7 @@
 Module 4: Protect
 
 ---
-**This lab is expected to last a maximum of X minutes including lab launch.**
+**This lab is expected to last a maximum of 60 minutes including lab launch.**
 
 # Module 4: Protect
 
