@@ -263,4 +263,26 @@ Module 05: Entire VM Recovery
 
 1. [] Select **Tiny-Veeam2**.
 2. [] Click the **Planned Failover** button on the **Replica** ribbon.
-3. [] 
+3. [] Click the **Next*' button on the **Virtual Machines** step.
+4. [] Keep the default settings and click the **Next* button on the **Reason** step.
+5. [] Click the **Finish** button on the **Summary** step.
+> Note: When you start the planned failover, Veeam Backup & Replication performs the following steps:
+>
+> 1. The failover process triggers the replication job to perform an incremental backup and copy the un-replicated changes to the replica.
+> 2. The VM is powered off.
+> 3. The failover process triggers the replication job to perform another incremental backup run and copy a portion of the lastminute changes to the replica. The replica becomes fully synchronized with the source VM.
+> 4. The VM is failed over to its replica.
+
+5. [] Watch the planned failover process until the log displays the **Failover completed successfully** text then click the **Close** button. This process may take up to 10 minutes, please have some patience. While waiting, you can navigate to the **Running** section of the **Home** view to better observe the process.
+
+6. [] After the failover completes successfully, go to the **Active** section of the **Home** view.
+7. [] Select **Tiny-Veeam2**.
+8. [] Click the **Permanent Failover** button on the **Replica** ribbon.
+9. [] Click the **Yes** button.
+10. [] Watch the permanent failover process until the log displays the **Permanent failover is completed** text then click the **Close** button.
+
+---
+
+# Congratulations!
+
+You have completed this Module, to mark the lab as complete click on the menu in the upper right-hand corner and select **End**.
