@@ -1,6 +1,7 @@
 Module 4: Protect
 
 ---
+**This lab is expected to last a maximum of X minutes including lab launch.**
 
 # Module 4: Protect
 
@@ -400,3 +401,8 @@ source proxy, however, Scale-out Backup Repositories are not a supported target 
 31. [] Click the **Finish** button on the **Summary** step.
 > Note: When the backup repository is the only source of data, the replication job is often referred to as remote replica from backup. It will always capture only the most recent restore point data from the repository that was created since the remote replica was running last time. Do not wait for the replication jobs to complete.
 
+---
+
+# Congratulations!
+
+You have completed this Module, to mark the lab as complete click on the menu in the upper right-hand corner and select **End**.
