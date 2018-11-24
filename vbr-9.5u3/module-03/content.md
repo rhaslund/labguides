@@ -1,6 +1,6 @@
-Module 2: Deployment
+Module 2: Initial Configuration
 ---
-**This lab is expected to last a maximum of X minutes including lab launch.**
+**This lab is expected to last a maximum of 40 minutes including lab launch.**
 
 # Lab 3.1: Connecting virtual infrastructure servers
 
@@ -22,7 +22,16 @@ Add a vSphere host and a Hyper-V host to Veeam Backup & Replication.
  3. Description: +++VEEAM-ESX+++
 
 10. [] Click the **OK** button.
-11. [] 
+11. [] Click the **Next** button.
+12. [] Click the **Connect**.
+> Note: When you add a vCenter Server or ESX(i) host, Veeam Backup & Replication saves a thumbprint of the SSL certificate installed on the vCenter Server or ESX(i) host to the Veeam Backup & Replication database. During every subsequent connection to the server, Veeam Backup & Replication uses the saved thumbprint to verify the identity of the server and avoid the man-in-the-middle attack.
+
+13. [] Click the **Finish** button.
+
+===
+
+## Step 2: Add a standalone Hyper-V Server
+
 
 
 ---
