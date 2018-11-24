@@ -127,7 +127,7 @@ data to/from a backup repository.
 
 ## Step 3: Add a Scale-out Backup Repository
 
-1. [] Select **Scale-out Backup Repositoeries** in the **Backup Infrastructure** view.
+1. [] Select **Scale-out Repositories** in the **Backup Infrastructure** view.
 2. [] Click the **Add Scale-out Repository** button on the **Scale-Out Repository** ribbon.
 > Note: Note: Scale-out Backup Repository embraces several repositories (extents), summarizing their capacity and offering flexible options for keeping massive backups. The Scale-out Backup Repository option is only available in Enterprise and Enterprise Plus editions of Veeam Backup & Replication.
 
@@ -150,7 +150,38 @@ used for storing configuration backups or replica metadata
 # Lab 3.4. Setting up notifications
 
 1. [] Click on the **≡** button in the top left corner.
-2. [] 
+2. [] Select **General Options**.
+3. [] Click the **E-mail settings** tab.
+4. [] Tick the **Enable e-mail notifications** check box.
+5. [] Enter:
+ 1. SMTP server: +++veeam-ex01.veeamlab.local+++
+ 2. From: +++veeam-ex01.veeamlab.local+++
+ 3. To: +++administrator@veeamlab.local+++
+
+6. [] Click the **Apply** button.
+7. [] Click the **Test Message** button.
+8. [] Click the **OK** button.
+> Note: Note: You can find Outlook Web Access (OWA) in the task bar of the VEEAM-VBR server. When you start OWA, you can log in as: administrator@veeamlab.local
+
+9. [] Click the **OK** button.
+
+===
+
+# Lab 3.5: Setup locations
+
+1. [] Select the **Main Repository** Scale-out Repository.
+2. [] Click the **Location** button on the **Scale-out Repository** ribbon.
+3. [] Select **Manage Locations...**.
+4. [] Click the **Add...** button.
+5. [] Enter name: +++Remote Site+++.
+6. [] Click the **OK** button.
+7. [] Click the **Add...** button.
+8. [] Enter name: +++Local+++.
+9. [] Click the **OK** button.
+10. [] Click the **OK** button.
+11. [] Click the **Location** button on the **Scale-out Repository** ribbon.
+12. [] Select **Local**.
+13. [] 
 
 ---
 
