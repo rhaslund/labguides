@@ -181,7 +181,17 @@ used for storing configuration backups or replica metadata
 10. [] Click the **OK** button.
 11. [] Click the **Location** button on the **Scale-out Repository** ribbon.
 12. [] Select **Local**.
-13. [] 
+13. [] Select **Backup Repositories** in the **Backup Infrastructure** view.
+14. [] Select **Remote Repository**.
+15. [] Click the **Location** button on the **Backup Repository** ribbon.
+16. [] Select **Remote Site**.
+17. [] Navigate to the **Inventory** view.
+18. [] Select **VEEAM-ESX**.
+19. [] Click the **Location** button on the **Server** ribbon.
+20. [] Select **Local**.
+21. [] Select **VEEAM-HYPERV**.
+22. [] Click the **Location** button on the **Server** ribbon.
+23. [] Select **Local**.
 
 ---
 
