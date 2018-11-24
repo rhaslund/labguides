@@ -1,6 +1,8 @@
 Module 05: Entire VM Recovery
 
 ---
+**This lab is expected to last a maximum of 60 minutes including lab launch.**
+
 
 # Lab 5.1: Instant VM Recovery
 
