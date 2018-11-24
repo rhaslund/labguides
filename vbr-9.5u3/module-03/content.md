@@ -127,6 +127,31 @@ data to/from a backup repository.
 
 ## Step 3: Add a Scale-out Backup Repository
 
+1. [] Select **Scale-out Backup Repositoeries** in the **Backup Infrastructure** view.
+2. [] Click the **Add Scale-out Repository** button on the **Scale-Out Repository** ribbon.
+> Note: Note: Scale-out Backup Repository embraces several repositories (extents), summarizing their capacity and offering flexible options for keeping massive backups. The Scale-out Backup Repository option is only available in Enterprise and Enterprise Plus editions of Veeam Backup & Replication.
+
+3. [] Enter name: +++Main Backup Repository+++
+4. [] Click the **Next** button on the **Name** step.
+5. [] Click the **Add...** button.
+6. [] Tick the **Default Backup Repository** check box.
+7. [] Tick the **Local Backup Repository** check box.
+> Note: Note: A repository that you plan to use as an extent of the Scale-out Backup Repository cannot be
+used for storing configuration backups or replica metadata
+
+8. [] Click the **OK** button.
+9. [] Click the **Next** button on the **Extents** step.
+10. [] Click the **Yes** button to accept that agent permissions and backup encryption settings currently present on the added extents will be lost.
+11. [] Click the **Apply** button on the **Policy** step.
+12. [] Click the **Finish** button on the **Summary** step.
+
+===
+
+# Lab 3.4. Setting up notifications
+
+1. [] Click on the **≡** button in the top left corner.
+2. [] 
+
 ---
 
 # Congratulations!
