@@ -104,10 +104,28 @@ data to/from a backup repository.
 20. [] Click the **Apply** button on the **Review** step.
 21. [] Click the **Finish** button on the **Apply** step.
 22. [] Click the **Yes** button to confirm changing the configuration backup location to the newly created repository.
+> Note: The new repository has been added. We have selected the configuration backup to be stored at the remote site to ensure it will remain intact if the VEEAM-VBR VM crashes.
 
 ===
 
+## Step 2: Add a local repository
 
+1. [] Click the **Add Repository** button on the **Backup Repository** ribbon.
+2. [] Enter name: +++Local Backup Repository+++.
+3. [] Click the **Next** button on the **Name** step.
+4. [] Select **Microsoft Windows Server**.
+5. [] Click the **Next** button on the **Type** step.
+6. [] Click the **Populate** button.
+7. [] Select **E:\**.
+8. [] Click the **Next** button on the **Server** step.
+9. [] Verify the **Path to folder** is **E:\Backups** and click the **Next** button.
+10. [] Keep the default settings and click the **Next** button on the **Mount Server** page.
+11. [] Click the **Apply** button on the **Review** step.
+12. [] Click the **Finish** button on the **Apply** step.
+
+===
+
+## Step 3: Add a Scale-out Backup Repository
 
 ---
 
