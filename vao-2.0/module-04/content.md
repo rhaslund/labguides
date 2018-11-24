@@ -2,7 +2,7 @@ Module 4: Deployment and Installation
 ---
 **This lab is expected to last a maximum of 25 minutes including lab launch.**
 
-## Lab 4.1: Veeam Availability Orchestrator installation
+# Lab 4.1: Veeam Availability Orchestrator installation
 
 1. [] Open **File Explorer** from Windows task bar.
 2. [] Expand **This PC**.
@@ -28,7 +28,7 @@ Module 4: Deployment and Installation
 
 ===
 
-## Lab 4.2: Initial configuration
+# Lab 4.2: Initial configuration
 1. [] Launch **Veeam Availability Orchestrator** from the desktop.
 2. [] Enter username: +++administrator@vmce.lab+++ and password: +++Pa%%w0rd+++.
 3. [] Click the **Login** button.
