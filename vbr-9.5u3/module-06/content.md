@@ -55,13 +55,13 @@ Module 6: Objects Recovery
 
 1. [] Select **Disk** in the **Backup** section of the **Home** view.
 2. [] Expand the **Backup AD & Exchange & SharePoint** backup job.
-3. [] Right click the **VEEAM-SP01** virtual machine.
-4. [] Select **Restore application items**.
-5. [] Select **Microsoft SharePoint content...**.
+3. [] Select the **VEEAM-SP01** virtual machine.
+4. [] Click the **Application Items** button on the **Backup** ribbon.
+5. [] Select **Microsoft SharePoint**.
 6. [] Select **http://veeam-sp01**.
-7. [] Click the **Next** button.
+7. [] Click the **Next** button on the **Site** step.
 8. [] Select the **latest full backup** 
-9. [] Click the **Next** button.
+9. [] Click the **Next** button on the **Content Database** step.
 10. [] Keep the default settings and click the **Next** button on the **Restore Reason** step.
 11. [] Click the **Finish** button on the **Summary** step.
 12. [] If prompted, click the **Yes** button to upgrade the database.
@@ -71,30 +71,29 @@ Module 6: Objects Recovery
 16. [] Check which folder containts the following three files: **invoice.docx**, **market strategy.pptx** and **quote.docx** then click the **folder**.
 > Note: The files should be in either the Documents or Shared Documents list.
 
-17. [] Select **Restore Library**.
-18. [] Enter site url: +++http://veeam-sp01+++
-19. [] Select the **The following account** radio button.
-20. [] Enter:
+17. [] Click the **Restore Library** button on the **Library** ribbon.
+18. [] Select the **The following account** radio button.
+19. [] Enter:
  1. Account: +++VEEAMLAB\Administrator+++
  2. Password: +++Pa$$w0rd+++
  
-21. [] Select the **Restore to the following list** radio button.
-22. [] Enter: ++Restored Docs+++.
-23. [] Click the **Next** button.
-24. [] Click the **Restore** button.
-25. [] Click the **OK** button.
-26. [] Close the **Veeam Explorer for Microsoft SharePoint** window.
-27. [] Launch the **Remote Desktop Connection** client from the Windows task bar.
-28. [] Enter computer name: ++VEEAM-SP01+++
-29. [] Leave user name as **VEEAMLAB\Administrator** and enter password: +++Pa$$w0rd+++.
-30. [] Click the **OK** button.
-31. [] Open the **Start menu** by moving the cursor to the bottom left corner then click the **Start** button when it appears.
+20. [] Select the **Restore to the following list** radio button.
+21. [] Enter: ++Restored Docs+++.
+22. [] Click the **Next** button.
+23. [] Click the **Restore** button.
+24. [] Click the **OK** button.
+25. [] Close the **Veeam Explorer for Microsoft SharePoint** window.
+26. [] Launch the **Remote Desktop Connection** client from the Windows task bar.
+27. [] Enter computer name: ++VEEAM-SP01+++
+28. [] Leave user name as **VEEAMLAB\Administrator** and enter password: +++Pa$$w0rd+++.
+29. [] Click the **OK** button.
+30. [] Open the **Start menu** by moving the cursor to the bottom left corner then click the **Start** button when it appears.
 > Note: If you are having issues opening the start menu, please ask your instructor for assistance.
 
-32. [] Launch **Internet Explorer** using the tile.
-33. [] Browse to +++http://veeam-sp01+++
-34. [] Verify the **Restored Docs** list appear under **Recent**.
-35. [] Close the **Remote Desktop Connection** window.
+31. [] Launch **Internet Explorer** using the tile.
+32. [] Browse to +++http://veeam-sp01+++
+33. [] Verify the **Restored Docs** list appear under **Recent**.
+34. [] Close the **Remote Desktop Connection** window.
 
 ===
 
