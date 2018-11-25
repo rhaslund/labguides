@@ -99,7 +99,7 @@ Module 6: Objects Recovery
 
 # Lab 6.3: Perform Oracle items recovery
 
-1. [] 
+1. []  
 
 ---
 
