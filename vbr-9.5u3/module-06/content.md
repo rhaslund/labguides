@@ -6,6 +6,12 @@ Module 6: Objects Recovery
 
 # Lab 6.1: Perform Microsoft Exchange items recovery
 
+1. [] Launch **Outlook Web Access** from the Windows task bar.
+2. [] Enter:
+ 1. Username: +++administrator@veeamlab.local+++
+ 2. Password: +++Pa$$w0rd+++
+
+3. [] Click the **Sign In** button.
 
 
 ---
