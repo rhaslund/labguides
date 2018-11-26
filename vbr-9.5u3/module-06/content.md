@@ -99,7 +99,9 @@ Module 6: Objects Recovery
 
 # Lab 6.3: Perform Oracle items recovery
 
-1. []  
+1. [] Launch **Oracle SQL Developer** from the Windows task bar (icon looks like a disk with a green arrow).
+2. [] Click the **green \+** button above the **Connections** text in the **Connections** pane.
+3. [] 
 
 ---
 
