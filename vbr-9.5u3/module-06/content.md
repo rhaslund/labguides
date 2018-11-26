@@ -279,7 +279,7 @@ on the tab.
 22. [] Select **Network adapter 1**.
 23. [] Untick the **Connected** check box.
 24. [] Click the **OK** button.
-> Important! If the Backup Browser is still open, it is important that you close it. Because an RPC network connection was detected during the first session, failover to a networkless restore (VIX) will not be attempted.
+> Important: If the Backup Browser is still open, it is important that you close it. Because an RPC network connection was detected during the first session, failover to a networkless restore (VIX) will not be attempted.
 
 25. [] Select the **VEEAM-DC01** virtual machine.
 26. [] Click the **Guest Files** button on the **Backup** ribbon.
@@ -287,6 +287,33 @@ on the tab.
 28. [] Keep the default settings and click the **Next** button on the **Restore Point** step.
 29. [] Keep the default settings and click the **Next** button on the **Reason** step.
 30. [] Click the **Finish** button on the **Summary** step.
+31. [] Double click the **Important Files** folder.
+32. [] Select **invoice.docx**.
+33. [] Click the **Restore** button on the **File** ribbon.
+34. [] Select **Overwrite**.
+> Note: Select option Keep if you do not want to overwrite the existing file with the restored one.
+
+35. [] Click the **Show details** button.
+36. [] Wait until the **Restore completed** text is displayed then switch to the **VMware vSphere Client** window
+> Important: Do NOT close the Backup Browser window at this time.
+
+37. [] Select the **VEEAM-DC01** virtual machine.
+38. [] Tick the **Connected** check box.
+39. [] Click the **OK** button.
+40. [] Launch the **File Explorer** from the Windows task bar.
+41. [] Navigate to the **C:\\VeeamFLR** folder
+> Important! If you stopped the Restore Wizard in substep 36 of this module this folder will be empty. Launch it again by repeating substeps 25-36 of this module OR ask your instructor for assistance
+
+42. [] Double click the **VEEAM-DC01** folder (which contains a random ID).
+43. [] Double click the **Volume1** folder.
+44. [] Right click the **market strategy.pptx** file.
+45. [] Select **Copy**.
+46. [] Navigate to **\\\\veeam-dc01\\c$\\Important Files**.
+47. [] Right click inside the **Important Files** folder.
+48. [] Select **Paste**.
+49. [] Verify all three files are present in the **\\\\veeam-dc01\\c$\\Important Files** folder then close the **File Explorer** window.
+50. [] Close the **VMware vSphere Client** window.
+51. [] Close the **Backup Browser** window.
 
 ---
 
