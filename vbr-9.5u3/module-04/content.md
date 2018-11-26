@@ -5,7 +5,7 @@ Module 4: Protect
 
 # Module 4: Protect
 
-## Step 1: Create and schedule a backup job for VEEAM-ORCL and TinyVeeam
+## Step 1: Create and schedule a backup job for VEEAM-ORCL and Tiny-Veeam
 
 1. [] Navigate to the **Home** view.
 2. [] Select **Jobs**
