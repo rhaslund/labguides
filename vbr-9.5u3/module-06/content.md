@@ -279,6 +279,14 @@ on the tab.
 22. [] Select **Network adapter 1**.
 23. [] Untick the **Connected** check box.
 24. [] Click the **OK** button.
+> Important! If the Backup Browser is still open, it is important that you close it. Because an RPC network connection was detected during the first session, failover to a networkless restore (VIX) will not be attempted.
+
+25. [] Select the **VEEAM-DC01** virtual machine.
+26. [] Click the **Guest Files** button on the **Backup** ribbon.
+27. [] Select **Microsoft Windows**.
+28. [] Keep the default settings and click the **Next** button on the **Restore Point** step.
+29. [] Keep the default settings and click the **Next** button on the **Reason** step.
+30. [] Click the **Finish** button on the **Summary** step.
 
 ---
 
