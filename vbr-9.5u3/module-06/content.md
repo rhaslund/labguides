@@ -110,7 +110,7 @@ Module 6: Objects Recovery
 
 4. [] Click the **Save** button.
 6. [] Click the **Connect** button.
-7. [] Expand **Production Oracle**.
+7. [] Expand the **Production Oracle** connection
 8. [] Enter: +++select * from EMP+++ in the **Production Oracle** tab.
 9. [] Click the **Run Script** button (icon looks like a notepad with a green arrow).
 10. [] Review the output result in the **Script Output** pane then expand **Tables (Filtered)**.
@@ -133,6 +133,117 @@ on the tab.
 24. [] Click the **Next** button.
 25. [] Keep the default settings and click the **Next** button on the **Reason** step.
 26. [] Click the **Finish** button.
+27. [] Wait for the **Veeam Explorer for Oracle** window to load then select the **DB1** database.
+28. [] Click the **Restore Database** button on the **Home** ribbon.
+29. [] Select **Restore point-in-time state to VEEAM-ORCL**.
+30. [] Select the **Restore to a specific point in time (requires redo log backups)** radio button.
+31. [] Move the **slider** all the way to the left (select the oldest point in time available).
+32. [] Click the **Next** button.
+32. [] Enter:
+ 1. Username: +++oracle+++
+ 2. Password: +++Pa$$w0rd+++
+
+33. [] Click the **Next** button.
+34. [] Click the **Next** button.
+35. [] Click the **Restore** button.
+36. [] Click the **Yes** button.
+37. [] Click the **OK** button.
+38. [] Close the **Veeam Explorer for Oracle** window.
+39. [] Launch **Oracle SQL Developer** from the Windows task bar (icon looks like a disk with a green arrow).
+40. [] Expand the **Production Oracle** connection.
+41. [] Enter:
+ 1. Username: +++scott+++
+ 3. Password: +++tiger+++
+
+42. [] Click the **OK** button.
+43. [] Enter: +++select * from EMP+++ in the **Production Oracle** tab.
+44. [] Click the **Run Script** button (icon looks like a notepad with a green arrow).
+45. [] Review the output result in the **Script Output** pane then close the **Oracle SQL Developer** window.
+46. [] Click the **No** button.
+
+===
+
+# Lab 6.4: Perform Microsoft Active Directory items recovery
+
+1. [] Launch the **Remote Desktop Connection client** from the Windows task bar.
+2. [] Enter computer name: ++VEEAM-DC01+++
+3. [] Leave user name as **VEEAMLAB\Administrator** and enter password: +++Pa$$w0rd+++.
+4. [] Click the **OK** button.
+5. [] Launch the **Server Manager** from the Windows task manager.
+6. [] Select **AD DS** in the left hand navigation pane.
+7. [] Right click **VEEAM-DC01**.
+8. [] Select **Active Directory Users and Computers**.
+9. [] Expand the **veeamlab.local** forest.
+10. [] Select the **Users** organizational unit.
+11. [] Right click the **testmail** user.
+12. [] Select **Delete**.
+13. [] Click the **Yes** button.
+14. [] Minimize the **Remote Desktop Connection** window.
+15. [] Select **Disk** in the **Backups** section of the **Home** view.
+16. [] Expand the **Backup AD & Exchange & SharePoint** job.
+17. [] Select the **VEEAM-DC01** virtual machine.
+18. [] Click the **Restore application items** button on the **Backups** ribbon.
+19. [] Select **Microsoft Active Directory**.
+20. [] Keep the default settings and click the **Next** button on the **Restore Point** step.
+21. [] Keep the default settings and click the **Next** button on the **Reason** step.
+22. [] Click the **Finish** button on the **Summary** step.
+23. [] Expand the **veeamlab.local** forest.
+24. [] Click the **Compare All Objects** button on the **Home** ribbon.
+25. [] Click the **Show Changed Objects Only** button on the **Home** ribbon.
+26. [] Expand **Users and Computers**.
+27. [] Select the **Users** organizational unit.
+28. [] Right click the **testmail** user.
+29. [] Select **Restore to VEEAM-DC01.veeamlab.local**.
+30. [] Watch the restore process then click the **OK** button.
+31. [] Switch to the **Remote Desktop Connection client** window using the Windows task bar.
+32. [] Click the **Refresh** button.
+33. [] Verify the **testmail** user appears then close the **Remote Desktop Connection client** window.
+34. [] Close the **Veeam Explorer for Microsoft Active Directory** window.
+
+===
+
+# Lab 6.5: Perform Microsoft SQL Server items recovery
+
+1. [] Select **Disk** in the **Backups** section of the **Home** view.
+2. [] Expand the **Backup AD & Exchange & SharePoint** job.
+3. [] Select the **VEEAM-SP01** virtual machine.
+3. [] Click the **Restore application items** button on the **Backups** ribbon.
+4. [] Select **Microsoft SQL Server**.
+5. [] Click the **Next** button.
+6. [] Keep the default settings and click the **Next** button on the **Reason** step.
+7. [] Click the **Finish** button on the **Summary** step.
+8. [] Wait for the **Veeam Explorer for Microsoft SQL Server** window to load then expand the **SQLEXPRESS** database.
+9. [] Right click the **testdb** database.
+10. [] Select **Restore point-in-time state to VEEAM-SP01\\SQLEXPRESS**
+11. [] Select the **Restore to a specific point in time (requires transaction log backups)** radio button.
+12. [] Move the **slider** all the way to the left (select the oldest restore point).
+13. [] Click the **Restore** button.
+14. [] Click the **OK** button.
+15. [] Click the **OK** button.
+16. [] Close the **Veeam Explorer for Microsoft SQL Server** window.
+17. [] Launch the **Remote Desktop Connection client** from the Windows task bar.
+18. [] Enter computer name: ++VEEAM-SP01+++
+19. [] Leave user name as **VEEAMLAB\Administrator** and enter password: +++Pa$$w0rd+++.
+20. [] Click the **OK** button.
+21. [] Open the **Start menu** by moving the cursor to the bottom left corner then click the **Start** button when it appears.
+> Note: If you are having issues opening the start menu, please ask your instructor for assistance.
+
+22. [] Select the **Microsoft SQL Server Management Studio** tile.
+23. [] Verify the server name is **VEEAM-SP01\SQLEXPRESS** then click the **Connect** button.
+24. [] Expand **Databases**.
+25. [] Expand the **testdb** database
+26. [] Expand **Tables**
+27. [] Verify the **dbo.BuildVersion** table has been restored then close the **Microsoft SQL Server Management Studio** window.
+28. [] Close the **Remote Desktop Connection** window.
+
+===
+
+# Lab 6.6: Guest files recovery
+
+## Step 1: Perform Windows guest files recovery
+
+1. [] Launch the **File Explorer** from the Windows task bar.
+2. [] Navigate to: +++\\\\veeam-dc01\\c$\\Important Files+++
 
 
 ---
