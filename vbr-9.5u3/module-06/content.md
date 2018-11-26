@@ -101,7 +101,39 @@ Module 6: Objects Recovery
 
 1. [] Launch **Oracle SQL Developer** from the Windows task bar (icon looks like a disk with a green arrow).
 2. [] Click the **green \+** button above the **Connections** text in the **Connections** pane.
-3. [] 
+3. [] Enter:
+ 1. Connection Name: +++Production Oracle+++
+ 2. Username: +++scott+++
+ 3. Password: +++tiger+++
+ 4. Hostname: +++10.0.3.14+++
+ 5. SID: +++ora11g+++
+
+4. [] Click the **Save** button.
+6. [] Click the **Connect** button.
+7. [] Expand **Production Oracle**.
+8. [] Enter: +++select * from EMP+++ in the **Production Oracle** tab.
+9. [] Click the **Run Script** button (icon looks like a notepad with a green arrow).
+10. [] Review the output result in the **Script Output** pane then expand **Tables (Filtered)**.
+11. [] Right click the **EMP** table.
+12. [] Select **Table**.
+13. [] Select **Drop...**.
+14. [] Click the **Apply** button
+15. [] Click the **OK** button.
+16. [] Click the **Run Script** button (icon looks like a notepad with a green arrow).
+> Note: Since the table has been removed, an error message will be shown in the output window at the bottom
+on the tab.
+
+17. [] Close the **Oracle SQL Developer** window.
+18. [] Click the **No** button.
+19. [] Select **Disk** in the **Backups** section of the **Home** view.
+20. [] Expand the **Backup ORCL** job.
+21. [] Right click the **VEEAM-ORCL** virtual machine.
+22. [] Select **Restore application items**.
+23. [] Select **Oracle databases**.
+24. [] Click the **Next** button.
+25. [] Keep the default settings and click the **Next** button on the **Reason** step.
+26. [] Click the **Finish** button.
+
 
 ---
 
