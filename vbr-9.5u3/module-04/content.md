@@ -125,7 +125,7 @@ Module 4: Protect
 27. [] Select **Standard account...***.
 28. [] Enter:
  1. Username: +++VEEAMLAB\Administrator+++
- 2. Password: ++Pa$$w0rd+++
+ 2. Password: +++Pa$$w0rd+++
 
 29. [] Click the **OK** button.
 30. [] Click the **Test Now** button.
