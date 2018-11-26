@@ -244,7 +244,41 @@ on the tab.
 
 1. [] Launch the **File Explorer** from the Windows task bar.
 2. [] Navigate to: +++\\\\veeam-dc01\\c$\\Important Files+++
+3. [] Select **all the files** in this folder.
+4. [] Right click on **the selected files**.
+5. [] Select **Delete**.
+6. [] Click the **Yes** button.
+7. [] Close the **File Explorer** window.
 
+1. [] Select **Disk** in the **Backups** section of the **Home** view.
+2. [] Expand the **Backup AD & Exchange & SharePoint** job.
+3. [] Select the **VEEAM-DC01** virtual machine.
+4. [] Click the **Guest Files** button on the **Backup** ribbon.
+5. [] Select **Microsoft Windows**.
+6. [] Keep the default settings and click the **Next** button on the **Restore Point** step.
+7. [] Keep the default settings and click the **Next** button on the **Reason** step.
+8. [] Click the **Finish** button on the **Summary** step.
+9. [] Double click the **Important Files** folder.
+10. [] Select **invoice.docx**.
+11. [] Click the **Restore** button on the **File** ribbon.
+12. [] Select **Overwrite**.
+> Note: Select option Keep if you do not want to overwrite the existing file with the restored one.
+
+13. [] Click the **Show details** button.
+14. [] Wait until the **Restore completed** text is displayed then click the **Close** button.
+15. [] Launch the **VMware vSphere Client** from the Windows task bar.
+16. [] Enter:
+ 1. User name: +++root+++
+ 2. Password: +++Pa$$w0rd+++
+
+17. [] Click the **Login** butto.
+18. [] Expand the **VEEAM-ESX** host.
+19. [] Expand the **Production** resource pool.
+20. [] Select the **VEEAM-DC01** virtual machine.
+21. [] Click the **Edit Settings** text link in the **Commands** pane.
+22. [] Select **Network adapter 1**.
+23. [] Untick the **Connected** check box.
+24. [] Click the **OK** button.
 
 ---
 
