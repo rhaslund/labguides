@@ -156,7 +156,7 @@ used for storing configuration backups or replica metadata
 4. [] Tick the **Enable e-mail notifications** check box.
 5. [] Enter:
  1. SMTP server: +++veeam-ex01.veeamlab.local+++
- 2. From: +++veeam-ex01.veeamlab.local+++
+ 2. From: +++VeeamBackup@veeamlab.local+++
  3. To: +++administrator@veeamlab.local+++
 
 6. [] Click the **Apply** button.
