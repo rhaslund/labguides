@@ -250,70 +250,76 @@ on the tab.
 6. [] Click the **Yes** button.
 7. [] Close the **File Explorer** window.
 
-1. [] Select **Disk** in the **Backups** section of the **Home** view.
-2. [] Expand the **Backup AD & Exchange & SharePoint** job.
-3. [] Select the **VEEAM-DC01** virtual machine.
-4. [] Click the **Guest Files** button on the **Backup** ribbon.
-5. [] Select **Microsoft Windows**.
-6. [] Keep the default settings and click the **Next** button on the **Restore Point** step.
-7. [] Keep the default settings and click the **Next** button on the **Reason** step.
-8. [] Click the **Finish** button on the **Summary** step.
-9. [] Double click the **Important Files** folder.
-10. [] Select **invoice.docx**.
-11. [] Click the **Restore** button on the **File** ribbon.
-12. [] Select **Overwrite**.
+8. [] Select **Disk** in the **Backups** section of the **Home** view.
+9. [] Expand the **Backup AD & Exchange & SharePoint** job.
+10. [] Select the **VEEAM-DC01** virtual machine.
+11. [] Click the **Guest Files** button on the **Backup** ribbon.
+12. [] Select **Microsoft Windows**.
+13. [] Keep the default settings and click the **Next** button on the **Restore Point** step.
+14. [] Keep the default settings and click the **Next** button on the **Reason** step.
+15. [] Click the **Finish** button on the **Summary** step.
+16. [] Double click the **Important Files** folder.
+17. [] Select **invoice.docx**.
+18. [] Click the **Restore** button on the **File** ribbon.
+19. [] Select **Overwrite**.
 > Note: Select option Keep if you do not want to overwrite the existing file with the restored one.
 
-13. [] Click the **Show details** button.
-14. [] Wait until the **Restore completed** text is displayed then click the **Close** button.
-15. [] Launch the **VMware vSphere Client** from the Windows task bar.
-16. [] Enter:
+20. [] Click the **Show details** button.
+21. [] Wait until the **Restore completed** text is displayed then click the **Close** button.
+22. [] Launch the **VMware vSphere Client** from the Windows task bar.
+23. [] Enter:
  1. User name: +++root+++
  2. Password: +++Pa$$w0rd+++
 
-17. [] Click the **Login** butto.
-18. [] Expand the **VEEAM-ESX** host.
-19. [] Expand the **Production** resource pool.
-20. [] Select the **VEEAM-DC01** virtual machine.
-21. [] Click the **Edit Settings** text link in the **Commands** pane.
-22. [] Select **Network adapter 1**.
-23. [] Untick the **Connected** check box.
-24. [] Click the **OK** button.
+24. [] Click the **Login** butto.
+25. [] Expand the **VEEAM-ESX** host.
+26. [] Expand the **Production** resource pool.
+27. [] Select the **VEEAM-DC01** virtual machine.
+28. [] Click the **Edit Settings** text link in the **Commands** pane.
+29. [] Select **Network adapter 1**.
+30. [] Untick the **Connected** check box.
+31. [] Click the **OK** button.
 > Important: If the Backup Browser is still open, it is important that you close it. Because an RPC network connection was detected during the first session, failover to a networkless restore (VIX) will not be attempted.
 
-25. [] Select the **VEEAM-DC01** virtual machine.
-26. [] Click the **Guest Files** button on the **Backup** ribbon.
-27. [] Select **Microsoft Windows**.
-28. [] Keep the default settings and click the **Next** button on the **Restore Point** step.
-29. [] Keep the default settings and click the **Next** button on the **Reason** step.
-30. [] Click the **Finish** button on the **Summary** step.
-31. [] Double click the **Important Files** folder.
-32. [] Select **invoice.docx**.
-33. [] Click the **Restore** button on the **File** ribbon.
-34. [] Select **Overwrite**.
+32. [] Select the **VEEAM-DC01** virtual machine.
+33. [] Click the **Guest Files** button on the **Backup** ribbon.
+34. [] Select **Microsoft Windows**.
+35. [] Keep the default settings and click the **Next** button on the **Restore Point** step.
+36. [] Keep the default settings and click the **Next** button on the **Reason** step.
+37. [] Click the **Finish** button on the **Summary** step.
+38. [] Double click the **Important Files** folder.
+39. [] Select **invoice.docx**.
+40. [] Click the **Restore** button on the **File** ribbon.
+41. [] Select **Overwrite**.
 > Note: Select option Keep if you do not want to overwrite the existing file with the restored one.
 
-35. [] Click the **Show details** button.
-36. [] Wait until the **Restore completed** text is displayed then switch to the **VMware vSphere Client** window
+42. [] Click the **Show details** button.
+43. [] Wait until the **Restore completed** text is displayed then switch to the **VMware vSphere Client** window
 > Important: Do NOT close the Backup Browser window at this time.
 
-37. [] Select the **VEEAM-DC01** virtual machine.
-38. [] Tick the **Connected** check box.
-39. [] Click the **OK** button.
-40. [] Launch the **File Explorer** from the Windows task bar.
-41. [] Navigate to the **C:\\VeeamFLR** folder
+44. [] Select the **VEEAM-DC01** virtual machine.
+45. [] Tick the **Connected** check box.
+46. [] Click the **OK** button.
+47. [] Launch the **File Explorer** from the Windows task bar.
+48. [] Navigate to the **C:\\VeeamFLR** folder
 > Important! If you stopped the Restore Wizard in substep 36 of this module this folder will be empty. Launch it again by repeating substeps 25-36 of this module OR ask your instructor for assistance
 
-42. [] Double click the **VEEAM-DC01** folder (which contains a random ID).
-43. [] Double click the **Volume1** folder.
-44. [] Right click the **market strategy.pptx** file.
-45. [] Select **Copy**.
-46. [] Navigate to **\\\\veeam-dc01\\c$\\Important Files**.
-47. [] Right click inside the **Important Files** folder.
-48. [] Select **Paste**.
-49. [] Verify all three files are present in the **\\\\veeam-dc01\\c$\\Important Files** folder then close the **File Explorer** window.
-50. [] Close the **VMware vSphere Client** window.
-51. [] Close the **Backup Browser** window.
+49. [] Double click the **VEEAM-DC01** folder (which contains a random ID).
+50. [] Double click the **Volume1** folder.
+51. [] Right click the **market strategy.pptx** file.
+52. [] Select **Copy**.
+53. [] Navigate to **\\\\veeam-dc01\\c$\\Important Files**.
+54. [] Right click inside the **Important Files** folder.
+55. [] Select **Paste**.
+56. [] Verify all three files are present in the **\\\\veeam-dc01\\c$\\Important Files** folder then close the **File Explorer** window.
+57. [] Close the **VMware vSphere Client** window.
+58. [] Close the **Backup Browser** window.
+
+===
+
+## Step 2: Perform Linux guest files recovery
+
+1. [] 
 
 ---
 
