@@ -22,7 +22,7 @@ Module 6: Objects Recovery
 11. [] Click the **Application Items** button on the **Backup** ribbon.
 12. [] Select **Microsoft Exchange**.
 13. [] Keep the default setting and click the **Next** button on the **Restore Point** step.
-14. [] Keep the default settings and click the **Next* button on the **Reason** step.
+14. [] Keep the default settings and click the **Next** button on the **Reason** step.
 15. [] Click the **Finish** button on the **Summary** step.
 > Note: The Veeam Explorer for Microsoft Exchange will launch now. It can also be launched manually from the Windows Start Menu.
 
