@@ -18,8 +18,8 @@ Module 05: Entire VM Recovery
 10. [] Select **Tiny-Veeam2**.
 11. [] Click the **Add** button.
 12. [] Click the **Next** button on the **Virtual Machines** step.
-13. [] Keep the default settings and click the **Next* button on the **Recovery Mode** step.
-14. [] Keep the default settings and click the **Next* button on the **Reason** step.
+13. [] Keep the default settings and click the **Next** button on the **Recovery Mode** step.
+14. [] Keep the default settings and click the **Next** button on the **Reason** step.
 15. [] Click **Show objects**.
 16. [] Click the **OK** button.
 17. [] Click the **Finish** button on the **Summary** step.
@@ -78,7 +78,7 @@ Module 05: Entire VM Recovery
 > - The backup file from which you plan to restore a VM or a VM disk is created with the Use Changed Block Tracking option enabled.
 
 23. [] Switch back to the **VMware vSphere Client** using the Windows task bar.
-24. [] Review the **Recent Tasks** pane to better understand the restore process then close the **VMware vSphere window.
+24. [] Review the **Recent Tasks** pane to better understand the restore process then close the **VMware vSphere** window.
 
 ===
 
@@ -89,11 +89,11 @@ Module 05: Entire VM Recovery
 3. [] Launch the **Veeam.Backup.Extractor.exe** file.
 > Note: If you plan to start the extract utility on a machine other than the Veeam backup server, make sure that you copy the Veeam.Backup.Extractor.exe file together with the extract.exe file from the %PROGRAMFILES%\Veeam\Backup and Replication\Backup folder and store these files to the same folder on the destination machine. Otherwise, the extract utility will fail to start.
 
-4. [] Click the **Browse...*** button in the **VBK file** section.
+4. [] Click the **Browse...** button in the **VBK file** section.
 5. [] Enter file name: +++X:\Backup\Backup_ORCL+++
 6. [] Click the **Open** button.
 7. [] Select the **Tiny-Veeam** VBK full backup file.
-8. [] Click the **Browse...*** button in the **Extract folder** section.
+8. [] Click the **Browse...** button in the **Extract folder** section.
 9. [] Expand **Computer**.
 10. [] Expand the **X:** drive.
 11. [] Select the **VMs** folder.
@@ -129,7 +129,7 @@ Module 05: Entire VM Recovery
 12. [] Select **Tiny-Veeam**.
 13. [] Click the **Failover Now** button on the **Replica** ribbon.
 14. [] Click the **Next** button.
-15. [] Keep the default settings and click the **Next* button on the **Reason** step.
+15. [] Keep the default settings and click the **Next** button on the **Reason** step.
 16. [] Click the **Finish** button on the **Summary** step.
 17. [] Watch the failover process until the log displays the **Failover completed successfully** text then click the **Close** button.
 18. [] Switch back to the **VMware vSphere Client** using the Windows task bar.
@@ -157,7 +157,7 @@ Module 05: Entire VM Recovery
 ## Step 3: Failover a replicated VM again
 
 1. [] Launch the **Hyper-V Manager** from the Windows task bar.
-2. [] **Select **Tiny-Veeam2**.
+2. [] Select **Tiny-Veeam2**.
 3. [] Click the **Turn Off** text link in the **Actions** pane.
 4. [] Click the **Turn Off** button to confirm turning off the **Tiny-Veeam2** virtual machine.
 5. [] Minimize the **Hyper-V Manager** window.
@@ -265,8 +265,8 @@ Module 05: Entire VM Recovery
 
 1. [] Select **Tiny-Veeam2**.
 2. [] Click the **Planned Failover** button on the **Replica** ribbon.
-3. [] Click the **Next*' button on the **Virtual Machines** step.
-4. [] Keep the default settings and click the **Next* button on the **Reason** step.
+3. [] Click the **Next** button on the **Virtual Machines** step.
+4. [] Keep the default settings and click the **Next** button on the **Reason** step.
 5. [] Click the **Finish** button on the **Summary** step.
 > Note: When you start the planned failover, Veeam Backup & Replication performs the following steps:
 >
