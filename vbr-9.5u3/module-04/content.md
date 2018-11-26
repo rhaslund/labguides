@@ -70,7 +70,7 @@ Module 4: Protect
 39. [] Click the **Next** button on the **Guest Processing** step.
 40. [] Tick the **Run the job automatically** check box.
 41. [] Modify the schedule to run daily at **10:00 PM**.
-> Important: Important! If you do not schedule a job, you must be aware of two limitations: 
+> Important: If you do not schedule a job, you must be aware of two limitations: 
 >
 > 1. Even if transaction log backups are enabled in the job, the transaction logs will not be backed up.
 > 2. There is no option to schedule the automatic retry for jobs configured to start only manually.
@@ -117,7 +117,7 @@ Module 4: Protect
 21. [] Click the **SQL** tab.
 22. [] Select the **Backup logs periodically** radio button.
 23. [] Increase **Backup logs every** to ++60++ minutes.
-> Note: Note: For this setting to take effect, you should ensure that the full or bulk-logged recovery model is turned on for the required databases on the SQL Server VM. If the recovery model is set to Simple, Veeam Backup & Replication does not detect or process the SQL Server VM’s logs. If Full model is enabled, but neither the Backup nor Truncate logs option is selected, logs will increase in size and occupy disk space.
+> Note: For this setting to take effect, you should ensure that the full or bulk-logged recovery model is turned on for the required databases on the SQL Server VM. If the recovery model is set to Simple, Veeam Backup & Replication does not detect or process the SQL Server VM’s logs. If Full model is enabled, but neither the Backup nor Truncate logs option is selected, logs will increase in size and occupy disk space.
 
 24. [] Click the **OK** button.
 25. [] Click the **OK** button.
@@ -200,7 +200,7 @@ operation system does not have VMware Tools installed.
 9. [] Navigate to the **E:\Backups** folder.
 > Note: Because of the way Scale-out Backup Repository works, your VeeamZIP backup could have been stored in the X:\Backup folder.
 
-10. [] Verify the *Tiny-Veeam** VBK full backup file is present then close the **File Explorer** window.
+10. [] Verify the **Tiny-Veeam** VBK full backup file is present then close the **File Explorer** window.
 > Note: If you need to quickly create a restore point for the selected VM, VeeamZIP (full backup) or quick backup (incremental backup) can be used. Quick backup is an incremental backup task and can be run only for VMs that have been successfully backed up at least once and have a full restore point.
 
 ===
@@ -304,12 +304,11 @@ operation system does not have VMware Tools installed.
 17. [] Click the **OK** button.
 18. [] Click the **Next** button on the **Destination** step.
 19. [] Verify that **Remote Repository** is selected as the **Repository for replica metadata** then lower **Restore points to keep** to +++3+++.
-> Note: It is generally recommended to store replica metadata in a repository that is close to the
-source proxy, however, Scale-out Backup Repositories are not a supported target for replication job metadata.
+> Note: It is generally recommended to store replica metadata in a repository that is close to the source proxy, however, Scale-out Backup Repositories are not a supported target for replication job metadata.
 
 20. [] Keep the default settings and click the **Next** button on the  **Data Transfer** step.
 21. [] Tick the **Map replicas to existing VMs** check box.
-> Note: Note: In the classroom lab, we prepared an existing replica of the Tiny-Veeam VM. You can map it to the newly created replica job to avoid processing a full replica again.
+> Note: In the classroom lab, we prepared an existing replica of the Tiny-Veeam VM. You can map it to the newly created replica job to avoid processing a full replica again.
 
 22. [] Select **Tiny-Veeam**.
 23. [] Click the **Edit...** button.
@@ -324,7 +323,6 @@ source proxy, however, Scale-out Backup Repositories are not a supported target 
 32. [] Tick the **Run the job when I click Finish** check box.
 33. [] Click the **Finish** button on the **Summary** step.
 > Important: Do not wait for the jobs to finish before moving to the next step.
-
 
 ===
 
