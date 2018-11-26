@@ -13,7 +13,7 @@ Module 4: Protect
 4. [] Select **VMware vSphere**.
 5. [] Enter name: +++Backup ORCL+++.
 6. [] Click the **Next button** on the **Name** step.
-7. [] Click the **Add...*** button.
+7. [] Click the **Add...** button.
 8. [] Expand the **VEEAM-ESX** host.
 9. [] Expand the **Production** resource pool.
 10. [] Hold the **CTRL** and select both the **VEEAM-ORCL** and **Tiny-Veeam** virtual machines.
@@ -93,7 +93,7 @@ Module 4: Protect
 3. [] Enter name: +++Backup AD & Exchane & SharePoint**
 4. [] Click the **Next** button on the **Name** step.
 5. [] Click the **Add...** button.
-6. [] Expand the **VEEAM-ESX*** host.
+6. [] Expand the **VEEAM-ESX** host.
 7. [] Expand the **Production** resource pool.
 8. [] Hold the **CTRL** button and select the **VEEAM-DC01**, **VEEAM-EX01** and **VEEAM-SP01** virtual machines.
 9. [] Click the **Add** button.
@@ -122,7 +122,7 @@ Module 4: Protect
 24. [] Click the **OK** button.
 25. [] Click the **OK** button.
 26. [] Click the **Add...** button in the **Guest OS credentials** section.
-27. [] Select **Standard account...***.
+27. [] Select **Standard account...**.
 28. [] Enter:
  1. Username: +++VEEAMLAB\Administrator+++
  2. Password: +++Pa$$w0rd+++
@@ -144,7 +144,7 @@ Module 4: Protect
 ## Step 3: Create and run an encrypted backup job for Tiny-Veeam2
 
 1. [] Click the **Backup Job** on the **Home** ribbon.
-2. [] Select **Microsoft Hyper-V...***
+2. [] Select **Microsoft Hyper-V...**
 3. [] Enter name: +++Backup Tiny-Veeam2+++
 4. [] Click the **Next** button on the **Name** step.
 5. [] Click the **Add...** button.
@@ -160,7 +160,7 @@ Module 4: Protect
 13. [] Click the **Advanced** button.
 14. [] Click the **Storage** tab.
 15. [] Tick the **Enable backup file encryption** check box.
-16. [] Click the **Add...*** button in the **Encryption** section.
+16. [] Click the **Add...** button in the **Encryption** section.
 17. [] Enter:
  1. Hint: +++Technical course that provides extensive information on Veeam solutions+++
  2. Password: +++vmce+++
@@ -187,7 +187,7 @@ Module 4: Protect
 1. [] Navigate to the **Inventory** view.
 2. [] Select the **VEEAM-ESX** host.
 3. [] Right-click the **Tiny-Veeam** virtual machine.
-4. [] Select **VeeamZIP...***.
+4. [] Select **VeeamZIP...**.
 5. [] Click the **More >>** button.
 > Note: Since we did not select a password, Veeam Backup & Replication will produce an unencrypted VeeamZIP file. By default, Veeam Backup & Replication uses application-aware image processing to create a transactionally consistent backup of VMs running applications with VSS support. If you were backing up VMs that run something other than Windows OS or applications without VSS support, you could enable this option by clearing the Disable guest quiescence check box.
 
@@ -219,7 +219,7 @@ operation system does not have VMware Tools installed.
 > Important: **WARNING! Do NOT use the default cache size of 100 GB. Leaving the default cache size in place will result in the lab running out of space and ultimately the job will fail**. We’re using 10 GB for demonstration only. Please check the User Guide for sizing recommendations.
 
 9. [] Click the **Next** on the **Cache** step.
-10. [] Click the **Apply** button on the *Review** step.
+10. [] Click the **Apply** button on the **Review** step.
 11. [] Click the **Next** button on the **Apply** step.
 12. [] Click the **Finish** button on the **Summary** step.
 
@@ -236,7 +236,7 @@ operation system does not have VMware Tools installed.
 > Important: **WARNING! Do NOT use the default cache size of 100 GB. Leaving the default cache size
 
 7. [] Click the **Next** on the **Cache** step.
-8. [] Click the **Apply** button on the *Review** step.
+8. [] Click the **Apply** button on the **Review** step.
 9. [] Click the **Next** button on the **Apply** step.
 10. [] Click the **Finish** button on the **Summary** step.
 11. [] Verify both WAN accelerators are present then navigate to the **Home** view.
@@ -259,7 +259,7 @@ operation system does not have VMware Tools installed.
 12. [] Click the **Backup repository** drop down menu.
 13. [] Select **Remote Repository**.
 14. [] Lower **Restore points to keep** to +++3+++.
-15. [] Click the ***Advanced** button.
+15. [] Click the **Advanced** button.
 16. [] Tick the **Defragment and compact full backup file** check box.
 > Note: This setting will periodically compact the full backup, however, this option can only be enabled if GFS settins are disabled.
 
