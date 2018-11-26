@@ -65,7 +65,14 @@ Module 7: Verification
 46. [] Keep the default settings and click the **Next** button on the **Static Mapping** step.
 > Note: Static IP mapping is used when it is necessary to provide many clients with access to a isolated VM. The static IP address is assigned to the proxy appliance network adapter connected to the production network, and IP traffic directed to the specified static IP address is routed by the proxy appliance to the VM powered on in the isolated network.
 
-47. [] 
+47. [] Click the **Apply** button on the **Ready to Apply** step.
+48. [] Click the **Finish** button on the **Applying Configuration** step.
+
+===
+
+## Step 2: Add an application group
+
+1. [] 
 
 
 
