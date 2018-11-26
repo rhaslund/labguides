@@ -42,7 +42,26 @@ Module 7: Verification
 29. [] Click the **Remove** button.
 30. [] Click the **Add...** button.
 31. [] Click the **Browse...** button.
-32. [] 
+32. [] Expand the **VEEAM-ESX** host.
+33. [] Expand the **vSwitch1** virtual switch.
+34. [] Select the **LAN** port group.
+35. [] Click the **Add** button.
+36. [] Enter isolated network: ++VEEAM-ESX VLAB1 LAN+++.
+> Note: Please double check that the Isolated network matches the requirements. If you need to change it, you can edit it without clicking the drop-down icon.
+
+37. [] Click the **OK** button
+38. [] Click the **Next** button on the **Isolated Networks** step.
+39. [] Click the **Add...** button.
+40. [] Click the **Choose isolated network to connect this vNIC to** drop down menu.
+41. [] Select **VEEAM-ESX VLAB1 LAN (LAN)**.
+42. [] Enter:
+ 1. IP address: +++10.0.3.3+++
+ 2. Subnet mask: +++255.255.255.0+++
+ 3. Masquerade network IP address: ++10.2.3.d+++
+ 
+43. [] Untick the **Enable DHCP service on this interface** check box.
+44. [] 
+
 
 
 
