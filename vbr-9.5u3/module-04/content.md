@@ -40,7 +40,7 @@ Module 4: Protect
 25. [] Review the **Oracle** tab then click the **Add...** button.
 26. [] Enter:
  1. Username: +++oracle+++
- 2. Password: +++Pa$$w0rd
+ 2. Password: +++Pa$$w0rd+++
  3. Description: +++sysdba account for VEEAM-ORCL
 
 27. [] Click the **OK** button.
