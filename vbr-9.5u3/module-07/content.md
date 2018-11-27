@@ -55,9 +55,9 @@ Module 7: Verification
 40. [] Click the **Choose isolated network to connect this vNIC to** drop down menu.
 41. [] Select **VEEAM-ESX VLAB1 LAN (LAN)**.
 42. [] Enter:
- 1. IP address: +++10.0.3.3+++
- 2. Subnet mask: +++255.255.255.0+++
- 3. Masquerade network IP address: +++10.2.3.d+++
+ 1. IP address: +++10.0.3.3+++.
+ 2. Subnet mask: +++255.255.255.0+++.
+ 3. Masquerade network IP address: **10.2.3.d**.
  
 43. [] Untick the **Enable DHCP service on this interface** check box.
 44. [] Click the **OK** button.
