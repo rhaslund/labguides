@@ -81,7 +81,6 @@ Module 8: Introduction to Agents
 # Lab 8.3: Create a Agent Backup Job
 
 1. [] Navigate to the **Home** view.
-2. [] Select **Jobs** in the **Home** view.
 3. [] Click the **Backup Job** button.
 4. [] Select **Windows Computer...**.
 5. [] Keep the default settings and click the **Next** button on the **Job Mode** step.
