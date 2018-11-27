@@ -18,7 +18,7 @@ Module 4: Protect
 9. [] Expand the **Production** resource pool.
 10. [] Hold the **CTRL** and select both the **VEEAM-ORCL** and **Tiny-Veeam** virtual machines.
 11. [] Click the **Next** button on the **Virtual Machines** step.
-12. [] Lower **Restore points to keep on disk** to: ++2++
+12. [] Lower **Restore points to keep on disk** to: +++2+++.
 13. [] Click the **Advanced** button.
 14. [] Verify the selected **backup mode** is **Incremental (recommended)** and that both **Create synthetic full backups periodically** and **Create active full backups periodically** are disabled then click the **OK** button.
 15. [] Click the **Next** button on the **Storage** step.
@@ -41,7 +41,7 @@ Module 4: Protect
 26. [] Enter:
  1. Username: +++oracle+++
  2. Password: +++Pa$$w0rd+++
- 3. Description: +++sysdba account for VEEAM-ORCL
+ 3. Description: +++sysdba account for VEEAM-ORCL+++
 
 27. [] Click the **OK** button.
 28. [] Tick the **Backup logs every** check box.
@@ -90,7 +90,7 @@ Module 4: Protect
 
 1. [] Click the **Backup Job** button on the **Home** ribbon.
 2. [] Select **VMware vSphere...**.
-3. [] Enter name: +++Backup AD & Exchane & SharePoint+++
+3. [] Enter name: +++Backup AD & Exchange & SharePoint+++
 4. [] Click the **Next** button on the **Name** step.
 5. [] Click the **Add...** button.
 6. [] Expand the **VEEAM-ESX** host.
@@ -116,7 +116,7 @@ Module 4: Protect
 20. [] Click the **Edit** button.
 21. [] Click the **SQL** tab.
 22. [] Select the **Backup logs periodically** radio button.
-23. [] Increase **Backup logs every** to ++60++ minutes.
+23. [] Increase **Backup logs every** to +++60+++ minutes.
 > Note: For this setting to take effect, you should ensure that the full or bulk-logged recovery model is turned on for the required databases on the SQL Server VM. If the recovery model is set to Simple, Veeam Backup & Replication does not detect or process the SQL Server VM’s logs. If Full model is enabled, but neither the Backup nor Truncate logs option is selected, logs will increase in size and occupy disk space.
 
 24. [] Click the **OK** button.
