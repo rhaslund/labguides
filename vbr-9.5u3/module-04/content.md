@@ -77,7 +77,7 @@ Module 4: Protect
 
 42. [] Click the **Apply** button on the **Schedule** step.
 43. [] Tick the **Run the job when I click Finish** check box.
-44. [] Click the **Finish button.
+44. [] Click the **Finish** button.
 > Note: If you forgot to select Run the job when I click Finish, start the backup job manually.
 
 45. [] Select the **Backup ORCL** backup job.
@@ -90,7 +90,7 @@ Module 4: Protect
 
 1. [] Click the **Backup Job** button on the **Home** ribbon.
 2. [] Select **VMware vSphere...**.
-3. [] Enter name: +++Backup AD & Exchane & SharePoint**
+3. [] Enter name: +++Backup AD & Exchane & SharePoint+++
 4. [] Click the **Next** button on the **Name** step.
 5. [] Click the **Add...** button.
 6. [] Expand the **VEEAM-ESX** host.
@@ -214,7 +214,7 @@ operation system does not have VMware Tools installed.
 3. [] Click the **Add WAN Accelerator** button on the **WAN Accelerator** ribbon.
 4. [] Click the **Choose server** drop down menu.
 5. [] Select **VEEAM-Remote**.
-6. [] Click the **Next* button on the **Server** step.
+6. [] Click the **Next** button on the **Server** step.
 8. [] Verify the **Folder** is set to **X:\VeeamWAN** then lower the **Cache size** to +++10+++ GB.
 > Important: **WARNING! Do NOT use the default cache size of 100 GB. Leaving the default cache size in place will result in the lab running out of space and ultimately the job will fail**. We’re using 10 GB for demonstration only. Please check the User Guide for sizing recommendations.
 
@@ -233,7 +233,7 @@ operation system does not have VMware Tools installed.
 4. [] Click the **Next** button on the **Server** step.
 5. [] Select the **X:\\** drive.
 6. [] Verify the **Folder** is set to **X:\VeeamWAN** then lower the **Cache size** to +++10+++ GB.
-> Important: **WARNING! Do NOT use the default cache size of 100 GB. Leaving the default cache size
+> Important: **WARNING! Do NOT use the default cache size of 100 GB. Leaving the default cache size**
 
 7. [] Click the **Next** on the **Cache** step.
 8. [] Click the **Apply** button on the **Review** step.
@@ -349,7 +349,7 @@ operation system does not have VMware Tools installed.
 19. [] Lower **Restore points to keep** to +++3+++.
 > Note: It is generally recommended to store replica metadata in a repository that is close to the source proxy.
 
-20. [] Click the **Next** button on the **Job Settings* step.
+20. [] Click the **Next** button on the **Job Settings** step.
 21. [] Keep the default settings and click the **Next** button on the **Data Transfer** step.
 22. [] Tick the **Enable application-aware processing** check box.
 23. [] Click the **Guest OS credentials** drop down menu.
@@ -357,7 +357,7 @@ operation system does not have VMware Tools installed.
 25. [] Click the **Test Now** button.
 > Note: Select the VM and review the stages of the process on the right.
 
-26. [] Wait for all tests have reached status **Success* then click the **Close** button.
+26. [] Wait for all tests have reached status **Success** then click the **Close** button.
 27. [] Click the **Next** button on the **Guest Processing** step.
 28. [] Tick the **Run the job automatically** check box.
 29. [] Keep the default schedule and click the **Apply** button on the **Schedule** step.
@@ -391,7 +391,7 @@ operation system does not have VMware Tools installed.
 19. [] Lower **Restore points to keep** to +++2+++.
 > Note: It is generally recommended to store replica metadata in a repository that is close to the source proxy.
 
-20. [] Keep the default settings and click the **Next** button on the **Job Settings* step.
+20. [] Keep the default settings and click the **Next** button on the **Job Settings** step.
 21. [] Keep the default settings and click the **Next** button on the **Data Transfer** step.
 27. [] Click the **Next** button on the **Guest Processing** step.
 29. [] Do **not** schedule this job and click the **Apply** button on the **Schedule** step.
