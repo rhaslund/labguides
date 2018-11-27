@@ -103,7 +103,7 @@ Module 8: Introduction to Agents
 
 18. [] Click the **OK** button.
 19. [] Click the **Next** button on the **Storage** step.
-20. [] Click the **Yes** button to dismiss the warning about a missing data location tag.
+20. [] Click the **Yes** button to dismiss the warning about a potential data sovereignty violation.
 21. [] Keep the default settings and click the **Next** button on the **Guest Processing** step.
 22. [] Tick the **Run the job automatically** check box.
 23. [] Click the **Apply** button on the **Schedule** step.
