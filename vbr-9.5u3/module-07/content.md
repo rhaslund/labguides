@@ -63,7 +63,7 @@ Module 7: Verification
 44. [] Click the **OK** button.
 45. [] Click the **Next** button on the **Network Settings** step.
 46. [] Keep the default settings and click the **Next** button on the **Static Mapping** step.
-> Note: Static IP mapping is used when it is necessary to provide many clients with access to a isolated VM. The static IP address is assigned to the proxy appliance network adapter connected to the production network, and IP traffic directed to the specified static IP address is routed by the proxy appliance to the VM powered on in the isolated network.
+> Note: Static IP mapping is used when it is necessary to provide many clients with access to an isolated VM. The static IP address is assigned to the proxy appliance network adapter connected to the production network, and IP traffic directed to the specified static IP address is routed by the proxy appliance to the VM powered on in the isolated network.
 
 47. [] Click the **Apply** button on the **Ready to Apply** step.
 48. [] Click the **Finish** button on the **Applying Configuration** step.
@@ -116,7 +116,7 @@ Module 7: Verification
 7. [] Select the **VEEAM-ESX VLAB2 - Predefined** virtual lab.
 8. [] Click the **Edit Virtual Lab** button on the **Virtual Lab** ribbon.
 9. [] Keep the default settings and click the **Next** button on the **Name** step.
-> Note: To load the settings for this predefined lab we will simply click Next on all steps until the end, then click the Finish button
+> Note: To load the settings for this predefined lab we will click Next on all steps until the end, then click the Finish button
 
 10. [] Keep the default settings and click the **Next** button on the **Host** step.
 11. [] Keep the default settings and click the **Next** button on the **Datastore** step.
@@ -127,7 +127,7 @@ Module 7: Verification
 16. [] Keep the default settings and click the **Next** button on the **Static Mapping** step.
 17. [] Click the **Apply** button on the **Ready to Apply** step.
 18. [] Click the **Finish** button on the **Applying Configuration** step.
-> Note: We need to perform this step to confirm that the validity of the settings (network mapping and configuration) will be checked and that these settings will actually be written into the Veeam Backup & Replication database.
+> Note: We need to perform this step to confirm that the validity of the settings (network mapping and configuration) will be checked and that these settings will be written into the Veeam Backup & Replication database.
 
 ===
 
@@ -146,7 +146,7 @@ Module 7: Verification
 8. [] Click the **Application group** drop down menu.
 9. [] Select the **Exchange** application group.
 10. [] Click the **Next** button on the **Application Group** step.
-> Note: If the Keep the application group running after the job completes option is enabled, the lab would not be powered off when the SureBackup Job completes and you would be able to perform application item-level restore (U-AIR®) and / or use On-Demand Sandbox™ for testing, troubleshooting or training.
+> Note: If the Keep the application group running after the job completes option is enabled, the lab would not be powered off when the SureBackup Job completes, and you would be able to perform application item-level restore (U-AIR®) or use On-Demand Sandbox™ for testing, troubleshooting or training.
 
 11. [] Keep the default settings and click the **Next** button on the **Linked Jobs** step.
 12. [] Keep the default settings and click the **Next** button on the **Settings** step.
@@ -163,7 +163,33 @@ Module 7: Verification
 2. [] Click the **SureBackup Job** on the **Home** ribbon.
 3. [] Select **VMware...***.
 4. [] Enter:
- 1. Enter 
+ 1. Name: +++SureReplica AD+++.
+ 2. Description: +++Verifying VEEAM-DC01 Replica+++
+
+5. [] Click the **Next** button on the **Name** step.
+6. [] Click the **Virtual lab** drop down menu.
+7. [] Select the **VEEAM-ESX VLAB2 - Predefined** virtual lab.
+> Note: We recommend using the Virtual Lab that was created earlier for SureBackup and the VEEAMESX VLAB2-Predefined for a SureReplica job because it allows two verification jobs to run at the same time and cuts down on waiting time. Otherwise, if SureReplica is launched while SureBackup is still running, you will get an error message ("virtual lab in use").
+
+8. [] Click the **Next** button on the **Virtual Lab** step.
+9. [] Keep the default settings and click the **Next** button on the **Application Group** step.
+10. [] Tick the **Link jobs** check box.
+11. [] Click the **Add...** button.
+12. [] Select the **Replication Job AD** job.
+13. [] Click the **OK** button.
+14. [] Select the **Replication Job AD** job.
+15. [] Click the **Edit...** button.
+16. [] Tick the **DNS Server** check box.
+17. [] Tick the **Domain Controller (Authoritative Restore)** check box.
+18. [] Tick the **Global Catalog** check box.
+19. [] Click the **OK** button.
+20. [] Click the **Next** button on the **Linked Jobs** step.
+21. [] Keep the default settings and click the **Next** step.
+22. [] Click the **Apply** button on the **Schedule** step.
+> Note: Do NOT schedule this job.
+
+23. [] Tick the **Run the job when I click Finish** check box.
+24. [] Click the **Finish** button on the **Summary** step.
 
 ---
 
