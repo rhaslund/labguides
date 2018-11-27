@@ -34,6 +34,29 @@ Module 8: Introduction to Agents
 
 # Lab 8.2: Setup Protection Group
 
+1. [] Navigate to the **Inventory** view.
+2. [] Select **Physical & Cloud Infrastructure**.
+3. [] Click the **Create Protection Group** button.
+4. [] Keep the default name and click the **Next** button on the **Name** step.
+5. [] Keep the default settings and click the **Next** button on the **Type** step.
+6. [] Click the **Change** button.
+7. [] Enter domain controller: +++VEEAM-DC01.veeamlab.local+++.
+8. [] Click the **Account** drop down menu.
+9. [] Select the **VEEAMLAB\\Administrator** account.
+10. [] Click the **OK** button.
+11. [] Click the **Add...** button.
+12. [] Expand **Microsoft Active Directory**.
+13. [] Expand the **veeamlab.local** domain.
+14. [] Expand the **Computers** organizational unit.
+15. [] Select the **Veeam Agents protected servers** security group.
+16. [] Click the **OK** button.
+17. [] Click the **Next** button on the **Active Directory** step.
+18. [] Untick the **Exclude: All virtual machines** check box.
+> Note: Because this is a lab training environment, we will include virtual machines. In a production environment, you would usually not want to protect virtual machines using Veeam Agents, unless, for example, the virtual machine does not support hypervisor snapshots
+
+19. [] Untick the **All computers that have been offline for over 30 days** check box.
+20. [] Click the **Next** button on the **Exclusions** step.
+
 ===
 
 # Lab 8.3: Create a Agent Backup Job
