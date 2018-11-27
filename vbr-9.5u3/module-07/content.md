@@ -6,7 +6,7 @@ Module 7: Verification
 
 # Lab 7.1: Preparing the infrastructure
 
-1. [] Launch the *Veeam Backup & Replication console** from the desktop.
+1. [] Launch the **Veeam Backup & Replication console** from the desktop.
 2. [] Navigate to the **Backup Infrastructure** view.
 3. [] Select **Virtual Labs** in the **SureBackup** section of the **Backup Infrastructure** view.
 4. [] Click the **Add Virtual Lab** button on the **Virtual Lab** ribbon.
@@ -15,7 +15,7 @@ Module 7: Verification
 7. [] Click the **Next** button on the **Name** step.
 8. [] Click the **Choose...** button in the **Host** section.
 9. [] Select the **VEEAM-ESX** host.
-10. [] Click the **OK* button.
+10. [] Click the **OK** button.
 11. [] Click the **Next** button on the **Host** step.
 12. [] Click the **Choose** button.
 13. [] Expand the **VEEAM-ESX** host.
@@ -161,7 +161,7 @@ Module 7: Verification
 
 1. [] Select **SureBackup** in the **Jobs** section of the **Home** view.
 2. [] Click the **SureBackup Job** on the **Home** ribbon.
-3. [] Select **VMware...***.
+3. [] Select **VMware...**.
 4. [] Enter:
  1. Name: +++SureReplica AD+++.
  2. Description: +++Verifying VEEAM-DC01 Replica+++
