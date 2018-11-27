@@ -27,6 +27,8 @@ Module 8: Introduction to Agents
 19. [] Click the **OK** button.
 > Note: If a new window entitled Name Not Found is displayed, you have incorrectly entered the group name. Click the Cancel button and correct the name, then click the OK button.
 
+20. [] Verify that the **Add to Group** operation was successfully completed, then click the **OK** button.
+21. [] Close the **Remote Desktop Connection** window.
 
 ===
 
