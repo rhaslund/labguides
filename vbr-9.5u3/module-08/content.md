@@ -61,6 +61,34 @@ Module 8: Introduction to Agents
 
 # Lab 8.3: Create a Agent Backup Job
 
+1. [] Navigate to the **Home** view.
+2. [] Select **Jobs** in the **Home** view.
+3. [] Click the **Backup Job** button.
+4. [] Select **Windows Computer...**.
+5. [] Keep the default settings and click the **Next** button on the **Job Mode** step.
+6. [] Enter name: +++Agent Backup Job Windows+++.
+7. [] Click the **Next** button on the **Name** step.
+8. [] Click the **Add...** button.
+9. [] Select **Protection group...**.
+10. [] Select **Protection Group 1**.
+11. [] Click the **OK** button.
+12. [] Click the **Next** button on the **Computers** step.
+13. [] Keep the default setting and click the **Next** button.
+14. [] Verify the **Backup Repository** has defaulted to **Main Backup Repository** then lower the amount of restore points to: +++3+++.
+15. [] Click the **Advanced** button.
+16. [] Click the **Throttling** tab.
+17. [] Tick the **Run backup agent with low I/O priority** check box.
+> Note: This feature ensures that the production workload is less impacted by the backup job.
+
+18. [] Click the **OK** button.
+19. [] Click the **Next** button on the **Storage** step.
+20. [] Click the **Yes** button to dismiss the warning about a missing data location tag.
+21. [] Keep the default settings and click the **Next** button on the **Guest Processing** step.
+22. [] Tick the **Run the job automatically** check box.
+23. [] Click the **Apply** button on the **Schedule** step.
+24. [] Tick the **Run the job when I click Finish** check box.
+25. [] Click the **Finish** button.
+
 ===
 
 # Lab 8.4: Prepare Recovery Media for Bare Metal Recovery
