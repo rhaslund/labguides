@@ -7,7 +7,7 @@ Module 8: Introduction to Agents
 # Lab 8.1: Prepare Microsoft Active Directory
 
 1. [] Launch **Remote Desktop Connection client** from the Windows task bar.
-2. [] Enter computer name: ++VEEAM-DC01+++
+2. [] Enter computer name: +++VEEAM-DC01+++
 3. [] Leave user name as **VEEAMLAB\Administrator** and enter password: +++Pa$$w0rd+++.
 4. [] Click the **OK** button.
 5. [] Launch the **Server Manager** from the Windows task bar.
