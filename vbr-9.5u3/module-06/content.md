@@ -35,7 +35,7 @@ Module 6: Objects Recovery
 22. [] Enter mailbox: ++testmail@veeamlab.local+++.
 23. [] Select the **The following account** radio button.
 24. [] Enter:
- 1. User name: +++VMCELAB\Administrator+++
+ 1. User name: +++VEEAMLAB\Administrator+++
  2. Password: +++Pa$$w0rd+++
 
 25. [] Click the **Next** button.
