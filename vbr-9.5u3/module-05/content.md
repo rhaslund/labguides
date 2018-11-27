@@ -65,7 +65,7 @@ Module 05: Entire VM Recovery
 
 15. [] Click the **Next** button on the **Restore Mode** step.
 16. [] Leave the **reason** empty and click the **Next** button on the **Reason** step.
-17. [] Click the **Show VM(s)** text link to verify it is only **Tiny-Veeam* that will be powered off during the restore.
+17. [] Click the **Show VM(s)** text link to verify it is only **Tiny-Veeam** that will be powered off during the restore.
 18. [] Click the **OK** button.
 19. [] Click the **OK** button to confirm the original virtual machine will be deleted from the infrastructure.
 20. [] Tick the **Power on target VM after restoring** check box.
