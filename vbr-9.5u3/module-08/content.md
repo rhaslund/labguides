@@ -104,7 +104,7 @@ Module 8: Introduction to Agents
 6. [] Enter folder to create recovery media in: +++C:\\Users\\Administrator.VEEAMINFRA\\Desktop\\VeeamRecoveryMedia.iso+++.
 7. [] Click the **Next** button on the **Image Path** step.
 8. [] Review the summary and click the **Next** button on the **Ready to Apply** step.
-9. [] Wait for the creation of the recovery media to complete then click the **Finish** button on the **Progress* step.
+9. [] Wait for the creation of the recovery media to complete then click the **Finish** button on the **Progress** step.
 > Note: This process should take less than one minute
 
 ===
