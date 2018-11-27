@@ -78,13 +78,13 @@ Module 6: Objects Recovery
  2. Password: +++Pa$$w0rd+++
  
 20. [] Select the **Restore to the following list** radio button.
-21. [] Enter: ++Restored Docs+++.
+21. [] Enter: +++Restored Docs+++.
 22. [] Click the **Next** button.
 23. [] Click the **Restore** button.
 24. [] Click the **OK** button.
 25. [] Close the **Veeam Explorer for Microsoft SharePoint** window.
 26. [] Launch the **Remote Desktop Connection** client from the Windows task bar.
-27. [] Enter computer name: ++VEEAM-SP01+++
+27. [] Enter computer name: +++VEEAM-SP01+++
 28. [] Leave user name as **VEEAMLAB\Administrator** and enter password: +++Pa$$w0rd+++.
 29. [] Click the **OK** button.
 30. [] Open the **Start menu** by moving the cursor to the bottom left corner then click the **Start** button when it appears.
@@ -166,7 +166,7 @@ on the tab.
 # Lab 6.4: Perform Microsoft Active Directory items recovery
 
 1. [] Launch the **Remote Desktop Connection client** from the Windows task bar.
-2. [] Enter computer name: ++VEEAM-DC01+++
+2. [] Enter computer name: +++VEEAM-DC01+++
 3. [] Leave user name as **VEEAMLAB\Administrator** and enter password: +++Pa$$w0rd+++.
 4. [] Click the **OK** button.
 5. [] Launch the **Server Manager** from the Windows task manager.
