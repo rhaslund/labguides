@@ -209,7 +209,7 @@ on the tab.
 3. [] Select the **VEEAM-SP01** virtual machine.
 3. [] Click the **Restore application items** button on the **Backups** ribbon.
 4. [] Select **Microsoft SQL Server**.
-5. [] Click the **Next** button.
+5. [] Click the **Next** button on the **Restore Point** step.
 6. [] Keep the default settings and click the **Next** button on the **Reason** step.
 7. [] Click the **Finish** button on the **Summary** step.
 8. [] Wait for the **Veeam Explorer for Microsoft SQL Server** window to load then expand the **SQLEXPRESS** database.
