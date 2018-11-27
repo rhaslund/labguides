@@ -39,7 +39,7 @@ Module 8: Introduction to Agents
 
 1. [] Navigate to the **Inventory** view.
 2. [] Select **Physical & Cloud Infrastructure**.
-3. [] Click the **Create Protection Group** button.
+3. [] Click the **Add Group** button on the **Protection Group** ribbon.
 4. [] Keep the default name and click the **Next** button on the **Name** step.
 5. [] Keep the default settings and click the **Next** button on the **Type** step.
 6. [] Click the **Change** button.
@@ -59,6 +59,22 @@ Module 8: Introduction to Agents
 
 19. [] Untick the **All computers that have been offline for over 30 days** check box.
 20. [] Click the **Next** button on the **Exclusions** step.
+21. [] Click the **Test Now** button.
+22. [] Verify that the test has completed successfully then click the **Close** button.
+23. [] Click the **Next** button on the **Credentials** step.
+24. [] Tick the **Install changed block tracking driver on Windows Server OS** check box.
+25. [] Tick the **Perform reboot automatically if required** check box.
+26. [] Click the **Next** button on the **Options** step.
+> Note: Installing the CBT driver will require a reboot of the servers. In production environments, it may be desirable to control when production servers are rebooted
+
+27. [] Click the **Apply** button on the **Review** step.
+28. [] Review the messages then click the **Next** button on the **Apply** step.
+29. [] Keep the default settings and click the **Finish** button on the **Summary** step.
+30. [] Wait for the rescan status to change from **In progress** to **Success** then click the **Close** button.
+> Note: This process should take less than 6 minutes.
+
+31. [] Select **Protection Group 1** in the **Physical & Cloud Infrastructure** section of the **Inventory** view and confirm that the status of **PHYSICAL.veeamlab.local** is **Installed**.
+
 
 ===
 
