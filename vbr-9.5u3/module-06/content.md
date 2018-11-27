@@ -8,7 +8,7 @@ Module 6: Objects Recovery
 
 1. [] Launch **Outlook Web Access** from the Windows task bar.
 2. [] Enter:
- 1. Username: +++administrator@veeamlab.local+++
+ 1. Username: +++testmail@veeamlab.local+++
  2. Password: +++Pa$$w0rd+++
 
 3. [] Click the **Sign In** button.
