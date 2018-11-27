@@ -216,7 +216,9 @@ on the tab.
 9. [] Right click the **testdb** database.
 10. [] Select **Restore point-in-time state to VEEAM-SP01\\SQLEXPRESS**
 11. [] Select the **Restore to a specific point in time (requires transaction log backups)** radio button.
-12. [] Move the **slider** all the way to the left (select the oldest restore point).
+12. [] Click the the **slider** and move it all the way to the left (select the oldest restore point).
+> Note: It may appear as if the slider is already in the most far point, make sure you click it and move it to the left regardless.
+
 13. [] Click the **Restore** button.
 14. [] Click the **OK** button.
 15. [] Click the **OK** button.
