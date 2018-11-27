@@ -46,7 +46,7 @@ Module 7: Verification
 33. [] Expand the **vSwitch1** virtual switch.
 34. [] Select the **LAN** port group.
 35. [] Click the **Add** button.
-36. [] Enter isolated network: ++VEEAM-ESX VLAB1 LAN+++.
+36. [] Enter isolated network: +++VEEAM-ESX VLAB1 LAN+++.
 > Note: Please double check that the Isolated network matches the requirements. If you need to change it, you can edit it without clicking the drop-down icon.
 
 37. [] Click the **OK** button
@@ -57,7 +57,7 @@ Module 7: Verification
 42. [] Enter:
  1. IP address: +++10.0.3.3+++
  2. Subnet mask: +++255.255.255.0+++
- 3. Masquerade network IP address: ++10.2.3.d+++
+ 3. Masquerade network IP address: +++10.2.3.d+++
  
 43. [] Untick the **Enable DHCP service on this interface** check box.
 44. [] Click the **OK** button.
@@ -88,7 +88,7 @@ Module 7: Verification
 14. [] Tick the **Domain Controller (Authoritative Restore)** check box.
 15. [] Tick the **Global Catalog** check box.
 16. [] Click the **Startup Options** tab.
-17. [] Increase **Maximum allowed boot time** to +++3600++ seconds.
+17. [] Increase **Maximum allowed boot time** to +++3600+++ seconds.
 > Note: The stabilization process (waiting for the VM to reach the stabilization point: the VM boots and reports it is ready for tests) cannot exceed the value specified in the Maximum allowed boot time field. If the stabilization point cannot be determined within the Maximum allowed boot time, the recovery verification process will complete and display a timeout error. Because of this, you should be careful when specifying this value. Typically, a VM started by a SureBackup job requires more time to boot than a VM started regularly. If such an error occurs, you will need to increase the Maximum allowed boot time value and start the job again. Avoiding timeout error is the reason we increase this time in the lab.
 
 18. [] Click the **OK** button.
@@ -96,7 +96,7 @@ Module 7: Verification
 20. [] Click the **Edit** button.
 21. [] Tick the **Mail Server** check box.
 22. [] Click the **Startup Options** tab.
-23. [] Increase **Maximum allowed boot time** to +++3600++ seconds.
+23. [] Increase **Maximum allowed boot time** to +++3600+++ seconds.
 24. [] Click the **OK** button.
 25. [] Click the **Next** button on the **Virtual Machines** step.
 26. [] Click the **Finish** button on the **Summary** step.
