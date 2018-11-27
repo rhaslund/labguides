@@ -222,7 +222,7 @@ on the tab.
 15. [] Click the **OK** button.
 16. [] Close the **Veeam Explorer for Microsoft SQL Server** window.
 17. [] Launch the **Remote Desktop Connection client** from the Windows task bar.
-18. [] Enter computer name: ++VEEAM-SP01+++
+18. [] Enter computer name: +++VEEAM-SP01+++
 19. [] Leave user name as **VEEAMLAB\Administrator** and enter password: +++Pa$$w0rd+++.
 20. [] Click the **OK** button.
 21. [] Open the **Start menu** by moving the cursor to the bottom left corner then click the **Start** button when it appears.
