@@ -157,6 +157,51 @@ Module 8: Introduction to Agents
 36. [] Select the **IDE (0:0)** radio button.
 37. [] Click the **Next** button on the **Advanced Options** step.
 38. [] Click the **Finish** button on the **Ready to Complete** step.
+39. [] Select the **Tiny-Veeam** virtual machine.
+40. [] Right click the **datastore1** datastore in the **Resources** section.
+41. [] Select **Browse Datastore...**.
+42. [] Click the **Upload files to this datastore** button (icon looks like a datastore with a green arrow pointing into the datastore)
+43. [] Select **Upload file...**.
+44. [] Select **Desktop** in the **Navigation** pane.
+45. [] Select the **VeeamRecoveryMedia.iso** recovery media.
+46. [] Click the **Open** button.
+47. [] Wait for the upload to complete then close the **Datastore Browser** window.
+48. [] Select the **BAREMETAL** virtual machine.
+49. [] Click the **Edit Settings** text link in the **Commands** pane.
+50. [] Select **CD/DVD drive 1** in the hardware list.
+51. [] Select the **Datastore ISO file** radio button.
+52. [] Click the **Browse** button.
+53. [] Double click the **datastore1** datastore.
+54. [] Select the **VeeamRecoveryMedia.iso** recovery media.
+> Important: The file name may only be partially displayed as VeeamRecover…
+
+55. [] Click the **OK** button.
+56. [] Tick the **Connect at power on** check box.
+57. [] Click the **OK** button.
+58. [] Click the **Power on** text link in the **Commands** pane.
+59. [] Click the **Open Console** text link in the **Commands** pane.
+60. [] Wait for the **Veeam Recovery Media** screen to appear, and then select **Bare Metal Recovery**.
+> Tip: It is possible to utilize the keyboard only instead of the mouse to avoid issues.
+
+61. [] Select the **Network storage** radio button.
+62. [] Press the **Enter** keyboard button (or click the **Next** button).
+63. [] Select the **Veeam backup repository** radio button.
+64. [] Press the **Enter** keyboard button (or click the **Next** button).
+65. [] Enter:
+ 1. Veeam backup server name: +++10.0.3.2+++.
+ 2. Username: +++VEEAMINFRA\\Administrator+++.
+ 3. Password: +++Pa$$w0rd+++.
+
+66. [] Press the **Enter** keyboard button (or click the **Next** button).
+67. [] Press the **Enter** keyboard button (or click the **Next** button).
+68. [] Press the **Enter** keyboard button (or click the **Next** button).
+69. [] Press the **Enter** keyboard button (or click the **Next** button).
+70. [] Press the **Enter** keyboard button (or click the **Restore** button).
+71. [] Press the **Enter** keyboard button (or click the **Finish** button).
+> Note: This process can take up to 15 minutes.
+
+72. [] Press the **Enter** keyboard button (or click the **Yes** button).
+
 
 ---
 
