@@ -6,7 +6,27 @@ Module 8: Introduction to Agents
 
 # Lab 8.1: Prepare Microsoft Active Directory
 
-1. [] Launch **Outlook Web Access** from the Windows task bar.
+1. [] Launch **Remote Desktop Connection client** from the Windows task bar.
+2. [] Enter computer name: ++VEEAM-DC01+++
+3. [] Leave user name as **VEEAMLAB\Administrator** and enter password: +++Pa$$w0rd+++.
+4. [] Click the **OK** button.
+5. [] Launch the **Server Manager** from the Windows task bar.
+6. [] Click on the **Tools** text link in the top right corner.
+7. [] Select **Active Directory Users and Computers**.
+8. [] Expand the **veeamlab.local** domain.
+9. [] Select the **Computers** organizational unit.
+10. [] Click the **Actions** menu.
+11. [] Select **New**.
+12. [] Select **Group**.
+13. [] Enter group name: +++Veeam Agent protected servers+++
+14. [] Click the **OK** button.
+15. [] Select the **PHYSICAL** computer.
+16. [] Click the **Actions** menu.
+17. [] Select **Add to a group...**.
+18. [] Enter object name: +++Veeam Agent protected servers+++.
+19. [] Click the **OK** button.
+> Note: If a new window entitled Name Not Found is displayed, you have incorrectly entered the group name. Click the Cancel button and correct the name, then click the OK button.
+
 
 ===
 
