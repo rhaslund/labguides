@@ -72,10 +72,98 @@ Module 7: Verification
 
 ## Step 2: Add an application group
 
-1. [] 
+1. [] Select **Application Groups** in the **SureBackup** section of the **Backup Infrastructure** view.
+2. [] Click the **Add Group** button on the **Application Group** ribbon.
+3. [] Select **VMware...**.
+4. [] Enter name: +++Exchange+++.
+5. [] Click the **Next** button on the **Name** step.
+6. [] Click the **Add VM** button.
+7. [] Select **From backups...**.
+8. [] Expand the **Backup AD & Exchange && SharePoint** job.
+9. [] Hold the **CTRL** button and select the **VEEAM-DC01** and **VEEAM-EX01** virtual machines.
+10. [] Click the **Add** button.
+11. [] Verify the order of the virtual machines are **VEEAM-DC01** first and **VEEAM-EX01** second then select the **VEEAM-DC01** virtual machine.
+12. [] Click the **Edit...** button.
+13. [] Tick the **DNS server** check box.
+14. [] Tick the **Domain Controller (Authoritative Restore)** check box.
+15. [] Tick the **Global Catalog** check box.
+16. [] Click the **Startup Options** tab.
+17. [] Increase **Maximum allowed boot time** to +++3600++ seconds.
+> Note: The stabilization process (waiting for the VM to reach the stabilization point: the VM boots and reports it is ready for tests) cannot exceed the value specified in the Maximum allowed boot time field. If the stabilization point cannot be determined within the Maximum allowed boot time, the recovery verification process will complete and display a timeout error. Because of this, you should be careful when specifying this value. Typically, a VM started by a SureBackup job requires more time to boot than a VM started regularly. If such an error occurs, you will need to increase the Maximum allowed boot time value and start the job again. Avoiding timeout error is the reason we increase this time in the lab.
 
+18. [] Click the **OK** button.
+19. [] Select the **VEEAM-EX01** virtual machine.
+20. [] Click the **Edit** button.
+21. [] Tick the **Mail Server** check box.
+22. [] Click the **Startup Options** tab.
+23. [] Increase **Maximum allowed boot time** to +++3600++ seconds.
+24. [] Click the **OK** button.
+25. [] Click the **Next** button on the **Virtual Machines** step.
+26. [] Click the **Finish** button on the **Summary** step.
 
+===
 
+## Step 3: Connect an existing VEEAM-ESX VLAB2
+
+1. [] Select **Virtual Labs** in the **SureBackup** section of the **Backup Infrastructure** view.
+2. [] Click the **Connect Virtual Lab** button on the **Virtual Lab** ribbon.
+3. [] Select **VMware...**.
+4. [] Expand the **VEEAM-ESX** host.
+5. [] Select **VEEAM-ESX VLAB2 - Predefined**
+> Note: If you don't see VEEAM-ESX VLAB2 - Predefined please request assistance from your instructor.
+
+6. [] Click the **Connect** button.
+7. [] Select the **VEEAM-ESX VLAB2 - Predefined** virtual lab.
+8. [] Click the **Edit Virtual Lab** button on the **Virtual Lab** ribbon.
+9. [] Keep the default settings and click the **Next** button on the **Name** step.
+> Note: To load the settings for this predefined lab we will simply click Next on all steps until the end, then click the Finish button
+
+10. [] Keep the default settings and click the **Next** button on the **Host** step.
+11. [] Keep the default settings and click the **Next** button on the **Datastore** step.
+12. [] Keep the default settings and click the **Next** button on the **Proxy** step.
+13. [] Verify that the **Advanced single-host (manual configuration)** radio button is selected and click the **Next** button on the **Networking** step.
+14. [] Keep the default settings and click the **Next** button on the **Isolated Networks** step.
+15. [] Keep the default settings and click the **Next** button on the **Network Settings** step.
+16. [] Keep the default settings and click the **Next** button on the **Static Mapping** step.
+17. [] Click the **Apply** button on the **Ready to Apply** step.
+18. [] Click the **Finish** button on the **Applying Configuration** step.
+> Note: We need to perform this step to confirm that the validity of the settings (network mapping and configuration) will be checked and that these settings will actually be written into the Veeam Backup & Replication database.
+
+===
+
+# Lab 7.2: Using SureBackup
+
+1. [] Navigate to the **Home** view.
+2. [] Select **Jobs** in the **Home** view.
+3. [] Click the **SureBackup Job** button on the **Home** ribbon.
+4. [] Select **VMware...**.
+5. [] Enter:
+ 1. Name: +++SureBackup Job Exchange+++.
+ 2. Description: +++Verifying VEEAM-EX01+++.
+
+6. [] Click the **Next** button on the **Name** step.
+7. [] Keep the default settings and click the **Next** button on the **Virtual Lab** step.
+8. [] Click the **Application group** drop down menu.
+9. [] Select the **Exchange** application group.
+10. [] Click the **Next** button on the **Application Group** step.
+> Note: If the Keep the application group running after the job completes option is enabled, the lab would not be powered off when the SureBackup Job completes and you would be able to perform application item-level restore (U-AIR®) and / or use On-Demand Sandbox™ for testing, troubleshooting or training.
+
+11. [] Keep the default settings and click the **Next** button on the **Linked Jobs** step.
+12. [] Keep the default settings and click the **Next** button on the **Settings** step.
+13. [] Click the **Apply** button on the **Schedule** step.
+14. [] Tick the **Run the job when I click Finish** check box.
+15. [] Click the **Finish** button on the **Summary** step.
+> Note: A SureBackup Job will take a while, do NOT wait for it to complete before proceeding to the next lab.
+
+===
+
+# Lab 7.3: Using SureReplica
+
+1. [] Select **SureBackup** in the **Jobs** section of the **Home** view.
+2. [] Click the **SureBackup Job** on the **Home** ribbon.
+3. [] Select **VMware...***.
+4. [] Enter:
+ 1. Enter 
 
 ---
 
