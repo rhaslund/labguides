@@ -15,7 +15,7 @@ Add a vSphere host and a Hyper-V host to Veeam Backup & Replication.
 5. [] Select **VMware vSphere**.
 6. [] Enter DNS name: +++VEEAM-ESX+++
 7. [] Click the **Next** button.
-8. [] Click the **Add...*** button next to the **Credentials** drop down menu.
+8. [] Click the **Add...** button next to the **Credentials** drop down menu.
 9. [] Enter:
  1. Username: +++root+++
  2. Password: +++Pa$$w0rd+++
@@ -37,7 +37,7 @@ Add a vSphere host and a Hyper-V host to Veeam Backup & Replication.
 3. [] Enter DNS name: +++VEEAM-HYPERV+++
 4. [] Click the **Next** button on the **Name** step.
 5. [] Select the **Microsoft Hyper-V server (standalone)** radio button.
-6. [] Click the **Add...*** button next to the **Credentials** drop down menu.
+6. [] Click the **Add...** button next to the **Credentials** drop down menu.
 7. [] Enter:
  1. Username: +++VEEAMINFRA\Administrator+++
  2. Password: +++Pa$$w0rd+++
@@ -95,7 +95,7 @@ Server will both coordinate all job activities and handle data processing itself
 13. [] Click the **Next** button on the **Apply** step.
 14. [] Click the **Finish** button on the **Summary** step.
 15. [] Click the **Populate** button on the **Server** step.
-16. [] Select **X:\**.
+16. [] Select **X:\\**.
 17. [] Click the **Next** button on the **Server** step.
 18. [] Verify the **Path to folder** is **X:\Backups** and click the **Next** button on the **Repository** step.
 > Note: The Limit read and write data rates setting is used to limit the speed with which Veeam Backup & Replication can read and write
@@ -117,7 +117,7 @@ data to/from a backup repository.
 4. [] Select **Microsoft Windows Server**.
 5. [] Click the **Next** button on the **Type** step.
 6. [] Click the **Populate** button.
-7. [] Select **E:\**.
+7. [] Select **E:\\**.
 8. [] Click the **Next** button on the **Server** step.
 9. [] Verify the **Path to folder** is **E:\Backups** and click the **Next** button.
 10. [] Keep the default settings and click the **Next** button on the **Mount Server** page.
