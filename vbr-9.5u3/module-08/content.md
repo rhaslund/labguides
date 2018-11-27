@@ -1,4 +1,4 @@
-Module 6: Objects Recovery
+Module 8: Introduction to Agents
 
 ---
 **This lab is expected to last a maximum of 70 minutes including lab launch.**
