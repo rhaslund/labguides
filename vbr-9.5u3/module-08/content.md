@@ -34,6 +34,9 @@ Module 8: Introduction to Agents
 
 # Lab 8.2: Setup Protection Group
 
+1. [] Launch the **Veeam Backup & Replication console** from the desktop.
+2. [] Click the **Connect** button.
+
 1. [] Navigate to the **Inventory** view.
 2. [] Select **Physical & Cloud Infrastructure**.
 3. [] Click the **Create Protection Group** button.
