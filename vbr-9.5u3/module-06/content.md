@@ -32,7 +32,7 @@ Module 6: Objects Recovery
 19. [] Select the **previously deleted e-mail** message.
 20. [] Click the **Restore Items** button on the **Items** ribbon.
 21. [] Select **Restore to...**.
-22. [] Enter mailbox: ++testmail@veeamlab.local+++.
+22. [] Enter mailbox: +++testmail@veeamlab.local+++.
 23. [] Select the **The following account** radio button.
 24. [] Enter:
  1. User name: +++VEEAMLAB\Administrator+++
