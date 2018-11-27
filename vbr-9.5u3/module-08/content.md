@@ -92,7 +92,10 @@ Module 8: Introduction to Agents
 11. [] Click the **OK** button.
 12. [] Click the **Next** button on the **Computers** step.
 13. [] Keep the default setting and click the **Next** button.
-14. [] Verify the **Backup Repository** has defaulted to **Main Backup Repository** then lower the amount of restore points to: +++3+++.
+14. [] Click the **Backup Repository** drop down menu.
+15. [] Select **Main Backup Repository**.
+
+14. [] Lower the amount of restore points to: +++3+++.
 15. [] Click the **Advanced** button.
 16. [] Click the **Throttling** tab.
 17. [] Tick the **Run backup agent with low I/O priority** check box.
