@@ -150,7 +150,7 @@ Module 10: Veeam ONE Features and Functionality
 > Important: Please double check that you have selected the right Veeam Courses tab.
 
 3. [] Click the **Grouping Expression...** button.
-4. [] Enter expression: +++CASE WHEN Substring\(Name, 0, 5\)\=\"VEEAM\" THEN \"Course VMs\" ELSE \"Other VMs\" END+++.
+4. [] Enter expression: +++CASE WHEN Substring(Name, 0, 5)\="VEEAM" THEN "Course VMs" ELSE "Other VMs" END+++.
 5. [] Click the **OK** button.
 
 6. [] Click the **Workspace** tab.
