@@ -205,7 +205,8 @@ Module 8: Introduction to Agents
 57. [] Click the **OK** button.
 58. [] Click the **Power on** text link in the **Commands** pane.
 59. [] Click the **Open Console** text link in the **Commands** pane.
-60. [] Wait for the **Veeam Recovery Media** screen to appear, and then select **Bare Metal Recovery**.
+60. [] Wait for the **Veeam Recovery Media** screen to appear, and then click anywhere inside the **virtual machine console**.
+61. [] Select **Bare Metal Recovery**.
 > Tip: It is possible to utilize the keyboard only instead of the mouse to avoid issues.
 
 61. [] Select the **Network storage** radio button.
