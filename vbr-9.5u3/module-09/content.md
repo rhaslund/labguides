@@ -10,68 +10,87 @@ Module 9: Advanced Data Protection
 1. [] Launch the **Veeam Backup & Replication console** from the desktop.
 2. [] Click the **Connect** button.
 
-1. [] Select the **Storage Infrastructure** view.
-2. [] Click **Add Storage**.
+1. [] Navigate to the **Storage Infrastructure** view.
+2. [] Click the **Add Storage** button.
 3. [] Select **Hewlett Packard Enterprise**.
-4. []  Select **StoreVirtual**.
-5. [] Enter +++VEEAM-VSA+++ in the **Management server DNS name or IP address** field and click **Next**.
-6. [] On the **Credentials** step, click **Add...** next to the **Credentials** drop-down menu and enter the HPE VSA credentials. Enter:
- 1. Username: +++veeam+++. (case sensitive) 
- 2. Password: +++veeam+++
+4. [] Select **StoreVirtual**.
+5. [] Enter Management server DNS name: +++VEEAM-VSA+++.
+6. [] Click the **Next** button on the **Name** step.
+6. [] Click the **Add...** button
+7. [] Enter:
+ 1. Username: +++veeam+++ (case sensitive).
+ 2. Password: +++veeam+++ (case sensitive).
  3. Description: +++HP VSA admin account+++
- 4. Click **OK**.
 
-7. [] Click **Next** to proceed to the next step.
-8. [] Click **Yes** at the SSH Key dialogue box. When you add the storage system, Veeam Backup & Replication saves a fingerprint of the SSH key of the HPE 3PAR Web Services API Server to the Veeam Backup & Replication database. During every subsequent connection to the server, Veeam Backup & Replication uses the saved fingerprint to verify the identity of the server and avoid the man-in-the-middle attack.
+8. [] Click the **OK** button.
 
-9. [] Click **Next** and wait while LUNs are discovered.
-10. [] Click **Finish**.
-11. []  Wait until the rescan completes, and then click **Close**.
+7. [] Click the **Next** button on the **Credentials** step.
+8. [] Click the **Yes** button to confirm trust of the remote storage system. 
+> Note: Veeam Backup & Replication saves a fingerprint of the SSH key of the storage system to the Veeam Backup & Replication database. During every subsequent connection to the server, Veeam Backup & Replication uses the saved fingerprint to verify the identity of the storage system and avoid the man-in-the-middle attack.
+
+9. [] Keep the default settings and click the **Next** button on the **Access Options** step.
+10. [] Click the **Finish** button on the **Summary** step.
+11. []  Wait until the storage discovery reaches status **Success* then click the **Close** button.
 
 ===
 
 ## Step 2: Create a SAN snapshot
 
-1. [] In the **Storage Infrastructure** view, navigate to **HPE StoreVirtual**.
-2. [] Expand **HPE StoreVirtual**.
+1. [] Expand **HPE StoreVirtual** in the **Storage Infrastructure** view.
 3. [] Expand **Veeam-VSA-MGMTG**.
 4. [] Select **veeam-vsa-cluster**.
-5. [] Right-click **datastore1**.
-6. [] Select **Create Snapshot...**
-7. [] In the **New Storage Snapshot** dialogue box, click **OK**.
-
-8. [] Wait until the snapshot is created and a list of VMs is obtained. Then click **Close**.
-9. [] The SAN snapshot is created.
+5. [] Select **datastore1**.
+6. [] Click the **Create Snapshot** button on the **Volume** ribbon.
+7. [] Keep the default settings and click the **OK** button.
+8. [] Wait until the create storage snapshot reaches status **Success* then click the **Close** button.
+> Note: This progress will take a maximum of 2 minutes.
 
 ===
 
 ## Step 3: Create an On-Demand Sandbox for snapshots
 
-1. [] Click **SureBackup**.
-2. [] Click **VMware** near **Add Application Group**.
-3. [] Name the group +++SharePoint from snapshot+++ and click **Next**.
-4. [] On the **Virtual machines** step, click **Add VM**.
-5. [] Select **From storage snapshots\...**
-6. [] Expand *datastore1*.
-7. [] Find **VEEAM-DC01** and **VEEAM- SP01**. Use **Ctrl + left click** to select several VMs from the job if needed.
-8. [] Click **Add**.
-9. [] If necessary, use the **Move Up** and **Move Down** buttons to bring the VMs in the following (boot) order: **VEEAM-DC01 VEEAM-SP01** and click **Next**.
-10. [] Review the **Application Group** configuration and close the wizard by clicking **Finish**.
-11. []  Click on **VMware** near **Add SureBackup Job**.
-12. [] Enter +++SureBackup Job SharePoint+++ into the **Name** field. Fill in +++VEEAM-SP01+++ as a **Description** and click **Next**.
-13. [] From the **Virtual lab** list, leave **VEEAM-ESX VLAB1** selected and click **Next**.
-14. [] Click the **Application group** drop-down menu.
-15. [] Choose the Application group **SharePoint from snapshot**.
-16. [] Do not enable the **Keep the application group running once the job completes** check box. Click **Next** to continue.
-> Note:  With this option enabled, the lab will not be powered off when the SureBackup job completes and you could use On-Demand Sandbox for testing, troubleshooting or training. For VMCE training purposes, however, we will leave the check box off.
+1. [] Navigate to the **Backup Infrastructure** view.
+1. [] Select **SureBackup** in the **Backup Infrastructure** view.
+2. [] Click the **Add App Group** button on the **SureBackup** ribbon.
+3. [] Select **VMware...**.
+3. [] Enter name:  +++SharePoint from snapshot+++.
+4. [] Click the **Next** button on the **Name** step.
+4. [] Click the **Add VM** button.
+5. [] Select **From storage snapshots...**.
+6. [] Expand **datastore1 (datastore1)**.
+7. [] Hold the **CTRL** keyboard button and select the **VEEAM-DC01** and **VEEAM- SP01** virtual machines.
+8. [] Click the **Add** button.
+> Important: Verify that the boot order is:
+>
+> VEEAM-DC01
+> VEEAM-SP01
+> If necessary, use the **Move Up** and **Move Down** buttons to change the order.
 
-17. [] Click **Yes** to ignore the data sovereignty warning.
-18. [] Click **Next** on the **Linked Jobs** page.
-19. [] Click **Next** in the **Settings** section.
-20. [] Skip the **Schedule** setting by clicking **Apply**.
-21. [] Review the summary of the created recovery verification job. Select the **Run the job when I click Finish** check box to start the created job right after you finish working with the wizard.
-22. [] Click **Finish**.
-> Note:  A SureBackup job will take a while to run, so do not wait for it to complete. Proceed with the next lab.
+9. [] Click the **Next** button on the **Virtual Machines** step.
+10. [] Click the **Finish** button on the **Summary** step.
+11. [] Navigate to the **Home** view.
+12. [] Click the **SureBackup Job** button on the **Home** ribbon.
+
+11. [] Select **VMware...**.
+12. [] Enter
+ 1. Name: +++SureBackup Job SharePoint+++ into the **Name** field.
+ 2. Description: +++VEEAM-SP01+++. 
+
+13. [] Click the **Next** button on the **Name** step..
+
+13. [] Keep the default settings and click the **Next** button on the **Virtual Lab** step.
+14. [] Click the **Application group** drop-down menu.
+15. [] Select the **SharePoint from snapshot** application group.
+> Note:  If the Keep the application group running after the job completes check box is ticked the lab will not be powered off when the SureBackup job completes and you could use On-Demand Sandbox for testing, troubleshooting or training. For VMCE training purposes, however, we will leave the check box unticked.
+
+16. [] Click the **Next** button on the **Application Group** step.
+17. [] Click the **Yes** button to ignore the data sovereignty warning.
+18. [] Keep the default settings and click the **Next** button on the **Linked Jobs** step.
+19. [] Keep the default settings and click the **Next** button on the **Settings** step.
+20. [] Keep the default settings and click the **Apply** button on the **Schedule** step.
+21. [] Tick the **Run the job when I click Finish** check box.
+22. [] Click the **Finish** button on the **Summary** step.
+> Important: Do NOT wait for the SureBackup job to complete - please continue to the next lab exercise immediately.
 
 ===
 
