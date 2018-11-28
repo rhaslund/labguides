@@ -173,7 +173,7 @@ Module 9: Advanced Data Protection
 22. [] Click the **Yes** button to confirm running the Active Full backup now.
 23. [] Switch to the **VMware vSphere Client** using the Windows task bar.
 25. [] In the **Recent Task** pane, locate the **Create vitual machine snapshot** text for the **Tiny-Veeam** virtual machine and note down the **Start Time** then locate the **Remove snapshot** text for the **Tiny-Veeam** virtual machine. Compare the two time stamps and calculate the time difference, then compare with the result from the active full without storage snapshots enabled. Close the **VMware vSphere Client** window.
-> Note: The snapshot is open longer time in this example with backup from storage snapshots. This is because it takes time to orchestrate the storage snapshot and there is no data changes in the virtual machine during the backup. Generally, it makes the most sense to enable backup from storage snapshots for highly transactional servers.
+> Note: The snapshot is open longer time in this example with backup from storage snapshots enabled. This is because it takes time to orchestrate the storage snapshot and there is no data changes in the virtual machine during the backup. Generally, it makes the most sense to enable backup from storage snapshots for highly transactional servers.
 
 ===
 
@@ -289,15 +289,15 @@ Module 9: Advanced Data Protection
 
 ## Step 1: Install and configure the hardware VSS provider
 
-1. [] HPE LeftHand P4000 VSS Provider is the hardware provider that supports the Volume Shadow Copy Service on the HPE LeftHand Storage Solution. The hardware VSS provider needs to be installed on both the host and the off-host proxy. In our case, it's already installed on the Hyper-V host, so let's install it on **VEEAM-VBR**. Launch **File Explorer**.
-2. [] Select disk C:\
-3. [] Click the install folder which contains distributives for the course.
-4. [] Launch the HPE\_StoreVirtual\_App\_Aware\_Snapshot\_Mgr\_Installer executable.
-5. [] Click **Next**.
-6. [] Click the **I accept the terms of the license agreement** radio button.
-7. [] Click **Next**.
-8. [] Click **Next**.
-9. [] Click **Next**.
+1. [] HPE LeftHand P4000 VSS Provider is the hardware provider that supports the Volume Shadow Copy Service on the HPE LeftHand Storage Solution. The hardware VSS provider needs to be installed on both the production Hyper-V host and the off-host proxy. In our case, it's already installed on the Hyper-V host, so let's install it on the **VEEAM-VBR** server. Launch **File Explorer** from the Windows task bar.
+2. [] Expand **Local Disk (C:\\)**.
+3. [] Select the **Install** folder.
+4. [] Launch the **HPE_StoreVirtual_Application_Aware_Snapshot_Manager_Installer_AT004-10545.exe** installer.
+5. [] Click the **Next** button.
+6. [] Select the **I accept the terms of the license agreement** radio button. 
+7. [] Click the **Next** on the **License Agreement** step.
+8. [] Click the **Next** button on the **Choose Destination Location** step.
+9. [] Click the **Next** button on the **Enter Text** step.
 10. [] Click **Next** to proceed from the Specify CIM connection port step.
 11. [] Click **Install**.
 12. [] Read the notification and click **Next**.
