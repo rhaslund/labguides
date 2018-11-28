@@ -30,7 +30,7 @@ Module 9: Advanced Data Protection
 
 9. [] Keep the default settings and click the **Next** button on the **Access Options** step.
 10. [] Click the **Finish** button on the **Summary** step.
-11. []  Wait until the storage discovery reaches status **Success* then click the **Close** button.
+11. []  Wait until the storage discovery reaches status **Success** then click the **Close** button.
 
 ===
 
@@ -42,7 +42,7 @@ Module 9: Advanced Data Protection
 5. [] Select **datastore1**.
 6. [] Click the **Create Snapshot** button on the **Volume** ribbon.
 7. [] Keep the default settings and click the **OK** button.
-8. [] Wait until the create storage snapshot reaches status **Success* then click the **Close** button.
+8. [] Wait until the create storage snapshot reaches status **Success** then click the **Close** button.
 > Note: This progress will take a maximum of 2 minutes.
 
 ===
@@ -105,7 +105,7 @@ Module 9: Advanced Data Protection
 5. [] Select **Microsoft Windows**.
 6. [] Keep the default settings and click the **Next** button on the **Restore Point** step.
 7. [] Click the **Customize** text link.
-8. [] Click the **Choose...** in the **Host*' section.
+8. [] Click the **Choose...** in the **Host** section.
 9. [] Select the **VEEAM-ESX** host.
 10. [] Click the **OK** button to confirm the host.
 11. [] Click the **Choose...** button in the **Resource pool** section.
@@ -118,7 +118,7 @@ Module 9: Advanced Data Protection
 18. [] Click the **Finish** button on the **Summary** step.
 > Note: The Backup Browser will launch after a short wait, please have some patience.
 
-19. [] Expand the **(C:)** drive**.
+19. [] Expand the **(C:)** drive.
 20. [] Expand the **inetpub** folder.
 
 20. [] Select the **wwwroot** folder in the **Navigation** pane.
@@ -206,7 +206,7 @@ Module 9: Advanced Data Protection
 5. [] Click the **OK** button.
 6. [] Click the **Yes** button to dismiss the certificate warning.
 5. [] Click the **Start** menu (move the mouse cursor all the way to the edge of the bottom left hand corner to make the start menu button appear).
-6. [] Enter: +++devmgmt.msc+++** and press the **Enter** keyboard button.
+6. [] Enter: +++devmgmt.msc+++ and press the **Enter** keyboard button.
 7. [] Expand **Medium Changer devices**.
 8. [] Double click the **Unknown Medium Changer** device.
 9. [] Click the **Driver** tab.
@@ -348,7 +348,7 @@ The Hyper-V role must be enabled on the machine so that it's possible to add it 
 
 ===
 
-## Step 3: Edit a Hyper-V backup job and run it in the off-host mode**
+## Step 3: Edit a Hyper-V backup job and run it in the off-host mode
 
 1. [] Go to the **Home** view.
 2. [] Go to **Jobs** → **Backup**.
@@ -565,7 +565,7 @@ Select the inactive keyset in the list.
 
 ===
 
-## Step 2: Restoring a configuration backup to another Veeam server**
+## Step 2: Restoring a configuration backup to another Veeam server
 
 1. [] Log in to **VEEAM-VBR2** though the **Remote Desktop Connection**.
 2. [] Use +++VEEAMINFRA\\Administrator+++ | +++Pa$$w0rd+++ to connect. Confirm that you want to connect to this computer by clicking **Yes** if prompted. You can apply configuration data from one of your Veeam servers to any other Veeam backup server in your backup infrastructure. We will restore configuration from **VEEAM-VBR** to **VEEAM-VBR2**.
