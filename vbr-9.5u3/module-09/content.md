@@ -132,22 +132,22 @@ Module 9: Advanced Data Protection
 28. [] Close the **Backup Browser** window.
 28. [] Launch the **File Explorer** from the Windows task bar.
 29. [] Navigate to the +++\\\\veeam-sp01\\c$\\inetpub\\wwwroot+++ folder.
-30. [] Verify both the **iis-8.png** and **RESTOREDiis-8.png** files are present then close the **File Explorer** window.
+30. [] Verify both the **iis-8.png** and **RESTORED-iis-8.png** files are present then close the **File Explorer** window.
 > Important It is not possible to browse to this path, you need to click the address bar inside the File Explorer and then manually input the path and finally press the Enter button.
 
 ===
 
 ## Step 5: Backup from Storage Snapshots
 
-1. [] Go to **Jobs** → **Backup**.
-2. [] Select **Backup ORCL** job.
-3. [] Click the **Edit** button in the Job ribbon.
-4. [] Go to the **Storage** tab.
-5. [] Click **Advanced**.
-6. [] Go to the **Integration** tab.
-7. [] Uncheck **Enable backup from storage snapshots**.
-8. [] Click **OK** to confirm the settings.
-9. [] Save the changes in the job by clicking **Finish**.
+1. [] Select **Backup** in the **Jobs** section of the **Home** view.
+2. [] Select the **Backup ORCL** job.
+3. [] Click the **Edit** button on the **Job** ribbon.
+4. [] Click the **Storage** text link in the left hand step list.
+5. [] Click the **Advanced** button.
+6. [] Click the **Integration** tab.
+7. [] Untick the **Enable backup from storage snapshots** check box.
+8. [] Click the **OK** button.
+9. [] Click the **Finish** button on the **Storae** step.
 10. []  Launch an **Active Full** for the *Backup ORCL*.
 11. [] Click **Yes** to confirm running the active full backup now.
 12. [] Look at the bottom of the vSphere Client's **Recent Task** window to check how long the snapshot lifetime is, then click on the **VMware vSphere Client** icon on the task bar.
