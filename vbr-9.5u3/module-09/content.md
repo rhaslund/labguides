@@ -328,13 +328,13 @@ Module 9: Advanced Data Protection
  2. User name: +++veeam+++.
  2. Password: +++veeam+++.
  3. Confirm password: +++veeam+++.
+> Note: Pay attention to the management group name as it is case sensitive. Otherwise, the test will fail.
 
 20. [] Click the **Test** button.
 
 20. [] Enter IP address: +++10.0.2.240+++.
 21. [] Click the **OK** button.
-21. [] After the test is over, press **OK**.
-> Note: Pay attention to the management group name as it is case sensitive. Otherwise, the test will fail.
+21. [] Verify the **Test succeeded. The credentials are valid.** text is displayed then click the **OK** button.
 
 22. [] Close the Authentication Console window.
 23. [] To verify that a specific provider is going to be used to back up a particular Hyper-V host, you need to open the **Backup Infrastructure** view.
