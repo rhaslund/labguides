@@ -298,8 +298,7 @@ Module 9: Advanced Data Protection
 7. [] Click the **Next** on the **License Agreement** step.
 8. [] Click the **Next** button on the **Choose Destination Location** step.
 9. [] Click the **Next** button on the **Enter Text** step.
-10. [] Click **Next** to proceed from the Specify CIM connection port step.
-11. [] Click **Install**.
+11. [] Click the **Install** button on the **Ready to Install the Program** step.
 12. [] Read the notification and click **Next**.
 13. [] Click **Finish** to exit the installation wizard.
 14. [] Close **File Explorer**.
