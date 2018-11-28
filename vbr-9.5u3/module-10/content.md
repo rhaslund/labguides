@@ -1,7 +1,7 @@
 Module 10: Veeam ONE Features and Functionality
 
 ---
-**This lab is expected to last a maximum of 70 minutes including lab launch.**
+**This lab is expected to last a maximum of 30 minutes including lab launch.**
 
 # Lab 10.1: Setting up Veeam ONE (part two)
 
@@ -124,161 +124,81 @@ Module 10: Veeam ONE Features and Functionality
 
 ## Step 1. Create a Business View category
 
-> 1. [] Open **Veeam ONE Business View** by double-clicking the desktop shortcut.
->
-> 2. [] Enter username *VEEAMINFRA\\Administrator* and password *Pa$$w0rd*, then click the **Login** button.
+1. [] Launch **Veeam ONE Business View** from the desktop.
+2. [] Enter:
+ 1. User name: +++VEEAMINFRA\\Administrator+++
+ 2. Password: +++Pa$$w0rd+++
+ 
+3. [] Click the **Login** button.
+3. [] Click the **Configuration** tab.
+4. [] Navigate to the **Categories** view.
+5. [] Click the **Add\...** button.
+6. [] Enter friendly name: +++Veeam Courses+++.
+7. [] Enter tag category to use: +++Veeam Courses+++.
+8. [] Select the **Dynamic** radio button in the **Group type** section.
 
-3. []
-
-Click the **Configuration** link in the top right corner.. []
-
-> 4. [] Go to the **Categories** section.
-
-5. []
-
-Click **Add\.... [] **
-
-> 6. [] In the **Add new category** dialogue box, enter *Veeam Courses* in the **Friendly name** and **Tag category to use sections**.
->
-> Switch the **Group type** radio button to *Dynamic*.
->
-> 7. [] Leave *Virtual Machine* in the **Choose object type** field and click the **"Not Set" groups on charts** drop-down list.
->
-> **Step 2. Create Business View groups**
->
-> **Action Description Illustration**
-
-1. []
-
-Switch to the **Groups** section.. []
-
-2. []
-
-Click the **Veeam Courses** tab.. []
-
-3. []
-
-> Click **Grouping Expression...**
-
-> [!KNOWLEDGE] Please double check that you have selected the right Veeam Courses tab.. []
-
-4. []
-
-> At **Grouping Expression,** we will copy and paste the text from the document c:\\install\\businessview.txt.
->
-> [!KNOWLEDGE] This expression will choose the VMs starting with "Veeam."
-
-Click **File Explorer**.. []
-
-> 5. [] Go to the c:\\install folder.
-
-6. []
-
-Open BusinessView.txt.. []
-
-> 7. [] This expression will choose the VMs starting with "Veeam." Click the expression to select it.
-
-8. []
-
-Copy the expression.. []
-
-> 9. [] Go back to the Veeam ONE Business View interface. Paste the grouping expression.
-
-10. []
-
-Click **OK**.. []
-
-> 11. [] Go to the **Workspace** tab.
->
-> **Lab 10.5. Veeam ONE backup reporting**
->
-> Run the Protected VMs report to analyze the backup protection of VMs in your virtual environment.
+7. [] Click the **"Not Set" groups on charts** drop down menu.
+8. [] Select **Hide**.
+9. [] Click the **OK** button.
 
 ===
 
-# Step 1. Run the Protected VMs report
+## Step 2: Create Business View groups
 
-> **Action Description Illustration**
->
-> 1. [] Open **Veeam ONE Reporter** by double-clicking the desktop shortcut.
->
-> 2. [] Click the **Use Windows session credentials** check box.
->
-> 3. [] Click the **Login** button.
->
-> 4. [] Open the **Configuration** section.
->
-> At the moment, our infrastructure is scheduled to collect data from the server automatically every three hours. Since we want to see the group we have just created in the report before it is collected and synced automatically, it's required to run the data collection manually.
->
-> 5. [] Click **Servers**.
->
-> 6. [] Select **VEEAM-ESX** in the list.
+1. [] Navigate to the **Groups** view.
+2. [] Click the **Veeam Courses** tab.
+> Important: Please double check that you have selected the right Veeam Courses tab.
 
-7. []
+3. [] Click the **Grouping Expression...** button.
+4. [] Enter expression: +++CASE WHEN Substring\(Name, 0, 5\)\=\"VEEAM\" THEN \"Course VMs\" ELSE \"Other VMs\" END+++.
+5. [] Click the **OK** button.
 
-Click the **Run now** button on the toolbar.. []
-
-8. []
-
-> **Important!** Wait for the data collection to complete before proceeding.
-
-Navigate to **Workspace**.. []
-
-9. []
-
-Go to **Veeam Backup Monitoring**.. []
-
-10. []
-
-> Scroll down and select the **Protected VMs**
-
-report.. []
-
-> 11. [] Choose **Business View object(s)** as the report scope.
-
-12. []
-
-> Click the **Click to choose** link near the **Business view object(s)** option. This will let you define Business View groups that should be analyzed in the report.
->
-> Note that *1 week* is set as the **RPO**.
-
-The report will examine whether VMs have valid backup and replica restore points created within this specified time range (RPO period).. []
-
-> 13. [] Expand the *Veeam Courses* group.
->
-> 14. [] Activate the *Course VMs* check box.
-
-15. []
-
-Click **OK**.. []
-
-> 16. [] Click **Preview**. The report will open in the new tab.
-
-17. []
-
-> Scroll through the report. Switch between its pages using the arrow ➧ to review the information the report provides.
->
-> A VM is considered to be **Protected** if there is at least one valid backup or replica restore point that meets the designated RPO for it. A VM is considered to be Unprotected if it has outdated or missing backup or replica restore points.
-
-Close the **report preview**.. []
-
-> 18. [] We have analyzed the backup protection of VMs in the virtual environment.
->
-> **Lab 10.6. Performing an infrastructure assessment**
->
-> Analyze the environment for incompatibilities and configuration errors that can potentially prevent or complicate future backup operations.
+6. [] Click the **Workspace** tab.
+7. [] Verify that you see the newly created **Veeam Courses** column then close the **Veeam ONE Business View** window.
 
 ===
 
-# Step 1. Start the VM Configuration Assessment report
+# Lab 10.5: Veeam ONE backup reporting
 
-> **Action Description Illustration**
->
-> 1. [] Navigate to the **Workspace** tab.
+## Step 1. Run the Protected VMs report
 
-2. []
+1. [] Switch to the **Veeam ONE Reporter** window using the Windows task bar.
+2. [] Open **Veeam ONE Reporter** by double-clicking the desktop shortcut.
+4. [] Click the **Configuration** tab.
+> Note: Currently the infrastructure is scheduled to collect data from the server automatically every three hours. Since we want to see the group we have just created in the report before it is collected and synced automatically, it's required to run the data collection manually.
 
-Select the **VMware Infrastructure Assessment** folder.. []
+5. [] Navigate to the **Servers** view.
+6. [] Select **VEEAM-ESX**.
+7. [] Click the **Run now** button.
+> Important: Wait for the data collection to complete before continuing.
+
+8. [] Click the **Workspace** tab.
+9. [] Select the **Veeam Backup Monitoring** folder.
+10. [] Click the **Protected VMs** text link.
+11. [] Select the **Business View object(s)** radio button.
+> Note: The RPO is set to 1 week by default. The report will examine whether VMs have valid backup and replica restore points created within this specified time range (RPO period).
+
+12. [] Click the **Click to choose** text link.
+> Note: This will let you define Business View groups that should be analyzed in the report.
+
+13. [] Expand the **Veeam Courses** category.
+14. [] Tick the **Course VMs** check box.
+15. [] Click the **OK** button.
+16. [] Click the **Preview** button.
+> Note: The report will open in the new tab.
+
+17. [] Maximize the **Protected VMs report** window.
+18. [] Review the report using the arrow buttons to switch between pages then close the **Protected VMs report** window.
+> Note: A VM is considered to be Protected if there is at least one valid backup or replica restore point that meets the designated RPO for it. A VM is considered to be Unprotected if it has outdated or missing backup or replica restore points.
+
+===
+
+# Lab 10.6: Performing an infrastructure assessment**
+
+## Step 1: Start the VM Configuration Assessment report
+
+1. [] Click the **Workspace** tab.
+2. [] Select the **VMware Infrastructure Assessment** folder.. []
 
 3. []
 
