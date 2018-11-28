@@ -234,7 +234,9 @@ Module 8: Introduction to Agents
 77. [] Click inside the **virtual machine console** window.
 78. [] Enter password: +++Pa$$w0rd+++.
 79. [] Click the **right arrow login** button (or press the **Enter** keyboard button).
-80. [] 
+80. [] Click the **Cancel** button to dismiss the **Shutdown Event Tracker** window.
+81. [] Close the **BAREMETAL** virtual machine console window.
+82. [] Close the **VMware vSphere Client** window.
 
 ---
 
