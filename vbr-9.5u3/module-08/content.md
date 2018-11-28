@@ -109,7 +109,7 @@ Module 8: Introduction to Agents
 23. [] Click the **Apply** button on the **Schedule** step.
 24. [] Tick the **Run the job when I click Finish** check box.
 25. [] Click the **Finish** button.
-> Important! The Agent Backup Job Windows job must be in a Stopped status with the last result as Success before continuing to the next lab exercise — this should take less than 12 minutes.
+> Important! The Agent Backup Job Windows job must be in a Stopped status with the last result as Success before continuing to the next lab exercise — this will take a maximum of 8 minutes.
 
 ===
 
@@ -119,7 +119,7 @@ Module 8: Introduction to Agents
 2. [] Expand the **Agent Backup Job Windows** job.
 3. [] Select **PHYSICAL.veeamlab.local**.
 4. [] Click the **Recovery Media** button on the **Backup** ribbon.
-> Important! If you receive an error stating that the backup files are locked, it is because you did not wait for the agent backup job to complete. The Agent Backup Job Windows job must be in a Stopped status with the last result as Success before continuing - this will take a maximum of 8 minutes. Please have some patience.
+> Important! If you receive an error stating that the backup files are locked, it is because you did not wait for the agent backup job to complete. The Agent Backup Job Windows job must be in a Stopped status with the last result as Success before continuing to the next lab exercise — this will take a maximum of 8 minutes.
 
 5. [] Keep the default setting and click the **Next** button on the **Recovery Media** step.
 6. [] Enter folder to create recovery media in: +++C:\\Users\\Administrator.VEEAMINFRA\\Desktop\\VeeamRecoveryMedia.iso+++.
