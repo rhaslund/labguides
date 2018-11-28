@@ -97,60 +97,33 @@ Module 10: Veeam ONE Features and Functionality
 5. [] Click the **Rules** tab.
 5. [] Click the **Add...** button.
 6. [] Select the **Rule for specific conditions or state** radio button.
-7. []
+7. [] Click the **Next** button on the **Choose Rule Type/Trigger type** step.
+8. [] Select the **Resource usage is out of allowed range** radio button.
+9. [] Click the **Next** button on the **Choose Rule Type/Rule condition** step.
+10. [] Click the **Counter** drop down menu.
+11. [] Select **CPU Usage**.
+11. [] Enter In the For the following time period: +++5+++ min.
+12. [] Enter In the Warning box: +++70+++%.
+13. [] Enter In the Error box: +++90+++%.
+14. [] Click the **Finish** button on the **Define Rule** step.
+15. [] Click the **Assignment** tab.
+16. [] Click the **Add** button in the **Assignment for alarm** section.
+17. [] Select **Infrastructure tree...**.
 
-Click **Next** to proceed.. []
+17. [] Expand **Virtual Infrastructure**.
+18. [] Tick the **VEEAM-ESX** check box.
+> Note: You may want to assign the alarm to the custom categorization groups configured in **Veeam ONE Business View**. However, multiple assignment types for the same alarm cannot be combined.
 
-8. []
-
-Select *Resource usage is out of allowed range*.. []
-
-> 9. [] Click **Next**.
->
-> 10. [] On the **Define Rule** step, select the following:
->
-> \- **Counter**: *CPU Usage*
->
-> 11. [] **In the For the following time period** section, enter *5 min*.
->
-> 12. [] **In the Warning box,** enter *70%*.
->
-> 13. [] **In the Error box,** enter *90%*.
-
-14. []
-
-Click **Finish**.. []
-
-> 15. [] Go to the **Assignment** tab.
->
-> 16. [] Select the **Add** → **Infrastructure tree...** option.
->
-> 17. [] Expand **Virtual Infrastructure**.
->
-> 18. [] Select **VEEAM-ESX** in the **Assign Alarm** pop-up window.
->
-> You may want to assign the alarm to the custom categorization groups configured in *Veeam ONE Business View*. However, multiple assignment types for the same alarm cannot be combined.
-
-19. []
-
-Click **Assign**.. []
-
-20. []
-
-Select the **Save** option.. []
-
-> 21. [] Close the *Veeam ONE Monitor* interface.
->
-> **Lab 10.4. Veeam ONE: Creating a Business View category and group**
->
-> Set up categorization for VMs.
+19. [] Click the **Assign** button.
+20. [] Click the **Save** button.
+21. [] Close the **Veeam ONE Monitor** window.
 
 ===
 
-# Step 1. Create a Business View category
+# Lab 10.4: Veeam ONE: Creating a Business View category and group
 
-> **Action Description Illustration**
->
+## Step 1. Create a Business View category
+
 > 1. [] Open **Veeam ONE Business View** by double-clicking the desktop shortcut.
 >
 > 2. [] Enter username *VEEAMINFRA\\Administrator* and password *Pa$$w0rd*, then click the **Login** button.
