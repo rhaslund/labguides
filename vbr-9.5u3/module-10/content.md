@@ -38,7 +38,7 @@ Module 10: Veeam ONE Features and Functionality
 
 ===
 
-## Step 2: Populate a dashboard**
+## Step 2: Populate a dashboard
 
 1. [] Click the **plus sign** of the left hand widget placeholder.
 2. [] Enter caption: +++VI alarm+++.
@@ -193,7 +193,7 @@ Module 10: Veeam ONE Features and Functionality
 
 ===
 
-# Lab 10.6: Performing an infrastructure assessment**
+# Lab 10.6: Performing an infrastructure assessment
 
 ## Step 1: Start the VM Configuration Assessment report
 
