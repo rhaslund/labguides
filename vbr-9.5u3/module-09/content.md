@@ -65,6 +65,7 @@ Module 9: Advanced Data Protection
 > VEEAM-DC01
 >
 > VEEAM-SP01
+>
 > If necessary, use the **Move Up** and **Move Down** buttons to change the order.
 
 9. [] Click the **Next** button on the **Virtual Machines** step.
