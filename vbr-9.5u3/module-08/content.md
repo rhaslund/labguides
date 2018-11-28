@@ -179,7 +179,6 @@ Module 8: Introduction to Agents
 36. [] Select the **IDE (0:0)** radio button.
 37. [] Click the **Next** button on the **Advanced Options** step.
 38. [] Click the **Finish** button on the **Ready to Complete** step.
-39. [] Select the **Tiny-Veeam** virtual machine.
 40. [] Right click the **datastore1** datastore in the **Resources** section.
 41. [] Select **Browse Datastore...**.
 42. [] Click the **Upload files to this datastore** button (icon looks like a datastore with a green arrow pointing into the datastore)
