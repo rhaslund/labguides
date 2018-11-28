@@ -188,6 +188,8 @@ Module 8: Introduction to Agents
 > Note: It may be necessary to scroll down.
 
 46. [] Click the **Open** button.
+47. [] Click the **Yes** button to confirm replacing any existing file(s).
+
 47. [] Wait for the upload to complete then close the **Datastore Browser** window.
 48. [] Select the **BAREMETAL** virtual machine.
 49. [] Click the **Edit Settings** text link in the **Commands** pane.
