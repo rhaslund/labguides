@@ -206,24 +206,24 @@ Module 8: Introduction to Agents
 58. [] Click the **Power on** text link in the **Commands** pane.
 59. [] Click the **Open Console** text link in the **Commands** pane.
 60. [] Wait for the **Veeam Recovery Media** screen to appear, and then click anywhere inside the **virtual machine console**.
-61. [] Select **Bare Metal Recovery**.
+61. [] Select **Bare Metal Recovery** by pressing the **down arrow** keyboard button and then the **Enter** keyboard button.
 > Tip: It is possible to utilize the keyboard only instead of the mouse to avoid issues.
 
-61. [] Select the **Network storage** radio button.
-62. [] Press the **Enter** keyboard button (or click the **Next** button).
-63. [] Select the **Veeam backup repository** radio button.
-64. [] Press the **Enter** keyboard button (or click the **Next** button).
+61. [] Select the **Network storage** radio button by pressing the **Tab** keyboard button until the **Local storage** radio button is selected, then press the **down arrow** keyboard button.
+62. [] Press the **Enter** keyboard button (or click the **Next** button) on the **Backup Location** step.
+63. [] Select the **Veeam backup repository** radio button by pressing the **down arrow** keyboard button until the **Veeam backup repository** radio button is selected.
+64. [] Press the **Enter** keyboard button (or click the **Next** button) on the **Network Storage** step.
 65. [] Enter:
  1. Veeam backup server name: +++10.0.3.2+++.
  2. Username: +++VEEAMINFRA\\Administrator+++.
  3. Password: +++Pa$$w0rd+++.
 
-66. [] Press the **Enter** keyboard button (or click the **Next** button).
-67. [] Press the **Enter** keyboard button (or click the **Next** button).
-68. [] Press the **Enter** keyboard button (or click the **Next** button).
-69. [] Press the **Enter** keyboard button (or click the **Next** button).
-70. [] Press the **Enter** keyboard button (or click the **Restore** button).
-71. [] Press the **Enter** keyboard button (or click the **Finish** button).
+66. [] Press the **Enter** keyboard button (or click the **Next** button) on the **Backup Server** step.
+67. [] Press the **Enter** keyboard button (or click the **Next** button) on the **Backup** step.
+68. [] Press the **Enter** keyboard button (or click the **Next** button) on the **Restore Point** step.
+69. [] Press the **Enter** keyboard button (or click the **Next** button) on the **Restore Mode** step.
+70. [] Press the **Enter** keyboard button (or click the **Restore** button) on the **Summary** step.
+71. [] Press the **Enter** keyboard button (or click the **Finish** button) on the **Progress** step.
 > Note: This process can take up to 15 minutes.
 
 72. [] Press the **Enter** keyboard button (or click the **Yes** button).
