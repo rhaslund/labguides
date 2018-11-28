@@ -185,6 +185,8 @@ Module 8: Introduction to Agents
 43. [] Select **Upload file...**.
 44. [] Select **Desktop** in the **Navigation** pane.
 45. [] Select the **VeeamRecoveryMedia.iso** recovery media.
+> Note: It may be necessary to scroll down.
+
 46. [] Click the **Open** button.
 47. [] Wait for the upload to complete then close the **Datastore Browser** window.
 48. [] Select the **BAREMETAL** virtual machine.
