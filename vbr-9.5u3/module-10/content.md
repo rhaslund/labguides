@@ -197,23 +197,11 @@ Module 10: Veeam ONE Features and Functionality
 
 ## Step 1: Start the VM Configuration Assessment report
 
-1. [] Click the **Workspace** tab.
-2. [] Select the **VMware Infrastructure Assessment** folder.. []
-
-3. []
-
-> Select the **VM Configuration Assessment**
-
-report.. []
-
-> 4. [] Click **Preview**.
-
-5. []
-
-> Discuss the report findings with the instructor and the other attendees.
-
-Close the report preview.. []
-
+1. [] Select the **VMware Infrastructure Assessment** folder.
+2. [] Click the **VM Configuration Assessment** text link.
+3. [] Keep the default settings and click the **Preview** button.
+4. [] Maximize the **Protected VMs report** window.
+5. [] Review the report using the arrow buttons to switch between pages then close the **VM Configuration Assessment report** window.
 
 ---
 
