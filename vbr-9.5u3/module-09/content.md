@@ -325,11 +325,14 @@ Module 9: Advanced Data Protection
 
 19. [] Enter:
  1. Management group: +++Veeam-VSA-MGMTG+++
- 2. User name: +++veeam+++ 
- 2. Password: +++veeam+++ 
- 3. Click the **Test** button.
+ 2. User name: +++veeam+++.
+ 2. Password: +++veeam+++.
+ 3. Confirm password: +++veeam+++.
 
-20. []  Select to **Test** the configuration and enter +++10.0.2.240+++ as the IP address. Click **OK**.
+20. [] Click the **Test** button.
+
+20. [] Enter IP address: +++10.0.2.240+++.
+21. [] Click the **OK** button.
 21. [] After the test is over, press **OK**.
 > Note: Pay attention to the management group name as it is case sensitive. Otherwise, the test will fail.
 
