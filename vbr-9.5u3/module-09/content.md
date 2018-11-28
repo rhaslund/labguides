@@ -335,54 +335,56 @@ Module 9: Advanced Data Protection
 20. [] Enter IP address: +++10.0.2.240+++.
 21. [] Click the **OK** button.
 21. [] Verify the **Test succeeded. The credentials are valid.** text is displayed then click the **OK** button.
-
-22. [] Close the Authentication Console window.
-23. [] To verify that a specific provider is going to be used to back up a particular Hyper-V host, you need to open the **Backup Infrastructure** view.
-24. [] Click on **Microsoft Hyper-V** under **Managed Servers**.
-25. [] Right-click **VEEAM-HYPERV** in the working area.
-26. [] Select **Manage Volumes**.
-27. [] Verify that drive G:\\ has **LeftHand Networks VSS Provider** listed instead of the default **Microsoft Software Show Copy** provider, then click **OK** to close the **Manage Volumes** window.
+22. [] Close the **Authentication Console** window.
+23. [] Navigate to the **Backup Infrastructure** view.
+24. [] Select **Microsoft Hyper-V** in the **Managed Servers** section of the **Home** view.
+25. [] Select the  **VEEAM-HYPERV** host.
+26. [] Click the **Manage Volumes** button on the **Server** ribbon.
+27. [] Verify that **G:\\** mount point provider is **LeftHand Networks VSS Provider** then click the **Cancel** button.
 
 ===
 
 ## Step 2: Add a Hyper-V off-host backup proxy
 
-1. [] On the **Backup Infrastructure** view, select the **Backup Proxies** node in the inventory pane.
-2. [] Click **Add Proxy** on the ribbon.
-3. [] Select **Hyper-V\...**
-4. [] **VEEAM-VBR** (this server) is going to be used as an off-host backup proxy. Click **Next** to confirm this selection.
-The Hyper-V role must be enabled on the machine so that it's possible to add it as an off-host backup proxy.
-5. [] Click **Next** to skip configuring the traffic rules and proceed with the installation.
-6. [] At this step, Veeam Backup & Replication displays the list of components required for work of the Hyper-V off-host backup proxy. Click **Apply** to proceed with the installation.
-7. [] Click **Next** to proceed.
-> Note:  Checking for updates could take up to eight minutes.
+1. [] Select **Backup Proxies** in the **Backup Infrastructure** view.
+2. [] Click the **Add Proxy** button on the **Backup Proxy** ribbon.
+3. [] Select **Hyper-V...**.
+4. [] Keep the default settings and click the **Next** button on the **Server** step.
+> Note: The Hyper-V role must be enabled on the server, otherwise it is not possible to add it as an off-host backup proxy.
 
-8. [] Click **Finish** as the process ends.
+5. [] Keep the default settings and click the **Next** button on the **Traffic Rules** step.
+6. [] Review the settings then click the **Apply** button on the **Review** step.
+7. [] Wait for the required components to be installed and configued then click the **Next** button on the **Apply** step.
+> Note: Checking for updates could take up to 4 minutes.
+
+8. [] Click the **Finish** button on the **Summary** step.
 
 ===
 
 ## Step 3: Edit a Hyper-V backup job and run it in the off-host mode
 
-1. [] Go to the **Home** view.
-2. [] Go to **Jobs** → **Backup**.
-3. [] Select **Backup Tiny-Veeam2**.
-4. [] Click **Edit**.
-5. [] Click **Next**.
-6. [] Select the **Tiny-Veeam2** VM.
+1. [] Navigate to the **Home** view.
+2. [] Select **Backup** in the **Jobs** section of the **Home** view.
+3. [] Select the **Backup Tiny-Veeam2** job.
+4. [] Click the **Edit** button on the **Job** ribbon.
+5. [] Keep the existing settings and click the **Next** button on the **Name** step.
+6. [] Select the **Tiny-Veeam2** virtual machine.
 > Note:  We are re-adding the VM since it was deleted and restored from a backup previously. The VM uuid has changed, so we have to re-add it onto the job.
 
-7. [] Select **Remove**.
-8. [] Re-add **Tiny-Veeam2** on the **Virtual Machines** step by clicking **Add**.
+7. [] Click the **Remove** button.
+8. [] Click the **Add...** button.
 9. [] Expand the **VEEAM-HYPERV** host.
 10. [] Select **Tiny-Veeam2**.
-11. [] Click **Add**.
-12. [] Click **Next**.
-13. [] On the **Storage** page, click **Choose** at the **Backup proxy** selection section.
-14. [] Select **Off-host backup**.
-15. [] Make sure the newly-added proxy is in the list below. Press **OK** to confirm your changes.
-16. [] Click **Finish** to finish editing the job.
-17. [] Click the **Start** button on the Job ribbon to launch the Backup Tiny-Veeam2 job.
-18. [] Click on **Tiny-Veeam2** in the **Statistics** view and review the information on the right about its processing. Make sure the off-host mode was used.
+11. [] Click the **Add** button.
+12. [] Click the **Next** button on the **Virtual Machines** step.
+13. [] Click the **Choose...** button in the **Backup proxy** section.
+14. [] Select the **Off-host backup** radio button.
+15. [] Verify the **Hyper-V Off-Host Backup Proxy** is visible in the **Name** column then click the **OK** button.
+16. [] Click the **Finish** button on the **Storage** step.
+17. [] Click the **Start** button on the **Job** ribbon.
+18. [] Select the **Tiny-Veeam2** virtual machine in the **Statistics** view.
+19. [] Verify the **Creating snapshot LeftHand Networks VSS Provider on Hyper-V Off-Host Backup Proxy** text is displayed then minimize the **Veeam Backup & Replication console** window.
+> Note: The backup job will take a maximum of 2 minutes to complete, but please do not wait for the job to complete before continuing to the next lab exercise.
 
 ===
 
