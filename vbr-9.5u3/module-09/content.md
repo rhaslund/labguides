@@ -1,22 +1,16 @@
 Module 9: Advanced Data Protection
 
 ---
-**This lab is expected to last a maximum of 2 hours including lab lunch
+**This lab is expected to last a maximum of 2 hours including lab launch**.
 
-# Lab 9.1: Working with SAN storage snapshots**
+# Lab 9.1: Working with SAN storage snapshots
 
 ## Step 1: Add HPE StoreVirtual VSA
 
-1. [] 
-Select the **Storage Infrastructure** view.
-
-2. [] 
-Click **Add Storage**.
-
+1. [] Select the **Storage Infrastructure** view.
+2. [] Click **Add Storage**.
 3. [] Select **Hewlett Packard Enterprise**.
-4. []
- Select **StoreVirtual**.
-
+4. []  Select **StoreVirtual**.
 5. [] Enter +++VEEAM-VSA+++ in the **Management server DNS name or IP address** field and click **Next**.
 6. [] On the **Credentials** step, click **Add...** next to the **Credentials** drop-down menu and enter the HPE VSA credentials. Enter:
  1. Username: +++veeam+++. (case sensitive) 
@@ -29,58 +23,42 @@ Click **Add Storage**.
 
 9. [] Click **Next** and wait while LUNs are discovered.
 10. [] Click **Finish**.
-11. []
- Wait until the rescan completes, and then click **Close**.
-
+11. []  Wait until the rescan completes, and then click **Close**.
 
 ===
 
 ## Step 2: Create a SAN snapshot
 
 1. [] In the **Storage Infrastructure** view, navigate to **HPE StoreVirtual**.
-2. [] 
-Expand **HPE StoreVirtual**.
-
+2. [] Expand **HPE StoreVirtual**.
 3. [] Expand **Veeam-VSA-MGMTG**.
 4. [] Select **veeam-vsa-cluster**.
 5. [] Right-click **datastore1**.
 6. [] Select **Create Snapshot...**
-7. [] 
-In the **New Storage Snapshot** dialogue box, click **OK**.
+7. [] In the **New Storage Snapshot** dialogue box, click **OK**.
 
-8. [] 
-Wait until the snapshot is created and a list of VMs is obtained. Then click **Close**.
-
+8. [] Wait until the snapshot is created and a list of VMs is obtained. Then click **Close**.
 9. [] The SAN snapshot is created.
 
 ===
 
-## Step 3: Create an On-Demand Sandbox for snapshots**
+## Step 3: Create an On-Demand Sandbox for snapshots
 
 1. [] Click **SureBackup**.
-
-2. [] 
-Click **VMware** near **Add Application Group**.
-
-3. [] Name the group *SharePoint from snapshot* and click **Next**.
+2. [] Click **VMware** near **Add Application Group**.
+3. [] Name the group +++SharePoint from snapshot+++ and click **Next**.
 4. [] On the **Virtual machines** step, click **Add VM**.
 5. [] Select **From storage snapshots\...**
 6. [] Expand *datastore1*.
-7. [] Find **VEEAM-DC01** and **VEEAM- SP01**.
-Use **Ctrl + left click** to select several VMs from the job if needed.
-8
-. [] Click **Add**.
-
-9. [] If necessary, use the **Move Up** and **Move Down** buttons to bring the VMs in the following (boot) order:
-**VEEAM-DC01 VEEAM-SP01** and click **Next**.
+7. [] Find **VEEAM-DC01** and **VEEAM- SP01**. Use **Ctrl + left click** to select several VMs from the job if needed.
+8. [] Click **Add**.
+9. [] If necessary, use the **Move Up** and **Move Down** buttons to bring the VMs in the following (boot) order: **VEEAM-DC01 VEEAM-SP01** and click **Next**.
 10. [] Review the **Application Group** configuration and close the wizard by clicking **Finish**.
-11. []
- Click on **VMware** near **Add SureBackup Job**.
-
-12. [] Enter *SureBackup Job SharePoint* into the **Name** field. Fill in *VEEAM-SP01* as a **Description** and click **Next**.
-13. [] From the **Virtual lab** list, leave *VEEAM-ESX VLAB1* selected and click **Next**.
+11. []  Click on **VMware** near **Add SureBackup Job**.
+12. [] Enter +++SureBackup Job SharePoint+++ into the **Name** field. Fill in +++VEEAM-SP01+++ as a **Description** and click **Next**.
+13. [] From the **Virtual lab** list, leave **VEEAM-ESX VLAB1** selected and click **Next**.
 14. [] Click the **Application group** drop-down menu.
-15. [] Choose the Application group *SharePoint from snapshot*.
+15. [] Choose the Application group **SharePoint from snapshot**.
 16. [] Do not enable the **Keep the application group running once the job completes** check box. Click **Next** to continue.
 > Note:  With this option enabled, the lab will not be powered off when the SureBackup job completes and you could use On-Demand Sandbox for testing, troubleshooting or training. For VMCE training purposes, however, we will leave the check box off.
 
@@ -96,11 +74,8 @@ Use **Ctrl + left click** to select several VMs from the job if needed.
 
 ## Step 4: Restore guest files from a SAN snapshot**
 
-1. [] 
-As the job enrolls, the VMs will still be running in an isolated environment. You are able to access them via the vSphere Client for testing, troubleshooting or training.
-In the **Home view**, go to **Backups** → **Storage Snapshots**.
-
-2. [] Expand *datastore1 (datastore1)*.
+1. [] As the job enrolls, the VMs will still be running in an isolated environment. You are able to access them via the vSphere Client for testing, troubleshooting or training. In the **Home view**, go to **Backups** → **Storage Snapshots**.
+2. [] Expand **datastore1**.
 3. [] Right-click on **VEEAM-SP01**.
 4. [] Select **Restore guest files**.
 5
@@ -116,78 +91,55 @@ On the **Location** step, click **Customize** in the lower right part of the dia
 12. [] Expand **VEEAM-ESX** host.
 13. [] Set the **Production** resource pool from the list.
 14. [] Click **OK**.
-15. [] 
-Let **VM folder** stay the default *VM*. Click **OK**.
+15. [] Let **VM folder** stay the default **VM**. Click **OK**.
 16. [] Click **Next**.
 17. [] Leave the default setting on the **Restore Reason** page and click **Next**.
 18. [] Click **Finish**.
 19. [] In the Backup Browser, double-click the **inetpub** folder.
 20. [] Double-click the **wwwroot** folder.
-21. []
- Right-click **iis-8.png** to test the restore.
-
+21. []  Right-click **iis-8.png** to test the restore.
 22. [] Click **Restore** for *iis-8.png*.
-23. [] 
-Select **Keep**.
-
+23. []  Select **Keep**.
 24. [] A pop-up window will appear, prompting you to select credentials from the list.
 25. [] Select *VEEAMLAB\\Administrator* from the list.
 26. [] Click **OK**.
-27. []
- Wait until the file is restored, and then **Close** the **Restoring files to VEEAM-SP01** dialogue box.
-
+27. []  Wait until the file is restored, and then **Close** the **Restoring files to VEEAM-SP01** dialogue box.
 28. [] Launch the File Explorer.
 29. [] Navigate to the \\\\veeam-sp01\\c$\\inetpub\\wwwroot folder in the **File Explorer** window, note the **iis-8.png** and **RESTOREDiis-8.png** files.
 **Important!** It is not possible to browse to this path, you need to click at the address bar inside the File Explorer and then manually input the path and finally press the Enter button.
 
 ===
 
-## Step 5: Backup from Storage Snapshots**
+## Step 5: Backup from Storage Snapshots
 
 1. [] Go to **Jobs** → **Backup**.
 2. [] Select **Backup ORCL** job.
-3. [] 
-Click the **Edit** button in the Job ribbon.
-
+3. [] Click the **Edit** button in the Job ribbon.
 4. [] Go to the **Storage** tab.
-5
-. [] Click **Advanced**.
-
+5. [] Click **Advanced**.
 6. [] Go to the **Integration** tab.
 7. [] Uncheck **Enable backup from storage snapshots**.
-8. [] 
-Click **OK** to confirm the settings.
+8. [] Click **OK** to confirm the settings.
 9. [] Save the changes in the job by clicking **Finish**.
-10. []
- Launch an **Active Full** for the *Backup ORCL*.
-
+10. []  Launch an **Active Full** for the *Backup ORCL*.
 11. [] Click **Yes** to confirm running the active full backup now.
 12. [] Look at the bottom of the vSphere Client's **Recent Task** window to check how long the snapshot lifetime is, then click on the **VMware vSphere Client** icon on the task bar.
-13. []
- We choose to launch active full here since Veeam Backup & Replication retrieves data for the whole VM from the source, so backup will take a bit longer, and the difference in time it takes to release the VM snapshot will be more noticeable. Minimize vSphere Client. **Note:** You may choose to filter **Recent tasks** by typing "snapshot" into the **Name**, **Target** or **Status contains** windows.
-
+13. []  We choose to launch active full here since Veeam Backup & Replication retrieves data for the whole VM from the source, so backup will take a bit longer, and the difference in time it takes to release the VM snapshot will be more noticeable. Minimize vSphere Client. **Note:** You may choose to filter **Recent tasks** by typing "snapshot" into the **Name**, **Target** or **Status contains** windows.
 > Note:  It should take up to 12 minutes to complete the active full backup.
 
 14. [] Wait for the job to finish, then edit the job again.
-
 15. [] Click **Storage**.
 16. [] Click **Advanced**.
 17. [] Go to the **Integration** tab.
 18. [] Check the **Enable backup from storage snapshots** setting.
-19. []
- Click **OK**.
-
+19. []  Click **OK**.
 20. [] Click **Finish**.
-21. [] 
-Launch **Active full** for the *Backup ORCL*.
-
+21. []  Launch **Active full** for the *Backup ORCL*.
 22. [] Click **Yes** to confirm running the active full backup now.
 23. [] Launch the **vSphere Client** from the Windows taskbar.
 24. [] Enter username *root* and password *Pa$$w0rd*, then click **Login**.
-25. [] 
-Look at the snapshot lifetime on the **vSphere Client**'s **Recent Task** window and compare it with the previous job run.
+25. [] Look at the snapshot lifetime on the **vSphere Client**'s **Recent Task** window and compare it with the previous job run.
 > Note:  Compare the difference between the **Requested Start Time** time stamps of the **Create Snapshot** and **Remove Snapshot** for the two VMs.
-Discuss the findings with the other attendees and the instructor.
 
 ===
 
@@ -196,112 +148,62 @@ Discuss the findings with the other attendees and the instructor.
 ## Step 1: Add a tape server
 
 1. [] Open **Veeam Backup & Replication**.
-2. [] 
-Open **Tape Infrastructure** view.
+2. [] Open **Tape Infrastructure** view.
 
-3. [] 
-There are no Tape Drives or Libraries installed there. In the lab environment, the tape library is connected to the **VEEAM-Remote** server. Click **Add Tape Server** to add it to the infrastructure.
-
+3. [] There are no Tape Drives or Libraries installed there. In the lab environment, the tape library is connected to the **VEEAM-Remote** server. Click **Add Tape Server** to add it to the infrastructure.
 4. [] Click the **Choose server:** drop-down list.
 5. [] Select **VEEAM-Remote** from the drop-down list.
-6. [] 
-Click **Next**.
+6. [] Click **Next**.
 7. [] Do not set traffic throttling. Click **Next** to proceed to the **Review** step of the wizard.
 8. [] Review the list of components required for the tape server. Click **Apply**.
-9. [] 
-The tape server is added to the backup infrastructure. Click **Next** when the process is over.
-
+9. [] The tape server is added to the backup infrastructure. Click **Next** when the process is over.
 10. [] Click **Finish** to complete the installation.
 
 ===
 
 ## Step 2: Add new devices
+
 1. [] Expand **Libraries**.
 2. [] Expand **HP MSL G3 Series 1068**.
-
-3. [] 
-Use the **Remote Desktop Connection** to connect to the remote server so that we can install tape drivers.
-
-4. [] 
-Enter +++VEEAM-Remote+++ and click the **Connect** button.
+3. [] Use the **Remote Desktop Connection** to connect to the remote server so that we can install tape drivers.
+4. [] Enter +++VEEAM-Remote+++ and click the **Connect** button.
 5. [] Open **Start** menu.
 6. [] Type **Device Manager** and switch to Setting section in Start menu.
-7. [] 
-Expand **Medium Changer devices**.
-
-8. [] 
-Double-click **Unknown Medium Changer**.
-
-9. [] 
-Open the **Driver** tab.
-
-10. [] 
-Click **Update driver...**
+7. [] Expand **Medium Changer devices**.
+8. [] Double-click **Unknown Medium Changer**.
+9. [] Open the **Driver** tab.
+10. [] Click **Update driver...**
 11. [] Click **Browse my computer for driver software**.
-12. []
- Enter path +++C:\install\HP Tape Drivers+++ and click **Next**.
-
+12. [] Enter path +++C:\install\HP Tape Drivers+++ and click **Next**.
 13. [] After the driver software is installed, click **Close**.
 14. [] Check the driver version now to see if it's updated. Click **Close**.
 15. [] Expand **Other devices**.
-16. [] 
-Right-click the first **HP Ultrium** device.
-
-17. [] 
-Select **Update driver software**.
-
-18. [] 
-Click **Browse my computer for driver software**.
-
-19. [] 
-Click **Next**.
-20. [] 
-Click **Close**.
-
-21. [] 
-Right-click on the remaining **HP Ultrium** device.
-
-22. [] 
-Click on **Update Driver Software**.
-
-23. [] 
-Select **Browse my computer for driver software**.
-
-24. [] 
-Click **Next**.
-25. [] 
-Click **Close**.
-
-26. [] 
-Close the **Remote Desktop Connection** window.
-
+16. [] Right-click the first **HP Ultrium** device.
+17. [] Select **Update driver software**.
+18. [] Click **Browse my computer for driver software**.
+19. [] Click **Next**.
+20. [] Click **Close**.
+21. [] Right-click on the remaining **HP Ultrium** device.
+22. [] Click on **Update Driver Software**.
+23. [] Select **Browse my computer for driver software**.
+24. [] Click **Next**.
+25. [] Click **Close**.
+26. [] Close the **Remote Desktop Connection** window.
 
 ===
 
 ## Step 3: Add unrecognized tapes to the free media pool
 
 1. [] Select the **HP MSL G3 Series 1068** tape library.
-2
-. [] Click Location.
-
-3. [] 
-Select Local.
-
-4. [] 
-Select **Media**.
-
-5. [] 
-Select all tapes.
-
+2. [] Click Location.
+3. [] Select Local.
+4. [] Select **Media**.
+5. [] Select all tapes.
 6. [] Right-click anywhere in the selected area.
-7. [] 
-Choose **Move to Media Pool**.
-
-8. [] 
-Select the **Free** media pool.
+7. [] Choose **Move to Media Pool**.
+8. [] Select the **Free** media pool.
 > Note:  If you are not sure if the tapes are completely new and you want to use them as free media, use Erase Tape → Short to place them in **Media Pool** → **Free**.
-9
-Click **Yes** to confirm moving the unrecognized tapes to the **Free Media Pool**.
+9. [] Click **Yes** to confirm moving the unrecognized tapes to the **Free Media Pool**.
 10. [] You may now see the tapes added to the **Free** Media Pool. Go to the **Home** view.
 
 ===
@@ -312,68 +214,39 @@ Click **Yes** to confirm moving the unrecognized tapes to the **Free Media Pool*
 2. [] Select **Backups...**
 3. [] Leave the default value in the **Name** field. Click **Next**.
 4. [] On the **Backup Files** page, click **Add...**
-5. [] 
-Click **Backup Jobs...**
+5. [] Click **Backup Jobs...**
 6. [] Select **Backup ORCL**.
-7. [] 
-Click **OK**.
-8
-. [] Click **Latest**.
-
-9. [] 
-Click **Next**.
-
+7. [] Click **OK**.
+8. [] Click **Latest**.
+9. [] Click **Next**.
 10. [] On the **Full Backup** page, click **Add New...**
-11. []
- Select **Simple media pool**.
-
+11. []  Select **Simple media pool**.
 12. [] Enter the media pool name: +++Media Pool Full+++. Click **Next**.
 13. [] Click **Add...**
 14. [] Select the first seven tapes from the **Free Media Pool**.
-15. []
- Click **OK**.
-
+15. [] Click **OK**.
 16. [] Click **Next**.
 17. [] On the **Media Set** page, click the **Daily at** radio button.
-A media set is a consequent data stream that can span several tapes (for example, a weekly database backup).
-18. [] 
-Leave **12 PM** and click the **Everyday** drop-down list.
+> Note: A media set is a consequent data stream that can span several tapes (for example, a weekly database backup).
 
+18. [] Leave **12 PM** and click the **Everyday** drop-down list.
 19. [] Select **On these days** from the drop-down list.
-20. []
- Click **Days** to set the particular days.
-
+20. [] Click **Days** to set the particular days.
 21. [] Select **Monday**.
-22. []
- Click **OK**.
-
-23. [] 
-Click **Next**.
-
+22. [] Click **OK**.
+23. [] Click **Next**.
 24. [] On the **Retention** page, select **Protect data for**.
-25. []
- Click the weeks counter and set it to *4* weeks as the **Data retention policy** for this media pool. Click **Next**.
-
+25. [] Click the weeks counter and set it to *4* weeks as the **Data retention policy** for this media pool. Click **Next**.
 26. [] Leave the default encryption settings and click **Apply**.
 27. [] Click **Finish**.
-28. []
- Make sure **Media pools** for both full and incremental backups are set to **Media Pool Full (HP MSL G3 Series 1068)**. Media pools are logical groups of tapes.
-
-29. []
- Click **Next**.
-
+28. [] Make sure **Media pools** for both full and incremental backups are set to **Media Pool Full (HP MSL G3 Series 1068)**. Media pools are logical groups of tapes.
+29. [] Click **Next**.
 30. [] On the **Options** page, leave all options at their default values and click **Next**.
 31. [] Select the **Run the job automatically** check box.
 32. [] Click the **As new backup files appear** radio button.
-33. [] 
-Click **Apply**.
-
-34. [] 
-Click **Finish**.
-
-35. []
- Go to **Jobs** → **Tape**.
-
+33. [] Click **Apply**.
+34. [] Click **Finish**.
+35. [] Go to **Jobs** → **Tape**.
 36. [] The **Backup to Tape Job 1** job is now available.
 
 ===
@@ -384,87 +257,53 @@ Click **Finish**.
 
 1. [] HPE LeftHand P4000 VSS Provider is the hardware provider that supports the Volume Shadow Copy Service on the HPE LeftHand Storage Solution. The hardware VSS provider needs to be installed on both the host and the off-host proxy. In our case, it's already installed on the Hyper-V host, so let's install it on **VEEAM-VBR**. Launch **File Explorer**.
 2. [] Select disk C:\
-3. [] 
-Click the install folder which contains distributives for the course.
-
+3. [] Click the install folder which contains distributives for the course.
 4. [] Launch the HPE\_StoreVirtual\_App\_Aware\_Snapshot\_Mgr\_Installer executable.
-5
-. [] Click **Next**.
-
-6. [] 
-Click the **I accept the terms of the license agreement** radio button.
-
-7. [] 
-Click **Next**.
-
-8. [] 
-Click **Next**.
-
-9. [] 
-Click **Next**.
-
-10. [] 
-Click **Next** to proceed from the Specify CIM connection port step.
-
-11. [] 
-Click **Install**.
-
-12. []
- Read the notification and click **Next**.
-
-13. [] 
-Click **Finish** to exit the installation wizard.
-
+5. [] Click **Next**.
+6. [] Click the **I accept the terms of the license agreement** radio button.
+7. [] Click **Next**.
+8. [] Click **Next**.
+9. [] Click **Next**.
+10. [] Click **Next** to proceed from the Specify CIM connection port step.
+11. [] Click **Install**.
+12. [] Read the notification and click **Next**.
+13. [] Click **Finish** to exit the installation wizard.
 14. [] Close **File Explorer**.
 15. [] Launch the **Authentication Console** from the **Start Menu**.
-16. [] 
-Click **OK** to accept the notification about credentials.
-17. []
- Right-click **Authentication Console**.
+16. [] Click **OK** to accept the notification about credentials.
+17. [] Right-click **Authentication Console**.
+18. [] Select **New Management Group Credentials** from the context menu.
+> **Important!** The management group name is **Case Sensitive.**
 
-18. [] 
-Select **New Management Group Credentials** from the context menu.
-
-19. []
- **Important!** The management group name is **Case Sensitive.** Add Veeam-VSA-MGMTG with the following credentials:
+19. []  Add Veeam-VSA-MGMTG with the following credentials:
  1. Username: +++veeam+++ 
  2. Password: +++veeam+++ 
  3. Click the **Test** button.
 
-20. []
- Select to **Test** the configuration and enter +++10.0.2.240+++ as the IP address. Click **OK**.
-
+20. []  Select to **Test** the configuration and enter +++10.0.2.240+++ as the IP address. Click **OK**.
 21. [] After the test is over, press **OK**.
-> Note:  Pay attention to the management group name as it is case sensitive. Otherwise, the test will fail.
+> Note: Pay attention to the management group name as it is case sensitive. Otherwise, the test will fail.
 
 22. [] Close the Authentication Console window.
 23. [] To verify that a specific provider is going to be used to back up a particular Hyper-V host, you need to open the **Backup Infrastructure** view.
-24. [] 
-Click on **Microsoft Hyper-V** under **Managed Servers**.
-
+24. [] Click on **Microsoft Hyper-V** under **Managed Servers**.
 25. [] Right-click **VEEAM-HYPERV** in the working area.
-26. [] 
-Select **Manage Volumes**.
-
+26. [] Select **Manage Volumes**.
 27. [] Verify that drive G:\\ has **LeftHand Networks VSS Provider** listed instead of the default **Microsoft Software Show Copy** provider, then click **OK** to close the **Manage Volumes** window.
-
 
 ===
 
 ## Step 2: Add a Hyper-V off-host backup proxy
 
 1. [] On the **Backup Infrastructure** view, select the **Backup Proxies** node in the inventory pane.
-2. [] 
-Click **Add Proxy** on the ribbon.
-
+2. [] Click **Add Proxy** on the ribbon.
 3. [] Select **Hyper-V\...**
 4. [] **VEEAM-VBR** (this server) is going to be used as an off-host backup proxy. Click **Next** to confirm this selection.
 The Hyper-V role must be enabled on the machine so that it's possible to add it as an off-host backup proxy.
 5. [] Click **Next** to skip configuring the traffic rules and proceed with the installation.
 6. [] At this step, Veeam Backup & Replication displays the list of components required for work of the Hyper-V off-host backup proxy. Click **Apply** to proceed with the installation.
-7. [] 
+7. [] Click **Next** to proceed.
 > Note:  Checking for updates could take up to eight minutes.
-Click **Next** to proceed.
 
 8. [] Click **Finish** as the process ends.
 
@@ -474,41 +313,24 @@ Click **Next** to proceed.
 
 1. [] Go to the **Home** view.
 2. [] Go to **Jobs** → **Backup**.
-3. [] 
-Select **Backup Tiny-Veeam2**.
-
-4. [] 
-Click **Edit**.
-
+3. [] Select **Backup Tiny-Veeam2**.
+4. [] Click **Edit**.
 5. [] Click **Next**.
 6. [] Select the **Tiny-Veeam2** VM.
 > Note:  We are re-adding the VM since it was deleted and restored from a backup previously. The VM uuid has changed, so we have to re-add it onto the job.
 
 7. [] Select **Remove**.
-8. [] 
-Re-add *Tiny-Veeam2* on the **Virtual Machines** step by clicking **Add**.
-
-9. [] 
-Expand the *VEEAM-HYPERV* host.
-
+8. [] Re-add **Tiny-Veeam2** on the **Virtual Machines** step by clicking **Add**.
+9. [] Expand the **VEEAM-HYPERV** host.
 10. [] Select **Tiny-Veeam2**.
 11. [] Click **Add**.
 12. [] Click **Next**.
-13. [] 
-On the **Storage** page, click **Choose** at the **Backup proxy** selection section.
-
+13. [] On the **Storage** page, click **Choose** at the **Backup proxy** selection section.
 14. [] Select **Off-host backup**.
-15. []
- Make sure the newly-added proxy is in the list below. Press **OK** to confirm your changes.
-
-16. []
- Click **Finish** to finish editing the job.
-
-17. [] 
-Click the **Start** button on the Job ribbon to launch the Backup Tiny-Veeam2 job.
-
-18. [] 
-Click on **Tiny-Veeam2** in the **Statistics** view and review the information on the right about its processing. Make sure the off-host mode was used.
+15. [] Make sure the newly-added proxy is in the list below. Press **OK** to confirm your changes.
+16. [] Click **Finish** to finish editing the job.
+17. [] Click the **Start** button on the Job ribbon to launch the Backup Tiny-Veeam2 job.
+18. [] Click on **Tiny-Veeam2** in the **Statistics** view and review the information on the right about its processing. Make sure the off-host mode was used.
 
 ===
 
@@ -518,78 +340,49 @@ Click on **Tiny-Veeam2** in the **Statistics** view and review the information o
 
 1. [] Minimize the **Veeam Backup & Replication** window.
 2. [] Launch **Veeam Backup Enterprise Manager** using the shortcut on your screen.
-3. [] 
-Click the **Configuration** option.
+3. [] Click the **Configuration** option.
 
-4. [] 
-Earlier, **VEEAM-VBR** was added to the Veeam Backup Enterprise Manager console. Click Add... to start adding the second backup server **VEEAM-VBR2** in a similar way.
+4. [] Earlier, **VEEAM-VBR** was added to the Veeam Backup Enterprise Manager console. Click Add... to start adding the second backup server **VEEAM-VBR2** in a similar way.
 
 5. [] Click **Yes** to accept the warning that Veeam Backup Enterprise Manager will push its license to all connected backup servers.
-6
-. [] Enter: 
+6. [] Enter: 
  1. DNS name: +++VEEAM-VBR2+++ 
  2. User name: +++VEEAMINFRA\Administrator+++ 
  3. Password: +++Pa$$w0rd+++ 
- 4. click **OK**.
+ 4. Click **OK**.
 
-7. [] Now, both Veeam backup servers are visible to **Veeam Backup Enterprise Manager**. Data about backup and replication jobs from the SQL databases used by VEEAM-VBR and VEEAM-VBR2 will be collected and stored.
-Veeam Backup Enterprise Manager enables you to modify the settings of VMware and Hyper-V backup and replication jobs that have been previously configured on managed backup servers. You can start and stop these jobs, clone them, and enable and disable backup copy jobs.
-As an example, let's disable running *Backup Copy Job WAN*. Click **Home**.
+7. [] Now, both Veeam backup servers are visible to **Veeam Backup Enterprise Manager**. Data about backup and replication jobs from the SQL databases used by VEEAM-VBR and VEEAM-VBR2 will be collected and stored. Veeam Backup Enterprise Manager enables you to modify the settings of VMware and Hyper-V backup and replication jobs that have been previously configured on managed backup servers. You can start and stop these jobs, clone them, and enable and disable backup copy jobs. As an example, let's disable running **Backup Copy Job WAN**. Click **Home**.
 8. [] Go to the **Jobs** tab.
-9. [] Select *Backup Copy Job WAN*.
+9. [] Select **Backup Copy Job WAN**.
 10. [] Click the **Job** drop-down menu on the toolbar.
-11. [] 
-Select **Disable**.
-
+11. [] Select **Disable**.
 12. [] After disabling the job, the *Backup Copy Job WAN* job status changes to either **Warning** or **Success**. Open the **Veeam Backup & Replication UI** to verify that the job has been disabled.
 13. [] Return to **Veeam Backup Enterprise Manager** by clicking the browser icon in the toolbar.
 
 ===
 
-## Step 2: Restore guest OS files**
+## Step 2: Restore guest OS files
 
-1. [] 
-Open the **Configuration** tab.
-
+1. [] Open the **Configuration** tab.
 2. [] Select the **veeam-vbr.veeaminfra.local server.**
 3. [] Click the **Start collecting** button.
 4. [] Click **OK** to confirm your selection. To automatically run catalog replication after every backup job, click **Schedule** on the toolbar. In the displayed window, select **Automatic after any backup job finishes** and specify other options as necessary. This is actually not required in this specific lab environment since Veeam Backup & Replication and Veeam Backup Enterprise Manager are installed on the same machine and use the same catalog. However, this would be required for performing a file-level restore if Veeam Backup & Replication and Veeam Backup Enterprise Manager were installed on different machines.
-
 5. [] Click the **Home** button in the top left corner.
-6. [] 
-Click the **Files** tab.
-
-7. [] 
-Type in +++VEEAM-DC01+++ and click the search icon on the right.
-
-8. [] 
-Open the **Search** tab.
-
-9
-. [] In the **Search** field, type in +++*.txt*+++. Click on the **Search** icon.
-
-10. []
- Expand the **Advanced search** section and review the advanced search criteria.
-
-11. [] 
-Click the search icon to the right of the **Search** field.
-
-12. []
- Right-click one of the found files.
-
+6. [] Click the **Files** tab.
+7. [] Type in +++VEEAM-DC01+++ and click the search icon on the right.
+8. [] Open the **Search** tab.
+9. [] In the **Search** field, type in +++*.txt*+++. Click on the **Search** icon.
+10. [] Expand the **Advanced search** section and review the advanced search criteria.
+11. [] Click the search icon to the right of the **Search** field.
+12. [] Right-click one of the found files.
 13. [] Select **Restore**.
-14. [] 
-Click **Overwrite** in the Restore context menu.
-
-15. []
- Click **Yes** to confirm the operation.
-Use the +++VEEAMLAB\\Administrator+++ account to authenticate if prompted.
+14. [] Click **Overwrite** in the Restore context menu.
+15. [] Click **Yes** to confirm the operation. Use the +++VEEAMLAB\\Administrator+++ account to authenticate if prompted.
 > Note:  The restore session will start, and you can view its progress in the session log.
-
 
 ===
 
-## Step 3: Delegate restore privileges**
+## Step 3: Delegate restore privileges
 
 1. [] Open Outlook Web Access.
 2. [] Enter:
