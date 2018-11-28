@@ -182,35 +182,41 @@ Module 9: Advanced Data Protection
 ## Step 1: Add a tape server
 
 1. [] Open **Veeam Backup & Replication**.
-2. [] Open **Tape Infrastructure** view.
-
-3. [] There are no Tape Drives or Libraries installed there. In the lab environment, the tape library is connected to the **VEEAM-Remote** server. Click **Add Tape Server** to add it to the infrastructure.
-4. [] Click the **Choose server:** drop-down list.
-5. [] Select **VEEAM-Remote** from the drop-down list.
-6. [] Click **Next**.
-7. [] Do not set traffic throttling. Click **Next** to proceed to the **Review** step of the wizard.
-8. [] Review the list of components required for the tape server. Click **Apply**.
-9. [] The tape server is added to the backup infrastructure. Click **Next** when the process is over.
-10. [] Click **Finish** to complete the installation.
+2. [] Navigate to the **Tape Infrastructure** view.
+3. [] There are no Tape Drives or Libraries available yet. In the lab environment, the tape library is connected to the **VEEAM-Remote** server. Click the **Add Tape Server** button on the **Tape** ribbon.
+4. [] Click the **Choose server:** drop down menu.
+5. [] Select **VEEAM-Remote**.
+6. [] Click the **Next** button on the **Server** step.
+7. [] Keep the default settings and click the **Next** button on the **Traffic** step.
+8. [] Click the **Apply** button on the **Review** step.
+9. [] Click the **Next** button on the **Apply** step.
+10. [] Click the **Finish** button on the **Summary** step.
 
 ===
 
 ## Step 2: Add new devices
 
-1. [] Expand **Libraries**.
+1. [] Expand **Libraries** in the **Tape Infrastructure** view.
 2. [] Expand **HP MSL G3 Series 1068**.
-3. [] Use the **Remote Desktop Connection** to connect to the remote server so that we can install tape drivers.
-4. [] Enter +++VEEAM-Remote+++ and click the **Connect** button.
-5. [] Open **Start** menu.
-6. [] Type **Device Manager** and switch to Setting section in Start menu.
+3. [] Select **Drives**.
+> Note: There are currently no tape drives available due to missing drivers on the **VEEAM-Remote** server.
+
+3. [] Launch the **Remote Desktop Connection client** from the Windows task bar.
+4. [] Enter password: +++Pa$$w0rd+++.
+5. [] Click the **OK** button.
+6. [] Click the **Yes** button to dismiss the certificate warning.
+5. [] Click the **Start** menu (move the mouse cursor all the way to the edge of the bottom left hand corner to make the start menu button appear).
+6. [] Enter: +++devmgmt.msc+++** and press the **Enter** keyboard button.
 7. [] Expand **Medium Changer devices**.
-8. [] Double-click **Unknown Medium Changer**.
-9. [] Open the **Driver** tab.
-10. [] Click **Update driver...**
-11. [] Click **Browse my computer for driver software**.
-12. [] Enter path +++C:\install\HP Tape Drivers+++ and click **Next**.
-13. [] After the driver software is installed, click **Close**.
-14. [] Check the driver version now to see if it's updated. Click **Close**.
+8. [] Double click the **Unknown Medium Changer** device.
+9. [] Click the **Driver** tab.
+10. [] Click the **Update driver...** button.
+11. [] Select **Browse my computer for driver software**.
+12. [] Enter path +++C:\install\HP Tape Drivers+++
+13. [] Click the **Next** button.
+
+13. [] Click the **Close** button.
+14. [] Verify the driver has been installed then click the **Close** button.
 15. [] Expand **Other devices**.
 16. [] Right-click the first **HP Ultrium** device.
 17. [] Select **Update driver software**.
