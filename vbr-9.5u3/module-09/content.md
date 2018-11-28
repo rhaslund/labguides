@@ -63,6 +63,7 @@ Module 9: Advanced Data Protection
 > Important: Verify that the boot order is:
 >
 > VEEAM-DC01
+>
 > VEEAM-SP01
 > If necessary, use the **Move Up** and **Move Down** buttons to change the order.
 
