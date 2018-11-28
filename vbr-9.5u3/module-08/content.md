@@ -198,7 +198,7 @@ Module 8: Introduction to Agents
 52. [] Click the **Browse** button.
 53. [] Double click the **datastore1** datastore.
 54. [] Select the **VeeamRecoveryMedia.iso** recovery media.
-> Important: The file name may only be partially displayed as VeeamRecover…
+> Important: It may be necessary to scroll down. The file name may only be partially displayed as VeeamRecover…
 
 55. [] Click the **OK** button.
 56. [] Tick the **Connect at power on** check box.
