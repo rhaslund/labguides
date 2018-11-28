@@ -159,7 +159,7 @@ Module 8: Introduction to Agents
 18. [] Enter name: +++BAREMETAL+++.
 19. [] Select the **Local01** datastore.
 20. [] Click the **Next** button on the **Storage** step.
-21. [] Keep the default setting and click the **Next** button.
+21. [] Keep the default setting and click the **Next** button on the **Virtual Machine Version**.
 22. [] Click the **Version** drop down menu.
 23. [] Select **Windows Server 2012 (64-bit)**.
 24. [] Click the **Next** button on the **Guest Operating System** step.
