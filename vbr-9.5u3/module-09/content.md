@@ -147,26 +147,33 @@ Module 9: Advanced Data Protection
 6. [] Click the **Integration** tab.
 7. [] Untick the **Enable backup from storage snapshots** check box.
 8. [] Click the **OK** button.
-9. [] Click the **Finish** button on the **Storae** step.
-10. []  Launch an **Active Full** for the *Backup ORCL*.
-11. [] Click **Yes** to confirm running the active full backup now.
-12. [] Look at the bottom of the vSphere Client's **Recent Task** window to check how long the snapshot lifetime is, then click on the **VMware vSphere Client** icon on the task bar.
-13. []  We choose to launch active full here since Veeam Backup & Replication retrieves data for the whole VM from the source, so backup will take a bit longer, and the difference in time it takes to release the VM snapshot will be more noticeable. Minimize vSphere Client. **Note:** You may choose to filter **Recent tasks** by typing "snapshot" into the **Name**, **Target** or **Status contains** windows.
-> Note:  It should take up to 12 minutes to complete the active full backup.
+9. [] Click the **Finish** button on the **Storage** step.
+10. [] Click the **Active Full** button on the **Job** ribbon.
+11. [] Click the **Yes** button to confirm running the Active Full backup now.
+12. [] Launch the **VMware vSphere Client** from the Windows task bar.
+13. [] Enter:
+ 1. User name: +++root+++.
+ 2. Password: +++Pa$$w0rd+++.
+ 
+14. [] Click the **Login** button.
 
-14. [] Wait for the job to finish, then edit the job again.
-15. [] Click **Storage**.
-16. [] Click **Advanced**.
-17. [] Go to the **Integration** tab.
-18. [] Check the **Enable backup from storage snapshots** setting.
-19. []  Click **OK**.
-20. [] Click **Finish**.
-21. []  Launch **Active full** for the *Backup ORCL*.
-22. [] Click **Yes** to confirm running the active full backup now.
-23. [] Launch the **vSphere Client** from the Windows taskbar.
-24. [] Enter username *root* and password *Pa$$w0rd*, then click **Login**.
-25. [] Look at the snapshot lifetime on the **vSphere Client**'s **Recent Task** window and compare it with the previous job run.
-> Note:  Compare the difference between the **Requested Start Time** time stamps of the **Create Snapshot** and **Remove Snapshot** for the two VMs.
+12. [] In the **Recent Task** pane, locate the **Create vitual machine snapshot** text for the **Tiny-Veeam** virtual machine and note down the **Start Time** then locate the **Remove snapshot** text for the **Tiny-Veeam** virtual machine. Compare the two time stamps and calculate the time difference. Minimize the **VMware vSphere Client**.
+> Note:  We choose to launch active full here since Veeam Backup & Replication retrieves data for the whole VM from the source, so backup will take a bit longer, and the difference in time it takes to release the VM snapshot will be more noticeable. 
+
+14. [] Wait for the job **Status** to reach **Stopped** then click the **Edit** button on the **Job** ribbon.
+> Important: It will take a maximum of 6 minutes to complete this active full backup.
+
+15. [] Click the **Storage** text link in the left hand step list.
+16. [] Click the **Advanced** button.
+17. [] Click the **Integration** tab.
+18. [] Tick the **Enable backup from storage snapshots** check box.
+19. [] Click the **OK** button.
+20. [] Click the **Finish** button on the **Storage** step.
+21. [] Click the **Active Full** button on the **Job** ribbon.
+22. [] Click the **Yes** button to confirm running the Active Full backup now.
+23. [] Switch to the **VMware vSphere Client** using the Windows task bar.
+25. [] In the **Recent Task** pane, locate the **Create vitual machine snapshot** text for the **Tiny-Veeam** virtual machine and note down the **Start Time** then locate the **Remove snapshot** text for the **Tiny-Veeam** virtual machine. Compare the two time stamps and calculate the time difference, then compare with the result from the active full without storage snapshots enabled. Close the **VMware vSphere Client** window.
+> Note: The snapshot is open longer time in this example with backup from storage snapshots. This is because it takes time to orchestrate the storage snapshot and there is no data changes in the virtual machine during the backup. Generally, it makes the most sense to enable backup from storage snapshots for highly transactional servers.
 
 ===
 
