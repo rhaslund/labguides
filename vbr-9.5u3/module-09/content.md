@@ -92,45 +92,48 @@ Module 9: Advanced Data Protection
 20. [] Keep the default settings and click the **Apply** button on the **Schedule** step.
 21. [] Tick the **Run the job when I click Finish** check box.
 22. [] Click the **Finish** button on the **Summary** step.
-> Important: Do NOT wait for the SureBackup job to complete - please continue to the next lab exercise immediately.
+> **Important: Do NOT wait for the SureBackup job to complete - please continue to the next lab exercise immediately.**
 
 ===
 
-## Step 4: Restore guest files from a SAN snapshot**
+## Step 4: Restore guest files from a SAN snapshot
 
-1. [] As the job enrolls, the VMs will still be running in an isolated environment. You are able to access them via the vSphere Client for testing, troubleshooting or training. In the **Home view**, go to **Backups** → **Storage Snapshots**.
-2. [] Expand **datastore1**.
-3. [] Right-click on **VEEAM-SP01**.
-4. [] Select **Restore guest files**.
-5
-. [] Choose the required OS -- in this case, **Microsoft Windows**.
-6. [] Click **Next**.
-7. [] 
-On the **Location** step, click **Customize** in the lower right part of the dialogue box.
+1. [] Select **Storage Snapshots** in the **Backups** section of the **Home** view.
+2. [] Expand **datastore1 (datastore1)**.
+3. [] Select **VEEAM-SP01**.
+4. [] Click the **Guest Files** button on the **Backup** ribbon.
+5. [] Select **Microsoft Windows**.
+6. [] Keep the default settings and click the **Next** button on the **Restore Point** step.
+7. [] Click the **Customize** text link.
+8. [] Click the **Choose...** in the **Host*' section.
+9. [] Select the **VEEAM-ESX** host.
+10. [] Click the **OK** button to confirm the host.
+11. [] Click the **Choose...** button in the **Resource pool** section.
+12. [] Expand the **VEEAM-ESX** host.
+13. [] Select the **Production** resource pool.
+14. [] Click the **OK** button to confirm the resource pool.
+15. [] Click the **OK** button.
+16. [] Click the **Next** button on the **Location** step.
+17. [] Keep the default settings and click the **Next** button on the **Restore Reason** step.
+18. [] Click the **Finish** button on the **Summary** step.
+> Note: The Backup Browser will launch after a short wait, please have some patience.
 
-8. [] Click **Choose\...**
-9. [] Set **VEEAM-ESX** as a **Host.**
-10. [] Click **OK**.
-11. [] In the Resource pool section, click **Choose\...**
-12. [] Expand **VEEAM-ESX** host.
-13. [] Set the **Production** resource pool from the list.
-14. [] Click **OK**.
-15. [] Let **VM folder** stay the default **VM**. Click **OK**.
-16. [] Click **Next**.
-17. [] Leave the default setting on the **Restore Reason** page and click **Next**.
-18. [] Click **Finish**.
-19. [] In the Backup Browser, double-click the **inetpub** folder.
-20. [] Double-click the **wwwroot** folder.
-21. []  Right-click **iis-8.png** to test the restore.
-22. [] Click **Restore** for *iis-8.png*.
-23. []  Select **Keep**.
-24. [] A pop-up window will appear, prompting you to select credentials from the list.
-25. [] Select *VEEAMLAB\\Administrator* from the list.
-26. [] Click **OK**.
-27. []  Wait until the file is restored, and then **Close** the **Restoring files to VEEAM-SP01** dialogue box.
-28. [] Launch the File Explorer.
-29. [] Navigate to the \\\\veeam-sp01\\c$\\inetpub\\wwwroot folder in the **File Explorer** window, note the **iis-8.png** and **RESTOREDiis-8.png** files.
-**Important!** It is not possible to browse to this path, you need to click at the address bar inside the File Explorer and then manually input the path and finally press the Enter button.
+19. [] Expand the **(C:)** drive**.
+20. [] Expand the **inetpub** folder.
+
+20. [] Select the **wwwroot** folder in the **Navigation** pane.
+21. [] Select the **iis-8.png** file.
+22. [] Click the **Restore** button on the **File** ribbon.
+23. [] Select **Keep**.
+24. [] Click the **Credentials** drop down menu.
+25. [] Select **VEEAMLAB\\Administrator**.
+26. [] Click the **OK** button.
+27. [] Wait for the restore to display the **Restore completed successfully** text then click the **Close** button.
+28. [] Close the **Backup Browser** window.
+28. [] Launch the **File Explorer** from the Windows task bar.
+29. [] Navigate to the +++\\\\veeam-sp01\\c$\\inetpub\\wwwroot+++ folder.
+30. [] Verify both the **iis-8.png** and **RESTOREDiis-8.png** files are present then close the **File Explorer** window.
+> Important It is not possible to browse to this path, you need to click the address bar inside the File Explorer and then manually input the path and finally press the Enter button.
 
 ===
 
