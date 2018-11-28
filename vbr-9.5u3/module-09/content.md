@@ -1,7 +1,7 @@
 Module 9: Advanced Data Protection
 
 ---
-**This lab is expected to last a maximum of 2 hours including lab launch**.
+**This lab is expected to last a maximum of 150 minutes including lab launch**.
 
 # Lab 9.1: Working with SAN storage snapshots
 
