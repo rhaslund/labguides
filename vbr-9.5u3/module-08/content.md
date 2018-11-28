@@ -237,6 +237,7 @@ Module 8: Introduction to Agents
 80. [] Click the **Cancel** button to dismiss the **Shutdown Event Tracker** window.
 81. [] Close the **BAREMETAL** virtual machine console window.
 82. [] Close the **VMware vSphere Client** window.
+83. [] Close the **Veeam Backup & Replication console** window.
 
 ---
 
