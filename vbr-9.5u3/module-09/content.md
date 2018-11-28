@@ -7,6 +7,9 @@ Module 9: Advanced Data Protection
 
 ## Step 1: Add HPE StoreVirtual VSA
 
+1. [] Launch the **Veeam Backup & Replication console** from the desktop.
+2. [] Click the **Connect** button.
+
 1. [] Select the **Storage Infrastructure** view.
 2. [] Click **Add Storage**.
 3. [] Select **Hewlett Packard Enterprise**.
