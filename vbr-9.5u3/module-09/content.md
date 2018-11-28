@@ -244,7 +244,7 @@ Module 9: Advanced Data Protection
 > Note: In a production environment, if you are unsure if the tapes are completely new and you want to use them as free media, use Erase Tape → Short to place them in **Media Pool** → **Free**.
 
 9. [] Click the **Yes** button to confirm moving the unrecognized tapes to the **Free Media Pool**.
-10. [] Verify the **Media Pool** column changes to **Free* for all tapes with the exception of the cleaning tape then navigate to the **Home** view.
+10. [] Verify the **Media Pool** column changes to **Free** for all tapes with the exception of the cleaning tape then navigate to the **Home** view.
 
 ===
 
