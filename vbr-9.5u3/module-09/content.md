@@ -304,7 +304,7 @@ Module 9: Advanced Data Protection
 ## Step 1: Install and configure the hardware VSS provider
 
 1. [] HPE LeftHand P4000 VSS Provider is the hardware provider that supports the Volume Shadow Copy Service on the HPE LeftHand Storage Solution. The hardware VSS provider needs to be installed on both the production Hyper-V host and the off-host proxy. In our case, it's already installed on the Hyper-V host, so let's install it on the **VEEAM-VBR** server. Launch **File Explorer** from the Windows task bar.
-2. [] Expand **Local Disk (C:\\)**.
+2. [] Expand **Local Disk (C:)**.
 3. [] Select the **Install** folder.
 4. [] Launch the **HPE_StoreVirtual_Application_Aware_Snapshot_Manager_Installer_AT004-10545.exe** installer.
 5. [] Click the **Next** button.
@@ -315,15 +315,17 @@ Module 9: Advanced Data Protection
 11. [] Click the **Install** button on the **Ready to Install the Program** step.
 12. [] Read the notification and click **Next**.
 13. [] Click **Finish** to exit the installation wizard.
-14. [] Close **File Explorer**.
-15. [] Launch the **Authentication Console** from the **Start Menu**.
-16. [] Click **OK** to accept the notification about credentials.
-17. [] Right-click **Authentication Console**.
-18. [] Select **New Management Group Credentials** from the context menu.
-> **Important!** The management group name is **Case Sensitive.**
+14. [] Close the **File Explorer** window.
+15. [] Click the **Start menu** button (move the mouse cursor to the bottom left edge of the screen to make the start menu button appear).
+16. [] Launch the **Authentication Console**.
 
-19. []  Add Veeam-VSA-MGMTG with the following credentials:
- 1. Username: +++veeam+++ 
+16. [] Click the **OK** button to dismiss the notification about credentials.
+18. [] Click the **New Management Group Credentials** text link in the **Actions** pane.
+> **Important!** The management group name is **Case Sensitive**.
+
+19. [] Enter:
+ 1. Management group: +++Veeam-VSA-MGMTG+++
+ 2. User name: +++veeam+++ 
  2. Password: +++veeam+++ 
  3. Click the **Test** button.
 
