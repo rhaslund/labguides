@@ -218,33 +218,32 @@ Module 9: Advanced Data Protection
 13. [] Click the **Close** button.
 14. [] Verify the driver has been installed then click the **Close** button.
 15. [] Expand **Other devices**.
-16. [] Right-click the first **HP Ultrium** device.
-17. [] Select **Update driver software**.
-18. [] Click **Browse my computer for driver software**.
-19. [] Click **Next**.
-20. [] Click **Close**.
-21. [] Right-click on the remaining **HP Ultrium** device.
-22. [] Click on **Update Driver Software**.
+16. [] Right click the first **HP Ultrium 5-SCSI SCSI Sequential** device.
+17. [] Select **Update driver software...**.
+18. [] Select **Browse my computer for driver software**.
+19. [] Keep the default path and click the **Next** button.
+20. [] Click the **Close** button.
+21. [] Right click the remaining **HP Ultrium 5-SCSI SCSI Sequential** device.
+22. [] Select **Update Driver Software...**.
 23. [] Select **Browse my computer for driver software**.
-24. [] Click **Next**.
-25. [] Click **Close**.
+24. [] Keep the default path and click the **Next** button.
+25. [] Click the **Close** button.
 26. [] Close the **Remote Desktop Connection** window.
 
 ===
 
 ## Step 3: Add unrecognized tapes to the free media pool
 
-1. [] Select the **HP MSL G3 Series 1068** tape library.
-2. [] Click Location.
-3. [] Select Local.
-4. [] Select **Media**.
-5. [] Select all tapes.
-6. [] Right-click anywhere in the selected area.
-7. [] Choose **Move to Media Pool**.
-8. [] Select the **Free** media pool.
-> Note:  If you are not sure if the tapes are completely new and you want to use them as free media, use Erase Tape → Short to place them in **Media Pool** → **Free**.
-9. [] Click **Yes** to confirm moving the unrecognized tapes to the **Free Media Pool**.
-10. [] You may now see the tapes added to the **Free** Media Pool. Go to the **Home** view.
+1. [] Verify the two **HP Ultrium 5-SCSI** drives appear then select the **HP MSL G3 Series 1068** tape library in the **Libraries** section of the **Tape Infrastructure** view.
+2. [] Click the **Location** button on the **Tape Library** ribbon.
+3. [] Select **Local**.
+4. [] Select **Media** in the **Libraries** section of the **Home** view.
+5. [] Select the first tape then press the **CTRL** \+ **A** to select **all tapes**.
+6. [] Click the **Move To** button on the **Media** ribbon.
+7. [] Select **Free**.
+> Note: In a production environment, if you are unsure if the tapes are completely new and you want to use them as free media, use Erase Tape → Short to place them in **Media Pool** → **Free**.
+9. [] Click the **Yes** button to confirm moving the unrecognized tapes to the **Free Media Pool**.
+10. [] Verify the **Media Pool** column changes to **Free* for all tapes with the exception of the cleaning tape then navigate to the **Home** view.
 
 ===
 
