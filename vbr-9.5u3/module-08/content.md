@@ -227,7 +227,14 @@ Module 8: Introduction to Agents
 > Note: This will take a maximum of 8 minutes.
 
 72. [] Click the **Yes** button to confirm rebooting the computer.
-
+73. [] Wait for Windows to complete startup then press the **CTRL** and **ALT** keyboard buttons together to release the mouse from the **virtual machine console** window.
+74. [] Click the **VM** menu.
+75. [] Select **Guest**.
+76. [] Select **Send Ctrl\+Alt\+Del**.
+77. [] Click inside the **virtual machine console** window.
+78. [] Enter password: +++Pa$$w0rd+++.
+79. [] Click the **right arrow login** button (or press the **Enter** keyboard button).
+80. [] 
 
 ---
 
