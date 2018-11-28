@@ -224,9 +224,9 @@ Module 8: Introduction to Agents
 69. [] Press the **Enter** keyboard button (or click the **Next** button) on the **Restore Mode** step.
 70. [] Press the **Enter** keyboard button (or click the **Restore** button) on the **Summary** step.
 71. [] Press the **Enter** keyboard button (or click the **Finish** button) on the **Progress** step.
-> Note: This process can take up to 15 minutes.
+> Note: This will take a maximum of 8 minutes.
 
-72. [] Press the **Enter** keyboard button (or click the **Yes** button).
+72. [] Click the **Yes** button to confirm rebooting the computer.
 
 
 ---
