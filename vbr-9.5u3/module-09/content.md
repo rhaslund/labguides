@@ -392,35 +392,38 @@ Module 9: Advanced Data Protection
 
 ## Step 1. Review the server's management
 
-1. [] Minimize the **Veeam Backup & Replication** window.
-2. [] Launch **Veeam Backup Enterprise Manager** using the shortcut on your screen.
-3. [] Click the **Configuration** option.
+1. [] Launch **Veeam Backup Enterprise Manager** from the **desktop**.
+2. [] Click the **Configuration** button in the top right corner.
 
-4. [] Earlier, **VEEAM-VBR** was added to the Veeam Backup Enterprise Manager console. Click Add... to start adding the second backup server **VEEAM-VBR2** in a similar way.
-
-5. [] Click **Yes** to accept the warning that Veeam Backup Enterprise Manager will push its license to all connected backup servers.
-6. [] Enter: 
+3. [] Click the **Add...** button.
+4. [] Click the **Yes** button to dismiss the warning that Veeam Backup Enterprise Manager will push its license to all connected backup servers.
+5. [] Enter: 
  1. DNS name: +++VEEAM-VBR2+++ 
  2. User name: +++VEEAMINFRA\Administrator+++ 
  3. Password: +++Pa$$w0rd+++ 
- 4. Click **OK**.
 
-7. [] Now, both Veeam backup servers are visible to **Veeam Backup Enterprise Manager**. Data about backup and replication jobs from the SQL databases used by VEEAM-VBR and VEEAM-VBR2 will be collected and stored. Veeam Backup Enterprise Manager enables you to modify the settings of VMware and Hyper-V backup and replication jobs that have been previously configured on managed backup servers. You can start and stop these jobs, clone them, and enable and disable backup copy jobs. As an example, let's disable running **Backup Copy Job WAN**. Click **Home**.
-8. [] Go to the **Jobs** tab.
-9. [] Select **Backup Copy Job WAN**.
-10. [] Click the **Job** drop-down menu on the toolbar.
+6. [] Click the **OK** button.
+7. [] Now, both Veeam backup servers are visible to **Veeam Backup Enterprise Manager**. Data about backup and replication jobs from the SQL databases used by VEEAM-VBR and VEEAM-VBR2 will be collected and stored. Veeam Backup Enterprise Manager enables you to modify the settings of jobs that have been previously configured on managed backup servers. Click the **Home** button in the top left corner.
+8. [] Click the **Jobs** tab.
+9. [] Select the **Backup Copy Job WAN** job.
+10. [] Click the **Job** button.
+> Important: If the screen resolution is less than 1440 × 900 the Job button will not be visible, please increase your resolution.
+
 11. [] Select **Disable**.
-12. [] After disabling the job, the *Backup Copy Job WAN* job status changes to either **Warning** or **Success**. Open the **Veeam Backup & Replication UI** to verify that the job has been disabled.
-13. [] Return to **Veeam Backup Enterprise Manager** by clicking the browser icon in the toolbar.
+12. [] Wait for the **Backup Copy Job WAN** job status changes to either **Warning** or **Success**. Switch to the **Veeam Backup and Replication console** window using the Windows task bar. 
+13. [] Select **Backup Copy** in the **Jobs** section of the **Home** view.
+14. [] Verify the **Backup Copy Job WAN** next run is **Disabled** then switch to the **Veeam Backup Enterprise Manager** window using the Windows task bar.
 
 ===
 
 ## Step 2: Restore guest OS files
 
-1. [] Open the **Configuration** tab.
-2. [] Select the **veeam-vbr.veeaminfra.local server.**
-3. [] Click the **Start collecting** button.
-4. [] Click **OK** to confirm your selection. To automatically run catalog replication after every backup job, click **Schedule** on the toolbar. In the displayed window, select **Automatic after any backup job finishes** and specify other options as necessary. This is actually not required in this specific lab environment since Veeam Backup & Replication and Veeam Backup Enterprise Manager are installed on the same machine and use the same catalog. However, this would be required for performing a file-level restore if Veeam Backup & Replication and Veeam Backup Enterprise Manager were installed on different machines.
+1. [] Click the **Configuration** button in the top right corner.
+2. [] Select the **veeam-vbr.veeaminfra.local** backup server.
+3. [] Click the **Start Collecting** button.
+4. [] Click the **OK** button.
+> Note: To automatically run catalog replication after every backup job, click **Schedule** on the toolbar. In the displayed window, select Automatic after any backup job finishes and specify other options as necessary. This is actually not required in this specific lab environment since Veeam Backup & Replication and Veeam Backup Enterprise Manager are installed on the same machine and use the same catalog. However, this would be required for performing a file-level restore if Veeam Backup & Replication and Veeam Backup Enterprise Manager were installed on different machines.
+
 5. [] Click the **Home** button in the top left corner.
 6. [] Click the **Files** tab.
 7. [] Type in +++VEEAM-DC01+++ and click the search icon on the right.
