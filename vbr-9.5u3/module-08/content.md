@@ -144,6 +144,7 @@ Module 8: Introduction to Agents
 7. [] Click the **Edit Settings** text link in the **Commands** pane.
 8. [] Confirm that **SCSI controller 0** type is **LSI Logic SAS** then click the **Cancel** button.
 > Note: During the restore, we will utilize a different disk controller to showcase how bare-metal recovery can be performed even on different hardware.
+
 9. [] Click the **Shut Down Guest** text link in the **Commands** pane.
 10. [] Click the **Yes** button.
 > Note: Wait for the PHYSICAL virtual machine to reach a powered off state.
