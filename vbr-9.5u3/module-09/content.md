@@ -407,6 +407,8 @@ Module 9: Advanced Data Protection
 7. [] Now, both Veeam backup servers are visible to **Veeam Backup Enterprise Manager**. Data about backup and replication jobs from the SQL databases used by VEEAM-VBR and VEEAM-VBR2 will be collected and stored. Veeam Backup Enterprise Manager enables you to modify the settings of jobs that have been previously configured on managed backup servers. Click the **Home** button in the top left corner.
 8. [] Click the **Jobs** tab.
 9. [] Select the **Backup Copy Job WAN** job.
+> Important: Do **NOT** click the **Backup Copy Job WAN** text link, instead make sure you select the row - for example by clicking right next to the text link.
+
 10. [] Click the **Job** button.
 > Important: If the screen resolution is less than 1440 × 900 the Job button will not be visible, please increase your resolution.
 
