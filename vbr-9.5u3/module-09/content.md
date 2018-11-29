@@ -441,43 +441,56 @@ Module 9: Advanced Data Protection
 14. [] Select **Overwrite**.
 15. [] Click the **Yes** button.
 > Note:  The restore session will start, and you can view its progress in the session log.
+16. [] Minimize the **Veeam Backup Enterprise Manager** window.
 
 ===
 
 ## Step 3: Delegate restore privileges
 
-1. [] Open Outlook Web Access.
+1. [] Launch **Outlook Web Access** from the Windows task bar.
 2. [] Enter:
- 1. Username +++testmail@veeamlab.local+++ 
+ 1. User name +++testmail@veeamlab.local+++ 
  2. Password +++Pa$$w0rd+++ 
 
 3. [] Click the **Sign In** button.
-3. [] Click **Delete** to delete the most recent email from the **testmail@veeamlab.local** user Inbox folder.
-4. [] Open **Veeam Backup Enterprise Manager** from the Windows task bar.
-5. [] The authorized restore operators at the Help Desk can be granted rights to restore the necessary Exchange items (emails, tasks, etc.) and SQL items. Select the **Configuration** tab in **Veeam Backup Enterprise Manager**.
-6. [] Open the **Roles** tab on the left.
+3. [] Click the **Delete** text link to delete the most recent email from the **Inbox** folder.
+4. [] Switch to the **Veeam Backup Enterprise Manager** window using the Windows task bar.
+5. [] Click the **Configuration** button in the top right corner.
+6. [] Navigate to the **Roles** view.
 > Note:  To provide for the recoverability of Exchange items, you will need an application-consistent backup (with VSS enabled) of the Exchange server VM. To check corresponding job settings, you can go to the **Jobs** tab in Veeam Backup **Enterprise Manager**, select the backup job that contains the Exchange server and choose to **Edit** it.
 
-7. [] Click **Add...** to add a new user.
-8. [] Enter account +++VEEAMINFRA\restoreoperator+++, then click on the **Role** drop-down menu.
-9. [] Click on **Restore Operator**.
-10. [] Select the **Microsoft Exchange items** check box.
-11. [] Confirm your choices by clicking **OK**.
-12. [] Click on the **Settings** tab.
-13. [] Enter +++VEEAMLAB\Administrator+++ and +++Pa$$w0rd+++ in the Account section, then click **Save**.
+7. [] Click the **Add...** button.
+8. [] Enter account: +++VEEAMINFRA\restoreoperator+++
+9. [] Click the **Role** drop down menu.
+
+9. [] Select **Restore Operator**.
+10. [] Tick the **Microsoft Exchange items** check box.
+11. [] Click the **OK** button.
+12. [] Navigate to the **Settings** view.
+13. [] Enter:
+ 1. Username: +++VEEAMLAB\Administrator+++.
+ 2. Password: +++Pa$$w0rd+++.
+ 
+14. [] Click the **Save** button.
 > Note:  This user account requires corresponding permissions to access Microsoft Active Directory and the mailbox. It needs Exchange Administrator rights and administrator's rights for all mailboxes. If you miss this step, the later Exchange restore exercise will fail.
 
-14. [] Click **Sign out**.
-15. [] Log in to Veeam Backup Enterprise Manager by entering the username +++VEEAMINFRA\restoreoperator+++ and the password +++Pa$$w0rd+++, then click **Login**.
+14. [] Click the **Sign out** text link in the top right corner.
+15. [] Enter:
+ 1. User name: +++VEEAMINFRA\restoreoperator+++.
+ 2. Password +++Pa$$w0rd+++
+ 
+16. [] Click the **Login** button.
 
-16. [] Select the **Items** tab. Enter the account of the Microsoft Active Directory user whose mailbox will be restored: +++testmail+++, then click the **Search** icon.
-17. [] Select the user **testmail** in the list of search results.
-18. [] Choose a restore point and select what type of item you need to restore. Click the **Mail** tab.
+16. [] Enter username: +++testmail+++
+17. [] Press the **Enter** keyboard button.
+
+17. [] Select the **testmail** user.
+18. [] Tick the **Mail** check box.
 19. [] Click the **Restore** button.
 > Note:  Restore to another domain is supported within the same forest only.
 
-20. [] Wait until the restore completes. Click **Sign out**.
-21. [] Restore the **Outlook Web Access** window.
+20. [] Wait until **Status** reaches **Success** then click the **Sign out** text link in the top right corner.
+21. [] Switch to the **Outlook Web Access** window using the Windows task bar.
 22. [] Verify that the previously deleted item has been restored and close the **Outlook Web Access** window.
 
 ===
