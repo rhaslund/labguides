@@ -429,15 +429,17 @@ Module 9: Advanced Data Protection
 
 5. [] Click the **Home** button in the top left corner.
 6. [] Click the **Files** tab.
-7. [] Type in +++VEEAM-DC01+++ and click the search icon on the right.
-8. [] Open the **Search** tab.
-9. [] In the **Search** field, type in +++*.txt*+++. Click on the **Search** icon.
-10. [] Expand the **Advanced search** section and review the advanced search criteria.
-11. [] Click the search icon to the right of the **Search** field.
-12. [] Right-click one of the found files.
+7. [] Enter machine name: +++VEEAM-DC01+++.
+8. [] Press the **ENTER** keyboard button.
+
+8. [] Click the **Search** tab.
+9. [] Enter search: +++\*.txt+++.
+10. [] Press the **Enter** keyboard button.
+10. [] Click the **Advanced search** button.
+12. [] Right the **first file**.
 13. [] Select **Restore**.
-14. [] Click **Overwrite** in the Restore context menu.
-15. [] Click **Yes** to confirm the operation. Use the +++VEEAMLAB\\Administrator+++ account to authenticate if prompted.
+14. [] Select **Overwrite**.
+15. [] Click the **Yes** button.
 > Note:  The restore session will start, and you can view its progress in the session log.
 
 ===
