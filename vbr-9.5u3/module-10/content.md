@@ -67,22 +67,22 @@ Module 10: Veeam ONE Features and Functionality
 4. [] Select **Server Settings...**.
 5. [] > Enter the **SMTP options** as follows:
  1. SMTP Server: +++VEEAM-EX01.veeamlab.local+++.
- 2. From: +++VeeamONE\@veeamlab.local+++
+ 2. From: +++VeeamONE@veeamlab.local+++
 
 6. [] Click the **Send test email...** button.
-6. [] Enter e-mail address: +++administrator\@veeamlab.local+++.
+6. [] Enter e-mail address: +++administrator@veeamlab.local+++.
 7. [] Click the **OK** button to send the test e-mail.
 7. [] Click the **OK** button to confirm the test e-mail has been sent.
 8. [] Launch **Outlook Web Access** from the Windows task bar.
 9. [] Enter:
- 1. Username +++administrator\@veeamlab.local+++
+ 1. Username +++administrator@veeamlab.local+++
  2. Password:+++Pa$$w0rd+++
 
 10. Click the **Sign In** button.
 10. [] Verify that the email from **Veeam ONE Monitor** has been received then close the **Outlook Web Access** window.
 11. [] Click the  **Notification Policy** tab.
 12. [] Click the **Configure...** button in the **Default email notifications group** section.
-13. [] Enter group of recipients: +++administrator\@veeamlab.local+++
+13. [] Enter group of recipients: +++administrator@veeamlab.local+++
 
 14. [] Click the **Add.** button.
 14. [] Click the **OK** button to close the **Default Email Notification Group** window.
