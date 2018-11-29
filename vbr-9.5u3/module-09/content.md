@@ -497,27 +497,44 @@ Module 9: Advanced Data Protection
 
 ## Step 4: Manage public keys and encryption keys
 
-1. [] Log in to **Veeam Backup Enterprise Manager** using +++VEEAMINFRA\\Administrator+++ | +++Pa$$w0rd+++.
-2. [] Click the **Configuration** option.
-3. [] Select **Key Management**.
-4. [] For security, it is recommended to periodically generate new Veeam Backup Enterprise Manager keys that should be used in the encryption process. Click **Generate\...** on the right of the keyset list.
-5. [] In the **Hint**: field, enter a description for the created keyset. Press **Generate**.
-6. [] Veeam Backup Enterprise Manager keys are created in the inactive state. To make the keys active and use them for encryption and decryption, you need to activate the keys. In Veeam Backup Enterprise Manager, go to the **Configuration** → **Key Management** section.
-Select the inactive keyset in the list.
-7. [] Click **Activate** on the right of the list.
-8. [] In the **Key retention settings**, select the **Key retention period** check box and specify *4* as the number of weeks for which Veeam Backup Enterprise Manager keys must remain in effect.
-9. [] Also, select the **Auto-generate new keys** check box. After the current keyset expires, **Veeam Backup Enterprise Manager** will automatically generate a new keyset and mark it as active.
-10. [] Click **Save**.
-11. [] You may now see the newly generated keyset. It is important to regularly back up your Veeam Backup Enterprise Manager keys or save their copies in a safe place. To export a keyset, in the keyset list, select a keyset you want to back up and click **Export**.
-12. [] Save the resulting PEM file on the local disk.
-13. [] To proceed with the following lab, launch **Remote Desktop Connection**.
+1. [] In the **Veeam Backup Enterprise Manager** window, enter:
+ 1. User name: +++VEEAMINFRA\\Administrator+++.
+ 2. Password: +++Pa$$w0rd+++.
+
+2. [] Click the **Login** button.
+2. [] Click the **Configuration** button in the top right corner.
+3. [] Navigate to the **Key Management** view.
+4. [] Click the **Generate...** button.
+> Note: For security, it is recommended to periodically generate new Veeam Backup Enterprise Manager keys that should be used in the encryption process.
+
+5. [] Leave the **Hint** empty and click the **Generate** button.
+> Note: Veeam Backup Enterprise Manager keys are created in the inactive state. To make the keys active and use them for encryption and decryption, you need to activate the keys.
+
+6. [] Select the **first keyset**.
+7. [] Click the **Activate** button.
+8. [] Tick the **Key retention period** check box.
+9. [] Tick the **Auto-generate new keys** check box.
+> Note: After the current keyset expires, **Veeam Backup Enterprise Manager** will automatically generate a new keyset and mark it as active.
+
+10. [] Click the **Save** button.
+> Important: It is important to regularly back up your Veeam Backup Enterprise Manager keys or save their copies in a safe place.
+
+11. [] Click the **Export** button.
+12. [] Click the **Save** button on the yellow bar in the bottom of the **Internet Explorer** window.
+12. [] Click the **X** button on the yellow bar in the bottom of the **Internet Explorer** window.
 
 ===
 
 ## Step 5: Decrypt data without a password
 
-1. [] Log in to **VEEAM-VBR2** through the Remote Desktop Connection client.
-2. [] Type in +++Pa$$w0rd+++ and click **OK**.
+1. [] Launch the **Remote Desktop Connection client** from the Windows task bar.
+2. [] Enter computer: +++VEEAM-VBR2+++
+3. [] Click the **Connect* button.
+
+2. [] Enter password: +++Pa$$w0rd+++
+3. [] Click the **OK** button.
+4. [] Click the **Yes** button to dismiss the certificate warning.
+
 3. [] Run **Veeam Backup & Replication** from the desktop.
 4. [] Click the **Connect** button.
 5. [] In the **Backup Infrastructure** view, click **Backup Repositories**.
