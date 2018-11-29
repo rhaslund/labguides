@@ -202,6 +202,7 @@ Module 9: Advanced Data Protection
 > Note: There are currently no tape drives available due to missing drivers on the **VEEAM-Remote** server.
 
 3. [] Launch the **Remote Desktop Connection client** from the Windows task bar.
+3. [] Enter computer: +++VEEAM-Remote+++.
 4. [] Enter password: +++Pa$$w0rd+++.
 5. [] Click the **OK** button.
 6. [] Click the **Yes** button to dismiss the certificate warning.
