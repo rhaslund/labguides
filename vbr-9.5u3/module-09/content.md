@@ -535,12 +535,17 @@ Module 9: Advanced Data Protection
 3. [] Click the **OK** button.
 4. [] Click the **Yes** button to dismiss the certificate warning.
 
-3. [] Run **Veeam Backup & Replication** from the desktop.
+3. [] Launch the **Veeam Backup & Replication console** from the desktop.
 4. [] Click the **Connect** button.
-5. [] In the **Backup Infrastructure** view, click **Backup Repositories**.
-6. [] Click the **Add Repository** button on the ribbon.
-7. [] Enter the name: +++Remote Repository+++ and click **Next**.
-8. [] Keep the default repository type of Microsoft Windows Server and click **Next**.
+5. [] Click the **Apply** button on the **Servers** step.
+6. [] Click the **Finish** button on the **Update** step.
+
+5. [] Select **Backup Repositories** in the **Backup Infrastructure** view.
+6. [] Click the **Add Repository** button on the **Backup Repository** ribbon.
+7. [] Enter name: +++Remote Repository+++.
+8. [] Click the **Next** button on the **Name** step.
+
+8. [] Keep the default setting and click **Next**.
 9. [] Click **Add new...** to add **VEEAM-VBR.**
 10. [] Fill in the **DNS or IP address of a server with VEEAM-VBR**. Click **Next**.
 11. [] Click **Add...** to input credentials.
