@@ -8,7 +8,7 @@ Module 2: Deployment
 > Note: Because the URL for Veeam Backup Enterprise Manager was added to Internet Explorer's local intranet zone, single sign-on is allowed, and you will not be prompted for any username or password.
 
 2. [] Click the **Configuration** button in the top right corner.
-3. [] Click the ***Add...*** button.
+3. [] Click the **Add...** button.
 4. [] Click the **Yes** button to accept pushing licenses from the Enterprise Manager server to all connected backup servers.
 5. [] Enter:
  1. DNS name: +++veeam-vbr.veeaminfra.local+++
