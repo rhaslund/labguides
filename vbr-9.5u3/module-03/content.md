@@ -41,19 +41,19 @@ Add a vSphere host and a Hyper-V host to Veeam Backup & Replication.
 7. [] Click the **Next** button on the **Type** step.
 
 8. [] Click the **Add...** button next to the **Credentials** drop down menu.
-7. [] Enter:
+9. [] Enter:
  1. Username: +++VEEAMINFRA\Administrator+++
  2. Password: +++Pa$$w0rd+++
  3. Description: +++VEEAMINFRA domain administrator+++
 
-8. [] Click the **OK** button.
+10. [] Click the **OK** button.
 > Note: Generally, you would need to select credentials for the account that has local administrator permissions on the added Hyper-V Server. In our case, the Hyper-V server is domain joined, so we’re using a domain credential.
 
-9. [] Click the **Next** button on the **Credentials** step.
-10. [] Click the **Apply** button on the **Apply** step.
-11. [] Click the **Next** button on the **Results** step.
-12. [] Click the **Finish** button on the **Summary** step.
-13. [] Select **Microsoft Hyper-V** in the **Managed Servers** section of the **Backup Infrastructure** view.
+11. [] Click the **Next** button on the **Credentials** step.
+12. [] Click the **Apply** button on the **Apply** step.
+13. [] Click the **Next** button on the **Results** step.
+14. [] Click the **Finish** button on the **Summary** step.
+15. [] Select **Microsoft Hyper-V** in the **Managed Servers** section of the **Backup Infrastructure** view.
 > Note: The VEEAM-HYPERV host is now added to the Veeam Backup & Replication user interface.
 
 ===
