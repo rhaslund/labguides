@@ -153,7 +153,7 @@ used for storing configuration backups or replica metadata
 
 # Lab 3.4. Setting up notifications
 
-1. [] Click on the **≡** button in the top left corner.
+1. [] Click the **≡** button in the top left corner.
 2. [] Select **General Options**.
 3. [] Click the **E-mail settings** tab.
 4. [] Tick the **Enable e-mail notifications** check box.
