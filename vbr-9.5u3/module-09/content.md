@@ -528,10 +528,10 @@ Module 9: Advanced Data Protection
 ## Step 5: Decrypt data without a password
 
 1. [] Launch the **Remote Desktop Connection client** from the Windows task bar.
-2. [] Enter computer: +++VEEAM-VBR2+++
-3. [] Click the **Connect* button.
+2. [] Enter computer: +++VEEAM-VBR2+++.
+3. [] Click the **Connect** button.
 
-2. [] Enter password: +++Pa$$w0rd+++
+2. [] Enter password: +++Pa$$w0rd+++.
 3. [] Click the **OK** button.
 4. [] Click the **Yes** button to dismiss the certificate warning.
 
@@ -545,64 +545,64 @@ Module 9: Advanced Data Protection
 7. [] Enter name: +++Remote Repository+++.
 8. [] Click the **Next** button on the **Name** step.
 
-8. [] Keep the default setting and click **Next**.
-9. [] Click **Add new...** to add **VEEAM-VBR.**
-10. [] Fill in the **DNS or IP address of a server with VEEAM-VBR**. Click **Next**.
-11. [] Click **Add...** to input credentials.
-12. [] Input the credentials (+++VEEAMINFRA\Administrator+++ | +++Pa$$w0rd+++) and click **OK**.
-13. [] Click **Next**.
-14. [] Review the information and click **Apply**.
-15. [] Wait for the operation to complete and click **Next**.
+9. [] Click **Add new...** button.
+10. [] Enter DNs name: +++VEEAM-VBR+++.
+11. [] Click the **Next** button on the **Name** step.
 
-16. [] Check the Summary and click **Finish**.
-17. [] Verify that the repository server is set to VEEAM-VBR and click **Next**.
-18. [] Click **Browse...** to set a path to a repository.
-19. [] Expand the **VEEAM-VBR** server.
-20. [] Expand drive **X:**
-21. [] Select the **Backup** folder.
-22. [] Click **OK**.
-23. [] Click **Next**.
-24. [] At the **Mount Server** step of the wizard, click **Next** to proceed.
-25. [] Review the settings and click **Apply**.
-26. [] Wait for the operation to complete and click **Finish**.
-27. [] Click **Yes** to change the configuration backup location.
-28. [] Click **Add Repository**.
-29. [] Fill in the name +++Local Backup Repository+++ and click **Next**.
-30. [] On the **Type** step of the wizard, make sure that the default **Microsoft Windows server** option is selected and click **Next**.
-31. [] Click **Next**.
-32. [] Click **Browse...** in the **Location** section.
-33. [] Expand the **VEEAM-VBR** server.
-34. [] Expand the **E:** drive.
-35. [] Select the **Backups folder**.
-36. [] Click **OK**.
-37. [] On the **Repository** step of the wizard, click **Next**.
-38. [] Leave the default settings on the **Mount Server** step of the wizard and click **Next**.
-39. [] Review the settings and click **Import existing backups automatically** to continue.
-40. [] Click **Apply**.
-41. [] Click **Finish**.
-42. [] Click the **Rescan** button on the ribbon.
-43. []  **Important!** You may receive a warning that the Default Backup Repository (X:\\Backup) failed to synchronize. This warning can safely be ignored because the folder doesn't yet exist since no data has been stored there yet. Wait for the operation to complete. Click the **Close** button.
-44. []  Go to the **Home** view.
-45. [] Select **Backups** then **Disk (encrypted)**.
-46. [] Right-click **Backup Tiny-Veeam2** in the list.
-47. [] Select **Specify password**.
-48. [] Click on **I have lost the password**.
-49. [] Copy the request to the clipboard by clicking **Copy to clipboard**.
-50. [] Click **Next**. At this step, the copied request will be sent by email or passed in another way to the Veeam Backup Enterprise Manager administrator. For our lab purposes, we will just keep it copied in the clipboard.
+11. [] Click the **Add...** button.
+12. [] Enter:
+ 1. Username: +++VEEAMINFRA\Administrator+++.
+ 2. Password: +++Pa$$w0rd+++.
+ 
+13. [] Click the **OK** button.
+13. [] Click the **Next** button on the **Credentials** step.
+14. [] Click the **Apply** button on the **Review** step.
+15. [] Click the **Next** button on the **Apply** step.
+16. [] Click the **Finish** button on the **Summary** step.
+17. [] Verify that the repository server is set to VEEAM-VBR then click the **Next** button on the **Server** step.
+18. [] Enter path to folder: +++X:\Backup+++.
+23. [] Click the **Next** button on the **Repository** step
+24. [] Untick the **Enable vPower NFS service on the mount server**
+> Note: In a production environment it usually not be recommended to disable the vPower NFS service on the mount server.
+
+24. [] Click the **Next** button on the **Mount Server** step.
+25. [] Click the **Apply** button on the **Review** step.
+26. [] Click the **Finish** button on the **Apply** step.
+27. [] Click the **No** button to keep the current configuration backup location.
+42. [] Click the **Rescan** button on the **Backup Repository** ribbon.
+> Note: This process will take a maximum of 3 minutes.
+
+43. [] Click the **Close** button.
+44. [] Navigate to the **Home** view.
+45. [] Select **Disk (encrypted)** in the **Backups** section of the **Home** view.
+46. [] Select **Backup Tiny-Veeam2**.
+47. [] Click the **Specify password** button on the **Encrypted Backup** ribbon.
+48. [] Click the **I have lost the password** text link.
+49. [] Click the **Copy to clipboard** button.
+50. [] Click the **Next** button on the **Request** step.
+> Note: At this step, the copied request will be sent by email or passed in another way to the Veeam Backup Enterprise Manager administrator. For our lab purposes, we will just keep it copied in the clipboard.
+
 51. [] Minimize the **Remote Desktop Connection** window.
-52. [] Go to **Configuration**.
-53. [] Select **Key Management**.
-54. [] Click **Password Recovery...** to open the **Password Recovery** wizard.
-55. [] Paste the request. You can use the [CTRL+V] key combination or click **Paste** at the bottom of the wizard.
-56. [] Click the **Next** button.
-57. [] At the **Response** step, copy the text displayed in the wizard to the clipboard. Click **Finish**.
-58. [] Go back to the **VEEAM-VBR2** Remote Desktop Connection.
-59. [] Paste the copied response to the text window at the **Response** step of the **Encryption Key Restore** wizard.
-60. [] Click **Next**.
-61. [] Click **Finish**. The file content will be unlocked.
-62. [] You have successfully decrypted the data.
-63. [] Close the **Remote Desktop Connection to VEEAM-VBR2** server.
+52. [] Click the **Configuration** button in the top right corner.
+53. [] Navigate to the **Key Management** view.
+54. [] Click the **Password Recovery...** button.
+55. [] Press the **CTRL + V** keyboard buttons together to paste the request.
+56. [] Click the **Next** button on the **Challenge Request** step.
+57. [] Verify the **Request verified successfully** text is displayed then click the **Next** button on the **Verify request** step.
+58. [] Press the **CTRL + C** keyboard buttons together to copy the response.
+
+58. [] Switch back to the **Remote Desktop Connection client** window.
+59. [] Click the **Next** button on the **Request** step.
+
+59. [] Press the **CTRL + V** keyboard buttons together to paste the request.
+60. [] Click the **Next** button on the **Response** step.
+> Note: Wait for the backup to be decrypted using the Veeam Backup Enterprise Manager key sets. This will take a maximum of 2 minutes.
+
+61. [] Click the **Finish** button on the **Summary** step.
+63. [] Close the **Remote Desktop Connection client** window.
 64. [] Close the **Veeam Backup Enterprise Manager** window.
+65. [] Click the **Finish** button on the **Response** step of the **Password Recovery** wizard in the **Veeam Backup Enterprise Manager**.
+66. [] Close the **Veeam Backup Enterprise Manager** window.
 
 ===
 
