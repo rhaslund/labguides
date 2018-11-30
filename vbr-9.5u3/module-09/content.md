@@ -610,27 +610,31 @@ Module 9: Advanced Data Protection
 
 ## Step 1: Schedule configuration backups
 
-1. [] Go to the main menu (green button in the upper left corner) of **Veeam Backup & Replication**.
-2. [] Click **Configuration Backup**.
-3. [] Select the **Enable configuration backup to the following repository** check box.
-4. [] Verify that the **Remote Repository** backup repository is selected, then select the **Encrypt configuration backup** check box.
-5. [] Choose the password we created earlier in the drop-down list.
-6. [] Click the **Backup now** button to ensure that we have a current configuration backup.
-7. [] Wait for the configuration backup to complete, then click **OK** to save changes and close the window.
-8. [] Click on the **Backup ORCL and press CTRL+A to select all jobs job.**
-9. [] **Tip:** In case the Disable button is grayed out, just apply any sorting to the list. Click the **Disable button** in the ribbon.
-> Note:  Do NOT proceed until the job status is Stopped for all jobs.
+1. [] Click the **≡** button in the top left corner in **Veeam Backup and Replication**.
+2. [] Select **Configuration Backup**.
+3. [] Tick the **Enable configuration backup to the following repository** check box.
+4. [] Tick the **Encrypt configuration backup** check box.
+5. [] Click the **Password** drop down menu.
+
+5. [] Select **Technical course that provides extensive information on Veeam solutions**.
+6. [] Click the **Backup now** button.
+7. [] Wait for the configuration backup to complete then click the **OK** button.
+8. [] Select the **Backup ORCL** job then press the **CTRL+A** keyboard buttons to select all jobs.**
+9. [] Click the **Disable** button on the **Job** ribbon.
+> Important:  Do NOT proceed until the job status is Stopped for all jobs.
 
 ===
 
 ## Step 2: Restoring a configuration backup to another Veeam server
 
-1. [] Log in to **VEEAM-VBR2** though the **Remote Desktop Connection**.
-2. [] Use +++VEEAMINFRA\\Administrator+++ | +++Pa$$w0rd+++ to connect. Confirm that you want to connect to this computer by clicking **Yes** if prompted. You can apply configuration data from one of your Veeam servers to any other Veeam backup server in your backup infrastructure. We will restore configuration from **VEEAM-VBR** to **VEEAM-VBR2**.
-3. [] If required, authenticate by filling in the credentials: *VEEAMINFRA\\Administrator | Pa$$w0rd* and click **OK**.
-4. [] Open the **main menu** in the top left corner of Veeam Backup & Replication.
-5. [] Choose **Configuration Backup**.
-6. [] In the **Backup job status** section, click **Restore**. The **Configuration Database Restore** wizard will be launched.
+1. [] Launch the **Remote Desktop Connection client** using the Windows task bar.
+1. [] Keep computer as +++VEEAM-VBR+++ and click the **Connect** button.
+2. [] Enter password: +++Pa$$w0rd+++
+3. [] Click the **Connect** button.
+4. [] Click the **Yes** button to ignore the certificate warning.
+4. [] Click the **≡** button in the top left corner in **Veeam Backup and Replication**.
+5. [] Select **Configuration Backup**.
+6. [] Click the **Restore...** button.
 7. [] Select **Migrate** as a restore scenario.
 8. [] Click **Next**.
 9. [] Ensure **This Server** is selected as a repository and click **Browse**.
