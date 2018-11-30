@@ -619,7 +619,7 @@ Module 9: Advanced Data Protection
 5. [] Select **Technical course that provides extensive information on Veeam solutions**.
 6. [] Click the **Backup now** button.
 7. [] Wait for the configuration backup to complete then click the **OK** button.
-8. [] Select the **Backup ORCL** job then press the **CTRL+A** keyboard buttons to select all jobs.**
+8. [] Select the **Backup ORCL** job then press the **CTRL+A** keyboard buttons to select all jobs.
 9. [] Click the **Disable** button on the **Job** ribbon.
 > Important:  Do NOT proceed until the job status is Stopped for all jobs.
 
