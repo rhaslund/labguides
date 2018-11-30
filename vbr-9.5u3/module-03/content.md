@@ -32,12 +32,15 @@ Add a vSphere host and a Hyper-V host to Veeam Backup & Replication.
 
 ## Step 2: Add a standalone Hyper-V Server
 
-1. [] Click the **Add Server** button.
-2. [] Select **Microsoft Hyper-V**.
-3. [] Enter DNS name: +++VEEAM-HYPERV+++
-4. [] Click the **Next** button on the **Name** step.
-5. [] Select the **Microsoft Hyper-V server (standalone)** radio button.
-6. [] Click the **Add...** button next to the **Credentials** drop down menu.
+1. [] Select **Managed Servers** in the **Backup Infrastructure** view.
+2. [] Click the **Add Server** button on the **Server** ribbon.
+3. [] Select **Microsoft Hyper-V**.
+4. [] Enter DNS name: +++VEEAM-HYPERV+++
+5. [] Click the **Next** button on the **Name** step.
+6. [] Select the **Microsoft Hyper-V server (standalone)** radio button.
+7. [] Click the **Next** button on the **Type** step.
+
+8. [] Click the **Add...** button next to the **Credentials** drop down menu.
 7. [] Enter:
  1. Username: +++VEEAMINFRA\Administrator+++
  2. Password: +++Pa$$w0rd+++
@@ -46,10 +49,10 @@ Add a vSphere host and a Hyper-V host to Veeam Backup & Replication.
 8. [] Click the **OK** button.
 > Note: Generally, you would need to select credentials for the account that has local administrator permissions on the added Hyper-V Server. In our case, the Hyper-V server is domain joined, so we’re using a domain credential.
 
-9. [] Click the **Next** button.
-10. [] Click the **Apply** button.
-11. [] Click the **Next** button.
-12. [] Click the **Finish** button.
+9. [] Click the **Next** button on the **Credentials** step.
+10. [] Click the **Apply** button on the **Apply** step.
+11. [] Click the **Next** button on the **Results** step.
+12. [] Click the **Finish** button on the **Summary** step.
 13. [] Select **Microsoft Hyper-V** in the **Managed Servers** section of the **Backup Infrastructure** view.
 > Note: The VEEAM-HYPERV host is now added to the Veeam Backup & Replication user interface.
 
