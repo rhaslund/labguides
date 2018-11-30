@@ -40,9 +40,14 @@ collection.
 5. [] Select **VMware Server**.
 6. [] Enter DNS name: +++VEEAM-ESX+++
 7. [] Select **ESXi host**.
-8. [] Click the **Next** button.
-9. [] Specify the credentials of the user account with administrator privileges for connecting to VEEAM-ESX (root | Pa$$w0rd). Click the **Next** button.
-10. [] Click the **Finish** button.
+8. [] Click the **Next** button on the **Name** step.
+9. [] Enter:
+ 1. Username: +++root+++
+ 2. Password: +++Pa$$w0rd+++.
+
+10. Click the **Next** button on the **Credentials** step.
+
+10. [] Click the **Finish** button on the **Summary** step.
 11. [] It will take some time for the infrastructure to be analyzed. Expand the newly added **VEEAM-ESX** host.
 > Note: It may take one to two minutes before it is possible to expand the VEEAM-ESX host. Disregard any errors or warnings you may see in the Veeam ONE Monitor dashboard interface at this stage.
 
