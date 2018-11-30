@@ -62,12 +62,12 @@ collection.
 2. [] Select **Hyper-V Server**.
 3. [] Enter DNS name: +++VEEAM-HYPERV+++
 4. [] Select the **Hyper-V host** radio button.
-5. [] Click the **Next** button.
+5. [] Click the **Next** button on the **Name** step.
 6. [] Enter: 
  1. Username: +++VEEAMINFRA\Administrator+++
  2. Password: +++Pa$$w0rd+++
 
-7. Click the **Next** button.
+7. Click the **Next** button on the **Credentials** step.
 8. [] Click the **Finish** on the **Summary** step.
 9. [] Click the **OK** to save credentials.
 > Note: Do not enter any login or password in the Hyper-V VMs Guest OS Credentials section.
