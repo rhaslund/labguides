@@ -374,27 +374,25 @@ Module 4: Protect
 4. [] Click the **Next** button on the **Name** step.
 5. [] Click the **Add...** button.
 6. [] Expand the **VEEAM-HYPERV** host.
-8. [] Select **Tiny-Veeam2**.
-9. [] Click the **Add** button.
-10. [] Click the **Source...** button.
-11. [] Select the **From backup files (latest VM state available in backups)** radio button.
-12. [] Tick the **Main Backup Repository** check box.
-13. [] Click the **OK** button.
-
-10. [] Click the **Next** button on the **Virtual Machines** step.
-11. [] Click the **Choose...** button in the **Host or cluster** section.
-12. [] Select **VEEAM-HYPERV**.
-13. [] Click the **OK** button.
-18. [] Click the **Next** button on the **Destination** step.
-19. [] Lower **Restore points to keep** to +++2+++.
+7. [] Select **Tiny-Veeam2**.
+8. [] Click the **Add** button.
+9. [] Click the **Source...** button.
+10. [] Select the **From backup files (latest VM state available in backups)** radio button.
+11. [] Tick the **Main Backup Repository** check box.
+12. [] Click the **OK** button.
+13. [] Click the **Next** button on the **Virtual Machines** step.
+14. [] Click the **Choose...** button in the **Host or cluster** section.
+15. [] Select **VEEAM-HYPERV**.
+16. [] Click the **OK** button.
+17. [] Click the **Next** button on the **Destination** step.
+18. [] Lower **Restore points to keep** to +++2+++.
 > Note: It is generally recommended to store replica metadata in a repository that is close to the source proxy.
 
-20. [] Keep the default settings and click the **Next** button on the **Job Settings** step.
-21. [] Keep the default settings and click the **Next** button on the **Data Transfer** step.
-27. [] Click the **Next** button on the **Guest Processing** step.
-29. [] Do **not** schedule this job and click the **Apply** button on the **Schedule** step.
-30. [] Tick the **Run the job when I click Finish** check box.
-31. [] Click the **Finish** button on the **Summary** step.
+19. [] Keep the default settings and click the **Next** button on the **Job Settings** step.
+20. [] Keep the default settings and click the **Next** button on the **Data Transfer** step.
+21. [] Do **not** schedule this job and click the **Apply** button on the **Schedule** step.
+22. [] Tick the **Run the job when I click Finish** check box.
+23. [] Click the **Finish** button on the **Summary** step.
 > Note: When the backup repository is the only source of data, the replication job is often referred to as remote replica from backup. It will always capture only the most recent restore point data from the repository that was created since the remote replica was running last time. Do not wait for the replication jobs to complete.
 
 ---
