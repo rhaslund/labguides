@@ -668,17 +668,24 @@ Module 9: Advanced Data Protection
 
 # Lab 9.6: Introducing the Veeam PowerShell snap-in
 
-1. [] Go to the main menu of Veeam Backup & Replication.
-2. [] From the main menu, click **Console**.
-3. [] Click **PowerShell** to open the console.
-4. [] Click **Yes** if the warning about **PowerShell** execution policy is shown on the screen.
-5. [] Type in +++Get-VBRCommand+++ and hit **Enter** on your keyboard.
-6. [] Review the output -- this is a full list of all Veeam Backup & Replication cmdlets.
-7. [] **Get-VBRJob** returns a list of all backup, replication and copy jobs configured in your Veeam Backup & Replication install. Type +++Get-VBRJob+++and run it.
-8. [] Review the result -- all the jobs created earlier in the flow of the course.
-9. [] Working in PowerShell is like working at a conveyor belt. Let's apply a parameter -- the name of the job to the output of the previous command. +++Get-VBRJob -name "Backup Tiny-Veeam2"+++
-10. [] Now, only the information regarding the job in question is displayed.
-11. [] **Backup Tiny-Veeam2** was returned by running this command. Now, we can perform some actions with it. Let's launch this job. Type in +++Get-VBRJob -name "Backup Tiny-Veeam2" | Start-VBRJob+++ and hit Enter.
+1. [] Click the **≡** button in the top left corner in **Veeam Backup and Replication**.
+2. [] Select **Console**.
+3. [] Select **PowerShell**.
+5. [] Enter: +++Get-VBRCommand+++
+6. [] Press the **Enter** keyboard button.
+> Note: This will output a full list of all Veeam Backup & Replication cmdlets.
+
+7. [] Enter: +++Get-VBRJob+++
+8. [] Press the **Enter** keyboard button.
+> Note: This will output a list of all backup, replication and copy jobs configured.
+
+9. [] Working in PowerShell is like working at a conveyor belt. Let's apply a parameter - the name of the job to the output of the previous command. Enter: +++Get-VBRJob -name "Backup Tiny-Veeam2"+++.
+10. [] Press the **Enter** keyboard button.
+> Note: Only information about the **Backup Tiny-Veeam2** job was returned by running this command.
+
+11. [] Now, we can perform some actions with it. Let's launch this job. Enter: +++Get-VBRJob -name "Backup Tiny-Veeam2" | Start-VBRJob+++.
+12. [] Press the **Enter** keyboard button.
+
 12. [] In **PowerShell, the** job process is also displayed. Minimize the **PowerShell** window.
 13. [] Check the user interface of Veeam Backup & Replication. Note that the job is now started. Minimize the **Veeam Backup & Replication** window.
 14. [] Start-VBRJob is another cmdlet which also has its own parameters.
