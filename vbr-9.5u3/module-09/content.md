@@ -685,27 +685,16 @@ Module 9: Advanced Data Protection
 
 11. [] Now, we can perform some actions with it. Let's launch this job. Enter: +++Get-VBRJob -name "Backup Tiny-Veeam2" | Start-VBRJob+++.
 12. [] Press the **Enter** keyboard button.
+> Note: The job progress is displayed at the top of the window.
 
-12. [] In **PowerShell, the** job process is also displayed. Minimize the **PowerShell** window.
-13. [] Check the user interface of Veeam Backup & Replication. Note that the job is now started. Minimize the **Veeam Backup & Replication** window.
-14. [] Start-VBRJob is another cmdlet which also has its own parameters.
-Create a variable where the result of *Get-VBRJob* will be stored, and after that, apply the command to this operation. Verify that the previous run of the job ended. After that, type in the following:
-PS C:\\&gt; *$Job = Get-VBRJob -name "Backup Tiny-Veeam2"*
-PS C:\\&gt; *Start-VBRJob $Job -FullBackup*
-**For example:** We can use it to launch an active full backup: Get-VBRJob -name "Backup Tiny- Veeam2" | Start-VBRJob -FullBackup
-15. [] The job, used as a parameter, will be launched again.
-16. [] Open **File Explorer** from the **task bar**.
-17. [] Review the repository (X:\\Backup\\Backup Tiny-Veeam2) to check that a new incremental backup file appeared as a result of the previous run and that a .vbk file also appeared as a result of this run. Return to the PowerShell interface by closing the **File Explorer** window.
-18. [] Finally, Veeam PowerShell snap-in can be combined with regular Windows PowerShell commands. For example, instead of setting up the job name as a variable, we can use Windows PowerShell Read- Host to type in the job name. Run this script while choosing another job -- Backup ORCL.
-PS C:\\&gt; *$JobName = Read-Host "Write name of your Job"*
-PS C:\\&gt; *$Job = Get-VBRJob -name $JobName*
-PS C:\\&gt; *Start-VBRJob $Job -FullBackup*
-> Note:  If you want to configure a specific PowerShell script to be run as a post-job activity, you can create a .ps1 file out of it and type the following in job settings (**Storage** tab → **Advanced** → **Script**
-→ **Post job activity**): C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -Noninteractive -File "\[PathToScript\]\\\[scriptname\].ps1"
+13. [] Minimize the **PowerShell** window.
 
-19. [] **Note:** If you want to configure a specific PowerShell script to be run as a post-job activity, you can create a .ps1 file out of it and type the following in job settings (**Storage** tab → **Advanced** → **Script** → **Post job activity**):
-C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -Noninteractive -File "\[PathToScript\]\\\[scriptname\].ps1"
-20. [] **Note:** If you want to configure a specific PowerShell script to be run as a task in the Windows Scheduler, you would also want to save this kind of script as a .ps1 file (e.g., the content of the file can be the following):*Add-PSSnapin VeeamPSSnapin Get-VBRJob --name "Backup Tiny-Veeam2" | Start- VBRJob --FullBackup And then to set up a new task created via Windows Scheduler to run: PowerShell -file "\[PathToScript\]\\\[scriptname\].ps1"*
+13. [] Verify the **Backup Tiny-Veeam2** job has started then switch to the **PowerShell** window using the Windows task bar.
+> Note:  If you want to configure a specific PowerShell script to be run as a post-job activity, you can create a .ps1 file out of it and type the following in job settings (**Storage** tab → **Advanced** → **Script** → **Post job activity**): C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -Noninteractive -File "\[PathToScript\]\\\[scriptname\].ps1"
+>
+> **Note:** If you want to configure a specific PowerShell script to be run as a post-job activity, you can create a .ps1 file out of it and type the following in job settings (**Storage** tab → **Advanced** → **Script** → **Post job activity**): C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -Noninteractive -File "\[PathToScript\]\\\[scriptname\].ps1"
+>
+> **Note:** If you want to configure a specific PowerShell script to be run as a task in the Windows Scheduler, you would also want to save this kind of script as a .ps1 file (e.g., the content of the file can be the following):*Add-PSSnapin VeeamPSSnapin Get-VBRJob --name "Backup Tiny-Veeam2" | Start- VBRJob --FullBackup And then to set up a new task created via Windows Scheduler to run: PowerShell -file "\[PathToScript\]\\\[scriptname\].ps1"*
 
 ---
 
