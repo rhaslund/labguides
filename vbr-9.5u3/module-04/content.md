@@ -62,11 +62,10 @@ Module 4: Protect
 
 36. [] Enter root password: +++Pa$$w0rd+++
 37. [] Click the **Test Now** button.
-> Note: If the test fails for VEEAM-ORCL, it is likely that the username or password has a typo - please go back, check the username and re-enter the password OR ask your trainer for assistance in resolving the issue.
+> Note: Disregard the notice that the testing failed for Tiny-Veeam — we have disabled the application-aware processing for this VM.
+> Important: If the test fails for VEEAM-ORCL, it is likely that the username or password has a typo - please go back, check the username and re-enter the password OR ask your trainer for assistance in resolving the issue.
 
 38. [] Click the **Close** button.
-> Note:  Disregard the notice that the testing failed for Tiny-Veeam — we have disabled the application-aware processing for this VM.
-
 39. [] Click the **Next** button on the **Guest Processing** step.
 40. [] Tick the **Run the job automatically** check box.
 41. [] Modify the schedule to run daily at **10:00 PM**.
@@ -193,8 +192,7 @@ Module 4: Protect
 
 6. [] Click the **OK** button.
 7. [] Click the **OK** button.
-> Important: Do **NOT** wait for the job to finish before moving on to the next step. The job is expected to end with a warning, because the FreeDOS
-operation system does not have VMware Tools installed.
+> Important: Do **NOT** wait for the job to finish before moving on to the next step. The job is expected to end with a warning, because the FreeDOS operation system does not have VMware Tools installed.
 
 8. [] Launch **File Explorer** from the **Windows taskbar**.
 9. [] Navigate to the **E:\Backups** folder.
