@@ -69,13 +69,12 @@ collection.
 
 7. [] Click the **Next** button on the **Credentials** step.
 8. [] Click the **Finish** on the **Summary** step.
-9. [] Click the **OK** to save credentials.
 > Note: Do not enter any login or password in the Hyper-V VMs Guest OS Credentials section.
 
-10. [] It will take some time for the Hyper-V infrastructure to be analyzed. When the dashboard is populated, expand **VEEAM-HYPERV**. You should be able to see the Hyper-V VMs in the infrastructure.
+9. [] Click the **OK** to save credentials.
 > Note: Disregard any warnings you may see on the Veeam ONE Monitor dashboard interface at this stage. Due to the lab resource constraints, the VEEAM-HYPERV server only hosts one tiny DOS-based virtual machine.
 
-11. [] Close the **Veeam ONE Monitor** interface.
+10. [] Close the **Veeam ONE Monitor** interface.
 
 ===
 
