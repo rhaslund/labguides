@@ -154,7 +154,7 @@ used for storing configuration backups or replica metadata
 
 1. [] Click the **≡** button in the top left corner.
 2. [] Select **General Options**.
-3. [] Click the **E-mail settings** tab.
+3. [] Click the **E-mail Settings** tab.
 4. [] Tick the **Enable e-mail notifications** check box.
 5. [] Enter:
  1. SMTP server: +++veeam-ex01.veeamlab.local+++
@@ -189,10 +189,10 @@ used for storing configuration backups or replica metadata
 15. [] Click the **Location** button on the **Backup Repository** ribbon.
 16. [] Select **Remote Site**.
 17. [] Navigate to the **Inventory** view.
-18. [] Select **VEEAM-ESX**.
+18. [] Select **VEEAM-ESX** in the **VMware vSphere** section of the **Inventory** view.
 19. [] Click the **Location** button on the **Server** ribbon.
 20. [] Select **Local**.
-21. [] Select **VEEAM-HYPERV**.
+21. [] Select **VEEAM-HYPERV** in the **Microsoft Hyper-V** section of the **Inventory** view.
 22. [] Click the **Location** button on the **Server** ribbon.
 23. [] Select **Local**.
 
