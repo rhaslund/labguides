@@ -15,7 +15,7 @@ Module 2: Deployment
  2. User name: +++VEEAMINFRA\Administrator+++
  3. Password: +++Pa$$w0rd+++
 6. [] Click the **OK** button to add the server.
-7. [] Select the added backup server.
+7. [] Select the **veeam-vbr.veeaminfra.local** backup server.
 8. [] Click the **Schedule...** button.
 9. [] Reduce the collection interval to +++2+++ (two) minutes to fit our lab needs.
 10. [] Click the **OK** button.
