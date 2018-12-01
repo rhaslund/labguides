@@ -80,11 +80,11 @@ Server will both coordinate all job activities and handle data processing itself
 1. [] Select **Backup Repositories** in the **Backup Infrastructure** view.
 > Note: During installation, Veeam Backup & Replication checks the volumes of the machine on which you install the product and identifies a volume with the greatest amount of free disk space. On this volume, Veeam Backup & Replication creates the Backup folder that is used as the default backup repository.
 
-2. [] Click the **Add Repository** button.
+2. [] Click the **Add Repository** button on the **Backup Repository** ribbon.
 3. [] Enter name: +++Remote Repository+++.
 4. [] Click the **Next** button on the **Name** step.
-5. [] Select **Microsoft Windows Server**.
-6. [] Click the **Add new** button.
+5. [] Keep the default setting and click the **Next** button on the **Type** step.
+6. [] Click the **Add New...** button.
 > Note: The Repository servers list contains only those servers that have been added to Veeam Backup & Replication beforehand. As the VEEAM-Remote server has not been added to Veeam Backup & Replication yet, we have to go through the New Windows Server wizard first.
 
 7. [] Enter DNS name: +++VEEAM-Remote+++.
@@ -93,18 +93,18 @@ Server will both coordinate all job activities and handle data processing itself
 10. [] Select **VEEAMINFRA\Administrator**.
 > Note: This account should have administrator privileges on the added Microsoft Windows Server.
 
-11. [] Click the **next** button on the **Credentials** step.
+11. [] Click the **Next** button on the **Credentials** step.
 12. [] Click the **Apply** button on the **Review** step.
 13. [] Click the **Next** button on the **Apply** step.
 14. [] Click the **Finish** button on the **Summary** step.
 15. [] Click the **Populate** button on the **Server** step.
-16. [] Select **X:\\**.
+16. [] Select the **X:\\** drive.
 17. [] Click the **Next** button on the **Server** step.
 18. [] Verify the **Path to folder** is **X:\Backups** and click the **Next** button on the **Repository** step.
 > Note: The Limit read and write data rates setting is used to limit the speed with which Veeam Backup & Replication can read and write
 data to/from a backup repository.
 
-19. [] Click the **Next** button on the **Mount Server** step.
+19. [] Keep the default settings and click the **Next** button on the **Mount Server** step.
 20. [] Click the **Apply** button on the **Review** step.
 21. [] Click the **Finish** button on the **Apply** step.
 22. [] Click the **Yes** button to confirm changing the configuration backup location to the newly created repository.
@@ -117,10 +117,9 @@ data to/from a backup repository.
 1. [] Click the **Add Repository** button on the **Backup Repository** ribbon.
 2. [] Enter name: +++Local Backup Repository+++.
 3. [] Click the **Next** button on the **Name** step.
-4. [] Select **Microsoft Windows Server**.
-5. [] Click the **Next** button on the **Type** step.
+4. [] Keep the default setting and click the **Next** button on the **Type** step.
 6. [] Click the **Populate** button.
-7. [] Select **E:\\**.
+7. [] Select the **E:\\** drive.
 8. [] Click the **Next** button on the **Server** step.
 9. [] Verify the **Path to folder** is **E:\Backups** and click the **Next** button.
 10. [] Keep the default settings and click the **Next** button on the **Mount Server** page.
