@@ -39,13 +39,13 @@ collection.
 4. [] Click the **Add Server** button on the toolbar.
 5. [] Select **VMware Server**.
 6. [] Enter DNS name: +++VEEAM-ESX+++
-7. [] Select **ESXi host**.
+7. [] Select the **ESX(i) host** radio button.
 8. [] Click the **Next** button on the **Name** step.
 9. [] Enter:
  1. Username: +++root+++
  2. Password: +++Pa$$w0rd+++.
 
-10. Click the **Next** button on the **Credentials** step.
+10. [] Click the **Next** button on the **Credentials** step.
 
 10. [] Click the **Finish** button on the **Summary** step.
 11. [] It will take some time for the infrastructure to be analyzed. Expand the newly added **VEEAM-ESX** host.
@@ -58,7 +58,7 @@ collection.
 
 ## Step 2: Add a Hyper-V host
 
-1. [] Review the monitoring data on the screen, then click the **Add Server** on the toolbar.
+1. [] Click the **Add Server** on the toolbar.
 2. [] Select **Hyper-V Server**.
 3. [] Enter DNS name: +++VEEAM-HYPERV+++
 4. [] Select the **Hyper-V host** radio button.
@@ -67,7 +67,7 @@ collection.
  1. Username: +++VEEAMINFRA\Administrator+++
  2. Password: +++Pa$$w0rd+++
 
-7. Click the **Next** button on the **Credentials** step.
+7. [] Click the **Next** button on the **Credentials** step.
 8. [] Click the **Finish** on the **Summary** step.
 9. [] Click the **OK** to save credentials.
 > Note: Do not enter any login or password in the Hyper-V VMs Guest OS Credentials section.
