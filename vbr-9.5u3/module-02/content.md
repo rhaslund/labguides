@@ -84,10 +84,10 @@ collection.
 2. [] Tick the **Use Windows session credentials** check box.
 3. [] Click the **Login** button.
 4. [] Click the **Configuration** tab.
-5. [] Click **Servers**.
+5. [] Navigate to the **Servers** view.
 6. [] Select the **VEEAM-ESX** line.
-7. [] Click **Scheduling...**.
-8. [] Enter periodically every: +++3+++ hours.
+7. [] Click the **Scheduling...** button.
+8. [] Select the **Periodically every** radio button.
 9. [] Click the **OK** button.
 > Note: Due to the lab time constraints, the collection interval is scheduled more often than in a production environment.
 
