@@ -83,7 +83,7 @@ Module 4: Protect
 > Note: If you forgot to select Run the job when I click Finish, start the backup job manually.
 
 45. [] Select the **Backup ORCL** backup job.
-46. [] Verify the job has started then select **Jobs** in the **Home** view.
+46. [] Verify the job has started then click the **Home** ribbon.
 > Important: Do not wait for this job to finish before moving to the next step.
 
 ===
