@@ -7,6 +7,8 @@ Module 4: Protect
 
 ## Step 1: Create and schedule a backup job for VEEAM-ORCL and Tiny-Veeam
 
+1. [] Launch the **Veeam Backup & Replication console** from the desktop.
+2. [] Click the **Connect** button.
 1. [] Navigate to the **Home** view.
 2. [] Select **Jobs**
 3. [] Click the **Backup Job** button.
