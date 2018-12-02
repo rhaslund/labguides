@@ -109,7 +109,7 @@ Module 4: Protect
 > Note: Enable application-aware image processing is used to freeze the VMs when the snapshot is created. This leads to the creation of a transactionally consistent backup that ensures successful recovery of VM applications without any data loss.
 
 17. [] Tick the **Enable guest file system indexing** check box.
-> Note: Note: Guest file indexing allows you to search for VM guest OS files inside VM backups using Veeam Backup Enterprise Manager.
+> Note: Guest file indexing allows you to search for VM guest OS files inside VM backups using Veeam Backup Enterprise Manager.
 
 18. [] Click the **Applications...** button
 19. [] Select **VEEAM-SP01**
