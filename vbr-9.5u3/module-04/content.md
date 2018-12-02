@@ -287,7 +287,7 @@ Module 4: Protect
 
 # Lab 4.4: Creating replicas
 
-## Step 1: Map replication job for Tiny-Veeam
+## Step 1: Seed replication job for Tiny-Veeam
 
 1. [] Click the **Home** ribbon.
 
@@ -394,10 +394,17 @@ Module 4: Protect
 
 19. [] Keep the default settings and click the **Next** button on the **Job Settings** step.
 20. [] Keep the default settings and click the **Next** button on the **Data Transfer** step.
-21. [] Do **not** schedule this job and click the **Apply** button on the **Schedule** step.
-22. [] Tick the **Run the job when I click Finish** check box.
-23. [] Click the **Finish** button on the **Summary** step.
-> Note: When the backup repository is the only source of data, the replication job is often referred to as remote replica from backup. It will always capture only the most recent restore point data from the repository that was created since the remote replica was running last time. Do not wait for the replication jobs to complete.
+21. [] Tick the **Run the job automatically** check box.
+22. [] Select the **Monthly at this time** radio button.
+
+23. [] Click the **Apply** button on the **Schedule** step.
+24. [] Tick the **Run the job when I click Finish** check box.
+25. [] Click the **Finish** button on the **Summary** step.
+> Important: Do not wait for the replication jobs to complete.
+>
+> Note: When the backup repository is the only source of data, the replication job is often referred to as remote replica from backup. It will always capture only the most recent restore point data from the repository that was created since the remote replica was running last time.
+
+26. [] Close the **Veeam Backup and Replication console** window.
 
 ---
 
