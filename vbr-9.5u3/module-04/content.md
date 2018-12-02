@@ -16,16 +16,18 @@ Module 4: Protect
 7. [] Click the **Add...** button.
 8. [] Expand the **VEEAM-ESX** host.
 9. [] Expand the **Production** resource pool.
-10. [] Hold the **CTRL** and select both the **VEEAM-ORCL** and **Tiny-Veeam** virtual machines.
+10. [] Hold the **CTRL** keyboard button and select both the **VEEAM-ORCL** and **Tiny-Veeam** virtual machines.
+11. [] Click the **Add** button.
 11. [] Click the **Next** button on the **Virtual Machines** step.
 12. [] Lower **Restore points to keep on disk** to: +++2+++.
 13. [] Click the **Advanced** button.
-14. [] Verify the selected **backup mode** is **Incremental (recommended)** and that both **Create synthetic full backups periodically** and **Create active full backups periodically** are disabled then click the **OK** button.
+14. [] Untick the **Create synthetic full backups periodically** check box.
+14. [] Click the **OK** button.
 15. [] Click the **Next** button on the **Storage** step.
 16. [] Tick the **Enable application-aware processing** check box.
 > Note: Veeam Backup Enterprise Manager does not require guest file system indexing to be enabled to perform file-level recovery, however, it is required to search for files across restore points.
 
-17. [] Click the **Applications** button.
+17. [] Click the **Applications...** button.
 18. [] Select **Tiny-Veeam**.
 19. [] Click the **Edit...** button.
 20. [] Select the **Disable application processing** radio button.
@@ -57,18 +59,19 @@ Module 4: Protect
  2. Password: +++Pa$$w0rd+++
 
 34. [] Tick the **Elevate specified account to root** check box.
-35. [] Tick the **Add account to the sudoers file automatically**
+35. [] Tick the **Add account to the sudoers file automatically** check box.
 > Note: In a production environment, the Oracle administrator could also configure the same permissions directly on the virtual machine.
 
-36. [] Enter root password: +++Pa$$w0rd+++
+36. [] Enter root password: +++Pa$$w0rd+++.
+37. [] Click the **OK** button.
 37. [] Click the **Test Now** button.
 > Note: Disregard the notice that the testing failed for Tiny-Veeam — we have disabled the application-aware processing for this VM.
+>
 > Important: If the test fails for VEEAM-ORCL, it is likely that the username or password has a typo - please go back, check the username and re-enter the password OR ask your trainer for assistance in resolving the issue.
 
 38. [] Click the **Close** button.
 39. [] Click the **Next** button on the **Guest Processing** step.
 40. [] Tick the **Run the job automatically** check box.
-41. [] Modify the schedule to run daily at **10:00 PM**.
 > Important: If you do not schedule a job, you must be aware of two limitations: 
 >
 > 1. Even if transaction log backups are enabled in the job, the transaction logs will not be backed up.
@@ -76,7 +79,7 @@ Module 4: Protect
 
 42. [] Click the **Apply** button on the **Schedule** step.
 43. [] Tick the **Run the job when I click Finish** check box.
-44. [] Click the **Finish** button.
+44. [] Click the **Finish** button on the **Summary** step.
 > Note: If you forgot to select Run the job when I click Finish, start the backup job manually.
 
 45. [] Select the **Backup ORCL** backup job.
