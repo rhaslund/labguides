@@ -195,6 +195,7 @@ used for storing configuration backups or replica metadata
 21. [] Select **VEEAM-HYPERV** in the **Microsoft Hyper-V** section of the **Inventory** view.
 22. [] Click the **Location** button on the **Server** ribbon.
 23. [] Select **Local**.
+24. [] Close the **Veeam Backup and Replication console** window.
 
 ---
 
