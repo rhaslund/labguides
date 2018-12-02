@@ -278,9 +278,8 @@ Module 4: Protect
 25. [] Click the **Next** button on the **Data Transfer** step.
 26. [] Click the **OK** button to safely ignore that the target WAN accelerator cache is empty.
 27. [] Keep the default setting and click the **Apply** button on the **Schedule** step.
-28. [] Tick the **Enable the job when I click Finish** check box.
-29. [] Click the **Finish** button on the **Summary** step.
-30. [] Select the **Backup Copy Job WAN** job.
+28. [] Keep the default setting and click the **Finish** button on the **Summary** step.
+29. [] Select the **Backup Copy Job WAN** job.
 > Important: Do not wait for the jobs to finish before moving to the next step.
 >
 > Note: Backup Copy Job WAN starts automatically copying the last restore point for VEEAM-ORCL and will be transported from Backup Copy Job to the second Backup Target since it was created within the sync interval.
