@@ -388,7 +388,7 @@ Module 4: Protect
 18. [] Lower **Restore points to keep** to +++2+++.
 > Note: It is generally recommended to store replica metadata in a repository that is close to the source proxy.
 
-19. [] Keep the default settings and click the **Next** button on the **Job Settings** step.
+19. [] Click the **Next** button on the **Job Settings** step.
 20. [] Keep the default settings and click the **Next** button on the **Data Transfer** step.
 21. [] Tick the **Run the job automatically** check box.
 22. [] Select the **Monthly at this time** radio button.
