@@ -370,7 +370,7 @@ Module 9: Advanced Data Protection
 4. [] Click the **Edit** button on the **Job** ribbon.
 5. [] Keep the existing settings and click the **Next** button on the **Name** step.
 6. [] Select the **Tiny-Veeam2** virtual machine.
-> Note:  We are re-adding the VM since it was deleted and restored from a backup previously. The VM uuid has changed, so we have to re-add it onto the job.
+> Note:  We are re-adding the VM because the virtual machine UUID has changed due to the permanent failover performed in a previous lab exercise.
 
 7. [] Click the **Remove** button.
 8. [] Click the **Add...** button.
