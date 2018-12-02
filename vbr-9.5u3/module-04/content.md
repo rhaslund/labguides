@@ -170,17 +170,18 @@ Module 4: Protect
 
 18. [] Click the **OK** button.
 19. [] Currently, configuration backup does not have encryption enabled. Because you just enabled encryption for a job, configuration backup has been disabled until you enable the encryption of configuration backup. Click the **OK** button.
-20. [] Verify the encryption password hint is displayed then click the **OK** button.
+20. [] Untick the **Create synthetic full backups periodically** checkbox.
+21. [] Verify the encryption password hint is displayed then click the **OK** button.
 > Note: If even one job has encryption enabled, configuration backup will not be performed unless it also has encryption enabled. This is due to security risks.
 
-21. [] Click the **Next** button on the **Storage** step.
-21. [] Keep the default settings and click the **Next** button on the **Guest Processing** step.
+22. [] Click the **Next** button on the **Storage** step.
+23. [] Keep the default settings and click the **Next** button on the **Guest Processing** step.
 > Note: As Tiny-Veeam2 is a DOS-based server we decided to not enable application-aware processing.
 
-22. [] Select the **Monthly at this time** radio button.
-23. [] Click the **Apply** button.
-23. [] Tick the **Run the job when I click Finish** check box.
-24. [] Click the **Finish** button on the **Summary** step.
+24. [] Select the **Monthly at this time** radio button.
+25. [] Click the **Apply** button.
+26. [] Tick the **Run the job when I click Finish** check box.
+27. [] Click the **Finish** button on the **Summary** step.
 
 ===
 
