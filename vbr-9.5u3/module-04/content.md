@@ -201,8 +201,8 @@ Module 4: Protect
 > Important: Do **NOT** wait for the job to finish before moving on to the next step.
 
 8. [] Launch **File Explorer** from the **Windows taskbar**.
-9. [] Navigate to the +++E:\\Backups+++ folder.
-> Note: Because of the way Scale-out Backup Repository works, your VeeamZIP backup could have been stored in the X:\Backup folder.
+9. [] Navigate to the +++X:\\Backup+++ folder.
+> Note: Because of the way Scale-out Backup Repository works, your VeeamZIP backup could have been stored in the E:\Backups folder.
 
 10. [] Verify the **Tiny-Veeam** VBK full backup file is present then close the **File Explorer** window.
 > Note: If you need to quickly create a restore point for the selected VM, VeeamZIP (full backup) or quick backup (incremental backup) can be used. Quick backup is an incremental backup task and can be run only for VMs that have been successfully backed up at least once and have a full restore point.
@@ -214,7 +214,7 @@ Module 4: Protect
 ## Step 1: Install "remote" WAN accelerator
 
 1. [] Navigate to the **Backup infrastructure** view.
-2. [] Select **WAN Accelerators**.
+2. [] Select **WAN Accelerators** in the **Backup Infrastructure** view.
 3. [] Click the **Add WAN Accelerator** button on the **WAN Accelerator** ribbon.
 4. [] Click the **Choose server** drop down menu.
 5. [] Select **VEEAM-Remote**.
@@ -232,18 +232,16 @@ Module 4: Protect
 ## Step 2: Install a local WAN accelerator
 
 1. [] Click the **Add WAN Accelerator** button on the **WAN Accelerator** ribbon.
-2. [] Click the **Choose server** drop down menu.
-3. [] Select **VEEAM-VBR.veeaminfra.local**
-4. [] Click the **Next** button on the **Server** step.
-5. [] Select the **X:\\** drive.
-6. [] Verify the **Folder** is set to **X:\VeeamWAN** then lower the **Cache size** to +++10+++ GB.
+2. [] Verify **Choose server** already has **VEEAM-VBR.veeaminfra.local** selected then click the **Next** button on the **Server** step.
+3. [] Select the **X:\\** drive.
+4. [] Verify the **Folder** is set to **X:\VeeamWAN** then lower the **Cache size** to +++10+++ GB.
 > Important: **WARNING! Do NOT use the default cache size of 100 GB. Leaving the default cache size**
 
-7. [] Click the **Next** on the **Cache** step.
-8. [] Click the **Apply** button on the **Review** step.
-9. [] Click the **Next** button on the **Apply** step.
-10. [] Click the **Finish** button on the **Summary** step.
-11. [] Verify both WAN accelerators are present then navigate to the **Home** view.
+5. [] Click the **Next** on the **Cache** step.
+6. [] Click the **Apply** button on the **Review** step.
+7. [] Click the **Next** button on the **Apply** step.
+8. [] Click the **Finish** button on the **Summary** step.
+9. [] Verify both WAN accelerators are present then navigate to the **Home** view.
 
 ===
 
@@ -257,7 +255,7 @@ Module 4: Protect
 6. [] Click the **Add...** button.
 7. [] Select **From backups...**.
 8. [] Expand the **Backup ORCL** backup job.
-9. [] Select **VEEAM-ORCL**.
+9. [] Select **Tiny-Veeam**.
 10. [] Click the **Add** button.
 11. [] Click the **Next** button on the **Objects** step.
 12. [] Click the **Backup repository** drop down menu.
@@ -281,6 +279,8 @@ Module 4: Protect
 28. [] Tick the **Enable the job when I click Finish** check box.
 29. [] Click the **Finish** button on the **Summary** step.
 30. [] Select the **Backup Copy Job WAN** job.
+> Important: Do not wait for the jobs to finish before moving to the next step.
+>
 > Note: Backup Copy Job WAN starts automatically copying the last restore point for VEEAM-ORCL and will be transported from Backup Copy Job to the second Backup Target since it was created within the sync interval.
 
 ===
@@ -289,8 +289,10 @@ Module 4: Protect
 
 ## Step 1: Map replication job for Tiny-Veeam
 
+1. [] Click the **Home** ribbon.
+
 1. [] Click the **Replication Job** button on the **Home** ribbon.
-2. [] Select **VMware vSphere**.
+2. [] Select **VMware vSphere...**.
 3. [] Enter name: +++Replication Job Tiny-Veeam+++
 4. [] Tick the **Low connection bandwidth (enable replica seeding)** check box.
 5. [] Click the **Next** button on the **Name** step.
@@ -307,19 +309,15 @@ Module 4: Protect
 16. [] Select the **Replicas** resource pool.
 17. [] Click the **OK** button.
 18. [] Click the **Next** button on the **Destination** step.
-19. [] Verify that **Remote Repository** is selected as the **Repository for replica metadata** then lower **Restore points to keep** to +++3+++.
+19. [] Lower **Restore points to keep** to +++3+++.
 > Note: It is generally recommended to store replica metadata in a repository that is close to the source proxy, however, Scale-out Backup Repositories are not a supported target for replication job metadata.
 
-20. [] Keep the default settings and click the **Next** button on the  **Data Transfer** step.
-21. [] Tick the **Map replicas to existing VMs** check box.
-> Note: In the classroom lab, we prepared an existing replica of the Tiny-Veeam VM. You can map it to the newly created replica job to avoid processing a full replica again.
+20. [] Click the **Next** button on the **Job Settings** step.
 
-22. [] Select **Tiny-Veeam**.
-23. [] Click the **Edit...** button.
-24. [] Expand the **VEEAM-ESX** host.
-25. [] Expand the **Replicas** resource pool.
-26. [] Select **Tiny-Veeam_replica**.
-27. [] Click the **OK** button.
+20. [] Keep the default settings and click the **Next** button on the  **Data Transfer** step.
+21. [] Tick the **Get seed from the following backup repository** check box.
+> Note: This will make the replication job use the Backup Jopy WAN job placed in the Remote Repository as a source for the first run of this replication job. All subsequent runs will use the production environment as the source.
+
 28. [] Click the **Next** button on the **Seeding** step.
 29. [] Keep the default settings and click the **Next** button on the **Guest processing** step.
 30. [] Tick the **Run the job automatically** check box.
