@@ -277,7 +277,6 @@ Module 4: Protect
 26. [] Click the **OK** button to safely ignore that the target WAN accelerator cache is empty.
 27. [] Keep the default setting and click the **Apply** button on the **Schedule** step.
 28. [] Keep the default setting and click the **Finish** button on the **Summary** step.
-29. [] Select the **Backup Copy Job WAN** job.
 > Important: Do not wait for the jobs to finish before moving to the next step.
 >
 > Note: Backup Copy Job WAN starts automatically copying the last restore point for VEEAM-ORCL and will be transported from Backup Copy Job to the second Backup Target since it was created within the sync interval.
@@ -287,8 +286,6 @@ Module 4: Protect
 # Lab 4.4: Creating replicas
 
 ## Step 1: Seed replication job for Tiny-Veeam
-
-1. [] Click the **Home** ribbon.
 
 1. [] Click the **Replication Job** button on the **Home** ribbon.
 2. [] Select **VMware vSphere...**.
