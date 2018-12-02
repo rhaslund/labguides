@@ -12,7 +12,7 @@ Module 4: Protect
 3. [] Click the **Backup Job** button on the **Home** ribbon.
 4. [] Select **VMware vSphere...**.
 5. [] Enter name: +++Backup ORCL+++.
-6. [] Click the **Next button** on the **Name** step.
+6. [] Click the **Next** button on the **Name** step.
 7. [] Click the **Add...** button.
 8. [] Expand the **VEEAM-ESX** host.
 9. [] Expand the **Production** resource pool.
