@@ -82,7 +82,7 @@ Module 4: Protect
 44. [] Click the **Finish** button on the **Summary** step.
 > Note: If you forgot to select Run the job when I click Finish, start the backup job manually.
 >
-> Important: Do not wait for this job to finish before moving to the next step.
+> **Important: Do not wait for this job to finish before moving to the next step.**
 
 ===
 
@@ -134,7 +134,7 @@ Module 4: Protect
 33. [] Tick the **Run the job automatically** check box.
 35. [] Click the **Apply** button on the **Schedule** step.
 36. [] Tick the **Run the job when I click Finish** check box.
-> Important: It is **very important** this backup job is launched on the **first day of the class**. Do not wait for the jobs to finish before moving to the next step.
+> **Important: It is very important this backup job is launched on the first day of the class. Do not wait for the jobs to finish before moving to the next step.**
 
 37. [] Click the **Finish** button
 
@@ -181,6 +181,7 @@ Module 4: Protect
 25. [] Click the **Apply** button.
 26. [] Tick the **Run the job when I click Finish** check box.
 27. [] Click the **Finish** button on the **Summary** step.
+> **Important: Do not wait for the jobs to finish before moving to the next step.**
 
 ===
 
@@ -277,7 +278,7 @@ Module 4: Protect
 26. [] Click the **OK** button to safely ignore that the target WAN accelerator cache is empty.
 27. [] Keep the default setting and click the **Apply** button on the **Schedule** step.
 28. [] Keep the default setting and click the **Finish** button on the **Summary** step.
-> Important: Do not wait for the jobs to finish before moving to the next step.
+> **Important: Do not wait for the jobs to finish before moving to the next step.**
 >
 > Note: Backup Copy Job WAN starts automatically copying the last restore point for VEEAM-ORCL and will be transported from Backup Copy Job to the second Backup Target since it was created within the sync interval.
 
