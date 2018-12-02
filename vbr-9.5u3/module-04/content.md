@@ -400,7 +400,7 @@ Module 4: Protect
 23. [] Click the **Apply** button on the **Schedule** step.
 24. [] Tick the **Run the job when I click Finish** check box.
 25. [] Click the **Finish** button on the **Summary** step.
-> Important: Do not wait for the replication jobs to complete.
+> **Important: Do not wait for the replication jobs to complete.**
 >
 > Note: When the backup repository is the only source of data, the replication job is often referred to as remote replica from backup. It will always capture only the most recent restore point data from the repository that was created since the remote replica was running last time.
 
