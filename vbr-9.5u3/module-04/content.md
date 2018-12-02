@@ -9,9 +9,7 @@ Module 4: Protect
 
 1. [] Launch the **Veeam Backup & Replication console** from the desktop.
 2. [] Click the **Connect** button.
-1. [] Navigate to the **Home** view.
-2. [] Select **Jobs**
-3. [] Click the **Backup Job** button.
+3. [] Click the **Backup Job** button on the **Home** ribbon.
 4. [] Select **VMware vSphere**.
 5. [] Enter name: +++Backup ORCL+++.
 6. [] Click the **Next button** on the **Name** step.
