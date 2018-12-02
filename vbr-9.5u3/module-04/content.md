@@ -178,6 +178,7 @@ Module 4: Protect
 23. [] Keep the default settings and click the **Next** button on the **Guest Processing** step.
 > Note: As Tiny-Veeam2 is a DOS-based server we decided to not enable application-aware processing.
 
+24. [] Tick the **Run this job automatically** check box.
 24. [] Select the **Monthly at this time** radio button.
 25. [] Click the **Apply** button.
 26. [] Tick the **Run the job when I click Finish** check box.
