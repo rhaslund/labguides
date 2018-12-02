@@ -111,11 +111,11 @@ Module 4: Protect
 17. [] Tick the **Enable guest file system indexing** check box.
 > Note: Note: Guest file indexing allows you to search for VM guest OS files inside VM backups using Veeam Backup Enterprise Manager.
 
-18. [] Click the **Applications** button
+18. [] Click the **Applications...** button
 19. [] Select **VEEAM-SP01**
 > Note: The VEEAM-SP01 virtual machine contains Microsoft SQL Server.
 
-20. [] Click the **Edit** button.
+20. [] Click the **Edit...** button.
 21. [] Click the **SQL** tab.
 22. [] Select the **Backup logs periodically** radio button.
 23. [] Increase **Backup logs every** to +++60+++ minutes.
@@ -134,7 +134,6 @@ Module 4: Protect
 31. [] Wait for the **Status** of all virtual machines to change to **Success** then click the **Close** button.
 32. [] Click the **Next** button on the **Guest Processing** step.
 33. [] Tick the **Run the job automatically** check box.
-34. [] Modify the schedule to run daily at **10:00 PM**.
 35. [] Click the **Apply** button on the **Schedule** step.
 36. [] Tick the **Run the job when I click Finish** check box.
 > Important: It is **very important** this backup job is launched on the **first day of the class**. Do not wait for the jobs to finish before moving to the next step.
@@ -154,7 +153,7 @@ Module 4: Protect
 7. [] Select **Tiny-Veeam2**
 8. [] Click the **Add** button.
 9. [] Click the **Next** button on the **Virtual Machines** step.
-10. [] Click the **Choose** button.
+10. [] Click the **Choose...** button.
 11. [] Review the **Backup Proxy** window options then click the **Cancel** button.
 > Note: As we don’t have a configured off-host backup proxy at the moment, the backup will be made in on-host mode.
 
@@ -178,7 +177,8 @@ Module 4: Protect
 21. [] Keep the default settings and click the **Next** button on the **Guest Processing** step.
 > Note: As Tiny-Veeam2 is a DOS-based server we decided to not enable application-aware processing.
 
-22. [] Do **NOT** schedule the job and click the **Apply** button.
+22. [] Select the **Monthly at this time** radio button.
+23. [] Click the **Apply** button.
 23. [] Tick the **Run the job when I click Finish** check box.
 24. [] Click the **Finish** button on the **Summary** step.
 
@@ -187,18 +187,21 @@ Module 4: Protect
 # Lab 4.2: Creating backups with VeeamZIP
 
 1. [] Navigate to the **Inventory** view.
-2. [] Select the **VEEAM-ESX** host.
-3. [] Right-click the **Tiny-Veeam** virtual machine.
-4. [] Select **VeeamZIP...**.
+2. [] Select the **VEEAM-ESX** host in the **VMware vSphere** section of the **Inventory** view.
+3. [] Select the **Tiny-Veeam** virtual machine.
+4. [] Click the **VeeamZIP** button on the **Virtual Machine** ribbon.
+5. [] Select **VeeamZIP...**.
+
 5. [] Click the **More >>** button.
 > Note: Since we did not select a password, Veeam Backup & Replication will produce an unencrypted VeeamZIP file. By default, Veeam Backup & Replication uses application-aware image processing to create a transactionally consistent backup of VMs running applications with VSS support. If you were backing up VMs that run something other than Windows OS or applications without VSS support, you could enable this option by clearing the Disable guest quiescence check box.
 
-6. [] Click the **OK** button.
-7. [] Click the **OK** button.
-> Important: Do **NOT** wait for the job to finish before moving on to the next step. The job is expected to end with a warning, because the FreeDOS operation system does not have VMware Tools installed.
+6. [] Tick the **Disable guest quiescence (perform crash consistent backup)** check box.
+6. [] Click the **OK** button to start the job.
+7. [] Click the **OK** button to dismiss the **Tiny-Veeam** job window.
+> Important: Do **NOT** wait for the job to finish before moving on to the next step.
 
 8. [] Launch **File Explorer** from the **Windows taskbar**.
-9. [] Navigate to the **E:\Backups** folder.
+9. [] Navigate to the +++E:\\Backups+++ folder.
 > Note: Because of the way Scale-out Backup Repository works, your VeeamZIP backup could have been stored in the X:\Backup folder.
 
 10. [] Verify the **Tiny-Veeam** VBK full backup file is present then close the **File Explorer** window.
