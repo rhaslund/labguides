@@ -13,22 +13,23 @@ Module 8: Introduction to Agents
 5. [] Launch the **Server Manager** from the Windows task bar.
 6. [] Click on the **Tools** text link in the top right corner.
 7. [] Select **Active Directory Users and Computers**.
-8. [] Expand the **veeamlab.local** domain.
-9. [] Select the **Computers** organizational unit.
-10. [] Click the **Actions** menu.
-11. [] Select **New**.
-12. [] Select **Group**.
-13. [] Enter group name: +++Veeam Agent protected servers+++
-14. [] Click the **OK** button.
-15. [] Select the **PHYSICAL** computer.
-16. [] Click the **Actions** menu.
-17. [] Select **Add to a group...**.
-18. [] Enter object name: +++Veeam Agent protected servers+++.
-19. [] Click the **OK** button.
+8. [] Close the **Server Manager** window.
+9. [] Expand the **veeamlab.local** domain.
+10. [] Select the **Computers** organizational unit.
+11. [] Click the **Actions** menu.
+12. [] Select **New**.
+13. [] Select **Group**.
+14. [] Enter group name: +++Veeam Agent protected servers+++
+15. [] Click the **OK** button.
+16. [] Select the **PHYSICAL** computer.
+17. [] Click the **Actions** menu.
+18. [] Select **Add to a group...**.
+19. [] Enter object name: +++Veeam Agent protected servers+++.
+20. [] Click the **OK** button.
 > Note: If a new window entitled Name Not Found is displayed, you have incorrectly entered the group name. Click the Cancel button and correct the name, then click the OK button.
 
-20. [] Verify that the **Add to Group** operation was successfully completed, then click the **OK** button.
-21. [] Close the **Remote Desktop Connection** window.
+21. [] Verify that the **Add to Group** operation was successfully completed, then click the **OK** button.
+22. [] Close the **Remote Desktop Connection** window.
 
 ===
 
