@@ -279,10 +279,10 @@ Module 05: Entire VM Recovery
 
 5. [] Watch the planned failover process until the log displays the **Failover completed successfully** text then click the **Close** button. This process will take a maximum of 5 minutes, please have some patience. While waiting, you can navigate to the **Running** section of the **Home** view to better observe the process.
 
-6. [] After the failover completes successfully, go to the **Active** section of the **Home** view.
+6. [] After the failover completes successfully, select **Active (1)** in the **Replicas** section of the **Home** view.
 7. [] Select **Tiny-Veeam2**.
 8. [] Click the **Permanent Failover** button on the **Replica** ribbon.
-9. [] Click the **Yes** button.
+9. [] Click the **Yes** button to proceed with permanent failover.
 10. [] Watch the permanent failover process until the log displays the **Permanent failover is completed** text then click the **Close** button.
 
 ---
