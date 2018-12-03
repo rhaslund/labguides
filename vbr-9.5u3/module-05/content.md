@@ -98,9 +98,11 @@ Module 05: Entire VM Recovery
 5. [] Enter file name: +++X:\Backup\Backup_ORCL+++
 6. [] Click the **Open** button.
 7. [] Select the **Tiny-Veeam** VBK full backup file.
+8. [] Click the **Open** button.
+
 8. [] Click the **Browse...** button in the **Extract folder** section.
 9. [] Expand **Computer**.
-10. [] Expand the **X:** drive.
+10. [] Expand the **Local Drive (X:)** drive.
 11. [] Select the **VMs** folder.
 12. [] Click the **OK** button.
 13. [] Tick the **Tiny-Veeam** check box.
