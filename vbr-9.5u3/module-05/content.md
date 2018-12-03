@@ -11,7 +11,7 @@ Module 05: Entire VM Recovery
 3. [] Click the **Restore** button on the **Home** ribbon.
 4. [] Select **Microsoft Hyper-V backup...**.
 5. [] Select **Instant VM recovery**.
-6. [] Click the **Next** button.
+6. [] Click the **Next** button on the **Restore Type** step.
 7. [] Click the **Add VM** button.
 8. [] Select **From backup...**.
 9. [] Expand the **Backup Tiny-Veeam2** job.
@@ -20,22 +20,20 @@ Module 05: Entire VM Recovery
 12. [] Click the **Next** button on the **Virtual Machines** step.
 13. [] Keep the default settings and click the **Next** button on the **Recovery Mode** step.
 14. [] Keep the default settings and click the **Next** button on the **Reason** step.
-15. [] Click **Show objects**.
+15. [] Click the **Show objects** text link.
 16. [] Click the **OK** button.
 17. [] Click the **Finish** button on the **Summary** step.
-> Note: Note: When you perform restore operations on the same Veeam backup server where it was backed up, the storage keys and metakeys required to unlock an encrypted file are still stored in the Veeam Backup & Replication database. Veeam Backup & Replication uses these keys to unlock the backup file, and you do not have to enter a password.
+> Note: When you perform restore operations on the same Veeam backup server where it was backed up, the storage keys and metakeys required to unlock an encrypted file are still stored in the Veeam Backup & Replication database. Veeam Backup & Replication uses these keys to unlock the backup file, and you do not have to enter a password.
 
 18. [] Watch the restore process until you see the **Waiting for user action...** text then click the **Close** button.
 19. [] Launch the **Hyper-V Manager** from the Windows task bar.
 20. [] Select the **VEEAM-DCINFRA** host.
-21. [] Right click the **Tiny-Veeam2** virtual machine.
-22. [] Select **Connect**.
-23. [] Verify the virtual machine guest operation system boots (FreeDOS) then switch back to the **Veeam Backup & Replication console** window via the Windows task bar.
+21. [] Select the **Tiny-Veeam2** virtual machine.
+23. [] Verify the **Snapshots** pane containts **Veeam Instant VM Recovery snapshot** then close the **Hyper-V Manager** window.
 24. [] Select **Instant Recovery (1)** in the **Home** view.
-25. [] Right click the **Tiny-Veeam2** virtual machine.
-26. [] Select **Migrate to production...**.
-27. [] Double click the pending **Instant Recovery** session.
-28. [] Watch the migration process until it is completed then click the **Close** button.
+25. [] Select the **Tiny-Veeam2** virtual machine.
+26. [] Click the **Migrate to production...** button on the **Instant VM Recovery** ribbon.
+> Note: As soon as the migrate to production is completed the Instant Recovery (1) section will disappear. If you no longer see Instant VM Recovery (1) it means the migration to production has completed.
 
 ===
 
