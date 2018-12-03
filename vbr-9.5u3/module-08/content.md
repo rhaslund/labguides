@@ -207,35 +207,35 @@ Module 8: Introduction to Agents
 61. [] Select **Bare Metal Recovery** by pressing the **down arrow** keyboard button and then the **Enter** keyboard button.
 > Tip: It is possible to utilize the keyboard only instead of the mouse to avoid issues.
 
-61. [] Select the **Network storage** radio button by pressing the **Tab** keyboard button until the **Local storage** radio button is selected, then press the **down arrow** keyboard button.
-62. [] Press the **Enter** keyboard button (or click the **Next** button) on the **Backup Location** step.
-63. [] Select the **Veeam backup repository** radio button by pressing the **down arrow** keyboard button until the **Veeam backup repository** radio button is selected.
-64. [] Press the **Enter** keyboard button (or click the **Next** button) on the **Network Storage** step.
-65. [] Enter:
+62. [] Select the **Network storage** radio button by pressing the **Tab** keyboard button until the **Local storage** radio button is selected, then press the **down arrow** keyboard button.
+63. [] Press the **Enter** keyboard button (or click the **Next** button) on the **Backup Location** step.
+64. [] Select the **Veeam backup repository** radio button by pressing the **down arrow** keyboard button until the **Veeam backup repository** radio button is selected.
+65. [] Press the **Enter** keyboard button (or click the **Next** button) on the **Network Storage** step.
+66. [] Enter:
  1. Veeam backup server name: +++10.0.3.2+++.
  2. Username: +++VEEAMINFRA\\Administrator+++.
  3. Password: +++Pa$$w0rd+++.
 
-66. [] Press the **Enter** keyboard button (or click the **Next** button) on the **Backup Server** step.
-67. [] Press the **Enter** keyboard button (or click the **Next** button) on the **Backup** step.
-68. [] Press the **Enter** keyboard button (or click the **Next** button) on the **Restore Point** step.
-69. [] Press the **Enter** keyboard button (or click the **Next** button) on the **Restore Mode** step.
-70. [] Press the **Enter** keyboard button (or click the **Restore** button) on the **Summary** step.
-71. [] Press the **Enter** keyboard button (or click the **Finish** button) on the **Progress** step.
+67. [] Press the **Enter** keyboard button (or click the **Next** button) on the **Backup Server** step.
+68. [] Press the **Enter** keyboard button (or click the **Next** button) on the **Backup** step.
+69. [] Press the **Enter** keyboard button (or click the **Next** button) on the **Restore Point** step.
+70. [] Press the **Enter** keyboard button (or click the **Next** button) on the **Restore Mode** step.
+71. [] Press the **Enter** keyboard button (or click the **Restore** button) on the **Summary** step.
+72. [] Press the **Enter** keyboard button (or click the **Finish** button) on the **Progress** step.
 > Note: Only about 10 GB of data will need to be restored - this will take a maximum of 10 minutes.
 
-72. [] Click the **Yes** button to confirm rebooting the computer.
-73. [] Wait for Windows to complete startup then press the **CTRL** and **ALT** keyboard buttons together to release the mouse from the **virtual machine console** window.
-74. [] Click the **VM** menu.
-75. [] Select **Guest**.
-76. [] Select **Send Ctrl\+Alt\+Del**.
-77. [] Click inside the **virtual machine console** window.
-78. [] Enter password: +++Pa$$w0rd+++.
-79. [] Click the **right arrow login** button (or press the **Enter** keyboard button).
-80. [] Click the **Cancel** button to dismiss the **Shutdown Event Tracker** window.
-81. [] Close the **BAREMETAL** virtual machine console window.
-82. [] Close the **VMware vSphere Client** window.
-83. [] Close the **Veeam Backup & Replication console** window.
+73. [] Click the **Yes** button to confirm rebooting the computer.
+74. [] Wait for Windows to complete startup then press the **CTRL** and **ALT** keyboard buttons together to release the mouse from the **virtual machine console** window.
+75. [] Click the **VM** menu.
+76. [] Select **Guest**.
+77. [] Select **Send Ctrl\+Alt\+Del**.
+78. [] Click inside the **virtual machine console** window.
+79. [] Enter password: +++Pa$$w0rd+++.
+80. [] Click the **right arrow login** button (or press the **Enter** keyboard button).
+81. [] Click the **Cancel** button to dismiss the **Shutdown Event Tracker** window.
+82. [] Close the **BAREMETAL** virtual machine console window.
+83. [] Close the **VMware vSphere Client** window.
+84. [] Close the **Veeam Backup & Replication console** window.
 
 ---
 
