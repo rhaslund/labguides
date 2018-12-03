@@ -104,7 +104,7 @@ Module 8: Introduction to Agents
 23. [] Click the **Apply** button on the **Schedule** step.
 24. [] Tick the **Run the job when I click Finish** check box.
 25. [] Click the **Finish** button.
-> Important! The Agent Backup Job Windows job must be in a Stopped status with the last result as Success before continuing to the next lab exercise — this will take a maximum of 8 minutes.
+> Important! The Agent Backup Job Windows job must be in a Stopped status with the last result as Success before continuing to the next lab exercise — this will take a maximum of 9 minutes.
 
 ===
 
