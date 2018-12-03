@@ -16,13 +16,13 @@ Module 8: Introduction to Agents
 8. [] Close the **Server Manager** window.
 9. [] Expand the **veeamlab.local** domain.
 10. [] Select the **Computers** organizational unit.
-11. [] Click the **Actions** menu.
+11. [] Click the **Action** menu.
 12. [] Select **New**.
 13. [] Select **Group**.
 14. [] Enter group name: +++Veeam Agent protected servers+++
 15. [] Click the **OK** button.
 16. [] Select the **PHYSICAL** computer.
-17. [] Click the **Actions** menu.
+17. [] Click the **Action** menu.
 18. [] Select **Add to a group...**.
 19. [] Enter object name: +++Veeam Agent protected servers+++.
 20. [] Click the **OK** button.
