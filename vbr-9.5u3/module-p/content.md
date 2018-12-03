@@ -57,8 +57,8 @@
 
 1. [] Launch the **Remote Desktop Connection client** from the Windows task bar.
 2. [] Enter computer: +++VEEAM-VBR2+++.
-3. [] Click the **Connect** button.
-4. [] Enter password: +++Pa$$w0rd+++.
+3. [] Enter password: +++Pa$$w0rd+++.
+4. [] Click the **Connect** button.
 5. [] Launch the **File Explorer** from the Windows task bar.
 6. [] Navigate to +++\\\\VEEAM-VBR\\Install+++.
 7. [] Double click the **VeeamBackup&Replication** ISO Disc Image File.
@@ -82,15 +82,7 @@
 23. [] Keep the default settings and click the **Next** button on the **Port Configuration** step.
 24. [] Keep the default settings and click the **Next** button on the **Data Locations** step.
 24. [] Keep the default settings and click the **Install** button on the **Ready to install** step.
-25. [] Click the **Finish** button.
-26. [] Close the **Remote Desktop Connection** window.
-
-===
-
-## Step 3: Enable the Backup Copy Job WAN job
-
-1. [] Click the **Disable** button on the **Backup Copy** ribbon.
-> **Important: Do NOT continue until the job status is Idle.**
+25. [] Minimize the **Remote Desktop Connection** window.
 
 ===
 
@@ -101,7 +93,32 @@
 3. [] Click the **Turn Off* text link in the **Actions** pane.
 4. [] Click the **Turn Off** button.
 5. [] Wait for the **Tiny-Veeam2** virtual machine to reach a powered off state then click the **Delete*** text link in the **Actions** pane.
+6. [] Click the **Delete** button.
+7. [] Close the **Hyper-V Manager** window.
 
+===
+
+# Lab P.4: Deleting SQL table
+
+## Step 1: Deleting SQL table
+
+1. [] Launch the **Remote Desktop Connection client** from the Windows task bar.
+2. [] Enter computer: +++VEEAM-SP01+++.
+3. [] Click the **Connect** button.
+4. [] Enter password: +++Pa$$w0rd+++.
+5. [] Click the **Connect** button.
+6. [] Launch **SQL Server Management Studio** from the desktop.
+7. [] 
+
+===
+
+## Step 2: Complete installation of Veeam Backup & Replication at VEEAM-VBR2
+
+1. [] Switch back to the **Remote Desktop Connection client** using the Windows task bar.
+2. [] Click the **Finish** button.
+3. [] Close the **Remote Desktop Connection** window.
+4. [] Click the **Disable** button on the **Backup Copy** ribbon.
+> **Important: Do NOT continue until the job status is Idle.**
 
 ---
 
