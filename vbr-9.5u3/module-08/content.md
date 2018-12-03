@@ -132,7 +132,7 @@ Module 8: Introduction to Agents
  1. User name: +++root+++
  2. Password: +++Pa$$w0rd+++
 
-3. [] Click the **Login** butto.
+3. [] Click the **Login** button.
 4. [] Expand the **VEEAM-ESX** host.
 5. [] Expand the **Production** resource pool.
 6. [] Select the **PHYSICAL** virtual machine.
@@ -152,6 +152,8 @@ Module 8: Introduction to Agents
 16. [] Select the **Custom** radio button.
 17. [] Click the **Next** button on the **Configuration** step.
 18. [] Enter name: +++BAREMETAL+++.
+19. [] Click the **Next** button on the **Name and Location** step.
+
 19. [] Select the **Local01** datastore.
 20. [] Click the **Next** button on the **Storage** step.
 21. [] Keep the default setting and click the **Next** button on the **Virtual Machine Version**.
@@ -174,7 +176,9 @@ Module 8: Introduction to Agents
 36. [] Select the **IDE (0:0)** radio button.
 37. [] Click the **Next** button on the **Advanced Options** step.
 38. [] Click the **Finish** button on the **Ready to Complete** step.
-40. [] Right click the **datastore1** datastore in the **Resources** section.
+39. [] Select the **BAREMETAL** virtual machine.
+
+40. [] Right click the **Local01** datastore in the **Resources** section.
 41. [] Select **Browse Datastore...**.
 42. [] Click the **Upload files to this datastore** button (icon looks like a datastore with a green arrow pointing into the datastore)
 43. [] Select **Upload file...**.
@@ -186,12 +190,11 @@ Module 8: Introduction to Agents
 47. [] Click the **Yes** button to confirm replacing any existing file(s).
 
 47. [] Wait for the upload to complete then close the **Datastore Browser** window.
-48. [] Select the **BAREMETAL** virtual machine.
 49. [] Click the **Edit Settings** text link in the **Commands** pane.
 50. [] Select **CD/DVD drive 1** in the hardware list.
 51. [] Select the **Datastore ISO file** radio button.
 52. [] Click the **Browse** button.
-53. [] Double click the **datastore1** datastore.
+53. [] Double click the **Local01** datastore.
 54. [] Select the **VeeamRecoveryMedia.iso** recovery media.
 > Important: It may be necessary to scroll down. The file name may only be partially displayed as VeeamRecover…
 
@@ -219,7 +222,7 @@ Module 8: Introduction to Agents
 69. [] Press the **Enter** keyboard button (or click the **Next** button) on the **Restore Mode** step.
 70. [] Press the **Enter** keyboard button (or click the **Restore** button) on the **Summary** step.
 71. [] Press the **Enter** keyboard button (or click the **Finish** button) on the **Progress** step.
-> Note: This will take a maximum of 8 minutes.
+> Note: Only about 10 GB of data will need to be restored - this will take a maximum of 10 minutes.
 
 72. [] Click the **Yes** button to confirm rebooting the computer.
 73. [] Wait for Windows to complete startup then press the **CTRL** and **ALT** keyboard buttons together to release the mouse from the **virtual machine console** window.
