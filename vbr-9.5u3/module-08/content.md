@@ -92,17 +92,11 @@ Module 8: Introduction to Agents
 10. [] Select **Protection Group 1**.
 11. [] Click the **OK** button.
 12. [] Click the **Next** button on the **Computers** step.
-13. [] Keep the default setting and click the **Next** button.
+13. [] Keep the default setting and click the **Next** button on the **Backup Mode** step.
 14. [] Click the **Backup Repository** drop down menu.
 15. [] Select **Main Backup Repository**.
 
 14. [] Lower the amount of restore points to: +++3+++.
-15. [] Click the **Advanced** button.
-16. [] Click the **Throttling** tab.
-17. [] Tick the **Run backup agent with low I/O priority** check box.
-> Note: This feature ensures that the production workload is less impacted by the backup job.
-
-18. [] Click the **OK** button.
 19. [] Click the **Next** button on the **Storage** step.
 20. [] Click the **Yes** button to dismiss the warning about a potential data sovereignty violation.
 21. [] Keep the default settings and click the **Next** button on the **Guest Processing** step.
