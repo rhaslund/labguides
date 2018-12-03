@@ -56,8 +56,13 @@ Module 05: Entire VM Recovery
 11. [] Click the **Restore** button on the **Home** ribbon.
 12. [] Select **VMware vSphere...**.
 13. [] Keep the default setting and click the **Next** button on the **Restore Options** step.
-14. [] Keep the default setting and click the **Next** button on the **Virtual Machines** step.
-15. [] Select the **Restore to the original location** radio button.
+14. [] Click the **Add VM** button.
+15. [] Select **From backup...**.
+16. [] Expand the **Backup ORCL** job.
+17. [] Select **Tiny-Veeam**.
+18. [] Click the **Add** button.
+
+14. [] Click the **Next** button on the **Virtual Machines** step.
 16. [] Tick the **Quick rollback (restore changed block only)** check box.
 > Note: That means that the VMware CBT technology will be leveraged to enable incremental restore.
 > In the previous scenario, we assumed that the hard drives of the VM were lost because of a hardware or a storage issue. In this one, we will assume that the VM to be restored has a software problem itself – so the incremental restore option (quick rollback) will be used.
@@ -78,7 +83,7 @@ Module 05: Entire VM Recovery
 > - The backup file from which you plan to restore a VM or a VM disk is created with the Use Changed Block Tracking option enabled.
 
 25. [] Switch back to the **VMware vSphere Client** using the Windows task bar.
-26. [] Review the **Recent Tasks** pane to better understand the restore process then close the **VMware vSphere** window.
+26. [] Review the **Recent Tasks** pane to better understand the restore process then close the **VMware vSphere Client** window.
 
 ===
 
