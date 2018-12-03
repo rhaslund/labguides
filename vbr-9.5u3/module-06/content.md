@@ -242,7 +242,7 @@ on the tab.
 
 # Lab 6.6: Guest files recovery
 
-## Step 1: Perform Windows guest files recovery
+## Step 1: Perform Windows guest files recovery through the network
 
 1. [] Launch the **File Explorer** from the Windows task bar.
 2. [] Navigate to: +++\\\\veeam-dc01\\c$\\Important Files+++
@@ -268,58 +268,71 @@ on the tab.
 
 20. [] Click the **Show details** button.
 21. [] Wait until the **Restore completed** text is displayed then click the **Close** button.
-22. [] Launch the **VMware vSphere Client** from the Windows task bar.
-23. [] Enter:
- 1. User name: +++root+++
- 2. Password: +++Pa$$w0rd+++
-
-24. [] Click the **Login** butto.
-25. [] Expand the **VEEAM-ESX** host.
-26. [] Expand the **Production** resource pool.
-27. [] Select the **VEEAM-DC01** virtual machine.
-28. [] Click the **Edit Settings** text link in the **Commands** pane.
-29. [] Select **Network adapter 1**.
-30. [] Untick the **Connected** check box.
-31. [] Click the **OK** button.
-> Important: If the Backup Browser is still open, it is important that you close it. Because an RPC network connection was detected during the first session, failover to a networkless restore (VIX) will not be attempted.
-
-32. [] Select the **VEEAM-DC01** virtual machine.
-33. [] Click the **Guest Files** button on the **Backup** ribbon.
-34. [] Select **Microsoft Windows**.
-35. [] Keep the default settings and click the **Next** button on the **Restore Point** step.
-36. [] Keep the default settings and click the **Next** button on the **Reason** step.
-37. [] Click the **Finish** button on the **Summary** step.
-38. [] Double click the **Important Files** folder.
-39. [] Select **invoice.docx**.
-40. [] Click the **Restore** button on the **File** ribbon.
-41. [] Select **Overwrite**.
-> Note: Select option Keep if you do not want to overwrite the existing file with the restored one.
-
-42. [] Click the **Show details** button.
-43. [] Wait until the **Restore completed** text is displayed then switch to the **VMware vSphere Client** window
-> Important: Do NOT close the Backup Browser window at this time.
-
-44. [] Select the **VEEAM-DC01** virtual machine.
-45. [] Tick the **Connected** check box.
-46. [] Click the **OK** button.
-47. [] Launch the **File Explorer** from the Windows task bar.
-48. [] Navigate to the **C:\\VeeamFLR** folder
-> Important! If you stopped the Restore Wizard in substep 36 of this module this folder will be empty. Launch it again by repeating substeps 25-36 of this module OR ask your instructor for assistance
-
-49. [] Double click the **VEEAM-DC01** folder (which contains a random ID).
-50. [] Double click the **Volume1** folder.
-51. [] Right click the **market strategy.pptx** file.
-52. [] Select **Copy**.
-53. [] Navigate to **\\\\veeam-dc01\\c$\\Important Files**.
-54. [] Right click inside the **Important Files** folder.
-55. [] Select **Paste**.
-56. [] Verify all three files are present in the **\\\\veeam-dc01\\c$\\Important Files** folder then close the **File Explorer** window.
-57. [] Close the **VMware vSphere Client** window.
-58. [] Close the **Backup Browser** window.
 
 ===
 
-## Step 2: Perform Linux guest files recovery
+## Step 2: Perform Windows guest files recovery through VMware Tools (network-less)
+
+1. [] Launch the **VMware vSphere Client** from the Windows task bar.
+2. [] Enter:
+ 1. User name: +++root+++
+ 2. Password: +++Pa$$w0rd+++
+
+3. [] Click the **Login** butto.
+4. [] Expand the **VEEAM-ESX** host.
+5. [] Expand the **Production** resource pool.
+6. [] Select the **VEEAM-DC01** virtual machine.
+7. [] Click the **Edit Settings** text link in the **Commands** pane.
+8. [] Select **Network adapter 1**.
+9. [] Untick the **Connected** check box.
+10. [] Click the **OK** button.
+> Note: The virtual machine is now disconnected from the network.
+>
+> Important: If the Backup Browser is still open, it is important that you close it. Because an RPC network connection was detected during the first session, failover to a networkless restore (VIX) will not be attempted.
+
+11. [] Select the **VEEAM-DC01** virtual machine.
+12. [] Click the **Guest Files** button on the **Backup** ribbon.
+13. [] Select **Microsoft Windows**.
+14. [] Keep the default settings and click the **Next** button on the **Restore Point** step.
+15. [] Keep the default settings and click the **Next** button on the **Reason** step.
+16. [] Click the **Finish** button on the **Summary** step.
+17. [] Double click the **Important Files** folder.
+18. [] Select **invoice.docx**.
+19. [] Click the **Restore** button on the **File** ribbon.
+20. [] Select **Overwrite**.
+> Note: Select option Keep if you do not want to overwrite the existing file with the restored one.
+
+21. [] Click the **Show details** button.
+22. [] Wait until the **Restore completed** text is displayed then switch to the **VMware vSphere Client** window
+> Important: Do NOT close the Backup Browser window at this time.
+
+23. [] Select the **VEEAM-DC01** virtual machine.
+24. [] Tick the **Connected** check box.
+25. [] Click the **OK** button.
+> Note: The virtual machine is now once again connected to the network.
+
+===
+
+## Step 3: Perform Windows guest files recovery using a mount point
+
+1. [] Launch the **File Explorer** from the Windows task bar.
+2. [] Navigate to the **C:\\VeeamFLR** folder
+> Important! If you closed the Backup Browser in this folder will be empty. Ask your instructor for assistance.
+
+3. [] Double click the **VEEAM-DC01** folder (which contains a random ID).
+4. [] Double click the **Volume1** folder.
+5. [] Right click the **market strategy.pptx** file.
+6. [] Select **Copy**.
+7. [] Navigate to **\\\\veeam-dc01\\c$\\Important Files**.
+8. [] Right click inside the **Important Files** folder.
+9. [] Select **Paste**.
+10. [] Verify all three files are present in the **\\\\veeam-dc01\\c$\\Important Files** folder then close the **File Explorer** window.
+11. [] Close the **VMware vSphere Client** window.
+12. [] Close the **Backup Browser** window.
+
+===
+
+## Step 4: Perform Linux guest files recovery
 
 1. [] Select **Disk** in the **Backups** section of the **Home** view.
 2. [] Expand the **Backup ORCL** job.
