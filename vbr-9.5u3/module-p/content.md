@@ -27,6 +27,80 @@
 
 ## Step 2: Review created Hyper-V replicas
 
+1. [] Launch the **Hyper-V Manager** from the Microsoft Windows task bar.
+2. [] Select **Hyper-V Manager** in the navigation pane on the left side.
+3. [] Click the **Connect to Server...** text link in the **Actions** pane.
+4. [] Enter another computer: +++VEEAM-HYPERV+++.
+> Note: VEEAM-HYPERV will get added as VEEAM-DCInfra because this is actually the real server name of VEEAM-HYPERV host.
+
+5. [] Select the **Tiny-Veeam2_replica** virtual machine.
+> Note: Review the Snapshots section. For each new incremental run of the replication job, Veeam Backup & Replication triggers a regular snapshot of the replica.
+
+6. [] Close the **Hyper-V Manager** window.
+
+===
+
+# Lab P.2: Deploying a second Veeam backup server
+
+## Step 1: Disable the Backup Copy Job WAN job
+
+1. [] Launch the **Veeam Backup & Replication Console** from the desktop.
+2. [] Click the **Connect** button.
+3. [] Select **Backup Copy** in the **Jobs** section of the **Home** view.
+4. [] Select the **Backup Copy Job WAN** job.
+5. [] Click the **Disable** button on the **Backup Copy** ribbon.
+> **Important: Do NOT continue until the job status is Stopped.**
+
+===
+
+## Step 2: Install Veeam Backup & Replication at VEEAM-VBR2
+
+1. [] Launch the **Remote Desktop Connection client** from the Windows task bar.
+2. [] Enter computer: +++VEEAM-VBR2+++.
+3. [] Click the **Connect** button.
+4. [] Enter password: +++Pa$$w0rd+++.
+5. [] Launch the **File Explorer** from the Windows task bar.
+6. [] Navigate to +++\\\\VEEAM-VBR\\Install+++.
+7. [] Double click the **VeeamBackup&Replication** ISO Disc Image File.
+8. [] Launch the **Setup.exe** file.
+9. [] CLick the **Install** button on the left hand side.
+> **Important: Do not click the Install text links on the right hand side.**
+
+10. [] Select the **Select the I accept the terms in the license agreement** radio button.
+11. [] Click the **Next** button on the **License Agreement** step.
+12. [] Click the **Browse...** button.
+13. [] Enter file name: +++\\\\VEEAM-VBR\\Install\\+++.
+14. [] Click the **Open** button.
+15. [] Select the **veeam_availability_suite_nfr_2_2.lic** file.
+16. [] Click the **Open** button.
+17. [] Click the **Next** button on the **Provide License** step.
+18. [] Keep the default settings and click the **Next** button on the **Program features** step.
+19. [] Tick the **Let me specify different settings** check box.
+20. [] Click the **Next** button on the **Default Configuration** step.
+21. [] Keep the default settings and click the **Next** button on the **Service Account** step.
+22. [] Keep the default settings and click the **Next** button on the **SQL Server Instance** step.
+23. [] Keep the default settings and click the **Next** button on the **Port Configuration** step.
+24. [] Keep the default settings and click the **Next** button on the **Data Locations** step.
+24. [] Keep the default settings and click the **Install** button on the **Ready to install** step.
+25. [] Click the **Finish** button.
+26. [] Close the **Remote Desktop Connection** window.
+
+===
+
+## Step 3: Enable the Backup Copy Job WAN job
+
+1. [] Click the **Disable** button on the **Backup Copy** ribbon.
+> **Important: Do NOT continue until the job status is Idle.**
+
+===
+
+# Lab P.3: Deleting VMs
+
+1. [] Launch the **Hyper-V Manager** from the Windows task bar.
+2. [] Select the **Tiny-Veeam2** virtual machine.
+3. [] Click the **Turn Off* text link in the **Actions** pane.
+4. [] Click the **Turn Off** button.
+5. [] Wait for the **Tiny-Veeam2** virtual machine to reach a powered off state then click the **Delete*** text link in the **Actions** pane.
 
 
 ---
