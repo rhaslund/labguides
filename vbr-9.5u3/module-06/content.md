@@ -261,7 +261,7 @@ on the tab.
 14. [] Keep the default settings and click the **Next** button on the **Reason** step.
 15. [] Click the **Finish** button on the **Summary** step.
 16. [] Double click the **Important Files** folder.
-17. [] Select **invoice.docx**.
+17. [] Select **quote.docx**.
 18. [] Click the **Restore** button on the **File** ribbon.
 19. [] Select **Overwrite**.
 > Note: Select option Keep if you do not want to overwrite the existing file with the restored one.
