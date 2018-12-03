@@ -53,30 +53,32 @@ Module 05: Entire VM Recovery
 8. [] Expand the **Production** resource pool.
 9. [] Select **Tiny-Veeam** and review the configuration.
 10. [] Switch back to the **Veeam Backup & Replication console** using the Windows task bar.
-11. [] Click the **Entire VM** button on the **Backup** ribbon.
-12. [] Keep the default setting and click the **Next** button on the **Virtual Machines** step.
-13. [] Select the **Restore to the original location** radio button.
-14. [] Tick the **Quick rollback (restore changed block only)** check box.
+11. [] Click the **Restore** button on the **Home** ribbon.
+12. [] Select **VMware vSphere...**.
+13. [] Keep the default setting and click the **Next** button on the **Restore Options** step.
+14. [] Keep the default setting and click the **Next** button on the **Virtual Machines** step.
+15. [] Select the **Restore to the original location** radio button.
+16. [] Tick the **Quick rollback (restore changed block only)** check box.
 > Note: That means that the VMware CBT technology will be leveraged to enable incremental restore.
 > In the previous scenario, we assumed that the hard drives of the VM were lost because of a hardware or a storage issue. In this one, we will assume that the VM to be restored has a software problem itself – so the incremental restore option (quick rollback) will be used.
 > Instead of restoring an entire VM or VM disk from a backup file, Veeam Backup & Replication recovers only those data blocks that are necessary to revert the VM or VM disk to an earlier point in time. Incremental restore significantly reduces the recovery time and has little impact on the production environment.
 
-15. [] Click the **Next** button on the **Restore Mode** step.
-16. [] Leave the **reason** empty and click the **Next** button on the **Reason** step.
-17. [] Click the **Show VM(s)** text link to verify it is only **Tiny-Veeam** that will be powered off during the restore.
-18. [] Click the **OK** button.
-19. [] Click the **OK** button to confirm the original virtual machine will be deleted from the infrastructure.
-20. [] Tick the **Power on target VM after restoring** check box.
-21. [] Click the **Finish** button on the **Summary** step.
-22. [] Wait for the log to display **Restore completed successfully** then click the **Close** button.
+17. [] Click the **Next** button on the **Restore Mode** step.
+18. [] Leave the **reason** empty and click the **Next** button on the **Reason** step.
+19. [] Click the **Show VM(s)** text link to verify it is only **Tiny-Veeam** that will be powered off during the restore.
+20. [] Click the **OK** button.
+21. [] Click the **OK** button to confirm the original virtual machine will be deleted from the infrastructure.
+22. [] Tick the **Power on target VM after restoring** check box.
+23. [] Click the **Finish** button on the **Summary** step.
+24. [] Wait for the log to display **Restore completed successfully** then click the **Close** button.
 > Note: To use incremental restore, make sure that the following requirements are met:
 >
 >- The VM or VM disk is restored to its original location.
 > - CBT is enabled for the VM disk or all disks of a VM you plan to restore.
 > - The backup file from which you plan to restore a VM or a VM disk is created with the Use Changed Block Tracking option enabled.
 
-23. [] Switch back to the **VMware vSphere Client** using the Windows task bar.
-24. [] Review the **Recent Tasks** pane to better understand the restore process then close the **VMware vSphere** window.
+25. [] Switch back to the **VMware vSphere Client** using the Windows task bar.
+26. [] Review the **Recent Tasks** pane to better understand the restore process then close the **VMware vSphere** window.
 
 ===
 
