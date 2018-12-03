@@ -55,7 +55,7 @@ Module 8: Introduction to Agents
 15. [] Select the **Veeam Agents protected servers** security group.
 16. [] Click the **OK** button.
 17. [] Click the **Next** button on the **Active Directory** step.
-18. [] Untick the **Exclude: All virtual machines** check box.
+18. [] Untick the **All virtual machines** check box.
 > Note: Because this is a lab training environment, we will include virtual machines. In a production environment, you would usually not want to protect virtual machines using Veeam Agents, unless, for example, the virtual machine does not support hypervisor snapshots
 
 19. [] Untick the **All computers that have been offline for over 30 days** check box.
