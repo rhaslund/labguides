@@ -46,7 +46,7 @@
 24. [] Keep the default settings and click the **Next** button on the **Port Configuration** step.
 25. [] Keep the default settings and click the **Next** button on the **Data Locations** step.
 26. [] Keep the default settings and click the **Install** button on the **Ready to install** step.
-> **Important: The installation will take about 30 minutes. Please continue with the next lab exercises, you will come back to complete it in a later step.
+> **Important: The installation will take about 30 minutes. Please continue with the next lab exercises, you will come back to complete it in a later step.**
 
 27. [] Minimize the **Remote Desktop Connection** window.
 
