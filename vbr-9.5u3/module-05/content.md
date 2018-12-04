@@ -246,7 +246,7 @@ Module 05: Entire VM Recovery
 2. [] Click the **Yes** button to confirm that undo failover plan will reset all replica VMs in the plan to the latest state.
 3. [] Click the **Close** button.
 4. [] Switch back to the **VMware vSphere Client** window using the Windows task bar.
-5. [] Wait until both the **Tiny-Veeam_replica** and **VEEAM-DC01_replica** virtual machines have been powered off then click the **Power On** text link in the **Commands** pane.
+5. [] Wait until both the **Tiny-Veeam_replica** and **VEEAM-DC01_replica** virtual machines have been powered off. Verify the **Tiny-Veeam** virtual machine is still selected then click the **Power On** text link in the **Commands** pane.
 6. [] Select **VEEAM-DC01**.
 7. [] Click the **Power On** text link in the **Commands** pane.
 > Note: Please verify that both the Tiny-Veeam and VEEAM-DC01 virtual machines are in a powered on state before continuing.
