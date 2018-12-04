@@ -259,11 +259,11 @@ Module 05: Entire VM Recovery
 # Lab 5.6: Perform planned failover
 
 1. [] Select **Ready** in the **Replicas** section of the **Home** view.
-1. [] Select **Tiny-Veeam2**.
-2. [] Click the **Planned Failover** button on the **Replica** ribbon.
-3. [] Click the **Next** button on the **Virtual Machines** step.
-4. [] Keep the default settings and click the **Next** button on the **Reason** step.
-5. [] Click the **Finish** button on the **Summary** step.
+2. [] Select **Tiny-Veeam2**.
+3. [] Click the **Planned Failover** button on the **Replica** ribbon.
+4. [] Click the **Next** button on the **Virtual Machines** step.
+5. [] Keep the default settings and click the **Next** button on the **Reason** step.
+6. [] Click the **Finish** button on the **Summary** step.
 > Note: When you start the planned failover, Veeam Backup & Replication performs the following steps:
 >
 > 1. The failover process triggers the replication job to perform an incremental backup and copy the un-replicated changes to the replica.
@@ -271,15 +271,15 @@ Module 05: Entire VM Recovery
 > 3. The failover process triggers the replication job to perform another incremental backup run and copy a portion of the lastminute changes to the replica. The replica becomes fully synchronized with the source VM.
 > 4. The VM is failed over to its replica.
 
-5. [] Watch the planned failover process until the log displays the **Failover completed successfully** text then click the **Close** button.
+7. [] Watch the planned failover process until the log displays the **Failover completed successfully** text then click the **Close** button.
 > Note: This process will take a maximum of 5 minutes, please have some patience.
 
-6. [] After the failover completes successfully, select **Active (1)** in the **Replicas** section of the **Home** view.
-7. [] Select **Tiny-Veeam2**.
-8. [] Click the **Permanent Failover** button on the **Replica** ribbon.
-9. [] Click the **Yes** button to proceed with permanent failover.
-10. [] Watch the permanent failover process until the log displays the **Permanent failover is completed** text then click the **Close** button.
-11. [] Close the **Veeam Backup and Replication console** window.
+8. [] After the failover completes successfully, select **Active (1)** in the **Replicas** section of the **Home** view.
+9. [] Select **Tiny-Veeam2**.
+10. [] Click the **Permanent Failover** button on the **Replica** ribbon.
+11. [] Click the **Yes** button to proceed with permanent failover.
+12. [] Watch the permanent failover process until the log displays the **Permanent failover is completed** text then click the **Close** button.
+13. [] Close the **Veeam Backup and Replication console** window.
 
 ---
 
