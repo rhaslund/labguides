@@ -615,40 +615,41 @@ Module 9: Advanced Data Protection
 ## Step 2: Restoring a configuration backup to another Veeam server
 
 1. [] Launch the **Remote Desktop Connection client** using the Windows task bar.
-2. [] Keep computer as +++VEEAM-VBR+++ and click the **Connect** button.
-3. [] Enter password: +++Pa$$w0rd+++
-4. [] Click the **OK** button.
-5. [] Click the **Yes** button to ignore the certificate warning.
-6. [] Click the **≡** button in the top left corner in **Veeam Backup and Replication**.
-7. [] Select **Configuration Backup**.
-8. [] Click the **Restore...** button.
-9. [] Select the **Migrate** radio button.
-10. [] Click the **Next** on the **Restore Mode** step.
-11. [] Click the **Browse...** button.
-12. [] Enter file name: +++X:\\Backups\\VeeamConfigBackup\\VEEAM-VBR+++.
-13. [] Click the **Open** button.
-14. [] Select the **VEEAM-VBR** configuration backup file.
+2. [] Enter computer: +++VEEAM-VBR2+++
+3. [] Cick the **Connect** button.
+4. [] Enter password: +++Pa$$w0rd+++
+5. [] Click the **OK** button.
+6. [] Click the **Yes** button to ignore the certificate warning.
+7. [] Click the **≡** button in the top left corner in **Veeam Backup and Replication**.
+8. [] Select **Configuration Backup**.
+9. [] Click the **Restore...** button.
+10. [] Select the **Migrate** radio button.
+11. [] Click the **Next** on the **Restore Mode** step.
+12. [] Click the **Browse...** button.
+13. [] Enter file name: +++X:\\Backups\\VeeamConfigBackup\\VEEAM-VBR+++.
+14. [] Click the **Open** button.
+15. [] Select the **VEEAM-VBR** configuration backup file.
 > Note: The configuration backup file is named in the following way: ServerName\_YYYY-MM- DD\_HH-MM-SS.bco
 
-15. [] Click the **Open** button.
-16. [] Click **Analyze**. button on the **Configuration Backup** step.
-17. [] Review the backup contents and click the **Next** button.
-18. [] Enter **Password**: +++vmce+++.
-19. [] Click the **Validate** button.
-20. [] Click the **Connect** button on the **Target Database** step.
-21. [] Click the **Yes** button to confirm that the current configuration database will be lost.
-22. [] Click the **Restore** button on the **Restore Options** step.
-23. [] Click the **Yes** button to confirm closing the **Veeam Backup and Replication Console**.
+16. [] Click the **Open** button.
+17. [] Click **Analyze**. button on the **Configuration Backup** step.
+18. [] Review the backup contents and click the **Next** button.
+19. [] Enter **Password**: +++vmce+++.
+20. [] Click the **Validate** button.
+21. [] Click the **Connect** button on the **Target Database** step.
+22. [] Click the **Yes** button to confirm that the current configuration database will be lost.
+23. [] Click the **Restore** button on the **Restore Options** step.
+24. [] Click the **Yes** button to confirm closing the **Veeam Backup and Replication Console**.
 > Note: Because some jobs are not scheduled, they could not be disabled, which will cause a warning.
 
-24. [] Click the **Yes** button to perform a full configuration restore.
-25. [] Wait for the restore process to complete then click the **Next** button on the **Restore** step.
-26. [] Click the **Start** button on the **Credentials** step.
+25. [] Click the **Yes** button to perform a full configuration restore.
+26. [] Wait for the restore process to complete then click the **Next** button on the **Restore** step.
+27. [] Click the **Start** button on the **Credentials** step.
 > Note:  Because the Configuration Backup is encrypted, both usernames and passwords are included. If the Configuration Backup is not encrypted, you would have to enter all the passwords here.
 
-27. [] Untick the **Launch the Backup & Replication user interface** check box.
-28. [] Click the **Finish** button on the **Summary** step.
-29. [] Close the Remote Desktop Connection to **VEEAM-VBR2**.
+28. [] Untick the **Launch the Backup & Replication user interface** check box.
+29. [] Click the **Finish** button on the **Summary** step.
+30. [] Close the Remote Desktop Connection to **VEEAM-VBR2**.
 
 ===
 
