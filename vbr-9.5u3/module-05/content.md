@@ -228,7 +228,7 @@ Module 05: Entire VM Recovery
 
 1. [] Switch back to the **VMware vSphere Client** using the Windows task bar.
 2. [] Select **VEEAM-DC01**
-3. [] Select the **Shut Down Guest** text link in the **Commands** pane.
+3. [] Click the **Shut Down Guest** text link in the **Commands** pane.
 4. [] Click the **Yes** button to confirm shut down of the guest operating system.
 5. [] Select **Tiny-Veeam**.
 6. [] Select the **Power Off** text link in the **Commands** pane.
