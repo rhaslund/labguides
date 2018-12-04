@@ -90,13 +90,12 @@
 
 # Lab P.3: Deleting VMs
 
-1. [] Launch the **Hyper-V Manager** from the Windows task bar.
-2. [] Select the **Tiny-Veeam2** virtual machine.
-3. [] Click the **Turn Off...** text link in the **Actions** pane.
-4. [] Click the **Turn Off** button.
-5. [] Wait for the **Tiny-Veeam2** virtual machine to reach a powered off state then click the **Delete...** text link in the **Actions** pane.
-6. [] Click the **Delete** button.
-7. [] Close the **Hyper-V Manager** window.
+1. [] Select the **Tiny-Veeam2** virtual machine.
+2. [] Click the **Turn Off...** text link in the **Actions** pane.
+3. [] Click the **Turn Off** button.
+4. [] Wait for the **Tiny-Veeam2** virtual machine to reach a powered off state then click the **Delete...** text link in the **Actions** pane.
+5. [] Click the **Delete** button.
+6. [] Close the **Hyper-V Manager** window.
 
 ===
 
@@ -130,11 +129,17 @@
 1. [] Switch back to the **Remote Desktop Connection VEEAM-VBR** using the Windows task bar.
 2. [] Click the **Finish** button.
 3. [] Close the **Veeam Backup & Replication installer** window.
-4. [] Close the **Remote Desktop Connection** window.
-5. [] Click the **Disable** button on the **Backup Copy** ribbon.
+4. [] Close the **File Explorer** window.
+5. [] Launch the **Veeam Backup & Replication console** from the desktop.
+6. [] Click the **Connect** button.
+7. [] Click the **Apply** button to complete updates to the **Mount Server** component on the **Servers** step.
+8. [] Click the **Finish** button on the **Update** step.
+9. [] Close the **Veeam Backup and Replication console** window.
+10. [] Close the **Remote Desktop Connection** window.
+11. [] Click the **Disable** button on the **Backup Copy** ribbon.
 > **Important: Do NOT continue until the job status is Idle.**
 
-6. [] Close the **Veeam Backup & Replication Console** window.
+12. [] Close the **Veeam Backup & Replication Console** window.
 
 ---
 
