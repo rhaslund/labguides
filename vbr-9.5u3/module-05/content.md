@@ -10,7 +10,7 @@ Module 05: Entire VM Recovery
 2. [] Click the **Connect** button.
 3. [] Click the **Restore** button on the **Home** ribbon.
 4. [] Select **Microsoft Hyper-V backup...**.
-5. [] Select **Instant VM recovery**.
+5. [] Select the **Instant VM recovery** radio button.
 6. [] Click the **Next** button on the **Restore Type** step.
 7. [] Click the **Add VM** button.
 8. [] Select **From backup...**.
