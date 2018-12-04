@@ -94,7 +94,7 @@
 2. [] Select the **Tiny-Veeam2** virtual machine.
 3. [] Click the **Turn Off...* text link in the **Actions** pane.
 4. [] Click the **Turn Off** button.
-5. [] Wait for the **Tiny-Veeam2** virtual machine to reach a powered off state then click the **Delete...*** text link in the **Actions** pane.
+5. [] Wait for the **Tiny-Veeam2** virtual machine to reach a powered off state then click the **Delete...** text link in the **Actions** pane.
 6. [] Click the **Delete** button.
 7. [] Close the **Hyper-V Manager** window.
 
