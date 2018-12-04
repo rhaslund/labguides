@@ -27,63 +27,60 @@ Module 05: Entire VM Recovery
 
 18. [] Watch the restore process until you see the **Waiting for user action...** text then click the **Close** button.
 19. [] Launch the **Hyper-V Manager** from the Windows task bar.
-20. [] Select the **VEEAM-DCINFRA** host.
-21. [] Select the **Tiny-Veeam2** virtual machine.
-23. [] Verify the **Snapshots** pane containts **Veeam Instant VM Recovery snapshot** then close the **Hyper-V Manager** window.
-24. [] Select **Instant Recovery (1)** in the **Home** view.
-25. [] Select the **Tiny-Veeam2** virtual machine.
-26. [] Click the **Migrate to production...** button on the **Instant VM Recovery** ribbon.
+20. [] Select the **Tiny-Veeam2** virtual machine.
+21. [] Verify the **Snapshots** pane containts **Veeam Instant VM Recovery snapshot** then close the **Hyper-V Manager** window.
+22. [] Select **Instant Recovery (1)** in the **Home** view.
+23. [] Select the **Tiny-Veeam2** virtual machine.
+24. [] Click the **Migrate to production** button on the **Instant VM Recovery** ribbon.
 > Note: As soon as the migrate to production is completed the Instant Recovery (1) section will disappear. If you no longer see Instant VM Recovery (1) it means the migration to production has completed.
 
 ===
 
 # Lab 5.2: Full VM recovery
 
-1. [] Expand **Backups** in the **Home** view.
-2. [] Select **Disk**.
-3. [] Expand the **Backup ORCL** backup job.
-4. [] Verify the **Tiny-Veeam** virtual machine has at least 1 (one) restore point then launch the **VMware vSphere Client** from the Windows task bar.
-5. [] Enter:
+1. [] Select **Disk** in the **Backups** section of the **Home** view.
+2. [] Expand the **Backup ORCL** backup job.
+3. [] Verify the **Tiny-Veeam** virtual machine has at least 1 (one) restore point then launch the **VMware vSphere Client** from the Windows task bar.
+4. [] Enter:
  1. Name: +++VEEAM-ESX+++
  2. User name: +++root+++
  3. Password: +++Pa$$w0rd+++
 
-6. [] Click the **Login** button.
-7. [] Expand the **VEEAM-ESX** host.
-8. [] Expand the **Production** resource pool.
-9. [] Select **Tiny-Veeam** and review the configuration.
-10. [] Switch back to the **Veeam Backup & Replication console** using the Windows task bar.
-11. [] Click the **Restore** button on the **Home** ribbon.
-12. [] Select **VMware vSphere...**.
-13. [] Keep the default setting and click the **Next** button on the **Restore Options** step.
-14. [] Click the **Add VM** button.
-15. [] Select **From backup...**.
-16. [] Expand the **Backup ORCL** job.
-17. [] Select **Tiny-Veeam**.
-18. [] Click the **Add** button.
-
-14. [] Click the **Next** button on the **Virtual Machines** step.
-16. [] Tick the **Quick rollback (restore changed block only)** check box.
+5. [] Click the **Login** button.
+6. [] Expand the **VEEAM-ESX** host.
+7. [] Expand the **Production** resource pool.
+8. [] Select **Tiny-Veeam** and review the configuration.
+9. [] Switch back to the **Veeam Backup & Replication console** using the Windows task bar.
+10. [] Click the **Restore** button on the **Home** ribbon.
+11. [] Select **VMware vSphere...**.
+12. [] Keep the default setting and click the **Next** button on the **Restore Options** step.
+13. [] Click the **Add VM** button.
+14. [] Select **From backup...**.
+15. [] Expand the **Backup ORCL** job.
+16. [] Select **Tiny-Veeam**.
+17. [] Click the **Add** button.
+18. [] Click the **Next** button on the **Virtual Machines** step.
+19. [] Tick the **Quick rollback (restore changed block only)** check box.
 > Note: That means that the VMware CBT technology will be leveraged to enable incremental restore.
 > In the previous scenario, we assumed that the hard drives of the VM were lost because of a hardware or a storage issue. In this one, we will assume that the VM to be restored has a software problem itself – so the incremental restore option (quick rollback) will be used.
 > Instead of restoring an entire VM or VM disk from a backup file, Veeam Backup & Replication recovers only those data blocks that are necessary to revert the VM or VM disk to an earlier point in time. Incremental restore significantly reduces the recovery time and has little impact on the production environment.
 
-17. [] Click the **Next** button on the **Restore Mode** step.
-18. [] Leave the **reason** empty and click the **Next** button on the **Reason** step.
-19. [] Click the **Show VM(s)** text link to verify it is only **Tiny-Veeam** that will be powered off during the restore.
-20. [] Click the **OK** button.
-21. [] Click the **OK** button to confirm the original virtual machine will be deleted from the infrastructure.
-22. [] Tick the **Power on target VM after restoring** check box.
-23. [] Click the **Finish** button on the **Summary** step.
-24. [] Wait for the log to display **Restore completed successfully** then click the **Close** button.
+20. [] Click the **Next** button on the **Restore Mode** step.
+21. [] Leave the **reason** empty and click the **Next** button on the **Reason** step.
+22. [] Click the **Show VM(s)** text link to verify it is only **Tiny-Veeam** that will be powered off during the restore.
+23. [] Click the **OK** button.
+24. [] Click the **OK** button to confirm the original virtual machine will be deleted from the infrastructure.
+25. [] Tick the **Power on target VM after restoring** check box.
+26. [] Click the **Finish** button on the **Summary** step.
+27. [] Wait for the log to display **Restore completed successfully** then click the **Close** button.
 > Note: To use incremental restore, make sure that the following requirements are met:
 >
 >- The VM or VM disk is restored to its original location.
 > - CBT is enabled for the VM disk or all disks of a VM you plan to restore.
 > - The backup file from which you plan to restore a VM or a VM disk is created with the Use Changed Block Tracking option enabled.
 
-25. [] Switch back to the **VMware vSphere Client** using the Windows task bar.
-26. [] Review the **Recent Tasks** pane to better understand the restore process then minimize the **VMware vSphere Client** window.
+28. [] Switch back to the **VMware vSphere Client** using the Windows task bar.
+29. [] Review the **Recent Tasks** pane to better understand the restore process then minimize the **VMware vSphere Client** window.
 
 ===
 
