@@ -20,7 +20,7 @@ Module 4: Deployment and Installation
 14. [] Keep default username: VMCE\Administrator and enter password: +++Pa%%w0rd+++.
 15. [] Click the **Next** button.
 16. [] Click the **Install** button to start the installation.
-> Note: The installation process can take up to 15 minutes.
+> Note: The installation process can take up to 25 minutes, please have some patience. The installation takes quite some time because many components need to be installed such as Microsoft SQL Server, Veeam Backup & Replication, Veaam ONE and of course Veeam Availability Orchestrator.
 
 17. [] Click the **Finish** button to close the Veeam® Availability Orchestrator setup wizard.
 18. [] Click the **Yes** button to logoff the VEEAM-VAO server.
