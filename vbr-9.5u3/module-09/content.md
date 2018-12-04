@@ -429,7 +429,7 @@ Module 9: Advanced Data Protection
 9. [] Enter search: +++\*.txt+++.
 10. [] Press the **Enter** keyboard button.
 11. [] Click the **Advanced search** button.
-12. [] Right the **first file**.
+12. [] Right click the **first file**.
 13. [] Select **Restore**.
 14. [] Select **Overwrite**.
 15. [] Click the **Yes** button.
