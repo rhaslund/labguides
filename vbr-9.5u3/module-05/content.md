@@ -117,7 +117,7 @@ Module 05: Entire VM Recovery
 ## Step 1: Perform a failover to the replicated VM
 
 1. [] Switch back to the  **VMware vSphere Client** using the Windows task bar.
-2. [] Verify the **Tiny-Veeam** virtual machine is still selected then click the **Power off** button in the **Commands** pane.
+2. [] Verify the **Tiny-Veeam** virtual machine is still selected then click the **Power off** text link in the **Commands** pane.
 3. [] Click the **Yes** button to confirm powering off the virtual machine.
 4. [] Minimize the **VMware vSphere Client**.
 5. [] Select **Ready** in the **Replicas** section of the **Home** view.
@@ -145,7 +145,7 @@ Module 05: Entire VM Recovery
 7. [] Wait until the **Tiny-Veeam_replica** virtual machine is powered off then select the **Tiny-Veeam** virtual machine in the **Production** resource pool.
 > Note: Tiny-Veeam_replica is automatically powered off as a part of the undo failover process.
 
-8. [] Click the **Power On** button in the **Commands** pane.
+8. [] Click the **Power On** text link in the **Commands** pane.
 9. [] Minimize the **VMware vSphere Client** window.
 
 ===
