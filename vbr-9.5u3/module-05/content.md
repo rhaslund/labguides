@@ -178,7 +178,7 @@ Module 05: Entire VM Recovery
 
 ## Step 5: Commit failback
 
-1. [] Verify the **Tiny-Veeam2** virtual machine is still selected then click the **Commit Failback** button on the **Replica** ribbon.
+1. [] Verify the **Tiny-Veeam2** virtual machine is still selected. Wait for the **Status** to reach **Failback** then click the **Commit Failback** button on the **Replica** ribbon.
 > Note: When you commit failback, you confirm that you want to get back to the production VM. Veeam Backup & Replication resumes replication activities for the VM to which you failed back.
 
 2. [] Click the **Yes** button to confirm the commit failback.
