@@ -30,7 +30,7 @@ Module 10: Veeam ONE Features and Functionality
 1. [] Launch **Veeam ONE Reporter** from the desktop.
 2. [] Tick the **Use Windows session credentials** check box.
 3. [] Click the **Login** button.
-4. [] Click the **Add new dashboard** button in the top right corner.
+4. [] Click the **Add new dashboard...** button in the top right corner.
 5. [] Enter name: +++Student dashboard+++.
 6. [] Select the top **Columns: 2** radio button.
 7. [] Click the **OK** button.
@@ -39,7 +39,7 @@ Module 10: Veeam ONE Features and Functionality
 
 ## Step 2: Populate a dashboard
 
-1. [] Click the **plus sign** of the left hand widget placeholder.
+1. [] Click the **plus sign** on the left hand widget placeholder.
 2. [] Enter caption: +++VI alarm+++.
 3. [] Select **VMware Alarms**.
 3. [] Click the **Next** button on the **Widget pack** step.
@@ -51,7 +51,7 @@ Module 10: Veeam ONE Features and Functionality
 9. [] Untick the **All items** check box.
 10. [] Scroll down until the **Duplicate IP address detected** alarm is visible.
 11. [] Tick the **Duplicate IP address detected** check box.
-12. [] Click outside the **Alarms** drop down menu to collaps the **Alarms** drop down menu.
+12. [] Click outside the **Alarms** drop down menu to collapse the **Alarms** drop down menu.
 12. [] Click the **Finish** button on the **Options** step.
 13. [] Minimize the **Veeam ONE Reporter** window.
 
@@ -62,30 +62,31 @@ Module 10: Veeam ONE Features and Functionality
 ## Step 1: Set up email notifications
 
 1. [] Switch to the **Veeam ONE Monitor** window using the Windows task bar.
-3. [] Click the **Options** button.
-4. [] Select **Server Settings...**.
-5. [] > Enter the **SMTP options** as follows:
- 1. SMTP Server: +++VEEAM-EX01.veeamlab.local+++.
+2. [] Click the **Options** button.
+3. [] Select **Server Settings...**.
+4. [] Enter:
+ 1. SMTP Server: +++VEEAM-EX01.veeamlab.local+++
  2. From: +++VeeamONE@veeamlab.local+++
 
-6. [] Click the **Send test email...** button.
+5. [] Click the **Send test email...** button.
 6. [] Enter e-mail address: +++administrator@veeamlab.local+++.
 7. [] Click the **OK** button to send the test e-mail.
-7. [] Click the **OK** button to confirm the test e-mail has been sent.
-8. [] Launch **Outlook Web Access** from the Windows task bar.
-9. [] Enter:
+8. [] Click the **OK** button to confirm the test e-mail has been sent.
+9. [] Launch **Outlook Web Access** from the Windows task bar.
+10. [] Enter:
  1. Username +++administrator@veeamlab.local+++
  2. Password:+++Pa$$w0rd+++
 
-10. Click the **Sign In** button.
-10. [] Verify that the email from **Veeam ONE Monitor** has been received then close the **Outlook Web Access** window.
-11. [] Click the  **Notification Policy** tab.
-12. [] Click the **Configure...** button in the **Default email notifications group** section.
-13. [] Enter group of recipients: +++administrator@veeamlab.local+++
+11. [] Click the **Sign In** button.
+12. [] Verify that the email from **Veeam ONE Monitor** has been received then close the **Outlook Web Access** window.
+13. [] Click the  **Notification Policy** tab.
+14. [] Click the **Configure...** button in the **Default email notifications group** section.
+15. [] Enter group of recipients: +++administrator@veeamlab.local+++
+16. [] Click the **Add** button.
+17. [] Click the **OK** button to close the **Default Email Notification Group** window.
+18. [] Click the **OK** button to close the **Server Settings** window.
 
-14. [] Click the **Add.** button.
-14. [] Click the **OK** button to close the **Default Email Notification Group** window.
-15. [] Click the **OK** button to close the **Server Settings** window.
+===
 
 ## Step 2: Create a custom alert
 
@@ -94,28 +95,27 @@ Module 10: Veeam ONE Features and Functionality
 3. [] Click the **New...** text link in the **Actions pane**.
 4. [] Enter alarm name: +++LABTEST VM CPU usage+++.
 5. [] Click the **Rules** tab.
-5. [] Click the **Add...** button.
-6. [] Select the **Rule for specific conditions or state** radio button.
-7. [] Click the **Next** button on the **Choose Rule Type/Trigger type** step.
-8. [] Select the **Resource usage is out of allowed range** radio button.
-9. [] Click the **Next** button on the **Choose Rule Type/Rule condition** step.
-10. [] Click the **Counter** drop down menu.
-11. [] Select **CPU Usage**.
-11. [] Enter In the For the following time period: +++5+++ min.
-12. [] Enter In the Warning box: +++70+++%.
-13. [] Enter In the Error box: +++90+++%.
-14. [] Click the **Finish** button on the **Define Rule** step.
-15. [] Click the **Assignment** tab.
-16. [] Click the **Add** button in the **Assignment for alarm** section.
-17. [] Select **Infrastructure tree...**.
-
-17. [] Expand **Virtual Infrastructure**.
-18. [] Tick the **VEEAM-ESX** check box.
+6. [] Click the **Add...** button.
+7. [] Select the **Rule for specific conditions or state** radio button.
+8. [] Click the **Next** button on the **Choose Rule Type/Trigger type** step.
+9. [] Select the **Resource usage is out of allowed range** radio button.
+10. [] Click the **Next** button on the **Choose Rule Type/Rule condition** step.
+11. [] Click the **Counter** drop down menu.
+12. [] Select **CPU Usage**.
+13. [] Enter In the For the following time period: +++5+++ min.
+14. [] Enter In the Warning box: +++70+++%.
+15. [] Enter In the Error box: +++90+++%.
+16. [] Click the **Finish** button on the **Define Rule** step.
+17. [] Click the **Assignment** tab.
+18. [] Click the **Add** button in the **Assignment for alarm** section.
+19. [] Select **Infrastructure tree...**.
+20. [] Expand **Virtual Infrastructure**.
+21. [] Tick the **VEEAM-ESX** check box.
 > Note: You may want to assign the alarm to the custom categorization groups configured in **Veeam ONE Business View**. However, multiple assignment types for the same alarm cannot be combined.
 
-19. [] Click the **Assign** button.
-20. [] Click the **Save** button.
-21. [] Close the **Veeam ONE Monitor** window.
+22. [] Click the **Assign** button.
+23. [] Click the **Save** button.
+24. [] Close the **Veeam ONE Monitor** window.
 
 ===
 
