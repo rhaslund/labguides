@@ -120,18 +120,17 @@ Module 05: Entire VM Recovery
 2. [] Verify the **Tiny-Veeam** virtual machine is still selected then click the **Power off** button in the **Commands** pane.
 3. [] Click the **Yes** button to confirm powering off the virtual machine.
 4. [] Minimize the **VMware vSphere Client**.
-5. [] Expand **Replicas** in the **Home** view.
-6. [] Select **Ready**.
-7. [] Select **Tiny-Veeam**.
-8. [] Click the **Failover Now** button on the **Replica** ribbon.
-9. [] Keep the default settings and click the **Next** button on the **Virtual Machines** step.
-10. [] Keep the default settings and click the **Next** button on the **Reason** step.
-11. [] Click the **Finish** button on the **Summary** step.
-12. [] Watch the failover process until the log displays the **Failover completed successfully** text then click the **Close** button.
-13. [] Switch back to the **VMware vSphere Client** using the Windows task bar.
-14. [] Expand the **Replicas** resource pool.
-25. [] Select the **Tiny-Veeam_replica** virtual machine.
-26. [] Review the configuration of the **Tiny-Veeam_replica** virtual machine then minimize the **VMware vSphere Client**.
+5. [] Select **Ready** in the **Replicas** section of the **Home** view.
+6. [] Select **Tiny-Veeam**.
+7. [] Click the **Failover Now** button on the **Replica** ribbon.
+8. [] Keep the default settings and click the **Next** button on the **Virtual Machines** step.
+9. [] Keep the default settings and click the **Next** button on the **Reason** step.
+10. [] Click the **Finish** button on the **Summary** step.
+11. [] Watch the failover process until the log displays the **Failover completed successfully** text then click the **Close** button.
+12. [] Switch back to the **VMware vSphere Client** using the Windows task bar.
+13. [] Expand the **Replicas** resource pool.
+14. [] Select the **Tiny-Veeam_replica** virtual machine.
+15. [] Review the configuration of the **Tiny-Veeam_replica** virtual machine then minimize the **VMware vSphere Client**.
 
 ===
 
