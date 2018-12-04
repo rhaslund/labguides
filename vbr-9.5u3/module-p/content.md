@@ -27,7 +27,7 @@
 7. [] Navigate to +++\\\\VEEAM-VBR\\Install+++.
 8. [] Double click the **VeeamBackup&Replication** ISO Disc Image File.
 9. [] Launch the **Setup.exe** file.
-10. [] CLick the **Install** button on the left hand side.
+10. [] Click the **Install** button on the left hand side.
 > **Important: Do not click the Install text links on the right hand side.**
 
 11. [] Select the **Select the I accept the terms in the license agreement** radio button.
