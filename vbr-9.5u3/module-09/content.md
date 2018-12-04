@@ -476,6 +476,8 @@ Module 9: Advanced Data Protection
 19. [] Click the **Login** button.
 20. [] Enter username: +++testmail+++
 21. [] Press the **Enter** keyboard button.
+> Note: If the testmail user cannot be found, the username and password set in Configuration\\Setting was incorrect. Click the Configuration button in the top right corner, Navigate to the Sessions view and enter username VEEAMLAB\\Administrator and password Pa$$w0rd.
+
 22. [] Select the **testmail** user.
 23. [] Tick the **Mail** check box.
 24. [] Click the **Restore** button.
