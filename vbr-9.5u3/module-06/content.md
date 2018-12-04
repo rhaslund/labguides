@@ -61,7 +61,7 @@ Module 6: Objects Recovery
 3. [] Select **Microsoft SharePoint**.
 4. [] Select **http://veeam-sp01**.
 5. [] Click the **Next** button on the **Site** step.
-6. [] Select the **latest full backup** 
+6. [] Select the **latest full backup**.
 7. [] Click the **Next** button on the **Content Database** step.
 8. [] Keep the default settings and click the **Next** button on the **Restore Reason** step.
 9. [] Click the **Finish** button on the **Summary** step.
