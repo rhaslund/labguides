@@ -183,7 +183,7 @@ Module 10: Veeam ONE Features and Functionality
 12. [] Tick the **Course VMs** check box.
 13. [] Click the **OK** button.
 14. [] Click the **Preview** button.
-> Note: The report will open in the new tab.
+> Note: The report will open in a new window.
 
 15. [] Maximize the **Protected VMs report** window.
 16. [] Review the report using the arrow buttons to switch between pages then close the **Protected VMs report** window.
@@ -198,7 +198,7 @@ Module 10: Veeam ONE Features and Functionality
 1. [] Select the **VMware Infrastructure Assessment** folder.
 2. [] Click the **VM Configuration Assessment** text link.
 3. [] Keep the default settings and click the **Preview** button.
-4. [] Maximize the **Protected VMs report** window.
+4. [] Maximize the **VM Configuration Assessment** window.
 5. [] Review the report using the arrow buttons to switch between pages then close the **VM Configuration Assessment report** window.
 
 ---
