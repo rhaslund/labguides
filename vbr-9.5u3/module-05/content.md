@@ -154,7 +154,7 @@ Module 05: Entire VM Recovery
 
 1. [] Switch back to the **Hyper-V Manager** using the Windows task bar.
 2. [] Select **Tiny-Veeam2**.
-3. [] Click the **Turn Off** text link in the **Actions** pane.
+3. [] Click the **Turn Off...** text link in the **Actions** pane.
 4. [] Click the **Turn Off** button to confirm turning off the **Tiny-Veeam2** virtual machine.
 5. [] Minimize the **Hyper-V Manager** window.
 6. [] Select **Tiny-Veeam2**.
@@ -196,7 +196,7 @@ Module 05: Entire VM Recovery
 ## Step 1: Create a failover plan
 
 1. [] Click the **Home** ribbon.
-2. [] Click the **Failover Plan** button.
+2. [] Click the **Failover Plan** button on the **Home** ribbon.
 3. [] Select **VMware vSphere...**.
 4. [] Enter:
  1. Name: +++Failover plan+++
