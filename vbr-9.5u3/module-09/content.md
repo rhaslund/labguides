@@ -427,16 +427,17 @@ Module 9: Advanced Data Protection
 6. [] Click the **Files** tab.
 7. [] Enter machine name: +++VEEAM-DC01+++.
 8. [] Press the **ENTER** keyboard button.
-8. [] Click the **Search** tab.
-9. [] Enter search: +++\*.txt+++.
-10. [] Press the **Enter** keyboard button.
-11. [] Click the **Advanced search** button.
-12. [] Right click the **first file**.
-13. [] Select **Restore**.
-14. [] Select **Overwrite**.
-15. [] Click the **Yes** button.
+9. [] Click the **Search** tab.
+10. [] Enter search: +++\*.txt+++.
+11. [] Press the **Enter** keyboard button.
+12. [] Click the **Advanced search** button.
+13. [] Right click the **first file**.
+14. [] Select **Restore**.
+15. [] Select **Overwrite**.
+16. [] Click the **Yes** button.
 > Note:  The restore session will start, and you can view its progress in the session log.
-16. [] Minimize the **Veeam Backup Enterprise Manager** window.
+
+17. [] Minimize the **Veeam Backup Enterprise Manager** window.
 
 ===
 
