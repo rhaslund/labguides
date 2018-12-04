@@ -231,7 +231,7 @@ Module 05: Entire VM Recovery
 3. [] Click the **Shut Down Guest** text link in the **Commands** pane.
 4. [] Click the **Yes** button to confirm shut down of the guest operating system.
 5. [] Select **Tiny-Veeam**.
-6. [] Select the **Power Off** text link in the **Commands** pane.
+6. [] Click the **Power Off** text link in the **Commands** pane.
 7. [] Click the **Yes** button to confirm powering off the virtual machine.
 8. [] Minimize the **VMware vSphere Client** window.
 9. [] Select **Failover Plans** in the **Replicas** section of the **Home** view.
@@ -259,6 +259,7 @@ Module 05: Entire VM Recovery
 
 # Lab 5.6: Perform planned failover
 
+1. [] Select **Ready** in the **Replicas** section of the **Home** view.
 1. [] Select **Tiny-Veeam2**.
 2. [] Click the **Planned Failover** button on the **Replica** ribbon.
 3. [] Click the **Next** button on the **Virtual Machines** step.
