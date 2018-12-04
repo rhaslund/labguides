@@ -28,7 +28,7 @@ Module 05: Entire VM Recovery
 18. [] Watch the restore process until you see the **Waiting for user action...** text then click the **Close** button.
 19. [] Launch the **Hyper-V Manager** from the Windows task bar.
 20. [] Select the **Tiny-Veeam2** virtual machine.
-21. [] Verify the **Snapshots** pane containts **Veeam Instant VM Recovery snapshot** then close the **Hyper-V Manager** window.
+21. [] Verify the **Snapshots** pane containts **Veeam Instant VM Recovery snapshot** then minimize the **Hyper-V Manager** window.
 22. [] Select **Instant Recovery (1)** in the **Home** view.
 23. [] Select the **Tiny-Veeam2** virtual machine.
 24. [] Click the **Migrate to production** button on the **Instant VM Recovery** ribbon.
@@ -152,7 +152,7 @@ Module 05: Entire VM Recovery
 
 ## Step 3: Failover a replicated VM again
 
-1. [] Launch the **Hyper-V Manager** from the Windows task bar.
+1. [] Switch back to the **Hyper-V Manager** using the Windows task bar.
 2. [] Select **Tiny-Veeam2**.
 3. [] Click the **Turn Off** text link in the **Actions** pane.
 4. [] Click the **Turn Off** button to confirm turning off the **Tiny-Veeam2** virtual machine.
