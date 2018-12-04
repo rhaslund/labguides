@@ -90,8 +90,8 @@ Module 10: Veeam ONE Features and Functionality
 
 ## Step 2: Create a custom alert
 
-1. [] Navigate to the **Alarm Management** section.
-2. [] Select **Virtual Machine** in the **VMware** section.
+1. [] Navigate to the **Alarm Management** view.
+2. [] Select **Virtual Machine** in the **VMware** section of the **Alarm Management** view.
 3. [] Click the **New...** text link in the **Actions pane**.
 4. [] Enter alarm name: +++LABTEST VM CPU usage+++.
 5. [] Click the **Rules** tab.
@@ -102,12 +102,12 @@ Module 10: Veeam ONE Features and Functionality
 10. [] Click the **Next** button on the **Choose Rule Type/Rule condition** step.
 11. [] Click the **Counter** drop down menu.
 12. [] Select **CPU Usage**.
-13. [] Enter In the For the following time period: +++5+++ min.
-14. [] Enter In the Warning box: +++70+++%.
-15. [] Enter In the Error box: +++90+++%.
+13. [] Enter for the following time period: +++5+++ min.
+14. [] Enter warning: +++70+++%.
+15. [] Enter error: +++90+++%.
 16. [] Click the **Finish** button on the **Define Rule** step.
 17. [] Click the **Assignment** tab.
-18. [] Click the **Add** button in the **Assignment for alarm** section.
+18. [] Click the **Add...** button in the **Assignment for alarm** section.
 19. [] Select **Infrastructure tree...**.
 20. [] Expand **Virtual Infrastructure**.
 21. [] Tick the **VEEAM-ESX** check box.
@@ -145,14 +145,14 @@ Module 10: Veeam ONE Features and Functionality
 ## Step 2: Create Business View groups
 
 1. [] Navigate to the **Groups** view.
-2. [] Click the **Veeam Courses** tab.
+2. [] Click the **Veeam Courses** tab in the **Groups** section.
 > Important: Please double check that you have selected the right Veeam Courses tab.
 
 3. [] Click the **Grouping Expression...** button.
 4. [] Enter expression: +++CASE WHEN Substring(Name, 0, 5)\="VEEAM" THEN "Course VMs" ELSE "Other VMs" END+++.
 5. [] Click the **OK** button.
 
-6. [] Click the **Workspace** tab.
+6. [] Click the **Workspace** tab in the top left corner.
 7. [] Verify that you see the newly created **Veeam Courses** column then close the **Veeam ONE Business View** window.
 
 ===
@@ -162,32 +162,31 @@ Module 10: Veeam ONE Features and Functionality
 ## Step 1. Run the Protected VMs report
 
 1. [] Switch to the **Veeam ONE Reporter** window using the Windows task bar.
-2. [] Open **Veeam ONE Reporter** by double-clicking the desktop shortcut.
-4. [] Click the **Configuration** tab.
+2. [] Click the **Configuration** tab.
 > Note: Currently the infrastructure is scheduled to collect data from the server automatically every three hours. Since we want to see the group we have just created in the report before it is collected and synced automatically, it's required to run the data collection manually.
 
-5. [] Navigate to the **Servers** view.
-6. [] Select **VEEAM-ESX**.
-7. [] Click the **Run now** button.
+3. [] Navigate to the **Servers** view.
+4. [] Select **VEEAM-ESX**.
+5. [] Click the **Run now** button.
 > Important: Wait for the data collection to complete before continuing.
 
-8. [] Click the **Workspace** tab.
-9. [] Select the **Veeam Backup Monitoring** folder.
-10. [] Click the **Protected VMs** text link.
-11. [] Select the **Business View object(s)** radio button.
+6. [] Click the **Workspace** tab.
+7. [] Select the **Veeam Backup Monitoring** folder.
+8. [] Click the **Protected VMs** text link.
+9. [] Select the **Business View object(s)** radio button.
 > Note: The RPO is set to 1 week by default. The report will examine whether VMs have valid backup and replica restore points created within this specified time range (RPO period).
 
-12. [] Click the **Click to choose** text link.
+10. [] Click the **Click to choose** text link.
 > Note: This will let you define Business View groups that should be analyzed in the report.
 
-13. [] Expand the **Veeam Courses** category.
-14. [] Tick the **Course VMs** check box.
-15. [] Click the **OK** button.
-16. [] Click the **Preview** button.
+11. [] Expand the **Veeam Courses** category.
+12. [] Tick the **Course VMs** check box.
+13. [] Click the **OK** button.
+14. [] Click the **Preview** button.
 > Note: The report will open in the new tab.
 
-17. [] Maximize the **Protected VMs report** window.
-18. [] Review the report using the arrow buttons to switch between pages then close the **Protected VMs report** window.
+15. [] Maximize the **Protected VMs report** window.
+16. [] Review the report using the arrow buttons to switch between pages then close the **Protected VMs report** window.
 > Note: A VM is considered to be Protected if there is at least one valid backup or replica restore point that meets the designated RPO for it. A VM is considered to be Unprotected if it has outdated or missing backup or replica restore points.
 
 ===
