@@ -66,7 +66,7 @@ Module 05: Entire VM Recovery
 > Instead of restoring an entire VM or VM disk from a backup file, Veeam Backup & Replication recovers only those data blocks that are necessary to revert the VM or VM disk to an earlier point in time. Incremental restore significantly reduces the recovery time and has little impact on the production environment.
 
 20. [] Click the **Next** button on the **Restore Mode** step.
-21. [] Leave the **reason** empty and click the **Next** button on the **Reason** step.
+21. [] Keep the default settings and click the **Next** button on the **Reason** step.
 22. [] Click the **Show VM(s)** text link to verify it is only **Tiny-Veeam** that will be powered off during the restore.
 23. [] Click the **OK** button.
 24. [] Click the **OK** button to confirm the original virtual machine will be deleted from the infrastructure.
