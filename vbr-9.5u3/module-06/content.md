@@ -56,47 +56,45 @@ Module 6: Objects Recovery
 
 # Lab 6.2: Perform Microsoft SharePoint items recovery
 
-1. [] Select **Disk** in the **Backup** section of the **Home** view.
-2. [] Expand the **Backup AD & Exchange & SharePoint** backup job.
-3. [] Select the **VEEAM-SP01** virtual machine.
-4. [] Click the **Application Items** button on the **Backup** ribbon.
-5. [] Select **Microsoft SharePoint**.
-6. [] Select **http://veeam-sp01**.
-7. [] Click the **Next** button on the **Site** step.
-8. [] Select the **latest full backup** 
-9. [] Click the **Next** button on the **Content Database** step.
-10. [] Keep the default settings and click the **Next** button on the **Restore Reason** step.
-11. [] Click the **Finish** button on the **Summary** step.
-12. [] If prompted, click the **Yes** button to upgrade the database.
-13. [] Expand **WSS_Content.mdf**.
-14. [] Expand **Home**.
-15. [] Expand **Content**.
-16. [] Check which folder containts the following three files: **invoice.docx**, **market strategy.pptx** and **quote.docx** then click the **folder**.
+1. [] Select the **VEEAM-SP01** virtual machine.
+2. [] Click the **Application Items** button on the **Backup** ribbon.
+3. [] Select **Microsoft SharePoint**.
+4. [] Select **http://veeam-sp01**.
+5. [] Click the **Next** button on the **Site** step.
+6. [] Select the **latest full backup** 
+7. [] Click the **Next** button on the **Content Database** step.
+8. [] Keep the default settings and click the **Next** button on the **Restore Reason** step.
+9. [] Click the **Finish** button on the **Summary** step.
+10. [] If prompted, click the **Yes** button to upgrade the database.
+11. [] Expand **WSS_Content.mdf**.
+12. [] Expand **Home**.
+13. [] Expand **Content**.
+14. [] Check which folder containts the following three files: **invoice.docx**, **market strategy.pptx** and **quote.docx** then click the **folder**.
 > Note: The files should be in either the Documents or Shared Documents list.
 
-17. [] Click the **Restore Library** button on the **Library** ribbon.
-18. [] Select the **The following account** radio button.
-19. [] Enter:
+15. [] Click the **Restore Library** button on the **Library** ribbon.
+16. [] Select the **The following account** radio button.
+17. [] Enter:
  1. Account: +++VEEAMLAB\Administrator+++
  2. Password: +++Pa$$w0rd+++
  
-20. [] Select the **Restore to the following list** radio button.
-21. [] Enter: +++Restored Docs+++.
-22. [] Click the **Next** button.
-23. [] Click the **Restore** button.
-24. [] Click the **OK** button.
-25. [] Close the **Veeam Explorer for Microsoft SharePoint** window.
-26. [] Launch the **Remote Desktop Connection** client from the Windows task bar.
-27. [] Enter computer name: +++VEEAM-SP01+++
-28. [] Leave user name as **VEEAMLAB\Administrator** and enter password: +++Pa$$w0rd+++.
-29. [] Click the **OK** button.
-30. [] Open the **Start menu** by moving the cursor to the bottom left corner then click the **Start** button when it appears.
+18. [] Select the **Restore to the following list** radio button.
+19. [] Enter: +++Restored Docs+++.
+20. [] Click the **Next** button.
+21. [] Click the **Restore** button.
+22. [] Click the **OK** button.
+23. [] Close the **Veeam Explorer for Microsoft SharePoint** window.
+24. [] Launch the **Remote Desktop Connection** client from the Windows task bar.
+25. [] Enter computer name: +++VEEAM-SP01+++
+26. [] Leave user name as **VEEAMLAB\Administrator** and enter password: +++Pa$$w0rd+++.
+27. [] Click the **OK** button.
+28. [] Open the **Start menu** by moving the cursor to the bottom left corner then click the **Start** button when it appears.
 > Note: If you are having issues opening the start menu, please ask your instructor for assistance.
 
-31. [] Launch **Internet Explorer** using the tile.
-32. [] Browse to +++http://veeam-sp01+++
-33. [] Verify the **Restored Docs** list appear under **Recent**.
-34. [] Close the **Remote Desktop Connection** window.
+29. [] Launch **Internet Explorer** using the tile.
+30. [] Browse to +++http://veeam-sp01+++
+31. [] Verify the **Restored Docs** list appear under **Recent**.
+32. [] Close the **Remote Desktop Connection** window.
 
 ===
 
