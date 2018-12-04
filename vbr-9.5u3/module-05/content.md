@@ -167,7 +167,7 @@ Module 05: Entire VM Recovery
 
 ## Step 4: Failback a VM
 
-1. [] Verify the **Tiny-Veeam2** virtual machine is still selected then click the **Failback to Production** button on the **Replica** ribbon.
+1. [] Verify the **Tiny-Veeam2** virtual machine is still selected. Wait for the **Status** to reach **Failover** then click the **Failback to Production** button on the **Replica** ribbon.
 2. [] Keep the default setting and click the **Next** button on the **Replicas** step.
 3. [] Keep the default settings and click the **Next** button on the **Destination** step.
 4. [] Tick the **Power on target VM after restoring** check box.
