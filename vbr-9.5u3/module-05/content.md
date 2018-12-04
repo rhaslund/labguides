@@ -107,7 +107,7 @@ Module 05: Entire VM Recovery
 > Note: Note: The VM files will be extracted to the specified folder.
 
 16. [] Click the **OK** button.
-17. [] Close the **Veeam Extract Utility** window.
+17. [] Click the **Close** button.
 18. [] Close the **File Explorer** window.
 
 ===
