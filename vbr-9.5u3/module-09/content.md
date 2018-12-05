@@ -156,7 +156,7 @@ Module 9: Advanced Data Protection
 
 1. [] Expand **Libraries** in the **Tape Infrastructure** view.
 2. [] Expand **HP MSL G3 Series 1068**.
-> **Important: If the HP MSL G3 Series 1068 tape library is missing, ask your instructor for assistance. The VEEAM-REMOTE server needs to be rebooted.
+> **Important: If the HP MSL G3 Series 1068 tape library is missing, ask your instructor for assistance. The VEEAM-REMOTE server needs to be rebooted.**
 
 3. [] Select **Drives**.
 > Note: There are currently no tape drives available due to missing drivers on the **VEEAM-Remote** server.
