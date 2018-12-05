@@ -185,11 +185,11 @@ Module 7: Verification
 19. [] Click the **OK** button.
 20. [] Click the **Next** button on the **Linked Jobs** step.
 21. [] Keep the default settings and click the **Next** step.
-22. [] Click the **Apply** button on the **Schedule** step.
-> Note: Do NOT schedule this job.
-
-23. [] Tick the **Run the job when I click Finish** check box.
-24. [] Click the **Finish** button on the **Summary** step.
+22. [] Tick the **Run the job automatically** check box.
+23. [] Select the **Monthly at this time** radio button.
+24. [] Click the **Apply** button on the **Schedule** step.
+25. [] Tick the **Run the job when I click Finish** check box.
+26. [] Click the **Finish** button on the **Summary** step.
 
 ---
 
