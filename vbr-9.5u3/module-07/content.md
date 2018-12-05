@@ -7,7 +7,7 @@ Module 7: Verification
 # Lab 7.1: Preparing the infrastructure
 
 1. [] Launch the **Veeam Backup & Replication console** from the desktop.
-2. [] Click the **Connect* button.
+2. [] Click the **Connect** button.
 3. [] Navigate to the **Backup Infrastructure** view.
 4. [] Select **Virtual Labs** in the **SureBackup** section of the **Backup Infrastructure** view.
 5. [] Click the **Add Virtual Lab** button on the **Virtual Lab** ribbon.
@@ -169,7 +169,7 @@ Module 7: Verification
 5. [] Click the **Next** button on the **Name** step.
 6. [] Click the **Virtual lab** drop down menu.
 7. [] Select the **VEEAM-ESX VLAB2 - Predefined** virtual lab.
-> Note: We recommend using the Virtual Lab that was created earlier for SureBackup and the VEEAMESX VLAB2-Predefined for a SureReplica job because it allows two verification jobs to run at the same time and cuts down on waiting time. Otherwise, if SureReplica is launched while SureBackup is still running, you will get an error message ("virtual lab in use").
+> Note: We recommend using the Virtual Lab that was created earlier for SureBackup and the VEEAM-ESX VLAB2 - Predefined for a SureReplica job because it allows two verification jobs to run at the same time and cuts down on waiting time. Otherwise, if SureReplica is launched while SureBackup is still running (already using VEEAM-ESX VLAB1), you will get an error message ("virtual lab in use").
 
 8. [] Click the **Next** button on the **Virtual Lab** step.
 9. [] Keep the default settings and click the **Next** button on the **Application Group** step.
