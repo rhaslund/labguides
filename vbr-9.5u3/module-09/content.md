@@ -227,34 +227,27 @@ Module 9: Advanced Data Protection
 14. [] Select the first seven tapes from the **Free Media Pool**.
 15. [] Click the **OK** button.
 16. [] Click the **Next** button on the **Tapes** step.
-17. [] Select the **Daily at** radio button.
+17. [] Select the **Create new media set for every backup session** radio button.
 > Note: Media set is a set of tapes used for continuously writing backup data. Media set is one of parameters in media pool configuration.
 >
 > A new media set always starts with a free tape. Within one media set, the new data block is appended to a previous one on a tape. Veeam Backup & Replication stores information about all tapes that belong to each media set. You can view the list of names or barcodes of tapes that are associated with a particular media set.
 
-18. [] Click the **Daily at** drop down menu (currently set to **Everyday**).
-19. [] Select **On these days**.
-20. [] Click the **Days...** button.
-21. [] Untick the **Tuesday** check box.
-22. [] Untick the **Wednesday** check box.
-23. [] Untick the **Thursday** check box.
-24. [] Untick the **Friday** check box.
-25. [] Click the **OK** button.
-26. [] Click the **Next** on the **Media Set** step.
-27. [] Select the **Protect data for** radio button.
-28. [] Increase the weeks to protect data to +++4+++ Weeks.
-29. [] Click the **Next** button on the **Retention** step.
-30. [] Keep the default settings and click the **Apply** button on the **Options** step.
-31. [] Click the **Finish** button on the **Summary** step.
-32. [] Verify the media pool for full backups has changed to **Media Pool Full (HP MSL G3 Series 1068)** then click the **Next** button on the **Full Backup** step.
-33. [] Verify the media pool for incremental backups is set to **Media Pool Full (HP MSL G3 Series 1068)** then click the **Next** button on the **Incremental Backup** step.
-34. [] Keep the default settings and click the **Next** button on the **Options** step.
-35. [] Tick the **Run the job automatically** check box.
-36. [] Select the **As new backup files appear** radio button.
-37. [] Click the **Apply** button on the **Schedule** step.
-38. [] Click the **Finish** button on the **Summary** step.
-39. [] Select **Tape** in the **Jobs** section of the **Home** view.
-40. [] Select the **Backup to Tape Job 1** and confirm the job has started.
+18. [] Click the **Next** on the **Media Set** step.
+19. [] Select the **Protect data for** radio button.
+20. [] Increase the weeks to protect data to +++4+++ Weeks.
+21. [] Click the **Next** button on the **Retention** step.
+22. [] Keep the default settings and click the **Apply** button on the **Options** step.
+23. [] Click the **Finish** button on the **Summary** step.
+24. [] Verify the media pool for full backups has changed to **Media Pool Full (HP MSL G3 Series 1068)** then click the **Next** button on the **Full Backup** step.
+25. [] Verify the media pool for incremental backups is set to **Media Pool Full (HP MSL G3 Series 1068)** then click the **Next** button on the **Incremental Backup** step.
+26. [] Keep the default settings and click the **Next** button on the **Options** step.
+27. [] Tick the **Run the job automatically** check box.
+28. [] Select the **As new backup files appear** radio button.
+29. [] Click the **Apply** button on the **Schedule** step.
+30. [] Click the **Finish** button on the **Summary** step.
+31. [] Select **Tape** in the **Jobs** section of the **Home** view.
+32. [] Select the **Backup to Tape Job 1** and confirm the job has started.
+> **Important: Do not wait for this job to finish before moving to the next step.**
 
 ===
 
