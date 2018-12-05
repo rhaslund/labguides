@@ -77,24 +77,26 @@ Module 6: Objects Recovery
 17. [] Enter:
  1. Account: +++VEEAMLAB\Administrator+++
  2. Password: +++Pa$$w0rd+++
- 
-18. [] Select the **Restore to the following list** radio button.
-19. [] Enter: +++Restored Docs+++.
-20. [] Click the **Next** button.
-21. [] Click the **Restore** button.
-22. [] Click the **OK** button.
-23. [] Close the **Veeam Explorer for Microsoft SharePoint** window.
-24. [] Launch the **Remote Desktop Connection** client from the Windows task bar.
-25. [] Enter computer name: +++VEEAM-SP01+++
-26. [] Leave user name as **VEEAMLAB\Administrator** and enter password: +++Pa$$w0rd+++.
-27. [] Click the **OK** button.
-28. [] Open the **Start menu** by moving the cursor to the bottom left corner then click the **Start** button when it appears.
+
+18. [] Click the **Next** button on the **Specify target SharePoint site and domain account to be used** step.
+19. [] Select the **Restore to the following list** radio button.
+20. [] Enter: +++Restored Docs+++.
+21. [] Click the **Next** button on the **Specify target list** step.
+22. [] Click the **Restore** button on the **Specify the restore options** step.
+23. [] Click the **OK** button.
+24. [] Close the **Veeam Explorer for Microsoft SharePoint** window.
+25. [] Launch the **Remote Desktop Connection** client from the Windows task bar.
+26. [] Enter computer name: +++VEEAM-SP01+++
+27. [] Click the **Connect** button.
+28. [] Enter password: +++Pa$$w0rd+++
+29. [] Click the **OK** button.
+30. [] Open the **Start menu** by moving the cursor to the bottom left corner then click the **Start** button when it appears.
 > Note: If you are having issues opening the start menu, please ask your instructor for assistance.
 
-29. [] Launch **Internet Explorer** using the tile.
-30. [] Browse to +++http://veeam-sp01+++
-31. [] Verify the **Restored Docs** list appear under **Recent**.
-32. [] Close the **Remote Desktop Connection** window.
+31. [] Launch **Internet Explorer** using the tile.
+32. [] Browse to +++http://veeam-sp01+++
+33. [] Verify the **Restored Docs** list appear under **Recent**.
+34. [] Close the **Remote Desktop Connection** window.
 
 ===
 
