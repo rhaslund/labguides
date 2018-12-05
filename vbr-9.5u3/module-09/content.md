@@ -304,9 +304,9 @@ Module 9: Advanced Data Protection
 > Note: The Hyper-V role must be enabled on the server, otherwise it is not possible to add it as an off-host backup proxy.
 
 5. [] Keep the default settings and click the **Next** button on the **Traffic Rules** step.
-6. [] Review the settings then click the **Apply** button on the **Review** step.
+6. [] Keep the default settings and click the **Apply** button on the **Review** step.
 7. [] Wait for the required components to be installed and configued then click the **Next** button on the **Apply** step.
-> Note: Checking for updates could take up to 4 minutes.
+> Note: Checking for updates from Windows Update could take up to 4 minutes.
 
 8. [] Click the **Finish** button on the **Summary** step.
 
