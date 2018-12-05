@@ -126,46 +126,45 @@ Module 6: Objects Recovery
 > Note: Since the table has been removed, an error message will be shown in the output window at the bottom
 on the tab.
 
-17. [] Minimize the **Oracle SQL Developer** window.
-
-20. [] Expand the **Backup ORCL** job.
-21. [] Select the **VEEAM-ORCL** virtual machine.
-22. [] Click the **Restore application items** on the **Backup** ribbon.
-23. [] Select **Oracle**.
-24. [] Keep the default settings and click the **Next** button on the **Restore Point** step.
-25. [] Keep the default settings and click the **Next** button on the **Reason** step.
-26. [] Click the **Finish** button on the **Summary** step.
-27. [] Wait for the **Veeam Explorer for Oracle** window to load then select the **DB1** database.
-28. [] Click the **Restore Database** button on the **Home** ribbon.
-29. [] Select **Restore point-in-time state to veeam-orcl...**.
-30. [] Select the **Restore to a specific point in time (requires redo log backups)** radio button.
-31. [] Move the **slider** all the way to the left (select the oldest point in time available).
+17. [] Close the **Oracle SQL Developer** window.
+18. [] Click the **No** button to discard changes.
+19. [] Expand the **Backup ORCL** job.
+20. [] Select the **VEEAM-ORCL** virtual machine.
+21. [] Click the **Restore application items** on the **Backup** ribbon.
+22. [] Select **Oracle**.
+23. [] Keep the default settings and click the **Next** button on the **Restore Point** step.
+24. [] Keep the default settings and click the **Next** button on the **Reason** step.
+25. [] Click the **Finish** button on the **Summary** step.
+26. [] Wait for the **Veeam Explorer for Oracle** window to load then select the **DB1** database.
+27. [] Click the **Restore Database** button on the **Home** ribbon.
+28. [] Select **Restore point-in-time state to veeam-orcl...**.
+29. [] Select the **Restore to a specific point in time (requires redo log backups)** radio button.
+30. [] Move the **slider** all the way to the left (select the oldest point in time available).
 > **Important: Even if the slider appears to be all the way to the left, it is critical you click it and move it to the left.
 
-32. [] Click the **Next** button on the **Specify restore point** step
+31. [] Click the **Next** button on the **Specify restore point** step
 32. [] Enter password: +++Pa$$w0rd+++
-
 33. [] Click the **Next** button on the **Specify target Linux server connection credentials** step.
 34. [] Keep the default settings and click the **Next** button on the **Specify Oracle settings** step.
 35. [] Click the **Restore** button on the **Specify database files target location** step.
 36. [] Click the **Yes** button to dismiss the unable to find some of the specified paths warning.
-> Note: The restore process will appear to be stuck at Mounting backup and 0% for up to 10 minutes, please have some patience.
-
-37. [] Click the **OK** button to start the restore process.
 > Note: The validating... process can take up to 3 minutes, please have some patience.
 
-38. [] Close the **Veeam Explorer for Oracle** window.
-39. [] Launch **Oracle SQL Developer** from the Windows task bar (icon looks like a disk with a green arrow).
-40. [] Expand the **Production Oracle** connection.
-41. [] Enter:
- 1. Username: +++scott+++
- 3. Password: +++tiger+++
+37. [] Click the **OK** button to start the restore process.
+> Note: The restore process will appear to be stuck at Mounting backup and 0% for up to 10 minutes, do not interrupt the process.
+>
+> Note: The complete restore can take up to 20 minutes, please have some patience.
 
-42. [] Click the **OK** button.
-43. [] Enter: +++select * from EMP+++ in the **Production Oracle** tab.
-44. [] Click the **Run Script** button (icon looks like a notepad with a green arrow).
-45. [] Review the output result in the **Script Output** pane then close the **Oracle SQL Developer** window.
-46. [] Click the **No** button.
+38. [] Click the **OK** button.
+39. [] Close the **Veeam Explorer for Oracle** window.
+40. [] Launch **Oracle SQL Developer** from the Windows task bar (icon looks like a disk with a green arrow).
+41. [] Expand the **Production Oracle** connection.
+42. [] Enter password: +++tiger+++
+43. [] Click the **OK** button.
+44. [] Enter: +++select * from EMP+++ in the **Production Oracle** tab.
+45. [] Click the **Run Script** button (icon looks like a notepad with a green arrow) or press the **F5** keyboard button.
+46. [] Review the output result in the **Script Output** pane then close the **Oracle SQL Developer** window.
+47. [] Click the **No** button to discard changes.
 
 ===
 
