@@ -314,16 +314,15 @@ Module 9: Advanced Data Protection
 
 ## Step 3: Edit a Hyper-V backup job and run it in the off-host mode
 
-1. [] Navigate to the **Home** view.
-2. [] Select **Backup** in the **Jobs** section of the **Home** view.
-3. [] Select the **Backup Tiny-Veeam2** job.
-4. [] Click the **Edit** button on the **Job** ribbon.
-5. [] Keep the existing settings and click the **Next** button on the **Name** step.
-6. [] Select the **Tiny-Veeam2** virtual machine.
-> Note:  We are re-adding the VM because the virtual machine UUID has changed due to the permanent failover performed in a previous lab exercise.
+1. [] Select **Backup** in the **Jobs** section of the **Home** view.
+2. [] Select the **Backup Tiny-Veeam2** job.
+3. [] Click the **Edit** button on the **Job** ribbon.
+4. [] Keep the existing settings and click the **Next** button on the **Name** step.
+5. [] Select the **Tiny-Veeam2** virtual machine.
+> Note:  We are re-adding the VM because the virtual machine was deleted then restored in a previous lab exercise.
 
-7. [] Click the **Remove** button.
-8. [] Click the **Add...** button.
+6. [] Click the **Remove** button.
+7. [] Click the **Add...** button.
 9. [] Expand the **VEEAM-HYPERV** host.
 10. [] Select **Tiny-Veeam2**.
 11. [] Click the **Add** button.
