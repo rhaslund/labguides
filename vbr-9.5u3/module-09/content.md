@@ -130,38 +130,9 @@ Module 9: Advanced Data Protection
 
 1. [] Select **Backup** in the **Jobs** section of the **Home** view.
 2. [] Select the **Backup ORCL** job.
-3. [] Click the **Edit** button on the **Job** ribbon.
-4. [] Click the **Storage** text link in the left hand step list.
-5. [] Click the **Advanced** button.
-6. [] Click the **Integration** tab.
-7. [] Untick the **Enable backup from storage snapshots** check box.
-8. [] Click the **OK** button.
-9. [] Click the **Finish** button on the **Storage** step.
-10. [] Click the **Active Full** button on the **Job** ribbon.
-11. [] Click the **Yes** button to confirm running the Active Full backup now.
-12. [] Launch the **VMware vSphere Client** from the Windows task bar.
-13. [] Enter:
- 1. User name: +++root+++.
- 2. Password: +++Pa$$w0rd+++.
- 
-14. [] Click the **Login** button.
-15. [] In the **Recent Task** pane, locate the **Create vitual machine snapshot** text for the **Tiny-Veeam** virtual machine and note down the **Start Time** then locate the **Remove snapshot** text for the **Tiny-Veeam** virtual machine. Compare the two time stamps and calculate the time difference. Minimize the **VMware vSphere Client**.
-> Note:  We choose to launch active full here since Veeam Backup & Replication retrieves data for the whole VM from the source, so backup will take a bit longer, and the difference in time it takes to release the VM snapshot will be more noticeable. 
-
-16. [] Wait for the job **Status** to reach **Stopped** then click the **Edit** button on the **Job** ribbon.
-> Important: It will take a maximum of 6 minutes to complete this active full backup.
-
-17. [] Click the **Storage** text link in the left hand step list.
-18. [] Click the **Advanced** button.
-19. [] Click the **Integration** tab.
-20. [] Tick the **Enable backup from storage snapshots** check box.
-21. [] Click the **OK** button.
-22. [] Click the **Finish** button on the **Storage** step.
-23. [] Click the **Active Full** button on the **Job** ribbon.
-24. [] Click the **Yes** button to confirm running the Active Full backup now.
-25. [] Switch to the **VMware vSphere Client** using the Windows task bar.
-26. [] In the **Recent Task** pane, locate the **Create vitual machine snapshot** text for the **Tiny-Veeam** virtual machine and note down the **Start Time** then locate the **Remove snapshot** text for the **Tiny-Veeam** virtual machine. Compare the two time stamps and calculate the time difference, then compare with the result from the active full without storage snapshots enabled. Close the **VMware vSphere Client** window.
-> Note: The snapshot is open longer time in this example with backup from storage snapshots enabled. This is because it takes time to orchestrate the storage snapshot and there is no data changes in the virtual machine during the backup. Generally, it makes the most sense to enable backup from storage snapshots for highly transactional servers.
+3. [] Click the **Start** button on the **Job** ribbon.
+7. [] Select the **VEEAM-ORCL** virtual machine in the **Statistics** pane at the bottom of the screen.
+8. [] Wait until the text **Using backup proxy** is displayed and confirm the line ends with **from storage snapshot**.
 
 ===
 
@@ -169,16 +140,15 @@ Module 9: Advanced Data Protection
 
 ## Step 1: Add a tape server
 
-1. [] Open **Veeam Backup & Replication**.
-2. [] Navigate to the **Tape Infrastructure** view.
-3. [] There are no Tape Drives or Libraries available yet. In the lab environment, the tape library is connected to the **VEEAM-Remote** server. Click the **Add Tape Server** button on the **Tape** ribbon.
-4. [] Click the **Choose server:** drop down menu.
-5. [] Select **VEEAM-Remote**.
-6. [] Click the **Next** button on the **Server** step.
-7. [] Keep the default settings and click the **Next** button on the **Traffic** step.
-8. [] Click the **Apply** button on the **Review** step.
-9. [] Click the **Next** button on the **Apply** step.
-10. [] Click the **Finish** button on the **Summary** step.
+1. [] Navigate to the **Tape Infrastructure** view.
+2. [] There are no Tape Drives or Libraries available yet. In the lab environment, the tape library is connected to the **VEEAM-Remote** server. Click the **Add Tape Server** button on the **Tape** ribbon.
+3. [] Click the **Choose server:** drop down menu.
+4. [] Select **VEEAM-Remote**.
+5. [] Click the **Next** button on the **Server** step.
+6. [] Keep the default settings and click the **Next** button on the **Traffic** step.
+7. [] Click the **Apply** button on the **Review** step.
+8. [] Click the **Next** button on the **Apply** step.
+9. [] Click the **Finish** button on the **Summary** step.
 
 ===
 
