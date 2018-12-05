@@ -58,36 +58,30 @@ Module 9: Advanced Data Protection
 9. [] Expand **datastore1 (datastore1)**.
 10. [] Hold the **CTRL** keyboard button and select the **VEEAM-DC01** and **VEEAM- SP01** virtual machines.
 11. [] Click the **Add** button.
-> Important: Verify that the boot order is:
->
-> VEEAM-DC01
->
-> VEEAM-SP01
->
-> If necessary, use the **Move Up** and **Move Down** buttons to change the order.
-
-12. [] Click the **Next** button on the **Virtual Machines** step.
-13. [] Click the **Finish** button on the **Summary** step.
-14. [] Navigate to the **Home** view.
-15. [] Click the **SureBackup Job** button on the **Home** ribbon.
-16. [] Select **VMware...**.
-17. [] Enter
+12. [] Select **VEEAM-DC01**.
+13. [] Click the **Move Up** button.
+14. [] Click the **Next** button on the **Virtual Machines** step.
+15. [] Click the **Finish** button on the **Summary** step.
+16. [] Navigate to the **Home** view.
+17. [] Click the **SureBackup Job** button on the **Home** ribbon.
+18. [] Select **VMware...**.
+19. [] Enter
  1. Name: +++SureBackup Job SharePoint+++ into the **Name** field.
  2. Description: +++VEEAM-SP01+++. 
 
-18. [] Click the **Next** button on the **Name** step..
-19. [] Keep the default settings and click the **Next** button on the **Virtual Lab** step.
-20. [] Click the **Application group** drop-down menu.
-21. [] Select the **SharePoint from snapshot** application group.
+20. [] Click the **Next** button on the **Name** step..
+11. [] Keep the default settings and click the **Next** button on the **Virtual Lab** step.
+22. [] Click the **Application group** drop-down menu.
+23. [] Select the **SharePoint from snapshot** application group.
 > Note:  If the Keep the application group running after the job completes check box is ticked the lab will not be powered off when the SureBackup job completes and you could use On-Demand Sandbox for testing, troubleshooting or training. For VMCE training purposes, however, we will leave the check box unticked.
 
-22. [] Click the **Next** button on the **Application Group** step.
-23. [] Click the **Yes** button to ignore the data sovereignty warning.
-24. [] Keep the default settings and click the **Next** button on the **Linked Jobs** step.
-25. [] Keep the default settings and click the **Next** button on the **Settings** step.
-26. [] Keep the default settings and click the **Apply** button on the **Schedule** step.
-27. [] Tick the **Run the job when I click Finish** check box.
-28. [] Click the **Finish** button on the **Summary** step.
+24. [] Click the **Next** button on the **Application Group** step.
+25. [] Click the **Yes** button to ignore the data sovereignty warning.
+26. [] Keep the default settings and click the **Next** button on the **Linked Jobs** step.
+27. [] Keep the default settings and click the **Next** button on the **Settings** step.
+28. [] Keep the default settings and click the **Apply** button on the **Schedule** step.
+29. [] Tick the **Run the job when I click Finish** check box.
+30. [] Click the **Finish** button on the **Summary** step.
 > **Important: Do NOT wait for the SureBackup job to complete - please continue to the next lab exercise immediately.**
 
 ===
