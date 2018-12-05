@@ -333,23 +333,22 @@ on the tab.
 
 3. [] Double click the **VEEAM-DC01** folder (which contains a random ID).
 4. [] Double click the **Volume1** folder.
-5. [] Right click the **market strategy.pptx** file.
-6. [] Select **Copy**.
-7. [] Navigate to **\\\\veeam-dc01\\c$\\Important Files**.
-8. [] Right click inside the **Important Files** folder.
-9. [] Select **Paste**.
-10. [] Verify all three files are present in the **\\\\veeam-dc01\\c$\\Important Files** folder then close the **File Explorer** window.
-11. [] Close the **VMware vSphere Client** window.
-12. [] Close the **Backup Browser** window.
+5. [] Double click the **Important Files** folder.
+6. [] Select the **market strategy.pptx** file.
+7. [] Click the **Home** menu.
+8. [] Select **Copy**.
+9. [] Navigate to +++\\\\veeam-dc01\\c$\\Important Files+++.
+10. [] Click the **Home** menu.
+11. [] Select **Paste**.
+12. [] Verify all three files are now present in the **\\\\veeam-dc01\\c$\\Important Files** folder then close the **File Explorer** window.
+13. [] Switch back to the **Backup Browser** window using the Windows task bar.
+14. [] Close the **Backup Browser** window.
 
 ===
 
 ## Step 4: Perform Linux guest files recovery
 
-1. [] Select **Disk** in the **Backups** section of the **Home** view.
-2. [] Expand the **Backup ORCL** job.
-3. [] Select the **VEEAM-ORCL** virtual machine.
-3. [] Click the **Guest Files** button on the **Backups** ribbon.
+3. [] Verify the **VEEAM-ORCL** virtual machine is still selected then click the **Guest Files** button on the **Backups** ribbon.
 4. [] Select **Linux**.
 > Note: Veeam’s multi-OS restore wizard enables you to recover guest OS files from several file systems for VMware vSphere and Microsoft Hyper-V – such as Linux, Unix, BSD, MacOS and many others.
 
