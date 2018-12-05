@@ -126,27 +126,26 @@ Module 6: Objects Recovery
 > Note: Since the table has been removed, an error message will be shown in the output window at the bottom
 on the tab.
 
-17. [] Close the **Oracle SQL Developer** window.
-18. [] Click the **No** button.
-19. [] Select **Disk** in the **Backups** section of the **Home** view.
+17. [] Minimize the **Oracle SQL Developer** window.
+
 20. [] Expand the **Backup ORCL** job.
-21. [] Right click the **VEEAM-ORCL** virtual machine.
-22. [] Select **Restore application items**.
-23. [] Select **Oracle databases**.
-24. [] Click the **Next** button.
+21. [] Select the **VEEAM-ORCL** virtual machine.
+22. [] Click the **Restore application items** on the **Backup** ribbon.
+23. [] Select **Oracle**.
+24. [] Keep the default settings and click the **Next** button on the **Restore Point** step.
 25. [] Keep the default settings and click the **Next** button on the **Reason** step.
-26. [] Click the **Finish** button.
+26. [] Click the **Finish** button on the **Summary** step.
 27. [] Wait for the **Veeam Explorer for Oracle** window to load then select the **DB1** database.
 28. [] Click the **Restore Database** button on the **Home** ribbon.
-29. [] Select **Restore point-in-time state to VEEAM-ORCL**.
+29. [] Select **Restore point-in-time state to veeam-orcl...**.
 30. [] Select the **Restore to a specific point in time (requires redo log backups)** radio button.
 31. [] Move the **slider** all the way to the left (select the oldest point in time available).
-32. [] Click the **Next** button.
-32. [] Enter:
- 1. Username: +++oracle+++
- 2. Password: +++Pa$$w0rd+++
+> **Important: Even if the slider appears to be all the way to the left, it is critical you click it and move it to the left.
 
-33. [] Click the **Next** button.
+32. [] Click the **Next** button on the **Specify restore point** step
+32. [] Enter password: +++Pa$$w0rd+++
+
+33. [] Click the **Next** button on the **Specify target Linux server connection credentials** step.
 34. [] Click the **Next** button.
 35. [] Click the **Restore** button.
 36. [] Click the **Yes** button.
