@@ -95,7 +95,7 @@ Module 6: Objects Recovery
 
 31. [] Launch **Internet Explorer** using the tile.
 32. [] Browse to +++http://veeam-sp01+++
-33. [] Verify the **Restored Docs** list appear under **Recent**.
+33. [] Verify the **Restored Docs** list in the left hand side pane.
 34. [] Close the **Remote Desktop Connection** window.
 
 ===
