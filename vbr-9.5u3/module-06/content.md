@@ -348,8 +348,9 @@ on the tab.
 
 ## Step 4: Perform Linux guest files recovery
 
-3. [] Verify the **VEEAM-ORCL** virtual machine is still selected then click the **Guest Files** button on the **Backups** ribbon.
-4. [] Select **Linux**.
+1. [] Select the **VEEAM-ORCL** virtual machine.
+3. [] Click the **Guest Files** button on the **Backups** ribbon.
+4. [] Select **Linux and other**.
 > Note: Veeam’s multi-OS restore wizard enables you to recover guest OS files from several file systems for VMware vSphere and Microsoft Hyper-V – such as Linux, Unix, BSD, MacOS and many others.
 
 5. [] Keep the default settings and click the **Next** button on the **Restore Point** step.
@@ -370,18 +371,20 @@ on the tab.
 
 17. [] Click the **OK** button.
 18. [] Click the **Finish** button on the **Helper Appliance** step.
+> Note: The Starting file-level restore helper appliance... text will be displayed while this appliance is deployed to the VEEAM-ESX host and configured on the fly. This process can take up to 4 minutes, please have some patience.
+>
 > Note: For file-level recovery, Veeam Backup & Replication uses a special File Level Recovery Helper (FLR helper) – a small virtual appliance based on the stripped-down Linux kernel. Whenever you perform file-level restore, Veeam Backup & Replication automatically starts the appliance and mounts the VMDK files to the FLR appliance as virtual hard drives. VMDK files are mounted directly from backup files, without prior extraction of the backup content, which makes the restore process much faster compared to competitive solutions. You can then copy individual files and folders from VM disks to your local machine drive or a network share.
 
-19. [] Expand **LVM**.
+19. [] Wait for the **File Level Restore** window to open then expand **LVM**.
 20. [] Expand **centos-root**.
-20. [] Double click the **var** folder.
-21. [] Double click the **log** folder.
-22. [] Select the **boot.log** file.
-23. [] Click the **Copy To** button on the **Home** ribbon.
-24. [] Enter path to folder: +++C:\\Users\\Administrator.VEEAMINFRA\\Desktop+++
-25. [] Click the **Restore** button.
-26. [] Close the **File Level Restore** window.
-27. [] Verify the **boot.log** file is present on the **desktop** then close the **Veeam Backup & Replication console** window.
+21. [] Double click the **var** folder.
+22. [] Double click the **log** folder.
+23. [] Select the **boot.log** file.
+24. [] Click the **Copy To** button on the **Home** ribbon.
+25. [] Enter path to folder: +++C:\\Users\\Administrator.VEEAMINFRA\\Desktop+++
+26. [] Click the **Restore** button.
+27. [] Close the **File Level Restore** window.
+28. [] Close the **Veeam Backup & Replication console** window and verify the **boot.log** file is present on the **desktop**.
 
 ---
 
