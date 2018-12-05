@@ -275,10 +275,10 @@ Module 9: Advanced Data Protection
 > **Important!** The management group name is **Case Sensitive**.
 
 19. [] Enter:
- 1. Management group: +++Veeam-VSA-MGMTG+++
- 2. User name: +++veeam+++.
- 2. Password: +++veeam+++.
- 3. Confirm password: +++veeam+++.
+ 1. Management group: +++Veeam-VSA-MGMTG+++ (case sensitive)
+ 2. User name: +++veeam+++ (case sensitive)
+ 2. Password: +++veeam+++ (case sensitive)
+ 3. Confirm password: +++veeam+++ (case sensitive)
 > Note: Pay attention to the management group name as it is case sensitive. Otherwise, the test will fail.
 
 20. [] Click the **Test** button.
