@@ -79,9 +79,12 @@ Module 9: Advanced Data Protection
 25. [] Click the **Yes** button to ignore the data sovereignty warning.
 26. [] Keep the default settings and click the **Next** button on the **Linked Jobs** step.
 27. [] Keep the default settings and click the **Next** button on the **Settings** step.
-28. [] Keep the default settings and click the **Apply** button on the **Schedule** step.
-29. [] Tick the **Run the job when I click Finish** check box.
-30. [] Click the **Finish** button on the **Summary** step.
+28. [] Tick the **Run the job automatically** check box.
+29. [] Select the **Monthly at this time** radio button.
+
+30. [] Click the **Apply** button on the **Schedule** step.
+21. [] Tick the **Run the job when I click Finish** check box.
+32. [] Click the **Finish** button on the **Summary** step.
 > **Important: Do NOT wait for the SureBackup job to complete - please continue to the next lab exercise immediately.**
 
 ===
