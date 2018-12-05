@@ -323,20 +323,18 @@ Module 9: Advanced Data Protection
 
 6. [] Click the **Remove** button.
 7. [] Click the **Add...** button.
-9. [] Expand the **VEEAM-HYPERV** host.
-10. [] Select **Tiny-Veeam2**.
-11. [] Click the **Add** button.
-12. [] Click the **Next** button on the **Virtual Machines** step.
-13. [] Click the **Choose...** button in the **Backup proxy** section.
-14. [] Select the **Off-host backup** radio button.
-15. [] Verify the **Hyper-V Off-Host Backup Proxy** is visible in the **Name** column then click the **OK** button.
-16. [] Click the **Finish** button on the **Storage** step.
-17. [] Click the **Start** button on the **Job** ribbon.
-18. [] Double click the **Backup Tiny-Veeam2** job.
-19. [] Select the **Tiny-Veeam2** virtual machine in the **Statistics** view at the bottom of the screen.
-20. [] Verify the **Creating snapshot LeftHand Networks VSS Provider on Hyper-V Off-Host Backup Proxy** text is displayed then click the **OK** button.
-21. [] Minimize the **Veeam Backup & Replication console** window.
-> Note: The backup job will take a maximum of 2 minutes to complete, but please do not wait for the job to complete before continuing to the next lab exercise.
+8. [] Expand the **VEEAM-HYPERV** host.
+9. [] Select **Tiny-Veeam2**.
+10. [] Click the **Add** button.
+11. [] Click the **Next** button on the **Virtual Machines** step.
+12. [] Click the **Choose...** button in the **Backup proxy** section.
+13. [] Verify the **Hyper-V Off-Host Backup Proxy** is visible in the **Name** column then click the **Cancel** button.
+14. [] Click the **Finish** button on the **Storage** step.
+15. [] Click the **Start** button on the **Job** ribbon.
+16. [] Select the **Tiny-Veeam2** virtual machine in the **Statistics** view at the bottom of the screen.
+17. [] Verify the **Creating snapshot LeftHand Networks VSS Provider on Hyper-V Off-Host Backup Proxy** text is displayed then click the **OK** button.
+18. [] Minimize the **Veeam Backup & Replication console** window.
+> **Important: The backup job will take a maximum of 2 minutes to complete, but please do not wait for the job to complete before continuing to the next lab exercise.**
 
 ===
 
