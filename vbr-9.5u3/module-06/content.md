@@ -273,6 +273,7 @@ on the tab.
 
 18. [] Click the **Show details** button.
 19. [] Wait until the **Restore completed** text is displayed then click the **Close** button.
+20. [] Close the **Backup Browser** window.
 
 ===
 
@@ -283,7 +284,7 @@ on the tab.
  1. User name: +++root+++
  2. Password: +++Pa$$w0rd+++
 
-3. [] Click the **Login** butto.
+3. [] Click the **Login** button.
 4. [] Expand the **VEEAM-ESX** host.
 5. [] Expand the **Production** resource pool.
 6. [] Select the **VEEAM-DC01** virtual machine.
@@ -295,8 +296,9 @@ on the tab.
 >
 > Important: If the Backup Browser is still open, it is important that you close it. Because an RPC network connection was detected during the first session, failover to a networkless restore (VIX) will not be attempted.
 
-11. [] Select the **VEEAM-DC01** virtual machine.
-12. [] Click the **Guest Files** button on the **Backup** ribbon.
+11. [] Minimize the **VMware vSphere Client** window.
+
+11. [] Verify the **VEEAM-DC01** virtual machine is still selected then click the **Guest Files** button on the **Backup** ribbon.
 13. [] Select **Microsoft Windows**.
 14. [] Keep the default settings and click the **Next** button on the **Restore Point** step.
 15. [] Keep the default settings and click the **Next** button on the **Reason** step.
@@ -305,16 +307,21 @@ on the tab.
 18. [] Select **invoice.docx**.
 19. [] Click the **Restore** button on the **File** ribbon.
 20. [] Select **Overwrite**.
-> Note: Select option Keep if you do not want to overwrite the existing file with the restored one.
+> Note: Because the network has been disconnected from the VEEAM-DC01 virtual machine this process can take a few minutes while the network connection attempt times out, please have some patience.
 
 21. [] Click the **Show details** button.
-22. [] Wait until the **Restore completed** text is displayed then switch to the **VMware vSphere Client** window
-> Important: Do NOT close the Backup Browser window at this time.
+22. [] Wait until the **Restore completed** text is displayed then click the **Close** button.
+> **Important: Do NOT close the Backup Browser window at this time.**
 
-23. [] Select the **VEEAM-DC01** virtual machine.
-24. [] Tick the **Connected** check box.
-25. [] Click the **OK** button.
+23. [] Minimize the **Backup Browser** window.
+24. [] Switch back to the **VMware vSphere Client** window using the Windows task bar.
+25. [] Verify the **VEEAM-DC01** virtual machine is still selected then click the **Edit Settings** text link in the **Commands** pane.
+26. [] Select **Network adapter 1**.
+27. [] Tick the **Connected** check box.
+28. [] Click the **OK** button.
 > Note: The virtual machine is now once again connected to the network.
+
+29. [] Close the **VMware vSphere Client** window.
 
 ===
 
