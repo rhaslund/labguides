@@ -146,10 +146,14 @@ on the tab.
 32. [] Enter password: +++Pa$$w0rd+++
 
 33. [] Click the **Next** button on the **Specify target Linux server connection credentials** step.
-34. [] Click the **Next** button.
-35. [] Click the **Restore** button.
-36. [] Click the **Yes** button.
-37. [] Click the **OK** button.
+34. [] Keep the default settings and click the **Next** button on the **Specify Oracle settings** step.
+35. [] Click the **Restore** button on the **Specify database files target location** step.
+36. [] Click the **Yes** button to dismiss the unable to find some of the specified paths warning.
+> Note: The restore process will appear to be stuck at Mounting backup and 0% for up to 10 minutes, please have some patience.
+
+37. [] Click the **OK** button to start the restore process.
+> Note: The validating... process can take up to 3 minutes, please have some patience.
+
 38. [] Close the **Veeam Explorer for Oracle** window.
 39. [] Launch **Oracle SQL Developer** from the Windows task bar (icon looks like a disk with a green arrow).
 40. [] Expand the **Production Oracle** connection.
