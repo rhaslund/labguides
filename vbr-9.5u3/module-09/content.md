@@ -166,29 +166,29 @@ Module 9: Advanced Data Protection
 6. [] Click the **Connect** button.
 7. [] Enter password: +++Pa$$w0rd+++.
 8. [] Click the **OK** button.
-9. [] Click the **Yes** button to dismiss the certificate warning.
-10. [] Click the **Start** menu (move the mouse cursor all the way to the edge of the bottom left hand corner to make the start menu button appear).
-11. [] Enter: +++devmgmt.msc+++ and press the **Enter** keyboard button.
-12. [] Expand **Medium Changer devices**.
-13. [] Double click the **Unknown Medium Changer** device.
-14. [] Click the **Driver** tab.
-15. [] Click the **Update driver...** button.
-16. [] Select **Browse my computer for driver software**.
-17. [] Enter path +++C:\install\HP Tape Drivers+++
-18. [] Click the **Next** button.
-19. [] Click the **Close** button.
-20. [] Verify the driver has been installed then click the **Close** button.
-21. [] Expand **Other devices**.
-22. [] Right click the first **HP Ultrium 5-SCSI SCSI Sequential** device.
-23. [] Select **Update driver software...**.
-24. [] Select **Browse my computer for driver software**.
-25. [] Keep the default path and click the **Next** button.
-26. [] Click the **Close** button.
-27. [] Right click the remaining **HP Ultrium 5-SCSI SCSI Sequential** device.
-28. [] Select **Update Driver Software...**.
-29. [] Select **Browse my computer for driver software**.
-30. [] Keep the default path and click the **Next** button.
-31. [] Click the **Close** button.
+9. [] Click the **Start** menu (move the mouse cursor all the way to the edge of the bottom left hand corner to make the start menu button appear).
+10. [] Enter: +++devmgmt.msc+++ and press the **Enter** keyboard button.
+11. [] Expand **Medium Changer devices**.
+12. [] Double click the **Unknown Medium Changer** device.
+13. [] Click the **Driver** tab.
+14. [] Click the **Update driver...** button.
+15. [] Select **Browse my computer for driver software**.
+16. [] Enter path +++C:\install\HP Tape Drivers+++
+17. [] Click the **Next** button.
+18. [] Click the **Close** button.
+19. [] Verify the driver has been installed then click the **Close** button.
+20. [] Expand **Other devices**.
+21. [] Right click the first **HP Ultrium 5-SCSI SCSI Sequential** device.
+22. [] Select **Update driver software...**.
+23. [] Select **Browse my computer for driver software**.
+24. [] Keep the default path and click the **Next** button.
+25. [] Click the **Close** button.
+26. [] Right click the remaining **HP Ultrium 5-SCSI SCSI Sequential** device.
+27. [] Select **Update Driver Software...**.
+28. [] Select **Browse my computer for driver software**.
+29. [] Keep the default path and click the **Next** button.
+30. [] Click the **Close** button.
+31. [] Close the **Device Manager** window.
 32. [] Close the **Remote Desktop Connection** window.
 
 ===
