@@ -133,7 +133,6 @@ Module 7: Verification
 # Lab 7.2: Using SureBackup
 
 1. [] Navigate to the **Home** view.
-2. [] Select **Jobs** in the **Home** view.
 3. [] Click the **SureBackup Job** button on the **Home** ribbon.
 4. [] Select **VMware...**.
 5. [] Enter:
@@ -149,10 +148,12 @@ Module 7: Verification
 
 11. [] Keep the default settings and click the **Next** button on the **Linked Jobs** step.
 12. [] Keep the default settings and click the **Next** button on the **Settings** step.
-13. [] Click the **Apply** button on the **Schedule** step.
-14. [] Tick the **Run the job when I click Finish** check box.
-15. [] Click the **Finish** button on the **Summary** step.
-> Note: A SureBackup Job will take a while, do NOT wait for it to complete before proceeding to the next lab.
+13. [] Tick the **Run the job automatically** check box.
+14. [] Select the **Monthly at this time** radio button.
+15. [] Click the **Apply** button on the **Schedule** step.
+16. [] Tick the **Run the job when I click Finish** check box.
+17. [] Click the **Finish** button on the **Summary** step.
+> **Important: A SureBackup Job will take a while, do NOT wait for it to complete before proceeding to the next lab.**
 
 ===
 
