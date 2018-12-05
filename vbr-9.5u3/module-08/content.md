@@ -217,10 +217,10 @@ Module 8: Introduction to Agents
  3. Password: +++Pa$$w0rd+++.
 
 68. [] Press the **Enter** keyboard button (or click the **Next** button) on the **Backup Server** step.
-69. [] Press the **Enter** keyboard button (or click the **Next** button) on the **Backup** step.
-70. [] Press the **Enter** keyboard button (or click the **Next** button) on the **Restore Point** step.
-71. [] Press the **Enter** keyboard button (or click the **Next** button) on the **Restore Mode** step.
-72. [] Press the **Enter** keyboard button (or click the **Restore** button) on the **Summary** step.
+69. [] Keep the default settings and press the **Enter** keyboard button (or click the **Next** button) on the **Backup** step.
+70. [] Keep the default settings and press the **Enter** keyboard button (or click the **Next** button) on the **Restore Point** step.
+71. [] Keep the default settings and press the **Tab** keyboard button three times then press the **Enter** keyboard button (or click the **Next** button) on the **Restore Mode** step.
+72. [] Keep the default settings and press the **Enter** keyboard button (or click the **Restore** button) on the **Summary** step.
 73. [] Press the **Enter** keyboard button (or click the **Finish** button) on the **Progress** step.
 > Note: Only about 10 GB of data will need to be restored - this will take a maximum of 10 minutes.
 
