@@ -101,10 +101,7 @@ Module 9: Advanced Data Protection
 8. [] Click the **Choose...** in the **Host** section.
 9. [] Select the **VEEAM-ESX** host.
 10. [] Click the **OK** button to confirm the host.
-11. [] Click the **Choose...** button in the **Resource pool** section.
-12. [] Expand the **VEEAM-ESX** host.
-13. [] Select the **Production** resource pool.
-14. [] Click the **OK** button to confirm the resource pool.
+
 15. [] Click the **OK** button.
 16. [] Click the **Next** button on the **Location** step.
 17. [] Keep the default settings and click the **Next** button on the **Restore Reason** step.
