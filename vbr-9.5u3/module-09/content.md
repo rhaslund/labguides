@@ -535,10 +535,9 @@ Module 9: Advanced Data Protection
 
 51. [] Click the **Finish** button on the **Summary** step.
 52. [] Expand the **Backup Tiny-Veeam2** backup job.
-53. [] Verify that the **Tiny-Veeam2** virtual machine is now visible then close the **Veeam Backup and Replication console** window.
-54. [] Close the **Remote Desktop Connection client** window.
-55. [] Click the **Finish** button on the **Response** step of the **Password Recovery** wizard in the **Veeam Backup Enterprise Manager**.
-56. [] Close the **Veeam Backup Enterprise Manager** window.
+53. [] Verify that the **Tiny-Veeam2** virtual machine is now visible then minimize the **Remote Desktop Connection client** window.
+54. [] Click the **Finish** button on the **Response** step of the **Password Recovery** wizard in the **Veeam Backup Enterprise Manager**.
+55. [] Close the **Veeam Backup Enterprise Manager** window.
 
 ===
 
@@ -557,19 +556,15 @@ Module 9: Advanced Data Protection
 9. [] Select **Jobs** in the **Home** view.
 9. [] Select the **Backup ORCL** job.
 10. [] Press the **CTRL+A** keyboard buttons to select all jobs.
-10. [] Click the **Disable** button on the **Job** ribbon.
+11. [] Click the **Disable** button on the **Job** ribbon.
 > Important:  Do NOT proceed until the job status is Stopped for all jobs.
 
 ===
 
 ## Step 2: Restoring a configuration backup to another Veeam server
 
-1. [] Launch the **Remote Desktop Connection client** using the Windows task bar.
-2. [] Enter computer: +++VEEAM-VBR2+++
-3. [] Cick the **Connect** button.
-4. [] Enter password: +++Pa$$w0rd+++
-5. [] Click the **OK** button.
-6. [] Click the **Yes** button to ignore the certificate warning.
+1. [] Switch back to the **Remote Desktop Connection client** window using the Windows task bar.
+
 7. [] Click the **≡** button in the top left corner in **Veeam Backup and Replication**.
 8. [] Select **Configuration Backup**.
 9. [] Click the **Restore...** button.
