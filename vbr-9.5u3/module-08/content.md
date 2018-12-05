@@ -39,44 +39,43 @@ Module 8: Introduction to Agents
 
 1. [] Launch the **Veeam Backup & Replication console** from the desktop.
 2. [] Click the **Connect** button.
-
-1. [] Navigate to the **Inventory** view.
-2. [] Select **Physical & Cloud Infrastructure**.
-3. [] Click the **Add Group** button on the **Protection Group** ribbon.
-4. [] Keep the default name and click the **Next** button on the **Name** step.
-5. [] Keep the default settings and click the **Next** button on the **Type** step.
-6. [] Click the **Change** button.
-7. [] Enter domain controller: +++VEEAM-DC01.veeamlab.local+++.
-8. [] Click the **Account** drop down menu.
-9. [] Select the **VEEAMLAB\\Administrator** account.
-10. [] Click the **OK** button.
-11. [] Click the **Add...** button.
-12. [] Expand **Microsoft Active Directory**.
-13. [] Expand the **veeamlab.local** domain.
-14. [] Expand the **Computers** organizational unit.
-15. [] Select the **Veeam Agents protected servers** security group.
-16. [] Click the **OK** button.
-17. [] Click the **Next** button on the **Active Directory** step.
-18. [] Untick the **All virtual machines** check box.
+3. [] Navigate to the **Inventory** view.
+4. [] Select **Physical & Cloud Infrastructure**.
+5. [] Click the **Add Group** button on the **Protection Group** ribbon.
+6. [] Keep the default name and click the **Next** button on the **Name** step.
+7. [] Keep the default settings and click the **Next** button on the **Type** step.
+8. [] Click the **Change** button.
+9. [] Enter domain controller: +++VEEAM-DC01.veeamlab.local+++.
+10. [] Click the **Account** drop down menu.
+11. [] Select the **VEEAMLAB\\Administrator** account.
+12. [] Click the **OK** button.
+13. [] Click the **Add...** button.
+14. [] Expand **Microsoft Active Directory**.
+15. [] Expand the **veeamlab.local** domain.
+16. [] Expand the **Computers** organizational unit.
+17. [] Select the **Veeam Agents protected servers** security group.
+18. [] Click the **OK** button.
+19. [] Click the **Next** button on the **Active Directory** step.
+20. [] Untick the **All virtual machines** check box.
 > Note: Because this is a lab training environment, we will include virtual machines. In a production environment, you would usually not want to protect virtual machines using Veeam Agents, unless, for example, the virtual machine does not support hypervisor snapshots
 
-19. [] Untick the **All computers that have been offline for over 30 days** check box.
-20. [] Click the **Next** button on the **Exclusions** step.
-21. [] Click the **Test Now** button.
-22. [] Verify that the test has completed successfully then click the **Close** button.
-23. [] Click the **Next** button on the **Credentials** step.
-24. [] Tick the **Install changed block tracking driver on Windows Server OS** check box.
-25. [] Tick the **Perform reboot automatically if required** check box.
-26. [] Click the **Next** button on the **Options** step.
+21. [] Untick the **All computers that have been offline for over 30 days** check box.
+22. [] Click the **Next** button on the **Exclusions** step.
+23. [] Click the **Test Now** button.
+24. [] Verify that the test has completed successfully then click the **Close** button.
+25. [] Click the **Next** button on the **Credentials** step.
+26. [] Tick the **Install changed block tracking driver on Windows Server OS** check box.
+27. [] Tick the **Perform reboot automatically if required** check box.
+28. [] Click the **Next** button on the **Options** step.
 > Note: Installing the CBT driver will require a reboot of the servers. In production environments, it may be desirable to control when production servers are rebooted
 
-27. [] Click the **Apply** button on the **Review** step.
-28. [] Review the messages then click the **Next** button on the **Apply** step.
-29. [] Keep the default settings and click the **Finish** button on the **Summary** step.
-30. [] Wait for the rescan status to change from **In progress** to **Success** then click the **Close** button.
+29. [] Click the **Apply** button on the **Review** step.
+30. [] Review the messages then click the **Next** button on the **Apply** step.
+31. [] Keep the default settings and click the **Finish** button on the **Summary** step.
+32. [] Wait for the rescan status to change from **In progress** to **Success** then click the **Close** button.
 > Note: This process should take less than 6 minutes.
 
-31. [] Select **Protection Group 1** in the **Physical & Cloud Infrastructure** section of the **Inventory** view and confirm that the status of **PHYSICAL.veeamlab.local** is **Installed**.
+33. [] Select **Protection Group 1** in the **Physical & Cloud Infrastructure** section of the **Inventory** view and confirm that the status of **PHYSICAL.veeamlab.local** is **Installed**.
 
 
 ===
@@ -84,28 +83,27 @@ Module 8: Introduction to Agents
 # Lab 8.3: Create a Agent Backup Job
 
 1. [] Navigate to the **Home** view.
-3. [] Click the **Backup Job** button.
-4. [] Select **Windows Computer...**.
-5. [] Keep the default settings and click the **Next** button on the **Job Mode** step.
-6. [] Enter name: +++Agent Backup Job Windows+++.
-7. [] Click the **Next** button on the **Name** step.
-8. [] Click the **Add...** button.
-9. [] Select **Protection group...**.
-10. [] Select **Protection Group 1**.
-11. [] Click the **OK** button.
-12. [] Click the **Next** button on the **Computers** step.
-13. [] Keep the default setting and click the **Next** button on the **Backup Mode** step.
-14. [] Click the **Backup Repository** drop down menu.
-15. [] Select **Main Backup Repository**.
-
-14. [] Lower the amount of restore points to: +++3+++.
-19. [] Click the **Next** button on the **Storage** step.
-20. [] Click the **Yes** button to dismiss the warning about a potential data sovereignty violation.
-21. [] Keep the default settings and click the **Next** button on the **Guest Processing** step.
-22. [] Tick the **Run the job automatically** check box.
-23. [] Click the **Apply** button on the **Schedule** step.
-24. [] Tick the **Run the job when I click Finish** check box.
-25. [] Click the **Finish** button.
+2. [] Click the **Backup Job** button.
+3. [] Select **Windows Computer...**.
+4. [] Keep the default settings and click the **Next** button on the **Job Mode** step.
+5. [] Enter name: +++Agent Backup Job Windows+++.
+6. [] Click the **Next** button on the **Name** step.
+7. [] Click the **Add...** button.
+8. [] Select **Protection group...**.
+9. [] Select **Protection Group 1**.
+10. [] Click the **OK** button.
+11. [] Click the **Next** button on the **Computers** step.
+12. [] Keep the default setting and click the **Next** button on the **Backup Mode** step.
+13. [] Click the **Backup Repository** drop down menu.
+14. [] Select **Main Backup Repository**.
+15. [] Lower the amount of restore points to: +++3+++.
+16. [] Click the **Next** button on the **Storage** step.
+17. [] Click the **Yes** button to dismiss the warning about a potential data sovereignty violation.
+18. [] Keep the default settings and click the **Next** button on the **Guest Processing** step.
+19. [] Tick the **Run the job automatically** check box.
+20. [] Click the **Apply** button on the **Schedule** step.
+21. [] Tick the **Run the job when I click Finish** check box.
+22. [] Click the **Finish** button.
 > Important! The Agent Backup Job Windows job must be in a Stopped status with the last result as Success before continuing to the next lab exercise — this will take a maximum of 9 minutes.
 
 ===
@@ -155,7 +153,6 @@ Module 8: Introduction to Agents
 17. [] Click the **Next** button on the **Configuration** step.
 18. [] Enter name: +++BAREMETAL+++.
 19. [] Click the **Next** button on the **Name and Location** step.
-
 20. [] Select the **Local01** datastore.
 21. [] Click the **Next** button on the **Storage** step.
 22. [] Keep the default setting and click the **Next** button on the **Virtual Machine Version**.
