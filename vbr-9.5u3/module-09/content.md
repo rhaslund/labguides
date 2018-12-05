@@ -382,7 +382,7 @@ Module 9: Advanced Data Protection
 9. [] Click the **Search** tab.
 10. [] Enter search: +++\*.txt+++.
 11. [] Press the **Enter** keyboard button.
-12. [] Click the **Advanced search** button.
+
 13. [] Right click the **first file**.
 14. [] Select **Restore**.
 15. [] Select **Overwrite**.
@@ -479,71 +479,66 @@ Module 9: Advanced Data Protection
 3. [] Click the **Connect** button.
 4. [] Enter password: +++Pa$$w0rd+++.
 5. [] Click the **OK** button.
-6. [] Click the **Yes** button to dismiss the certificate warning.
-7. [] Launch the **Veeam Backup & Replication console** from the desktop.
-8. [] Click the **Connect** button.
-9. [] Click the **Apply** button on the **Servers** step.
-10. [] Click the **Finish** button on the **Update** step.
-11. [] Select **Backup Repositories** in the **Backup Infrastructure** view.
-12. [] Click the **Add Repository** button on the **Backup Repository** ribbon.
-13. [] Enter name: +++Remote Repository+++.
-14. [] Click the **Next** button on the **Name** step.
-15. [] Keep the default setting and click the **Next** button on the **Type** step.
-16. [] Click **Add new...** button.
-17. [] Enter DNs name: +++VEEAM-VBR+++.
-18. [] Click the **Next** button on the **Name** step.
-19. [] Click the **Add...** button.
-20. [] Enter:
+6. [] Launch the **Veeam Backup & Replication console** from the desktop.
+7. [] Click the **Connect** button.
+8. [] Select **Backup Repositories** in the **Backup Infrastructure** view.
+9. [] Click the **Add Repository** button on the **Backup Repository** ribbon.
+10. [] Enter name: +++Remote Repository+++.
+11. [] Click the **Next** button on the **Name** step.
+12. [] Keep the default setting and click the **Next** button on the **Type** step.
+13. [] Click **Add new...** button.
+14. [] Enter DNs name: +++VEEAM-VBR+++.
+15. [] Click the **Next** button on the **Name** step.
+16. [] Click the **Add...** button.
+17. [] Enter:
  1. Username: +++VEEAMINFRA\Administrator+++.
  2. Password: +++Pa$$w0rd+++.
  
-21. [] Click the **OK** button.
-22. [] Click the **Next** button on the **Credentials** step.
-23. [] Click the **Apply** button on the **Review** step.
-24. [] Click the **Next** button on the **Apply** step.
-25. [] Click the **Finish** button on the **Summary** step.
-26. [] Verify that the repository server is set to VEEAM-VBR then click the **Next** button on the **Server** step.
-27. [] Enter path to folder: +++X:\Backup+++.
-28. [] Click the **Next** button on the **Repository** step
-29. [] Untick the **Enable vPower NFS service on the mount server**
+18. [] Click the **OK** button.
+19. [] Click the **Next** button on the **Credentials** step.
+20. [] Click the **Apply** button on the **Review** step.
+21. [] Click the **Next** button on the **Apply** step.
+22. [] Click the **Finish** button on the **Summary** step.
+23. [] Verify that the repository server is set to VEEAM-VBR then click the **Next** button on the **Server** step.
+24. [] Enter path to folder: +++X:\Backup+++.
+25. [] Click the **Next** button on the **Repository** step
+26. [] Untick the **Enable vPower NFS service on the mount server**
 > Note: In a production environment it usually not be recommended to disable the vPower NFS service on the mount server.
 
-30. [] Click the **Next** button on the **Mount Server** step.
-31. [] Click the **Apply** button on the **Review** step.
-32. [] Click the **Finish** button on the **Apply** step.
-33. [] Click the **No** button to keep the current configuration backup location.
-34. [] Click the **Rescan** button on the **Backup Repository** ribbon.
-> Note: This process will take a maximum of 3 minutes.
-
-35. [] Click the **Close** button.
-36. [] Navigate to the **Home** view.
-37. [] Select **Disk (encrypted)** in the **Backups** section of the **Home** view.
-38. [] Select **Backup Tiny-Veeam2**.
-39. [] Click the **Specify password** button on the **Encrypted Backup** ribbon.
-40. [] Click the **I have lost the password** text link.
-41. [] Click the **Copy to clipboard** button.
-42. [] Click the **Next** button on the **Request** step.
+27. [] Click the **Next** button on the **Mount Server** step.
+28. [] Tick the **Import existing backups automatically** check box.
+29. [] Click the **Apply** button on the **Review** step.
+30. [] Click the **Finish** button on the **Apply** step.
+31. [] Click the **No** button to keep the current configuration backup location.
+32. [] Navigate to the **Home** view.
+33. [] Select **Disk (encrypted)** in the **Backups** section of the **Home** view.
+34. [] Select **Backup Tiny-Veeam2**.
+35. [] Click the **Specify password** button on the **Encrypted Backup** ribbon.
+36. [] Click the **I have lost the password** text link.
+37. [] Click the **Copy to clipboard** button.
+38. [] Click the **Next** button on the **Request** step.
 > Note: At this step, the copied request will be sent by email or passed in another way to the Veeam Backup Enterprise Manager administrator. For our lab purposes, we will just keep it copied in the clipboard.
 
-43. [] Minimize the **Remote Desktop Connection** window.
-44. [] Click the **Configuration** button in the top right corner.
-45. [] Navigate to the **Key Management** view.
-46. [] Click the **Password Recovery...** button.
-47. [] Press the **CTRL + V** keyboard buttons together to paste the request.
-48. [] Click the **Next** button on the **Challenge Request** step.
-49. [] Verify the **Request verified successfully** text is displayed then click the **Next** button on the **Verify request** step.
-50. [] Press the **CTRL + C** keyboard buttons together to copy the response.
-51. [] Switch back to the **Remote Desktop Connection client** window.
-52. [] Click the **Next** button on the **Request** step.
-53. [] Press the **CTRL + V** keyboard buttons together to paste the request.
-54. [] Click the **Next** button on the **Response** step.
+39. [] Minimize the **Remote Desktop Connection** window.
+40. [] Navigate to the **Backup Servers** view.
+41. [] Click the **Refresh** button.
+42. [] Navigate to the **Key Management** view.
+43. [] Click the **Password Recovery...** button.
+44. [] Click the **Paste** button.
+45. [] Click the **Next** button on the **Challenge Request** step.
+46. [] Verify the **Request verified successfully** text is displayed then click the **Next** button on the **Verify request** step.
+47. [] Press the **CTRL + C** keyboard buttons together to copy the response.
+48. [] Switch back to the **Remote Desktop Connection client** window.
+49. [] Press the **CTRL + V** keyboard buttons together to paste the request.
+50. [] Click the **Next** button on the **Response** step.
 > Note: Wait for the backup to be decrypted using the Veeam Backup Enterprise Manager key sets. This will take a maximum of 2 minutes.
 
-55. [] Click the **Finish** button on the **Summary** step.
-56. [] Close the **Remote Desktop Connection client** window.
-57. [] Close the **Veeam Backup Enterprise Manager** window.
-58. [] Click the **Finish** button on the **Response** step of the **Password Recovery** wizard in the **Veeam Backup Enterprise Manager**.
-59. [] Close the **Veeam Backup Enterprise Manager** window.
+51. [] Click the **Finish** button on the **Summary** step.
+52. [] Expand the **Backup Tiny-Veeam2** backup job.
+53. [] Verify that the **Tiny-Veeam2** virtual machine is now visible then close the **Veeam Backup and Replication console** window.
+54. [] Close the **Remote Desktop Connection client** window.
+55. [] Click the **Finish** button on the **Response** step of the **Password Recovery** wizard in the **Veeam Backup Enterprise Manager**.
+56. [] Close the **Veeam Backup Enterprise Manager** window.
 
 ===
 
@@ -559,7 +554,9 @@ Module 9: Advanced Data Protection
 6. [] Select **Technical course that provides extensive information on Veeam solutions**.
 7. [] Click the **Backup now** button.
 8. [] Wait for the configuration backup to complete then click the **OK** button.
-9. [] Select the **Backup ORCL** job then press the **CTRL+A** keyboard buttons to select all jobs.
+9. [] Select **Jobs** in the **Home** view.
+9. [] Select the **Backup ORCL** job.
+10. [] Press the **CTRL+A** keyboard buttons to select all jobs.
 10. [] Click the **Disable** button on the **Job** ribbon.
 > Important:  Do NOT proceed until the job status is Stopped for all jobs.
 
