@@ -96,7 +96,8 @@ Module 6: Objects Recovery
 31. [] Launch **Internet Explorer** using the tile.
 32. [] Browse to +++http://veeam-sp01+++
 33. [] Verify the **Restored Docs** list in the left hand side pane.
-34. [] Close the **Remote Desktop Connection** window.
+34. [] Close the **Internet Explorer** window.
+35. [] Close the **Remote Desktop Connection** window.
 
 ===
 
@@ -209,34 +210,35 @@ on the tab.
 
 # Lab 6.5: Perform Microsoft SQL Server items recovery
 
-1. [] Select **Disk** in the **Backups** section of the **Home** view.
-2. [] Expand the **Backup AD & Exchange & SharePoint** job.
-3. [] Select the **VEEAM-SP01** virtual machine.
-3. [] Click the **Restore application items** button on the **Backups** ribbon.
-4. [] Select **Microsoft SQL Server**.
-5. [] Click the **Next** button on the **Restore Point** step.
-6. [] Keep the default settings and click the **Next** button on the **Reason** step.
-7. [] Click the **Finish** button on the **Summary** step.
-8. [] Wait for the **Veeam Explorer for Microsoft SQL Server** window to load then expand the **SQLEXPRESS** database.
-9. [] Right click the **testdb** database.
-10. [] Select **Restore point-in-time state to VEEAM-SP01\\SQLEXPRESS**
-11. [] Select the **Restore to a specific point in time (requires transaction log backups)** radio button.
-12. [] Click the the **slider** and move it all the way to the left (select the oldest restore point).
+1. [] Select the **VEEAM-SP01** virtual machine.
+2. [] Click the **Application items** button on the **Backups** ribbon.
+3. [] Select **Microsoft SQL Server**.
+4. [] Click the **Next** button on the **Restore Point** step.
+5. [] Keep the default settings and click the **Next** button on the **Reason** step.
+6. [] Click the **Finish** button on the **Summary** step.
+7. [] Wait for the **Veeam Explorer for Microsoft SQL Server** window to load then select the **testdb** database.
+8. [] Click the **Restore Database** button on the **Database** ribbon.
+9. [] Select **Restore point-in-time to VEEAM-SP01\\SQLEXPRESS...**.
+10. [] Select the **Restore to a specific point in time (requires transaction log backups)** radio button.
+11. [] Move the **slider** all the way to the left (select the oldest point in time).
 > Note: It may appear as if the slider is already in the most far point, make sure you click it and move it to the left regardless.
 
-13. [] Click the **Restore** button.
+12. [] Click the **Restore** button.
+13. [] Click the **OK** button to start the restore process.
+> Note: The restore will take less than 3 minutes.
+
 14. [] Click the **OK** button.
-15. [] Click the **OK** button.
-16. [] Close the **Veeam Explorer for Microsoft SQL Server** window.
-17. [] Launch the **Remote Desktop Connection client** from the Windows task bar.
-18. [] Enter computer name: +++VEEAM-SP01+++
+15. [] Close the **Veeam Explorer for Microsoft SQL Server** window.
+16. [] Launch the **Remote Desktop Connection client** from the Windows task bar.
+17. [] Enter computer name: +++VEEAM-SP01+++
+18. [] Click the **Connect** button.
 19. [] Leave user name as **VEEAMLAB\Administrator** and enter password: +++Pa$$w0rd+++.
 20. [] Click the **OK** button.
 21. [] Open the **Start menu** by moving the cursor to the bottom left corner then click the **Start** button when it appears.
 > Note: If you are having issues opening the start menu, please ask your instructor for assistance.
 
 22. [] Select the **Microsoft SQL Server Management Studio** tile.
-23. [] Verify the server name is **VEEAM-SP01\SQLEXPRESS** then click the **Connect** button.
+23. [] Verify the server name is +++VEEAM-SP01\SQLEXPRESS+++ then click the **Connect** button.
 24. [] Expand **Databases**.
 25. [] Expand the **testdb** database
 26. [] Expand **Tables**
@@ -252,27 +254,25 @@ on the tab.
 1. [] Launch the **File Explorer** from the Windows task bar.
 2. [] Navigate to: +++\\\\veeam-dc01\\c$\\Important Files+++
 3. [] Select **all the files** in this folder.
-4. [] Right click on **the selected files**.
-5. [] Select **Delete**.
-6. [] Click the **Yes** button.
+4. [] Click the **Home** menu.
+5. [] Click the **Delete** button.
+6. [] Click the **Yes** button to permanently delete these 3 items.
 7. [] Close the **File Explorer** window.
 
-8. [] Select **Disk** in the **Backups** section of the **Home** view.
-9. [] Expand the **Backup AD & Exchange & SharePoint** job.
-10. [] Select the **VEEAM-DC01** virtual machine.
-11. [] Click the **Guest Files** button on the **Backup** ribbon.
-12. [] Select **Microsoft Windows**.
-13. [] Keep the default settings and click the **Next** button on the **Restore Point** step.
-14. [] Keep the default settings and click the **Next** button on the **Reason** step.
-15. [] Click the **Finish** button on the **Summary** step.
-16. [] Double click the **Important Files** folder.
-17. [] Select **quote.docx**.
-18. [] Click the **Restore** button on the **File** ribbon.
-19. [] Select **Overwrite**.
+8. [] Select the **VEEAM-DC01** virtual machine.
+9. [] Click the **Guest Files** button on the **Backup** ribbon.
+10. [] Select **Microsoft Windows**.
+11. [] Keep the default settings and click the **Next** button on the **Restore Point** step.
+12. [] Keep the default settings and click the **Next** button on the **Reason** step.
+13. [] Click the **Finish** button on the **Summary** step.
+14. [] Double click the **Important Files** folder.
+15. [] Select **quote.docx**.
+16. [] Click the **Restore** button on the **File** ribbon.
+17. [] Select **Overwrite**.
 > Note: Select option Keep if you do not want to overwrite the existing file with the restored one.
 
-20. [] Click the **Show details** button.
-21. [] Wait until the **Restore completed** text is displayed then click the **Close** button.
+18. [] Click the **Show details** button.
+19. [] Wait until the **Restore completed** text is displayed then click the **Close** button.
 
 ===
 
