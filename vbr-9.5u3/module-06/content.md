@@ -115,7 +115,7 @@ Module 6: Objects Recovery
 6. [] Click the **Connect** button.
 7. [] Expand the **Production Oracle** connection
 8. [] Enter: +++select * from EMP+++ in the **Production Oracle** tab.
-9. [] Click the **Run Script** button (icon looks like a notepad with a green arrow).
+9. [] Click the **Run Script** button (icon looks like a notepad with a green arrow) or press the **F5** keyboard button.
 10. [] Review the output result in the **Script Output** pane then expand **Tables (Filtered)**.
 11. [] Right click the **EMP** table.
 12. [] Select **Table**.
