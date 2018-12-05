@@ -8,28 +8,30 @@ Module 8: Introduction to Agents
 
 1. [] Launch **Remote Desktop Connection client** from the Windows task bar.
 2. [] Enter computer name: +++VEEAM-DC01+++
-3. [] Leave user name as **VEEAMLAB\Administrator** and enter password: +++Pa$$w0rd+++.
-4. [] Click the **OK** button.
-5. [] Launch the **Server Manager** from the Windows task bar.
-6. [] Click on the **Tools** text link in the top right corner.
-7. [] Select **Active Directory Users and Computers**.
-8. [] Close the **Server Manager** window.
-9. [] Expand the **veeamlab.local** domain.
-10. [] Select the **Computers** organizational unit.
-11. [] Click the **Action** menu.
-12. [] Select **New**.
-13. [] Select **Group**.
-14. [] Enter group name: +++Veeam Agent protected servers+++
-15. [] Click the **OK** button.
-16. [] Select the **PHYSICAL** computer.
-17. [] Click the **Action** menu.
-18. [] Select **Add to a group...**.
-19. [] Enter object name: +++Veeam Agent protected servers+++.
-20. [] Click the **OK** button.
+3. [] Click the **Connect** button.
+4. [] Enter password: +++Pa$$w0rd+++
+5. [] Click the **OK** button.
+6. [] Launch the **Server Manager** from the Windows task bar.
+7. [] Click on the **Tools** text link in the top right corner.
+8. [] Select **Active Directory Users and Computers**.
+9. [] Close the **Server Manager** window.
+10. [] Expand the **veeamlab.local** domain.
+11. [] Select the **Computers** organizational unit.
+12. [] Click the **Action** menu.
+13. [] Select **New**.
+14. [] Select **Group**.
+15. [] Enter group name: +++Veeam Agent protected servers+++
+16. [] Click the **OK** button.
+17. [] Select the **PHYSICAL** computer.
+18. [] Click the **Action** menu.
+19. [] Select **Add to a group...**.
+20. [] Enter object name: +++Veeam Agent protected servers+++.
+21. [] Click the **OK** button.
 > Note: If a new window entitled Name Not Found is displayed, you have incorrectly entered the group name. Click the Cancel button and correct the name, then click the OK button.
 
-21. [] Verify that the **Add to Group** operation was successfully completed, then click the **OK** button.
-22. [] Close the **Remote Desktop Connection** window.
+22. [] Verify that the **Add to Group** operation was successfully completed, then click the **OK** button.
+23. [] Close the **Active Directory Users and Computers** window.
+24. [] Close the **Remote Desktop Connection** window.
 
 ===
 
