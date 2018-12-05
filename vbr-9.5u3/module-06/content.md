@@ -122,7 +122,7 @@ Module 6: Objects Recovery
 13. [] Select **Drop...**.
 14. [] Click the **Apply** button
 15. [] Click the **OK** button.
-16. [] Click the **Run Script** button (icon looks like a notepad with a green arrow).
+16. [] Click the **Run Script** button (icon looks like a notepad with a green arrow) or press the **F5** keyboard button.
 > Note: Since the table has been removed, an error message will be shown in the output window at the bottom
 on the tab.
 
