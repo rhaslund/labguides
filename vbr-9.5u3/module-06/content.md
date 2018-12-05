@@ -328,7 +328,7 @@ on the tab.
 ## Step 3: Perform Windows guest files recovery using a mount point
 
 1. [] Launch the **File Explorer** from the Windows task bar.
-2. [] Navigate to the **C:\\VeeamFLR** folder
+2. [] Navigate to the +++C:\\VeeamFLR+++ folder
 > Important! If you closed the Backup Browser in this folder will be empty. Ask your instructor for assistance.
 
 3. [] Double click the **VEEAM-DC01** folder (which contains a random ID).
