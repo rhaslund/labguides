@@ -172,38 +172,38 @@ on the tab.
 
 1. [] Launch the **Remote Desktop Connection client** from the Windows task bar.
 2. [] Enter computer name: +++VEEAM-DC01+++
-3. [] Leave user name as **VEEAMLAB\Administrator** and enter password: +++Pa$$w0rd+++.
+3. [] Click the **Connect** button.
+3. [] Enter password: +++Pa$$w0rd+++
 4. [] Click the **OK** button.
 5. [] Launch the **Server Manager** from the Windows task manager.
-6. [] Select **AD DS** in the left hand navigation pane.
-7. [] Right click **VEEAM-DC01**.
-8. [] Select **Active Directory Users and Computers**.
-9. [] Expand the **veeamlab.local** forest.
-10. [] Select the **Users** organizational unit.
-11. [] Right click the **testmail** user.
-12. [] Select **Delete**.
-13. [] Click the **Yes** button.
-14. [] Minimize the **Remote Desktop Connection** window.
-15. [] Select **Disk** in the **Backups** section of the **Home** view.
-16. [] Expand the **Backup AD & Exchange & SharePoint** job.
-17. [] Select the **VEEAM-DC01** virtual machine.
-18. [] Click the **Restore application items** button on the **Backups** ribbon.
-19. [] Select **Microsoft Active Directory**.
-20. [] Keep the default settings and click the **Next** button on the **Restore Point** step.
-21. [] Keep the default settings and click the **Next** button on the **Reason** step.
-22. [] Click the **Finish** button on the **Summary** step.
-23. [] Expand the **veeamlab.local** forest.
-24. [] Click the **Compare All Objects** button on the **Home** ribbon.
-25. [] Click the **Show Changed Objects Only** button on the **Home** ribbon.
-26. [] Expand **Users and Computers**.
-27. [] Select the **Users** organizational unit.
-28. [] Right click the **testmail** user.
-29. [] Select **Restore to VEEAM-DC01.veeamlab.local**.
-30. [] Watch the restore process then click the **OK** button.
-31. [] Switch to the **Remote Desktop Connection client** window using the Windows task bar.
-32. [] Click the **Refresh** button.
-33. [] Verify the **testmail** user appears then close the **Remote Desktop Connection client** window.
-34. [] Close the **Veeam Explorer for Microsoft Active Directory** window.
+6. [] Click the **Tools** menu.
+7. [] Select **Active Directory Users and Computers**.
+8. [] Expand the **veeamlab.local** domain.
+9. [] Select the **Users** organizational unit.
+10. [] Right click the **testmail** user.
+11. [] Select **Delete**.
+12. [] Click the **Yes** button.
+13. [] Minimize the **Remote Desktop Connection** window.
+14. [] Select the **VEEAM-DC01** virtual machine.
+15. [] Click the **Restore application items** button on the **Backups** ribbon.
+16. [] Select **Microsoft Active Directory**.
+17. [] Keep the default settings and click the **Next** button on the **Restore Point** step.
+18. [] Keep the default settings and click the **Next** button on the **Reason** step.
+19. [] Click the **Finish** button on the **Summary** step.
+20. [] Expand the **veeamlab.local** domain.
+21. [] Click the **Compare All Objects** button on the **Home** ribbon.
+22. [] Click the **Show Changed Objects Only** button on the **Home** ribbon.
+23. [] Expand **Users and Computers**.
+24. [] Select the **Users** organizational unit.
+25. [] Select the **testmail** user.
+26. [] Click the **Restore objects** button on the **Objects** ribbon.
+27. [] Select **Restore objects to VEEAM-DC01.veeamlab.local**.
+28. [] Wait for the restore to complete then click the **OK** button.
+29. [] Switch to the **Remote Desktop Connection client** window using the Windows task bar.
+30. [] Select the **Users** organizational unit.
+31. [] Click the **Refresh** button or press the **F5** keyboard button.
+32. [] Verify the **testmail** user appears then close the **Remote Desktop Connection client** window.
+33. [] Close the **Veeam Explorer for Microsoft Active Directory** window.
 
 ===
 
