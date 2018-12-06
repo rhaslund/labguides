@@ -127,16 +127,15 @@ Module 10: Veeam ONE Features and Functionality
  2. Password: +++Pa$$w0rd+++
  
 3. [] Click the **Login** button.
-3. [] Click the **Configuration** tab.
-4. [] Navigate to the **Categories** view.
-5. [] Click the **Add\...** button.
-6. [] Enter friendly name: +++Veeam Courses+++.
-7. [] Enter tag category to use: +++Veeam Courses+++.
-8. [] Select the **Dynamic** radio button in the **Group type** section.
-
-7. [] Click the **"Not Set" groups on charts** drop down menu.
-8. [] Select **Hide**.
-9. [] Click the **OK** button.
+4. [] Click the **Configuration** tab.
+5. [] Navigate to the **Categories** view.
+6. [] Click the **Add\...** button.
+7. [] Enter friendly name: +++Veeam Courses+++.
+8. [] Enter tag category to use: +++Veeam Courses+++.
+9. [] Select the **Dynamic** radio button in the **Group type** section.
+10. [] Click the **"Not Set" groups on charts** drop down menu.
+11. [] Select **Hide**.
+12. [] Click the **OK** button.
 
 ===
 
@@ -149,7 +148,6 @@ Module 10: Veeam ONE Features and Functionality
 3. [] Click the **Grouping Expression...** button.
 4. [] Enter expression: +++CASE WHEN Substring(Name, 0, 5)\="VEEAM" THEN "Course VMs" ELSE "Other VMs" END+++.
 5. [] Click the **OK** button.
-
 6. [] Click the **Workspace** tab in the top left corner.
 7. [] Verify that you see the newly created **Veeam Courses** column then close the **Veeam ONE Business View** window.
 
@@ -178,6 +176,8 @@ Module 10: Veeam ONE Features and Functionality
 > Note: This will let you define Business View groups that should be analyzed in the report.
 
 11. [] Expand the **Veeam Courses** category.
+> **Important: If Veeam Courses is missing it is likely due to the collection started in the previously step has not yet finished.**
+
 12. [] Tick the **Course VMs** check box.
 13. [] Click the **OK** button.
 14. [] Click the **Preview** button.
