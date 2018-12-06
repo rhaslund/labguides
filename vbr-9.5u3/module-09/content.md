@@ -560,7 +560,6 @@ Module 9: Advanced Data Protection
 11. [] Click the **Backup now** button.
 12. [] Wait for the configuration backup to complete then click the **OK** button.
 
-
 ===
 
 ## Step 2: Restoring a configuration backup to another Veeam server
