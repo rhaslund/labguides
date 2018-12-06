@@ -1,4 +1,9 @@
-## Step 1: Install Veeam Backup & Replication
+Module 13: Additional resources
+---
+**This lab is expected to last a maximum of XX minutes including lab launch.**
+
+
+# Lab 13.1: Install Veeam Backup & Replication
 
 1. [] Launch the **File Explorer** from the Windows task bar.
 2. [] Select the **DVD Drive (D:)** drive.
@@ -21,7 +26,7 @@
 
 ===
 
-## Step 2: Install Veeam Backup Enterprise Manager
+# Lab 13.2: Install Veeam Backup Enterprise Manager
 
 1. [] Click the **Install** text link in the **Veeam Backup Enterprise Manager** section.
 2. [] Select the **I accept the terms in the license agreement** radio button.
@@ -35,7 +40,7 @@
 
 ===
 
-## Step 3: Install Veeam ONE
+# Lab 13.3: Install Veeam ONE
 
 1. [] Click the **Install** button on the left hand side.
 2. [] Select the **I accept the terms in the license agreement** radio button.
@@ -61,7 +66,7 @@
 
 ===
 
-## Step 4: Install the second Veeam Backup Server
+# Lab 13.4: Install the second Veeam Backup Server
 
 1. [] Launch the **Remote Desktop Connection client** from the Windows task bar.
 2. [] Enter computer: +++VEEAM-VBR2+++
@@ -72,3 +77,25 @@
 7. [] Select the **DVD Drive (D:)** drive.
 8. [] Launch the **Setup** file.
 9. [] Click the **Install** button on the left hand side.
+10. [] Select the **I accept the terms in the license agreement** radio button.
+11. [] Click the **Next** button on the **License Agreement** step.
+12. [] Click the **Browse...** button.
+13. [] Enter file name: +++\\\\veeam-vbr\\install+++
+14. [] Click the **Open** button.
+15. [] Select the **veeam_availability_suite_nfr_2_2.lic** file.
+16. [] Click the **Open** button.
+17. [] Click the **Next** button on the **Provide License** step.
+18. [] Keep the default settings and click the **Next** button on the **Program Features** step.
+19. [] Click the **Install** button to deploy missing features.
+20. [] Click the **Next** button on the **System Configuration Check** step.
+21. [] Keep the default settings and click the **Install** button on the **Default Configuration** step.
+22. [] Click the **Finish** button.
+23. [] Close the **Veeam Backup & Replication setup** window.
+24. [] Close the **File Explorer** window.
+25. [] Close the **Remote Desktop Connction** window.
+
+---
+
+# Congratulations!
+
+You have completed this Module, to mark the lab as complete click on the menu in the upper right-hand corner and select **End**.
