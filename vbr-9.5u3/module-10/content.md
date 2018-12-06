@@ -45,16 +45,13 @@ Module 10: Veeam ONE Features and Functionality
 3. [] Select **VMware Alarms**.
 3. [] Click the **Next** button on the **Widget pack** step.
 4. [] Keep the default setting and click the **Next** button on the **Widget** step.
-5. [] Click the **Virtual Infrastructure** text link.
-6. [] Expand **Virtual Infrastructure**.
-7. [] Verify the **VEEAM-ESX** check box is ticked then click the **OK** button.
-8. [] Click the **Alarms** drop down menu.
-9. [] Untick the **All items** check box.
-10. [] Scroll down until the **Duplicate IP address detected** alarm is visible.
-11. [] Tick the **Duplicate IP address detected** check box.
-12. [] Click outside the **Alarms** drop down menu to collapse the **Alarms** drop down menu.
-12. [] Click the **Finish** button on the **Options** step.
-13. [] Minimize the **Veeam ONE Reporter** window.
+5. [] Click the **Alarms** drop down menu.
+6. [] Untick the **All items** check box.
+7. [] Scroll down until the **Duplicate IP address detected** alarm is visible.
+8. [] Tick the **Duplicate IP address detected** check box.
+9. [] Click outside the **Alarms** drop down menu to collapse the **Alarms** drop down menu.
+10. [] Click the **Finish** button on the **Options** step.
+11. [] Minimize the **Veeam ONE Reporter** window.
 
 ===
 
