@@ -9,17 +9,18 @@ Module 10: Veeam ONE Features and Functionality
 
 1. [] Launch **Veeam ONE Monitor** from the desktop.
 2. [] Click the **Connect** button.
-3. [] Click the **Add Server** button on the toolbar.
-4. [] Select **Veeam Backup & Replication Server**.
-5. [] Enter DNS name: +++VEEAM-VBR+++.
-6. [] Click the **Next** button on the **Name** step.
-7. [] Enter:
+3. [] Click the **Cancel** button to dismiss the **Server Settings** window.
+4. [] Click the **Add Server** button on the toolbar.
+5. [] Select **Veeam Backup & Replication Server**.
+6. [] Enter DNS name: +++VEEAM-VBR+++.
+7. [] Click the **Next** button on the **Name** step.
+8. [] Enter:
  1. Username: +++VEEAMINFRA\Administrator+++.
  2. Password: +++Pa%%w0rd+++.
 
-8. [] Click the **Next** button on the **Credentials** step.
-9. [] Click the **Finish** on the **Summary** step.
-10. [] Minimize the **Veeam ONE Monitor** window.
+9. [] Click the **Next** button on the **Credentials** step.
+10. [] Click the **Finish** on the **Summary** step.
+11. [] Minimize the **Veeam ONE Monitor** window.
 
 ===
 
