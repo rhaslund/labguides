@@ -90,7 +90,7 @@ Module 10: Veeam ONE Features and Functionality
 
 1. [] Navigate to the **Alarm Management** view.
 2. [] Select **Virtual Machine** in the **VMware** section of the **Alarm Management** view.
-3. [] Click the **New...** text link in the **Actions pane**.
+3. [] Click the **New...** text link in the **Actions** pane.
 4. [] Enter alarm name: +++LABTEST VM CPU usage+++.
 5. [] Click the **Rules** tab.
 6. [] Click the **Add...** button.
