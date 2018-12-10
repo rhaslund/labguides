@@ -12,7 +12,7 @@ Module 4: Protect
 3. [] Click the **Backup Job** button on the **Home** ribbon.
 4. [] Select **Virtual machine**.
 5. [] Select **VMware vSphere...**.
-6. [] Enter name: +++Backup ORCL+++.
+6. [] Enter name: +++Backup Oracle+++.
 7. [] Click the **Next** button on the **Name** step.
 8. [] Click the **Add...** button.
 9. [] Expand the **VEEAM-ESX** host.
@@ -292,7 +292,7 @@ Module 4: Protect
 6. [] Click the **Next** button on the **Job** step.
 7. [] Click the **Add...** button.
 8. [] Select **From backups...**.
-9. [] Expand the **Backup ORCL** backup job.
+9. [] Expand the **Backup Oracle** backup job.
 10. [] Select **Tiny-Veeam**.
 11. [] Click the **Add** button.
 12. [] Click the **Next** button on the **Objects** step.
