@@ -9,8 +9,8 @@ Module 13: Additional resources
 2. [] Select the **DVD Drive (D:)** drive.
 3. [] Launch the **Setup** file.
 4. [] Click the **Install** button on the left hand side.
-5. [] Click the **OK** button to install the **.NET Framework 4.6** prerequisite.
-6. [] Select the **I accept the terms in the license agreement** radio button.
+5. [] Tick the **I accept the terms in the license agreement** check box.
+6. [] Tick the **I accept the terms of the 3rd party components license agreements** check box.
 7. [] Click the **Next** button on the **License Agreement** step.
 8. [] Click the **Browse...** button.
 9. [] Enter: +++C:\Install+++
