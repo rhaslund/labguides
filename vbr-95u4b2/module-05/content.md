@@ -150,7 +150,7 @@ Module 05: Entire VM Recovery
 
 ===
 
-## Step 3: Failover a replicated VM again
+## Step 3: Failover a replicated Hyper-V VM
 
 1. [] Switch back to the **Hyper-V Manager** using the Windows task bar.
 2. [] Select **Tiny-Veeam2**.
@@ -161,8 +161,9 @@ Module 05: Entire VM Recovery
 7. [] Click the **Failover Now** button on the **Replica** ribbon.
 8. [] Keep the default settings and click the **Next** button on the **Virtual Machines** step.
 9. [] Keep the default settings and click the **Next** button on the **Reason** step.
-10. [] Click the **Finish** button on the **Summary** step.
-11. [] Click the **Close** button.
+10. [] Tick the **Do not show me this page again** check box.
+11. [] Click the **Finish** button on the **Summary** step.
+12. [] Click the **Close** button.
 
 ===
 
@@ -226,14 +227,14 @@ Module 05: Entire VM Recovery
 
 ## Step 2: Perform failover by failover plan
 
-1. [] Switch back to the **VMware vSphere Client** using the Windows task bar.
-2. [] Select **VEEAM-DC01**
-3. [] Click the **Shut Down Guest** text link in the **Commands** pane.
-4. [] Click the **Yes** button to confirm shut down of the guest operating system.
-5. [] Select **Tiny-Veeam**.
-6. [] Click the **Power Off** text link in the **Commands** pane.
-7. [] Click the **Yes** button to confirm powering off the virtual machine.
-8. [] Minimize the **VMware vSphere Client** window.
+1. [] Switch back to the **VMware Host Client** using the Windows task bar.
+2. [] Click the **Virtual Machines** text link in the **Navigator** pane.
+3. [] Click the **VEEAM-DC01** virtual machine text link.
+4. [] Click the **Shut down** button.
+5. [] Click the **Virtual Machines** text link in the **Navigator** pane.
+6. [] Click the **Tiny-Veeam** virtual machine text link.
+7. [] Click the **Shut down** button.
+8. [] Minimize the **VMware Host Client** window.
 9. [] Select **Failover Plans** in the **Replicas** section of the **Home** view.
 10. [] Select the **Failover plan** failover plan.
 11. [] Click the **Start** button on the **Failover Plan** ribbon.
@@ -247,12 +248,13 @@ Module 05: Entire VM Recovery
 2. [] Click the **Yes** button to confirm that undo failover plan will reset all replica VMs in the plan to the latest state.
 3. [] Click the **Close** button.
 4. [] Switch back to the **VMware vSphere Client** window using the Windows task bar.
-5. [] Wait until both the **Tiny-Veeam_replica** and **VEEAM-DC01_replica** virtual machines have been powered off. Verify the **Tiny-Veeam** virtual machine is still selected then click the **Power On** text link in the **Commands** pane.
-6. [] Select **VEEAM-DC01**.
-7. [] Click the **Power On** text link in the **Commands** pane.
+5. [] Click the **Virtual Machines** text link in the **Navigation** pane.
+6. [] Wait until both the **Tiny-Veeam_replica** and **VEEAM-DC01_replica** virtual machines have been powered off then tick the **Tiny-Veeam** check box.
+7. [] Tick the **VEEAM-DC01** check box.
+8. [] Click the **Power On** button.
 > Note: Please verify that both the Tiny-Veeam and VEEAM-DC01 virtual machines are in a powered on state before continuing.
 
-8. [] Close the **VMware vSphere Client** window.
+8. [] Close the **VMware Host Client** window.
 > Note: Undo of a failover plan has been completed.
 
 ===
@@ -263,7 +265,6 @@ Module 05: Entire VM Recovery
 2. [] Select **Tiny-Veeam2**.
 3. [] Click the **Planned Failover** button on the **Replica** ribbon.
 4. [] Click the **Next** button on the **Virtual Machines** step.
-5. [] Keep the default settings and click the **Next** button on the **Reason** step.
 6. [] Click the **Finish** button on the **Summary** step.
 > Note: When you start the planned failover, Veeam Backup & Replication performs the following steps:
 >
