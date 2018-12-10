@@ -175,8 +175,8 @@ data to/from a backup repository.
 
 # Lab 3.5: Setup locations
 
-1. [] Select the **Main Repository** Scale-out Repository.
-2. [] Click the **Location** button on the **Scale-out Repository** ribbon.
+1. [] Select the **Scale-out Backup Repository** Scale-out Repository.
+2. [] Click the **Set Location** button on the **Scale-out Repository** ribbon.
 3. [] Select **Manage Locations...**.
 4. [] Click the **Add...** button.
 5. [] Enter name: +++Remote Site+++.
@@ -185,18 +185,18 @@ data to/from a backup repository.
 8. [] Enter name: +++Local+++.
 9. [] Click the **OK** button.
 10. [] Click the **OK** button.
-11. [] Click the **Location** button on the **Scale-out Repository** ribbon.
+11. [] Click the **Set Location** button on the **Scale-out Repository** ribbon.
 12. [] Select **Local**.
 13. [] Select **Backup Repositories** in the **Backup Infrastructure** view.
 14. [] Select **Remote Repository**.
-15. [] Click the **Location** button on the **Backup Repository** ribbon.
+15. [] Click the **Set Location** button on the **Backup Repository** ribbon.
 16. [] Select **Remote Site**.
 17. [] Navigate to the **Inventory** view.
 18. [] Select **VEEAM-ESX** in the **VMware vSphere** section of the **Inventory** view.
-19. [] Click the **Location** button on the **Server** ribbon.
+19. [] Click the **Set Location** button on the **Server** ribbon.
 20. [] Select **Local**.
 21. [] Select **VEEAM-HYPERV** in the **Microsoft Hyper-V** section of the **Inventory** view.
-22. [] Click the **Location** button on the **Server** ribbon.
+22. [] Click the **Set Location** button on the **Server** ribbon.
 23. [] Select **Local**.
 24. [] Close the **Veeam Backup and Replication console** window.
 
