@@ -47,48 +47,41 @@ Module 05: Entire VM Recovery
 # Lab 5.2: Full VM recovery
 
 1. [] Select **Disk** in the **Backups** section of the **Home** view.
-2. [] Expand the **Backup ORCL** backup job.
-3. [] Verify the **Tiny-Veeam** virtual machine has at least 1 (one) restore point then launch the **VMware vSphere Client** from the Windows task bar.
+2. [] Expand the **Backup Oracle** backup job.
+3. [] Verify the **Tiny-Veeam** virtual machine has at least 1 (one) restore point then launch the **VMware Host Client** from the Windows task bar.
 4. [] Enter:
- 1. Name: +++VEEAM-ESX+++
- 2. User name: +++root+++
- 3. Password: +++Pa$$w0rd+++
+ 1. User name: +++root+++
+ 2. Password: +++Pa$$w0rd+++
 
-5. [] Click the **Login** button.
-6. [] Expand the **VEEAM-ESX** host.
-7. [] Expand the **Production** resource pool.
-8. [] Select **Tiny-Veeam** and review the configuration.
-9. [] Switch back to the **Veeam Backup & Replication console** using the Windows task bar.
-10. [] Click the **Restore** button on the **Home** ribbon.
-11. [] Select **VMware vSphere...**.
-12. [] Keep the default setting and click the **Next** button on the **Restore Options** step.
-13. [] Click the **Add VM** button.
-14. [] Select **From backup...**.
-15. [] Expand the **Backup ORCL** job.
-16. [] Select **Tiny-Veeam**.
-17. [] Click the **Add** button.
-18. [] Click the **Next** button on the **Virtual Machines** step.
-19. [] Tick the **Quick rollback (restore changed block only)** check box.
+5. [] Click the **Log in** button.
+6. [] Click the **Virtual Machines** text link in the **Navigator** pane.
+7. [] Click the **Tiny-Veeam** virtual machine text link.
+8. [] Review the configuration then switch back to the **Veeam Backup & Replication console** using the Windows task bar.
+9. [] Select the **Tiny-Veeam** virtual machine.
+9. [] Click the **Entire VM** button on the **Backup** ribbon.
+10. [] Keep the default setting and click the **Next** button on the **Virtual Machines** step.
+11. [] Tick the **Quick rollback (restore changed block only)** check box.
 > Note: That means that the VMware CBT technology will be leveraged to enable incremental restore.
 > In the previous scenario, we assumed that the hard drives of the VM were lost because of a hardware or a storage issue. In this one, we will assume that the VM to be restored has a software problem itself – so the incremental restore option (quick rollback) will be used.
 > Instead of restoring an entire VM or VM disk from a backup file, Veeam Backup & Replication recovers only those data blocks that are necessary to revert the VM or VM disk to an earlier point in time. Incremental restore significantly reduces the recovery time and has little impact on the production environment.
 
-20. [] Click the **Next** button on the **Restore Mode** step.
-21. [] Keep the default settings and click the **Next** button on the **Reason** step.
-22. [] Click the **Show VM(s)** text link to verify it is only **Tiny-Veeam** that will be powered off during the restore.
-23. [] Click the **OK** button.
-24. [] Click the **OK** button to confirm the original virtual machine will be deleted from the infrastructure.
-25. [] Tick the **Power on target VM after restoring** check box.
-26. [] Click the **Finish** button on the **Summary** step.
-27. [] Wait for the log to display **Restore completed successfully** then click the **Close** button.
+12. [] Click the **Next** button on the **Restore Mode** step.
+13. [] Tick the **Do not show me this page again** check box.
+14. [] Click the **Next** button on the **Reason** step.
+15. [] Click the **Show VM(s)** text link to verify it is only **Tiny-Veeam** that will be powered off during the restore.
+16. [] Click the **OK** button.
+17. [] Click the **OK** button to confirm the original virtual machine will be deleted from the infrastructure.
+18. [] Tick the **Power on target VM after restoring** check box.
+19. [] Click the **Finish** button on the **Summary** step.
+20. [] Wait for the log to display **Restore completed successfully** then click the **Close** button.
 > Note: To use incremental restore, make sure that the following requirements are met:
 >
->- The VM or VM disk is restored to its original location.
+> - The VM or VM disk is restored to its original location.
 > - CBT is enabled for the VM disk or all disks of a VM you plan to restore.
 > - The backup file from which you plan to restore a VM or a VM disk is created with the Use Changed Block Tracking option enabled.
 
-28. [] Switch back to the **VMware vSphere Client** using the Windows task bar.
-29. [] Review the **Recent Tasks** pane to better understand the restore process then minimize the **VMware vSphere Client** window.
+21. [] Switch back to the **VMware Host Client** using the Windows task bar.
+22. [] Review the **Recent Tasks** pane to better understand the restore process then minimize the **VMware vSphere Client** window.
 
 ===
 
@@ -100,7 +93,7 @@ Module 05: Entire VM Recovery
 > Note: If you plan to start the extract utility on a machine other than the Veeam backup server, make sure that you copy the Veeam.Backup.Extractor.exe file together with the extract.exe file from the %PROGRAMFILES%\Veeam\Backup and Replication\Backup folder and store these files to the same folder on the destination machine. Otherwise, the extract utility will fail to start.
 
 4. [] Click the **Browse...** button in the **VBK file** section.
-5. [] Enter file name: +++X:\Backup\Backup_ORCL+++
+5. [] Enter file name: +++X:\Backup\Backup_Oracle+++
 6. [] Click the **Open** button.
 7. [] Select the **Tiny-Veeam** VBK full backup file.
 8. [] Click the **Open** button.
@@ -114,7 +107,7 @@ Module 05: Entire VM Recovery
 > Note: Note: The VM files will be extracted to the specified folder.
 
 16. [] Click the **OK** button.
-17. [] Click the **Close** button.
+17. [] Close the **Veeam Backup Extraction Utility** window.
 18. [] Close the **File Explorer** window.
 
 ===
@@ -123,21 +116,21 @@ Module 05: Entire VM Recovery
 
 ## Step 1: Perform a failover to the replicated VM
 
-1. [] Switch back to the  **VMware vSphere Client** using the Windows task bar.
-2. [] Verify the **Tiny-Veeam** virtual machine is still selected then click the **Power off** text link in the **Commands** pane.
-3. [] Click the **Yes** button to confirm powering off the virtual machine.
-4. [] Minimize the **VMware vSphere Client**.
-5. [] Select **Ready** in the **Replicas** section of the **Home** view.
-6. [] Select **Tiny-Veeam**.
-7. [] Click the **Failover Now** button on the **Replica** ribbon.
-8. [] Keep the default settings and click the **Next** button on the **Virtual Machines** step.
+1. [] Switch back to the  **VMware Host Client** using the Windows task bar.
+2. [] Verify the **Tiny-Veeam** virtual machine is still selected then click the **Shut down** button.
+3. [] Minimize the **VMware Host Client**.
+4. [] Select **Ready** in the **Replicas** section of the **Home** view.
+5. [] Select **Tiny-Veeam**.
+6. [] Click the **Failover Now** button on the **Replica** ribbon.
+7. [] Keep the default settings and click the **Next** button on the **Virtual Machines** step.
+8. [] Tick the **do not show me this page again** check box.
 9. [] Keep the default settings and click the **Next** button on the **Reason** step.
 10. [] Click the **Finish** button on the **Summary** step.
 11. [] Watch the failover process until the log displays the **Failover completed successfully** text then click the **Close** button.
-12. [] Switch back to the **VMware vSphere Client** using the Windows task bar.
-13. [] Expand the **Replicas** resource pool.
-14. [] Select the **Tiny-Veeam_replica** virtual machine.
-15. [] Review the configuration of the **Tiny-Veeam_replica** virtual machine then minimize the **VMware vSphere Client**.
+12. [] Switch back to the **VMware Host Client** using the Windows task bar.
+13. [] Click the **Virtual Machines** text link in the **Navigator** pane.
+14. [] Click the **Tiny-Veeam_replica** virtual machine text link.
+15. [] Verify the **Tiny-Veeam_replica** virtual machine has been powered on then minimize the **VMware Host Client**.
 
 ===
 
@@ -148,12 +141,12 @@ Module 05: Entire VM Recovery
 3. [] Click the **Undo Failover** button on the **Replica** ribbon.
 4. [] Click the **Yes** button to confirm you are aware that undo failover resets the replica VM to the latest state.
 5. [] Click the **Close** button.
-6. [] Switch back to the **VMware vSphere Client** using the Windows task bar.
-7. [] Wait until the **Tiny-Veeam_replica** virtual machine is powered off then select the **Tiny-Veeam** virtual machine in the **Production** resource pool.
+6. [] Switch back to the **VMware Host Client** using the Windows task bar.
+7. [] Wait until the **Tiny-Veeam_replica** virtual machine is powered off then click the **Tiny-Veeam** virtual machine text link.
 > Note: Tiny-Veeam_replica is automatically powered off as a part of the undo failover process.
 
-8. [] Click the **Power On** text link in the **Commands** pane.
-9. [] Minimize the **VMware vSphere Client** window.
+8. [] Click the **Power on** button.
+9. [] Minimize the **VMware Host Client** window.
 
 ===
 
