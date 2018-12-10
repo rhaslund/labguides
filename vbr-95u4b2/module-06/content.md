@@ -20,37 +20,37 @@ Module 6: Objects Recovery
 9. [] Launch the **Veeam Backup & Replication console** from the desktop.
 10. [] Click the **Connect** button.
 11. [] Select **Disk** in the **Backups** section of the **Home** view.
-12. [] Expand the **Backup AD & Exchange & SharePoint** job.
+12. [] Expand the **Backup Exchange & SharePoint** job.
 13. [] Select **VEEAM-EX01**.
 14. [] Click the **Application Items** button on the **Backup** ribbon.
 15. [] Select **Microsoft Exchange**.
 16. [] Keep the default setting and click the **Next** button on the **Restore Point** step.
-17. [] Keep the default settings and click the **Next** button on the **Reason** step.
-18. [] Click the **Finish** button on the **Summary** step.
+17. [] Tick the **Do not show me this page again** check box.
+18. [] Click the **Next** button on the **Reason** step.
+19. [] Click the **Finish** button on the **Summary** step.
 > Note: The Veeam Explorer for Microsoft Exchange will launch now. It can also be launched manually from the Windows Start Menu.
 
-19. [] Expand the **Mailbox Database** hierachy.
-20. [] Expand the **testmail** mailbox.
-21. [] Select the **Inbox** folder.
-22. [] Select the **previously deleted e-mail** message.
-23. [] Click the **Restore Items** button on the **Items** ribbon.
-24. [] Select **Restore to...**.
-25. [] Enter mailbox: +++testmail@veeamlab.local+++.
-26. [] Select the **The following account** radio button.
-27. [] Enter:
+20. [] Expand the **Mailbox Database** hierachy.
+21. [] Expand the **testmail** mailbox.
+22. [] Select the **Inbox** folder.
+23. [] Select the **previously deleted e-mail** message.
+24. [] Click the **Restore Items** button on the **Items** ribbon.
+25. [] Select **Restore to...**.
+26. [] Enter mailbox: +++testmail@veeamlab.local+++.
+27. [] Select the **The following account** radio button.
+28. [] Enter:
  1. User name: +++VEEAMLAB\Administrator+++
  2. Password: +++Pa$$w0rd+++
 
-28. [] Click the **Next** button.
-29. [] Wait for the automatic mailbox server discovery to populate as +++veeam-ex01.veeamlab.local+++ then click the **Next** button.
-> Note: Automatic discovery of the mailbox server (CAS) can take up to 2 minutes, please have some patience.
-
-30. [] Keep the default settings and click the **Restore** button.
-31. [] Click the **OK** button.
-32. [] Close the **Veeam Explorer for Microsoft Exchange** window.
-33. [] Switch to the **Outlook Web Access** window using the Windows task bar.
-34. [] Select the **Inbox** folder.
-35. [] Confirm the restored e-mail appears then close the **Outlook Web Access** window.
+29. [] Click the **Next** button.
+30. [] Enter mailbox server (CAS): +++veeam-ex01.veeamlab.local+++
+31. [] Click the **Next** button.
+32. [] Keep the default settings and click the **Restore** button.
+33. [] Click the **OK** button.
+34. [] Close the **Veeam Explorer for Microsoft Exchange** window.
+35. [] Switch to the **Outlook Web Access** window using the Windows task bar.
+36. [] Select the **Inbox** folder.
+37. [] Confirm the restored e-mail appears then close the **Outlook Web Access** window.
 
 ====
 
@@ -63,41 +63,40 @@ Module 6: Objects Recovery
 5. [] Click the **Next** button on the **Site** step.
 6. [] Select the **latest full backup**.
 7. [] Click the **Next** button on the **Content Database** step.
-8. [] Keep the default settings and click the **Next** button on the **Restore Reason** step.
-9. [] Click the **Finish** button on the **Summary** step.
-10. [] If prompted, click the **Yes** button to upgrade the database.
-11. [] Expand **WSS_Content.mdf**.
-12. [] Expand **Home**.
-13. [] Expand **Content**.
-14. [] Check which folder containts the following three files: **invoice.docx**, **market strategy.pptx** and **quote.docx** then click the **folder**.
-> Note: The files should be in either the Documents or Shared Documents list.
-
-15. [] Click the **Restore Library** button on the **Library** ribbon.
-16. [] Select the **The following account** radio button.
-17. [] Enter:
+8. [] Tick the **Do not show me this page again** check box.
+9. [] Keep the default settings and click the **Next** button on the **Restore Reason** step.
+10. [] Click the **Finish** button on the **Summary** step.
+11. [] If prompted, click the **Yes** button to upgrade the database.
+12. [] Expand **WSS_Content.mdf**.
+13. [] Expand **Home**.
+14. [] Expand **Content**.
+15. [] Select the **Shared Documents** folder.
+16. [] Click the **Restore Library** button on the **Library** ribbon.
+17. [] Select the **The following account** radio button.
+18. [] Enter:
  1. Account: +++VEEAMLAB\Administrator+++
  2. Password: +++Pa$$w0rd+++
 
-18. [] Click the **Next** button on the **Specify target SharePoint site and domain account to be used** step.
-19. [] Select the **Restore to the following list** radio button.
-20. [] Enter: +++Restored Docs+++.
-21. [] Click the **Next** button on the **Specify target list** step.
-22. [] Click the **Restore** button on the **Specify the restore options** step.
-23. [] Click the **OK** button.
-24. [] Close the **Veeam Explorer for Microsoft SharePoint** window.
-25. [] Launch the **Remote Desktop Connection** client from the Windows task bar.
-26. [] Enter computer name: +++VEEAM-SP01+++
-27. [] Click the **Connect** button.
-28. [] Enter password: +++Pa$$w0rd+++
-29. [] Click the **OK** button.
-30. [] Open the **Start menu** by moving the cursor to the bottom left corner then click the **Start** button when it appears.
+19. [] Click the **Next** button on the **Specify target SharePoint site and domain account to be used** step.
+20. [] Select the **Restore to the following list** radio button.
+21. [] Enter: +++Restored Docs+++.
+22. [] Click the **Next** button on the **Specify target list** step.
+23. [] Click the **Restore** button on the **Specify the restore options** step.
+24. [] Click the **OK** button.
+25. [] Close the **Veeam Explorer for Microsoft SharePoint** window.
+26. [] Launch the **Remote Desktop Connection** client from the Windows task bar.
+27. [] Enter computer name: +++VEEAM-SP01+++
+28. [] Click the **Connect** button.
+29. [] Enter password: +++Pa$$w0rd+++
+30. [] Click the **OK** button.
+31. [] Open the **Start menu** by moving the cursor to the bottom left corner then click the **Start** button when it appears.
 > Note: If you are having issues opening the start menu, please ask your instructor for assistance.
 
-31. [] Launch **Internet Explorer** using the tile.
-32. [] Browse to +++http://veeam-sp01+++
-33. [] Verify the **Restored Docs** list in the left hand side pane.
-34. [] Close the **Internet Explorer** window.
-35. [] Close the **Remote Desktop Connection** window.
+32. [] Launch **Internet Explorer** using the tile.
+33. [] Browse to +++http://veeam-sp01+++
+34. [] Verify the **Restored Docs** list in the left hand side pane.
+35. [] Close the **Internet Explorer** window.
+36. [] Close the **Remote Desktop Connection** window.
 
 ===
 
