@@ -132,14 +132,14 @@ data to/from a backup repository.
 
 1. [] Select **Scale-out Repositories** in the **Backup Infrastructure** view.
 2. [] Click the **Add Scale-out Repository** button on the **Scale-Out Repository** ribbon.
-> Note: Note: Scale-out Backup Repository embraces several repositories (extents), summarizing their capacity and offering flexible options for keeping massive backups. The Scale-out Backup Repository option is only available in Enterprise and Enterprise Plus editions of Veeam Backup & Replication.
+> Note: Scale-out Backup Repository embraces several repositories (extents), summarizing their capacity and offering flexible options for keeping massive backups. The Scale-out Backup Repository option is only available in Enterprise and Enterprise Plus editions of Veeam Backup & Replication.
 
 3. [] Enter name: +++Main Backup Repository+++
 4. [] Click the **Next** button on the **Name** step.
 5. [] Click the **Add...** button.
 6. [] Tick the **Default Backup Repository** check box.
 7. [] Tick the **Local Backup Repository** check box.
-> Note: Note: A repository that you plan to use as an extent of the Scale-out Backup Repository cannot be
+> Note: A repository that you plan to use as an extent of the Scale-out Backup Repository cannot be
 used for storing configuration backups or replica metadata
 
 8. [] Click the **OK** button.
@@ -164,7 +164,7 @@ used for storing configuration backups or replica metadata
 6. [] Click the **Apply** button.
 7. [] Click the **Test Message** button.
 8. [] Click the **OK** button.
-> Note: Note: You can find Outlook Web Access (OWA) in the task bar of the VEEAM-VBR server. When you start OWA, you can log in as: administrator@veeamlab.local
+> Note: You can find Outlook Web Access (OWA) in the task bar of the VEEAM-VBR server. When you start OWA, you can log in as: administrator@veeamlab.local
 
 9. [] Click the **OK** button.
 
