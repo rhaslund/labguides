@@ -84,19 +84,11 @@ Module 6: Objects Recovery
 23. [] Click the **Restore** button on the **Specify the restore options** step.
 24. [] Click the **OK** button.
 25. [] Close the **Veeam Explorer for Microsoft SharePoint** window.
-26. [] Launch the **Remote Desktop Connection** client from the Windows task bar.
-27. [] Enter computer name: +++VEEAM-SP01+++
-28. [] Click the **Connect** button.
-29. [] Enter password: +++Pa$$w0rd+++
-30. [] Click the **OK** button.
-31. [] Open the **Start menu** by moving the cursor to the bottom left corner then click the **Start** button when it appears.
-> Note: If you are having issues opening the start menu, please ask your instructor for assistance.
-
-32. [] Launch **Internet Explorer** using the tile.
-33. [] Browse to +++http://veeam-sp01+++
-34. [] Verify the **Restored Docs** list in the left hand side pane.
-35. [] Close the **Internet Explorer** window.
-36. [] Close the **Remote Desktop Connection** window.
+26. [] Launch **Google Chrome** using the Windows task bar.
+27. [] Browse to +++http://veeam-sp01+++
+28. [] Click the **Restored Docs** text link in the left side.
+29. [] Verify the three files **invoice.docx**, **market strategy.pptx** and **quote.docx** are present in the **Restored Docs** folder.
+30. [] Close the **Google Chrome** window.
 
 ===
 
