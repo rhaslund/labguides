@@ -9,29 +9,37 @@ Module 05: Entire VM Recovery
 1. [] Launch the **Veeam Backup & Replication console** from the desktop.
 2. [] Click the **Connect** button.
 3. [] Click the **Restore** button on the **Home** ribbon.
-4. [] Select **Microsoft Hyper-V backup...**.
-5. [] Select the **Instant VM recovery** radio button.
-6. [] Click the **Next** button on the **Restore Type** step.
-7. [] Click the **Add VM** button.
-8. [] Select **From backup...**.
-9. [] Expand the **Backup Tiny-Veeam2** job.
-10. [] Select **Tiny-Veeam2**.
-11. [] Click the **Add** button.
-12. [] Click the **Next** button on the **Virtual Machines** step.
-13. [] Keep the default settings and click the **Next** button on the **Recovery Mode** step.
-14. [] Keep the default settings and click the **Next** button on the **Reason** step.
-15. [] Click the **Show objects** text link.
-16. [] Click the **OK** button.
-17. [] Click the **Finish** button on the **Summary** step.
+4. [] Select **Microsoft Hyper-V...**.
+5. [] Select **Restore from backup**.
+6. [] Select **Entire VM restore**.
+7. [] Select **Instant VM recovery**.
+8. [] Click the **Add** button.
+9. [] Select **From backup...**.
+10. [] Expand the **Backup Tiny-Veeam2** job.
+11. [] Select **Tiny-Veeam2**.
+12. [] Click the **Add** button.
+13. [] Click the **Next** button on the **Machines** step.
+14. [] Keep the default settings and click the **Next** button on the **Recovery Mode** step.
+15. [] Keep the default settings and click the **Next** button on the **Secure Restore** step.
+16. [] Tick the **Do not show me this page again** check box.
+17. [] Click the **Next** button on the **Reason** step.
+18. [] Click the **Show objects** text link.
+19. [] Click the **OK** button.
+20. [] Click the **Finish** button on the **Summary** step.
 > Note: When you perform restore operations on the same Veeam backup server where it was backed up, the storage keys and metakeys required to unlock an encrypted file are still stored in the Veeam Backup & Replication database. Veeam Backup & Replication uses these keys to unlock the backup file, and you do not have to enter a password.
 
-18. [] Watch the restore process until you see the **Waiting for user action...** text then click the **Close** button.
-19. [] Launch the **Hyper-V Manager** from the Windows task bar.
-20. [] Select the **Tiny-Veeam2** virtual machine.
-21. [] Verify the **Snapshots** pane containts **Veeam Instant VM Recovery snapshot** then minimize the **Hyper-V Manager** window.
-22. [] Select **Instant Recovery (1)** in the **Home** view.
-23. [] Select the **Tiny-Veeam2** virtual machine.
-24. [] Click the **Migrate to production** button on the **Instant VM Recovery** ribbon.
+21. [] Watch the restore process until you see the **Waiting for user action...** text then click the **Close** button.
+22. [] Launch the **Hyper-V Manager** from the Windows task bar.
+23. [] Select **Hyper-V Manager** in the navigation pane on the left side.
+24. [] Click the **Connect to Server...** text link in the **Actions** pane.
+25. [] Enter another computer: +++VEEAM-HYPERV+++.
+> Note: VEEAM-HYPERV will get added as VEEAM-DCInfra because this is actually the real server name of VEEAM-HYPERV host.
+
+26. [] Select the **Tiny-Veeam2** virtual machine.
+27. [] Verify the **Snapshots** pane containts **Veeam Instant VM Recovery snapshot** then minimize the **Hyper-V Manager** window.
+28. [] Select **Instant Recovery (1)** in the **Home** view.
+29. [] Select the **Tiny-Veeam2** virtual machine.
+30. [] Click the **Migrate to production** button on the **Instant VM Recovery** ribbon.
 > Note: As soon as the migrate to production is completed the Instant Recovery (1) section will disappear. If you no longer see Instant VM Recovery (1) it means the migration to production has completed.
 
 ===
