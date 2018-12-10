@@ -84,32 +84,32 @@ Add a vSphere host and a Hyper-V host to Veeam Backup & Replication.
 2. [] Click the **Add Repository** button on the **Backup Repository** ribbon.
 3. [] Select **Direct attached storage**.
 4. [] Select **Microsoft Windows**.
-3. [] Enter name: +++Remote Repository+++.
-4. [] Click the **Next** button on the **Name** step.
-5. [] Click the **Add New...** button.
+5. [] Enter name: +++Remote Repository+++.
+6. [] Click the **Next** button on the **Name** step.
+7. [] Click the **Add New...** button.
 > Note: The Repository servers list contains only those servers that have been added to Veeam Backup & Replication beforehand. As the VEEAM-Remote server has not been added to Veeam Backup & Replication yet, we have to go through the New Windows Server wizard first.
 
-6. [] Enter DNS name: +++VEEAM-Remote+++.
-7. [] Click the **Next** button on the **Name** step.
-8. [] Click the **Credentials** drop down menu.
-9. [] Select **VEEAMINFRA\Administrator**.
+8. [] Enter DNS name: +++VEEAM-Remote+++.
+9. [] Click the **Next** button on the **Name** step.
+10. [] Click the **Credentials** drop down menu.
+11. [] Select **VEEAMINFRA\Administrator**.
 > Note: This account should have administrator privileges on the added Microsoft Windows Server.
 
-10. [] Click the **Next** button on the **Credentials** step.
-11. [] Click the **Apply** button on the **Review** step.
-12. [] Click the **Next** button on the **Apply** step.
-13. [] Click the **Finish** button on the **Summary** step.
-14. [] Click the **Populate** button on the **Server** step.
-15. [] Select the **X:\\** drive.
-16. [] Click the **Next** button on the **Server** step.
-17. [] Verify the **Path to folder** is **X:\Backups** and click the **Next** button on the **Repository** step.
+12. [] Click the **Next** button on the **Credentials** step.
+13. [] Click the **Apply** button on the **Review** step.
+14. [] Click the **Next** button on the **Apply** step.
+15. [] Click the **Finish** button on the **Summary** step.
+16. [] Click the **Populate** button on the **Server** step.
+17. [] Select the **X:\\** drive.
+18. [] Click the **Next** button on the **Server** step.
+19. [] Verify the **Path to folder** is **X:\Backups** and click the **Next** button on the **Repository** step.
 > Note: The Limit read and write data rates setting is used to limit the speed with which Veeam Backup & Replication can read and write
 data to/from a backup repository.
 
-18. [] Keep the default settings and click the **Next** button on the **Mount Server** step.
-19. [] Keep the default settings and click the **Apply** button on the **Review** step.
-20. [] Click the **Finish** button on the **Apply** step.
-21. [] Click the **Yes** button to confirm changing the configuration backup location to the newly created repository.
+20. [] Keep the default settings and click the **Next** button on the **Mount Server** step.
+21. [] Keep the default settings and click the **Apply** button on the **Review** step.
+22. [] Click the **Finish** button on the **Apply** step.
+23. [] Click the **Yes** button to confirm changing the configuration backup location to the newly created repository.
 > Note: The new repository has been added. We have selected the configuration backup to be stored at the remote site to ensure it will remain intact if the VEEAM-VBR VM crashes.
 
 ===
@@ -149,7 +149,7 @@ data to/from a backup repository.
 10. [] Click the **Yes** button to accept that agent permissions and backup encryption settings currently present on the added extents will be lost.
 11. [] Click the **Next** button on the **Placement Policy** step.
 12. [] Keep the default settings and click the **Apply** button on the **Capacity Tier** step.
-12. [] Click the **Finish** button on the **Summary** step.
+13. [] Click the **Finish** button on the **Summary** step.
 
 ===
 
