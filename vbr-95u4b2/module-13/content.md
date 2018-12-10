@@ -83,22 +83,23 @@ Module 13: Additional resources
 7. [] Select the **DVD Drive (D:)** drive.
 8. [] Launch the **Setup** file.
 9. [] Click the **Install** button on the left hand side.
-10. [] Select the **I accept the terms in the license agreement** radio button.
-11. [] Click the **Next** button on the **License Agreement** step.
-12. [] Click the **Browse...** button.
-13. [] Enter file name: +++\\\\veeam-vbr\\install+++
-14. [] Click the **Open** button.
-15. [] Select the **veeam_availability_suite_nfr_2_2.lic** file.
-16. [] Click the **Open** button.
-17. [] Click the **Next** button on the **Provide License** step.
-18. [] Keep the default settings and click the **Next** button on the **Program Features** step.
-19. [] Click the **Install** button to deploy missing features.
-20. [] Click the **Next** button on the **System Configuration Check** step.
-21. [] Keep the default settings and click the **Install** button on the **Default Configuration** step.
-22. [] Click the **Finish** button.
-23. [] Close the **Veeam Backup & Replication setup** window.
-24. [] Close the **File Explorer** window.
-25. [] Close the **Remote Desktop Connction** window.
+10. [] Tick the **I accept the terms in the license agreement** check box.
+11. [] Tick the **I accept the terms of the 3rd party components license agreements** check box.
+12. [] Click the **Next** button on the **License Agreement** step.
+13. [] Click the **Browse...** button.
+14. [] Enter file name: +++\\\\veeam-vbr\\install+++
+15. [] Click the **Open** button.
+16. [] Select the **veeam_availability_suite_nfr_2_2.lic** file.
+17. [] Click the **Open** button.
+18. [] Click the **Next** button on the **Provide License** step.
+19. [] Keep the default settings and click the **Next** button on the **Program features** step.
+20. [] Click the **Install** button to deploy missing features.
+21. [] Click the **Next** button on the **System Configuration Check** step.
+22. [] Keep the default settings and click the **Install** button on the **Default Configuration** step.
+23. [] Click the **Finish** button.
+24. [] Close the **Veeam Backup & Replication setup** window.
+25. [] Close the **File Explorer** window.
+26. [] Close the **Remote Desktop Connction** window.
 
 ---
 
