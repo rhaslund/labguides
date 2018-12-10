@@ -129,7 +129,6 @@ Module 4: Protect
 
 ===
 
-
 ## Step 3: Create and schedule a backup job for VEEAM-EX01 and VEEAM-SP01
 
 1. [] Click the **Backup Job** button on the **Home** ribbon.
@@ -180,7 +179,8 @@ Module 4: Protect
 ## Step 4: Create and run an encrypted backup job for Tiny-Veeam2
 
 1. [] Click the **Backup Job** on the **Home** ribbon.
-2. [] Select **Microsoft Hyper-V...**
+2. [] Select **Virtual machine**.
+2. [] Select **Microsoft Hyper-V...**.
 3. [] Enter name: +++Backup Tiny-Veeam2+++
 4. [] Click the **Next** button on the **Name** step.
 5. [] Click the **Add...** button.
@@ -194,19 +194,20 @@ Module 4: Protect
 
 12. [] Lower **Restore points to keep on disk** to +++2+++
 13. [] Click the **Advanced** button.
-14. [] Click the **Storage** tab.
-15. [] Tick the **Enable backup file encryption** check box.
-16. [] Click the **Add...** button in the **Encryption** section.
-17. [] Enter:
+14. [] Untick the **Create synthetic full backups periodically** checkbox.
+15. [] Click the **Storage** tab.
+16. [] Tick the **Enable backup file encryption** check box.
+17. [] Click the **Add...** button in the **Encryption** section.
+18. [] Enter:
  1. Hint: +++Technical course that provides extensive information on Veeam solutions+++
  2. Password: +++vmce+++
 
 > Note: It is strongly recommended that you provide a meaningful hint that will help you recall the password. The password hint is displayed when you import an encrypted file to the Veeam backup server and access it.
 
-18. [] Click the **OK** button.
-19. [] Currently, configuration backup does not have encryption enabled. Because you just enabled encryption for a job, configuration backup has been disabled until you enable the encryption of configuration backup. Click the **OK** button.
-20. [] Untick the **Create synthetic full backups periodically** checkbox.
-21. [] Verify the encryption password hint is displayed then click the **OK** button.
+19. [] Click the **OK** button in the Password window.
+20. [] Currently, configuration backup does not have encryption enabled. Because you just enabled encryption for a job, configuration backup has been disabled until you enable the encryption of configuration backup. Click the **OK** button.
+
+21. [] Verify the encryption password hint is displayed then click the **OK** button in the Advanced Settings window.
 > Note: If even one job has encryption enabled, configuration backup will not be performed unless it also has encryption enabled. This is due to security risks.
 
 22. [] Click the **Next** button on the **Storage** step.
@@ -215,7 +216,7 @@ Module 4: Protect
 
 24. [] Tick the **Run this job automatically** check box.
 24. [] Select the **Monthly at this time** radio button.
-25. [] Click the **Apply** button.
+25. [] Click the **Apply** button on the **Schedule** step.
 26. [] Tick the **Run the job when I click Finish** check box.
 27. [] Click the **Finish** button on the **Summary** step.
 > **Important: Do not wait for the jobs to finish before moving to the next step.**
@@ -261,8 +262,8 @@ Module 4: Protect
 > Important: **WARNING! Do NOT use the default cache size of 100 GB. Leaving the default cache size in place will result in the lab running out of space and ultimately the job will fail**. We’re using 10 GB for demonstration only. Please check the User Guide for sizing recommendations.
 
 9. [] Click the **Next** on the **Cache** step.
-10. [] Click the **Apply** button on the **Review** step.
-11. [] Click the **Next** button on the **Apply** step.
+10. [] Keep the default settings and click the **Apply** button on the **Review** step.
+11. [] Keep the default settings and click the **Next** button on the **Apply** step.
 12. [] Click the **Finish** button on the **Summary** step.
 
 ===
@@ -271,23 +272,24 @@ Module 4: Protect
 
 1. [] Click the **Add WAN Accelerator** button on the **WAN Accelerator** ribbon.
 2. [] Verify **Choose server** already has **VEEAM-VBR.veeaminfra.local** selected then click the **Next** button on the **Server** step.
-3. [] Select the **X:\\** drive.
-4. [] Verify the **Folder** is set to **X:\VeeamWAN** then lower the **Cache size** to +++10+++ GB.
+3. [] Verify the **Folder** is set to **X:\VeeamWAN** then lower the **Cache size** to +++10+++ GB.
 > Important: **WARNING! Do NOT use the default cache size of 100 GB. Leaving the default cache size**
 
-5. [] Click the **Next** on the **Cache** step.
-6. [] Click the **Apply** button on the **Review** step.
-7. [] Click the **Next** button on the **Apply** step.
-8. [] Click the **Finish** button on the **Summary** step.
-9. [] Verify both WAN accelerators are present then navigate to the **Home** view.
+4. [] Click the **Next** on the **Cache** step.
+5. [] Click the **Apply** button on the **Review** step.
+6. [] Click the **Next** button on the **Apply** step.
+7. [] Click the **Finish** button on the **Summary** step.
+8. [] Verify both WAN accelerators are present then navigate to the **Home** view.
 
 ===
 
 ## Step 3: Create a backup copy job
 
 1. [] Click the **Backup Copy** button on the **Home** ribbon.
+2. [] Select **Virtual Machine**.
+
 2. [] Select **VMware vSphere backup...**.
-3. [] Enter name: +++Backup Copy Job WAN+++
+3. [] Enter name: +++Backup Copy via WAN accelerators+++
 4. [] Modify **Copy every** to +++2+++ day.
 5. [] Click the **Next** button on the **Job** step.
 6. [] Click the **Add...** button.
@@ -317,7 +319,7 @@ Module 4: Protect
 28. [] Keep the default setting and click the **Finish** button on the **Summary** step.
 > **Important: Do not wait for the jobs to finish before moving to the next step.**
 >
-> Note: Backup Copy Job WAN starts automatically copying the last restore point for VEEAM-ORCL and will be transported from Backup Copy Job to the second Backup Target since it was created within the sync interval.
+> Note: The Backup Copy job starts automatically copying the last restore point for Tiny-Veeam and will be transported from the source repository to the second Backup Target since it was created within the sync interval.
 
 ===
 
@@ -326,8 +328,10 @@ Module 4: Protect
 ## Step 1: Seed replication job for Tiny-Veeam
 
 1. [] Click the **Replication Job** button on the **Home** ribbon.
-2. [] Select **VMware vSphere...**.
-3. [] Enter name: +++Replication Job Tiny-Veeam+++
+2. [] Select **Virtual machine**.
+3. [] Select **VMware vSphere...**.
+
+3. [] Enter name: +++Replication Tiny-Veeam+++
 4. [] Tick the **Low connection bandwidth (enable replica seeding)** check box.
 5. [] Click the **Next** button on the **Name** step.
 6. [] Click the **Add...** button.
@@ -350,7 +354,7 @@ Module 4: Protect
 
 20. [] Keep the default settings and click the **Next** button on the  **Data Transfer** step.
 21. [] Tick the **Get seed from the following backup repository** check box.
-> Note: This will make the replication job use the Backup Jopy WAN job placed in the Remote Repository as a source for the first run of this replication job. All subsequent runs will use the production environment as the source.
+> Note: This will make the replication job use the Backup Jopy job placed in the Remote Repository as a source for the first run of this replication job. All subsequent runs will use the production environment as the source.
 
 28. [] Click the **Next** button on the **Seeding** step.
 29. [] Keep the default settings and click the **Next** button on the **Guest processing** step.
@@ -358,15 +362,17 @@ Module 4: Protect
 31. [] Keep the default schedule and click the **Apply** button on the **Schedule** step.
 32. [] Tick the **Run the job when I click Finish** check box.
 33. [] Click the **Finish** button on the **Summary** step.
-> Important: Do not wait for the jobs to finish before moving to the next step.
+> **Important: Do not wait for the jobs to finish before moving to the next step.**
 
 ===
 
 ## Step 2: Create a replica for VEEAM-DC01
 
 1. [] Click the **Replication Job** button on the **Home** ribbon.
-2. [] Select **VMware vSphere...**.
-3. [] Enter name: +++Replication Job AD+++.
+2. [] Select **Virtual machine**.
+3. [] Select **VMware vSphere...**.
+
+3. [] Enter name: +++Replication Active Directory+++.
 4. [] Click the **Next** button on the **Name** step.
 5. [] Click the **Add...** button.
 6. [] Expand the **VEEAM-ESX** host.
@@ -399,7 +405,7 @@ Module 4: Protect
 29. [] Keep the default schedule and click the **Apply** button on the **Schedule** step.
 30. [] Tick the **Run the job when I click Finish** check box.
 31. [] Click the **Finish** button on the **Summary** step.
-> Important: Do not wait for the jobs to finish before moving to the next step.
+> **Important: Do not wait for the jobs to finish before moving to the next step.**
 
 ===
 
@@ -407,38 +413,38 @@ Module 4: Protect
 
 
 1. [] Click the **Replication Job** button on the **Home** ribbon.
-2. [] Select **Microsoft Hyper-V...**.
-3. [] Enter name: +++Replication Job from Tiny-Veeam2 backup+++.
-4. [] Click the **Next** button on the **Name** step.
-5. [] Click the **Add...** button.
-6. [] Expand the **VEEAM-HYPERV** host.
-7. [] Select **Tiny-Veeam2**.
-8. [] Click the **Add** button.
-9. [] Click the **Source...** button.
-10. [] Select the **From backup files (latest VM state available in backups)** radio button.
-11. [] Tick the **Main Backup Repository** check box.
-12. [] Click the **OK** button.
-13. [] Click the **Next** button on the **Virtual Machines** step.
-14. [] Click the **Choose...** button in the **Host or cluster** section.
-15. [] Select **VEEAM-HYPERV**.
-16. [] Click the **OK** button.
-17. [] Click the **Next** button on the **Destination** step.
-18. [] Lower **Restore points to keep** to +++2+++.
+2. [] Select **Virtual machine**.
+3. [] Select **Microsoft Hyper-V...**.
+4. [] Enter name: +++Replication Tiny-Veeam2 from backup+++.
+5. [] Click the **Next** button on the **Name** step.
+6. [] Click the **Add...** button.
+7. [] Expand the **VEEAM-HYPERV** host.
+8. [] Select **Tiny-Veeam2**.
+9. [] Click the **Add** button.
+10. [] Click the **Source...** button.
+11. [] Select the **From backup files (latest VM state available in backups)** radio button.
+12. [] Tick the **Scale-out Backup Repository** check box.
+13. [] Click the **OK** button.
+14. [] Click the **Next** button on the **Virtual Machines** step.
+15. [] Click the **Choose...** button in the **Host or cluster** section.
+16. [] Select **VEEAM-HYPERV**.
+17. [] Click the **OK** button.
+18. [] Click the **Next** button on the **Destination** step.
+19. [] Lower **Restore points to keep** to +++2+++.
 > Note: It is generally recommended to store replica metadata in a repository that is close to the source proxy.
 
-19. [] Click the **Next** button on the **Job Settings** step.
-20. [] Keep the default settings and click the **Next** button on the **Data Transfer** step.
-21. [] Tick the **Run the job automatically** check box.
-22. [] Select the **Monthly at this time** radio button.
-
-23. [] Click the **Apply** button on the **Schedule** step.
-24. [] Tick the **Run the job when I click Finish** check box.
-25. [] Click the **Finish** button on the **Summary** step.
+20. [] Click the **Next** button on the **Job Settings** step.
+21. [] Keep the default settings and click the **Next** button on the **Data Transfer** step.
+22. [] Tick the **Run the job automatically** check box.
+23. [] Select the **Monthly at this time** radio button.
+24. [] Click the **Apply** button on the **Schedule** step.
+25. [] Tick the **Run the job when I click Finish** check box.
+26. [] Click the **Finish** button on the **Summary** step.
 > **Important: Do not wait for the replication jobs to complete.**
 >
 > Note: When the backup repository is the only source of data, the replication job is often referred to as remote replica from backup. It will always capture only the most recent restore point data from the repository that was created since the remote replica was running last time.
 
-26. [] Close the **Veeam Backup and Replication console** window.
+27. [] Close the **Veeam Backup and Replication console** window.
 
 ---
 
