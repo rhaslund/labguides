@@ -19,7 +19,7 @@ Module 9: Advanced Data Protection
 10. [] Enter:
  1. Username: +++veeam+++ (case sensitive).
  2. Password: +++veeam+++ (case sensitive).
- 3. Description: +++HP VSA admin account+++
+ 3. Description: +++HPE VSA admin account+++
 
 11. [] Click the **OK** button.
 12. [] Click the **Next** button on the **Credentials** step.
@@ -51,12 +51,12 @@ Module 9: Advanced Data Protection
 2. [] Select **SureBackup** in the **Backup Infrastructure** view.
 3. [] Click the **Add App Group** button on the **SureBackup** ribbon.
 4. [] Select **VMware...**.
-5. [] Enter name:  +++SharePoint from snapshot+++.
+5. [] Enter name:  +++SharePoint from storage snapshot+++.
 6. [] Click the **Next** button on the **Name** step.
 7. [] Click the **Add VM** button.
 8. [] Select **From storage snapshots...**.
 9. [] Expand **datastore1 (datastore1)**.
-10. [] Hold the **CTRL** keyboard button and select the **VEEAM-DC01** and **VEEAM- SP01** virtual machines.
+10. [] Hold the **CTRL** keyboard button and select the **VEEAM-DC01** and **VEEAM-SP01** virtual machines.
 11. [] Click the **Add** button.
 12. [] Select **VEEAM-DC01**.
 13. [] Click the **Move Up** button.
@@ -66,17 +66,17 @@ Module 9: Advanced Data Protection
 17. [] Click the **SureBackup Job** button on the **Home** ribbon.
 18. [] Select **VMware...**.
 19. [] Enter
- 1. Name: +++SureBackup Job SharePoint+++ into the **Name** field.
+ 1. Name: +++On-Demand Sandbox SharePoint+++ into the **Name** field.
  2. Description: +++VEEAM-SP01+++. 
 
 20. [] Click the **Next** button on the **Name** step..
 11. [] Keep the default settings and click the **Next** button on the **Virtual Lab** step.
 22. [] Click the **Application group** drop-down menu.
-23. [] Select the **SharePoint from snapshot** application group.
-> Note:  If the Keep the application group running after the job completes check box is ticked the lab will not be powered off when the SureBackup job completes and you could use On-Demand Sandbox for testing, troubleshooting or training. For VMCE training purposes, however, we will leave the check box unticked.
+23. [] Select the **SharePoint from storage snapshot** application group.
+24. [] Tick the **Keep the application group running after the job completes** check box.
+> Note:  If the Keep the application group running after the job completes check box is ticked the lab will not be powered off when the SureBackup job completes and you could use On-Demand Sandbox for testing, troubleshooting or training.
 
-24. [] Click the **Next** button on the **Application Group** step.
-25. [] Click the **Yes** button to ignore the data sovereignty warning.
+25. [] Click the **Next** button on the **Application Group** step.
 26. [] Keep the default settings and click the **Next** button on the **Linked Jobs** step.
 27. [] Keep the default settings and click the **Next** button on the **Settings** step.
 28. [] Tick the **Run the job automatically** check box.
@@ -103,26 +103,25 @@ Module 9: Advanced Data Protection
 10. [] Click the **OK** button to confirm the host.
 11. [] Click the **OK** button.
 12. [] Click the **Next** button on the **Location** step.
-13. [] Keep the default settings and click the **Next** button on the **Restore Reason** step.
-14. [] Click the **Finish** button on the **Summary** step.
+13. [] Click the **Finish** button on the **Summary** step.
 > Note: The Backup Browser will launch after a short wait, please have some patience.
 
-15. [] Expand the **(C:)** drive.
-16. [] Expand the **inetpub** folder.
-17. [] Select the **wwwroot** folder in the **Navigation** pane.
-18. [] Select the **iis-8.png** file.
-19. [] Click the **Restore** button on the **File** ribbon.
-20. [] Select **Keep**.
-21. [] Click the **Credentials** drop down menu.
-22. [] Select **VEEAMLAB\\Administrator**.
-23. [] Click the **OK** button.
-24. [] Wait for the restore to display the **Restore completed successfully** text then click the **Close** button.
-25. [] Close the **Backup Browser** window.
-26. [] Launch the **File Explorer** from the Windows task bar.
-27. [] Navigate to the +++\\\\veeam-sp01\\c$\\inetpub\\wwwroot+++ folder.
+14. [] Expand the **(C:)** drive.
+15. [] Expand the **inetpub** folder.
+16. [] Select the **wwwroot** folder in the **Navigation** pane.
+17. [] Select the **iis-8.png** file.
+18. [] Click the **Restore** button on the **File** ribbon.
+19. [] Select **Keep**.
+20. [] Click the **Credentials** drop down menu.
+21. [] Select **VEEAMLAB\\Administrator**.
+22. [] Click the **OK** button.
+23. [] Wait for the restore to display the **Restore completed successfully** text then click the **Close** button.
+24. [] Close the **Backup Browser** window.
+25. [] Launch the **File Explorer** from the Windows task bar.
+26. [] Navigate to the +++\\\\veeam-sp01\\c$\\inetpub\\wwwroot+++ folder.
 > Important It is not possible to browse to this path, you need to click the address bar inside the File Explorer and then manually input the path and finally press the Enter button.
 
-28. [] Verify both the **iis-8.png** and **RESTORED-iis-8.png** files are present then close the **File Explorer** window.
+27. [] Verify both the **iis-8.png** and **RESTORED-iis-8.png** files are present then close the **File Explorer** window.
 
 ===
 
