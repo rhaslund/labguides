@@ -180,14 +180,18 @@ on the tab.
 11. [] Select **Delete**.
 12. [] Click the **Yes** button.
 13. [] Minimize the **Remote Desktop Connection** window.
+14. [] Expand the **Backup Active Directory** job.
+
 14. [] Select the **VEEAM-DC01** virtual machine.
-15. [] Click the **Restore application items** button on the **Backups** ribbon.
+15. [] Click the **Application items** button on the **Backups** ribbon.
 16. [] Select **Microsoft Active Directory**.
 17. [] Keep the default settings and click the **Next** button on the **Restore Point** step.
+18. [] Tick the **Do not show me this page again** check box.
+
 18. [] Keep the default settings and click the **Next** button on the **Reason** step.
 19. [] Click the **Finish** button on the **Summary** step.
 20. [] Expand the **veeamlab.local** domain.
-21. [] Click the **Compare All Objects** button on the **Home** ribbon.
+21. [] Click the **Compare with Production** button on the **Home** ribbon.
 22. [] Click the **Show Changed Objects Only** button on the **Home** ribbon.
 23. [] Expand **Users and Computers**.
 24. [] Select the **Users** organizational unit.
@@ -208,37 +212,38 @@ on the tab.
 1. [] Select the **VEEAM-SP01** virtual machine.
 2. [] Click the **Application items** button on the **Backups** ribbon.
 3. [] Select **Microsoft SQL Server**.
-4. [] Click the **Next** button on the **Restore Point** step.
-5. [] Keep the default settings and click the **Next** button on the **Reason** step.
-6. [] Click the **Finish** button on the **Summary** step.
-7. [] Wait for the **Veeam Explorer for Microsoft SQL Server** window to load then select the **testdb** database.
-8. [] Click the **Restore Database** button on the **Database** ribbon.
-9. [] Select **Restore point-in-time to VEEAM-SP01\\SQLEXPRESS...**.
-10. [] Select the **Restore to a specific point in time (requires transaction log backups)** radio button.
-11. [] Move the **slider** all the way to the left (select the oldest point in time).
+4. [] Keep the default settings and click the **Next** button on the **Restore Point** step.
+5. [] Tick the **Do not show me this page again** check box.
+6. [] Keep the default settings and click the **Next** button on the **Reason** step.
+7. [] Click the **Finish** button on the **Summary** step.
+8. [] Wait for the **Veeam Explorer for Microsoft SQL Server** window to load then select the **testdb** database.
+9. [] Click the **Restore Database** button on the **Database** ribbon.
+10. [] Select **Restore point-in-time to VEEAM-SP01\\SQLEXPRESS...**.
+11. [] Select the **Restore to a specific point in time (requires transaction log backups)** radio button.
+12. [] Move the **slider** all the way to the left (select the oldest point in time).
 > Note: It may appear as if the slider is already in the most far point, make sure you click it and move it to the left regardless.
 
-12. [] Click the **Restore** button.
-13. [] Click the **OK** button to start the restore process.
+13. [] Click the **Restore** button.
+14. [] Click the **OK** button to start the restore process.
 > Note: The restore will take less than 3 minutes.
 
-14. [] Click the **OK** button.
-15. [] Close the **Veeam Explorer for Microsoft SQL Server** window.
-16. [] Launch the **Remote Desktop Connection client** from the Windows task bar.
-17. [] Enter computer name: +++VEEAM-SP01+++
-18. [] Click the **Connect** button.
-19. [] Leave user name as **VEEAMLAB\Administrator** and enter password: +++Pa$$w0rd+++.
-20. [] Click the **OK** button.
-21. [] Open the **Start menu** by moving the cursor to the bottom left corner then click the **Start** button when it appears.
+15. [] Click the **OK** button.
+16. [] Close the **Veeam Explorer for Microsoft SQL Server** window.
+17. [] Launch the **Remote Desktop Connection client** from the Windows task bar.
+18. [] Enter computer name: +++VEEAM-SP01+++
+19. [] Click the **Connect** button.
+20. [] Leave user name as **VEEAMLAB\Administrator** and enter password: +++Pa$$w0rd+++.
+21. [] Click the **OK** button.
+22. [] Open the **Start menu** by moving the cursor to the bottom left corner then click the **Start** button when it appears.
 > Note: If you are having issues opening the start menu, please ask your instructor for assistance.
 
-22. [] Select the **Microsoft SQL Server Management Studio** tile.
-23. [] Verify the server name is +++VEEAM-SP01\SQLEXPRESS+++ then click the **Connect** button.
-24. [] Expand **Databases**.
-25. [] Expand the **testdb** database
-26. [] Expand **Tables**
-27. [] Verify the **dbo.BuildVersion** table has been restored then close the **Microsoft SQL Server Management Studio** window.
-28. [] Close the **Remote Desktop Connection** window.
+23. [] Select the **Microsoft SQL Server Management Studio** tile.
+24. [] Verify the server name is +++VEEAM-SP01\SQLEXPRESS+++ then click the **Connect** button.
+25. [] Expand **Databases**.
+26. [] Expand the **testdb** database
+27. [] Expand **Tables**
+28. [] Verify the **dbo.BuildVersion** table has been restored then close the **Microsoft SQL Server Management Studio** window.
+29. [] Close the **Remote Desktop Connection** window.
 
 ===
 
@@ -248,75 +253,72 @@ on the tab.
 
 1. [] Launch the **File Explorer** from the Windows task bar.
 2. [] Navigate to: +++\\\\veeam-dc01\\c$\\Important Files+++
-3. [] Select **all the files** in this folder.
-4. [] Click the **Home** menu.
-5. [] Click the **Delete** button.
-6. [] Click the **Yes** button to permanently delete these 3 items.
-7. [] Close the **File Explorer** window.
-
-8. [] Select the **VEEAM-DC01** virtual machine.
-9. [] Click the **Guest Files** button on the **Backup** ribbon.
-10. [] Select **Microsoft Windows**.
-11. [] Keep the default settings and click the **Next** button on the **Restore Point** step.
-12. [] Keep the default settings and click the **Next** button on the **Reason** step.
-13. [] Click the **Finish** button on the **Summary** step.
-14. [] Double click the **Important Files** folder.
-15. [] Select **quote.docx**.
-16. [] Click the **Restore** button on the **File** ribbon.
-17. [] Select **Overwrite**.
+3. [] Select the **invoice.docx** file.
+4. [] Press the **CTRL + A** keyboard buttons to select all files.
+5. [] Click the **Home** menu.
+6. [] Click the **Delete** button.
+7. [] Click the **Yes** button to permanently delete these 3 items.
+8. [] Close the **File Explorer** window.
+9. [] Select the **VEEAM-DC01** virtual machine.
+10. [] Click the **Guest Files** button on the **Backup** ribbon.
+11. [] Select **Microsoft Windows**.
+12. [] Keep the default settings and click the **Next** button on the **Restore Point** step.
+13. [] Tick the **Do not show me this page again** check box.
+14. [] Click the **Next** button on the **Reason** step.
+15. [] Click the **Finish** button on the **Summary** step.
+16. [] Wait for the **Backup Browser** window to open then double click the **Important Files** folder.
+17. [] Select the **quote.docx** file.
+18. [] Click the **Restore** button on the **File** ribbon.
+19. [] Select **Overwrite**.
 > Note: Select option Keep if you do not want to overwrite the existing file with the restored one.
 
-18. [] Click the **Show details** button.
-19. [] Wait until the **Restore completed** text is displayed then click the **Close** button.
-20. [] Close the **Backup Browser** window.
+20. [] Click the **Show details** button.
+21. [] Wait until the **Restore completed** text is displayed then click the **Close** button.
+22. [] Close the **Backup Browser** window.
 
 ===
 
 ## Step 2: Perform Windows guest files recovery through VMware Tools (network-less)
 
-1. [] Launch the **VMware vSphere Client** from the Windows task bar.
+1. [] Launch the **VMware Host Client** from the Windows task bar.
 2. [] Enter:
  1. User name: +++root+++
  2. Password: +++Pa$$w0rd+++
 
-3. [] Click the **Login** button.
-4. [] Expand the **VEEAM-ESX** host.
-5. [] Expand the **Production** resource pool.
-6. [] Select the **VEEAM-DC01** virtual machine.
-7. [] Click the **Edit Settings** text link in the **Commands** pane.
-8. [] Select **Network adapter 1**.
-9. [] Untick the **Connected** check box.
-10. [] Click the **OK** button.
+3. [] Click the **Virtual Machines** text link in the **Navigator** pane.
+4. [] Click the **VEEAM-DC01** virtual machine text link.
+5. [] Click the **Edit** button.
+6. [] Untick the **Connect** check box in the **Network Adapter 1** section.
+7. [] Click the **Save** button.
 > Note: The virtual machine is now disconnected from the network.
 >
 > Important: If the Backup Browser is still open, it is important that you close it. Because an RPC network connection was detected during the first session, failover to a networkless restore (VIX) will not be attempted.
 
-11. [] Minimize the **VMware vSphere Client** window.
-
-11. [] Verify the **VEEAM-DC01** virtual machine is still selected then click the **Guest Files** button on the **Backup** ribbon.
-13. [] Select **Microsoft Windows**.
-14. [] Keep the default settings and click the **Next** button on the **Restore Point** step.
-15. [] Keep the default settings and click the **Next** button on the **Reason** step.
-16. [] Click the **Finish** button on the **Summary** step.
-17. [] Double click the **Important Files** folder.
-18. [] Select **invoice.docx**.
-19. [] Click the **Restore** button on the **File** ribbon.
-20. [] Select **Overwrite**.
+8. [] Minimize the **VMware Host Client** window.
+9. [] Verify the **VEEAM-DC01** virtual machine is still selected then click the **Guest Files** button on the **Backup** ribbon.
+10. [] Select **Microsoft Windows**.
+11. [] Keep the default settings and click the **Next** button on the **Restore Point** step.
+12. [] Click the **Finish** button on the **Summary** step.
+13. [] Wait for the **Backup Browser** window to open then double click the **Important Files** folder.
+14. [] Select the **invoice.docx** file.
+15. [] Click the **Restore** button on the **File** ribbon.
+16. [] Select **Overwrite**.
 > Note: Because the network has been disconnected from the VEEAM-DC01 virtual machine this process can take a few minutes while the network connection attempt times out, please have some patience.
 
-21. [] Click the **Show details** button.
-22. [] Wait until the **Restore completed** text is displayed then click the **Close** button.
+17. [] Click the **Show details** button.
+> Note: The text Restoring via vSphere guest interaction API will be displayed to confirm the network-less restore is performed via VMware Tools.
+
+18. [] Wait until the **Restore completed** text is displayed then click the **Close** button.
 > **Important: Do NOT close the Backup Browser window at this time.**
 
-23. [] Minimize the **Backup Browser** window.
-24. [] Switch back to the **VMware vSphere Client** window using the Windows task bar.
-25. [] Verify the **VEEAM-DC01** virtual machine is still selected then click the **Edit Settings** text link in the **Commands** pane.
-26. [] Select **Network adapter 1**.
-27. [] Tick the **Connected** check box.
-28. [] Click the **OK** button.
+19. [] Minimize the **Backup Browser** window.
+20. [] Switch back to the **VMware Host Client** window using the Windows task bar.
+21. [] Verify the **VEEAM-DC01** virtual machine is still opened then click the **Edit** button.
+22. [] Tick the **Connect** check box in the **Network Adapter 1** section.
+23. [] Click the **Save** button.
 > Note: The virtual machine is now once again connected to the network.
 
-29. [] Close the **VMware vSphere Client** window.
+24. [] Close the **VMware Host Client** window.
 
 ===
 
@@ -343,43 +345,41 @@ on the tab.
 
 ## Step 4: Perform Linux guest files recovery
 
-1. [] Select the **VEEAM-ORCL** virtual machine.
+1. [] Expand the **Backup Oracle** job.
+2. [] Select the **VEEAM-ORCL** virtual machine.
 3. [] Click the **Guest Files** button on the **Backups** ribbon.
 4. [] Select **Linux and other**.
 > Note: Veeam’s multi-OS restore wizard enables you to recover guest OS files from several file systems for VMware vSphere and Microsoft Hyper-V – such as Linux, Unix, BSD, MacOS and many others.
 
 5. [] Keep the default settings and click the **Next** button on the **Restore Point** step.
-6. [] Keep the default settings and click the **Next** button on the **Reason** step.
-7. [] Click the **Customize** button.
-8. [] Click the **Choose...** button in the **Host** section.
-9. [] Select **VEEAM-ESX**.
-10. [] Click the **OK** button.
-11. [] Click the **Choose...** button in the **Resource Pool** section.
-12. [] Expand the **VEEAM-ESX** host.
-13. [] Select the **Production** resource pool.
-14. [] Click the **OK** button.
-15. [] Select the **Use the following IP address** radio button.
-16. [] Enter:
+6. [] Tick the **Do not show me this page again** check box.
+7. [] Cick the **Next** button on the **Reason** step.
+8. [] Click the **Customize** button.
+9. [] Click the **Choose...** button in the **Host** section.
+10. [] Select **VEEAM-ESX**.
+11. [] Click the **OK** button.
+12. [] Select the **Use the following IP address** radio button.
+13. [] Enter:
  1. IP address: +++10.0.3.201+++
  2. Subnet mask: +++255.255.255.0+++
  3. Default gateway: +++10.0.3.3+++
 
-17. [] Click the **OK** button.
-18. [] Click the **Finish** button on the **Helper Appliance** step.
-> Note: The Starting file-level restore helper appliance... text will be displayed while this appliance is deployed to the VEEAM-ESX host and configured on the fly. This process can take up to 4 minutes, please have some patience.
+14. [] Click the **OK** button.
+15. [] Click the **Finish** button on the **Helper Appliance** step.
+> **Important: The Starting file-level restore helper appliance... text will be displayed while this appliance is deployed to the VEEAM-ESX host and configured on the fly. This process can take up to 4 minutes, please have some patience.**
 >
 > Note: For file-level recovery, Veeam Backup & Replication uses a special File Level Recovery Helper (FLR helper) – a small virtual appliance based on the stripped-down Linux kernel. Whenever you perform file-level restore, Veeam Backup & Replication automatically starts the appliance and mounts the VMDK files to the FLR appliance as virtual hard drives. VMDK files are mounted directly from backup files, without prior extraction of the backup content, which makes the restore process much faster compared to competitive solutions. You can then copy individual files and folders from VM disks to your local machine drive or a network share.
 
-19. [] Wait for the **File Level Restore** window to open then expand **LVM**.
-20. [] Expand **centos-root**.
-21. [] Double click the **var** folder.
-22. [] Double click the **log** folder.
-23. [] Select the **boot.log** file.
-24. [] Click the **Copy To** button on the **Home** ribbon.
-25. [] Enter path to folder: +++C:\\Users\\Administrator.VEEAMINFRA\\Desktop+++
-26. [] Click the **Restore** button.
-27. [] Close the **File Level Restore** window.
-28. [] Close the **Veeam Backup & Replication console** window and verify the **boot.log** file is present on the **desktop**.
+16. [] Wait for the **File Level Restore** window to open then expand **LVM**.
+17. [] Expand **centos-root**.
+18. [] Double click the **var** folder.
+19. [] Double click the **log** folder.
+20. [] Select the **boot.log** file.
+21. [] Click the **Copy To** button on the **Home** ribbon.
+22. [] Enter path to folder: +++C:\\Users\\Administrator.VEEAMINFRA\\Desktop+++
+23. [] Click the **Restore** button.
+24. [] Close the **File Level Restore** window.
+25. [] Close the **Veeam Backup & Replication console** window and verify the **boot.log** file is present on the **desktop**.
 
 ---
 
