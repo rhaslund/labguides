@@ -155,13 +155,12 @@ Module 7: Verification
 29. [] Click the **OK** button in the Verification Options window.
 30. [] Click the **OK** button in the Vertification Settings window.
 31. [] Click the **Next** button on the **Linked Jobs** step.
-
-12. [] Keep the default settings and click the **Next** button on the **Settings** step.
-13. [] Tick the **Run the job automatically** check box.
-14. [] Select the **Monthly at this time** radio button.
-15. [] Click the **Apply** button on the **Schedule** step.
-16. [] Tick the **Run the job when I click Finish** check box.
-17. [] Click the **Finish** button on the **Summary** step.
+32. [] Keep the default settings and click the **Next** button on the **Settings** step.
+33. [] Tick the **Run the job automatically** check box.
+34. [] Select the **Monthly at this time** radio button.
+35. [] Click the **Apply** button on the **Schedule** step.
+36. [] Tick the **Run the job when I click Finish** check box.
+37. [] Click the **Finish** button on the **Summary** step.
 > **Important: A SureBackup Job will take a while, do NOT wait for it to complete before proceeding to the next lab.**
 
 ===
@@ -192,14 +191,14 @@ Module 7: Verification
 17. [] Untick the **VM responds to ping on any network interface** check box.
 > Note: In case a virtual machine does not respond to ping, for example due to a firewall this test can be disabled.
 
-19. [] Click the **OK** button.
-20. [] Click the **Next** button on the **Linked Jobs** step.
-21. [] Keep the default settings and click the **Next** step.
-22. [] Tick the **Run the job automatically** check box.
-23. [] Select the **Monthly at this time** radio button.
-24. [] Click the **Apply** button on the **Schedule** step.
-25. [] Tick the **Run the job when I click Finish** check box.
-26. [] Click the **Finish** button on the **Summary** step.
+18. [] Click the **OK** button.
+19. [] Click the **Next** button on the **Linked Jobs** step.
+20. [] Keep the default settings and click the **Next** step.
+21. [] Tick the **Run the job automatically** check box.
+22. [] Select the **Monthly at this time** radio button.
+23. [] Click the **Apply** button on the **Schedule** step.
+24. [] Tick the **Run the job when I click Finish** check box.
+25. [] Click the **Finish** button on the **Summary** step.
 > **Important: Do NOT wait for these SureBackup jobs to complete. Instead inform your instructor that you have completed this lab.**
 
 ---
