@@ -119,7 +119,7 @@ Module 9: Advanced Data Protection
 24. [] Close the **Backup Browser** window.
 25. [] Launch the **File Explorer** from the Windows task bar.
 26. [] Navigate to the +++\\\\veeam-sp01\\c$\\inetpub\\wwwroot+++ folder.
-> Important It is not possible to browse to this path, you need to click the address bar inside the File Explorer and then manually input the path and finally press the Enter button.
+> Important: It is not possible to browse to this path, you need to click the address bar inside the File Explorer and then manually input the path and finally press the Enter button.
 
 27. [] Verify both the **iis-8.png** and **RESTORED-iis-8.png** files are present then close the **File Explorer** window.
 
@@ -130,8 +130,9 @@ Module 9: Advanced Data Protection
 1. [] Select **Backup** in the **Jobs** section of the **Home** view.
 2. [] Select the **Backup ORCL** job.
 3. [] Click the **Start** button on the **Job** ribbon.
-7. [] Select the **VEEAM-ORCL** virtual machine in the **Statistics** pane at the bottom of the screen.
-8. [] Wait until the text **Using backup proxy** is displayed and confirm the line ends with **from storage snapshot**.
+4. [] Select the **VEEAM-ORCL** virtual machine in the **Statistics** pane at the bottom of the screen.
+5. [] Wait until the text **Using backup proxy** is displayed and confirm the line ends with **from storage snapshot**.
+> **Important: Do NOT wait for this job to complete before continuing until the next lab.
 
 ===
 
