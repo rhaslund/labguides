@@ -84,7 +84,7 @@ Module 8: Introduction to Agents
 
 1. [] Navigate to the **Home** view.
 2. [] Click the **Backup Job** button.
-3. [] Select **Windows Computer...**.
+3. [] Select **Windows computer...**.
 4. [] Keep the default settings and click the **Next** button on the **Job Mode** step.
 5. [] Enter name: +++Agent Backup Job Windows+++.
 6. [] Click the **Next** button on the **Name** step.
@@ -95,7 +95,7 @@ Module 8: Introduction to Agents
 11. [] Click the **Next** button on the **Computers** step.
 12. [] Keep the default setting and click the **Next** button on the **Backup Mode** step.
 13. [] Click the **Backup Repository** drop down menu.
-14. [] Select **Main Backup Repository**.
+14. [] Select **Scale-out Backup Repository**.
 15. [] Lower the amount of restore points to: +++3+++.
 16. [] Click the **Next** button on the **Storage** step.
 17. [] Click the **Yes** button to dismiss the warning about a potential data sovereignty violation.
@@ -104,7 +104,7 @@ Module 8: Introduction to Agents
 20. [] Click the **Apply** button on the **Schedule** step.
 21. [] Tick the **Run the job when I click Finish** check box.
 22. [] Click the **Finish** button.
-> Important! The Agent Backup Job Windows job must be in a Stopped status with the last result as Success before continuing to the next lab exercise — this will take a maximum of 9 minutes.
+> Important! The Agent Backup Job Windows job must be in a Stopped status with the last result as Success before continuing to the next lab exercise — this will take a maximum of 12 minutes.
 
 ===
 
@@ -127,112 +127,71 @@ Module 8: Introduction to Agents
 
 # Lab 8.5: Perform Bare Metal Recovery
 
-1. [] Launch the **VMware vSphere Client** from the Windows task bar.
+1. [] Launch the **VMware Host Client** from the Windows task bar.
 2. [] Enter:
  1. User name: +++root+++
  2. Password: +++Pa$$w0rd+++
 
-3. [] Click the **Login** button.
-4. [] Expand the **VEEAM-ESX** host.
-5. [] Expand the **Production** resource pool.
-6. [] Select the **PHYSICAL** virtual machine.
-7. [] Click the **Edit Settings** text link in the **Commands** pane.
-8. [] Confirm that **SCSI controller 0** type is **LSI Logic SAS** then click the **Cancel** button.
-> Note: During the restore, we will utilize a different disk controller to showcase how bare-metal recovery can be performed even on different hardware.
-
-9. [] Click the **Shut Down Guest** text link in the **Commands** pane.
-10. [] Click the **Yes** button.
-> Note: Wait for the PHYSICAL virtual machine to reach a powered off state.
-
-11. [] Right click the **PHYSICAL** virtual machine.
-12. [] Select **Delete from Disk**.
-13. [] Click the **Yes** button.
-14. [] Right click the **Production** resource pool.
-15. [] Select **New Virtual Machine**.
-16. [] Select the **Custom** radio button.
-17. [] Click the **Next** button on the **Configuration** step.
-18. [] Enter name: +++BAREMETAL+++.
-19. [] Click the **Next** button on the **Name and Location** step.
-20. [] Select the **Local01** datastore.
-21. [] Click the **Next** button on the **Storage** step.
-22. [] Keep the default setting and click the **Next** button on the **Virtual Machine Version**.
-23. [] Click the **Version** drop down menu.
-24. [] Select **Windows Server 2012 (64-bit)**.
-25. [] Click the **Next** button on the **Guest Operating System** step.
-26. [] Click the **Number of cores per virtual socket** drop down menu.
-27. [] Select **2**.
-28. [] Click the **Next** button on the **CPUs** step.
-29. [] Modify the **Memory Size** to +++2+++ GB.
-30. [] Click the **Next** button on the **Memory** step.
-31. [] Keep the default settings and click the **Next** button on the **Network** step.
-32. [] Keep the default setting and click the **Next** button on the **SCSI Controller** step.
-> Note: We will later modify this virtual machine from utilizing a SCSI controller to a IDE controller.
-
-33. [] Keep the default setting and click the **Next** button on the **Select a Disk** step.
-34. [] Lower the **Disk Size** to +++20+++ GB.
-35. [] Select the **Thin Provision** radio button.
-36. [] Click the **Next** button on the **Create a Disk** step.
-37. [] Select the **IDE (0:0)** radio button.
-38. [] Click the **Next** button on the **Advanced Options** step.
-39. [] Click the **Finish** button on the **Ready to Complete** step.
-40. [] Select the **BAREMETAL** virtual machine.
-41. [] Right click the **Local01** datastore in the **Resources** section.
-42. [] Select **Browse Datastore...**.
-43. [] Click the **Upload files to this datastore** button (icon looks like a datastore with a green arrow pointing into the datastore)
-44. [] Select **Upload file...**.
-45. [] Select **Desktop** in the **Navigation** pane.
-46. [] Select the **VeeamRecoveryMedia.iso** recovery media.
-> Note: It may be necessary to scroll down.
-
-47. [] Click the **Open** button.
-48. [] Click the **Yes** button to confirm replacing any existing file(s).
-49. [] Wait for the upload to complete then close the **Datastore Browser** window.
-50. [] Click the **Edit Settings** text link in the **Commands** pane.
-51. [] Select **CD/DVD drive 1** in the hardware list.
-52. [] Select the **Datastore ISO file** radio button.
-53. [] Click the **Browse...** button.
-54. [] Double click the **Local01** datastore.
-55. [] Select the **VeeamRecoveryMedia.iso** recovery media.
-> Important: It may be necessary to scroll down. The file name may only be partially displayed as VeeamRecover…
-
-56. [] Click the **OK** button.
-57. [] Tick the **Connect at power on** check box.
-58. [] Click the **OK** button.
-59. [] Click the **Power On** text link in the **Commands** pane.
-60. [] Click the **Open Console** text link in the **Commands** pane.
-61. [] Wait for the **Veeam Recovery Media** screen to appear, and then click anywhere inside the **virtual machine console**.
-62. [] Select **Bare Metal Recovery** by pressing the **down arrow** keyboard button and then the **Enter** keyboard button.
-> Tip: It is possible to utilize the keyboard only instead of the mouse to avoid issues.
-
-63. [] Select the **Network storage** radio button by pressing the **Tab** keyboard button three times, then pressing the **down arrow** keyboard button.
-64. [] Press the **Enter** keyboard button (or click the **Next** button) on the **Backup Location** step.
-65. [] Select the **Veeam backup repository** radio button by pressing the **down arrow** keyboard button until the **Veeam backup repository** radio button is selected.
-66. [] Press the **Enter** keyboard button (or click the **Next** button) on the **Network Storage** step.
-67. [] Enter:
+3. [] Click the **Log in** button.
+4. [] Click the **Virtual Machines** text link in the **Navigator** pane.
+5. [] Tick the **PHYSICAL** check box.
+6. [] Click the **Shut down** button.
+7. [] Wait for the **PHYSICAL** virtual machine to reach a powered off state then click the **Actions** button.
+8. [] Select **Delete**.
+9. [] Click the **Delete** button.
+10. [] Click the **Create / Register VM** button.
+11. [] Keep the default setting and click the **Next** button on the **Select creation type** step.
+12. [] Enter name: +++BAREMETAL+++
+13. [] Click the **Guest OS family** drop down menu.
+14. [] Select **Windows**.
+15. [] Click the **Guest OS version** drop down menu.
+16. [] Select **Microsoft Windows Server 2012 (64-bit)**.
+17. [] Click the **Next** button on the **Select a name and guest OS** step.
+18. [] Select the **Local01** datastore.
+19. [] Click the **Next** button on the **Select storage** step.
+20. [] Click the **CPU** drop down menu.
+21. [] Select **2**.
+22. [] Lower the **Memory** from 4096 MB to +++2048+++ MB.
+23. [] Lower the **Hard disk 1** capacity from 40 GB to +++20+++ GB.
+24. [] Select the **Thin provisioned** radio button.
+25. [] Click the **Next** button on the **Customize settings** step.
+26. [] Click the **Finish** button on the **Ready to complete** step.
+27. [] Click the **BAREMETAL** virtual machine text link.
+28. [] Click the **Edit** button.
+29. [] Click the **CD/DVD Drive 1** drop down menu.
+30. [] Select **Datastore ISO file**.
+31. [] Select the **Local01** datastore.
+32. [] Click the **Upload** button.
+33. [] Select **Desktop**.
+34. [] Select the **VeeamRecoveryMedia.iso** file.
+35. [] Click the **Open** button.
+36. [] Select the newly uploaded **VeeamRecoveryMedia.iso** file.
+37. [] Click the **Select** button.
+38. [] Click the **Save** button.
+39. [] Click the **Power on** button.
+40. [] Click the **Console** button.
+41. [] Wait for the **Veeam Recovery Media** screen to appear, and then select **Bare Metal Recovery**.
+42. [] Select the **Network storage** radio button.
+43. [] Click the **Next** button on the **Backup Location** step.
+44. [] Select the **Veeam backup repository** radio button.
+45. [] Click the **Next** button on the **Network Storage** step.
+46. [] Enter:
  1. Veeam backup server name: +++10.0.3.2+++.
  2. Username: +++VEEAMINFRA\\Administrator+++.
  3. Password: +++Pa$$w0rd+++.
 
-68. [] Press the **Enter** keyboard button (or click the **Next** button) on the **Backup Server** step.
-69. [] Keep the default settings and press the **Enter** keyboard button (or click the **Next** button) on the **Backup** step.
-70. [] Keep the default settings and press the **Enter** keyboard button (or click the **Next** button) on the **Restore Point** step.
-71. [] Keep the default settings and press the **Tab** keyboard button three times then press the **Enter** keyboard button (or click the **Next** button) on the **Restore Mode** step.
-72. [] Keep the default settings and press the **Enter** keyboard button (or click the **Restore** button) on the **Summary** step.
-73. [] Press the **Enter** keyboard button (or click the **Finish** button) on the **Progress** step.
-> Note: Only about 10 GB of data will need to be restored - this will take a maximum of 10 minutes.
+47. [] Click the **Next** button on the **Backup Server** step.
+48. [] Keep the default settings and click the **Next** button on the **Backup** step.
+49. [] Keep the default settings and click the **Next** button on the **Restore Point** step.
+50. [] Keep the default settings and click the **Next** button on the **Restore Mode** step.
+51. [] Click the **Restore** button on the **Summary** step.
+> Note: Only about 10 GB of data will need to be restored - this will take a maximum of 5 minutes.
 
-74. [] Click the **Yes** button to confirm rebooting the computer.
-75. [] Wait for Windows to complete startup then press the **CTRL** and **ALT** keyboard buttons together to release the mouse from the **virtual machine console** window.
-76. [] Click the **VM** menu.
-77. [] Select **Guest**.
-78. [] Select **Send Ctrl\+Alt\+Del**.
-79. [] Click inside the **virtual machine console** window.
-80. [] Enter password: +++Pa$$w0rd+++.
-81. [] Click the **right arrow login** button (or press the **Enter** keyboard button).
-82. [] Click the **Cancel** button to dismiss the **Shutdown Event Tracker** window.
-83. [] Close the **BAREMETAL** virtual machine console window.
-84. [] Close the **VMware vSphere Client** window.
-85. [] Close the **Veeam Backup & Replication console** window.
+52. [] Click the **Finish** button on the **Progress** step.
+53. [] Click the **Yes** button to confirm rebooting the computer.
+
+54. [] Wait for Windows to complete startup then close the **VMware Host Client** window.
+55. [] Close the **Veeam Backup & Replication console** window.
 
 ---
 
