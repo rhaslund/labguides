@@ -150,17 +150,16 @@ Module 7: Verification
 24. [] Click the **OK** button in the Verification Options window.
 25. [] Select the **VEEAM-SP01** virtual machine.
 26. [] Click the **Edit...** button.
-27. [] Tick the **SQL Server** check box.
-28. [] Tick the **Web Server** check box.
-29. [] Click the **OK** button in the Verification Options window.
-30. [] Click the **OK** button in the Vertification Settings window.
-31. [] Click the **Next** button on the **Linked Jobs** step.
-32. [] Keep the default settings and click the **Next** button on the **Settings** step.
-33. [] Tick the **Run the job automatically** check box.
-34. [] Select the **Monthly at this time** radio button.
-35. [] Click the **Apply** button on the **Schedule** step.
-36. [] Tick the **Run the job when I click Finish** check box.
-37. [] Click the **Finish** button on the **Summary** step.
+27. [] Tick the **Web Server** check box.
+28. [] Click the **OK** button in the Verification Options window.
+29. [] Click the **OK** button in the Vertification Settings window.
+30. [] Click the **Next** button on the **Linked Jobs** step.
+31. [] Keep the default settings and click the **Next** button on the **Settings** step.
+32. [] Tick the **Run the job automatically** check box.
+33. [] Select the **Monthly at this time** radio button.
+34. [] Click the **Apply** button on the **Schedule** step.
+35. [] Tick the **Run the job when I click Finish** check box.
+36. [] Click the **Finish** button on the **Summary** step.
 > **Important: A SureBackup Job will take a while, do NOT wait for it to complete before proceeding to the next lab.**
 
 ===
