@@ -338,8 +338,7 @@ Module 9: Advanced Data Protection
 15. [] Click the **Finish** button on the **Storage** step.
 16. [] Click the **Start** button on the **Job** ribbon.
 17. [] Select the **Tiny-Veeam2** virtual machine in the **Statistics** view at the bottom of the screen.
-18. [] Verify the **Creating snapshot LeftHand Networks VSS Provider on Hyper-V Off-Host Backup Proxy** text is displayed then click the **OK** button.
-19. [] Minimize the **Veeam Backup & Replication console** window.
+18. [] Verify the **Creating snapshot LeftHand Networks VSS Provider on Hyper-V Off-Host Backup Proxy** text is displayed then minimize the **Veeam Backup & Replication console** window.
 > **Important: The backup job will take a maximum of 2 minutes to complete, but please do not wait for the job to complete before continuing to the next lab exercise.**
 
 ===
