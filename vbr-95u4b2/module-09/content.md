@@ -417,15 +417,17 @@ Module 9: Advanced Data Protection
 13. [] Click the **OK** button.
 14. [] Navigate to the **Settings** view.
 15. [] Enter:
- 1. Username: +++VEEAMLAB\Administrator+++.
- 2. Password: +++Pa$$w0rd+++.
+ 1. Username: +++VEEAMLAB\Administrator+++
+ 2. Password: +++Pa$$w0rd+++
  
 16. [] Click the **Save** button.
 > Note:  This user account requires corresponding permissions to access Microsoft Active Directory and the mailbox. It needs Exchange Administrator rights and administrator's rights for all mailboxes. If you miss this step, the later Exchange restore exercise will fail.
 
-17. [] Click the **Sign out** text link in the top right corner.
+17. [] Click the **VEEAMINFRA\Administrator** text link in the top right corner.
+18. [] Select **Log Out**.
+
 18. [] Enter:
- 1. User name: +++VEEAMINFRA\restoreoperator+++.
+ 1. User name: +++VEEAMINFRA\restoreoperator+++
  2. Password +++Pa$$w0rd+++
  
 19. [] Click the **Login** button.
@@ -447,19 +449,21 @@ Module 9: Advanced Data Protection
 ## Step 4: Manage public keys and encryption keys
 
 1. [] In the **Veeam Backup Enterprise Manager** window, enter:
- 1. User name: +++VEEAMINFRA\\Administrator+++.
- 2. Password: +++Pa$$w0rd+++.
+ 1. User name: +++VEEAMINFRA\\Administrator+++
+ 2. Password: +++Pa$$w0rd+++
 
 2. [] Click the **Login** button.
 3. [] Click the **Configuration** button in the top right corner.
 4. [] Navigate to the **Key Management** view.
-5. [] Click the **Generate...** button.
+5. [] Click the **Generate** button.
 > Note: For security, it is recommended to periodically generate new Veeam Backup Enterprise Manager keys that should be used in the encryption process.
 
-6. [] Leave the **Hint** empty and click the **Generate** button.
+6. [] Enter hint: +++Veeam Training+++
 > Note: Veeam Backup Enterprise Manager keys are created in the inactive state. To make the keys active and use them for encryption and decryption, you need to activate the keys.
 
-7. [] Select the **first keyset**.
+7. [] Click the **Generate** button.
+
+7. [] Select the **Veeam Training** key set.
 8. [] Click the **Activate** button.
 9. [] Tick the **Key retention period** check box.
 10. [] Tick the **Auto-generate new keys** check box.
@@ -469,8 +473,7 @@ Module 9: Advanced Data Protection
 > Important: It is important to regularly back up your Veeam Backup Enterprise Manager keys or save their copies in a safe place.
 
 12. [] Click the **Export** button.
-13. [] Click the **Save** button on the yellow bar in the bottom of the **Internet Explorer** window.
-14. [] Click the **X** button on the yellow bar in the bottom of the **Internet Explorer** window.
+14. [] Click the **X** button in the bottom right corner of the window.
 
 ===
 
