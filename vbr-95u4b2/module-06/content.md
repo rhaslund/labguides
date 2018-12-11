@@ -120,21 +120,26 @@ on the tab.
 
 17. [] Close the **Oracle SQL Developer** window.
 18. [] Click the **No** button to discard changes.
-19. [] Expand the **Backup ORCL** job.
+19. [] Expand the **Backup Oracle** job.
 20. [] Select the **VEEAM-ORCL** virtual machine.
-21. [] Click the **Restore application items** on the **Backup** ribbon.
+21. [] Click the **Application items** button on the **Backup** ribbon.
 22. [] Select **Oracle**.
 23. [] Keep the default settings and click the **Next** button on the **Restore Point** step.
-24. [] Keep the default settings and click the **Next** button on the **Reason** step.
+24. [] Tick the **Do not show me this page again** check box.
+
+24. [] Click the **Next** button on the **Reason** step.
 25. [] Click the **Finish** button on the **Summary** step.
 26. [] Wait for the **Veeam Explorer for Oracle** window to load then select the **DB1** database.
 27. [] Click the **Restore Database** button on the **Home** ribbon.
 28. [] Select **Restore point-in-time state to veeam-orcl...**.
 29. [] Select the **Restore to a specific point in time (requires redo log backups)** radio button.
 30. [] Move the **slider** all the way to the left (select the oldest point in time available).
-> **Important: Even if the slider appears to be all the way to the left, it is critical you click it and move it to the left.
+> **Important: Even if the slider appears to be all the way to the left, it is critical you click it and move it to the left.**
 
-31. [] Click the **Next** button on the **Specify restore point** step
+31. [] Click the **Restore** button on the **Specify restore point** step
+32. [] Click the **OK** button to restore database DB1 back to server.
+
+
 32. [] Enter password: +++Pa$$w0rd+++
 33. [] Click the **Next** button on the **Specify target Linux server connection credentials** step.
 34. [] Keep the default settings and click the **Next** button on the **Specify Oracle settings** step.
