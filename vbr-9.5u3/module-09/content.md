@@ -232,7 +232,7 @@ Module 9: Advanced Data Protection
 >
 > A new media set always starts with a free tape. Within one media set, the new data block is appended to a previous one on a tape. Veeam Backup & Replication stores information about all tapes that belong to each media set. You can view the list of names or barcodes of tapes that are associated with a particular media set.
 
-18. [] Click the **Next** on the **Media Set** step.
+18. [] Click the **Next** button on the **Media Set** step.
 19. [] Select the **Protect data for** radio button.
 20. [] Increase the weeks to protect data to +++4+++ Weeks.
 21. [] Click the **Next** button on the **Retention** step.
