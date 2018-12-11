@@ -59,7 +59,7 @@ Module 6: Objects Recovery
 1. [] Select the **VEEAM-SP01** virtual machine.
 2. [] Click the **Application Items** button on the **Backup** ribbon.
 3. [] Select **Microsoft SharePoint**.
-4. [] Select **http://veeam-sp01**.
+4. [] Select the **http://veeam-sp01** site.
 5. [] Click the **Next** button on the **Site** step.
 6. [] Select the **latest full backup**.
 7. [] Click the **Next** button on the **Content Database** step.
@@ -72,7 +72,7 @@ Module 6: Objects Recovery
 14. [] Expand **Content**.
 15. [] Select the **Shared Documents** folder.
 16. [] Click the **Restore Library** button on the **Library** ribbon.
-17. [] Select the **The following account** radio button.
+17. [] Select the **Use the following account** radio button.
 18. [] Enter:
  1. Account: +++VEEAMLAB\Administrator+++
  2. Password: +++Pa$$w0rd+++
