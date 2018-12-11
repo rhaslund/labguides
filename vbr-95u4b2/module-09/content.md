@@ -319,26 +319,27 @@ Module 9: Advanced Data Protection
 
 ## Step 3: Edit a Hyper-V backup job and run it in the off-host mode
 
-1. [] Select **Backup** in the **Jobs** section of the **Home** view.
-2. [] Select the **Backup Tiny-Veeam2** job.
-3. [] Click the **Edit** button on the **Job** ribbon.
-4. [] Keep the existing settings and click the **Next** button on the **Name** step.
-5. [] Select the **Tiny-Veeam2** virtual machine.
+1. [] Navigate to the **Home** view.
+2. [] Select **Backup** in the **Jobs** section of the **Home** view.
+3. [] Select the **Backup Tiny-Veeam2** job.
+4. [] Click the **Edit** button on the **Job** ribbon.
+5. [] Keep the existing settings and click the **Next** button on the **Name** step.
+6. [] Select the **Tiny-Veeam2** virtual machine.
 > Note:  We are re-adding the VM because the virtual machine was deleted then restored in a previous lab exercise.
 
-6. [] Click the **Remove** button.
-7. [] Click the **Add...** button.
-8. [] Expand the **VEEAM-HYPERV** host.
-9. [] Select **Tiny-Veeam2**.
-10. [] Click the **Add** button.
-11. [] Click the **Next** button on the **Virtual Machines** step.
-12. [] Click the **Choose...** button in the **Backup proxy** section.
-13. [] Verify the **Hyper-V Off-Host Backup Proxy** is visible in the **Name** column then click the **Cancel** button.
-14. [] Click the **Finish** button on the **Storage** step.
-15. [] Click the **Start** button on the **Job** ribbon.
-16. [] Select the **Tiny-Veeam2** virtual machine in the **Statistics** view at the bottom of the screen.
-17. [] Verify the **Creating snapshot LeftHand Networks VSS Provider on Hyper-V Off-Host Backup Proxy** text is displayed then click the **OK** button.
-18. [] Minimize the **Veeam Backup & Replication console** window.
+7. [] Click the **Remove** button.
+8. [] Click the **Add...** button.
+9. [] Expand the **VEEAM-HYPERV** host.
+10. [] Select **Tiny-Veeam2**.
+11. [] Click the **Add** button.
+12. [] Click the **Next** button on the **Virtual Machines** step.
+13. [] Click the **Choose...** button in the **Backup proxy** section.
+14. [] Verify the **Hyper-V Off-Host Backup Proxy** is visible in the **Name** column then click the **Cancel** button.
+15. [] Click the **Finish** button on the **Storage** step.
+16. [] Click the **Start** button on the **Job** ribbon.
+17. [] Select the **Tiny-Veeam2** virtual machine in the **Statistics** view at the bottom of the screen.
+18. [] Verify the **Creating snapshot LeftHand Networks VSS Provider on Hyper-V Off-Host Backup Proxy** text is displayed then click the **OK** button.
+19. [] Minimize the **Veeam Backup & Replication console** window.
 > **Important: The backup job will take a maximum of 2 minutes to complete, but please do not wait for the job to complete before continuing to the next lab exercise.**
 
 ===
