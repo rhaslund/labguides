@@ -87,8 +87,7 @@ Module 6: Objects Recovery
 26. [] Launch **Google Chrome** using the Windows task bar.
 27. [] Browse to +++http://veeam-sp01+++
 28. [] Click the **Restored Docs** text link in the left side.
-29. [] Verify the three files **invoice.docx**, **market strategy.pptx** and **quote.docx** are present in the **Restored Docs** folder.
-30. [] Close the **Google Chrome** window.
+29. [] Verify the three files **invoice.docx**, **market strategy.pptx** and **quote.docx** are present in the **Restored Docs** folder then close the **Google Chrome** window.
 
 ===
 
