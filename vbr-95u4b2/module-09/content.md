@@ -164,7 +164,7 @@ Module 9: Advanced Data Protection
 4. [] Launch the **Remote Desktop Connection client** from the Windows task bar.
 5. [] Enter computer: +++VEEAM-Remote+++.
 6. [] Click the **Connect** button.
-7. [] Enter password: +++Pa$$w0rd+++.
+7. [] Enter password: +++Pa$$w0rd+++
 8. [] Click the **OK** button.
 9. [] Click the **Start** menu (move the mouse cursor all the way to the edge of the bottom left hand corner to make the start menu button appear).
 10. [] Enter: +++devmgmt.msc+++ and press the **Enter** keyboard button.
@@ -179,7 +179,7 @@ Module 9: Advanced Data Protection
 19. [] Verify the driver has been installed then click the **Close** button.
 20. [] Expand **Other devices**.
 21. [] Right click the first **HP Ultrium 5-SCSI SCSI Sequential** device.
-22. [] Select **Update driver software...**.
+22. [] Select **Update Driver Software...**.
 23. [] Select **Browse my computer for driver software**.
 24. [] Keep the default path and click the **Next** button.
 25. [] Click the **Close** button.
@@ -190,6 +190,10 @@ Module 9: Advanced Data Protection
 30. [] Click the **Close** button.
 31. [] Close the **Device Manager** window.
 32. [] Close the **Remote Desktop Connection** window.
+33. [] Select the **HP MSL G3 Series 1068** tape library.
+34. [] Click the **Rescan Library** button on the **Tape Library** ribbon.
+35. [] Click the **Close** button.
+36. [] Select **Drives** in the **Libraries** section of the **Home** view.
 
 ===
 
@@ -205,6 +209,7 @@ Module 9: Advanced Data Protection
 > Note: In a production environment, if you are unsure if the tapes are completely new and you want to use them as free media, use Erase Tape → Short to place them in **Media Pool** → **Free**.
 
 8. [] Click the **Yes** button to confirm moving the unrecognized tapes to the **Free Media Pool**.
+9. [] Wait for the status to reach **Success** then click the **Close** button.
 9. [] Verify the **Media Pool** column changes to **Free** for all tapes with the exception of the cleaning tape then navigate to the **Home** view.
 
 ===
@@ -216,11 +221,11 @@ Module 9: Advanced Data Protection
 3. [] Keep the default settings and click the **Next** button on the **Name** step.
 4. [] Click the **Add...** button.
 5. [] Select **Backup Jobs...**.
-6. [] Select the **Backup ORCL** job.
+6. [] Select the **Backup Oracle** job.
 7. [] Click the **OK** button.
-8. [] Click the **Next** button on the **Backup Files** step.
+8. [] Click the **Next** button on the **Backups** step.
 9. [] Click the **Add New...** button.
-10. [] Select **Simple media pool**.
+10. [] Select **Simple Media Pool**.
 11. [] Enter name: +++Media Pool Full+++.
 12. [] Click the **Next** button on the **Name** step.
 13. [] Click the **Add...** button.
@@ -232,13 +237,13 @@ Module 9: Advanced Data Protection
 >
 > A new media set always starts with a free tape. Within one media set, the new data block is appended to a previous one on a tape. Veeam Backup & Replication stores information about all tapes that belong to each media set. You can view the list of names or barcodes of tapes that are associated with a particular media set.
 
-18. [] Click the **Next** on the **Media Set** step.
+18. [] Click the **Next** button on the **Media Set** step.
 19. [] Select the **Protect data for** radio button.
 20. [] Increase the weeks to protect data to +++4+++ Weeks.
 21. [] Click the **Next** button on the **Retention** step.
 22. [] Keep the default settings and click the **Apply** button on the **Options** step.
 23. [] Click the **Finish** button on the **Summary** step.
-24. [] Verify the media pool for full backups has changed to **Media Pool Full (HP MSL G3 Series 1068)** then click the **Next** button on the **Full Backup** step.
+24. [] Verify the media pool for full backups has changed to **Media Pool Full (HP MSL G3 Series 1068)** then click the **Next** button on the **Media Pool** step.
 25. [] Verify the media pool for incremental backups is set to **Media Pool Full (HP MSL G3 Series 1068)** then click the **Next** button on the **Incremental Backup** step.
 26. [] Keep the default settings and click the **Next** button on the **Options** step.
 27. [] Tick the **Run the job automatically** check box.
