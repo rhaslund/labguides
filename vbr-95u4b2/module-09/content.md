@@ -350,14 +350,14 @@ Module 9: Advanced Data Protection
 1. [] Launch **Veeam Backup Enterprise Manager** from the **desktop**.
 2. [] Click the **Configuration** button in the top right corner.
 3. [] Click the **Add...** button.
-4. [] Click the **Yes** button to dismiss the warning that Veeam Backup Enterprise Manager will push its license to all connected backup servers.
-5. [] Enter: 
+4. [] Enter: 
  1. DNS name: +++VEEAM-VBR2+++ 
  2. User name: +++VEEAMINFRA\Administrator+++ 
  3. Password: +++Pa$$w0rd+++ 
 
 6. [] Click the **OK** button.
-7. [] Now, both Veeam backup servers are visible to **Veeam Backup Enterprise Manager**. Data about backup and replication jobs from the SQL databases used by VEEAM-VBR and VEEAM-VBR2 will be collected and stored. Veeam Backup Enterprise Manager enables you to modify the settings of jobs that have been previously configured on managed backup servers. Click the **Home** button in the top left corner.
+> Note: Now, both Veeam backup servers are visible to **Veeam Backup Enterprise Manager**. Data about backup and replication jobs from the SQL databases used by VEEAM-VBR and VEEAM-VBR2 will be collected and stored. Veeam Backup Enterprise Manager enables you to modify the settings of jobs that have been previously configured on managed backup servers.
+
 8. [] Click the **Jobs** tab.
 9. [] Select the **Backup Copy Job WAN** job.
 > Important: Do **NOT** click the **Backup Copy Job WAN** text link, instead make sure you select the row - for example by clicking right next to the text link.
@@ -377,24 +377,21 @@ Module 9: Advanced Data Protection
 1. [] Click the **Configuration** button in the top right corner.
 2. [] Select the **veeam-vbr.veeaminfra.local** backup server.
 3. [] Click the **Start Collecting** button.
-4. [] Click the **OK** button.
 > Note: To automatically run catalog replication after every backup job, click **Schedule** on the toolbar. In the displayed window, select Automatic after any backup job finishes and specify other options as necessary. This is actually not required in this specific lab environment since Veeam Backup & Replication and Veeam Backup Enterprise Manager are installed on the same machine and use the same catalog. However, this would be required for performing a file-level restore if Veeam Backup & Replication and Veeam Backup Enterprise Manager were installed on different machines.
 
-5. [] Click the **Home** button in the top left corner.
-6. [] Click the **Files** tab.
-7. [] Enter machine name: +++VEEAM-DC01+++.
-8. [] Press the **ENTER** keyboard button.
-9. [] Click the **Search** tab.
-10. [] Enter search: +++\*.txt+++.
-11. [] Press the **Enter** keyboard button.
-
-13. [] Right click the **first file**.
-14. [] Select **Restore**.
-15. [] Select **Overwrite**.
-16. [] Click the **Yes** button.
+4. [] Click the **Files** tab.
+5. [] Enter machine name: +++VEEAM-DC01+++.
+6. [] Select the **VEEAM-DC01** virtual machine.
+7. [] Click the **Mount** button.
+8. [] Enter file name: +++\*.txt+++.
+9. [] Click the **Search** button.
+10. [] Select the **first file**.
+11. [] Click the **Restore** button.
+12. [] Select **Overwrite**.
+13. [] Click the **Yes** button.
 > Note:  The restore session will start, and you can view its progress in the session log.
 
-17. [] Minimize the **Veeam Backup Enterprise Manager** window.
+14. [] Minimize the **Veeam Backup Enterprise Manager** window.
 
 ===
 
