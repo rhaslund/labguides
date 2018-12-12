@@ -287,7 +287,6 @@ Module 9: Advanced Data Protection
 > Note: Pay attention to the management group name as it is case sensitive. Otherwise, the test will fail.
 
 20. [] Click the **Test** button.
-
 21. [] Enter IP address: +++10.0.2.240+++.
 22. [] Click the **OK** button.
 23. [] Verify the **Test succeeded. The credentials are valid.** text is displayed then click the **OK** button.
@@ -355,20 +354,20 @@ Module 9: Advanced Data Protection
  2. User name: +++VEEAMINFRA\Administrator+++ 
  3. Password: +++Pa$$w0rd+++ 
 
-6. [] Click the **OK** button.
+5. [] Click the **OK** button.
 > Note: Now, both Veeam backup servers are visible to **Veeam Backup Enterprise Manager**. Data about backup and replication jobs from the SQL databases used by VEEAM-VBR and VEEAM-VBR2 will be collected and stored. Veeam Backup Enterprise Manager enables you to modify the settings of jobs that have been previously configured on managed backup servers.
 
-8. [] Click the **Jobs** tab.
-9. [] Select the **Backup Copy Job WAN** job.
+6. [] Click the **Jobs** tab.
+7. [] Select the **Backup Copy Job WAN** job.
 > Important: Do **NOT** click the **Backup Copy Job WAN** text link, instead make sure you select the row - for example by clicking right next to the text link.
 
-10. [] Click the **Job** button.
+8. [] Click the **Job** button.
 > Important: If the screen resolution is less than 1440 × 900 the Job button will not be visible, please increase your resolution.
 
-11. [] Select **Disable**.
-12. [] Wait for the **Backup Copy Job WAN** job status changes to either **Warning** or **Success**. Switch to the **Veeam Backup and Replication console** window using the Windows task bar. 
-13. [] Select **Backup Copy** in the **Jobs** section of the **Home** view.
-14. [] Verify the **Backup Copy Job WAN** next run is **Disabled** then switch to the **Veeam Backup Enterprise Manager** window using the Windows task bar.
+9. [] Select **Disable**.
+10. [] Wait for the **Backup Copy Job WAN** job status changes to either **Warning** or **Success**. Switch to the **Veeam Backup and Replication console** window using the Windows task bar. 
+11. [] Select **Backup Copy** in the **Jobs** section of the **Home** view.
+12. [] Verify the **Backup Copy Job WAN** next run is **Disabled** then switch to the **Veeam Backup Enterprise Manager** window using the Windows task bar.
 
 ===
 
@@ -425,24 +424,23 @@ Module 9: Advanced Data Protection
 
 17. [] Click the **VEEAMINFRA\Administrator** text link in the top right corner.
 18. [] Select **Log Out**.
-
-18. [] Enter:
+19. [] Enter:
  1. User name: +++VEEAMINFRA\restoreoperator+++
  2. Password +++Pa$$w0rd+++
  
-19. [] Click the **Login** button.
-20. [] Enter username: +++testmail+++
-21. [] Press the **Enter** keyboard button.
+20. [] Click the **Login** button.
+21. [] Enter username: +++testmail+++
+22. [] Press the **Enter** keyboard button.
 > Note: If the testmail user cannot be found, the username and password set in Configuration\\Setting was incorrect. Click the Configuration button in the top right corner, Navigate to the Sessions view and enter username VEEAMLAB\\Administrator and password Pa$$w0rd.
 
-22. [] Select the **testmail** user.
-23. [] Tick the **Mail** check box.
-24. [] Click the **Restore** button.
+23. [] Select the **testmail** user.
+24. [] Tick the **Mail** check box.
+25. [] Click the **Restore** button.
 > Note:  Restore to another domain is supported within the same forest only.
 
-25. [] Wait until **Status** reaches **Success** then click the **Sign out** text link in the top right corner.
-26. [] Switch to the **Outlook Web Access** window using the Windows task bar.
-27. [] Verify that the previously deleted item has been restored and close the **Outlook Web Access** window.
+26. [] Wait until **Status** reaches **Success** then click the **Sign out** text link in the top right corner.
+27. [] Switch to the **Outlook Web Access** window using the Windows task bar.
+28. [] Verify that the previously deleted item has been restored and close the **Outlook Web Access** window.
 
 ===
 
@@ -463,16 +461,16 @@ Module 9: Advanced Data Protection
 
 7. [] Click the **Generate** button.
 
-7. [] Select the **Veeam Training** key set.
-8. [] Click the **Activate** button.
-9. [] Tick the **Key retention period** check box.
-10. [] Tick the **Auto-generate new keys** check box.
+8. [] Select the **Veeam Training** key set.
+9. [] Click the **Activate** button.
+10. [] Tick the **Key retention period** check box.
+11. [] Tick the **Auto-generate new keys** check box.
 > Note: After the current keyset expires, **Veeam Backup Enterprise Manager** will automatically generate a new keyset and mark it as active.
 
-11. [] Click the **Save** button.
+12. [] Click the **Save** button.
 > Important: It is important to regularly back up your Veeam Backup Enterprise Manager keys or save their copies in a safe place.
 
-12. [] Click the **Export** button.
+13. [] Click the **Export** button.
 14. [] Click the **X** button in the bottom right corner of the window.
 
 ===
@@ -482,67 +480,68 @@ Module 9: Advanced Data Protection
 1. [] Launch the **Remote Desktop Connection client** from the Windows task bar.
 2. [] Enter computer: +++VEEAM-VBR2+++.
 3. [] Click the **Connect** button.
-4. [] Enter password: +++Pa$$w0rd+++.
+4. [] Enter password: +++Pa$$w0rd+++
 5. [] Click the **OK** button.
 6. [] Launch the **Veeam Backup & Replication console** from the desktop.
 7. [] Click the **Connect** button.
 8. [] Select **Backup Repositories** in the **Backup Infrastructure** view.
 9. [] Click the **Add Repository** button on the **Backup Repository** ribbon.
-10. [] Enter name: +++Remote Repository+++.
-11. [] Click the **Next** button on the **Name** step.
-12. [] Keep the default setting and click the **Next** button on the **Type** step.
-13. [] Click **Add new...** button.
-14. [] Enter DNs name: +++VEEAM-VBR+++.
-15. [] Click the **Next** button on the **Name** step.
-16. [] Click the **Add...** button.
-17. [] Enter:
- 1. Username: +++VEEAMINFRA\Administrator+++.
- 2. Password: +++Pa$$w0rd+++.
+10. [] Select **Direct attached storage**.
+11. [] Select **Microsoft Windows**.
+12. [] Enter name: +++Remote Repository+++.
+13. [] Click the **Next** button on the **Name** step.
+14. [] Click **Add new...** button.
+15. [] Enter DNs name: +++VEEAM-VBR+++.
+16. [] Click the **Next** button on the **Name** step.
+17. [] Click the **Add...** button.
+18. [] Enter:
+ 1. Username: +++VEEAMINFRA\Administrator+++
+ 2. Password: +++Pa$$w0rd+++
  
-18. [] Click the **OK** button.
-19. [] Click the **Next** button on the **Credentials** step.
-20. [] Click the **Apply** button on the **Review** step.
-21. [] Click the **Next** button on the **Apply** step.
-22. [] Click the **Finish** button on the **Summary** step.
-23. [] Verify that the repository server is set to VEEAM-VBR then click the **Next** button on the **Server** step.
-24. [] Enter path to folder: +++X:\Backup+++.
-25. [] Click the **Next** button on the **Repository** step
-26. [] Untick the **Enable vPower NFS service on the mount server**
+19. [] Click the **OK** button.
+20. [] Click the **Next** button on the **Credentials** step.
+21. [] Click the **Apply** button on the **Review** step.
+22. [] Click the **Next** button on the **Apply** step.
+23. [] Click the **Finish** button on the **Summary** step.
+24. [] Verify that the repository server is set to VEEAM-VBR then click the **Next** button on the **Server** step.
+25. [] Enter path to folder: +++X:\Backup+++.
+26. [] Click the **Next** button on the **Repository** step
+27. [] Untick the **Enable vPower NFS service on the mount server**.
 > Note: In a production environment it usually not be recommended to disable the vPower NFS service on the mount server.
 
-27. [] Click the **Next** button on the **Mount Server** step.
-28. [] Tick the **Import existing backups automatically** check box.
-29. [] Click the **Apply** button on the **Review** step.
-30. [] Click the **Finish** button on the **Apply** step.
-31. [] Click the **No** button to keep the current configuration backup location.
-32. [] Navigate to the **Home** view.
-33. [] Select **Disk (encrypted)** in the **Backups** section of the **Home** view.
-34. [] Select **Backup Tiny-Veeam2**.
-35. [] Click the **Specify password** button on the **Encrypted Backup** ribbon.
-36. [] Click the **I have lost the password** text link.
-37. [] Click the **Copy to clipboard** button.
-38. [] Click the **Next** button on the **Request** step.
+28. [] Click the **Next** button on the **Mount Server** step.
+29. [] Tick the **Import existing backups automatically** check box.
+30. [] Click the **Apply** button on the **Review** step.
+31. [] Click the **Finish** button on the **Apply** step.
+32. [] Click the **No** button to keep the current configuration backup location.
+33. [] Navigate to the **Home** view.
+34. [] Select **Disk (encrypted)** in the **Backups** section of the **Home** view.
+35. [] Select **Backup Tiny-Veeam2**.
+36. [] Click the **Specify password** button on the **Encrypted Backup** ribbon.
+37. [] Click the **I have lost the password** text link.
+38. [] Click the **Copy to clipboard** button.
+39. [] Click the **Next** button on the **Request** step.
 > Note: At this step, the copied request will be sent by email or passed in another way to the Veeam Backup Enterprise Manager administrator. For our lab purposes, we will just keep it copied in the clipboard.
 
-39. [] Minimize the **Remote Desktop Connection** window.
-40. [] Navigate to the **Backup Servers** view.
-41. [] Click the **Refresh** button.
-42. [] Navigate to the **Key Management** view.
-43. [] Click the **Password Recovery...** button.
-44. [] Click the **Paste** button.
-45. [] Click the **Next** button on the **Challenge Request** step.
-46. [] Verify the **Request verified successfully** text is displayed then click the **Next** button on the **Verify request** step.
-47. [] Press the **CTRL + C** keyboard buttons together to copy the response.
-48. [] Switch back to the **Remote Desktop Connection client** window.
-49. [] Press the **CTRL + V** keyboard buttons together to paste the request.
-50. [] Click the **Next** button on the **Response** step.
+40. [] Minimize the **Remote Desktop Connection** window.
+41. [] Navigate to the **Backup Servers** view.
+42. [] Click the **Refresh** button.
+43. [] Navigate to the **Key Management** view.
+44. [] Click the **Password Recovery** button.
+45. [] Press the **CTRL + V** keyboard buttons to paste the challange request..
+46. [] Click the **Next** button on the **Challenge Request** step.
+47. [] Verify the **Request verified successfully** text is displayed then click the **Next** button on the **Verify request** step.
+48. [] Press the **CTRL + C** keyboard buttons together to copy the response.
+49. [] Switch back to the **Remote Desktop Connection client** window.
+50. [] Press the **CTRL + V** keyboard buttons together to paste the request.
+51. [] Click the **Next** button on the **Response** step.
 > Note: Wait for the backup to be decrypted using the Veeam Backup Enterprise Manager key sets. This will take a maximum of 2 minutes.
 
-51. [] Click the **Finish** button on the **Summary** step.
-52. [] Expand the **Backup Tiny-Veeam2** backup job.
-53. [] Verify that the **Tiny-Veeam2** virtual machine is now visible then minimize the **Remote Desktop Connection client** window.
-54. [] Click the **Finish** button on the **Response** step of the **Password Recovery** wizard in the **Veeam Backup Enterprise Manager**.
-55. [] Close the **Veeam Backup Enterprise Manager** window.
+52. [] Click the **Finish** button on the **Summary** step.
+53. [] Expand the **Backup Tiny-Veeam2** backup job.
+54. [] Verify that the **Tiny-Veeam2** virtual machine is now visible then minimize the **Remote Desktop Connection client** window.
+55. [] Click the **Finish** button on the **Response** step of the **Password Recovery** wizard in the **Veeam Backup Enterprise Manager**.
+56. [] Close the **Veeam Backup Enterprise Manager** window.
 
 ===
 
@@ -551,19 +550,21 @@ Module 9: Advanced Data Protection
 ## Step 1: Schedule configuration backups
 
 1. [] Select **Jobs** in the **Home** view.
-2. [] Select the **Backup ORCL** job.
-3. [] Press the **CTRL+A** keyboard buttons to select all jobs.
-4. [] Click the **Disable** button on the **Job** ribbon.
-> Important:  Do NOT proceed until the job status is Stopped for all jobs.
+2. [] Select the **On-Demand Sandbox SharePoint** job.
+3. [] Click the **Stop** button on the **SureBackup** ribbon.
+4. [] Click the **Yes** button to confirm stopping the job.
+5. [] Press the **CTRL+A** keyboard buttons to select all jobs.
+6. [] Click the **Disable** button on the **Job** ribbon.
+> **Important:  Do NOT proceed until the job status is Stopped for all jobs.**
 
-5. [] Click the **≡** button in the top left corner in **Veeam Backup and Replication**.
-6. [] Select **Configuration Backup**.
-7. [] Tick the **Enable configuration backup to the following repository** check box.
-8. [] Tick the **Encrypt configuration backup** check box.
-9. [] Click the **Password** drop down menu.
-10. [] Select **Technical course that provides extensive information on Veeam solutions**.
-11. [] Click the **Backup now** button.
-12. [] Wait for the configuration backup to complete then click the **OK** button.
+7. [] Click the **≡** button in the top left corner in **Veeam Backup and Replication**.
+8. [] Select **Configuration Backup**.
+9. [] Tick the **Enable configuration backup to the following repository** check box.
+10. [] Tick the **Encrypt configuration backup** check box.
+11. [] Click the **Password** drop down menu.
+12. [] Select **Technical course that provides extensive information on Veeam solutions**.
+13. [] Click the **Backup now** button.
+14. [] Wait for the configuration backup to complete then click the **OK** button.
 
 ===
 
@@ -578,19 +579,19 @@ Module 9: Advanced Data Protection
 7. [] Click the **Browse...** button.
 8. [] Enter file name: +++X:\\Backups\\VeeamConfigBackup\\VEEAM-VBR+++.
 9. [] Click the **Open** button.
-10. [] Select the **VEEAM-VBR** configuration backup file.
+10. [] Select the newest **VEEAM-VBR** configuration backup file.
 > Note: The configuration backup file is named in the following way: ServerName\_YYYY-MM- DD\_HH-MM-SS.bco
 
 11. [] Click the **Open** button.
 12. [] Click the **Analyze** button on the **Configuration Backup** step.
 13. [] Click the **Next** button on the **Backup Contents** step.
-14. [] Enter **Password**: +++vmce+++.
+14. [] Enter **Password**: +++vmce+++
 15. [] Click the **Validate** button on the **Password** step.
 16. [] Click the **Connect** button on the **Target Database** step.
 17. [] Click the **Yes** button to confirm that the current configuration database will be lost.
 18. [] Click the **Restore** button on the **Restore Options** step.
 19. [] Click the **Yes** button to confirm closing the **Veeam Backup and Replication Console** and stop all running jobs.
-20. [] Click the **Yes** button to perform a full configuration restore.
+
 21. [] Wait for the restore process to complete then click the **Next** button on the **Restore** step.
 22. [] Click the **Start** button on the **Credentials** step.
 > Note:  Because the Configuration Backup is encrypted, both usernames and passwords are included. If the Configuration Backup is not encrypted, you would have to enter all the passwords here.
@@ -598,7 +599,7 @@ Module 9: Advanced Data Protection
 23. [] Untick the **Launch the Backup & Replication user interface** check box.
 24. [] Click the **Finish** button on the **Summary** step.
 25. [] Close the Remote Desktop Connection to **VEEAM-VBR2**.
-26. [] Select the **Backup ORCL** job.
+26. [] Select the **Backup Oracle** job.
 27. [] Press the **CTRL+A** keyboard buttons to select all jobs.
 28. [] Click the **Disable** button on the **Job** ribbon.
 
