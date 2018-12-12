@@ -9,14 +9,17 @@ Module 10: Veeam ONE Features and Functionality
 
 1. [] Launch **Veeam ONE Monitor** from the desktop.
 2. [] Click the **Connect** button.
-3. [] Click the **Cancel** button to dismiss the **Server Settings** window.
+
 4. [] Click the **Add Server** button on the toolbar.
 5. [] Select **Veeam Backup & Replication Server**.
 6. [] Enter DNS name: +++VEEAM-VBR+++.
+7. [] Untick the **Install Veeam ONE Agent** check box.
+> Note: We will untick this check box since Veeam ONE is installed on the same server as the Veeam Backup Server and Veeam Backup Enterprise Manager.
+
 7. [] Click the **Next** button on the **Name** step.
 8. [] Enter:
- 1. Username: +++VEEAMINFRA\Administrator+++.
- 2. Password: +++Pa%%w0rd+++.
+ 1. Username: +++VEEAMINFRA\Administrator+++
+ 2. Password: +++Pa$$w0rd+++
 
 9. [] Click the **Next** button on the **Credentials** step.
 10. [] Click the **Finish** on the **Summary** step.
@@ -81,8 +84,8 @@ Module 10: Veeam ONE Features and Functionality
 14. [] Click the **Configure...** button in the **Default email notifications group** section.
 15. [] Enter group of recipients: +++administrator@veeamlab.local+++
 16. [] Click the **Add** button.
-17. [] Click the **OK** button to close the **Default Email Notification Group** window.
-18. [] Click the **OK** button to close the **Server Settings** window.
+17. [] Click the **OK** button in the **Default Email Notification Group** window.
+18. [] Click the **OK** button in the **Server Settings** window.
 
 ===
 
@@ -94,62 +97,57 @@ Module 10: Veeam ONE Features and Functionality
 4. [] Enter alarm name: +++LABTEST VM CPU usage+++.
 5. [] Click the **Rules** tab.
 6. [] Click the **Add...** button.
-7. [] Select the **Rule for specific conditions or state** radio button.
+7. [] Select the **Resource usage** radio button.
 8. [] Click the **Next** button on the **Choose Rule Type/Trigger type** step.
-9. [] Select the **Resource usage is out of allowed range** radio button.
-10. [] Click the **Next** button on the **Choose Rule Type/Rule condition** step.
-11. [] Click the **Counter** drop down menu.
-12. [] Select **CPU Usage**.
-13. [] Enter for the following time period: +++5+++ min.
-14. [] Enter warning: +++70+++%.
-15. [] Enter error: +++90+++%.
-16. [] Click the **Finish** button on the **Define Rule** step.
-17. [] Click the **Assignment** tab.
-18. [] Click the **Add...** button in the **Assignment for alarm** section.
-19. [] Select **Infrastructure tree...**.
-20. [] Expand **Virtual Infrastructure**.
-21. [] Tick the **VEEAM-ESX** check box.
+
+9. [] Click the **Counter** drop down menu.
+10. [] Select **CPU Usage**.
+11. [] Enter for the following time period: +++5+++ min.
+12. [] Enter warning: +++70+++%.
+13. [] Enter error: +++90+++%.
+14. [] Click the **Finish** button on the **Define Rule** step.
+15. [] Click the **Assignment** tab.
+16. [] Click the **Add...** button in the **Assignment for alarm** section.
+17. [] Select **Infrastructure tree...**.
+18. [] Expand **Virtual Infrastructure**.
+19. [] Tick the **VEEAM-ESX** check box.
 > Note: You may want to assign the alarm to the custom categorization groups configured in **Veeam ONE Business View**. However, multiple assignment types for the same alarm cannot be combined.
 
-22. [] Click the **Assign** button.
-23. [] Click the **Save** button.
-24. [] Close the **Veeam ONE Monitor** window.
+20. [] Click the **Assign** button.
+21. [] Click the **Save** button.
 
 ===
 
 # Lab 10.4: Veeam ONE: Creating a Business View category and group
 
-## Step 1. Create a Business View category
-
-1. [] Launch **Veeam ONE Business View** from the desktop.
-2. [] Enter:
- 1. User name: +++VEEAMINFRA\\Administrator+++
- 2. Password: +++Pa$$w0rd+++
- 
-3. [] Click the **Login** button.
-4. [] Click the **Configuration** tab.
-5. [] Navigate to the **Categories** view.
-6. [] Click the **Add\...** button.
-7. [] Enter friendly name: +++Veeam Courses+++.
-8. [] Enter tag category to use: +++Veeam Courses+++.
-9. [] Select the **Dynamic** radio button in the **Group type** section.
-10. [] Click the **"Not Set" groups on charts** drop down menu.
-11. [] Select **Hide**.
-12. [] Click the **OK** button.
-
-===
-
-## Step 2: Create Business View groups
-
-1. [] Navigate to the **Groups** view.
-2. [] Click the **Veeam Courses** tab in the **Groups** section.
-> Important: Please double check that you have selected the right Veeam Courses tab.
-
-3. [] Click the **Grouping Expression...** button.
-4. [] Enter expression: +++CASE WHEN Substring(Name, 0, 5)\="VEEAM" THEN "Course VMs" ELSE "Other VMs" END+++.
-5. [] Click the **OK** button.
-6. [] Click the **Workspace** tab in the top left corner.
-7. [] Verify that you see the newly created **Veeam Courses** column then close the **Veeam ONE Business View** window.
+1. [] Navigate to the **Business View** view.
+2. [] Click the **Categories** tab.
+3. [] Click the **Add Category...** text link in the **Actions** pane.
+4. [] Enter name: +++Veeam Courses+++
+5. [] Click the **Next** button on the **Name and Object Type** step.
+6. [] Keep the default setting and click the **Next** button on the **Platform** step.
+7. [] Select the **Multiple conditions** radio button.
+8. [] Click the **Next** button on the **Categorization Method** step.
+9. [] Click the **Add..** button.
+10. [] Enter name: +++Course VMs+++
+11. [] Click the **Next** button on the **Group Name** step.
+12. [] Click the **Property** drop down menu.
+13. [] Select **Computer Name**.
+14. [] Click the **Operator** drop down menu.
+15. [] Select **Starts with**.
+16. [] Enter value: +++VEEAM-+++
+17. [] Click the **Save** button.
+18. [] Click the **Add..** button.
+19. [] Enter name: +++Other VMs+++
+20. [] Click the **Next** button on the **Group Name** step.
+21. [] Click the **Property** drop down menu.
+22. [] Select **Computer Name**.
+23. [] Click the **Operator** drop down menu.
+24. [] Select **Does not contain**.
+25. [] Enter value: +++VEEAM-+++
+26. [] Click the **Save** button.
+27. [] Click the **Next** button on the **Grouping Criteria** step.
+28. [] Keep the default settings and click the **Save** button on the **Export** step.
 
 ===
 
