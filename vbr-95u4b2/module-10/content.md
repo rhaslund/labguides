@@ -148,6 +148,7 @@ Module 10: Veeam ONE Features and Functionality
 26. [] Click the **Save** button.
 27. [] Click the **Next** button on the **Grouping Criteria** step.
 28. [] Keep the default settings and click the **Save** button on the **Export** step.
+29. [] Close the **Veeam ONE Monitor** window.
 
 ===
 
@@ -162,7 +163,7 @@ Module 10: Veeam ONE Features and Functionality
 3. [] Navigate to the **Servers** view.
 4. [] Select **VEEAM-ESX**.
 5. [] Click the **Run now** button.
-> Important: Wait for the data collection to complete before continuing.
+> **Important: Wait for the data collection to complete before continuing.**
 
 6. [] Click the **Workspace** tab.
 7. [] Select the **Veeam Backup Monitoring** folder.
@@ -181,8 +182,7 @@ Module 10: Veeam ONE Features and Functionality
 14. [] Click the **Preview** button.
 > Note: The report will open in a new window.
 
-15. [] Maximize the **Protected VMs report** window.
-16. [] Review the report using the arrow buttons to switch between pages then close the **Protected VMs report** window.
+15. [] Review the report using the arrow buttons to switch between pages then close the **Protected VMs report** window.
 > Note: A VM is considered to be Protected if there is at least one valid backup or replica restore point that meets the designated RPO for it. A VM is considered to be Unprotected if it has outdated or missing backup or replica restore points.
 
 ===
@@ -194,8 +194,8 @@ Module 10: Veeam ONE Features and Functionality
 1. [] Select the **VMware Infrastructure Assessment** folder.
 2. [] Click the **VM Configuration Assessment** text link.
 3. [] Keep the default settings and click the **Preview** button.
-4. [] Maximize the **VM Configuration Assessment** window.
-5. [] Review the report using the arrow buttons to switch between pages then close the **VM Configuration Assessment report** window.
+4. [] Review the report using the arrow buttons to switch between pages then close the **VM Configuration Assessment report** window.
+5. [] Close the **Veeam ONE Reporter** window.
 
 ---
 
