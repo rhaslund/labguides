@@ -17,6 +17,8 @@ Module 8: Working with Orchestration Plans
 7. [] Tick the **VEEAM-VAO\Template Backup Job for VAO** check box.
 8. [] Click the **Include** button in the **Template Jobs** pane.
 9. [] [BETA2] Navigate to the **Recovery Locations** view.
+> Note: Do not click the Recovery Locations tab in the Plan Components view.
+
 10. [] [BETA2] Select **Original VM Location**.
 11. [] [BETA2] Click the **Edit** button.
 12. [] [BETA2] Increase **Fill Storage resources until** to +++90+++%.
