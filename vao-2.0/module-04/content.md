@@ -10,16 +10,18 @@ Module 4: Deployment and Installation
 4. [] Launch the **Setup.exe** file.
 5. [] Close the **File Explorer** window.
 6. [] Click the **Install** button.
-7. [] Select the **I accept the terms in the license agreement** radio button.
-8. [] Click the Next button.
-9. [] Keep the default program features and click the **Next** button.
+7. [] Tick the **I accept the terms of the Veeam license agreement** check box.
+8. [] Tick the **I accept the terms of the 3rd party components license agreements** check box.
+
+8. [] Click the Next button on the **License agreement** step.
+9. [] Keep the default program features and click the **Next** button on the **Program features** step.
 10. [] Click the **Browse...** button.
 11. [] Enter +++C:\Install\veeam_availability_orchestrator_nfr_20.lic+++ into the File name field.
 12. [] Click the **Open** button.
-13. [] Click the **Next** button.
+13. [] Click the **Next** button on the **Provide License Key** step.
 14. [] Keep default username: VMCE\Administrator and enter password: +++Pa%%w0rd+++.
-15. [] Click the **Next** button.
-16. [] Click the **Install** button to start the installation.
+15. [] Click the **Next** button on the **Service Account** step.
+16. [] Click the **Install** button to start the installation on the **Default Configuration** step.
 > Note: The installation process can take up to 25 minutes, please have some patience. The installation takes quite some time because many components need to be installed such as Microsoft SQL Server, Veeam Backup & Replication, Veaam ONE and of course Veeam Availability Orchestrator.
 
 17. [] Click the **Finish** button to close the Veeam® Availability Orchestrator setup wizard.
