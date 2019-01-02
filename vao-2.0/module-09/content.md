@@ -15,10 +15,10 @@ Module 9: Documentation, Custom Scripts & Dashboards
 4. [] Navigate to the **Report Templates** view.
 5. [] Select **Veeam Default Template** in the **Templates** pane.
 6. [] Click the **Clone** button.
-7. [] Click the **Site Scope** drop down menu.
-8. [] Select **Phoenix\SharePoint Administrators**
-9. [] Enter New Template Name: +++VMCE Template+++
-10. [] Click the **Clone** button.
+7. [] Click the **Scope** dropdown menu.
+8. [] Select **SharePoint Administrators**.
+7. [] Enter New Template Name: +++VMCE Template+++
+8. [] Click the **Clone** button.
 
 ===
 
@@ -72,7 +72,8 @@ Module 9: Documentation, Custom Scripts & Dashboards
 1. [] Navigate to the **DataLabs** view.
 2. [] Click the **VEEAM-VAO\VLAB1** text link.
 3. [] Click the **Run** button to launch the lab so it can start loading in the background and will be ready for later steps in this lab exercise.
-4. [] Verify the **vao testing only - active directory servers** lab group is already added due to its status as **default lab group** then click the **Next** button on the **Choose Lab Groups** step.
+4. [] Keep the default settings and click the **Next** button on the **Power Options** step.
+4. [] Verify the **VAO Testing Only - Active Directory Servers** lab group is already added due to its status as **default lab group** then click the **Next** button on the **Choose Lab Groups** step.
 5. [] Click the **Finish** button on the **Summary** step.
 
 ===
