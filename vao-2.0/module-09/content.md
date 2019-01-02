@@ -201,18 +201,15 @@ Availability Orchestrator into the script. Notice **Mandatory=$true** which mean
 2. [] Notice that the **Plan Testing** dashboard shows one plan is in a never tested state. Click the **Plan Testing** dashboard.
 3. [] Select the **Plan** that has never been tested.
 4. [] Click the **Verify** button.
-5. [] Select **Run Lab Test**.
-6. [] Click the **Next** button on the **Lab** step.
-7. [] Click the **Next** button on the **Reserve Lab** step.
-8. [] Select **vao testing only – active directory servers**.
-9. [] Click the **Add** button.
-10. [] Click the **Next** button on the **Choose Lab Groups** step.
-11. [] Click the **Next** button on the **Keep Plan Running** step.
-12. [] Keep the default setting and click the **Next** button on the **Restore Options** step.
-12. [] Click the **Finish** button on the **Summary** step.
-13. [] Click the **Tier1-Exchange** text link in the **Plan** column.
-14. [] Wait for the **Plan** test to successfully complete - this can take up to 10 minutes. Once the **Plan** test is completed, navigate to the **Dashboard** view.
-15. [] Verify that the **Plan Testing** dashboard is indicating all **Plans** are in a **Passed** state.
+5. [] Select **Run DataLab Test**.
+6. [] Keep the default settings and click the **Next** button on the **DataLab** step.
+7. [] Keep the default settings and click the **Next** button on the **Restore Options** step.
+8. [] Keep the default settings click the **Next** button on the **Power Options** step.
+9. [] Keep the default settings and click the **Next** button on the **Choose Lab Groups** step.
+10. [] Click the **Finish** button on the **Summary** step.
+11. [] Click the **Tier1-Exchange** text link in the **Plan** column.
+12. [] Wait for the **Plan** test to successfully complete - this can take up to 10 minutes. Once the **Plan** test is completed, navigate to the **Dashboard** view.
+13. [] Verify that the **Plan Testing** dashboard is indicating all **Plans** are in a **Passed** state.
 
 ---
 
