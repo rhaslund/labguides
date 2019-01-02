@@ -49,7 +49,7 @@ Module 6: Configuration
 12. [] Enter address: +++administrator@vmce.lab+++
 13. [] Click the **Save** button.
 14. [] Notice that all subscriptions are disabled by default. Tick the **Types** check box in the **Reports** pane.
-15. [] Click on the **Subscribe** button in the **Reports** pane and verify that all subscriptions are in a subscribed state.
+15. [] Click the **Subscribe** button in the **Reports** pane and verify that all subscriptions are in a subscribed state.
 16. [] Minimize the **Veeam Availability Orchestrator** window.
 17. [] Launch **Outlook Web Access** from the desktop.
 18. [] Enter username: +++administrator@vmce.lab+++ and password: +++Pa%%w0rd+++.
@@ -65,22 +65,34 @@ Module 6: Configuration
 2. [] Click the **Add** button.
 3. [] Enter name: +++DR site+++
 4. [] Click the **Next** button on the **Location Name** step.
-5. [] Untick the **Include this Restore Location in all sites and scopes** checkbox.
-6. [] Click the **Next** button on the **Location Visibility** step.
-7. [] Select the **vao dr locations – gold – tier 1** group.
+
+7. [] Select the **VAO DR Locations – Gold – Tier 1** group.
 8. [] Click the **Add** button.
 9. [] Click the **Next** button on the **Compute Resources** step.
-10. [] Select the **vao dr locations – gold – tier 1** group.
+10. [] Select the **VAO DR Locations – Gold – Tier 1** group.
 11. [] Click the **Add** button.
 12. [] Click the **Next** button on the **Storage Resources** step.
-13. [] Keep the default values and click the **Next** button on the Resource Usage step.
+13. [] Keep the default values and click the **Next** button on the **Resource Usage** step.
 14. [] Click on the **Instant VM Recovery is:** drop down menu.
 15. [] Select **Enabled**.
 16. [] Click the **Next** button on the **Instant VM Recovery (IVR)** step.
-17. [] Select the **vao dr locations – gold – tier 1** group.
+17. [] Tick the **Enable re-IP** check box.
 18. [] Click the **Add** button.
-19. [] Keep the default values and click the **Next** button on the **Network Resources** step.
-20. [] Click the **Finish** button on the **Summary** step.
+19. [] Enter:
+ 1. Source VM IP Address: +++192.168.1.\*+++
+ 2. Source VM Subnet mask: +++255.255.255.0+++
+ 3. Target VM IP Address: +++192.168.2.\*+++
+ 4. Target VM IP Subnet mask: +++255.255.255.0+++
+ 5. Default gateway:  +++192.168.2.1+++
+ 6. Preferred DNS server: +++192.168.2.4+++
+ 7. Alternate DNS server: +++192.168.1.101+++
+
+20. [] Click the **Add** button.
+21. [] Click the **Next** button on the **Re-IP Rules** step.
+22. [] Tick the **Enable Network Mapping** check box.
+23. [] Click the **Add** button.
+24. [] Click the **Next** button on the **Network Mapping** step.
+25. [] Click the **Finish** button on the **Summary** step.
 
 ===
 
