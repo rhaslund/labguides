@@ -134,43 +134,49 @@ Availability Orchestrator into the script. Notice **Mandatory=$true** which mean
 2. [] Click the **Verify** button.
 3. [] Select **Run DataLab Test**.
 4. [] Keep the default setting and click the **Next** button on the **DataLab** step.
-5. [] Click the **Next** button on the **Reserve Lab** step.
-6. [] Click the **Next** button on the **Keep Plan Running** step.
+5. [] Keep the default setting and click the **Next** button on the **Power Options** step.
+
 7. [] Click the **Finish** button on the **Summary** step.
 8. [] Click the **Tier1-SharePoint** text link in the **Plan** column.
 9. [] Select the **Tier1-SharePoint** plan.
-10. [] Select **mission critical vms - sharepoint servers** in the **Plan Groups** pane.
+10. [] Select **Mission Critical VMs - SharePoint Servers** in the **Plan Groups** pane.
 11. [] Select **SHAREPOINT** in the **Virtual Machines** pane.
 12. [] Select **Date & Time** in the **Steps** pane.
 13. [] Follow the progress in the **Step Details** pane. The error message **Cannot process command** is a result of one or more missing mandatory parameters: **planName**.". This is because the script contains two mandatory parameters: **$planName** and **$planState**. To add the missing step parameters, click the **Administration** button in the top right corner.
+
+## Step 5: Add missing step parameters
+
+1. [] Navigate to the **Plan Steps** view.
 14. [] Select **Date & Time** in the Steps pane.
 15. [] Click the **Add** button in the **Step Parameters** pane.
 16. [] Enter name: +++planName+++
 17. [] Click the ***...*** button next to the **Default Value** text field.
 18. [] Review the list of available variables and double-click on the **%plan_name%** variable.
 19. [] Click the **Save** button.
-20. [] Click the **Save** button in the **Step Parameters** pane.
+20. [] Click the **Next** button on the **Parameter Details** step.
 21. [] Tick the **Globally push the new default values into all Plans on all Sites** check box.
-22. [] Click the **Save** button.
+22. [] Click the **Finish** button on the **Summary** step.
+
 23. [] Click the **Add** button in the **Step Parameters** pane.
 24. [] Enter name: +++planState+++
-25. [] Click the ***...*** button next to the ***Default Value*** text field.
+25. [] Click the ***...*** button next to the **Default Value** text field.
 26. [] Double-click the **%plan_state%** variable.
 27. [] Click the **Save** button.
-28. [] Click the **Save** button in the **Step Parameters** pane.
+28. [] Click the **Next** button on the **Parameter Details** step.
 29. [] Tick the **Globally push the new default values into all Plans on all Sites** check box.
-30. [] Click the **Save** button.
+30. [] Click the **Finish** button on the **Summary** step.
+
 31. [] Click the **Exit Administration** button in the top left corner.
 32. [] Select the **Tier1-SharePoint** plan.
 33. [] Click the **Verify** button.
-34. [] Select **Run Lab Test**.
-35. [] Click the **Next** button on the **Lab** step.
-36. [] Click the **Next** button on the **Reserve Lab** step.
-37. [] Click the **Next** button on the **Keep Plan Running** step.
+34. [] Select **Run DataLab Test**.
+35. [] Keep the default settings and click the **Next** button on the **DataLab** step.
+36. [] Keep the default settings and click the **Next** button on the **Power Options** step.
+
 38. [] Click the **Finish** button on the **Summary** step.
 39. [] Click the **Tier1-SharePoint** text link in the **Plan** column.
 40. [] Select the **Tier1-SharePoint** plan.
-41. [] Select **mission critical vms - sharepoint servers** in the **Plan Groups** pane.
+41. [] Select **Mission Critical VMs - SharePoint Servers** in the **Plan Groups** pane.
 42. [] Select **SHAREPOINT** in the **Virtual Machines** pane.
 43. [] Select **Date & Time** in the **Steps** pane.
 44. [] Wait for the **Date & Time** step execution to finish and launch **File Explorer** from the Windows task bar.
@@ -179,7 +185,7 @@ Availability Orchestrator into the script. Notice **Mandatory=$true** which mean
 47. [] Notice two files now exist in the folder: **vao_log.txt** and **vao_test.log**. Double-click on the **vao_test** text document.
 48. [] Verify that the step parameters and variables have been properly passed from Veeam Availability Orchestrator into the script. The expected output is: **Plan name is Tier1-SharePoint and state is Testing Processing**. Close the **Notepad** window.
 49. [] Close the **File Explorer** window.
-50. [] Navigate to the **DataLabs** view.
+50. [] Click the **Left arrow** button next to the **DataLab Details: VEEAM-VAO\VLAB1** text.
 51. [] Click the **Power Off** button.
 52. [] Click the **Power Off** button to confirm powering off the DataLab.
 
