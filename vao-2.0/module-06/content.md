@@ -90,22 +90,25 @@ Module 6: Configuration
 20. [] Click the **Add** button.
 21. [] Click the **Next** button on the **Re-IP Rules** step.
 22. [] Tick the **Enable Network Mapping** check box.
-23. [] Click the **Add** button.
-24. [] Click the **Next** button on the **Network Mapping** step.
-25. [] Click the **Finish** button on the **Summary** step.
+23. [] Select **PROD LAN in Production** in the Source Network section.
+24. [] Click the **Add** button.
+25. [] Click the **Next** button on the **Network Mapping** step.
+26. [] Click the **Finish** button on the **Summary** step.
 
 ===
 
 # Lab 6.4: Configure plan components
 
 1. [] Navigate to the **Plan Components** view.
-2. [] Verify you see VM groups named **mission critical – exchange servers** and **mission critical – sharepoint servers** and that they are both enabled. Each VM group represents a vSphere tag. Tags are by default collected every three hours from your production environment. After you enable VM groups for a Veeam Availability Orchestrator site, you can add these groups to failover plans for the site. Click the **Default** text link in the **Scopes** pane at the top.
+2. [] Verify you see VM groups named **Mission Critical – Exchange Servers** and **Mission Critical – Sharepoint Servers** and that they are both enabled. Each VM group represents a vSphere tag. Tags are by default collected every three hours from your production environment. After you enable VM groups for a Veeam Availability Orchestrator site, you can add these groups to failover plans for the site. Click the **Default** text link in the **Scopes** pane at the top.
 4. [] Untick the **Default** checkbox in the **Scope** pane.
 5. [] Tick the **SharePoint Administrators** checkbox in the **Scope** pane.
 6. [] Click the **OK** button.
 7. [] Tick the **mission critical vms – sharepoint servers** checkbox in the **VM Groups** pane.
 8. [] Click the **Include** button.
 12. [] Click the **Plan Steps** tab.
+> Important: Use the Plan Steps tab inside the Plan Components view. Do NOT change to the Plan Steps view.
+
 13. [] Review the list of default steps provided by Veeam, these cannot be deleted - only custom steps can be deleted. Tick the **Verify Exchange Mailbox** check box.
 17. [] Tick the **Verify Exchange MAPI Connectivity** check box.
 18. [] Tick the **Verify Exchange Services** check box.
@@ -114,25 +117,27 @@ Module 6: Configuration
 
 22. [] Click the **Credentials** tab.
 23. [] Click the **SharePoint Administrators** text link in the **Scopes** pane at the top.
-24. [] Tick the **SharePoint Administrators** checkbox in the **Scope** pane.
+24. [] Tick the **Default** check box in the **Scope** pane.
 > Note: Both the Default and SharePoint Administrators scopes must be selected.
 
 25. [] Click the **OK** button.
 23. [] Tick the **administrator@vmce.lab** check box so that it can be used in plans.
 24. [] Click the **Include** button in the **Credentials** pane.
 25. [] Click the **Recovery Locations** tab.
+> Important: Use the Recovery Locations tab inside the Plan Components view. Do NOT change to the Recovery Locations view.
+
 26. [] Tick the **DR Site** checkbox.
 27. [] Click the **Include** button.
 
 25. [] Navigate to the **DataLab Allocation** view.
 26. [] Verify the **VLAB1** and **VLAB2** DataLabs created earlier shows up and then tick the **VEEAM-VAO\VLAB1** check box.
 27. [] Click the **Assign** button in the **DataLabs** pane.
-28. [] Select the **Phoenix\SharePoint Administrators** scope.
+28. [] Select the **SharePoint Administrators** scope.
 29. [] Click the **OK** button.
 30. [] Untick the **VEEAM-VAO\VLAB1** check box.
 31. [] Tick the **VEEAM-VAO\VLAB2** check box.
 32. [] Click the **Assign** button in the **DataLabs** pane.
-33. [] Select the **Phoenix\Default** scope.
+33. [] Select the **Default** scope.
 34. [] Click the **OK** button.
 
 ===
@@ -143,7 +148,7 @@ Module 6: Configuration
 1. [] Launch the **Veeam Backup & Replication Console** from the desktop.
 2. [] Click the **Connect** button.
 3. [] Click the **Backup Job** button on the **Home** ribbon.
-4. [] Select **VMware vSphere...**.
+4. [] Select **Virtual machine...**.
 5. [] Enter name: +++Template Backup Job for VAO+++, and enter description: +++This job is a \[VAO template\] to re-protect failed over VMs+++.
 6. [] Click the **Next** button on the **Name** step.
 7. [] Click the **Add...** button.
