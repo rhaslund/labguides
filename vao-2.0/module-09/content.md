@@ -106,7 +106,7 @@ Availability Orchestrator into the script. Notice **Mandatory=$true** which mean
 6. [] Enter file name: +++C:\Install\datetime.ps1+++.
 7. [] Click the **Open** button.
 8. [] Click the **Next** button on the **Custom Script Step** step.
-9. [] Click the **Next** button on the **Step Visibility** step.
+9. [] Keep the default setting and click the **Next** button on the **Step Visibility** step.
 10. [] Click the **Finish** button on the **Summary** step.
 11. [] Click the **Exit Administration** button in the top left corner.
 12. [] Navigate to the **Orchestration Plans** view.
@@ -132,8 +132,8 @@ Availability Orchestrator into the script. Notice **Mandatory=$true** which mean
 
 1. [] Select the **Tier1-SharePoint** plan.
 2. [] Click the **Verify** button.
-3. [] Select **Run Lab Test**.
-4. [] Click the **Next** button on the **Lab** step.
+3. [] Select **Run DataLab Test**.
+4. [] Keep the default setting and click the **Next** button on the **DataLab** step.
 5. [] Click the **Next** button on the **Reserve Lab** step.
 6. [] Click the **Next** button on the **Keep Plan Running** step.
 7. [] Click the **Finish** button on the **Summary** step.
