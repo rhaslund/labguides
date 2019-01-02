@@ -17,7 +17,7 @@ Module 7: DataLabs
 6. [] Click the **Edit** button.
 7. [] Click the **Add** button in the **Lab Groups** pane.
 8. [] Keep the default selection of Failover and click the **Next** button on the **Lab Group Type** step.
-9. [] Select the **vao testing only - active directory servers** VM Group.
+9. [] Select the **VAO Testing Only - Active Directory Servers** VM Group.
 10. [] Click the **Add** button.
 11. [] Click the **Next** button on the **VM Groups** step.
 12. [] Keep the defaults and click the **Next** button on the **VM Recovery Options** step.
@@ -38,10 +38,12 @@ Module 7: DataLabs
 
 1. [] Click the **VEEAM-VAO\VLAB1** DataLab text link.
 2. [] Click the **Run** button.
-3. [] Notice that the **vao testing only – active directory servers** Lab Group has already been added and that it is not possible to remove it. This is because you as a site administrator earlier added this lab group as a **default lab group**. Click the **Next** button on the **Choose Lab Groups** step.
+3. [] Keep the default selection and click the **Next** button on the **Power Options** step.
+
+3. [] Notice that the **VAO Testing Only – Active Directory Servers** Lab Group has already been added and that it is not possible to remove it. This is because you as a administrator earlier added this lab group as a **default lab group**. Click the **Next** button on the **Choose Lab Groups** step.
 4. [] Click the **Finish** button on the **Summary** step.
 5. [] Select **Lab Appliance** in the **Lab Groups** pane.
-6. [] Wait for the **Lab Appliance Details** section to display: **DataLab appliance powered on successfully** (this can take up to three minutes). Select **vao testing only - active directory servers** in the **Lab Groups** pane.
+6. [] Wait for the **Lab Appliance Details** section to display: **DataLab appliance powered on successfully** (this can take up to three minutes). Select **VAO Testing Only - Active Directory Servers** in the **Lab Groups** pane.
 7. [] Select **DC02** in the **Virtual Machines** pane.
 8. [] Wait for all items in the **Steps** pane to be marked **Completed** with a green checkmark. Click the **Left arrow** button next to the **Lab Details: VEEAM-VAO\VLAB1** text.
 > Note: It can take up to 8 minutes to complete all tests of the DC02 virtual machine, please have some patience.
