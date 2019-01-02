@@ -8,6 +8,7 @@ Module 8: Working with Orchestration Plans
 2. [] Enter:
  1. Username: +++siteadmin@vmce.lab+++
  2. Password: +++Pa%%w0rd+++.
+
 3. [] Click the **Login** button.
 >Note: Because the server was just started, the spinning icon may display for up to two minutes while services complete their startup.
 
@@ -16,16 +17,6 @@ Module 8: Working with Orchestration Plans
 6. [] Click the **Template Jobs** tab.
 7. [] Tick the **VEEAM-VAO\Template Backup Job for VAO** check box.
 8. [] Click the **Include** button in the **Template Jobs** pane.
-9. [] [BETA2] Navigate to the **Recovery Locations** view.
-> Note: Do not click the Recovery Locations tab in the Plan Components view.
-
-10. [] [BETA2] Select **Original VM Location**.
-11. [] [BETA2] Click the **Edit** button.
-12. [] [BETA2] Increase **Fill Storage resources until** to +++90+++%.
-13. [] [BETA2] Click the **Next** button on the **Resource Usage** step.
-14. [] [BETA2] Click the **Instant VM Recovery is** drop down menu.
-15. [] [BETA2] Select **Enabled**.
-16. [] [BETA2] Click the **Finish** button on the **Instant VM Recovery** step.
 9. [] Click the **Exit Administration** button in the top left corner.
 10. [] Click the **Site Administrator VAO** text link in the top right corner.
 11. [] Select **Logout**.
