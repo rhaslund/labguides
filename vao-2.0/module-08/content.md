@@ -30,17 +30,15 @@ Module 8: Working with Orchestration Plans
 1. [] Navigate to the **Orchestration Plans** view.
 2. [] Click the **Manage** button.
 3. [] Select **New**.
-4. [] Select the **Phoenix\SharePoint Administrators** site scope.
-5. [] Click the **Next** button on the **Site Scope** step.
-6. [] Enter:
+4. [] Enter:
  1. Plan name: +++Tier1-SharePoint+++
  2. Description: +++Orchestration Plan for SharePoint servers+++
  3. Contact name: +++John Doe+++
  4. Contact email: +++administrator@vmce.lab+++
 
-7. [] Click the **Next** button on the **Plan Name** step.
+5. [] Click the **Next** button on the **Plan Name** step.
 8. [] Keep the default selection of **Failover** and click the **Next** button on the **Plan Type** step.
-9. [] Select **mission critical vms - sharepoint servers**.
+9. [] Select **Mission Critical VMs - Sharepoint Servers**.
 10. [] Click the **Add** button.
 11. [] Click the **Next** button on the **VM Groups** step.
 12. [] Keep the defaults and click the **Next** button on the **VM Recovery Options** step.
@@ -48,7 +46,7 @@ Module 8: Working with Orchestration Plans
 14. [] Click the **Add** button.
 15. [] Click the **Next** button on the **VM Steps** step.
 16. [] Keep the defaults and click the **Next** button on the **Protect VM Groups** step.
-17. [] Increase the **Target RPO** to: +++48+++ hours..
+17. [] Increase the **Target RPO** to: +++48+++ hours.
 17. [] Click the **Next** button on the **RTO & RPO** step.
 18. [] Keep the defaults and click the **Next** button on the **Report Template** step.
 19. [] Keep the defaults and click the **Next** button on the **Report Scheduling** step.
@@ -68,7 +66,7 @@ Module 8: Working with Orchestration Plans
 4. [] Click the **OK** button.
 5. [] Confirm that the state has changed to **Verified (passed check)**, then click the **View Reports** button.
 6. [] Select **Readiness Check**.
-7. [] Click the **Readiness Check Report for Tier1-SharePoint** text link.
+7. [] Click the **Tier1-SharePoint** text link with the **Readiness Check** type.
 8. [] Click the **Open** button on the yellow download bar at the bottom of the **Internet Explorer** window.
 9. [] Wait for the download to complete and click the **Open** button on the yellow download bar at the bottom of the **Internet Explorer** window.
 10. [] Scroll down to the **Contents** page.
@@ -117,15 +115,15 @@ Module 8: Working with Orchestration Plans
 
 1. [] Verify the State column of the **Tier1-SharePoint** plan is in **Verified (passed check)** state. Select the **Tier1-SharePoint** plan.
 2. [] Click the **Verify** button.
-3. [] Select **Run Lab Test**.
-4. [] Verify the **VEEAM-VAO\VLAB1** is **Powered Off** and click the **Next** button on the **Lab** step.
-5. [] Keep the default settings and click the **Next** button on the **Reserve Lab** step.
-6. [] Notice that the **vao testing only - active directory servers** lab group has already been added and is greyed out. This is because a site administrator has added this lab group as a **default lab group**. Click the **Next** button on the **Choose Lab Groups** step.
+3. [] Select **Run DataLab Test**.
+4. [] Verify the **VEEAM-VAO\VLAB1** is **Powered Off** and click the **Next** button on the **DataLab** step.
+5. [] Keep the default settings and click the **Next** button on the **Power Options** step.
+6. [] Notice that the **vao testing only - active directory servers** lab group has already been added and is greyed out. This is because an administrator has added this lab group as a **default lab group**. Click the **Next** button on the **Choose Lab Groups** step.
 9. [] Keep the default settings and click the **Next** button on the **Keep Plan Running** step.
 10. [] Click the **Finish** button on the **Summary** step.
 11. [] Navigate to the **DataLabs** view.
 12. [] Click the **VEEAM-VAO\VLAB1** text link in the **Lab** column.
-13. [] Select the **vao testing only - active directory servers** lab group.
+13. [] Select the **VAO Testing Only - Active Directory Servers** lab group.
 14. [] Select the **DC02** virtual machine.
 > Note: It can take up to 6 minutes to fully start the Lab Appliance, please have some patience.
 
@@ -160,7 +158,7 @@ Module 8: Working with Orchestration Plans
 8. [] Keep the default settings and click the **Next** button on the **Restore Point** step.
 9. [] Verify the action is **Failover** and then click the **Finish** button on the **Summary** step.
 10. [] Click the **Tier1-SharePoint** text link in the **Plan** column.
-11. [] Select **mission critical vms - sharepoint servers** in the **Plan Group** pane.
+11. [] Select **Mission Critical VMs - SharePoint Servers** in the **Plan Group** pane.
 12. [] Select **SHAREPOINT** in the **Virtual Machines** pane.
 13. [] Wait for all steps to reach the **Completed** status and then open a new tab inside **Internet Explorer**.
 > Note: It is critical you do not continue until the failover is complete. Otherwise DNS will still resolve to the old production IP and be added to the local DNS cache with this incorrect IP. It can take up to 6 minutes to complete all tests of the SHAREPOINT virtual machine, please have some patience.
@@ -183,7 +181,7 @@ Module 8: Working with Orchestration Plans
 6. [] Click the **Next** button on the **Enter Credentials** step.
 7. [] Verify the action is **Undo Failover (Force)** and then click the **Finish** button on the **Summary** step.
 8. [] Click the **Tier1-SharePoint** text link in the **Plan** column.
-9. [] Select **mission critical vms - sharepoint servers** in the **Plan Group** pane.
+9. [] Select **Mission Critical VMs - SharePoint Servers** in the **Plan Group** pane.
 10. [] Select **SHAREPOINT** in the **Virtual Machines** pane.
 11. [] Select **Process Replica VM** in the **Steps** pane.
 12. [] Wait for the **Step Details** pane to display the following step: **Process Replica VM execution finished**. Verify in the top left corner that **Undo Failover** displays a green checkmark, that the status is **Complete**, that there are no errors or warnings, and then click the **Left arrow** button.
@@ -213,7 +211,7 @@ Module 8: Working with Orchestration Plans
 4. [] Navigate to the **Orchestration Plans** view.
 1. [] Click the **Manage** button.
 2. [] Select **New**.
-3. [] Keep the default selection of the **Phoenix\Default** site scope and click the **Next** button on the **Site Scope** step.
+3. [] Keep the default selection of the **Default** scope and click the **Next** button on the **Scope** step.
 4. [] Enter:
  1. Plan name: +++Tier1-Exchange+++
  2. Description: +++Orchestration Plan for Exchange servers+++
@@ -223,9 +221,9 @@ Module 8: Working with Orchestration Plans
 5. [] Click the **Next** button on the **Plan Name** step.
 6. [] Select the **Restore** radio button.
 6. [] Click the **Next** button on the **Plan Type** step.
-7. [] Select **DR site**. \[BETA2\] Select **Original VM Location**.
+7. [] Select **DR site**.
 8. [] Click the **Next** button on the **Recovery Location** step.
-7. [] Select **mission critical vms - exchange servers**.
+7. [] Select **Mission Critical VMs - Exchange Servers**.
 8. [] Click the **Add** button.
 9. [] Click the **Next** button on the **VM Groups** step.
 10. [] Keep the default settings and click the **Next** button on the **VM Recovery Options** step.
@@ -236,10 +234,15 @@ Module 8: Working with Orchestration Plans
 > Note: The order of the items should be:
 > 
 > Shutdown Source VM
+>
 > Restore VM
+>
 > Check VM Heartbeat
+>
 > Ping VM Network
+>
 > Verify Exchange Services
+>
 > Verify Exchange MAPI Connectivity
 
 13. [] Click the **Next** button on the **VM Steps** step.
@@ -266,11 +269,15 @@ Module 8: Working with Orchestration Plans
 41. [] Click the **NONE** text link in the **Default value** section.
 42. [] Select the **administrator@vmce.lab** credential.
 43. [] Click the **OK** button.
-44. [] Click the **Save** button under the **Edit Plan Tier1-Exchange** text.
-45. [] Click the **Save** button.
-46. [] Select the **Tier1-Exchange** plan.
-47. [] Click the **Manage** button.
-48. [] Select **Enable**.
+44. [] Select the **Restore VM** step.
+45. [] Select the **Restored VM Name** step parameter.
+46. [] Edit the default value to: +++\%source_vm_name\%\_restored
+47. [] Click the **Save** button under the **Edit Plan Tier1-Exchange** text.
+48. [] Tick the **Perform Plan Readiness Check now** check box.
+49. [] Click the **Save** button.
+50. [] Select the **Tier1-Exchange** plan.
+51. [] Click the **Manage** button.
+52. [] Select **Enable**.
 
 ===
 
@@ -283,7 +290,7 @@ Module 8: Working with Orchestration Plans
 5. [] Click the **Next** button on the **Enter Credentials** step.
 6. [] Tick the **Enable Scheduled execution for this Plan** check box.
 7. [] Select the **Schedule after** radio button.
-8. [] Click the **Choose a Plan...*** text link.
+8. [] Click the **Choose a Plan...** text link.
 9. [] Select **Tier1-Exchange** in the **Available Plans** pane.
 > Note: If the list of available plans is empty, you forgot to enable the Tier1-Exchange Orchestration Plan at the end of step 1.
 
