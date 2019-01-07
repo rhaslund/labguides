@@ -57,7 +57,6 @@
 1. [] On the Select storage page, select the **Class-Datastore** datastore and click **Next**.
 
 1. [] On the Customize settings page, configure settings.
-
     1. From the **CPU** drop-down menu, select **1**.
 
     1. Enter **1024 MB** in the **Memory** text box and enter **12 GB** in the **Hard Disk 1** text box.
@@ -69,6 +68,8 @@
     1. From the Class-Datastore, navigate to the Windows 10 operating system ISO image:
 
 > SW\_DVD5\_WIN\_ENT\_10\_64BIT\_English\_MLF\_X20-26061.ISO
+
+> **Important: If you are unable to select 1 CPU, close the browser inside the lab completely and launch it again.**
 
 1. [] Click **Select**.
 
