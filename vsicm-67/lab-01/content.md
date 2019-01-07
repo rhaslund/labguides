@@ -65,9 +65,7 @@
 
     1. In the Datastore browser window, select Class-Datastore for the sa-esxi-01.vclass.local ESXi host.
 
-    1. From the Class-Datastore, navigate to the Windows 10 operating system ISO image:
-
-> SW\_DVD5\_WIN\_ENT\_10\_64BIT\_English\_MLF\_X20-26061.ISO
+    1. From the Class-Datastore, navigate to the Windows 10 operating system ISO image: en_windows_10_enterprise_version_1607_9714415.iso
 
 > **Important: If you are unable to select 1 CPU, close the browser inside the lab completely and launch it again.**
 
