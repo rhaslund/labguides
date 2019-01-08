@@ -87,7 +87,7 @@ collection.
 5. [] Navigate to the **Servers** view.
 6. [] Select the **VEEAM-ESX** line.
 7. [] Click the **Scheduling...** button.
-8. [] Select the **Periodically every** radio button.
+8. [] Select the **Periodically every** radio button and keep the default value of 3 hours.
 9. [] Click the **OK** button.
 > Note: Due to the lab time constraints, the collection interval is scheduled more often than in a production environment.
 
