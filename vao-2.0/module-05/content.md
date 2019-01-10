@@ -12,7 +12,7 @@ Module 5: User Interface, User Roles & Licensing
 
 5. [] Navigate to the **VMware vCenter** view.
 6. [] Notice how the help system automatically opens. Click the **Suggest help topics automatically** toggle button to disable the automatic help system feature.
-7. [] Click the **X** in the VMware Servers help window.
+7. [] Click the **X** in the **VMware vCenter** help window.
 > Note: You can always click the Info icon in the bottom left corner to see these tips.
 
 8. [] Verify the **vcenter.vmce.lab** server is connected and version **6.5.0**, then navigate to the **Users and Scopes** view.
