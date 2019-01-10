@@ -143,7 +143,7 @@ Module 5: User Interface, User Roles & Licensing
 
 # Lab 5.4: Prepare Veeam Backup & Replication: Create a backup job
 
-1. [] Click on the **Backup Job** button on the **Home** ribbon.
+1. [] Click the **Backup Job** button on the **Home** ribbon.
 3. [] Select **Virtual machine...**
 4. [] Enter name: +++Backup Job Exchange+++.
 5. [] Click the **Next** button on the **Name** step.
