@@ -105,7 +105,7 @@ Module 6: Configuration
 4. [] Untick the **Default** checkbox in the **Scope** pane.
 5. [] Tick the **SharePoint Administrators** checkbox in the **Scope** pane.
 6. [] Click the **OK** button.
-7. [] Tick the **mission critical vms – sharepoint servers** checkbox in the **VM Groups** pane.
+7. [] Tick the **Mission Critical VMs – SharePoint Servers** checkbox in the **VM Groups** pane.
 8. [] Click the **Include** button.
 12. [] Click the **Plan Steps** tab.
 > Important: Use the Plan Steps tab inside the Plan Components view. Do NOT change to the Plan Steps view.
@@ -153,7 +153,7 @@ Module 6: Configuration
 5. [] Enter name: +++Template Backup Job for VAO+++, and enter description: +++This job is a \[VAO template\] to re-protect failed over VMs+++.
 6. [] Click the **Next** button on the **Name** step.
 7. [] Click the **Add...** button.
-8. [] The current view selection is **Hosts and Clusters**. Click on the **VMs and Templates** view button.
+8. [] The current view selection is **Hosts and Clusters**. Click the **VMs and Templates** view button.
 9. [] Expand the **vcenter.vmce.lab** object.
 10. [] Expand the **DR** data center object.
 11. [] Select the **Empty folder for VAO template jobs** folder.
