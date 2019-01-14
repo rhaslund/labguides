@@ -207,31 +207,33 @@ Module 8: Working with Orchestration Plans
 
 ## Step 1: Create a second orchestration plan
 
-2. [] Enter username: +++siteadmin@vmce.lab+++ and password: +++Pa%%w0rd+++.
-3. [] Click the **Login** button.
-4. [] Navigate to the **Orchestration Plans** view.
-1. [] Click the **Manage** button.
-2. [] Select **New**.
-3. [] Keep the default selection of the **Default** scope and click the **Next** button on the **Scope** step.
-4. [] Enter:
+1. [] Enter
+ 1. Username: +++siteadmin@vmce.lab+++
+ 2. Password: +++Pa%%w0rd+++
+2. [] Click the **Login** button.
+3. [] Navigate to the **Orchestration Plans** view.
+4. [] Click the **Manage** button.
+5. [] Select **New**.
+6. [] Keep the default selection of the **Default** scope and click the **Next** button on the **Scope** step.
+7. [] Enter:
  1. Plan name: +++Tier1-Exchange+++
  2. Description: +++Orchestration Plan for Exchange servers+++
  3. Contact name: +++John Doe+++
  4. Contact email: +++administrator@vmce.lab+++
 
-5. [] Click the **Next** button on the **Plan Name** step.
-6. [] Select the **Restore** radio button.
-6. [] Click the **Next** button on the **Plan Type** step.
-7. [] Select **DR site**.
-8. [] Click the **Next** button on the **Recovery Location** step.
-7. [] Select **Mission Critical VMs - Exchange Servers**.
-8. [] Click the **Add** button.
-9. [] Click the **Next** button on the **VM Groups** step.
-10. [] Keep the default settings and click the **Next** button on the **VM Recovery Options** step.
-11. [] Hold the keyboard **CTRL** button and select the following items: **Ping VM Network**, **Shutdown Source VM**, **Verify Exchange Services** and **Verify Exchange MAPI Connectivity**.
-12. [] Click the **Add** button.
-13. [] Select **Shutdown Source VM** in the **Steps** pane.
-14. [] Click the **Up arrow** button in the **Steps** pane until **Shutdown Source VM** is the first step listed.
+8. [] Click the **Next** button on the **Plan Name** step.
+9. [] Select the **Restore** radio button.
+10. [] Click the **Next** button on the **Plan Type** step.
+11. [] Select **DR site**.
+12. [] Click the **Next** button on the **Recovery Location** step.
+13. [] Select **Mission Critical VMs - Exchange Servers**.
+14. [] Click the **Add** button.
+15. [] Click the **Next** button on the **VM Groups** step.
+16. [] Keep the default settings and click the **Next** button on the **VM Recovery Options** step.
+17. [] Hold the keyboard **CTRL** button and select the following items: **Ping VM Network**, **Shutdown Source VM**, **Verify Exchange Services** and **Verify Exchange MAPI Connectivity**.
+18. [] Click the **Add** button.
+19. [] Select **Shutdown Source VM** in the **Steps** pane.
+20. [] Click the **Up arrow** button in the **Steps** pane until **Shutdown Source VM** is the first step listed.
 > Note: The order of the items should be:
 > 
 > Shutdown Source VM
@@ -246,39 +248,39 @@ Module 8: Working with Orchestration Plans
 >
 > Verify Exchange MAPI Connectivity
 
-13. [] Click the **Next** button on the **VM Steps** step.
-14. [] Keep the default settings and click the **Next** button on the **Choose Credentials** step.
-14. [] Keep the default settings and click the **Next** button on the **Protect VM Groups** step.
-15. [] Increase the **Target RPO** to +++48+++ hours.
-15. [] Click the **Next** button on the **RTO & RPO** step.
-16. [] Keep the default settings and click the **Next** button on the **Report Template** step.
-17. [] Keep the default settings and click the **Next** button on the **Report Scheduling** step.
-18. [] Untick the **Run Readiness Check after Plan creation** check box.
-19. [] Click the **Next** button on the **Readiness Check** step.
-20. [] Click the **Finish** button on the **Summary** step.
-21. [] Select the **Tier1-Exchange** plan.
-22. [] Click the **Manage** button.
-23. [] Select **Edit**.
-24. [] Select **EXCHANGE** in the **Virtual Machines** pane.
-33. [] Select the **Verify Exchange Services** step.
-34. [] Select **Windows Credentials** in the **Step Parameters** pane.
-35. [] Click the **NONE** text link in the **Default value** section.
-36. [] Select the **administrator@vmce.lab** credential.
-37. [] Click the **OK** button.
-39. [] Select the **Verify Exchange MAPI Connectivity** step.
-40. [] Select **Windows Credentials** in **Step Parameters** pane.
-41. [] Click the **NONE** text link in the **Default value** section.
-42. [] Select the **administrator@vmce.lab** credential.
-43. [] Click the **OK** button.
-44. [] Select the **Restore VM** step.
-45. [] Select the **Restored VM Name** step parameter.
-46. [] Edit the default value to: +++\%source_vm_name\%\_restored
-47. [] Click the **Save** button under the **Edit Plan Tier1-Exchange** text.
-48. [] Tick the **Perform Plan Readiness Check now** check box.
-49. [] Click the **Save** button.
-50. [] Select the **Tier1-Exchange** plan.
-51. [] Click the **Manage** button.
-52. [] Select **Enable**.
+21. [] Click the **Next** button on the **VM Steps** step.
+22. [] Keep the default settings and click the **Next** button on the **Choose Credentials** step.
+23. [] Keep the default settings and click the **Next** button on the **Protect VM Groups** step.
+24. [] Increase the **Target RPO** to +++48+++ hours.
+26. [] Click the **Next** button on the **RTO & RPO** step.
+27. [] Keep the default settings and click the **Next** button on the **Report Template** step.
+28. [] Keep the default settings and click the **Next** button on the **Report Scheduling** step.
+29. [] Untick the **Run Readiness Check after Plan creation** check box.
+30. [] Click the **Next** button on the **Readiness Check** step.
+31. [] Click the **Finish** button on the **Summary** step.
+32. [] Select the **Tier1-Exchange** plan.
+33. [] Click the **Manage** button.
+34. [] Select **Edit**.
+35. [] Select **EXCHANGE** in the **Virtual Machines** pane.
+36. [] Select the **Verify Exchange Services** step.
+37. [] Select **Windows Credentials** in the **Step Parameters** pane.
+38. [] Click the **NONE** text link in the **Default value** section.
+39. [] Select the **administrator@vmce.lab** credential.
+40. [] Click the **OK** button.
+41. [] Select the **Verify Exchange MAPI Connectivity** step.
+42. [] Select **Windows Credentials** in **Step Parameters** pane.
+43. [] Click the **NONE** text link in the **Default value** section.
+44. [] Select the **administrator@vmce.lab** credential.
+45. [] Click the **OK** button.
+46. [] Select the **Restore VM** step.
+47. [] Select the **Restored VM Name** step parameter.
+48. [] Edit the default value to: +++\%source_vm_name\%\_restored
+49. [] Click the **Save** button under the **Edit Plan Tier1-Exchange** text.
+50. [] Tick the **Perform Plan Readiness Check now** check box.
+51. [] Click the **Save** button.
+52. [] Select the **Tier1-Exchange** plan.
+53. [] Click the **Manage** button.
+54. [] Select **Enable**.
 
 ===
 
