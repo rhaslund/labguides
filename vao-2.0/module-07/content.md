@@ -60,21 +60,7 @@ Module 7: DataLabs
 
 ===
 
-# Lab 7.2: Test DataLab
-
-## Step 1: Test VLAB2
-
-1. [] Click the **VEEAM-VAO\VLAB2** DataLab text link.
-2. [] Click the **Run** button.
-3. [] Keep the default selection and click the **Next** button on the **Power Options** step.
-
-3. [] Notice that the **VAO Testing Only – Active Directory Servers** Lab Group has already been added and that it is not possible to remove it. This is because you as a administrator earlier added this lab group as a **default lab group**. Click the **Next** button on the **Choose Lab Groups** step.
-4. [] Click the **Finish** button on the **Summary** step.
-> **Important: Do NOT wait for this DataLab test to finish, continue to the next step immediately.**
-
-===
-
-## Step 2: Test VLAB1
+# Lab 7.2: Test DataLab VLAB1
 
 1. [] Click the **VEEAM-VAO\VLAB1** DataLab text link.
 2. [] Click the **Run** button.
