@@ -119,28 +119,27 @@ Module 8: Working with Orchestration Plans
 4. [] Verify the **VEEAM-VAO\VLAB1** is **Powered Off** and click the **Next** button on the **DataLab** step.
 5. [] Keep the default settings and click the **Next** button on the **Power Options** step.
 6. [] Notice that the **vao testing only - active directory servers** lab group has already been added and is greyed out. This is because an administrator has added this lab group as a **default lab group**. Click the **Next** button on the **Choose Lab Groups** step.
-9. [] Keep the default settings and click the **Next** button on the **Keep Plan Running** step.
-10. [] Click the **Finish** button on the **Summary** step.
-11. [] Navigate to the **DataLabs** view.
-12. [] Click the **VEEAM-VAO\VLAB1** text link in the **Lab** column.
-13. [] Select the **VAO Testing Only - Active Directory Servers** lab group.
-14. [] Select the **DC02** virtual machine.
+7. [] Click the **Finish** button on the **Summary** step.
+8. [] Navigate to the **DataLabs** view.
+9. [] Click the **VEEAM-VAO\VLAB1** text link in the **Lab** column.
+10. [] Select the **VAO Testing Only - Active Directory Servers** lab group.
+11. [] Select the **DC02** virtual machine.
 > Note: It can take up to 6 minutes to fully start the Lab Appliance, please have some patience.
 
-15. [] Wait for all steps of the **DC02** virtual machine to reach a status of **Completed** with a green checkmark (scroll left if the **Plan** is not visible).
+12. [] Wait for all steps of the **DC02** virtual machine to reach a status of **Completed** with a green checkmark (scroll left if the **Plan** is not visible).
 > Note: It can take up to 8 minutes to complete all tests of the DC02 virtual machine, please have some patience.
 
-16. [] Select the **Tier1-SharePoint** plan.
-17. [] Select **Mission Critical VMs - SharePoint Servers** in the **Plan Group** pane.
-18. [] Select **SHAREPOINT** in the **Virtual Machines** pane.
+13. [] Select the **Tier1-SharePoint** plan.
+14. [] Select **Mission Critical VMs - SharePoint Servers** in the **Plan Group** pane.
+15. [] Select **SHAREPOINT** in the **Virtual Machines** pane.
 > Note: It can take up to 6 minutes to complete all tests of the SHAREPOINT virtual machine, please have some patience.
 
-19. [] Click the **VM Console** button in the **Virtual Machines** pane.
-20. [] A new tab opens in **Internet Explorer** displaying the virtual machine console of the **SHAREPOINT** server running inside the DataLab. Close the **VM Console** tab in **Internet Explorer**.
-21. [] Wait for all steps of the **SHAREPOINT** virtual machine to reach a status of **Completed** with a green checkmark and click the **Left arrow** next to the **Lab Details VEEAM-VAO\VLAB1** text.
+16. [] Click the **VM Console** button in the **Virtual Machines** pane.
+17. [] A new tab opens in **Internet Explorer** displaying the virtual machine console of the **SHAREPOINT** server running inside the DataLab. Close the **VM Console** tab in **Internet Explorer**.
+18. [] Wait for all steps of the **SHAREPOINT** virtual machine to reach a status of **Completed** with a green checkmark and click the **Left arrow** next to the **Lab Details VEEAM-VAO\VLAB1** text.
 > Note: The Shutdown Source VM step will be in a Skipped status since this is a test and not a real failover.
 
-22. [] Notice that the **VEEAM-VAO\VLAB1** DataLab is in the **Powered Off** state because the lab test has completed. Navigate to the **Orchestration Plans** view.
+19. [] Notice that the **VEEAM-VAO\VLAB1** DataLab is in the **Powered Off** state because the lab test has completed. Navigate to the **Orchestration Plans** view.
 
 ===
 
