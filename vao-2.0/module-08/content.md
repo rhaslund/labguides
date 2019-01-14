@@ -131,7 +131,7 @@ Module 8: Working with Orchestration Plans
 > Note: It can take up to 8 minutes to complete all tests of the DC02 virtual machine, please have some patience.
 
 16. [] Select the **Tier1-SharePoint** plan.
-17. [] Select **mission critical vms - sharepoint servers** in the **Plan Group** pane.
+17. [] Select **Mission Critical VMs - SharePoint Servers** in the **Plan Group** pane.
 18. [] Select **SHAREPOINT** in the **Virtual Machines** pane.
 > Note: It can take up to 6 minutes to complete all tests of the SHAREPOINT virtual machine, please have some patience.
 
