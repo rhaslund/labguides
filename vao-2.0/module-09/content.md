@@ -206,13 +206,14 @@ Availability Orchestrator into the script. Notice **Mandatory=$true** which mean
 4. [] Click the **Verify** button.
 5. [] Select **Run DataLab Test**.
 6. [] Keep the default settings and click the **Next** button on the **DataLab** step.
-7. [] Keep the default settings and click the **Next** button on the **Restore Options** step.
-8. [] Keep the default settings click the **Next** button on the **Power Options** step.
-9. [] Keep the default settings and click the **Next** button on the **Choose Lab Groups** step.
-10. [] Click the **Finish** button on the **Summary** step.
-11. [] Click the **Tier1-Exchange** text link in the **Plan** column.
-12. [] Wait for the **Plan** test to successfully complete - this can take up to 10 minutes. Once the **Plan** test is completed, navigate to the **Dashboard** view.
-13. [] Verify that the **Plan Testing** dashboard is indicating all **Plans** are in a **Passed** state.
+7. [] Click the **Full Test** radio button.
+8. [] Click the **Next** button on the **Restore Options** step.
+9. [] Keep the default settings click the **Next** button on the **Power Options** step.
+10. [] Keep the default settings and click the **Next** button on the **Choose Lab Groups** step.
+11. [] Click the **Finish** button on the **Summary** step.
+12. [] Click the **Tier1-Exchange** text link in the **Plan** column.
+13. [] Wait for the **Plan** test to successfully complete - this can take up to 10 minutes. Once the **Plan** test is completed, navigate to the **Dashboard** view.
+14. [] Verify that the **Plan Testing** dashboard is indicating all **Plans** are in a **Passed** state.
 
 ---
 
