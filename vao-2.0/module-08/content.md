@@ -164,11 +164,11 @@ Module 8: Working with Orchestration Plans
 13. [] Wait for all steps to reach the **Completed** status and then open a new tab inside **Internet Explorer**.
 > Note: It is critical you do not continue until the failover is complete. Otherwise DNS will still resolve to the old production IP and be added to the local DNS cache with this incorrect IP. It can take up to 6 minutes to complete all tests of the SHAREPOINT virtual machine, please have some patience.
 
-14. [] Open a new tab in **Internet Explorer**.
-14. [] Navigate to +++http://sharepoint.vmce.lab+++ in the new tab in **Internet Explorer**.
+14. [] Open a new inPrivate **Internet Explorer** window.
+14. [] Navigate to +++http://sharepoint.vmce.lab+++ in the new inPrivate window in **Internet Explorer**.
 > Note: Microsoft SharePoint services can take a few minutes to start, please be patient.
 
-15. [] Verify the **SharePoint** site loads, and close the **SharePoint** tab in **Internet Explorer**.
+15. [] Verify the **SharePoint** site loads, and close the **SharePoint** window in **Internet Explorer**.
 
 ===
 
