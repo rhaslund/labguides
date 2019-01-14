@@ -249,7 +249,12 @@ Module 8: Working with Orchestration Plans
 > Verify Exchange MAPI Connectivity
 
 21. [] Click the **Next** button on the **VM Steps** step.
-22. [] Keep the default settings and click the **Next** button on the **Choose Credentials** step.
+22. [] Tick the **Override Credentials** check box.
+23. [] Click the **Choose...** text link.
+24. [] Select the **administrator@vmce.lab** credential.
+25. [] Click the **OK** button.
+26. [] Click the **Next** button on the **Choose Credentials** step.
+
 23. [] Keep the default settings and click the **Next** button on the **Protect VM Groups** step.
 24. [] Increase the **Target RPO** to +++48+++ hours.
 26. [] Click the **Next** button on the **RTO & RPO** step.
@@ -260,27 +265,7 @@ Module 8: Working with Orchestration Plans
 31. [] Click the **Finish** button on the **Summary** step.
 32. [] Select the **Tier1-Exchange** plan.
 33. [] Click the **Manage** button.
-34. [] Select **Edit**.
-35. [] Select **EXCHANGE** in the **Virtual Machines** pane.
-36. [] Select the **Verify Exchange Services** step.
-37. [] Select **Windows Credentials** in the **Step Parameters** pane.
-38. [] Click the **NONE** text link in the **Default value** section.
-39. [] Select the **administrator@vmce.lab** credential.
-40. [] Click the **OK** button.
-41. [] Select the **Verify Exchange MAPI Connectivity** step.
-42. [] Select **Windows Credentials** in **Step Parameters** pane.
-43. [] Click the **NONE** text link in the **Default value** section.
-44. [] Select the **administrator@vmce.lab** credential.
-45. [] Click the **OK** button.
-46. [] Select the **Restore VM** step.
-47. [] Select the **Restored VM Name** step parameter.
-48. [] Edit the default value to: +++\%source_vm_name\%\_restored
-49. [] Click the **Save** button under the **Edit Plan Tier1-Exchange** text.
-50. [] Tick the **Perform Plan Readiness Check now** check box.
-51. [] Click the **Save** button.
-52. [] Select the **Tier1-Exchange** plan.
-53. [] Click the **Manage** button.
-54. [] Select **Enable**.
+34. [] Select **Enable**.
 
 ===
 
