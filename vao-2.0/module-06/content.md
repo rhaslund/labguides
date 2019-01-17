@@ -79,13 +79,13 @@ Module 6: Configuration
 17. [] Tick the **Enable re-IP** check box.
 18. [] Click the **Add** button.
 19. [] Enter:
- 1. Source VM IP Address: +++192.168.1.\*+++
- 2. Source VM Subnet mask: +++255.255.255.0+++
- 3. Target VM IP Address: +++192.168.2.\*+++
- 4. Target VM IP Subnet mask: +++255.255.255.0+++
- 5. Default gateway:  +++192.168.2.1+++
- 6. Preferred DNS server: +++192.168.2.4+++
- 7. Alternate DNS server: +++192.168.1.101+++
+ 1. Source VM IP Address: 192.168.1.\*
+ 2. Source VM Subnet mask: 255.255.255.0
+ 3. Target VM IP Address: 192.168.2.\*
+ 4. Target VM IP Subnet mask: 255.255.255.0
+ 5. Default gateway: 192.168.2.1
+ 6. Preferred DNS server: 192.168.2.4
+ 7. Alternate DNS server: 192.168.1.101
 
 20. [] Click the **Add** button.
 21. [] Click the **Next** button on the **Re-IP Rules** step.
