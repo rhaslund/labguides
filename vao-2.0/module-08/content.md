@@ -161,45 +161,37 @@ Module 8: Working with Orchestration Plans
 10. [] Click the **Tier1-SharePoint** text link in the **Plan** column.
 11. [] Select **Mission Critical VMs - SharePoint Servers** in the **Plan Group** pane.
 12. [] Select **SHAREPOINT** in the **Virtual Machines** pane.
-13. [] Wait for all steps to reach the **Completed** status and then open a new tab inside **Internet Explorer**.
-> Note: It is critical you do not continue until the failover is complete. Otherwise DNS will still resolve to the old production IP and be added to the local DNS cache with this incorrect IP. It can take up to 6 minutes to complete all tests of the SHAREPOINT virtual machine, please have some patience.
-
-14. [] Open a new inPrivate **Internet Explorer** window.
-14. [] Navigate to +++http://sharepoint.vmce.lab+++ in the new inPrivate window in **Internet Explorer**.
-> Note: Microsoft SharePoint services can take a few minutes to start, please be patient.
-
-15. [] Verify the **SharePoint** site loads, and close the **SharePoint** window in **Internet Explorer**.
+13. [] Wait for all steps to reach the **Completed** status and then click the **Left arrow** button next to the **Plan Details: Tier1-SharePoint** text.
 
 ===
 
 # Lab 8.7: Undo failover
 
-1. [] Click the **Left arrow** button next to the **Plan Details: Tier1-SharePoint** text.
-2. [] Select the **Tier1-SharePoint** plan.
-3. [] Click the **Launch** button.
-4. [] Select **Undo**.
-5. [] Enter password: +++Pa%%w0rd+++.
-6. [] Click the **Next** button on the **Enter Credentials** step.
-7. [] Verify the action is **Undo Failover (Force)** and then click the **Finish** button on the **Summary** step.
-8. [] Click the **Tier1-SharePoint** text link in the **Plan** column.
-9. [] Select **Mission Critical VMs - SharePoint Servers** in the **Plan Group** pane.
-10. [] Select **SHAREPOINT** in the **Virtual Machines** pane.
-11. [] Select **Process Replica VM** in the **Steps** pane.
-12. [] Wait for the **Step Details** pane to display the following step: **Process Replica VM execution finished**. Verify in the top left corner that **Undo Failover** displays a green checkmark, that the status is **Complete**, that there are no errors or warnings, and then click the **Left arrow** button.
+1. [] Select the **Tier1-SharePoint** plan.
+2. [] Click the **Launch** button.
+3. [] Select **Undo**.
+4. [] Enter password: +++Pa%%w0rd+++.
+5. [] Click the **Next** button on the **Enter Credentials** step.
+6. [] Verify the action is **Undo Failover (Force)** and then click the **Finish** button on the **Summary** step.
+7. [] Click the **Tier1-SharePoint** text link in the **Plan** column.
+8. [] Select **Mission Critical VMs - SharePoint Servers** in the **Plan Group** pane.
+9. [] Select **SHAREPOINT** in the **Virtual Machines** pane.
+10. [] Select **Process Replica VM** in the **Steps** pane.
+11. [] Wait for the **Step Details** pane to display the following step: **Process Replica VM execution finished**. Verify in the top left corner that **Undo Failover** displays a green checkmark, that the status is **Complete**, that there are no errors or warnings, and then click the **Left arrow** button.
 > Note: This process can take up to 4 minutes, please have some patience.
 
-13. [] Select the **Tier1-SharePoint** plan.
-14. [] Notice that the **State** column displays that the **Tier1-SharePoint** plan is in the **Undo Failover** state and click the **Manage** button.
-15. [] Select **Reset**.
-16. [] Enter password: +++Pa%%w0rd+++
-17. [] Click the **Next** button on the **Enter Credentials** step.
-18. [] Keep the default setting and click the **Next** button on the Reset Actions step.
-19. [] Keep the default setting and click the **Next** button on the **Readiness Check** step.
-20. [] Click the **Finish** button on the **Summary** step.
+12. [] Select the **Tier1-SharePoint** plan.
+13. [] Notice that the **State** column displays that the **Tier1-SharePoint** plan is in the **Undo Failover** state and click the **Manage** button.
+14. [] Select **Reset**.
+15. [] Enter password: +++Pa%%w0rd+++
+16. [] Click the **Next** button on the **Enter Credentials** step.
+17. [] Keep the default setting and click the **Next** button on the Reset Actions step.
+18. [] Keep the default setting and click the **Next** button on the **Readiness Check** step.
+19. [] Click the **Finish** button on the **Summary** step.
 > Note: Notice that resetting an orchestration plan changes the plan from enabled to disabled.
 
-21. [] Click the **Plan Author** text link in the top right corner.
-22. [] Select **Logout**.
+20. [] Click the **Plan Author** text link in the top right corner.
+21. [] Select **Logout**.
 
 ===
 
@@ -210,6 +202,7 @@ Module 8: Working with Orchestration Plans
 1. [] Enter
  1. Username: +++siteadmin@vmce.lab+++
  2. Password: +++Pa%%w0rd+++
+ 
 2. [] Click the **Login** button.
 3. [] Navigate to the **Orchestration Plans** view.
 4. [] Click the **Manage** button.
@@ -254,18 +247,17 @@ Module 8: Working with Orchestration Plans
 24. [] Select the **administrator@vmce.lab** credential.
 25. [] Click the **OK** button.
 26. [] Click the **Next** button on the **Choose Credentials** step.
-
-23. [] Keep the default settings and click the **Next** button on the **Protect VM Groups** step.
-24. [] Increase the **Target RPO** to +++48+++ hours.
-26. [] Click the **Next** button on the **RTO & RPO** step.
-27. [] Keep the default settings and click the **Next** button on the **Report Template** step.
-28. [] Keep the default settings and click the **Next** button on the **Report Scheduling** step.
-29. [] Untick the **Run Readiness Check after Plan creation** check box.
-30. [] Click the **Next** button on the **Readiness Check** step.
-31. [] Click the **Finish** button on the **Summary** step.
-32. [] Select the **Tier1-Exchange** plan.
-33. [] Click the **Manage** button.
-34. [] Select **Enable**.
+27. [] Keep the default settings and click the **Next** button on the **Protect VM Groups** step.
+28. [] Increase the **Target RPO** to +++48+++ hours.
+29. [] Click the **Next** button on the **RTO & RPO** step.
+30. [] Keep the default settings and click the **Next** button on the **Report Template** step.
+31. [] Keep the default settings and click the **Next** button on the **Report Scheduling** step.
+32. [] Untick the **Run Readiness Check after Plan creation** check box.
+33. [] Click the **Next** button on the **Readiness Check** step.
+34. [] Click the **Finish** button on the **Summary** step.
+35. [] Select the **Tier1-Exchange** plan.
+36. [] Click the **Manage** button.
+37. [] Select **Enable**.
 
 ===
 
