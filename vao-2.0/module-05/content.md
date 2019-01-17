@@ -188,7 +188,7 @@ Module 5: User Interface, User Roles & Licensing
 15. [] Select the **ESX02:Local** datastore.
 16. [] Click the **OK** button.
 17. [] Click the **Next** button on the **Datastore** step.
-18. [] Click the **Configure...** button in the **Production network connection** section.
+18. [] Click the **Configure...** button in the **Proxy Appliance** section.
 19. [] Select the **Use the following IP address** radio button.
 20. [] Enter the following settings:
  1. IP address: +++192.168.2.6+++
