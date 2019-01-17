@@ -35,29 +35,31 @@ Module 4: Deployment and Installation
 2. [] Enter username: +++administrator@vmce.lab+++ and password: +++Pa%%w0rd+++.
 3. [] Click the **Login** button.
 4. [] Click the **Next** button on the **Welcome** step.
-
-6. [] Enter:
+5. [] Enter:
  1. Name: +++Phoenix+++
  2. Site description: +++Disaster Recovery site+++
  3. Contact name: +++John Doe+++
  4. Contact email: +++administrator@vmce.lab+++.
-7. [] Click the **Next** button on the **Server Details** step.
-8. [] Click the **Add** button.
-9. [] Enter account: +++site admin+++.
-10. [] Click the **Find** button.
-11. [] Select the discovered account: **Site Administrator VAO**.
-12. [] Click the **Add** button.
-13. [] Click the **Next** button on the **Choose Administrators** step.
-14. [] Click the **Skip** button on the **Deploy VAO agent** step.
+
+6. [] Click the **Next** button on the **Server Details** step.
+7. [] Click the **Add** button.
+8. [] Enter account: +++site admin+++.
+9. [] Click the **Find** button.
+10. [] Select the discovered account: **Site Administrator VAO**.
+11. [] Click the **Add** button.
+12. [] Click the **Next** button on the **Choose Administrators** step.
+13. [] Click the **Skip** button on the **Deploy VAO agent** step.
 > Note: In a production environment, it would be recommended to deploy Veeam Availability Orchestrator to a separate server than your Veeam backup server. At this step, you would connect either to your Veeam Backup Server or Veeam Backup Enterprise Manager. Since this is a training environment, we will skip this step and utilize the integrated Veeam backup server.
 
-15. [] Enter:
+14. [] Enter:
  1. Server: +++vcenter.vmce.lab+++
  2. User name: +++svcVeeam@vsphere.local+++
  3. Password: +++Pa%%w0rd+++.
-16. [] Click the **Next** button on the **VMware vCenter Server** step.
-17. [] Click the **Finish** button on the **Summary** step.
-18. [] Wait for the **Welcome! Please log in** text message and then close the **Veeam Availability Orchestrator** interface.
+> Note: If a 443 connection error is displayed, it could be the VMware vCenter Server services are still starting up, please wait 1-2 minutes and try again.
+
+15. [] Click the **Next** button on the **VMware vCenter Server** step.
+16. [] Click the **Finish** button on the **Summary** step.
+17. [] Wait for the **Welcome! Please log in** text message and then close the **Veeam Availability Orchestrator** interface.
 
 ---
 
