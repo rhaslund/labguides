@@ -19,7 +19,7 @@ Module 4: Deployment and Installation
 11. [] Enter +++C:\Install\veeam_availability_orchestrator_nfr_20.lic+++ into the File name field.
 12. [] Click the **Open** button.
 13. [] Click the **Next** button on the **Provide License Key** step.
-14. [] Keep default username: VMCE\Administrator and enter password: +++Pa%%w0rd+++.
+14. [] Keep default username: VMCE\Administrator and enter password: +++Pa%%w0rd+++
 15. [] Click the **Next** button on the **Service Account** step.
 16. [] Click the **Install** button to start the installation on the **Default Configuration** step.
 > Note: The installation process can take up to 25 minutes, please have some patience. The installation takes quite some time because many components need to be installed such as Microsoft SQL Server, Veeam Backup & Replication, Veaam ONE and of course Veeam Availability Orchestrator.
@@ -32,7 +32,7 @@ Module 4: Deployment and Installation
 
 # Lab 4.2: Initial configuration
 1. [] Launch **Veeam Availability Orchestrator** from the desktop.
-2. [] Enter username: +++administrator@vmce.lab+++ and password: +++Pa%%w0rd+++.
+2. [] Enter username: +++administrator@vmce.lab+++ and password: +++Pa%%w0rd+++
 3. [] Click the **Login** button.
 4. [] Click the **Next** button on the **Welcome** step.
 5. [] Enter:
@@ -54,7 +54,7 @@ Module 4: Deployment and Installation
 14. [] Enter:
  1. Server: +++vcenter.vmce.lab+++
  2. User name: +++svcVeeam@vsphere.local+++
- 3. Password: +++Pa%%w0rd+++.
+ 3. Password: +++Pa%%w0rd+++
 > Note: If a 443 connection error is displayed, it could be the VMware vCenter Server services are still starting up, please wait 1-2 minutes and try again.
 
 15. [] Click the **Next** button on the **VMware vCenter Server** step.
