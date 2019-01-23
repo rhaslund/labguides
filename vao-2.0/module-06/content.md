@@ -5,7 +5,7 @@ Module 6: Configuration
 # Lab 6.1: Assigning user roles and permissions
 
 1. [] Launch **Veeam Availability Orchestrator** from the Desktop.
-2. [] Enter username: +++siteadmin@vmce.lab+++ and password: +++Pa%%w0rd+++.
+2. [] Enter username: +++siteadmin@vmce.lab+++ and password: +++Pa%%w0rd++
 3. [] Click the **Login** button.
 >Note: Because the server was just started, the spinning icon may display for up to two minutes while services complete their startup.
 
@@ -52,7 +52,7 @@ Module 6: Configuration
 15. [] Click the **Subscribe** button in the **Reports** pane and verify that all subscriptions are in a subscribed state.
 16. [] Minimize the **Veeam Availability Orchestrator** window.
 17. [] Launch **Outlook Web Access** from the desktop.
-18. [] Enter username: +++administrator@vmce.lab+++ and password: +++Pa%%w0rd+++.
+18. [] Enter username: +++administrator@vmce.lab+++ and password: +++Pa%%w0rd++
 19. [] Click the **Sign in** button.
 20. [] Verify that you see the Veeam Availability Orchestrator test message and close the **Outlook Web Access window**.
 
