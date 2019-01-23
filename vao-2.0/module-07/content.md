@@ -7,7 +7,7 @@ Module 7: DataLabs
 ## Step 1: Add default lab group to VLAB1
 
 1. [] Launch **Veeam Availability Orchestrator** from the desktop.
-2. [] Enter username: +++siteadmin@vmce.lab+++ and password: +++Pa%%w0rd+++.
+2. [] Enter username: +++siteadmin@vmce.lab+++ and password: +++Pa%%w0rd+++
 3. [] Click the **Login** button.
 > Note: Because the server was just started, the spinning icon may display for up to two minutes while services complete their startup.
 
