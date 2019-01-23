@@ -7,7 +7,7 @@ Module 8: Working with Orchestration Plans
 1. [] Launch **Veeam Availability Orchestrator** from the desktop.
 2. [] Enter:
  1. Username: +++siteadmin@vmce.lab+++
- 2. Password: +++Pa%%w0rd+++.
+ 2. Password: +++Pa%%w0rd+++
 
 3. [] Click the **Login** button.
 >Note: Because the server was just started, the spinning icon may display for up to two minutes while services complete their startup.
