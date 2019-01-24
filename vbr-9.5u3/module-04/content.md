@@ -264,7 +264,7 @@ Module 4: Protect
 14. [] Lower **Restore points to keep** to +++3+++.
 15. [] Click the **Advanced** button.
 16. [] Tick the **Defragment and compact full backup file** check box.
-> Note: This setting will periodically compact the full backup, however, this option can only be enabled if GFS settins are disabled.
+> Note: This setting will periodically compact the full backup, however, this option can only be enabled if GFS settings are disabled.
 
 17. [] Click the **OK** button.
 18. [] Click the **Next** button on the **Target** step.
