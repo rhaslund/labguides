@@ -102,7 +102,7 @@ Module 4: Protect
 12. [] Click the **Advanced** button.
 13. [] Select the **Reverse incremental (slower)** radio button.
 14. [] Click the **OK** button.
-15. [] Click the **Next** button on the **Guest processing** step.
+15. [] Click the **Next** button on the **Storage** step.
 16. [] Tick the **Enable application-aware processing** check box.
 > Note: Enable application-aware image processing is used to freeze the VMs when the snapshot is created. This leads to the creation of a transactionally consistent backup that ensures successful recovery of VM applications without any data loss.
 
