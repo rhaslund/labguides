@@ -134,8 +134,6 @@ Module 8: Working with Orchestration Plans
 13. [] Select the **Tier1-SharePoint** plan.
 14. [] Select **Mission Critical VMs - SharePoint Servers** in the **Plan Group** pane.
 15. [] Select **SHAREPOINT** in the **Virtual Machines** pane.
-> Note: It can take up to 6 minutes to complete all tests of the SHAREPOINT virtual machine, please have some patience.
-
 16. [] Click the **VM Console** button in the **Virtual Machines** pane.
 17. [] A new tab opens in **Internet Explorer** displaying the virtual machine console of the **SHAREPOINT** server running inside the DataLab. Close the **VM Console** tab in **Internet Explorer**.
 18. [] Wait for all steps of the **SHAREPOINT** virtual machine to reach a status of **Completed** with a green checkmark and click the **Left arrow** next to the **Lab Details VEEAM-VAO\VLAB1** text.
