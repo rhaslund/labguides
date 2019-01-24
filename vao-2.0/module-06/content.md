@@ -17,8 +17,9 @@ Module 6: Configuration
  2. Description: +++Scope for administrators managing Microsoft SharePoint+++
 8. [] Click the **Add** button.
 9. [] Select the **SharePoint Administrators** scope.
-10. [] Click the **Add** button in the **Users and Groups** pane.
-11. [] Enter:
+10. [] Select the **Plan Author** role.
+11. [] Click the **Add** button in the **Users and Groups** pane.
+12. [] Enter:
  1. Domain: +++VMCE+++
  2. Account: +++planauthor+++.
 13. [] Click the **Find** button.
@@ -65,20 +66,19 @@ Module 6: Configuration
 2. [] Click the **Add** button.
 3. [] Enter name: +++DR site+++
 4. [] Click the **Next** button on the **Location Name** step.
-
-7. [] Select the **VAO DR Locations – Gold – Tier 1** group.
-8. [] Click the **Add** button.
-9. [] Click the **Next** button on the **Compute Resources** step.
-10. [] Select the **VAO DR Locations – Gold – Tier 1** group.
-11. [] Click the **Add** button.
-12. [] Click the **Next** button on the **Storage Resources** step.
-13. [] Keep the default values and click the **Next** button on the **Resource Usage** step.
-14. [] Click on the **Instant VM Recovery is:** drop down menu.
-15. [] Select **Enabled**.
-16. [] Click the **Next** button on the **Instant VM Recovery (IVR)** step.
-17. [] Tick the **Enable re-IP** check box.
-18. [] Click the **Add** button.
-19. [] Enter:
+5. [] Select the **VAO DR Locations – Gold – Tier 1** group.
+6. [] Click the **Add** button.
+7. [] Click the **Next** button on the **Compute Resources** step.
+8. [] Select the **VAO DR Locations – Gold – Tier 1** group.
+9. [] Click the **Add** button.
+10. [] Click the **Next** button on the **Storage Resources** step.
+11. [] Keep the default values and click the **Next** button on the **Resource Usage** step.
+12. [] Click on the **Instant VM Recovery is:** drop down menu.
+13. [] Select **Enabled**.
+14. [] Click the **Next** button on the **Instant VM Recovery (IVR)** step.
+15. [] Tick the **Enable re-IP** check box.
+16. [] Click the **Add** button.
+17. [] Enter:
  1. Source VM IP Address: 192.168.1.\*
  2. Source VM Subnet mask: 255.255.255.0
  3. Target VM IP Address: 192.168.2.\*
@@ -87,14 +87,14 @@ Module 6: Configuration
  6. Preferred DNS server: 192.168.2.4
  7. Alternate DNS server: 192.168.1.101
 
-20. [] Click the **Add** button.
-21. [] Click the **Next** button on the **Re-IP Rules** step.
-22. [] Tick the **Enable Network Mapping** check box.
-23. [] Select **PROD LAN in Production** in the **Source network** section.
-24. [] Select **DR in DR** in the **Target network** section.
-24. [] Click the **Add** button.
-25. [] Click the **Next** button on the **Network Mapping** step.
-26. [] Click the **Finish** button on the **Summary** step.
+18. [] Click the **Add** button.
+19. [] Click the **Next** button on the **Re-IP Rules** step.
+20. [] Tick the **Enable Network Mapping** check box.
+21. [] Select **PROD LAN in Production** in the **Source network** section.
+22. [] Select **DR in DR** in the **Target network** section.
+23. [] Click the **Add** button.
+24. [] Click the **Next** button on the **Network Mapping** step.
+25. [] Click the **Finish** button on the **Summary** step.
 
 ===
 
@@ -114,8 +114,9 @@ Module 6: Configuration
 17. [] Tick the **Verify Exchange MAPI Connectivity** check box.
 18. [] Tick the **Verify Exchange Services** check box.
 20. [] Tick the **Verify Mail Server Port** check box.
-21. [] Click the **Exclude** button in the **Steps** pane.
+> Note: Excluding these Exchange related steps will hide them from users in the SharePoint Administrators scope.
 
+21. [] Click the **Exclude** button in the **Steps** pane.
 22. [] Click the **Credentials** tab.
 23. [] Click the **SharePoint Administrators** text link in the **Scopes** pane at the top.
 24. [] Tick the **Default** check box in the **Scope** pane.
@@ -146,24 +147,24 @@ Module 6: Configuration
 # Lab 6.5: Create a template job
 
 1. [] Close the **Veeam Availability Orchestrator** window.
-1. [] Launch the **Veeam Backup & Replication Console** from the desktop.
-2. [] Click the **Connect** button.
-3. [] Click the **Backup Job** button on the **Home** ribbon.
-4. [] Select **Virtual machine...**.
-5. [] Enter name: +++Template Backup Job for VAO+++, and enter description: +++This job is a \[VAO template\] to re-protect failed over VMs+++.
-6. [] Click the **Next** button on the **Name** step.
-7. [] Click the **Add...** button.
-8. [] The current view selection is **Hosts and Clusters**. Click the **VMs and Templates** view button.
-9. [] Expand the **vcenter.vmce.lab** object.
-10. [] Expand the **DR** data center object.
-11. [] Select the **Empty folder for VAO template jobs** folder.
-12. [] Click the **Add** button.
-13. [] Click the **Next** button on the **Virtual Machines** step.
-14. [] Keep the defaults and click the **Next** button on the **Storage** step.
-15. [] Keep the defaults and click the **Next** button on the **Guest Processing** step.
-16. [] Do not schedule the job and click the **Apply** button on the **Schedule** step.
-17. [] Click the **Finish** button on the **Summary** step.
-18. [] Close the **Veeam Backup & Replication** console.
+2. [] Launch the **Veeam Backup & Replication Console** from the desktop.
+3. [] Click the **Connect** button.
+4. [] Click the **Backup Job** button on the **Home** ribbon.
+5. [] Select **Virtual machine...**.
+6. [] Enter name: +++Template Backup Job for VAO+++, and enter description: +++This job is a \[VAO template\] to re-protect failed over VMs+++.
+7. [] Click the **Next** button on the **Name** step.
+8. [] Click the **Add...** button.
+9. [] The current view selection is **Hosts and Clusters**. Click the **VMs and Templates** view button.
+10. [] Expand the **vcenter.vmce.lab** object.
+11. [] Expand the **DR** data center object.
+12. [] Select the **Empty folder for VAO template jobs** folder.
+13. [] Click the **Add** button.
+14. [] Click the **Next** button on the **Virtual Machines** step.
+15. [] Keep the defaults and click the **Next** button on the **Storage** step.
+16. [] Keep the defaults and click the **Next** button on the **Guest Processing** step.
+17. [] Do not schedule the job and click the **Apply** button on the **Schedule** step.
+18. [] Click the **Finish** button on the **Summary** step.
+19. [] Close the **Veeam Backup & Replication** console.
 > Note: The template job will not be visible in Veeam Availability Orchestrator until after the next data collection interval. Once it is visible in Veeam Availability Orchestrator, it must be enabled before it can be used.
 
 ---
