@@ -313,4 +313,4 @@ In this lab exercise, you will set locations for the already added components.
 16. [] Select **VEEAM-HYPERV** in the **Microsoft Hyper-V** section of the **Inventory** view.
 17. [] Click the **Set Location** button on the **Server** ribbon.
 18. [] Select **Local Site**.
-19. [] Close the **Veeam Backup and Replication console** window.
+19. [] Close the **Veeam Backup and Replication** window.
