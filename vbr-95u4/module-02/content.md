@@ -188,7 +188,7 @@ data to/from a backup repository.
 
 ===
 
-# Lab 2.6: Creating an off-site backup copy job
+# Lab 2.6
 
 In this lab exercise, you will deploy a local and a remote Veeam WAN Accelerator.
 
@@ -266,7 +266,7 @@ In this lab exercise, you will connect the tape server to the Veeam Backup Serve
 
 ===
 
-# Lab 2.9: Setup locations
+# Lab 2.9
 
 In this lab exercise, you will set locations for the already added components.
 
