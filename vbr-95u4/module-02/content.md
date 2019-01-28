@@ -306,11 +306,11 @@ In this lab exercise, you will set locations for the already added components.
 
 ## Step 3: Setup hypervisor locations
 
-12. [] Navigate to the **Inventory** view.
-13. [] Select **VEEAM-ESX** in the **VMware vSphere** section of the **Inventory** view.
-14. [] Click the **Set Location** button on the **Server** ribbon.
-15. [] Select **Local Site**.
-16. [] Select **VEEAM-HYPERV** in the **Microsoft Hyper-V** section of the **Inventory** view.
-17. [] Click the **Set Location** button on the **Server** ribbon.
-18. [] Select **Local Site**.
-19. [] Close the **Veeam Backup and Replication** window.
+1. [] Navigate to the **Inventory** view.
+2. [] Select **VEEAM-ESX** in the **VMware vSphere** section of the **Inventory** view.
+3. [] Click the **Set Location** button on the **Server** ribbon.
+4. [] Select **Local Site**.
+5. [] Select **VEEAM-HYPERV** in the **Microsoft Hyper-V** section of the **Inventory** view.
+6. [] Click the **Set Location** button on the **Server** ribbon.
+7. [] Select **Local Site**.
+8. [] Close the **Veeam Backup and Replication** window.
