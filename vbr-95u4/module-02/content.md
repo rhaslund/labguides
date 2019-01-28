@@ -108,8 +108,26 @@ In this lab exercise, you will review the VMware Backup Proxy on the VEEAM-VBR s
 ===
 
 # Lab 2.4
+In this lab exercise, you will add the Hyper-V off-host backup proxy to the Veeam Backup Server.
 
-In this lab exercise, you will add a remote Backup Repository and a second local Backup Repository
+1. [] Select **Backup Proxies** in the **Backup Infrastructure** view.
+2. [] Click the **Add Proxy** button on the **Backup Proxy** ribbon.
+3. [] Select **Hyper-V...**.
+4. [] Keep the default settings and click the **Next** button on the **Server** step.
+> Note: The Hyper-V role must be enabled on the server, otherwise it is not possible to add it as an off-host backup proxy.
+
+5. [] Keep the default settings and click the **Next** button on the **Traffic Rules** step.
+6. [] Keep the default settings and click the **Apply** button on the **Review** step.
+7. [] Wait for the required components to be installed and configued then click the **Next** button on the **Apply** step.
+> Note: Checking for updates from Windows Update could take up to 4 minutes.
+
+8. [] Click the **Finish** button on the **Summary** step.
+
+===
+
+# Lab 2.5
+
+In this lab exercise, you will add a remote Backup Repository and a second local Backup Repository.
 
 ## Step 1: Add a remote backup repository
 
@@ -166,7 +184,42 @@ data to/from a backup repository.
 
 ===
 
-# Lab 2.5: 
+# Lab 2.6: Creating an off-site backup copy job
+
+## Step 1: Install "remote" WAN accelerator
+
+1. [] Navigate to the **Backup infrastructure** view.
+2. [] Select **WAN Accelerators** in the **Backup Infrastructure** view.
+3. [] Click the **Add WAN Accelerator** button on the **WAN Accelerator** ribbon.
+4. [] Click the **Choose server** drop down menu.
+5. [] Select **VEEAM-Remote**.
+6. [] Click the **Next** button on the **Server** step.
+7. [] Verify the **Folder** is set to **X:\VeeamWAN** then lower the **Cache size** to +++10+++ GB.
+> Important: **WARNING! Do NOT use the default cache size of 100 GB. Leaving the default cache size in place will result in the lab running out of space and ultimately the job will fail**. We’re using 10 GB for demonstration only. Please check the User Guide for sizing recommendations.
+
+8. [] Click the **Next** on the **Cache** step.
+9. [] Keep the default settings and click the **Apply** button on the **Review** step.
+10. [] Keep the default settings and click the **Next** button on the **Apply** step.
+11. [] Click the **Finish** button on the **Summary** step.
+
+===
+
+## Step 2: Install a local WAN accelerator
+
+1. [] Click the **Add WAN Accelerator** button on the **WAN Accelerator** ribbon.
+2. [] Verify **Choose server** already has **VEEAM-VBR.veeaminfra.local** selected then click the **Next** button on the **Server** step.
+3. [] Verify the **Folder** is set to **X:\VeeamWAN** then lower the **Cache size** to +++10+++ GB.
+> Important: **WARNING! Do NOT use the default cache size of 100 GB. Leaving the default cache size**
+
+4. [] Click the **Next** on the **Cache** step.
+5. [] Click the **Apply** button on the **Review** step.
+6. [] Click the **Next** button on the **Apply** step.
+7. [] Click the **Finish** button on the **Summary** step.
+8. [] Verify both WAN accelerators are present then navigate to the **Home** view.
+
+===
+
+# Lab 2.7:
 
 In this lab exercise, you will connect a HPE StoreVirtual VSA to the Veeam Backup Server.
 
@@ -193,7 +246,7 @@ In this lab exercise, you will connect a HPE StoreVirtual VSA to the Veeam Backu
 
 ===
 
-# Lab 2.6 
+# Lab 2.8
 In this lab exercise, you will connect the tape server to the Veeam Backup Server.
 
 1. [] Navigate to the **Tape Infrastructure** view.
@@ -208,7 +261,7 @@ In this lab exercise, you will connect the tape server to the Veeam Backup Serve
 
 ===
 
-# Lab 2.5: Setup locations
+# Lab 2.9: Setup locations
 
 1. [] Select the **Scale-out Backup Repository** Scale-out Repository.
 2. [] Click the **Set Location** button on the **Scale-out Repository** ribbon.
