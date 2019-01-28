@@ -198,7 +198,7 @@ In this lab exercise, you will deploy a local and a remote Veeam WAN Accelerator
 2. [] Click the **Add WAN Accelerator** button on the **WAN Accelerator** ribbon.
 3. [] Verify **Choose server** already has **VEEAM-VBR.veeaminfra.local** selected then click the **Next** button on the **Server** step.
 4. [] Verify the **Folder** is set to **X:\VeeamWAN** then lower the **Cache size** to +++10+++ GB.
-> Important: **WARNING! Do NOT use the default cache size of 100 GB. Leaving the default cache size**
+> **Important: WARNING! Do NOT use the default cache size of 100 GB. Leaving the default cache size**
 
 5. [] Click the **Next** on the **Cache** step.
 6. [] Click the **Apply** button on the **Review** step.
