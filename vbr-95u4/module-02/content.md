@@ -230,7 +230,9 @@ In this lab exercise, you will connect a HPE StoreVirtual VSA to the Veeam Backu
 2. [] Click the **Add Storage** button.
 3. [] Select **Hewlett Packard Enterprise**.
 4. [] Select **StoreVirtual**.
-5. [] Enter Management server DNS name: +++VEEAM-VSA+++.
+5. [] Enter
+ 1. Management server DNS name: +++VEEAM-VSA+++
+ 2. Description: +++HPE StoreVirtual VSA+++
 6. [] Click the **Next** button on the **Name** step.
 7. [] Click the **Add...** button
 8. [] Enter:
@@ -266,27 +268,49 @@ In this lab exercise, you will connect the tape server to the Veeam Backup Serve
 
 # Lab 2.9: Setup locations
 
-1. [] Select the **Scale-out Backup Repository** Scale-out Repository.
-2. [] Click the **Set Location** button on the **Scale-out Repository** ribbon.
+In this lab exercise, you will set locations for the already added components.
+
+## Step 1: Setup Tape Library location
+
+1. [] Select **Libraries** in the **Tape Infrastructure** view.
+2. [] Click the **HP MSL G3 Series 1068** tape library.
+3. [] Click the **Set Location** button on the **Tape Library** ribbon.
 3. [] Select **Manage Locations...**.
 4. [] Click the **Add...** button.
 5. [] Enter name: +++Remote Site+++.
 6. [] Click the **OK** button.
 7. [] Click the **Add...** button.
-8. [] Enter name: +++Local+++.
+8. [] Enter name: +++Local Site+++.
 9. [] Click the **OK** button.
 10. [] Click the **OK** button.
-11. [] Click the **Set Location** button on the **Scale-out Repository** ribbon.
-12. [] Select **Local**.
-13. [] Select **Backup Repositories** in the **Backup Infrastructure** view.
-14. [] Select **Remote Repository**.
-15. [] Click the **Set Location** button on the **Backup Repository** ribbon.
-16. [] Select **Remote Site**.
-17. [] Navigate to the **Inventory** view.
-18. [] Select **VEEAM-ESX** in the **VMware vSphere** section of the **Inventory** view.
-19. [] Click the **Set Location** button on the **Server** ribbon.
-20. [] Select **Local**.
-21. [] Select **VEEAM-HYPERV** in the **Microsoft Hyper-V** section of the **Inventory** view.
-22. [] Click the **Set Location** button on the **Server** ribbon.
-23. [] Select **Local**.
-24. [] Close the **Veeam Backup and Replication console** window.
+11. [] Click the **Set Location** button on the **Tape Library** ribbon.
+12. [] Select **Remote**.
+
+===
+
+## Step 2: Setup Backup Repository locations
+
+1. [] Navigate to the **Backup Infrastructure** view.
+2. [] Select **Backup Repositories** in the **Backup Infrastructure** view.
+3. [] Select **Default Backup Repository**.
+4. [] Click the **Set Location** button on the **Backup Repository** ribbon.
+5. [] Select **Local Site**.
+6. [] Select **Local Backup Repository**.
+7. [] Click the **Set Location** button on the **Backup Repository** ribbon.
+8. [] Select **Local Site**.
+9. [] Select **Remote Repository**.
+10. [] Click the **Set Location** button on the **Backup Repository** ribbon.
+11. [] Select **Remote Site**.
+
+===
+
+## Step 3: Setup hypervisor locations
+
+12. [] Navigate to the **Inventory** view.
+13. [] Select **VEEAM-ESX** in the **VMware vSphere** section of the **Inventory** view.
+14. [] Click the **Set Location** button on the **Server** ribbon.
+15. [] Select **Local Site**.
+16. [] Select **VEEAM-HYPERV** in the **Microsoft Hyper-V** section of the **Inventory** view.
+17. [] Click the **Set Location** button on the **Server** ribbon.
+18. [] Select **Local Site**.
+19. [] Close the **Veeam Backup and Replication console** window.
