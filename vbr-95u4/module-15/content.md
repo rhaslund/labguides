@@ -33,6 +33,8 @@ Module 15: Additional resources
 3. [] Tick the **I accept the terms of the 3rd party components license agreements** check box.
 4. [] Click the **Next** button on the **License Agreement** step.
 5. [] Keep the default settings and click the **Next** button on the **Provide License** step.
+> Note: Veeam Backup Enterprise Manager simply uses the same license as was just installed for Veeam Backup & Replication.
+
 6. [] Keep the default settings and click the **Next** button on the **Program features** step.
 7. [] Click the **Install** button to deploy missing features.
 8. [] Verify all requirements are now in a **Passed** status then click the **Next** button on the **System Configuration Check** step.
@@ -40,8 +42,8 @@ Module 15: Additional resources
 10. [] Keep the default settings and click the **Next** button on the **SQL Server Instance** step.
 11. [] Keep the default settings and click the **Next** button on the **Additional Configuration** step.
 12. [] Click the **Install** button on the **Ready to Install** step.
-9. [] Click the **Finish** button.
-10. [] Close the **Veeam Backup & Replication setup** window.
+13. [] Click the **Finish** button.
+14. [] Close the **Veeam Backup & Replication setup** window.
 
 ===
 
