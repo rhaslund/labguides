@@ -27,7 +27,7 @@ lab
 
 ===
 
-# Lab 3.1
+# Lab 2.2
 
 In this lab exercise you will add a VMware vSphere ESXi host and a Microsoft Hyper-V host to the Veeam Backup Server.
 
@@ -86,3 +86,151 @@ In this lab exercise you will add a VMware vSphere ESXi host and a Microsoft Hyp
 14. [] Click the **Finish** button on the **Summary** step.
 15. [] Select **Microsoft Hyper-V** in the **Managed Servers** section of the **Backup Infrastructure** view.
 > Note: The VEEAM-HYPERV host is now added to the Veeam Backup & Replication user interface.
+
+===
+
+# Lab 2.3
+
+In this lab exercise, you will review the VMware Backup Proxy on the VEEAM-VBR server.
+
+1. [] Select **Backup Proxies** in the **Backup Infrastructure** view.
+2. [] Select **VMware Backup Proxy**.
+3. [] Click the **Edit Proxy** button on the **Backup Proxy** ribbon.
+4. [] Click the **Choose...** button in the **Transport mode** section.
+> Note: At this step, you can also specify transport mode and/or connected datastores. In production environments, it is recommended to use as many tasks as the server resources (CPU/RAM) and backup target (repository/disks) can handle. 1 task equals 1 (one) CPU core.
+
+5. [] Review the available transport modes and click the **Cancel** button.
+6. [] Click the **Cancel** button on the **Server** step.
+> Note: If no additional VMware Backup Proxies are added then the Veeam Backup Server will both coordinate all job activities and handle data processing itself.
+
+7. [] Click the **Yes** button to confirm exit without applying changes.
+
+===
+
+# Lab 2.4
+
+In this lab exercise, you will add a remote Backup Repository and a second local Backup Repository
+
+## Step 1: Add a remote backup repository
+
+1. [] Select **Backup Repositories** in the **Backup Infrastructure** view.
+> Note: During installation, Veeam Backup & Replication checks the volumes of the machine on which you install the product and identifies a volume with the greatest amount of free disk space. On this volume, Veeam Backup & Replication creates the Backup folder that is used as the default backup repository.
+
+2. [] Click the **Add Repository** button on the **Backup Repository** ribbon.
+3. [] Select **Direct attached storage**.
+4. [] Select **Microsoft Windows**.
+5. [] Enter name: +++Remote Repository+++.
+6. [] Click the **Next** button on the **Name** step.
+7. [] Click the **Add New...** button.
+> Note: The Repository servers list contains only those servers that have been added to Veeam Backup & Replication beforehand. As the VEEAM-Remote server has not been added to Veeam Backup & Replication yet, we have to go through the New Windows Server wizard first.
+
+8. [] Enter DNS name: +++VEEAM-Remote+++.
+9. [] Click the **Next** button on the **Name** step.
+10. [] Click the **Credentials** drop down menu.
+11. [] Select **VEEAMINFRA\Administrator**.
+> Note: This account should have administrator privileges on the added Microsoft Windows Server.
+
+12. [] Click the **Next** button on the **Credentials** step.
+13. [] Click the **Apply** button on the **Review** step.
+14. [] Click the **Next** button on the **Apply** step.
+15. [] Click the **Finish** button on the **Summary** step.
+16. [] Click the **Populate** button on the **Server** step.
+17. [] Select the **X:\\** drive.
+18. [] Click the **Next** button on the **Server** step.
+19. [] Verify the **Path to folder** is **X:\Backups** and click the **Next** button on the **Repository** step.
+> Note: The Limit read and write data rates setting is used to limit the speed with which Veeam Backup & Replication can read and write
+data to/from a backup repository.
+
+20. [] Keep the default settings and click the **Next** button on the **Mount Server** step.
+21. [] Keep the default settings and click the **Apply** button on the **Review** step.
+22. [] Click the **Finish** button on the **Apply** step.
+23. [] Click the **Yes** button to confirm changing the configuration backup location to the newly created repository.
+> Note: The new repository has been added. We have selected the configuration backup to be stored at the remote site to ensure it will remain intact if the VEEAM-VBR VM crashes.
+
+===
+
+## Step 2: Add a local repository
+
+1. [] Click the **Add Repository** button on the **Backup Repository** ribbon.
+2. [] Select **Direct attached storage**.
+3. [] Select **Microsoft Windows**.
+4. [] Enter name: +++Local Backup Repository+++.
+5. [] Click the **Next** button on the **Name** step.
+6. [] Click the **Populate** button.
+7. [] Select the **E:\\** drive.
+8. [] Click the **Next** button on the **Server** step.
+9. [] Verify the **Path to folder** is **E:\Backups** and click the **Next** button on the **Repository** step.
+10. [] Keep the default settings and click the **Next** button on the **Mount Server** page.
+11. [] Keep the default settings and click the **Apply** button on the **Review** step.
+12. [] Click the **Finish** button on the **Apply** step.
+
+===
+
+# Lab 2.5: 
+
+In this lab exercise, you will connect a HPE StoreVirtual VSA to the Veeam Backup Server.
+
+1. [] Navigate to the **Storage Infrastructure** view.
+2. [] Click the **Add Storage** button.
+3. [] Select **Hewlett Packard Enterprise**.
+4. [] Select **StoreVirtual**.
+5. [] Enter Management server DNS name: +++VEEAM-VSA+++.
+6. [] Click the **Next** button on the **Name** step.
+7. [] Click the **Add...** button
+8. [] Enter:
+ 1. Username: +++veeam+++ (case sensitive).
+ 2. Password: +++veeam+++ (case sensitive).
+ 3. Description: +++HPE VSA admin account+++
+
+9. [] Click the **OK** button.
+10. [] Click the **Next** button on the **Credentials** step.
+11. [] Click the **Yes** button to confirm trust of the remote storage system. 
+> Note: Veeam Backup & Replication saves a fingerprint of the SSH key of the storage system to the Veeam Backup & Replication database. During every subsequent connection to the server, Veeam Backup & Replication uses the saved fingerprint to verify the identity of the storage system and avoid the man-in-the-middle attack.
+
+12. [] Keep the default settings and click the **Next** button on the **Access Options** step.
+13. [] Click the **Finish** button on the **Summary** step.
+14. []  Wait until the storage discovery reaches status **Success** then click the **Close** button.
+
+===
+
+# Lab 2.6 
+In this lab exercise, you will connect the tape server to the Veeam Backup Server.
+
+1. [] Navigate to the **Tape Infrastructure** view.
+2. [] There are no Tape Drives or Libraries available yet. In the lab environment, the tape library is connected to the **VEEAM-Remote** server. Click the **Add Tape Server** button on the **Tape** ribbon.
+3. [] Click the **Choose server:** drop down menu.
+4. [] Select **VEEAM-Remote**.
+5. [] Click the **Next** button on the **Server** step.
+6. [] Keep the default settings and click the **Next** button on the **Traffic** step.
+7. [] Click the **Apply** button on the **Review** step.
+8. [] Click the **Next** button on the **Apply** step.
+9. [] Click the **Finish** button on the **Summary** step.
+
+===
+
+# Lab 2.5: Setup locations
+
+1. [] Select the **Scale-out Backup Repository** Scale-out Repository.
+2. [] Click the **Set Location** button on the **Scale-out Repository** ribbon.
+3. [] Select **Manage Locations...**.
+4. [] Click the **Add...** button.
+5. [] Enter name: +++Remote Site+++.
+6. [] Click the **OK** button.
+7. [] Click the **Add...** button.
+8. [] Enter name: +++Local+++.
+9. [] Click the **OK** button.
+10. [] Click the **OK** button.
+11. [] Click the **Set Location** button on the **Scale-out Repository** ribbon.
+12. [] Select **Local**.
+13. [] Select **Backup Repositories** in the **Backup Infrastructure** view.
+14. [] Select **Remote Repository**.
+15. [] Click the **Set Location** button on the **Backup Repository** ribbon.
+16. [] Select **Remote Site**.
+17. [] Navigate to the **Inventory** view.
+18. [] Select **VEEAM-ESX** in the **VMware vSphere** section of the **Inventory** view.
+19. [] Click the **Set Location** button on the **Server** ribbon.
+20. [] Select **Local**.
+21. [] Select **VEEAM-HYPERV** in the **Microsoft Hyper-V** section of the **Inventory** view.
+22. [] Click the **Set Location** button on the **Server** ribbon.
+23. [] Select **Local**.
+24. [] Close the **Veeam Backup and Replication console** window.
