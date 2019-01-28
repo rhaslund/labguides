@@ -110,18 +110,18 @@ In this lab exercise, you will review the VMware Backup Proxy on the VEEAM-VBR s
 # Lab 2.4
 In this lab exercise, you will add the Hyper-V off-host backup proxy to the Veeam Backup Server.
 
-1. [] Select **Backup Proxies** in the **Backup Infrastructure** view.
-2. [] Click the **Add Proxy** button on the **Backup Proxy** ribbon.
-3. [] Select **Hyper-V...**.
-4. [] Keep the default settings and click the **Next** button on the **Server** step.
+1. [] Click the **Add Proxy** button on the **Backup Proxy** ribbon.
+2. [] Select **Hyper-V...**.
+3. [] Enter description: +++Microsoft Hyper-V Off-Host Proxy+++
+3. [] Click the **Next** button on the **Server** step.
 > Note: The Hyper-V role must be enabled on the server, otherwise it is not possible to add it as an off-host backup proxy.
 
-5. [] Keep the default settings and click the **Next** button on the **Traffic Rules** step.
-6. [] Keep the default settings and click the **Apply** button on the **Review** step.
-7. [] Wait for the required components to be installed and configued then click the **Next** button on the **Apply** step.
+4. [] Keep the default settings and click the **Next** button on the **Traffic Rules** step.
+5. [] Keep the default settings and click the **Apply** button on the **Review** step.
+6. [] Wait for the required components to be installed and configued then click the **Next** button on the **Apply** step.
 > Note: Checking for updates from Windows Update could take up to 4 minutes.
 
-8. [] Click the **Finish** button on the **Summary** step.
+7. [] Click the **Finish** button on the **Summary** step.
 
 ===
 
@@ -142,11 +142,13 @@ In this lab exercise, you will add a remote Backup Repository and a second local
 7. [] Click the **Add New...** button.
 > Note: The Repository servers list contains only those servers that have been added to Veeam Backup & Replication beforehand. As the VEEAM-Remote server has not been added to Veeam Backup & Replication yet, we have to go through the New Windows Server wizard first.
 
-8. [] Enter DNS name: +++VEEAM-Remote+++.
+8. [] Enter
+ 1. DNS name: +++VEEAM-Remote+++
+ 2. Description: Remote Backup Repository
 9. [] Click the **Next** button on the **Name** step.
 10. [] Click the **Credentials** drop down menu.
 11. [] Select **VEEAMINFRA\Administrator**.
-> Note: This account should have administrator privileges on the added Microsoft Windows Server.
+> Note: This account should have local administrator privileges on the added Microsoft Windows Server.
 
 12. [] Click the **Next** button on the **Credentials** step.
 13. [] Click the **Apply** button on the **Review** step.
@@ -163,7 +165,7 @@ data to/from a backup repository.
 21. [] Keep the default settings and click the **Apply** button on the **Review** step.
 22. [] Click the **Finish** button on the **Apply** step.
 23. [] Click the **Yes** button to confirm changing the configuration backup location to the newly created repository.
-> Note: The new repository has been added. We have selected the configuration backup to be stored at the remote site to ensure it will remain intact if the VEEAM-VBR VM crashes.
+> Note: The new repository has been added. We have selected the configuration backup to be stored at the remote server to ensure it will remain intact if the VEEAM-VBR server crashes.
 
 ===
 
@@ -172,7 +174,9 @@ data to/from a backup repository.
 1. [] Click the **Add Repository** button on the **Backup Repository** ribbon.
 2. [] Select **Direct attached storage**.
 3. [] Select **Microsoft Windows**.
-4. [] Enter name: +++Local Backup Repository+++.
+4. [] Enter
+ 1. Name: +++Local Backup Repository+++
+ 2. Name: +++Local Backup Repository+++
 5. [] Click the **Next** button on the **Name** step.
 6. [] Click the **Populate** button.
 7. [] Select the **E:\\** drive.
@@ -186,36 +190,35 @@ data to/from a backup repository.
 
 # Lab 2.6: Creating an off-site backup copy job
 
-## Step 1: Install "remote" WAN accelerator
+In this lab exercise, you will deploy a local and a remote Veeam WAN Accelerator.
 
-1. [] Navigate to the **Backup infrastructure** view.
-2. [] Select **WAN Accelerators** in the **Backup Infrastructure** view.
-3. [] Click the **Add WAN Accelerator** button on the **WAN Accelerator** ribbon.
-4. [] Click the **Choose server** drop down menu.
-5. [] Select **VEEAM-Remote**.
-6. [] Click the **Next** button on the **Server** step.
-7. [] Verify the **Folder** is set to **X:\VeeamWAN** then lower the **Cache size** to +++10+++ GB.
-> Important: **WARNING! Do NOT use the default cache size of 100 GB. Leaving the default cache size in place will result in the lab running out of space and ultimately the job will fail**. We’re using 10 GB for demonstration only. Please check the User Guide for sizing recommendations.
+## Step 1: Install a local WAN accelerator
 
-8. [] Click the **Next** on the **Cache** step.
-9. [] Keep the default settings and click the **Apply** button on the **Review** step.
-10. [] Keep the default settings and click the **Next** button on the **Apply** step.
-11. [] Click the **Finish** button on the **Summary** step.
-
-===
-
-## Step 2: Install a local WAN accelerator
-
-1. [] Click the **Add WAN Accelerator** button on the **WAN Accelerator** ribbon.
-2. [] Verify **Choose server** already has **VEEAM-VBR.veeaminfra.local** selected then click the **Next** button on the **Server** step.
-3. [] Verify the **Folder** is set to **X:\VeeamWAN** then lower the **Cache size** to +++10+++ GB.
+1. [] Select **WAN Accelerators** in the **Backup Infrastructure** view.
+2. [] Click the **Add WAN Accelerator** button on the **WAN Accelerator** ribbon.
+3. [] Verify **Choose server** already has **VEEAM-VBR.veeaminfra.local** selected then click the **Next** button on the **Server** step.
+4. [] Verify the **Folder** is set to **X:\VeeamWAN** then lower the **Cache size** to +++10+++ GB.
 > Important: **WARNING! Do NOT use the default cache size of 100 GB. Leaving the default cache size**
 
-4. [] Click the **Next** on the **Cache** step.
-5. [] Click the **Apply** button on the **Review** step.
-6. [] Click the **Next** button on the **Apply** step.
-7. [] Click the **Finish** button on the **Summary** step.
-8. [] Verify both WAN accelerators are present then navigate to the **Home** view.
+5. [] Click the **Next** on the **Cache** step.
+6. [] Click the **Apply** button on the **Review** step.
+7. [] Click the **Next** button on the **Apply** step.
+8. [] Click the **Finish** button on the **Summary** step.
+9. [] Verify both WAN accelerators are present then navigate to the **Home** view.
+
+## Step 2: Install "remote" WAN accelerator
+
+1. [] Click the **Add WAN Accelerator** button on the **WAN Accelerator** ribbon.
+2. [] Click the **Choose server** drop down menu.
+3. [] Select **VEEAM-Remote**.
+4. [] Click the **Next** button on the **Server** step.
+5. [] Verify the **Folder** is set to **X:\VeeamWAN** then lower the **Cache size** to +++10+++ GB.
+> Important: **WARNING! Do NOT use the default cache size of 100 GB. Leaving the default cache size in place will result in the lab running out of space and ultimately the job will fail**. We’re using 10 GB for demonstration only. Please check the User Guide for sizing recommendations.
+
+6. [] Click the **Next** on the **Cache** step.
+7. [] Keep the default settings and click the **Apply** button on the **Review** step.
+8. [] Keep the default settings and click the **Next** button on the **Apply** step.
+9. [] Click the **Finish** button on the **Summary** step.
 
 ===
 
