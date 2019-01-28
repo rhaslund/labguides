@@ -71,37 +71,6 @@ Module 15: Additional resources
 20. [] Close the **Veeam ONE setup** window.
 21. [] Close the **File Explorer** window.
 
-===
-
-# Lab 15.4: Install the second Veeam Backup Server
-
-1. [] Launch the **Remote Desktop Connection client** from the Windows task bar.
-2. [] Enter computer: +++VEEAM-VBR2+++
-3. [] Click the **Connect** button.
-4. [] Enter password: +++Pa$$w0rd+++
-5. [] Click the **OK** button.
-6. [] Launch **File Explorer** from the Windows task bar.
-7. [] Select the **DVD Drive (D:)** drive.
-8. [] Launch the **Setup** file.
-9. [] Click the **Install** button on the left hand side.
-10. [] Tick the **I accept the terms in the license agreement** check box.
-11. [] Tick the **I accept the terms of the 3rd party components license agreements** check box.
-12. [] Click the **Next** button on the **License Agreement** step.
-13. [] Click the **Browse...** button.
-14. [] Enter file name: +++\\\\veeam-vbr\\install+++
-15. [] Click the **Open** button.
-16. [] Select the **veeam_availability_suite_nfr_2_2.lic** file.
-17. [] Click the **Open** button.
-18. [] Click the **Next** button on the **Provide License** step.
-19. [] Keep the default settings and click the **Next** button on the **Program features** step.
-20. [] Click the **Install** button to deploy missing features.
-21. [] Click the **Next** button on the **System Configuration Check** step.
-22. [] Keep the default settings and click the **Install** button on the **Default Configuration** step.
-23. [] Click the **Finish** button.
-24. [] Close the **Veeam Backup & Replication setup** window.
-25. [] Close the **File Explorer** window.
-26. [] Close the **Remote Desktop Connction** window.
-
 ---
 
 # Congratulations!
