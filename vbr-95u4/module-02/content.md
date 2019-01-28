@@ -204,7 +204,6 @@ In this lab exercise, you will deploy a local and a remote Veeam WAN Accelerator
 6. [] Click the **Apply** button on the **Review** step.
 7. [] Click the **Next** button on the **Apply** step.
 8. [] Click the **Finish** button on the **Summary** step.
-9. [] Verify both WAN accelerators are present then navigate to the **Home** view.
 
 ## Step 2: Install "remote" WAN accelerator
 
@@ -219,6 +218,7 @@ In this lab exercise, you will deploy a local and a remote Veeam WAN Accelerator
 7. [] Keep the default settings and click the **Apply** button on the **Review** step.
 8. [] Keep the default settings and click the **Next** button on the **Apply** step.
 9. [] Click the **Finish** button on the **Summary** step.
+10. [] Verify both WAN accelerators are present then navigate to the **Home** view.
 
 ===
 
