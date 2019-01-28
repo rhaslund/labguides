@@ -3,29 +3,37 @@ Module 4: Creating virtual machine backups
 **This lab is expected to last a maximum of XX minutes including lab launch.**
 
 # Lab 4.1
-In this lab exercise, you will configure e-mail settings so notifications can be sent out for the jobs created later.
+In this lab exercise, you will configure storage latency control to avoid overloading the production storage system.
 
 1. [] Launch the **Veeam Backup & Replication console** from the desktop.
 2. [] Click the **Connect** button.
 3. [] Click the **≡** button in the top left corner.
 4. [] Select **General Options**.
-5. [] Click the **E-mail Settings** tab.
-6. [] Tick the **Enable e-mail notifications** check box.
-7. [] Enter:
- 1. SMTP server: +++veeam-ex01.veeamlab.local+++
- 2. From: +++VeeamBackup@veeamlab.local+++
- 3. To: +++administrator@veeamlab.local+++
-
-8. [] Click the **Apply** button.
-9 [] Click the **Test Message** button.
-10 [] Click the **OK** button.
-> Note: You can find Outlook Web Access (OWA) in the task bar of the VEEAM-VBR server. When you start OWA, you can log in as: administrator@veeamlab.local
-
-11 [] Click the **OK** button.
+6. [] Tick the **Enable storage latency control** check box.
+> Note: Storage latency control is also referred to by Veeam as Backup I/O Control.
 
 ===
 
 # Lab 4.2
+In this lab exercise, you will configure e-mail settings so notifications can be sent out for the jobs created later.
+
+1. [] Click the **E-mail Settings** tab.
+2. [] Tick the **Enable e-mail notifications** check box.
+3. [] Enter:
+ 1. SMTP server: +++veeam-ex01.veeamlab.local+++
+ 2. From: +++VeeamBackup@veeamlab.local+++
+ 3. To: +++administrator@veeamlab.local+++
+
+4. [] Click the **Apply** button.
+5. [] Click the **Test Message** button.
+6. [] Click the **OK** button.
+> Note: You can find Outlook Web Access (OWA) in the task bar of the VEEAM-VBR server. When you start OWA, you can log in as administrator@veeamlab.local using password: Pa$$w0rd
+
+7. [] Click the **OK** button to close the **Options** window.
+
+===
+
+# Lab 4.3
 
 ## Step 1: Create and schedule a backup job for VEEAM-ORCL and Tiny-Veeam
 
