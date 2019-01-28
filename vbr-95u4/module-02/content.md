@@ -212,13 +212,13 @@ In this lab exercise, you will deploy a local and a remote Veeam WAN Accelerator
 3. [] Select **VEEAM-Remote**.
 4. [] Click the **Next** button on the **Server** step.
 5. [] Verify the **Folder** is set to **X:\VeeamWAN** then lower the **Cache size** to +++10+++ GB.
-> Important: **WARNING! Do NOT use the default cache size of 100 GB. Leaving the default cache size in place will result in the lab running out of space and ultimately the job will fail**. We’re using 10 GB for demonstration only. Please check the User Guide for sizing recommendations.
+> **Important: WARNING! Do NOT use the default cache size of 100 GB. Leaving the default cache size in place will result in the lab running out of space and ultimately the job will fail**. We’re using 10 GB for demonstration only. Please check the User Guide for sizing recommendations.
 
 6. [] Click the **Next** on the **Cache** step.
 7. [] Keep the default settings and click the **Apply** button on the **Review** step.
 8. [] Keep the default settings and click the **Next** button on the **Apply** step.
 9. [] Click the **Finish** button on the **Summary** step.
-10. [] Verify both WAN accelerators are present then navigate to the **Home** view.
+> Note: Verify both WAN accelerators are present before continuing to the next lab.
 
 ===
 
