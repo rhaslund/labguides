@@ -9,7 +9,7 @@ Module 15: Additional resources
 2. [] Select the **DVD Drive (D:)** drive.
 3. [] Launch the **Setup** file.
 4. [] Click the **Install** button on the left hand side.
-5. [] Tick the **I accept the terms in the license agreement** check box.
+5. [] Tick the **I accept the terms of the Veeam license agreement** check box.
 6. [] Tick the **I accept the terms of the 3rd party components license agreements** check box.
 7. [] Click the **Next** button on the **License Agreement** step.
 8. [] Click the **Browse...** button.
@@ -29,7 +29,7 @@ Module 15: Additional resources
 # Lab 15.2: Install Veeam Backup Enterprise Manager
 
 1. [] Click the **Install** text link in the **Veeam Backup Enterprise Manager** section.
-2. [] Tick the **I accept the terms in the license agreement** check box.
+2. [] Tick the **I accept the terms of the Veeam license agreement** check box.
 3. [] Tick the **I accept the terms of the 3rd party components license agreements** check box.
 4. [] Click the **Next** button on the **License Agreement** step.
 5. [] Keep the default settings and click the **Next** button on the **Provide License** step.
@@ -50,27 +50,28 @@ Module 15: Additional resources
 # Lab 15.3: Install Veeam ONE
 
 1. [] Click the **Install** button on the left hand side.
-2. [] Select the **I accept the terms in the license agreement** radio button.
-3. [] Click the **Next** button on the **License Agreement** step.
-4. [] Click the **Browse...** button.
-5. [] Select the **veeam_availability_suite_nfr_2_2.lic** file.
-6. [] Click the **Open** button.
-7. [] Click the **Next** button on the **Provide License** step.
-8. [] Keep the default settings and click the **Next** button on the **Setup Type** step.
-9. [] Click the **Install** button to deploy missing features.
-10. [] Click the **Next** button on the **System Configuration Check** step.
-11. [] Keep the default settings and click the **Next** button on the **Installation Path** step.
-12. [] Enter password: +++Pa$$w0rd+++
-13. [] Click the **Next** button on the **Service Account Credentials** step.
-14. [] Keep the default settings and click the **Next** button on the **SQL Server Instance** step.
-15. [] Keep the default settings and click the **Next** button on the **Connection Information** step.
-16. [] Keep the default settings and click the **Next** button on the **Performance Data Caching** step.
-17. [] Click the **Skip virtual infrastructure configuration** button on the **Virtual Infrastructure Type** step.
-18. [] Keep the default settings and click the **Next** button on the **Data Collection Mode** step.
-19. [] Click the **Install** button on the **Ready to Install** step.
-20. [] Click the **Finish** button.
-21. [] Close the **Veeam ONE setup** window.
-22. [] Close the **File Explorer** window.
+2. [] Select the **I accept the terms of the Veeam license agreement** radio button.
+3. [] Select the **I accept the terms of the 3rd party components license agreement** radio button.
+4. [] Click the **Next** button on the **License Agreement** step.
+5. [] Click the **Browse...** button.
+6. [] Select the **veeam_availability_suite_nfr_2_2.lic** file.
+7. [] Click the **Open** button.
+8. [] Click the **Next** button on the **Provide License** step.
+9. [] Keep the default settings and click the **Next** button on the **Setup Type** step.
+10. [] Click the **Install** button to deploy missing features.
+11. [] Click the **Next** button on the **System Configuration Check** step.
+12. [] Keep the default settings and click the **Next** button on the **Installation Path** step.
+13. [] Enter password: +++Pa$$w0rd+++
+14. [] Click the **Next** button on the **Service Account Credentials** step.
+15. [] Keep the default settings and click the **Next** button on the **SQL Server Instance** step.
+16. [] Keep the default settings and click the **Next** button on the **Connection Information** step.
+17. [] Keep the default settings and click the **Next** button on the **Performance Data Caching** step.
+19. [] Click the **Skip virtual infrastructure configuration** button on the **Virtual Infrastructure Type** step.
+20. [] Keep the default settings and click the **Next** button on the **Data Collection Mode** step.
+21. [] Click the **Install** button on the **Ready to Install** step.
+22. [] Click the **Finish** button.
+23. [] Close the **Veeam ONE setup** window.
+24. [] Close the **File Explorer** window.
 
 ===
 
