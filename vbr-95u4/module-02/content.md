@@ -1,3 +1,8 @@
+Module 2: Components
+
+---
+**This lab is expected to last a maximum of XX minutes including lab launch.**
+
 # Lab 2.1
 In this lab exercise you will add the Veeam Backup & Replication backup server to Veeam Backup Enterprise Manager.
 
@@ -314,3 +319,9 @@ In this lab exercise, you will set locations for the already added components.
 6. [] Click the **Set Location** button on the **Server** ribbon.
 7. [] Select **Local Site**.
 8. [] Close the **Veeam Backup and Replication** window.
+
+---
+
+# Congratulations!
+
+You have completed this Module, to mark the lab as complete click on the menu in the upper right-hand corner and select **End**.
