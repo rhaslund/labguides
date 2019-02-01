@@ -28,7 +28,7 @@ Module 6: Objects Recovery
 1. [] Launch the **Veeam Backup & Replication console** from the desktop.
 2. [] Click the **Connect** button.
 3. [] Select **Disk** in the **Backups** section of the **Home** view.
-4. [] Expand the **Backup Exchange & SharePoint** job.
+4. [] Expand the **Backup Active Directory & Exchange & SharePoint** job.
 5. [] Select **VEEAM-EX01**.
 6. [] Click the **Application Items** button on the **Backup** ribbon.
 7. [] Select **Microsoft Exchange**.
@@ -36,7 +36,7 @@ Module 6: Objects Recovery
 9. [] Tick the **Do not show me this page again** check box.
 10. [] Click the **Next** button on the **Reason** step.
 11. [] Click the **Finish** button on the **Summary** step.
-> Note: The Veeam Explorer for Microsoft Exchange will launch now. It can also be launched manually from the Windows Start Menu.
+> Note: The Veeam Explorer for Microsoft Exchange will launch now and automatically mount the Exchange mailbox database(s) from the backup. It can also be launched manually from the Windows Start Menu.
 
 12. [] Expand the **Mailbox Database** hierachy.
 13. [] Expand the **testmail** mailbox.
@@ -45,7 +45,7 @@ Module 6: Objects Recovery
 16. [] Click the **Restore Items** button on the **Items** ribbon.
 17. [] Select **Restore to...**.
 18. [] Enter mailbox: +++testmail@veeamlab.local+++.
-19. [] Select the **The following account** radio button.
+19. [] Select the **Use the following account** radio button.
 20. [] Enter:
  1. User name: +++VEEAMLAB\Administrator+++
  2. Password: +++Pa$$w0rd+++
@@ -58,7 +58,7 @@ Module 6: Objects Recovery
 26. [] Close the **Veeam Explorer for Microsoft Exchange** window.
 27. [] Switch to the **Outlook Web Access** window using the Windows task bar.
 28. [] Select the **Inbox** folder.
-29. [] Confirm the restored e-mail appears then close the **Outlook Web Access** window.
+29. [] Confirm the restored e-mail appears then minimize the **Outlook Web App** window.
 
 ====
 
@@ -69,12 +69,12 @@ Module 6: Objects Recovery
 3. [] Select **Microsoft SharePoint**.
 4. [] Select the **http://veeam-sp01** site.
 5. [] Click the **Next** button on the **Site** step.
-6. [] Select the **latest full backup**.
+6. [] Select the **full backup**.
 7. [] Click the **Next** button on the **Content Database** step.
 8. [] Tick the **Do not show me this page again** check box.
-9. [] Keep the default settings and click the **Next** button on the **Restore Reason** step.
+9. [] Keep the default settings and click the **Next** button on the **Reason** step.
 10. [] Click the **Finish** button on the **Summary** step.
-11. [] If prompted, click the **Yes** button to upgrade the database.
+11. [] Click the **Yes** button to upgrade the database.
 12. [] Expand **WSS_Content.mdf**.
 13. [] Expand **Home**.
 14. [] Expand **Content**.
@@ -92,7 +92,7 @@ Module 6: Objects Recovery
 23. [] Click the **Restore** button on the **Specify the restore options** step.
 24. [] Click the **OK** button.
 25. [] Close the **Veeam Explorer for Microsoft SharePoint** window.
-26. [] Launch **Google Chrome** using the Windows task bar.
+26. [] Switch back to the **Outlook Web App** window using the Windows task bar.
 27. [] Browse to +++http://veeam-sp01+++
 28. [] Click the **Restored Docs** text link in the left side.
 29. [] Verify the three files **invoice.docx**, **market strategy.pptx** and **quote.docx** are present in the **Restored Docs** folder then close the **Google Chrome** window.
@@ -127,39 +127,36 @@ on the tab.
 
 17. [] Close the **Oracle SQL Developer** window.
 18. [] Click the **No** button to discard changes.
-19. [] Expand the **Backup Oracle** job.
+19. [] Expand the **Backup Oracle & Tiny-Veeam** job.
 20. [] Select the **VEEAM-ORCL** virtual machine.
 21. [] Click the **Application items** button on the **Backup** ribbon.
 22. [] Select **Oracle**.
 23. [] Keep the default settings and click the **Next** button on the **Restore Point** step.
 24. [] Tick the **Do not show me this page again** check box.
-
-24. [] Click the **Next** button on the **Reason** step.
-25. [] Click the **Finish** button on the **Summary** step.
-26. [] Wait for the **Veeam Explorer for Oracle** window to load then select the **DB1** database.
-27. [] Click the **Restore Database** button on the **Home** ribbon.
-28. [] Select **Restore point-in-time state to veeam-orcl...**.
-29. [] Select the **Restore to a specific point in time (requires redo log backups)** radio button.
-30. [] Move the **slider** all the way to the left (select the oldest point in time available).
+25. [] Click the **Next** button on the **Reason** step.
+26. [] Click the **Finish** button on the **Summary** step.
+27. [] Wait for the **Veeam Explorer for Oracle** window to load then select the **DB1** database.
+28. [] Click the **Restore Database** button on the **Home** ribbon.
+29. [] Select **Restore point-in-time state to veeam-orcl...**.
+30. [] Select the **Restore to a specific point in time (requires redo log backups)** radio button.
+31. [] Move the **slider** all the way to the left (select the oldest point in time available).
 > **Important: Even if the slider appears to be all the way to the left, it is critical you click it and move it to the left.**
 
-31. [] Click the **Restore** button on the **Specify restore point** step
-32. [] Click the **OK** button to restore database DB1 back to server.
-
-
-32. [] Enter password: +++Pa$$w0rd+++
-33. [] Click the **Next** button on the **Specify target Linux server connection credentials** step.
-34. [] Keep the default settings and click the **Next** button on the **Specify Oracle settings** step.
-35. [] Click the **Restore** button on the **Specify database files target location** step.
-36. [] Click the **Yes** button to dismiss the unable to find some of the specified paths warning.
+32. [] Click the **Restore** button on the **Specify restore point** step
+33. [] Click the **OK** button to restore database DB1 back to server.
+34. [] Enter password: +++Pa$$w0rd+++
+35. [] Click the **Next** button on the **Specify target Linux server connection credentials** step.
+36. [] Keep the default settings and click the **Next** button on the **Specify Oracle settings** step.
+37. [] Click the **Restore** button on the **Specify database files target location** step.
+38. [] Click the **Yes** button to dismiss the unable to find some of the specified paths warning.
 > Note: The validating... process can take up to 3 minutes, please have some patience.
 
-37. [] Click the **OK** button to start the restore process.
+39. [] Click the **OK** button to start the restore process.
 > Note: The restore process will appear to be stuck at Mounting backup and 0% for up to 10 minutes, do not interrupt the process.
 >
 > Note: The complete restore can take up to 20 minutes, please have some patience.
 
-38. [] Click the **OK** button.
+40. [] Click the **OK** button to confirm the restore completed successfully.
 39. [] Close the **Veeam Explorer for Oracle** window.
 40. [] Launch **Oracle SQL Developer** from the Windows task bar (icon looks like a disk with a green arrow).
 41. [] Expand the **Production Oracle** connection.
@@ -179,39 +176,34 @@ on the tab.
 3. [] Click the **Connect** button.
 3. [] Enter password: +++Pa$$w0rd+++
 4. [] Click the **OK** button.
-5. [] Launch the **Server Manager** from the Windows task manager.
-6. [] Click the **Tools** menu.
-7. [] Select **Active Directory Users and Computers**.
-8. [] Expand the **veeamlab.local** domain.
-9. [] Select the **Users** organizational unit.
-10. [] Right click the **testmail** user.
-11. [] Select **Delete**.
-12. [] Click the **Yes** button.
-13. [] Minimize the **Remote Desktop Connection** window.
-14. [] Expand the **Backup Active Directory** job.
-
-14. [] Select the **VEEAM-DC01** virtual machine.
-15. [] Click the **Application items** button on the **Backups** ribbon.
-16. [] Select **Microsoft Active Directory**.
-17. [] Keep the default settings and click the **Next** button on the **Restore Point** step.
-18. [] Tick the **Do not show me this page again** check box.
-
-18. [] Keep the default settings and click the **Next** button on the **Reason** step.
-19. [] Click the **Finish** button on the **Summary** step.
-20. [] Expand the **veeamlab.local** domain.
-21. [] Click the **Compare with Production** button on the **Home** ribbon.
-22. [] Click the **Show Changed Objects Only** button on the **Home** ribbon.
-23. [] Expand **Users and Computers**.
-24. [] Select the **Users** organizational unit.
-25. [] Select the **testmail** user.
-26. [] Click the **Restore objects** button on the **Objects** ribbon.
-27. [] Select **Restore objects to VEEAM-DC01.veeamlab.local**.
-28. [] Wait for the restore to complete then click the **OK** button.
-29. [] Switch to the **Remote Desktop Connection client** window using the Windows task bar.
-30. [] Select the **Users** organizational unit.
-31. [] Click the **Refresh** button or press the **F5** keyboard button.
-32. [] Verify the **testmail** user appears then close the **Remote Desktop Connection client** window.
-33. [] Close the **Veeam Explorer for Microsoft Active Directory** window.
+5. [] Launch **Active Directory Users and Computers** from the desktop.
+6. [] Expand the **veeamlab.local** domain.
+7. [] Select the **Users** organizational unit.
+8. [] Right click the **testmail** user.
+9. [] Select **Delete**.
+10. [] Click the **Yes** button.
+11. [] Minimize the **Remote Desktop Connection** window.
+12. [] Select the **VEEAM-DC01** virtual machine.
+13. [] Click the **Application items** button on the **Backups** ribbon.
+14. [] Select **Microsoft Active Directory**.
+15. [] Keep the default settings and click the **Next** button on the **Restore Point** step.
+16. [] Tick the **Do not show me this page again** check box.
+17. [] Keep the default settings and click the **Next** button on the **Reason** step.
+18. [] Click the **Finish** button on the **Summary** step.
+19. [] Expand the **veeamlab.local** domain.
+20. [] Click the **Compare with Production** button on the **Home** ribbon.
+21. [] Click the **Show Changed Objects Only** button on the **Home** ribbon.
+22. [] Expand **Users and Computers**.
+23. [] Select the **Users** organizational unit.
+24. [] Select the **testmail** user.
+25. [] Click the **Restore objects** button on the **Objects** ribbon.
+26. [] Select **Restore objects to VEEAM-DC01.veeamlab.local**.
+27. [] Wait for the restore to complete then click the **OK** button.
+28. [] Switch to the **Remote Desktop Connection client** window using the Windows task bar.
+29. [] Select the **Users** organizational unit.
+30. [] Click the **Refresh** button or press the **F5** keyboard button.
+31. [] Verify the **testmail** user appears then close the **Remote Desktop Connection client** window.
+32. [] Close the **Veeam Explorer for Microsoft Active Directory** window.
 
 ===
 
@@ -226,7 +218,7 @@ on the tab.
 7. [] Click the **Finish** button on the **Summary** step.
 8. [] Wait for the **Veeam Explorer for Microsoft SQL Server** window to load then select the **testdb** database.
 9. [] Click the **Restore Database** button on the **Database** ribbon.
-10. [] Select **Restore point-in-time to VEEAM-SP01\\SQLEXPRESS...**.
+10. [] Select **Restore point-in-time state to VEEAM-SP01\\SQLEXPRESS...**.
 11. [] Select the **Restore to a specific point in time (requires transaction log backups)** radio button.
 12. [] Move the **slider** all the way to the left (select the oldest point in time).
 > Note: It may appear as if the slider is already in the most far point, make sure you click it and move it to the left regardless.
@@ -236,22 +228,6 @@ on the tab.
 > Note: The restore will take less than 3 minutes.
 
 15. [] Click the **OK** button.
-16. [] Close the **Veeam Explorer for Microsoft SQL Server** window.
-17. [] Launch the **Remote Desktop Connection client** from the Windows task bar.
-18. [] Enter computer name: +++VEEAM-SP01+++
-19. [] Click the **Connect** button.
-20. [] Leave user name as **VEEAMLAB\Administrator** and enter password: +++Pa$$w0rd+++.
-21. [] Click the **OK** button.
-22. [] Open the **Start menu** by moving the cursor to the bottom left corner then click the **Start** button when it appears.
-> Note: If you are having issues opening the start menu, please ask your instructor for assistance.
-
-23. [] Select the **Microsoft SQL Server Management Studio** tile.
-24. [] Verify the server name is +++VEEAM-SP01\SQLEXPRESS+++ then click the **Connect** button.
-25. [] Expand **Databases**.
-26. [] Expand the **testdb** database
-27. [] Expand **Tables**
-28. [] Verify the **dbo.BuildVersion** table has been restored then close the **Microsoft SQL Server Management Studio** window.
-29. [] Close the **Remote Desktop Connection** window.
 
 ===
 
@@ -288,12 +264,13 @@ on the tab.
 
 ## Step 2: Perform Windows guest files recovery through VMware Tools (network-less)
 
-1. [] Launch the **VMware Host Client** from the Windows task bar.
-2. [] Enter:
+1. [] Minimize the **Veeam Backup & Replication** window.
+2. [] Launch the **VMware Host Client** from the desktop.
+3. [] Enter:
  1. User name: +++root+++
  2. Password: +++Pa$$w0rd+++
 
-3. [] Click the **Virtual Machines** text link in the **Navigator** pane.
+4. [] Click the **Virtual Machines** text link in the **Navigator** pane.
 4. [] Click the **VEEAM-DC01** virtual machine text link.
 5. [] Click the **Edit** button.
 6. [] Untick the **Connect** check box in the **Network Adapter 1** section.
@@ -353,7 +330,6 @@ on the tab.
 
 ## Step 4: Perform Linux guest files recovery
 
-1. [] Expand the **Backup Oracle** job.
 2. [] Select the **VEEAM-ORCL** virtual machine.
 3. [] Click the **Guest Files** button on the **Backups** ribbon.
 4. [] Select **Linux and other**.
@@ -368,7 +344,7 @@ on the tab.
 11. [] Click the **OK** button.
 12. [] Select the **Use the following IP address** radio button.
 13. [] Enter:
- 1. IP address: +++10.0.3.201+++
+ 1. IP address: +++10.0.3.202+++
  2. Subnet mask: +++255.255.255.0+++
  3. Default gateway: +++10.0.3.3+++
 
@@ -386,7 +362,7 @@ on the tab.
 21. [] Click the **Copy To** button on the **Home** ribbon.
 22. [] Enter path to folder: +++C:\\Users\\Administrator.VEEAMINFRA\\Desktop+++
 23. [] Click the **Restore** button.
-24. [] Close the **File Level Restore** window.
+24. [] Wait for the restore to complete then close the **File Level Restore** window.
 25. [] Close the **Veeam Backup & Replication console** window and verify the **boot.log** file is present on the **desktop**.
 
 ---
