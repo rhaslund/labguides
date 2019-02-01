@@ -6,51 +6,59 @@ Module 6: Objects Recovery
 
 # Lab 6.1: Perform Microsoft Exchange items recovery
 
+## Step 1: Delete an e-mail from the inbox
+
 1. [] Launch **Outlook Web Access** from the Windows task bar.
 2. [] Enter:
  1. Username: +++testmail@veeamlab.local+++
  2. Password: +++Pa$$w0rd+++
 
 3. [] Click the **Sign In** button.
-4. [] Click the **Delete** text link to delete the most recent e-mail.
-5. [] Select the **Deleted items** folder.
-6. [] Click the **Empty** text link.
-7. [] Click the **Yes** button to confirm deleting all the items and subfolders in the **Deleted items** folder.
-8. [] Minimize the **Outlook Web Access** window.
-9. [] Launch the **Veeam Backup & Replication console** from the desktop.
-10. [] Click the **Connect** button.
-11. [] Select **Disk** in the **Backups** section of the **Home** view.
-12. [] Expand the **Backup Exchange & SharePoint** job.
-13. [] Select **VEEAM-EX01**.
-14. [] Click the **Application Items** button on the **Backup** ribbon.
-15. [] Select **Microsoft Exchange**.
-16. [] Keep the default setting and click the **Next** button on the **Restore Point** step.
-17. [] Tick the **Do not show me this page again** check box.
-18. [] Click the **Next** button on the **Reason** step.
-19. [] Click the **Finish** button on the **Summary** step.
+4. [] Click the **Never** button in Google Chrome to avoid saving the password.
+5. [] Click the **Delete** text link to delete the most recent e-mail.
+6. [] Select the **Deleted items** folder.
+7. [] Click the **Empty** text link.
+8. [] Click the **Yes** button to confirm deleting all the items and subfolders in the **Deleted items** folder.
+9. [] Minimize the **Outlook Web Access** window.
+
+===
+
+## Step 2: Recovery the deleted e-mail
+
+1. [] Launch the **Veeam Backup & Replication console** from the desktop.
+2. [] Click the **Connect** button.
+3. [] Select **Disk** in the **Backups** section of the **Home** view.
+4. [] Expand the **Backup Exchange & SharePoint** job.
+5. [] Select **VEEAM-EX01**.
+6. [] Click the **Application Items** button on the **Backup** ribbon.
+7. [] Select **Microsoft Exchange**.
+8. [] Keep the default setting and click the **Next** button on the **Restore Point** step.
+9. [] Tick the **Do not show me this page again** check box.
+10. [] Click the **Next** button on the **Reason** step.
+11. [] Click the **Finish** button on the **Summary** step.
 > Note: The Veeam Explorer for Microsoft Exchange will launch now. It can also be launched manually from the Windows Start Menu.
 
-20. [] Expand the **Mailbox Database** hierachy.
-21. [] Expand the **testmail** mailbox.
-22. [] Select the **Inbox** folder.
-23. [] Select the **previously deleted e-mail** message.
-24. [] Click the **Restore Items** button on the **Items** ribbon.
-25. [] Select **Restore to...**.
-26. [] Enter mailbox: +++testmail@veeamlab.local+++.
-27. [] Select the **The following account** radio button.
-28. [] Enter:
+12. [] Expand the **Mailbox Database** hierachy.
+13. [] Expand the **testmail** mailbox.
+14. [] Select the **Inbox** folder.
+15. [] Select the **previously deleted e-mail** message.
+16. [] Click the **Restore Items** button on the **Items** ribbon.
+17. [] Select **Restore to...**.
+18. [] Enter mailbox: +++testmail@veeamlab.local+++.
+19. [] Select the **The following account** radio button.
+20. [] Enter:
  1. User name: +++VEEAMLAB\Administrator+++
  2. Password: +++Pa$$w0rd+++
 
-29. [] Click the **Next** button.
-30. [] Enter mailbox server (CAS): +++veeam-ex01.veeamlab.local+++
-31. [] Click the **Next** button.
-32. [] Keep the default settings and click the **Restore** button.
-33. [] Click the **OK** button.
-34. [] Close the **Veeam Explorer for Microsoft Exchange** window.
-35. [] Switch to the **Outlook Web Access** window using the Windows task bar.
-36. [] Select the **Inbox** folder.
-37. [] Confirm the restored e-mail appears then close the **Outlook Web Access** window.
+21. [] Click the **Next** button.
+22. [] Enter mailbox server (CAS): +++veeam-ex01.veeamlab.local+++
+23. [] Click the **Next** button.
+24. [] Keep the default settings and click the **Restore** button.
+25. [] Click the **OK** button.
+26. [] Close the **Veeam Explorer for Microsoft Exchange** window.
+27. [] Switch to the **Outlook Web Access** window using the Windows task bar.
+28. [] Select the **Inbox** folder.
+29. [] Confirm the restored e-mail appears then close the **Outlook Web Access** window.
 
 ====
 
