@@ -90,11 +90,12 @@ Module 6: Configuration
 18. [] Click the **Add** button.
 19. [] Click the **Next** button on the **Re-IP Rules** step.
 20. [] Tick the **Enable Network Mapping** check box.
-21. [] Select **PROD LAN in Production** in the **Source network** section.
-22. [] Select **DR in DR** in the **Target network** section.
-23. [] Click the **Add** button.
-24. [] Click the **Next** button on the **Network Mapping** step.
-25. [] Click the **Finish** button on the **Summary** step.
+21. [] Click the **Add** button.
+22. [] Select **PROD LAN in Production** in the **Source network** section.
+23. [] Select **DR in DR** in the **Target network** section.
+24. [] Click the **Add** button.
+25. [] Click the **Next** button on the **Network Mapping** step.
+26. [] Click the **Finish** button on the **Summary** step.
 
 ===
 
